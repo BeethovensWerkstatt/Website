@@ -1,0 +1,13 @@
+{
+	"pages": [
+		{"title":"Home",
+		 "desc":"Übersicht",
+		 "file":"index.html",
+		 "pages":[]},
+		 
+		{"title":"Kontakt",
+		 "desc":"melden Sie Sich",
+		 "file":"kontakt.html",
+		 "pages":[]}
+	]
+}

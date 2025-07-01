@@ -1,0 +1,27 @@
+{
+	"news": [
+		{"title":"Projekttreffen in Bonn",
+		 "desc":"Anfang Juli fand in Rolandswerth bei Bonn das erste Projekttreffen statt. Im Mittelpunkt standen Arbeitsplanung und inhaltliche Absprachen für die ersten Module.",
+		 "file":"projektTreffen_2014_Bonn.html",
+		 "date":"30.6. – 4.7.2014",
+		 "active":true,
+		 "pics":[
+		 	"images/team.png",
+		 	"images/work.png",
+		 	"images/work2.png"]},
+		 
+		{"title":"Projekttreffen in Detmold",
+		 "desc":"Im September fand in Detmold ein Arbeitstreffen mit Perry Roland (UVA) statt, bei dem u.a. ein erstes Datenmodell zur Codierung textgenetischer Prozesse mit MEI erarbeitet werden konnte.",
+		 "file":"projektTreffen_2014_Detmold.html",
+		 "date":"22.-26. 9. 2014",
+		 "active":true,
+		 "pics":[]},
+		 
+		{"title":"Festakt zum Projektstart",
+		 "desc":"Am 1. Dezember um 18 Uhr wird der Start des Projekts <em>Beethovens Werkstatt</em> mit einem Festakt im Beethoven-Haus Bonn begangen.",
+		 "file":"festakt_2014_Bonn.html",
+		 "date":"1. Dez. 2014",
+		 "active":true,
+		 "pics":[]}
+	]
+}

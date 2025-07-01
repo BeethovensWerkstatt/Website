@@ -1,0 +1,85 @@
+{
+	"pages": [
+		{"title":"Home",
+		 "desc":"Übersicht",
+		 "file":"index.html",
+		 "pages":[]},
+		 
+		{"title":"Beethovens Werkstatt",
+		 "desc":"Module und Werke",
+		 "file":"overview.html",
+		 "pages":[
+		 
+		 	{"title":"Modul 1",
+		 	"file":"modul1.html",
+		 	"pages":[
+		 		
+		 		{"title":"Streichquartett Op. 59 Nr.3",
+		 		"file":"work_op59-3.html",
+		 		"pages":[]},
+		 		
+		 		{"title":"6. Sinfonie Op. 68",
+		 		"file":"work_op68.html",
+		 		"pages":[]}
+
+		 	
+		 	]},
+		 	
+		 	{"title":"Modul 2",
+		 	"file":"modul2.html",
+		 	"pages":[]},
+		 	
+		 	{"title":"Modul 3",
+		 	"file":"modul3.html",
+		 	"pages":[]},
+		 	
+		 	{"title":"Modul 4",
+		 	"file":"modul4.html",
+		 	"pages":[]},
+		 	
+		 	{"title":"Modul 5",
+		 	"file":"modul5.html",
+		 	"pages":[]}
+		 
+		 ]},
+		 
+		{"title":"Das Projekt",
+		 "desc":"Mitarbeiter und Standorte",
+		 "file":"projekt.html",
+		 "pages":[
+		 
+		 	{"title":"Mitarbeiter",
+		 	"file":"mitarbeiter.html",
+		 	"pages":[]},
+		 	
+		 	{"title":"Standorte",
+		 	"file":"standorte.html",
+		 	"pages":[]}
+		 
+		 ]},
+		 
+		{"title":"Dokumentation",
+		 "desc":"Grundbegriffe, Arbeitsweisen…",
+		 "file":"dokumentation.html",
+		 "pages":[
+		 
+		 	{"title":"Glossar",
+		 	"file":"glossar.html",
+		 	"pages":[]},
+		 	
+		 	{"title":"Datenmodell",
+		 	"file":"datenmodell.html",
+		 	"pages":[]},
+		 	
+		 	{"title":"Bibliographie",
+		 	"file":"bibliographie.html",
+		 	"pages":[]}
+		 
+		 ]},
+		 
+		{"title":"Kontakt",
+		 "desc":"melden Sie Sich",
+		 "file":"kontakt.html",
+		 "pages":[]}
+	]
+}

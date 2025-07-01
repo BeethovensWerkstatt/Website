@@ -1,0 +1,52 @@
+<header id="header" class="container clearfix">
+
+	<a href="index.html" id="logo">
+		<img src="resources/pix/logoHD.png" width="170" alt="Beethovens Werkstatt">
+	</a>
+
+	<nav id="main-nav">
+		
+		<ul>
+		
+			{{~it.include("sitemap").pages :value:index}}
+				{{? it.title === value.title}} 
+					<li class="current">
+				{{?}}
+				{{? it.title !== value.title}} 
+					<li>
+				{{?}}
+					<a href="{{=value.file}}" data-description="{{=value.desc}}">{{=value.title}}</a>
+					
+					{{? value.pages.length != 0}}
+						<ul>
+						{{~ value.pages :subpage:pos}}
+							<li>
+								<a href="{{=subpage.file}}">{{=subpage.title}}</a>
+								
+								{{? subpage.pages.length != 0}}
+									<ul>
+									{{~ subpage.pages :subpage2:pos2}}
+										<li>
+											<a href="{{=subpage2.file}}">{{=subpage2.title}}</a>
+								
+								
+								
+										</li>
+									{{~}}
+									</ul>
+								{{?}} 
+								
+							</li>
+						{{~}}
+						</ul>
+					{{?}} 
+					
+				</li>
+				
+			{{~}}
+				
+		</ul>
+
+	</nav><!-- end #main-nav -->
+	
+</header><!-- end #header -->
