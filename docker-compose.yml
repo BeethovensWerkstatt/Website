@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  jekyll:
+    build: .
+    ports:
+      - "4000:4000"
+      - "35729:35729"  # LiveReload port
+    volumes:
+      - .:/srv/jekyll
+      - bundle_cache:/usr/local/bundle
+    environment:
+      - JEKYLL_ENV=development
+      - BUNDLE_PATH=/usr/local/bundle
+    command: bundle exec jekyll serve --host 0.0.0.0 --livereload --force_polling
+    stdin_open: true
+    tty: true
+
+  # Build service for production builds
+  build:
+    build: .
+    volumes:
+      - .:/srv/jekyll
+      - bundle_cache:/usr/local/bundle
+    environment:
+      - JEKYLL_ENV=production
+      - BUNDLE_PATH=/usr/local/bundle
+    command: bundle exec jekyll build
+    profiles:
+      - build
+
+volumes:
+  bundle_cache:

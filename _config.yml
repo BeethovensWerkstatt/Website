@@ -1,0 +1,46 @@
+# Site settings
+title: Beethovens Werkstatt
+description: >-
+  The official website for Beethovens Werkstatt - exploring Beethoven's creative process
+  through digital humanities research and analysis.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://beethovens-werkstatt.de" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - Dockerfile
+  - docker-compose.yml
+  - .dockerignore
+
+# Default layout for different content types
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
