@@ -1,8 +1,9 @@
 # Site settings
 title: Beethovens Werkstatt
+email: info@beethovens-werkstatt.de
 description: >-
-  The official website for Beethovens Werkstatt - exploring Beethoven's creative process
-  through digital humanities research and analysis.
+  Das Projekt Beethovens Werkstatt kombiniert zwei Forschungsansätze – Genetische Textkritik 
+  und Digitale Musikedition – um kompositorische Prozesse im Œuvre Beethovens zu untersuchen.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://beethovens-werkstatt.de" # the base hostname & protocol for your site
 
@@ -10,11 +11,26 @@ url: "https://beethovens-werkstatt.de" # the base hostname & protocol for your s
 markdown: kramdown
 highlighter: rouge
 theme: minima
+show_excerpts: true
+
+# Minima date format
+minima:
+  date_format: "%d. %B %Y"
 
 # Plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+# Navigation
+header_pages:
+  - index.md
+  - projekt.md
+  - module.md
+  - glossar.md
+  - news.md
+  - about.md
+  - contact.md
 
 # Exclude from processing
 exclude:
