@@ -1,23 +1,14 @@
 source "https://rubygems.org"
 
-# Jekyll version
+# Jekyll - minimal setup
 gem "jekyll", "~> 4.2.0"
+gem "kramdown-parser-gfm"
 
-# Default theme
-gem "minima", "~> 2.5"
+# SCSS support
+gem "jekyll-sass-converter", "~> 2.0"
 
-# Jekyll plugins
-group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"
-  gem "jekyll-seo-tag"
-end
-
-# Use sassc instead of sass-embedded for better compatibility
-gem "sassc", "~> 2.4"
-
-# Essential gems for development
+# Essential gems only
 gem "webrick", "~> 1.7"  # Required for Ruby 3.0+
-gem "rexml", "~> 3.2"    # Required for Jekyll 4.2+
 
 # Cross-platform compatibility
 platforms :mingw, :x64_mingw, :mswin, :jruby do

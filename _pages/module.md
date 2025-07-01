@@ -12,7 +12,7 @@ Das Projekt **Beethovens Werkstatt** ist in mehrere Module gegliedert, die versc
 
 ## Übersicht der Module
 
-### Modul 1: Skizzen und Entwürfe
+### Modul 1: Skizzen und Entwürfe {#modul1}
 **Status**: Abgeschlossen (2014-2017)  
 **Fokus**: Beethovens Skizzenbücher und Einzelblätter
 
@@ -29,7 +29,7 @@ Das Projekt **Beethovens Werkstatt** ist in mehrere Module gegliedert, die versc
 
 ---
 
-### Modul 2: Arbeitsmanuskripte
+### Modul 2: Arbeitsmanuskripte {#modul2}
 **Status**: Abgeschlossen (2017-2019)  
 **Fokus**: Autographe Partituren und Arbeitsmanuskripte
 
@@ -46,7 +46,7 @@ Das Projekt **Beethovens Werkstatt** ist in mehrere Module gegliedert, die versc
 
 ---
 
-### Modul 3: Originalausgaben und Revisionsdokumente
+### Modul 3: Originalausgaben und Revisionsdokumente {#modul3}
 **Status**: Abgeschlossen (2019-2022)  
 **Fokus**: Beethovens Revisionsarbeit an gedruckten Ausgaben
 

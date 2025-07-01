@@ -10,27 +10,60 @@ url: "https://beethovens-werkstatt.de" # the base hostname & protocol for your s
 # Build settings
 markdown: kramdown
 highlighter: rouge
-theme: minima
 show_excerpts: true
 
-# Minima date format
-minima:
-  date_format: "%d. %B %Y"
+# Sass configuration
+sass:
+  sass_dir: _sass
+  style: compressed
 
-# Plugins
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name/
 
-# Navigation
+# Navigation with two-level dropdown menus
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "Das Projekt"
+    url: "/projekt/"
+    submenu:
+      - title: "Überblick"
+        url: "/projekt/"
+      - title: "Über uns"
+        url: "/about/"
+      - title: "Kontakt"
+        url: "/contact/"
+  - title: "Module"
+    url: "/module/"
+    submenu:
+      - title: "Modul 1: Skizzen und Entwürfe"
+        url: "/module/#modul1"
+      - title: "Modul 2: Arbeitsmanuskripte"
+        url: "/module/#modul2"
+      - title: "Modul 3: Originalausgaben"
+        url: "/module/#modul3"
+  - title: "Werkzeuge"
+    url: "/tools/"
+    submenu:
+      - title: "Glossar"
+        url: "/glossar/"
+      - title: "Dokumentation"
+        url: "/documentation/"
+  - title: "Aktuelles"
+    url: "/news/"
+
+# Keep header_pages for compatibility - updated paths
 header_pages:
   - index.md
-  - projekt.md
-  - module.md
-  - glossar.md
-  - news.md
-  - about.md
-  - contact.md
+  - _pages/projekt.md
+  - _pages/module.md
+  - _pages/glossar.md
+  - _pages/news.md
+  - _pages/about.md
+  - _pages/contact.md
 
 # Exclude from processing
 exclude:
@@ -56,6 +89,11 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
   - scope:
       path: ""
     values:

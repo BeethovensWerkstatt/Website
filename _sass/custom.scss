@@ -1,4 +1,4 @@
-// Override Minima variables and add custom styles for Beethovens Werkstatt
+// Beethovens Werkstatt - Self-contained styles without minima dependency
 
 // Colors from the original site
 $brand-color: #2c3e50;          // Dark blue-gray for headers
@@ -16,8 +16,53 @@ $base-line-height: 1.6;
 // Spacing
 $spacing-unit: 30px;
 
-// Import the base Minima theme
-@import "minima";
+// Base styles (replacing minima)
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $text-color;
+  background-color: $background-color;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $spacing-unit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h1 { font-size: 2.2em; }
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.4em; }
+
+p {
+  margin-bottom: 1em;
+}
+
+a {
+  color: $brand-color-light;
+  text-decoration: none;
+  
+  &:hover {
+    color: darken($brand-color-light, 15%);
+    text-decoration: underline;
+  }
+}
 
 // Custom styles for Beethovens Werkstatt
 .site-header {
@@ -37,6 +82,8 @@ $spacing-unit: 30px;
   }
   
   .site-nav {
+    position: relative;
+    
     .page-link {
       color: white;
       font-weight: 400;
@@ -49,14 +96,113 @@ $spacing-unit: 30px;
       }
     }
     
+    // Dropdown menu styles
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      margin-left: 20px;
+      
+      .dropdown-toggle {
+        color: white;
+        font-weight: 400;
+        font-size: 16px;
+        text-decoration: none;
+        cursor: pointer;
+        
+        .dropdown-arrow {
+          font-size: 12px;
+          margin-left: 5px;
+          transition: transform 0.3s ease;
+        }
+        
+        &:hover {
+          color: $grey-color-light;
+          
+          .dropdown-arrow {
+            transform: rotate(180deg);
+          }
+        }
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        min-width: 220px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        border: 1px solid $grey-color-light;
+        border-radius: 4px;
+        z-index: 1000;
+        padding: 8px 0;
+        
+        .dropdown-link {
+          color: $text-color;
+          padding: 10px 16px;
+          text-decoration: none;
+          display: block;
+          font-size: 14px;
+          transition: background-color 0.3s ease;
+          
+          &:hover {
+            background-color: #f1f1f1;
+            color: $brand-color;
+          }
+        }
+      }
+      
+      &:hover .dropdown-content {
+        display: block;
+      }
+    }
+    
+    // Hide mobile navigation elements on desktop
+    .nav-trigger {
+      display: none;
+    }
+    
     .menu-icon {
+      display: none;
+      
       > svg path {
         fill: white;
       }
     }
     
     @media screen and (max-width: 600px) {
+      // Show mobile navigation elements on mobile
+      .nav-trigger {
+        display: none; // Still hidden, but controlled by label
+      }
+      
+      .menu-icon {
+        display: block;
+        float: right;
+        width: 36px;
+        height: 26px;
+        line-height: 0;
+        padding-top: 10px;
+        text-align: center;
+        
+        > svg {
+          width: 18px;
+          height: 15px;
+          
+          path {
+            fill: white;
+          }
+        }
+      }
+      
+      // Mobile menu toggle functionality
+      .nav-trigger:checked ~ .trigger {
+        display: block;
+      }
+      
       .trigger {
+        clear: both;
+        display: none;
         background-color: $brand-color;
         border: 1px solid darken($brand-color, 10%);
         border-radius: 5px;
@@ -68,6 +214,37 @@ $spacing-unit: 30px;
           
           &:not(:last-child) {
             margin-right: 0;
+          }
+        }
+        
+        .dropdown {
+          margin-left: 0;
+          
+          .dropdown-toggle {
+            display: block;
+            padding: 5px 10px;
+            border-bottom: 1px solid lighten($brand-color, 10%);
+          }
+          
+          .dropdown-content {
+            position: static;
+            display: block;
+            background-color: lighten($brand-color, 5%);
+            box-shadow: none;
+            border: none;
+            border-radius: 0;
+            padding: 0;
+            
+            .dropdown-link {
+              color: $grey-color-light;
+              padding: 8px 20px;
+              font-size: 13px;
+              
+              &:hover {
+                background-color: lighten($brand-color, 10%);
+                color: white;
+              }
+            }
           }
         }
       }
