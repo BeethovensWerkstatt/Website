@@ -1,0 +1,71 @@
+// Beethovens Werkstatt - Base Styles
+
+// Base reset and typography
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $text-color;
+  background-color: $background-color;
+  font-weight: 400;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $spacing-unit;
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font-family;
+  font-weight: 300;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h1 { font-size: 2.2em; }
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.4em; }
+
+p {
+  margin-bottom: 1em;
+}
+
+a {
+  color: $brand-color;
+  text-decoration: none;
+  
+  &:hover {
+    color: darken($brand-color, 15%);
+    text-decoration: underline;
+  }
+}
+
+// Content wrapper
+.content-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  
+  p {
+    margin-bottom: 1.2em;
+    text-align: justify;
+  }
+  
+  blockquote {
+    border-left: 4px solid $brand-color;
+    padding-left: 20px;
+    margin: 25px 0;
+    font-style: italic;
+    color: darken($text-color, 10%);
+  }
+}

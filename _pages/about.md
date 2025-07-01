@@ -4,7 +4,8 @@ title: Über uns
 permalink: /about/
 ---
 
-<div class="content-wrapper">
+<div class="wrapper">
+  <div class="content-wrapper">
 
 # {{ page.title }}
 
@@ -36,4 +37,5 @@ Das Projekt, das mit den beiden Forschungsansätzen zwei spezialisierte Institut
 
 Gefördert von Bund und Ländern im Rahmen des Akademienprogramms der Union der Deutschen Akademien der Wissenschaften.
 
+  </div>
 </div>

@@ -1,60 +1,56 @@
-<footer class="site-footer h-card">
+<footer id="footer" class="site-footer-main h-card">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
   <div class="wrapper">
-
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
-        <h2 class="footer-heading">Kontakt</h2>
+        <h3 class="footer-heading">Kontakt</h3>
         <ul class="contact-list">
-          <li class="p-name">
-            <strong>Beethoven-Haus Bonn</strong><br>
-            Bonngasse 24-26<br>
-            53111 Bonn<br>
-            Tel: (0228) 98175-69
+          <li>
+            <strong>Beethoven-Haus, Bonngasse 24-26, 53111 Bonn</strong><br>
+            <span class="phone">(0228) 98175-69</span>
           </li>
           <li>
-            <strong>Hochschule für Musik Detmold</strong><br>
-            Musikwiss. Seminar<br>
-            Hornsche Str. 39<br>
-            32756 Detmold<br>
-            Tel: (05231) 975-663
+            <strong>Musikwiss. Seminar, Hornsche Str. 39, 32756 Detmold</strong><br>
+            <span class="phone">(05231) 975-663</span>
           </li>
           <li><a class="u-email" href="mailto:info@beethovens-werkstatt.de">info@beethovens-werkstatt.de</a></li>
         </ul>
       </div>
 
       <div class="footer-col footer-col-2">
-        {%- if site.social -%}
-          <ul class="social-media-list">
-            {%- for social in site.social -%}
-            <li>
-              <a href="{{ social.url }}" title="{{ social.title }}">
-                <span class="username">{{ social.username }}</span>
-              </a>
-            </li>
-            {%- endfor -%}
-          </ul>
-        {%- endif -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
+        <div class="funding-info">
+          <p><strong>Gefördert durch:</strong></p>
+          <div class="funding-logo">
+            <a href="http://www.adwmainz.de/" target="_blank" rel="noopener">
+              <img src="{{ '/assets/images/adw-logo.png' | relative_url }}" alt="Akademie der Wissenschaften und der Literatur Mainz" class="entry-image">
+            </a>
+          </div>
+          <p class="funding-description">Gefördert von Bund und Ländern im Rahmen des Akademienprogramms der <a href="http://www.akademienunion.de/" target="_blank">Union der Deutschen Akademien der Wissenschaften</a>.</p>
+        </div>
       </div>
     </div>
-
-    <div class="funding-info">
-      <p><strong>Gefördert durch:</strong></p>
-      <p><a href="http://www.adwmainz.de/">Akademie der Wissenschaften und der Literatur Mainz</a></p>
-      <p>Gefördert von Bund und Ländern im Rahmen des Akademienprogramms der <a href="http://www.akademienunion.de/">Union der Deutschen Akademien der Wissenschaften</a>.</p>
-      
-      <div class="partner-logos">
-        <a href="http://www.uni-paderborn.de/">Universität Paderborn</a> • 
-        <a href="http://www.beethoven-haus-bonn.de/">Beethoven-Haus Bonn</a> • 
-        <a href="http://www.hfm-detmold.de/">Hochschule für Musik Detmold</a>
-      </div>
-    </div>
-
   </div>
+</footer>
 
+<footer id="footer-bottom" class="site-footer-bottom">
+  <div class="wrapper">
+    <div class="partner-logos">
+      <div class="partner-logo">
+        <a href="http://www.uni-paderborn.de/" target="_blank">
+          <img src="{{ '/assets/images/upb-logo.png' | relative_url }}" alt="Universität Paderborn" class="entry-image">
+        </a>
+      </div>
+      <div class="partner-logo">
+        <a href="http://www.beethoven-haus-bonn.de/" target="_blank">
+          <img src="{{ '/assets/images/bhb-logo.png' | relative_url }}" alt="Beethoven-Haus Bonn" class="entry-image">
+        </a>
+      </div>
+      <div class="partner-logo">
+        <a href="http://www.hfm-detmold.de/" target="_blank">
+          <img src="{{ '/assets/images/hfm-logo.png' | relative_url }}" alt="Hochschule für Musik Detmold" class="entry-image">
+        </a>
+      </div>
+    </div>
+  </div>
 </footer>

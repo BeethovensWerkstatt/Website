@@ -4,7 +4,13 @@ This website is used to generate the https://beethovens-werkstatt.de website.
 
 ## Docker-Based Development (Recommended)
 
-This project uses Docker to provide a consistent development environment that works on both x86_64 and ARM64 (Apple M1/M2) architectures without requiring Ruby or Jekyll installation on your local machine.
+This project uses Docker to provide a consistent developFor more information about Jekyll, visit the [official documentation](https://jekyllrb.com/docs/).
+
+---
+
+**Project**: Beethovens Werkstatt Website  
+**Framework**: Jekyll with Docker  
+**Documentation**: See [`docs/`](./docs/) folder for detailed technical documentationt environment that works on both x86_64 and ARM64 (Apple M1/M2) architectures without requiring Ruby or Jekyll installation on your local machine.
 
 ### Prerequisites
 
@@ -169,7 +175,20 @@ You can trigger deployments manually through the GitHub Actions interface:
 - **Blog posts**: Add to `_posts/` following the naming convention `YYYY-MM-DD-title.md`
 - **Styling**: The default theme is Minima, which can be customized
 
-## Troubleshooting
+## 📚 Documentation
+
+Comprehensive technical documentation is available in the [`docs/`](./docs/) folder:
+
+- **[Project Status](./docs/CURRENT_STATUS.md)** - Complete feature overview and current state
+- **[SCSS Architecture](./docs/SCSS_ARCHITECTURE.md)** - Modular styling system documentation  
+- **[Font Setup](./docs/FONTS_SETUP.md)** - Local font serving configuration
+- **[Navigation Structure](./docs/NAVIGATION_SUMMARY.md)** - Site navigation setup
+- **[Styling Guide](./docs/STYLING_SUMMARY.md)** - Design system and color schemes
+- **[File Organization](./docs/REORGANIZATION_SUMMARY.md)** - Recent structural changes
+
+For a complete overview, see the [Documentation Index](./docs/README.md).
+
+## 🛠 Troubleshooting
 
 ### Docker Issues
 

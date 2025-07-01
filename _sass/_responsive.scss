@@ -1,0 +1,71 @@
+// Beethovens Werkstatt - Responsive Design
+
+// Mobile-specific adjustments
+@media screen and (max-width: $mobile-width) {
+  .hero-section {
+    padding: 40px 15px;
+    
+    h1 {
+      font-size: 2em;
+    }
+  }
+  
+  .research-areas {
+    grid-template-columns: 1fr;
+  }
+  
+  .wrapper {
+    padding: 0 15px;
+  }
+  
+  // Footer adjustments
+  .site-footer-main {
+    .footer-col-wrapper {
+      flex-direction: column;
+      gap: 20px;
+      
+      .footer-col {
+        min-width: auto;
+      }
+    }
+    
+    .funding-logo img {
+      max-height: 40px;
+    }
+  }
+  
+  .site-footer-bottom {
+    .partner-logos {
+      gap: 20px;
+      
+      .partner-logo img {
+        max-height: 35px;
+      }
+    }
+  }
+}
+
+// Tablet adjustments
+@media screen and (max-width: 768px) {
+  .hero-section {
+    h1 {
+      font-size: 1.8em;
+    }
+    
+    p {
+      font-size: 1em;
+    }
+  }
+  
+  .news-section {
+    padding: 20px;
+    margin: 20px 0;
+  }
+}
+
+// Large screen adjustments
+@media screen and (min-width: 1400px) {
+  .wrapper {
+    max-width: 1400px;
+  }
+}

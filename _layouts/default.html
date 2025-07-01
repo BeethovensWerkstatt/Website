@@ -7,6 +7,9 @@
   <title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
   
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="{{ '/favicon.png' | relative_url }}">
+  
   <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 </head>
@@ -14,11 +17,141 @@
   {% include header.html %}
   
   <main class="page-content" aria-label="Content">
-    <div class="wrapper">
-      {{ content }}
-    </div>
+    {{ content }}
   </main>
 
   {% include footer.html %}
+  
+  <!-- Hero Carousel JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const carousel = document.querySelector('.hero-carousel');
+      const slides = document.querySelectorAll('.carousel-slide');
+      const indicators = document.querySelectorAll('.indicator');
+      const prevBtn = document.querySelector('.carousel-btn.prev');
+      const nextBtn = document.querySelector('.carousel-btn.next');
+      
+      if (!carousel) return; // Exit if no carousel found
+      
+      let currentSlide = 1;
+      const totalSlides = slides.length;
+      let autoAdvanceTimer;
+      
+      // Auto-advance interval (5 seconds)
+      const AUTO_ADVANCE_DELAY = 5000;
+      
+      function updateCarousel() {
+        // Update carousel class
+        carousel.className = 'hero-carousel slide-' + currentSlide;
+        
+        // Update indicators
+        indicators.forEach((indicator, index) => {
+          if (index + 1 === currentSlide) {
+            indicator.classList.add('active');
+          } else {
+            indicator.classList.remove('active');
+          }
+        });
+      }
+      
+      function nextSlide() {
+        currentSlide = currentSlide >= totalSlides ? 1 : currentSlide + 1;
+        updateCarousel();
+      }
+      
+      function prevSlide() {
+        currentSlide = currentSlide <= 1 ? totalSlides : currentSlide - 1;
+        updateCarousel();
+      }
+      
+      function goToSlide(slideNum) {
+        currentSlide = slideNum;
+        updateCarousel();
+      }
+      
+      function startAutoAdvance() {
+        autoAdvanceTimer = setInterval(nextSlide, AUTO_ADVANCE_DELAY);
+      }
+      
+      function stopAutoAdvance() {
+        clearInterval(autoAdvanceTimer);
+      }
+      
+      function restartAutoAdvance() {
+        stopAutoAdvance();
+        startAutoAdvance();
+      }
+      
+      // Event listeners
+      if (nextBtn) {
+        nextBtn.addEventListener('click', function() {
+          nextSlide();
+          restartAutoAdvance();
+        });
+      }
+      
+      if (prevBtn) {
+        prevBtn.addEventListener('click', function() {
+          prevSlide();
+          restartAutoAdvance();
+        });
+      }
+      
+      // Indicator clicks
+      indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', function() {
+          goToSlide(index + 1);
+          restartAutoAdvance();
+        });
+      });
+      
+      // Pause auto-advance on hover
+      carousel.addEventListener('mouseenter', stopAutoAdvance);
+      carousel.addEventListener('mouseleave', startAutoAdvance);
+      
+      // Touch/swipe support for mobile
+      let touchStartX = 0;
+      let touchEndX = 0;
+      
+      carousel.addEventListener('touchstart', function(e) {
+        touchStartX = e.changedTouches[0].screenX;
+        stopAutoAdvance();
+      });
+      
+      carousel.addEventListener('touchend', function(e) {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+        startAutoAdvance();
+      });
+      
+      function handleSwipe() {
+        const swipeThreshold = 50;
+        const diff = touchStartX - touchEndX;
+        
+        if (Math.abs(diff) > swipeThreshold) {
+          if (diff > 0) {
+            nextSlide(); // Swipe left - next slide
+          } else {
+            prevSlide(); // Swipe right - previous slide
+          }
+        }
+      }
+      
+      // Keyboard navigation
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'ArrowLeft') {
+          prevSlide();
+          restartAutoAdvance();
+        } else if (e.key === 'ArrowRight') {
+          nextSlide();
+          restartAutoAdvance();
+        }
+      });
+      
+      // Initialize
+      updateCarousel();
+      startAutoAdvance();
+    });
+  </script>
 </body>
 </html>

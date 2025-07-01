@@ -1,0 +1,32 @@
+// Beethovens Werkstatt - Global Variables (Original Color Scheme)
+
+// Colors from the original site
+$brand-color: #c93b22;          // Original red/burgundy accent color
+$brand-color-light: #d64933;    // Lighter version of brand color
+$brand-color-dark: #a12e1a;     // Darker version of brand color
+$text-color: #333;              // Dark text
+$background-color: #ffffff;     // Pure white background (original)
+$grey-color: #909090;           // Original grey from site
+$grey-color-light: #e8e8e8;     // Light gray
+$grey-color-dark: #666;         // Dark gray
+
+// Typography
+$base-font-family: "Open Sans", "Calibri", "Trebuchet MS", sans-serif;
+$heading-font-family: "Open Sans", "Calibri", "Trebuchet MS", sans-serif;
+$base-font-size: 16px;
+$base-line-height: 1.7;
+
+// Spacing
+$spacing-unit: 30px;
+
+// Breakpoints
+$mobile-width: 600px;
+
+// Component-specific variables
+$header-height: 56px;
+$dropdown-min-width: 220px;
+$border-radius: 8px;
+$transition-speed: 0.3s;
+
+// Z-index layers
+$z-dropdown: 1000;

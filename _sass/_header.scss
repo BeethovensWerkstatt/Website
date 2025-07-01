@@ -1,0 +1,196 @@
+// Beethovens Werkstatt - Header & Navigation (Original Style)
+
+.site-header {
+  background-color: $background-color;
+  border-bottom: 1px solid $grey-color-light;
+  min-height: 100px;
+  padding: 20px 0;
+  
+  .site-title {
+    display: inline-block;
+    
+    img {
+      height: 60px;
+      width: auto;
+    }
+    
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  
+  .site-nav {
+    position: relative;
+    float: right;
+    margin-top: 15px;
+    
+    .page-link {
+      color: $text-color;
+      font-family: $heading-font-family;
+      font-weight: 400;
+      font-size: 15px;
+      margin-left: 25px;
+      text-transform: uppercase;
+      
+      &:hover {
+        color: $brand-color;
+        text-decoration: none;
+      }
+    }
+    
+    // Dropdown menu styles
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      margin-left: 25px;
+      
+      .dropdown-toggle {
+        color: $text-color;
+        font-family: $heading-font-family;
+        font-weight: 400;
+        font-size: 15px;
+        text-decoration: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        
+        .dropdown-arrow {
+          font-size: 12px;
+          margin-left: 5px;
+          transition: transform $transition-speed ease;
+        }
+        
+        &:hover {
+          color: $brand-color;
+          
+          .dropdown-arrow {
+            transform: rotate(180deg);
+          }
+        }
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        min-width: $dropdown-min-width;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+        border: 1px solid $grey-color-light;
+        border-radius: 4px;
+        z-index: $z-dropdown;
+        padding: 8px 0;
+        
+        .dropdown-link {
+          color: $text-color;
+          padding: 10px 16px;
+          text-decoration: none;
+          display: block;
+          font-size: 14px;
+          transition: all $transition-speed ease;
+          
+          &:hover {
+            background-color: $brand-color;
+            color: white;
+          }
+        }
+      }
+      
+      &:hover .dropdown-content {
+        display: block;
+      }
+    }
+    
+    // Hide mobile navigation elements on desktop
+    .nav-trigger {
+      display: none;
+    }
+    
+    .menu-icon {
+      display: none;
+      
+      > svg path {
+        fill: white;
+      }
+    }
+    
+    // Mobile navigation
+    @media screen and (max-width: $mobile-width) {
+      .nav-trigger {
+        display: none;
+      }
+      
+      .menu-icon {
+        display: block;
+        float: right;
+        width: 36px;
+        height: 26px;
+        line-height: 0;
+        padding-top: 10px;
+        text-align: center;
+        
+        > svg {
+          width: 18px;
+          height: 15px;
+          
+          path {
+            fill: white;
+          }
+        }
+      }
+      
+      .nav-trigger:checked ~ .trigger {
+        display: block;
+      }
+      
+      .trigger {
+        clear: both;
+        display: none;
+        background-color: $brand-color;
+        border: 1px solid darken($brand-color, 10%);
+        border-radius: 5px;
+        
+        .page-link {
+          display: block;
+          padding: 5px 10px;
+          margin-left: 0;
+          
+          &:not(:last-child) {
+            margin-right: 0;
+          }
+        }
+        
+        .dropdown {
+          margin-left: 0;
+          
+          .dropdown-toggle {
+            display: block;
+            padding: 5px 10px;
+            border-bottom: 1px solid lighten($brand-color, 15%);
+          }
+          
+          .dropdown-content {
+            position: static;
+            display: block;
+            background-color: darken($brand-color, 5%);
+            box-shadow: none;
+            border: none;
+            border-radius: 0;
+            padding: 0;
+            
+            .dropdown-link {
+              color: $grey-color-light;
+              padding: 8px 20px;
+              font-size: 13px;
+              
+              &:hover {
+                background-color: lighten($brand-color, 15%);
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

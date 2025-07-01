@@ -4,7 +4,8 @@ title: Projekt
 permalink: /projekt/
 ---
 
-<div class="content-wrapper">
+<div class="wrapper">
+  <div class="content-wrapper">
 
 # {{ page.title }}
 
@@ -84,4 +85,5 @@ Durch die Verbindung von musikwissenschaftlicher Expertise und informatischen Me
 - **Automatisierte Vergleichsverfahren** zwischen Fassungen
 - **Neue Präsentationsformen** für digitale Musikeditionen
 
+  </div>
 </div>
