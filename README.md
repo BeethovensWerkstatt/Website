@@ -169,6 +169,100 @@ Website/
 - **Styling**: Edit SCSS files in `_sass/` directory
 - **Navigation**: Edit `navigation:` section in `_config.yml`
 
+## SPA Islands
+
+This site supports "SPA islands" - single-page application sections within the static site. These provide dynamic, interactive experiences with client-side routing while maintaining the benefits of static site generation.
+
+### Example: `/test1/`
+
+The `/test1/` section demonstrates an SPA island with:
+- ✅ Clean URLs: `/test1/section1/item2/`
+- ✅ No page reloads during navigation
+- ✅ Browser back/forward button support
+- ✅ Shareable permalinks
+- ✅ Dynamic content updates
+
+### How It Works
+
+1. **Main page**: `_pages/test1.md` - The SPA container
+2. **Router**: `assets/js/test1-router.js` - Client-side routing logic
+3. **404 Handler**: `404.html` - Catches sub-paths and redirects with query parameter
+4. **Styles**: `_sass/_spa.scss` - SPA-specific styling
+
+### Creating New SPA Islands
+
+To create a new SPA island (e.g., `/myapp/`):
+
+1. Create `_pages/myapp.md`:
+   ```markdown
+   ---
+   layout: default
+   title: "My App"
+   permalink: /myapp/
+   ---
+   
+   <div id="myapp-container">
+     <div id="myapp-content"></div>
+   </div>
+   
+   <script src="{{ '/assets/js/myapp-router.js' | relative_url }}"></script>
+   ```
+
+2. Create `assets/js/myapp-router.js` (use `test1-router.js` as template)
+
+3. Update `404.html` to handle `/myapp/*` paths:
+   ```javascript
+   if (path.startsWith('/myapp/') && path !== '/myapp/') {
+     const subPath = path.slice('/myapp'.length);
+     window.location.replace('/myapp/?_path=' + encodeURIComponent(subPath));
+     return;
+   }
+   ```
+
+### Important: Server Required
+
+**⚠️ SPA islands require a web server to function properly.**
+
+They do **not** work when opening HTML files directly (`file://` protocol) because:
+- The 404 redirect mechanism requires a server
+- History API has limitations with `file://`
+- Relative paths behave differently
+
+### Development Servers
+
+**Using Docker (recommended):**
+```bash
+./dev.sh
+```
+
+**Using Node.js http-server:**
+```bash
+# Install globally (one-time)
+npm install -g http-server
+
+# Run from _site directory
+./dev.sh build
+cd _site
+http-server -p 4000
+```
+
+**Using Python:**
+```bash
+# Python 3
+./dev.sh build
+cd _site
+python3 -m http.server 4000
+```
+
+**Using PHP:**
+```bash
+./dev.sh build
+cd _site
+php -S localhost:4000
+```
+
+Then visit [http://localhost:4000/test1/](http://localhost:4000/test1/)
+
 ## 📚 Documentation
 
 Comprehensive technical documentation is available in the [`docs/`](./docs/) folder:

@@ -16,6 +16,7 @@ This folder contains all technical documentation for the Beethovens Werkstatt Je
 
 ### 🧭 **Navigation & Structure**
 - **[NAVIGATION_SUMMARY.md](./NAVIGATION_SUMMARY.md)** - Site navigation and menu structure
+- **[SPA_ISLANDS.md](./SPA_ISLANDS.md)** - SPA islands implementation and usage guide
 
 ## 🚀 Quick Start
 

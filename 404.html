@@ -1,0 +1,31 @@
+---
+layout: default
+permalink: /404.html
+---
+
+<script>
+  // Redirect handler for SPA islands
+  (function() {
+    const path = window.location.pathname;
+    
+    // Handle /test1/* paths - redirect to SPA with path parameter
+    if (path.startsWith('/test1/') && path !== '/test1/') {
+      const subPath = path.slice('/test1'.length);
+      window.location.replace('/test1/?_path=' + encodeURIComponent(subPath));
+      return;
+    }
+    
+    // Add more SPA islands here as needed:
+    // if (path.startsWith('/test2/') && path !== '/test2/') {
+    //   const subPath = path.slice('/test2'.length);
+    //   window.location.replace('/test2/?_path=' + encodeURIComponent(subPath));
+    //   return;
+    // }
+  })();
+</script>
+
+<div style="text-align: center; padding: 4rem 2rem;">
+  <h1>404 - Page Not Found</h1>
+  <p>The page you're looking for doesn't exist.</p>
+  <p><a href="/">Return to homepage</a></p>
+</div>
