@@ -23,36 +23,37 @@ collections:
     output: true
     permalink: /:name/
 
-# Navigation with two-level dropdown menus
+# Navigation with original structure matching beethovens-werkstatt.de
 navigation:
-  - title: "Home"
+  - title: "HOME"
     url: "/"
-  - title: "Das Projekt"
+  - title: "PROJEKT"
     url: "/projekt/"
     submenu:
-      - title: "Überblick"
+      - title: "Projektübersicht"
         url: "/projekt/"
-      - title: "Über uns"
-        url: "/about/"
-      - title: "Kontakt"
-        url: "/contact/"
-  - title: "Module"
-    url: "/module/"
-    submenu:
-      - title: "Modul 1: Skizzen und Entwürfe"
-        url: "/module/#modul1"
-      - title: "Modul 2: Arbeitsmanuskripte"
-        url: "/module/#modul2"
-      - title: "Modul 3: Originalausgaben"
-        url: "/module/#modul3"
-  - title: "Werkzeuge"
-    url: "/tools/"
-    submenu:
-      - title: "Glossar"
-        url: "/glossar/"
+      - title: "Abschlussberichte"
+        url: "/abschlussberichte/"
       - title: "Dokumentation"
         url: "/documentation/"
-  - title: "Aktuelles"
+  - title: "MODULE"
+    url: "/module/"
+    submenu:
+      - title: "Modulübersicht"
+        url: "/module/"
+      - title: "Modul 1"
+        url: "/modul-1/"
+      - title: "Modul 2"
+        url: "/modul-2/"
+      - title: "Modul 3"
+        url: "/modul-3/"
+      - title: "Modul 4"
+        url: "/modul-4/"
+      - title: "Modul 5"
+        url: "/modul-5/"
+  - title: "GLOSSAR"
+    url: "/glossar/"
+  - title: "NEWS"
     url: "/news/"
 
 # Keep header_pages for compatibility - updated paths

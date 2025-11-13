@@ -1,43 +1,97 @@
-# File Organization Update - July 1, 2025
+# File Organization Update - November 2025
 
-## Changes Made
+## Major Cleanup - November 13, 2025
+
+### ✅ **Removed Duplicate and Unnecessary Files (9 files)**
+
+**Duplicate Content Pages Removed from Root:**
+- ❌ `about.md` (duplicate of `_pages/about.md`)
+- ❌ `contact.md` (duplicate of `_pages/contact.md`)
+- ❌ `documentation.md` (duplicate of `_pages/documentation.md`)
+- ❌ `glossar.md` (duplicate of `_pages/glossar.md`)
+- ❌ `module.md` (duplicate of `_pages/module.md`)
+- ❌ `news.md` (duplicate of `_pages/news.md`)
+- ❌ `projekt.md` (duplicate of `_pages/projekt.md`)
+- ❌ `tools.md` (duplicate of `_pages/tools.md`)
+
+**Unnecessary Scripts Removed:**
+- ❌ `download-fonts.sh` (fonts already downloaded and committed)
+
+**Benefits:**
+- Single source of truth for all content (in `_pages/`)
+- Cleaner root directory (only 8 essential config files)
+- No duplicate files to accidentally edit
+- Professional project structure
+
+## Previous Changes - July 2025
 
 ### ✅ **SCSS Structure Reorganization**
-- **Renamed**: `_sass/custom.scss` → `_sass/main.scss`
-- **Updated**: `assets/main.scss` to import "main" instead of "custom"
+- **Note**: `_sass/custom.scss` remains as main SCSS file (not renamed to main.scss)
+- **Updated**: `assets/main.scss` imports "custom"
 - **Benefits**: 
-  - More descriptive naming convention
-  - Clearer main entry point for SCSS architecture
-  - Consistent with standard Jekyll practices
+  - Modular SCSS architecture with 8 organized files
+  - Clear separation of concerns (variables, fonts, base, header, footer, carousel, components, responsive)
 
 ### ✅ **Content Organization** 
-- **Moved**: `index.md` → `_pages/index.md`
-- **Added**: `permalink: /` to homepage front matter
+- **Moved**: All content pages to `_pages/` folder
+- **Added**: Proper permalinks to all pages
 - **Benefits**:
-  - All content pages now centralized in `_pages/` folder
-  - Cleaner root directory structure
+  - All content pages centralized in `_pages/` folder
+  - Much cleaner root directory structure
   - Consistent organization pattern
 
 ## Updated File Structure
 
 ```
+Website/
+├── README.md                     # Main documentation
+├── Dockerfile                    # Docker configuration
+├── docker-compose.yml            # Docker Compose setup
+├── Gemfile & Gemfile.lock        # Ruby dependencies
+├── _config.yml                   # Jekyll configuration
+├── dev.sh                        # Development helper script
+├── .gitignore                    # Git ignore rules
+│
 ├── _sass/
-│   ├── main.scss            # ← Renamed from custom.scss
-│   ├── _variables.scss
-│   ├── _fonts.scss
-│   ├── _base.scss
-│   ├── _header.scss
-│   ├── _footer.scss
-│   ├── _carousel.scss
-│   ├── _components.scss
-│   └── _responsive.scss
-├── _pages/
-│   ├── index.md             # ← Moved from root directory
+│   ├── custom.scss               # Main SCSS entry point
+│   ├── _variables.scss           # Colors, fonts, breakpoints
+│   ├── _fonts.scss               # Font-face declarations
+│   ├── _base.scss                # Base styles
+│   ├── _header.scss              # Header & navigation (with dropdowns)
+│   ├── _footer.scss              # Footer styles
+│   ├── _carousel.scss            # Hero carousel
+│   ├── _components.scss          # Reusable components
+│   └── _responsive.scss          # Media queries
+│
+├── _pages/                       # ✅ ALL content pages here (13 pages)
+│   ├── index.md                  # Homepage with carousel
 │   ├── about.md
+│   ├── abschlussberichte.md      # Module reports
+│   ├── contact.md
+│   ├── documentation.md
+│   ├── glossar.md
+│   ├── modul-1.md through modul-5.md  # Individual modules
+│   ├── module.md                 # Module overview
+│   ├── news.md
 │   ├── projekt.md
-│   └── ...
-└── assets/
-    └── main.scss            # ← Updated import
+│   └── tools.md
+│
+├── _includes/                    # Template components
+├── _layouts/                     # Page layouts
+├── _posts/                       # Blog posts
+├── assets/
+│   ├── main.scss                 # Jekyll SCSS entry (imports custom.scss)
+│   ├── fonts/                    # Open Sans fonts (locally hosted)
+│   └── images/                   # Logo and partner logos
+│
+└── docs/                         # ✅ ALL documentation here (7 files)
+    ├── README.md                 # Documentation index
+    ├── CURRENT_STATUS.md         # Project status
+    ├── SCSS_ARCHITECTURE.md      # SCSS structure
+    ├── FONTS_SETUP.md            # Font configuration
+    ├── NAVIGATION_SUMMARY.md     # Navigation structure
+    ├── STYLING_SUMMARY.md        # Design system
+    └── REORGANIZATION_SUMMARY.md # This file
 ```
 
 ## Documentation Updates

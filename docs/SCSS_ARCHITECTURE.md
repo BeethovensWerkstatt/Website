@@ -6,7 +6,7 @@ The SCSS codebase has been reorganized into a modular architecture for better ma
 
 ```
 _sass/
-├── main.scss            # Main entry point - imports all modules
+├── custom.scss          # Main entry point - imports all modules
 ├── _variables.scss      # Global variables and configuration
 ├── _fonts.scss          # Font declarations (@font-face)
 ├── _base.scss           # Base styles, typography, and resets
@@ -15,14 +15,17 @@ _sass/
 ├── _carousel.scss       # Hero carousel styles and animations
 ├── _components.scss     # Homepage components (research areas, news)
 └── _responsive.scss     # Responsive design and media queries
+
+assets/
+└── main.scss            # Jekyll SCSS entry point (imports custom.scss)
 ```
 
 ## Module Descriptions
 
-### 1. `main.scss` - Main Entry Point
+### 1. `custom.scss` - Main Entry Point
 - Imports all modular SCSS files in the correct order
 - Acts as the central coordination file
-- Imported by `assets/main.scss`
+- Imported by `assets/main.scss` (Jekyll's SCSS entry point)
 
 ### 2. `_variables.scss` - Global Configuration
 - **Colors**: Brand colors, text colors, backgrounds
@@ -44,10 +47,12 @@ _sass/
 - Content wrapper styles
 
 ### 5. `_header.scss` - Navigation
-- Site header and title styles
-- Desktop navigation menu
-- Dropdown menu functionality
-- Mobile hamburger menu
+- Site header and title styles (70px height, refined spacing)
+- Desktop navigation menu with improved typography (12px, 600 weight, 1px letter-spacing)
+- Two-level dropdown menus (PROJEKT and MODULE sections)
+- Invisible hover bridge to prevent dropdown closing issues
+- Refined dropdown styling with subtle shadows and transitions
+- Mobile hamburger menu with touch-friendly navigation
 - Responsive navigation behavior
 
 ### 6. `_footer.scss` - Footer Styles

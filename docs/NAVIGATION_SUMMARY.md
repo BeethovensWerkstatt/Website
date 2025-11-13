@@ -7,24 +7,25 @@ Based on the analysis of https://beethovens-werkstatt.de, I have recreated the c
 ### 🧭 **Main Navigation Menu**
 
 #### **HOME** (`/`)
-- Homepage with hero section
+- Homepage with hero carousel (2 auto-advancing slides)
 - Research areas overview
 - Latest news and announcements
-- Project introduction in German
+- Project introduction
 
-#### **PROJEKT** (`/projekt/`)
-- Complete project description
-- Research approaches (Genetische Textkritik & Digitale Musikedition)
-- Cooperation partners
-- Project structure and goals
-- Technical innovations
+#### **PROJEKT** (`/projekt/`) **[DROPDOWN]**
+Main menu item with submenu:
+- **Projektübersicht** (`/projekt/`) - Complete project description
+- **Abschlussberichte** (`/abschlussberichte/`) - Module completion reports
+- **Dokumentation** (`/documentation/`) - Technical documentation
 
-#### **MODULE** (`/module/`)
-- **Modul 1**: Skizzen und Entwürfe (completed 2014-2017)
-- **Modul 2**: Arbeitsmanuskripte (completed 2017-2019) 
-- **Modul 3**: Originalausgaben und Revisionsdokumente (completed 2019-2022)
-- **Modul 4**: Spätwerk und komplexe Überlieferung (ongoing 2022-2030)
-- Methodological approaches and technical implementation
+#### **MODULE** (`/module/`) **[DROPDOWN]**
+Main menu item with submenu:
+- **Modulübersicht** (`/module/`) - Overview of all modules
+- **Modul 1** (`/modul-1/`) - Variantendarstellung in symphonischen, kammermusikalischen und vokalen Werken
+- **Modul 2** (`/modul-2/`) - Beethoven als Bearbeiter eigener Werke
+- **Modul 3** (`/modul-3/`) - Auf der Suche nach dem Werktext
+- **Modul 4** (`/modul-4/`) - Skizzenbuch-Edition
+- **Modul 5** (`/modul-5/`) - Kombination von Editionskonzepten
 
 #### **GLOSSAR** (`/glossar/`)
 - Comprehensive philological and technical terminology
@@ -33,30 +34,44 @@ Based on the analysis of https://beethovens-werkstatt.de, I have recreated the c
 - Digital humanities and MEI-related terminology
 
 #### **NEWS** (`/news/`)
-- Chronological listing of events and updates (2014-2025)
+- Chronological listing of events and updates
 - Conference presentations and workshops
 - Project milestones and publications
 - Academic activities and collaborations
 
-#### **ÜBER UNS** (`/about/`)
-- Detailed project background
-- Institutional partnerships
-- Research methodology
-- Academic significance
+### 🎨 **Visual Design & Styling**
 
-#### **KONTAKT** (`/contact/`)
-- Contact information for all locations
-- Partner institution details
-- Email and phone contacts
-- Funding acknowledgments
+**Navigation Typography:**
+- Font Size: 12px (compact and professional)
+- Font Weight: 600 (semi-bold for emphasis)
+- Letter Spacing: 1px (increased readability)
+- Text Transform: Uppercase
+- Text Color: #4a4a4a (soft dark gray)
+- Hover Color: #c93b22 (brand red)
+- Item Spacing: 35px between menu items
 
-### 🎨 **Visual Design Matching**
+**Dropdown Menus:**
+- Background: White with subtle shadow (0 4px 12px rgba(0,0,0,0.1))
+- Border: 1px solid #e0e0e0
+- Border Radius: 2px
+- Min Width: 180px
+- Hover Bridge: 5px invisible area to prevent closing issues
+- Link Padding: 10px 16px
+- Link Font Size: 11px
+- Link Color: #555, Hover: #c93b22
+- Hover Background: #f8f8f8
 
-**Colors & Typography:**
-- Header: Dark blue-gray background (#2c3e50) with white navigation
-- Links: Light blue (#3498db) 
-- Typography: Clean, academic font hierarchy
-- Responsive design for all devices
+**Header Layout:**
+- Height: 70px (compact)
+- Logo Height: 45px
+- Max Width: 1200px (centered)
+- Padding: 10px 0
+
+**Mobile Navigation:**
+- Hamburger menu for screens < 768px
+- Touch-friendly dropdown expansion
+- Background: Brand color (#c93b22)
+- Nested dropdown items with darker background
 
 **Layout Elements:**
 - Hero section with project description
