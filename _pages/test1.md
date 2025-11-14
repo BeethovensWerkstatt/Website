@@ -4,14 +4,7 @@ title: "Test 1 - SPA Island"
 permalink: /test1/
 ---
 
-<div id="spa-container">
-  <div id="spa-navigation">
-    <!-- Navigation will be rendered by JavaScript -->
-  </div>
-  
-  <div id="spa-content">
-    <!-- Content will be rendered by JavaScript -->
-  </div>
-</div>
+<!-- Web Component SPA Island -->
+<test1-app></test1-app>
 
-<script src="{{ '/assets/js/test1-router.js' | relative_url }}"></script>
+<script type="module" src="{{ '/assets/js/test1-spa/index.js' | relative_url }}"></script>

@@ -2,7 +2,16 @@
 
 ## Overview
 
-This Jekyll site supports "SPA Islands" - single-page application sections that exist within the static site. These sections provide rich, interactive experiences with client-side routing while maintaining the benefits of static site generation for the rest of the site.
+This Jekyll site supports "SPA Islands" - single-page application sections built with **Web Components** that exist within the static site. These sections provide rich, interactive experiences with client-side routing while maintaining the benefits of static site generation for the rest of the site.
+
+### Web Components
+
+The SPA islands use native **Web Components** (Custom Elements) for:
+- ✅ **Encapsulation** - Scoped behavior and styling
+- ✅ **Reusability** - Components can be composed and reused
+- ✅ **Native browser support** - No framework dependencies
+- ✅ **Standard HTML** - Use like `<test1-app>`, `<test1-nav>`, etc.
+- ✅ **Future-proof** - Built on web standards
 
 ## What is an SPA Island?
 
@@ -48,17 +57,26 @@ All these URLs:
 
 ```
 _pages/
-  test1.md                      # SPA page container
+  test1.md                      # SPA page (contains <test1-app>)
 
 assets/
   js/
-    test1-router.js             # Client-side router
+    test1-router.js             # Web Components + Router
 
 _sass/
-  _spa.scss                     # SPA styling
+  _spa.scss                     # SPA styling (for Web Components)
 
 404.html                        # Handles sub-path redirects
 ```
+
+### Web Components Defined
+
+The `test1-router.js` file defines these custom elements:
+
+- **`<test1-app>`** - Main application container
+- **`<test1-nav>`** - Navigation component
+- **`<test1-content>`** - Content display component
+- **`<test1-section>`** - Section wrapper component (optional)
 
 ### How It Works
 
@@ -133,23 +151,70 @@ title: "My App"
 permalink: /myapp/
 ---
 
-<div id="myapp-container">
-  <div id="myapp-nav"></div>
-  <div id="myapp-content"></div>
-</div>
+<myapp-root></myapp-root>
 
 <script src="{{ '/assets/js/myapp-router.js' | relative_url }}"></script>
 ```
 
-### Step 2: Create Router
+### Step 2: Define Web Components & Router
 
 `assets/js/myapp-router.js`:
 ```javascript
+// Define Web Components
+class MyAppRoot extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+      <div class="myapp-container">
+        <myapp-nav></myapp-nav>
+        <myapp-content></myapp-content>
+      </div>
+    `;
+    this.router = new MyAppRouter(this);
+    window.myAppRouter = this.router;
+  }
+}
+
+class MyAppNav extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+      <nav class="app-nav">
+        <a href="/" data-spa-link>Home</a>
+        <a href="/page1/" data-spa-link>Page 1</a>
+      </nav>
+    `;
+  }
+  
+  setActive(section) {
+    const links = this.querySelectorAll('a');
+    links.forEach(link => {
+      link.classList.toggle('active', 
+        link.getAttribute('href') === '/' + section + '/');
+    });
+  }
+}
+
+class MyAppContent extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = '<div class="content-wrapper"></div>';
+  }
+  
+  setContent(html) {
+    this.querySelector('.content-wrapper').innerHTML = html;
+  }
+}
+
+// Register components
+customElements.define('myapp-root', MyAppRoot);
+customElements.define('myapp-nav', MyAppNav);
+customElements.define('myapp-content', MyAppContent);
+
+// Router
 class MyAppRouter {
-  constructor() {
+  constructor(appElement) {
     this.basePath = '/myapp';
-    this.contentEl = document.getElementById('myapp-content');
-    this.navEl = document.getElementById('myapp-nav');
+    this.app = appElement;
+    this.contentEl = appElement.querySelector('myapp-content');
+    this.navEl = appElement.querySelector('myapp-nav');
     this.init();
   }
 
@@ -166,9 +231,17 @@ class MyAppRouter {
       this.route(this.getCurrentPath());
     }
 
-    // Handle back/forward
+    // Handle back/forward and clicks
     window.addEventListener('popstate', () => {
       this.route(this.getCurrentPath());
+    });
+    
+    document.addEventListener('click', (e) => {
+      const link = e.target.closest('a[data-spa-link]');
+      if (link) {
+        e.preventDefault();
+        this.navigate(link.getAttribute('href'));
+      }
     });
   }
 
@@ -189,12 +262,10 @@ class MyAppRouter {
 
   route(path) {
     // Your routing logic here
-    console.log('Routing to:', path);
+    this.contentEl.setContent(`<h1>Page: ${path}</h1>`);
+    this.navEl.setActive(path.split('/')[1] || 'home');
   }
 }
-
-// Initialize
-window.myAppRouter = new MyAppRouter();
 ```
 
 ### Step 3: Update 404.html

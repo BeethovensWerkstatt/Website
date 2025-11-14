@@ -1,20 +1,16 @@
 /**
- * Test1 SPA Router
- * 
- * A client-side router for the /test1/ section using the History API.
- * Provides SPA-like navigation with clean URLs and browser history support.
- * 
- * Requirements: Web server (does not work with file:// protocol)
+ * Test1Router
+ * Client-side router using the History API for the Test1 SPA island
  */
-
-class Test1Router {
-  constructor() {
+export class Test1Router {
+  constructor(appElement) {
     this.basePath = '/test1';
-    this.contentEl = document.getElementById('spa-content');
-    this.navEl = document.getElementById('spa-navigation');
+    this.app = appElement;
+    this.contentEl = appElement.querySelector('test1-content');
+    this.navEl = appElement.querySelector('test1-nav');
     
     if (!this.contentEl || !this.navEl) {
-      console.error('SPA container elements not found');
+      console.error('SPA components not found');
       return;
     }
     
@@ -35,16 +31,14 @@ class Test1Router {
       // Normal initial route
       this.route(this.getCurrentPath());
     }
-    
-    this.renderNavigation();
 
     // Handle browser back/forward buttons
     window.addEventListener('popstate', () => {
       this.route(this.getCurrentPath());
     });
 
-    // Intercept clicks on internal links
-    document.addEventListener('click', (e) => {
+    // Intercept clicks on SPA links (use delegation on app element)
+    this.app.addEventListener('click', (e) => {
       const link = e.target.closest('a[data-spa-link]');
       if (link) {
         e.preventDefault();
@@ -70,9 +64,14 @@ class Test1Router {
 
   /**
    * Navigate to a new path within the SPA
-   * @param {string} path - Path relative to basePath (e.g., '/section1/item2')
+   * @param {string} path - Path (can be absolute or relative to basePath)
    */
   navigate(path) {
+    // If path includes basePath, extract the relative portion
+    if (path.startsWith(this.basePath)) {
+      path = path.slice(this.basePath.length) || '/';
+    }
+    
     // Ensure path starts with /
     if (!path.startsWith('/')) {
       path = '/' + path;
@@ -92,8 +91,6 @@ class Test1Router {
    * @param {string} path - Current path
    */
   route(path) {
-    console.log('Routing to:', path);
-    
     // Parse path segments
     const segments = path.split('/').filter(s => s);
     
@@ -115,58 +112,46 @@ class Test1Router {
   }
 
   /**
-   * Render the navigation menu
-   */
-  renderNavigation() {
-    this.navEl.innerHTML = `
-      <nav class="spa-nav">
-        <a href="/" data-spa-link data-nav="home">Home</a>
-        <a href="/section1/" data-spa-link data-nav="section1">Section 1</a>
-        <a href="/section2/" data-spa-link data-nav="section2">Section 2</a>
-        <a href="/section3/" data-spa-link data-nav="section3">Section 3</a>
-      </nav>
-    `;
-  }
-
-  /**
    * Update active navigation item
    */
   updateActiveNav(section) {
-    const navLinks = this.navEl.querySelectorAll('a[data-nav]');
-    navLinks.forEach(link => {
-      const navSection = link.getAttribute('data-nav');
-      if (navSection === section) {
-        link.classList.add('active');
-      } else {
-        link.classList.remove('active');
-      }
-    });
+    this.navEl.setActive(section);
   }
 
   /**
    * Render home view
    */
   renderHome() {
-    this.contentEl.innerHTML = `
+    this.contentEl.setContent(`
       <div class="spa-view">
-        <h1>Test 1 - SPA Island Home</h1>
-        <p>Welcome to the Test 1 section. This is a single-page application (SPA) island within the Jekyll static site.</p>
+        <h1>Test 1 - SPA Island with Web Components</h1>
+        <p>Welcome to the Test 1 section. This is a single-page application (SPA) island built with Web Components.</p>
         
         <h2>Features</h2>
         <ul>
+          <li>✅ Native Web Components (no framework)</li>
           <li>✅ Clean URLs with History API</li>
           <li>✅ No page reloads on navigation</li>
           <li>✅ Browser back/forward support</li>
           <li>✅ Shareable permalinks</li>
-          <li>✅ Dynamic content updates</li>
+          <li>✅ Encapsulated, reusable components</li>
         </ul>
 
         <h2>Quick Links</h2>
         <ul>
-          <li><a href="/section1/" data-spa-link>Go to Section 1</a></li>
-          <li><a href="/section1/item1/" data-spa-link>Section 1 - Item 1</a></li>
-          <li><a href="/section2/example/" data-spa-link>Section 2 - Example</a></li>
-          <li><a href="/section3/demo/" data-spa-link>Section 3 - Demo</a></li>
+          <li><a href="/test1/section1/" data-spa-link>Go to Section 1</a></li>
+          <li><a href="/test1/section1/item1/" data-spa-link>Section 1 - Item 1</a></li>
+          <li><a href="/test1/section2/example/" data-spa-link>Section 2 - Example</a></li>
+          <li><a href="/test1/section3/demo/" data-spa-link>Section 3 - Demo</a></li>
+        </ul>
+
+        <h2>Web Components</h2>
+        <p>This island uses custom elements:</p>
+        <ul>
+          <li><code>&lt;test1-app&gt;</code> - Main application container</li>
+          <li><code>&lt;test1-nav&gt;</code> - Navigation component</li>
+          <li><code>&lt;test1-content&gt;</code> - Content container</li>
+          <li><code>&lt;test1-section&gt;</code> - Section wrapper</li>
         </ul>
 
         <h2>Try It Out</h2>
@@ -176,9 +161,10 @@ class Test1Router {
           <li>The URL changes in the browser bar</li>
           <li>You can use the back/forward buttons</li>
           <li>You can copy and share the URL</li>
+          <li>Components update smoothly</li>
         </ul>
       </div>
-    `;
+    `);
   }
 
   /**
@@ -187,19 +173,19 @@ class Test1Router {
   renderSection1(segments) {
     const item = segments[0] || null;
     
-    this.contentEl.innerHTML = `
+    this.contentEl.setContent(`
       <div class="spa-view">
         <h1>Section 1${item ? ': ' + item : ''}</h1>
         <p>This is Section 1 of the SPA. ${item ? 'You are viewing item: <strong>' + item + '</strong>' : 'Select an item below:'}</p>
 
         <h2>Items in Section 1</h2>
         <ul>
-          <li><a href="/section1/item1/" data-spa-link>Item 1</a></li>
-          <li><a href="/section1/item2/" data-spa-link>Item 2</a></li>
-          <li><a href="/section1/item3/" data-spa-link>Item 3</a></li>
+          <li><a href="/test1/section1/item1/" data-spa-link>Item 1</a></li>
+          <li><a href="/test1/section1/item2/" data-spa-link>Item 2</a></li>
+          <li><a href="/test1/section1/item3/" data-spa-link>Item 3</a></li>
         </ul>
 
-        <p><a href="/" data-spa-link>← Back to Home</a></p>
+        <p><a href="/test1/" data-spa-link>← Back to Home</a></p>
 
         ${item ? `
           <div class="item-details">
@@ -210,7 +196,7 @@ class Test1Router {
           </div>
         ` : ''}
       </div>
-    `;
+    `);
   }
 
   /**
@@ -219,31 +205,31 @@ class Test1Router {
   renderSection2(segments) {
     const item = segments[0] || null;
     
-    this.contentEl.innerHTML = `
+    this.contentEl.setContent(`
       <div class="spa-view">
         <h1>Section 2${item ? ': ' + item : ''}</h1>
         <p>This is Section 2 of the SPA. ${item ? 'Viewing: <strong>' + item + '</strong>' : 'Choose an option:'}</p>
 
         <h2>Options in Section 2</h2>
         <ul>
-          <li><a href="/section2/alpha/" data-spa-link>Alpha</a></li>
-          <li><a href="/section2/beta/" data-spa-link>Beta</a></li>
-          <li><a href="/section2/gamma/" data-spa-link>Gamma</a></li>
+          <li><a href="/test1/section2/alpha/" data-spa-link>Alpha</a></li>
+          <li><a href="/test1/section2/beta/" data-spa-link>Beta</a></li>
+          <li><a href="/test1/section2/gamma/" data-spa-link>Gamma</a></li>
         </ul>
 
-        <p><a href="/" data-spa-link>← Back to Home</a></p>
+        <p><a href="/test1/" data-spa-link>← Back to Home</a></p>
 
         ${item ? `
           <div class="item-details">
             <h3>Viewing: ${item}</h3>
             <p>Dynamic content for "${item}" in Section 2.</p>
-            <button onclick="router.navigate('/section3/${item}/')">
+            <button onclick="window.router.navigate('/test1/section3/${item}/')">
               Go to Section 3 with same item →
             </button>
           </div>
         ` : ''}
       </div>
-    `;
+    `);
   }
 
   /**
@@ -252,10 +238,10 @@ class Test1Router {
   renderSection3(segments) {
     const item = segments[0] || null;
     
-    this.contentEl.innerHTML = `
+    this.contentEl.setContent(`
       <div class="spa-view">
         <h1>Section 3${item ? ': ' + item : ''}</h1>
-        <p>This is Section 3 - demonstrating programmatic navigation.</p>
+        <p>This is Section 3 - demonstrating programmatic navigation and Web Components.</p>
 
         ${item ? `
           <div class="item-details">
@@ -266,35 +252,34 @@ class Test1Router {
 
         <h2>Interactive Demo</h2>
         <div class="demo-controls">
-          <button onclick="router.navigate('/section1/')">Navigate to Section 1</button>
-          <button onclick="router.navigate('/section2/demo/')">Navigate to Section 2 (demo)</button>
-          <button onclick="router.navigate('/')">Navigate to Home</button>
+          <button onclick="window.router.navigate('/test1/section1/')">Navigate to Section 1</button>
+          <button onclick="window.router.navigate('/test1/section2/demo/')">Navigate to Section 2 (demo)</button>
+          <button onclick="window.router.navigate('/test1/')">Navigate to Home</button>
         </div>
 
-        <p style="margin-top: 2em;"><a href="/" data-spa-link>← Back to Home</a></p>
+        <h2>Web Components Inspector</h2>
+        <p>Open your browser's DevTools and inspect the custom elements:</p>
+        <ul>
+          <li><code>&lt;test1-app&gt;</code></li>
+          <li><code>&lt;test1-nav&gt;</code></li>
+          <li><code>&lt;test1-content&gt;</code></li>
+        </ul>
+
+        <p style="margin-top: 2em;"><a href="/test1/" data-spa-link>← Back to Home</a></p>
       </div>
-    `;
+    `);
   }
 
   /**
    * Render 404 page
    */
   renderNotFound(path) {
-    this.contentEl.innerHTML = `
+    this.contentEl.setContent(`
       <div class="spa-view">
         <h1>404 - Not Found</h1>
         <p>The path <code>${path}</code> was not found in this SPA.</p>
-        <p><a href="/" data-spa-link>← Return to Home</a></p>
+        <p><a href="/test1/" data-spa-link>← Return to Home</a></p>
       </div>
-    `;
+    `);
   }
-}
-
-// Initialize router when DOM is ready
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', () => {
-    window.router = new Test1Router();
-  });
-} else {
-  window.router = new Test1Router();
 }
