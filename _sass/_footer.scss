@@ -1,12 +1,12 @@
 // Beethovens Werkstatt - Footer Styles (Original Dark Style)
 
-// Main footer with dark background
+// Main footer with dark background - match original exactly
 .site-footer-main {
   box-shadow: 0 3px 5px rgba(0,0,0,0.5) inset;
   background-color: #333333;
   background-image: linear-gradient(to bottom, #333333, #151515);
   color: #cccccc;
-  padding: $spacing-unit 0;
+  padding: 45px 0 40px;
   
   .footer-heading {
     color: white;
@@ -96,11 +96,11 @@
   }
 }
 
-// Bottom footer with partner logos
+// Bottom footer with partner logos - match original
 .site-footer-bottom {
   background-color: #151515;
   border-top: 1px solid $brand-color;
-  padding: 20px 0;
+  padding: 30px 0 28px;
   
   .partner-logos {
     display: flex;

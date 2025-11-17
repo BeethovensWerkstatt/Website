@@ -1,6 +1,7 @@
 {%- assign default_paths = site.pages | map: "path" -%}
 {%- assign page_paths = site.header_pages | default: default_paths -%}
 {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+
 <header class="site-header" role="banner">
 
   <div class="wrapper">
@@ -26,7 +27,7 @@
             {%- for nav_item in site.navigation -%}
               {%- if nav_item.submenu -%}
                 <div class="dropdown">
-                  <a class="page-link dropdown-toggle" href="{{ nav_item.url | relative_url }}">
+                  <a class="page-link dropdown-toggle{% if page.url == nav_item.url %} active{% endif %}" href="{{ nav_item.url | relative_url }}">
                     {{ nav_item.title | escape }}
                     <span class="dropdown-arrow">▼</span>
                   </a>
@@ -37,7 +38,7 @@
                   </div>
                 </div>
               {%- else -%}
-                <a class="page-link" href="{{ nav_item.url | relative_url }}">{{ nav_item.title | escape }}</a>
+                <a class="page-link{% if page.url == nav_item.url %} active{% endif %}" href="{{ nav_item.url | relative_url }}">{{ nav_item.title | escape }}</a>
               {%- endif -%}
             {%- endfor -%}
           {%- else -%}
