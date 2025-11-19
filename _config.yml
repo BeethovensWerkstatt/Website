@@ -23,7 +23,7 @@ collections:
     output: true
     permalink: /:name/
 
-# Navigation with original structure matching beethovens-werkstatt.de
+# Navigation
 navigation:
   - title: "HOME"
     url: "/"
@@ -32,10 +32,18 @@ navigation:
     submenu:
       - title: "Projektübersicht"
         url: "/projekt/"
-      - title: "Abschlussberichte"
-        url: "/abschlussberichte/"
-      - title: "Dokumentation"
-        url: "/documentation/"
+      - title: "Team"
+        url: "/team/"
+      - title: "Beteiligte Institutionen"
+        url: "/beteiligte-institutionen/"
+      - title: "Publikationen"
+        url: "/publikationen/"
+      - title: "Vorträge"
+        url: "/vortraege/"
+      - title: "Bibliographie"
+        url: "/bibliographie/"
+      - title: "Kontakt"
+        url: "/kontakt/"
   - title: "MODULE"
     url: "/module/"
     submenu:
@@ -53,18 +61,19 @@ navigation:
         url: "/modul-5/"
   - title: "GLOSSAR"
     url: "/glossar/"
+  - title: "TOOLS"
+    url: "/tools/"
   - title: "NEWS"
     url: "/news/"
 
-# Keep header_pages for compatibility - updated paths
+# header_pages specifies which pages to include in the header navigation
 header_pages:
   - index.md
   - _pages/projekt.md
   - _pages/module.md
   - _pages/glossar.md
+  - _pages/tools.md
   - _pages/news.md
-  - _pages/about.md
-  - _pages/contact.md
 
 # Exclude from processing
 exclude:

@@ -1,10 +1,6 @@
 # Navigation Structure - Beethovens Werkstatt Website
 
-## Complete Menu Recreation
-
-Based on the analysis of https://beethovens-werkstatt.de, I have recreated the complete navigation structure with all main pages and content.
-
-### 🧭 **Main Navigation Menu**
+## **Main Navigation Menu**
 
 #### **HOME** (`/`)
 - Homepage with hero carousel (2 auto-advancing slides)
@@ -15,8 +11,12 @@ Based on the analysis of https://beethovens-werkstatt.de, I have recreated the c
 #### **PROJEKT** (`/projekt/`) **[DROPDOWN]**
 Main menu item with submenu:
 - **Projektübersicht** (`/projekt/`) - Complete project description
-- **Abschlussberichte** (`/abschlussberichte/`) - Module completion reports
-- **Dokumentation** (`/documentation/`) - Technical documentation
+- **Team** 
+- **Beteiligte Institutionen**
+- **Publikationen**
+- **Vorträge**
+- **Bibliographie**
+- **Kontakt** 
 
 #### **MODULE** (`/module/`) **[DROPDOWN]**
 Main menu item with submenu:
@@ -28,10 +28,12 @@ Main menu item with submenu:
 - **Modul 5** (`/modul-5/`) - Kombination von Editionskonzepten
 
 #### **GLOSSAR** (`/glossar/`)
-- Comprehensive philological and technical terminology
+- Comprehensive philological terminology
 - Alphabetical listing of all project-specific terms
 - Definitions for genetic text criticism concepts
-- Digital humanities and MEI-related terminology
+
+#### **TOOLS** (`/tools/`)
+- listing of all project-specific tools
 
 #### **NEWS** (`/news/`)
 - Chronological listing of events and updates
@@ -101,4 +103,4 @@ All pages contain:
 - Minima theme customization
 - MEI and Digital Humanities focus
 
-The website now provides a complete recreation of the original Beethovens Werkstatt navigation and content structure while maintaining modern Jekyll functionality and cross-platform Docker development support.
+The website provides a complete recreation of the original Beethovens Werkstatt navigation and content structure while maintaining modern Jekyll functionality and cross-platform Docker development support.
