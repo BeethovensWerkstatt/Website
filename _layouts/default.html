@@ -17,7 +17,11 @@
   {% include header.html %}
   
   <main class="page-content" aria-label="Content">
-    {{ content }}
+    <div class="wrapper">
+      <div class="content-wrapper" markdown="1">
+        {{ content }}
+      </div>
+    </div>
   </main>
 
   {% include footer.html %}
