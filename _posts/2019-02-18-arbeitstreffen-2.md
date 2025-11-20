@@ -13,7 +13,7 @@ Des Weiteren wurde das Konzept des Roundtables zum Thema „Skizzen als Werkstat
 An einem Nachmittag besuchte Jens Dufner die Arbeitsgruppe, um über textgenetische Begrifflichkeiten des zweiten Moduls sowie über die aktuellen Arbeiten an der digitalen Anwendung zu diskutieren. Zudem nahm Agnes Seipelt, Mitarbeiterin des Projekts „[Digitale Musikanalyse mit den XML-Techniken der Music Encoding Initiative (MEI)] am Beispiel der Kompositionsstudien Anton Bruckners“, am Arbeitstreffen teil, mit dem Ziel den Austausch zwischen den Projekten zu fördern. Abschließend wurde mit Blick auf das dritte Modul zum Thema „Originalausgaben, variante Drucke und Beethovens Korrekturlisten“ geplant, welche Vorarbeiten parallel zum Abschluss des zweiten Moduls in Angriff genommen werden können.
 
 <figure>
-    <img src="2019-02-18_arbeitstreffen-2.jpg" alt="team" />
+    <img src="/assets/images/posts/2019/2019-02-18-arbeitstreffen-2.jpg" alt="team" />
     <figcaption>Arbeitstreffen vom 25.–28. Februar 2019 in der Landesmusikakademie Rheinland-Pfalz in Engers</figcaption>
 </figure>
 

@@ -12,6 +12,10 @@ markdown: kramdown
 highlighter: rouge
 show_excerpts: true
 
+# Language and locale settings
+lang: de
+locale: de_DE
+
 # Sass configuration
 sass:
   sass_dir: _sass

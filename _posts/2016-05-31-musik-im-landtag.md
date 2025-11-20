@@ -11,7 +11,7 @@ version: 1.0.0
 # Ludwig van Beethoven – Einblicke in die Komponisten-Werkstatt
 
 <figure>
-    <img src="2016-05-31_musik-im-landtag.jpg" alt="MusikImLandtag" />
+    <img src="/assets/images/posts/2016/2016-05-31-musik-im-landtag.jpg" alt="MusikImLandtag" />
     <figcaption>Photo: Ernst-Dieter Hehl</figcaption>
 </figure>
 

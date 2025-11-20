@@ -12,7 +12,7 @@ Einige in den Monaten Juli bis September durchgeführte Quellen-Autopsien haben 
 Das Team des Projekts bedankt sich bei Clemens Brenneis für die freundliche Unterstützung.
 
 <figure>
-    <img src="2018-10-11_die-erforschung-des-beispiels-zu-op-93-geht-weiter.jpg" alt="Detailaufnahme" />
+    <img src="/assets/images/posts/2018/2018-10-11-die-erforschung-des-beispiels-zu-op-93-geht-weiter.jpg" alt="Detailaufnahme" />
     <figcaption>Detailaufnahme des Bonner Blattes</figcaption>
 </figure>
 

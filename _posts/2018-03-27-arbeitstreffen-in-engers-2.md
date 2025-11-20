@@ -13,6 +13,6 @@ Im Mittelpunkt des Treffens standen jedoch die Arbeiten zum zweiten Modul: Erste
 Große Freude bereitete das 1500-teilige Puzzle einer Manuskriptseite aus Beethovens Werkniederschrift zum zweiten Satz des Streichquartetts op. 59/3 (S. 18, Beethoven-Haus Bonn BH 62), welches innerhalb des letzten Jahres mit großartiger (aber anonym bleibender) Unterstützung fertiggestellt wurde (siehe Foto).
 
 <figure>
-    <img src="2018-03-27_arbeitstreffen-in-engers-2.jpg" alt="Arbeitstreffen" />
+    <img src="/assets/images/posts/2018/2018-03-27-arbeitstreffen-in-engers-2.jpg" alt="Arbeitstreffen" />
     <figcaption>Arbeitstreffen in Engers</figcaption>
 </figure>
