@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Release: Rekonstruktion von „Notirungsbuch K“ als digitales Faksimile
+title: "Release: Rekonstruktion von „Notirungsbuch K“ als digitales Faksimile"
 date: 2022-12-17
 categories: news
 authors:

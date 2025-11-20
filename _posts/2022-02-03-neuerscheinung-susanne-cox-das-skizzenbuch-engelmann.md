@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Neuerscheinung: Susanne Cox, Das Skizzenbuch „Engelmann“
+title: "Neuerscheinung: Susanne Cox, Das Skizzenbuch „Engelmann“ "
 date: 2022-02-03
 categories: news
 authors:
