@@ -26,6 +26,9 @@ collections:
   pages:
     output: true
     permalink: /:name/
+  glossary:
+    output: true
+    permalink: /glossar/:name/
 
 # Navigation
 navigation:

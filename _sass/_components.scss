@@ -135,3 +135,200 @@
     }
   }
 }
+
+/* =====================================
+   GLOSSARY STYLING
+   ===================================== */
+
+// Glossary Filter Section
+.glossary-filter-section {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  border: 1px solid #e9ecef;
+
+  .filter-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+    display: block;
+  }
+
+  .filter-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    flex: 1;
+  }
+
+  .filter-btn {
+    background: #fff;
+    border: 2px solid #ddd;
+    color: #666;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+
+    &:hover {
+      border-color: $brand-color;
+      color: $brand-color;
+      background: #fff5f5;
+    }
+
+    &.active {
+      background: $brand-color;
+      border-color: $brand-color;
+      color: white;
+    }
+  }
+
+  .term-count {
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+    padding: 8px 12px;
+    background: white;
+    border-radius: 15px;
+    border: 1px solid #e9ecef;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 768px) {
+    .filter-controls {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .filter-buttons {
+      justify-content: center;
+    }
+
+    .term-count {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .search-controls {
+      margin-top: 15px;
+    }
+  }
+}
+
+// Search Controls
+.search-controls {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #e9ecef;
+
+  .search-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 8px;
+  }
+
+  .search-input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 40px 10px 15px;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: border-color 0.2s ease;
+    position: relative;
+
+    &:focus {
+      outline: none;
+      border-color: $brand-color;
+    }
+
+    &::placeholder {
+      color: #999;
+    }
+  }
+
+  .clear-search {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #999;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.2s ease, color 0.2s ease;
+
+    &:hover {
+      color: $brand-color;
+    }
+
+    &.visible {
+      opacity: 1;
+    }
+  }
+
+  position: relative;
+}
+
+// Glossary List Enhancements
+.glossary-list {
+  .glossary-item {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    
+    &.hidden {
+      display: none;
+    }
+
+    // Animation for filtering
+    &.filtering-out {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+
+    &.filtering-in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+// Enhanced module tags for better interaction
+.module-tags {
+  .category-tag {
+    position: relative;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, transparent 30%, rgba(255,255,255,0.1) 50%, transparent 70%);
+      border-radius: inherit;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
+  }
+}

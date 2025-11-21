@@ -1,0 +1,350 @@
+---
+layout: default
+---
+
+<article class="glossary-term">
+  <header class="glossary-header">
+    <h1 class="glossary-title">{{ page.title | escape }}</h1>
+    {% if page.author %}
+      <p class="glossary-meta">
+        von {{ page.author }}{% if page.version %} | Version {{ page.version }}{% endif %}{% if page.date %} | {{ page.date | date: "%d.%m.%Y" }}{% endif %}
+      </p>
+    {% endif %}
+  </header>
+
+  <div class="glossary-content">
+    {{ content }}
+  </div>
+
+  <footer class="glossary-footer">
+    <!-- Categories and Related Terms Section -->
+    {% assign current_term = page.title | downcase %}
+    {% assign related_terms = site.glossary | where_exp: "item", "item.title != page.title" %}
+    {% assign matching_terms = "" | split: "," %}
+    
+    {% comment %}
+    Durchsuche alle anderen Glossareinträge nach dem aktuellen Begriff:
+    - Konvertiere Seiteninhalt zu Kleinbuchstaben für case-insensitive Suche
+    - Prüfe ob der aktuelle Begriff (z.B. "ähnlichkeit") im Text enthalten ist
+    - Füge passende Begriffe zur matching_terms Liste hinzu
+    Performance-Hinweis: Bei vielen Einträgen (>100) kann dies die Build-Zeit verlängern (Optimierungsmöglichkeiten bei Bedarf prüfen)
+    {% endcomment %}
+    {% for term in related_terms %}
+      {% assign term_content = term.content | downcase %}
+      {% if term_content contains current_term %}
+        {% assign matching_terms = matching_terms | push: term %}
+      {% endif %}
+    {% endfor %}
+
+    {% if page.categories and page.categories.size > 0 or matching_terms.size > 0 %}
+      <div class="term-info-section">
+        {% if page.categories and page.categories.size > 0 %}
+          <div class="term-category">
+            <h4>{{ page.title }} <span class="muted-text">wurde entwickelt in:</span></h4>
+            {% for category in page.categories %}
+              {% assign module_url = category | downcase | replace: ' ', '-' %}
+              <a href="/{{ module_url }}/" class="category-tag-link">
+                <span class="category-tag">{{ category }}</span>
+              </a>{% unless forloop.last %}, {% endunless %}
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        {% if matching_terms.size > 0 %}
+          <div class="related-terms">
+            <h4>{{ page.title }} <span class="muted-text">wird verwendet in {{ matching_terms.size }} {% if matching_terms.size == 1 %}Glossarbeitrag{% else %}Glossarbeiträgen{% endif %}:</span></h4>
+            
+            <div class="related-terms-compact">
+              {% for term in matching_terms %}
+                <a href="{{ term.url | relative_url }}" class="related-term-link"><strong>{{ term.title }}</strong></a>{% unless forloop.last %}, {% endunless %}
+              {% endfor %}
+            </div>
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+    {% if page.doi_article or page.doi_version or page.doi_overview %}
+      <div class="citation-box">
+        <h3>Zitierhinweis</h3>
+        <div class="citation-content">
+          <p><strong>{{ page.author }}:</strong> „{{ page.title }}"{% if page.version %}, Version {{ page.version }}{% endif %}{% if page.date %} ({{ page.date | date: "%d.%m.%Y" }}){% endif %}, in: Beethovens Werkstatt - Glossar, <a href="https://beethovens-werkstatt.de{{ page.url }}" target="_blank">https://beethovens-werkstatt.de{{ page.url }}</a></p>
+          
+          {% if page.doi_version or page.doi_overview %}
+            <div class="doi-links">
+              {% if page.doi_version %}
+                <p>DOI der Version {{ page.version }}: <a href="https://doi.org/{{ page.doi_version }}" target="_blank">{{ page.doi_version }}</a></p>
+              {% endif %}
+              {% if page.doi_overview %}
+                <p>DOI aller Versionen: <a href="https://doi.org/{{ page.doi_overview }}" target="_blank">{{ page.doi_overview }}</a></p>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+
+    {% if page.tags and page.tags.size > 0 %}
+      <div class="glossary-tags">
+        <strong>Schlagwörter:</strong>
+        {% for tag in page.tags %}
+          <span class="tag">{{ tag }}</span>{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <div class="glossary-navigation">
+      <a href="/glossar/" class="back-to-glossary">← Zurück zum Glossar</a>
+    </div>
+  </footer>
+</article>
+
+<style>
+/* Glossary-specific styling */
+.glossary-term {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.glossary-header {
+  border-bottom: 2px solid #c93b22;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.glossary-title {
+  color: #c93b22;
+  font-size: 2.5em;
+  margin-bottom: 0.5rem;
+}
+
+.glossary-meta {
+  color: #666;
+  font-style: italic;
+  margin: 0;
+}
+
+.glossary-content {
+  line-height: 1.7;
+  font-size: 1.1em;
+}
+
+.glossary-content p {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.glossary-content h2 {
+  color: #c93b22;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+/* Term Info Section */
+.term-info-section {
+  background: #fff;
+  border: 2px solid #c93b22;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.term-category {
+  margin-bottom: 1.5rem;
+}
+
+.related-terms {
+  border-top: 1px solid #e0d6d5;
+  padding-top: 1.5rem;
+}
+
+.term-category h4,
+.related-terms h4 {
+  color: #333;
+  margin: 0 0 0.8rem 0;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.muted-text {
+  color: #666;
+  font-weight: normal;
+}
+
+.related-description {
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.related-terms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.8rem;
+}
+
+.related-terms-compact {
+  line-height: 1.6;
+  margin-top: 0.8rem;
+}
+
+.related-term-link {
+  color: #c93b22;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.related-term-link:hover {
+  text-decoration: underline;
+  color: #a12e1a;
+}
+
+.more-terms {
+  margin-top: 1rem;
+  border-top: 1px solid #e0d6d5;
+  padding-top: 1rem;
+}
+
+.more-terms summary {
+  color: #c93b22;
+  cursor: pointer;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+.more-terms summary:hover {
+  color: #a12e1a;
+}
+
+.related-term-card {
+  display: block;
+  background: white;
+  border: 1px solid #e0d6d5;
+  border-radius: 5px;
+  padding: 0.8rem;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.2s ease;
+}
+
+.related-term-card:hover {
+  background: #c93b22;
+  color: white;
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(201, 59, 34, 0.2);
+}
+
+.related-term-card strong {
+  display: block;
+  color: #c93b22;
+  margin-bottom: 0.3rem;
+}
+
+.related-term-card:hover strong {
+  color: white;
+}
+
+.term-module {
+  font-size: 0.8em;
+  color: #888;
+}
+
+.related-term-card:hover .term-module {
+  color: #fff;
+}
+
+.glossary-footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #ddd;
+}
+
+.category-tag {
+  background: #c93b22;
+  color: white;
+  padding: 0.2rem 0.6rem;
+  margin: 0.1rem;
+  border-radius: 3px;
+  font-size: 0.9em;
+  display: inline-block;
+}
+
+.category-tag-link {
+  text-decoration: none;
+}
+
+.category-tag-link:hover .category-tag {
+  background: #a12e1a;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(201, 59, 34, 0.3);
+}
+
+.citation-box {
+  background: #f9f2f1;
+  border: 1px solid #e0d6d5;
+  border-radius: 5px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.citation-box h3 {
+  color: #c93b22;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.2em;
+}
+
+.citation-content p {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.doi-links {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0d6d5;
+}
+
+.doi-links p {
+  margin-bottom: 0.3rem;
+  font-size: 0.9em;
+}
+
+.doi-links a {
+  color: #c93b22;
+  text-decoration: none;
+  font-family: monospace;
+}
+
+.doi-links a:hover {
+  text-decoration: underline;
+  color: #a12e1a;
+}
+
+.glossary-tags {
+  margin-bottom: 1.5rem;
+}
+
+.tag {
+  background: #f9f2f1;
+  color: #c93b22;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+.back-to-glossary {
+  color: #c93b22;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-to-glossary:hover {
+  text-decoration: underline;
+  color: #a12e1a;
+}
+</style>
