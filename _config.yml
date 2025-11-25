@@ -110,6 +110,9 @@ exclude:
   - vide-component-facsimile/package-lock.json
   - vide-component-facsimile/.gitignore
   - vide-component-facsimile/LICENSE
+  - vide-component-facsimile/src
+  - vide-component-facsimile/README.md
+  - vide-component-facsimile/dist/styles.scss
 
 # Default layout for different content types
 defaults:

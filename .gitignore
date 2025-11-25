@@ -16,9 +16,10 @@ npm-debug.log
 yarn-error.log
 package-lock.json
 
-# Submodule node_modules
+# Submodule
 vide-component-facsimile/node_modules/
 vide-component-facsimile/package-lock.json
+vide-component-facsimile/dist/
 
 # Docker
 .dockerignore

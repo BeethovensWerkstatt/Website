@@ -1,22 +1,21 @@
-# Copy facsimile component assets
-copy_facsimile_assets() {
-    print_status "Copying facsimile component CSS..."
-    # Build CSS in submodule if needed
+# Build facsimile component
+build_facsimile_component() {
+    print_status "Building facsimile component..."
+    # Build component in submodule
     if [ -d "vide-component-facsimile" ]; then
         (cd vide-component-facsimile && npm install --silent 2>/dev/null || true)
-        (cd vide-component-facsimile && npm run build:css 2>/dev/null || true)
-        cp vide-component-facsimile/dist/vide-facs.css assets/css/
+        (cd vide-component-facsimile && npm run build 2>/dev/null || true)
     fi
 }
 
-# Watch facsimile component assets for changes
-watch_facsimile_assets() {
-    print_status "Watching facsimile component CSS for changes..."
+# Watch facsimile component for changes
+watch_facsimile_component() {
+    print_status "Watching facsimile component for changes..."
     if ! command -v entr > /dev/null 2>&1; then
         print_error "entr is not installed. Please install it (e.g., 'apk add entr' in Alpine, 'brew install entr' on macOS)."
         return
     fi
-    ls vide-component-facsimile/dist/vide-facs.css 2>/dev/null | entr -r ./copy-facs-assets.sh
+    find vide-component-facsimile/src -type f 2>/dev/null | entr -r sh -c 'cd vide-component-facsimile && npm run build'
 }
 #!/bin/bash
 
@@ -92,7 +91,7 @@ show_help() {
 start_dev() {
     print_status "Building component styles..."
     build_component_styles
-    copy_facsimile_assets
+    build_facsimile_component
     print_status "Ensuring Ruby gems are installed..."
     check_docker
     $DC_CMD run --rm jekyll bundle install

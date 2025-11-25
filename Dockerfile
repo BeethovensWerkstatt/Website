@@ -16,10 +16,9 @@ RUN gem install bundler:2.5.23
 COPY --chown=jekyll:jekyll Gemfile* ./
 RUN bundle install --jobs 4 --retry 3
 COPY --chown=jekyll:jekyll . .
-# Build facsimile component CSS from submodule
+# Build facsimile component from submodule
 RUN cd vide-component-facsimile \
     && npm install \
-    && npm run build:css \
-    && cp dist/vide-facs.css /srv/jekyll/assets/css/
+    && npm run build
 EXPOSE 4000 35729
 CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0", "--livereload", "--force_polling"]
