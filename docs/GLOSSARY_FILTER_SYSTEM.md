@@ -2,7 +2,7 @@
 
 ## Übersicht
 
-Das Glossar Filter System bietet eine umfassende Lösung für das Filtern und Durchsuchen von Glossarbegriffen in der "Beethovens Werkstatt" Website. Das System unterstützt sowohl modulbasierte Filterung als auch Textsuche.
+Das Glossar Filter System bietet eine umfassende Lösung für das Filtern und Durchsuchen von Glossarbegriffen in der "Beethovens Werkstatt" Website. Das System unterstützt modulbasierte Filterung, alphabetische Navigation und Textsuche mit kombinierter Filterfunktionalität.
 
 ## Features
 
@@ -13,15 +13,26 @@ Das Glossar Filter System bietet eine umfassende Lösung für das Filtern und Du
 
 ### 2. Textsuche
 - **Live-Suche**: Sucht in Echtzeit durch Titel und Definitionen
-- **Kombinierte Filter**: Module und Textsuche können gemeinsam verwendet werden
+- **Kombinierte Filter**: Alle drei Filtertypen können gemeinsam verwendet werden
 - **Clear Button**: Schnelles Löschen der Sucheingabe
 - **Escape-Taste**: Alternative zum Löschen der Suche
 
-### 3. User Experience
+### 3. Alphabetische Navigation (NEW!)
+- **A-Z Buttons**: Direkte Navigation zu Begriffen nach Anfangsbuchstaben
+- **Deutsche Umlaute**: Automatische Zuordnung (Ä→A, Ö→O, Ü→U, ß→S)
+- **Intelligente Deaktivierung**: Buttons ohne verfügbare Begriffe werden ausgegraut
+- **"Alle" Button**: Zurücksetzen der alphabetischen Filterung
+
+### 4. Kombinierte Filterung
+- **Triple-Filter**: Module + Alphabet + Text können gleichzeitig verwendet werden
+- **UND-Verknüpfung**: Alle Filter müssen erfüllt sein
+- **Live-Updates**: Sofortige Anpassung bei Filteränderungen
+
+### 5. User Experience
 - **Live Counter**: Zeigt aktuelle Anzahl sichtbarer Begriffe
-- **Smooth Animations**: Übergangseffekte beim Ein-/Ausblenden
-- **Responsive Design**: Optimiert für Desktop und Mobile
 - **Deutsche Lokalisierung**: Singular/Plural-Behandlung ("Begriff"/"Begriffe")
+- **Responsive Design**: Optimiert für Desktop und Mobile
+- **Performance**: Optimiert für 100+ Einträge
 
 ## Technische Implementierung
 
@@ -38,6 +49,14 @@ Das Glossar Filter System bietet eine umfassende Lösung für das Filtern und Du
        </div>
        <div class="term-count">...</div>
      </div>
+     
+     <div class="filter-label">Alphabetische Navigation:</div>
+     <div class="alphabet-navigation">
+       <button class="alphabet-btn active" data-letter="all">Alle</button>
+       <button class="alphabet-btn" data-letter="A">A</button>
+       <!-- A-Z buttons -->
+     </div>
+     
      <div class="search-controls">
        <input type="text" id="glossary-search" class="search-input" placeholder="Begriff suchen...">
        <button class="clear-search" id="clear-search">&times;</button>
@@ -47,6 +66,7 @@ Das Glossar Filter System bietet eine umfassende Lösung für das Filtern und Du
 
 2. **CSS Styling** (`_sass/_components.scss`)
    - Filter Button Design mit Hover/Active States
+   - Alphabetische Navigation mit Grid-Layout
    - Responsive Layout mit Mobile-First Ansatz
    - Smooth Transitions für alle Interaktionen
    - Search Input Styling mit integriertem Clear Button
