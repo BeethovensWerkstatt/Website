@@ -137,11 +137,11 @@
 }
 
 /* =====================================
-   GLOSSARY STYLING
+   FILTER SYSTEM STYLING (für News und Glossar)
    ===================================== */
 
-// Glossary Filter Section
-.glossary-filter-section {
+// Generic Filter Section
+.filter-section {
   background: #f8f9fa;
   padding: 20px;
   border-radius: 8px;
@@ -296,8 +296,80 @@
   }
 }
 
-// Alphabetical Navigation
+// Secondary Navigation (Year/Alphabet)
+.secondary-navigation {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #e9ecef;
+
+  .secondary-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 10px;
+  }
+
+  .secondary-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    align-items: center;
+  }
+
+  .secondary-btn {
+    @extend %button-base;
+    border: 1px solid #ddd;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    min-width: 32px;
+    text-align: center;
+
+    &.disabled {
+      background: #f8f9fa;
+      color: #ccc;
+      border-color: #e9ecef;
+      cursor: not-allowed;
+
+      &:hover {
+        background: #f8f9fa;
+        color: #ccc;
+        border-color: #e9ecef;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .secondary-buttons {
+      justify-content: center;
+    }
+
+    .secondary-btn {
+      min-width: 28px;
+      padding: 4px 8px;
+      font-size: 12px;
+    }
+  }
+}
+
+// Legacy support - redirect old classes to new ones
+.glossary-filter-section {
+  @extend .filter-section;
+}
+
 .alphabet-navigation {
+  @extend .secondary-navigation;
+  
+  .alphabet-label {
+    @extend .secondary-label;
+  }
+  
+  .alphabet-buttons {
+    @extend .secondary-buttons;
+  }
+  
+  .alphabet-btn {
+    @extend .secondary-btn;
   margin-top: 20px;
   padding-top: 15px;
   border-top: 1px solid #e9ecef;
@@ -396,6 +468,7 @@
       opacity: 1;
     }
   }
+}
 }
 
 // Filter Results Counter as Button
@@ -498,5 +571,20 @@
   
   .breadcrumb-item + .breadcrumb-item::before {
     margin: 0 0.3rem;
+  }
+}
+
+/* Notice Box - Generic styling for info boxes */
+.notice {
+  background: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1.5rem 0 2rem 0;
+  font-size: 0.95em;
+  color: #495057;
+  
+  strong {
+    color: #c93b22;
   }
 }

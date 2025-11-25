@@ -8,12 +8,12 @@ permalink: /glossar/
 
 Die hier vorgestellten philologischen Begriffe geben den aktuellen Stand der projektspezifischen Terminologie von Beethovens Werkstatt wieder. Die Begriffe sollen für weitere Forschung nutzbar gemacht und zur Diskussion gestellt werden. Oftmals konnte auf bereits vorhandenes philologisches Vokabular zurückgegriffen werden, wobei die Definitionen gegebenenfalls erweitert und modifiziert werden mussten. Mitunter ergab sich die Notwendigkeit, neue Begriffe einzuführen, um Sachverhalte klar benennen zu können.
 
-<div class="glossary-notice">
+<div class="notice">
 <strong>Hinweis:</strong> Im Zuge des ständigen Erkenntnisgewinns können sich einzelne Definitionen verändern und neue hinzutreten.
 </div>
 
 <!-- Filter Section -->
-<div class="glossary-filter-section">
+<div class="filter-section">
   <div class="filter-label">Filter nach Modulen:</div>
   <div class="filter-controls">
     <div class="filter-buttons">
@@ -27,36 +27,36 @@ Die hier vorgestellten philologischen Begriffe geben den aktuellen Stand der pro
   </div>
   
   <!-- Alphabetical Jump Navigation -->
-  <div class="alphabet-navigation">
-    <div class="alphabet-label">Anfangsbuchstabe:</div>
-    <div class="alphabet-buttons">
-      <button class="alphabet-btn active" data-letter="all">Alle</button>
-      <button class="alphabet-btn" data-letter="A">A</button>
-      <button class="alphabet-btn" data-letter="B">B</button>
-      <button class="alphabet-btn" data-letter="C">C</button>
-      <button class="alphabet-btn" data-letter="D">D</button>
-      <button class="alphabet-btn" data-letter="E">E</button>
-      <button class="alphabet-btn" data-letter="F">F</button>
-      <button class="alphabet-btn" data-letter="G">G</button>
-      <button class="alphabet-btn" data-letter="H">H</button>
-      <button class="alphabet-btn" data-letter="I">I</button>
-      <button class="alphabet-btn" data-letter="J">J</button>
-      <button class="alphabet-btn" data-letter="K">K</button>
-      <button class="alphabet-btn" data-letter="L">L</button>
-      <button class="alphabet-btn" data-letter="M">M</button>
-      <button class="alphabet-btn" data-letter="N">N</button>
-      <button class="alphabet-btn" data-letter="O">O</button>
-      <button class="alphabet-btn" data-letter="P">P</button>
-      <button class="alphabet-btn" data-letter="Q">Q</button>
-      <button class="alphabet-btn" data-letter="R">R</button>
-      <button class="alphabet-btn" data-letter="S">S</button>
-      <button class="alphabet-btn" data-letter="T">T</button>
-      <button class="alphabet-btn" data-letter="U">U</button>
-      <button class="alphabet-btn" data-letter="V">V</button>
-      <button class="alphabet-btn" data-letter="W">W</button>
-      <button class="alphabet-btn" data-letter="X">X</button>
-      <button class="alphabet-btn" data-letter="Y">Y</button>
-      <button class="alphabet-btn" data-letter="Z">Z</button>
+  <div class="secondary-navigation">
+    <div class="secondary-label">Anfangsbuchstabe:</div>
+    <div class="secondary-buttons">
+      <button class="secondary-btn active" data-letter="all">Alle</button>
+      <button class="secondary-btn" data-letter="A">A</button>
+      <button class="secondary-btn" data-letter="B">B</button>
+      <button class="secondary-btn" data-letter="C">C</button>
+      <button class="secondary-btn" data-letter="D">D</button>
+      <button class="secondary-btn" data-letter="E">E</button>
+      <button class="secondary-btn" data-letter="F">F</button>
+      <button class="secondary-btn" data-letter="G">G</button>
+      <button class="secondary-btn" data-letter="H">H</button>
+      <button class="secondary-btn" data-letter="I">I</button>
+      <button class="secondary-btn" data-letter="J">J</button>
+      <button class="secondary-btn" data-letter="K">K</button>
+      <button class="secondary-btn" data-letter="L">L</button>
+      <button class="secondary-btn" data-letter="M">M</button>
+      <button class="secondary-btn" data-letter="N">N</button>
+      <button class="secondary-btn" data-letter="O">O</button>
+      <button class="secondary-btn" data-letter="P">P</button>
+      <button class="secondary-btn" data-letter="Q">Q</button>
+      <button class="secondary-btn" data-letter="R">R</button>
+      <button class="secondary-btn" data-letter="S">S</button>
+      <button class="secondary-btn" data-letter="T">T</button>
+      <button class="secondary-btn" data-letter="U">U</button>
+      <button class="secondary-btn" data-letter="V">V</button>
+      <button class="secondary-btn" data-letter="W">W</button>
+      <button class="secondary-btn" data-letter="X">X</button>
+      <button class="secondary-btn" data-letter="Y">Y</button>
+      <button class="secondary-btn" data-letter="Z">Z</button>
     </div>
   </div>
   
@@ -110,10 +110,7 @@ Ersetzt Ä->AE, Ö->OE, Ü->UE, ß->SS für korrekte alphabetische Reihenfolge
       {% if term.categories and term.categories.size > 0 %}
         <div class="module-tags">
           {% for category in term.categories %}
-            {% assign module_url = category | downcase | replace: ' ', '-' %}
-            <a href="/{{ module_url }}/" class="category-tag-link">
-              <span class="category-tag">{{ category }}</span>
-            </a>{% unless forloop.last %}, {% endunless %}
+            <span class="category-tag">{{ category }}</span>{% unless forloop.last %}, {% endunless %}
           {% endfor %}
         </div>
       {% endif %}
@@ -126,20 +123,6 @@ Ersetzt Ä->AE, Ö->OE, Ü->UE, ß->SS für korrekte alphabetische Reihenfolge
 </div>
 
 <style>
-.glossary-notice {
-  background: #ffffff;
-  border: 1px solid #dee2e6;
-  border-radius: 5px;
-  padding: 1rem;
-  margin: 1.5rem 0 2rem 0;
-  font-size: 0.95em;
-  color: #495057;
-}
-
-.glossary-notice strong {
-  color: #c93b22;
-}
-
 .glossary-list {
   margin-top: 2rem;
 }
@@ -178,6 +161,11 @@ Ersetzt Ä->AE, Ö->OE, Ü->UE, ß->SS für korrekte alphabetische Reihenfolge
   color: #a12e1a;
 }
 
+/* Hidden items */
+.glossary-item.hidden {
+  display: none;
+}
+
 .short-definition {
   color: #666;
   margin: 0;
@@ -199,20 +187,6 @@ Ersetzt Ä->AE, Ö->OE, Ü->UE, ß->SS für korrekte alphabetische Reihenfolge
   border-radius: 3px;
   font-size: 0.8rem;
 }
-
-.category-tag-link {
-  text-decoration: none;
-}
-
-.category-tag-link:hover .category-tag {
-  background-color: #a12e1a;
-  transform: translateY(-1px);
-  box-shadow: 0 2px 4px rgba(201, 59, 34, 0.3);
-}
-
-.category-tag:hover {
-  background-color: #a12e1a;
-}
 </style>
 
 <script>
@@ -227,7 +201,7 @@ if (typeof window.GlossaryFilter === 'undefined') {
 class GlossaryFilter {
   constructor() {
     this.filterButtons = document.querySelectorAll('.filter-btn');
-    this.alphabetButtons = document.querySelectorAll('.alphabet-btn');
+    this.alphabetButtons = document.querySelectorAll('.secondary-btn[data-letter]');
     this.glossaryItems = document.querySelectorAll('.glossary-item');
     this.termCounter = document.querySelector('.term-count-number');
     this.totalCounter = document.querySelector('.total-count-number');
@@ -271,7 +245,7 @@ class GlossaryFilter {
     
     if (button.classList.contains('filter-btn')) {
       this.handleFilterClick(button);
-    } else if (button.classList.contains('alphabet-btn')) {
+    } else if (button.classList.contains('secondary-btn')) {
       this.handleAlphabetClick(button);
     }
   }
@@ -444,7 +418,7 @@ window.GlossaryFilter = GlossaryFilter;
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
   // Check if we're on a glossary page
-  const filterSection = document.querySelector('.glossary-filter-section');
+  const filterSection = document.querySelector('.filter-section');
   
   if (filterSection) {
     window.glossaryFilter = new window.GlossaryFilter();
