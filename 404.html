@@ -15,6 +15,13 @@ permalink: /404.html
       return;
     }
     
+    // Handle /facs/* paths - redirect to Digital Facsimile SPA
+    if (path.startsWith('/facs/') && path !== '/facs/') {
+      const subPath = path.slice('/facs'.length);
+      window.location.replace('/facs/?_path=' + encodeURIComponent(subPath));
+      return;
+    }
+    
     // Add more SPA islands here as needed:
     // if (path.startsWith('/test2/') && path !== '/test2/') {
     //   const subPath = path.slice('/test2'.length);

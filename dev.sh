@@ -1,3 +1,23 @@
+# Copy facsimile component assets
+copy_facsimile_assets() {
+    print_status "Copying facsimile component CSS..."
+    # Build CSS in submodule if needed
+    if [ -d "vide-component-facsimile" ]; then
+        (cd vide-component-facsimile && npm install --silent 2>/dev/null || true)
+        (cd vide-component-facsimile && npm run build:css 2>/dev/null || true)
+        cp vide-component-facsimile/dist/vide-facs.css assets/css/
+    fi
+}
+
+# Watch facsimile component assets for changes
+watch_facsimile_assets() {
+    print_status "Watching facsimile component CSS for changes..."
+    if ! command -v entr > /dev/null 2>&1; then
+        print_error "entr is not installed. Please install it (e.g., 'apk add entr' in Alpine, 'brew install entr' on macOS)."
+        return
+    fi
+    ls vide-component-facsimile/dist/vide-facs.css 2>/dev/null | entr -r ./copy-facs-assets.sh
+}
 #!/bin/bash
 
 # Jekyll Development Helper Script
@@ -37,6 +57,16 @@ check_docker() {
     fi
 }
 
+# Detect which docker compose command is available: prefer `docker compose` (plugin), fallback to `docker-compose`
+if command -v docker > /dev/null 2>&1 && docker compose version > /dev/null 2>&1; then
+    DC_CMD="docker compose"
+elif command -v docker-compose > /dev/null 2>&1; then
+    DC_CMD="docker-compose"
+else
+    print_error "Neither 'docker compose' nor 'docker-compose' was found. Please install Docker Desktop or docker-compose."
+    exit 1
+fi
+
 # Show help
 show_help() {
     echo "Jekyll Development Helper"
@@ -60,16 +90,41 @@ show_help() {
 
 # Start development server
 start_dev() {
-    print_status "Starting Jekyll development server..."
+    print_status "Building component styles..."
+    build_component_styles
+    copy_facsimile_assets
+    print_status "Ensuring Ruby gems are installed..."
     check_docker
-    docker-compose up --build jekyll
+    $DC_CMD run --rm jekyll bundle install
+    print_status "Starting Jekyll development server..."
+    $DC_CMD up --build jekyll
+}
+
+# Build component styles
+build_component_styles() {
+    # Check if npm is available
+    if ! command -v npm > /dev/null 2>&1; then
+        print_warning "npm not found - skipping component style builds"
+        return
+    fi
+    
+    # Build vide-facs styles
+    if [ -f "assets/js/vide-facs/package.json" ]; then
+        print_status "Building vide-facs component styles..."
+        (cd assets/js/vide-facs && npm install --silent && npm run build:css)
+    fi
+    
+    # Add more component builds here as needed
 }
 
 # Build production site
 build_site() {
+    print_status "Building component styles..."
+    build_component_styles
+    
     print_status "Building Jekyll site for production..."
     check_docker
-    docker-compose --profile build up --build build
+    $DC_CMD --profile build up --build build
     print_success "Site built to _site/ directory"
 }
 
@@ -79,7 +134,7 @@ clean_docker() {
     check_docker
     
     # Stop and remove containers
-    docker-compose down -v --remove-orphans
+    $DC_CMD down -v --remove-orphans
     
     # Remove dangling images
     if [[ $(docker images -f "dangling=true" -q) ]]; then
@@ -93,7 +148,7 @@ clean_docker() {
 rebuild_image() {
     print_status "Rebuilding Docker image..."
     check_docker
-    docker-compose build --no-cache
+    $DC_CMD build --no-cache
     print_success "Docker image rebuilt"
 }
 
@@ -101,14 +156,14 @@ rebuild_image() {
 open_shell() {
     print_status "Opening shell in Jekyll container..."
     check_docker
-    docker-compose run --rm jekyll /bin/sh
+    $DC_CMD run --rm jekyll /bin/sh
 }
 
 # Show logs
 show_logs() {
     print_status "Showing container logs..."
     check_docker
-    docker-compose logs -f jekyll
+    $DC_CMD logs -f jekyll
 }
 
 # Main script logic

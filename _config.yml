@@ -66,6 +66,8 @@ navigation:
         url: "/modul-4/"
       - title: "Modul 5"
         url: "/modul-5/"
+      - title: "VideApp"
+        url: "/facs/"
   - title: "GLOSSAR"
     url: "/glossar/"
   - title: "TOOLS"
@@ -81,6 +83,10 @@ header_pages:
   - _pages/glossar.md
   - _pages/tools.md
   - _pages/news.md
+
+# Include submodule source files in the site
+include:
+  - vide-component-facsimile
 
 # Exclude from processing
 exclude:
@@ -98,6 +104,12 @@ exclude:
   - Dockerfile
   - docker-compose.yml
   - .dockerignore
+  - vide-component-facsimile/.git
+  - vide-component-facsimile/node_modules
+  - vide-component-facsimile/package.json
+  - vide-component-facsimile/package-lock.json
+  - vide-component-facsimile/.gitignore
+  - vide-component-facsimile/LICENSE
 
 # Default layout for different content types
 defaults:
