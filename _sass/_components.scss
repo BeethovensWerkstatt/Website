@@ -435,3 +435,68 @@
     transform: translateY(-1px);
   }
 }
+
+/* Breadcrumb Navigation */
+.breadcrumb-nav {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+  padding: 0.75rem 0;
+  margin-bottom: 2rem;
+}
+
+.breadcrumb-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.breadcrumb {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+  align-items: center;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "›";
+  margin: 0 0.5rem;
+  color: #6c757d;
+  font-weight: bold;
+}
+
+.breadcrumb-item a {
+  color: #c93b22;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb-item a:hover {
+  color: #a12e1a;
+  text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+  color: #6c757d;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .breadcrumb-wrapper {
+    padding: 0 1rem;
+  }
+  
+  .breadcrumb {
+    font-size: 0.8rem;
+  }
+  
+  .breadcrumb-item + .breadcrumb-item::before {
+    margin: 0 0.3rem;
+  }
+}
