@@ -16,6 +16,11 @@
 <body>
   {% include header.html %}
   
+  <!-- Breadcrumb Navigation (skip for home page) -->
+  {% unless page.url == '/' or page.url == '/index.html' %}
+    {% include breadcrumb.html %}
+  {% endunless %}
+  
   <main class="page-content" aria-label="Content">
     <div class="wrapper">
       <div class="content-wrapper" markdown="1">
