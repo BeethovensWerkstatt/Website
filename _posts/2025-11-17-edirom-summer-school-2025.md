@@ -6,8 +6,8 @@ categories: news
 authors:
 - Beethovens Werkstatt
 version: 1.0.0
+topic: Lehre
 ---
-
 Bei der 16. Auflage der Edirom Summer School, die vom 8. bis 12. September 2025 in Paderborn stattfand, konnten sich die Teilnehmer:innen erneut in verschiedenen Kursen mit Themen rund um digitale Edition, Musikcodierung, XML-Formate und X-Technologien vertraut machen. Die Keynote am Montag hielt Jun.-Prof. Dr. Ulrike Henny-Krahmer zum Thema „Zarzuela, Sainete, Entremés: das komische Musiktheater in der digitalen Gattungsanalyse".
 
 Lisa Rosendahl und Richard Sänger unterrichteten den zweitägigen Kurs „MEI für Einsteiger:innen", der neben einer Einführung in die Codierung von Musiknotation mit MEI und in die Struktur von XML auch die Erfassung von Metadaten behandelte. In praktischen Übungen konnten die Teilnehmer:innen erste Codierungen erstellen und diskutieren, den Abschluss bildete ein unterhaltsames MEI-Quiz.

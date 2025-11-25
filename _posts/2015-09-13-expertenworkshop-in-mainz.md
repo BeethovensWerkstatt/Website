@@ -6,8 +6,8 @@ categories: news
 authors:
 - Beethovens Werkstatt
 version: 1.0.0
+topic: Projekt
 ---
-
 Vom 26. bis 27. November 2015 fand in der Akademie der Wissenschaften und der Literatur in Mainz ein Expertengespräch zum Thema <strong>Genetische Textkritik im Bereich Musik</strong> statt.
 Konkretisiert hatten sich die Pläne zu einem solchen interdisziplinären Austausch zu Arbeitsmethoden, Konzepten und digitalen Umsetzungsformen im Bereich der genetischen Textkritik während eines Arbeitstreffens der Projekt-Mitarbeiter im vorausgehenden Sommer – und erfreulicherweise folgten zahlreiche Experten aus Literatur- und Musikwissenschaft der Einladung, die einschlägigen Modelle und Erkenntnisse der beiden Disziplinen vor- bzw. zur Diskussion zu stellen und gleichzeitig die vom Projekt Beethovens Werkstatt eingeschlagenen Wege kritisch in den Blick zu nehmen.
 

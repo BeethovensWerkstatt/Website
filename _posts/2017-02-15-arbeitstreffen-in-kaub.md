@@ -6,8 +6,8 @@ categories: news
 authors:
 - Beethovens Werkstatt
 version: 1.0.0
+topic: Aktivitäten
 ---
-
 Die Mitarbeiter des Projekts Beethovens Werkstatt trafen sich vom 06.–09.03.2017 zu einem Arbeitstreffen in Kaub. Auf der Agenda standen neben den Abschlussarbeiten des ersten Moduls die Vorbereitungen und Planungen zum zweiten Modul.
 Zunächst wurden die Arbeitsüberhänge aus dem ersten Modul thematisiert, die mit einer Umstrukturierung der VideApp-Software eng verbundenen sind und eine gewisse Vorbereitung erfordern. Eine detaillierte Erläuterung zu den notwendigen Umbaumaßnahmen an der Software ist [hier] nachzulesen.
 Im JAMS erschien Ende 2016 eine Besprechung des Projekts Beethovens Werkstatt (Kristina Muxfeldt, Review: Beethovens Werkstatt, in: JAMS 69 (3), 2016, S. 855–868), die beim Arbeitstreffen ausführlich diskutiert wurde. Die enthaltenen Anregungen wie auch Feedback und Kritik aus anderen wissenschaftlichen Diskursen wie dem [Expertenkolloquium 2015] sind bei der Umstrukturierung der Website berücksichtigt worden.

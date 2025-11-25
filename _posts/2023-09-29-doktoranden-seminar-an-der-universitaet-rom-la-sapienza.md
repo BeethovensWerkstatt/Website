@@ -6,6 +6,6 @@ categories: news
 authors:
 - Beethovens Werkstatt
 version: 1.0.0
+topic: Lehre
 ---
-
 Am 28. September 2023 stellte Elisa Novara das Projekt Beethovens Werkstatt innerhalb ihrer Sitzung im Doktoranden-Kolloquium der Universität „La Sapienza“ in Rom vor. Dabei wurden die letzten Entwicklungen des Projektes geschildert und dargestellt.

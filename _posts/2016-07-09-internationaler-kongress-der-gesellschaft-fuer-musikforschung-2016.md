@@ -6,8 +6,8 @@ categories: news
 authors:
 - Beethovens Werkstatt
 version: 1.0.0
+topic: Vortrag
 ---
-
 Vom 14. bis 17. September fand der 16. Internationale Kongress der Gesellschaft für Musikforschung an der Johannes Gutenberg-Universität in Mainz statt. Bernhard R. Appel referierte in der Sektion „Zum Werken und Weben Max Regers - Quellen kompositorischen Schaffens im Diskurs“ über „Perspektiven der genetischen Textkritik“. Zudem berichtete Johannes Kepper im Rahmen des Symposions „Vom Werkverzeichnis zur genetischen Edition – Einsatz und Weiterentwicklung von internationalen Datenstandards für die Musikwissenschaft“ über Beethovens Werkstatt.
 Die Beiträge der GfM erscheinen bei [Schott Campus]. 
 

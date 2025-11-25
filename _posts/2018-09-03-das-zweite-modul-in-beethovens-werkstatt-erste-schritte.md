@@ -6,8 +6,8 @@ categories: news
 authors:
 - Beethovens Werkstatt
 version: 1.0.0
+topic: Aktivitäten
 ---
-
 „Beethoven als Bearbeiter eigener Werke“ lautet der Titel des zweiten Moduls, mit dem ein weiterer Aspekt des kompositorischen Denkens bei Beethoven durch die Kombination mit digitalen Methoden in neuartiger Weise erforscht werden soll. Variantenbildung war das Kernthema des ersten Moduls, dessen Ergebnisse auch in den jetzigen Arbeiten sichtbar werden. Denn Bearbeitungsmaßnahmen sind Teil des kompositorischen Alltags Beethovens und somit im weitesten Sinne Varianten auf einer Makroebene. Die im Glossar erarbeiteten Definitionen des ersten Moduls werden demnach nun ggf. um neue Aspekte ergänzt.
 Ziel des zweiten Moduls ist, neben der Entwicklung eines Werkzeugs zum weitgehend automatischen Vergleich von verschiedenen Fassungen eines Werks, das Erproben der Darstellungsmöglichkeiten von Ähnlichkeitsbeziehungen zwischen Fassungen sowie die Implementierung einer Audio-Komponente. Neben diesen Analysemöglichkeiten soll innerhalb der digitalen Darstellung der Werke auch eine musikalische Suchfunktion eingebaut werden – diese befindet sich allerdings noch in der Planungs- und Definitionsphase. Voraussetzung für die Entwicklung entsprechender Werkzeuge sind klar definierte methodische Ansätze, deren Gestaltung und Umsetzung – wie bereits festzustellen war – intensive Diskussionen erfordern.
 Ein erstes Werkzeug zum Fassungsvergleich und zur Visualisierung von Ähnlichkeitsbeziehungen befindet sich in der Entwicklungs- und Testphase und wird zeitnah auf unserer Webseite bereitgestellt. Eine integrierte Funktion soll die farbliche Hervorhebung von „Invarianz“ bzw. „Differenz“ und „Varianz“ (verschiedener Abstufungen) sein. Darüber hinaus werden eine Visualisierung der „rhythmischen Ähnlichkeiten bzw. Übereinstimmungen“ (hier vorerst als „event density“ = Ereignisdichte bezeichnet) und erste Ansätze einer automatischen harmonischen Analyse angestrebt.

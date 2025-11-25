@@ -6,8 +6,8 @@ categories: news
 authors:
 - Beethovens Werkstatt
 version: 1.0.0
+topic: Vortrag
 ---
-
 Vom 17. bis 20. Februar 2016 fand in Graz die 16. internationale Tagung der Arbeitsgemeinschaft für germanistische Edition statt. Federica Rovelli nahm mit einem Plenarvortag über das Thema „Revisionsprozesse in Beethovens Niederschriften der achten Symphonie op. 93“ teil.
 
 Weitere Informationen sind [hier] zu finden.

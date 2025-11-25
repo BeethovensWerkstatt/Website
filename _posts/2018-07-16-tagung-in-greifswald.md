@@ -6,8 +6,8 @@ categories: news
 authors:
 - Beethovens Werkstatt
 version: 1.0.0
+topic: Vortrag
 ---
-
 Am 21.09.2018 hält Federica Rovelli im Rahmen der Tagung „Neue Ansätze zur Skizzenforschung für die Musik des langen 19. Jahrhunderts“ einen Vortrag zum Thema „Die Beethoven-Skizzenforschung zwischen deiktischen Darstellungsstrategien und multiperspektivischen Vermittlungsformen“.
 Die Tagung findet am Alfried Krupp Wissenschaftskolleg Greifswald statt. Weitere Informationen finden Sie [hier].
 

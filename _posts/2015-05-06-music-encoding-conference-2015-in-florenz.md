@@ -6,8 +6,8 @@ categories: news
 authors:
 - Beethovens Werkstatt
 version: 1.0.0
+topic: Vortrag
 ---
-
 Vom 18. bis 21. Mai 2015 fand die jährliche Music Encoding Conference in Florenz statt.
 Alle Mitarbeiter des Projekts sowie die Projektleiter waren dort vertreten und beteiligten sich mit einem Vortrag mit dem Titel „Encoding Genetical Processes. Proposal for a Genetic Module in MEI“ und mit einem Poster zum Prototypen: „A Tool for Illustrating Genetic Processes“.
 Nach dem Besuch der MEI-Tutorials am Montag begann die Konferenz mit der keynote von Elena Pierazzo „Encoding the Code: the Tale of a Textual Impostor“. Am Dienstag präsentierten Johannes Kepper und Richard Sänger den aktuellen Entwurf des Modells zur Erfassung genetischer Prozesse in MEI. Dabei wurden Problemstellen in Manuskripten Beethovens dargestellt und in Bezug auf die Möglichkeiten des Codierens betrachtet. Die anschließende Diskussion im Plenum zeigte großes Interesse und offen gebliebene Fragen konnten bei der Posterpräsentation am Nachmittag geklärt werden.
