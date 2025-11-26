@@ -236,7 +236,7 @@ class GlossaryFilter {
     this.updateTermCount();
     this.setActiveButton('all');
     this.setActiveAlphabetButton('all');
-    this.updateAlphabetButtonStates();
+    this.updateAlphabetButtonStates('all');
   }
 
   handleButtonClick(event) {
@@ -255,6 +255,19 @@ class GlossaryFilter {
     this.setActiveButton(filterValue);
     this.applyAllFilters(filterValue, this.currentLetter, this.currentSearchTerm);
     this.currentFilter = filterValue;
+    
+    // Update alphabet button states based on current module filter
+    this.updateAlphabetButtonStates(filterValue);
+    
+    // Reset letter filter if current letter is now disabled
+    if (this.currentLetter !== 'all') {
+      const currentLetterButton = document.querySelector(`.secondary-btn[data-letter="${this.currentLetter}"]`);
+      if (currentLetterButton?.classList.contains('disabled')) {
+        this.setActiveAlphabetButton('all');
+        this.currentLetter = 'all';
+        this.applyAllFilters(filterValue, 'all', this.currentSearchTerm);
+      }
+    }
   }
 
   handleAlphabetClick(button) {
@@ -307,17 +320,27 @@ class GlossaryFilter {
     });
   }
 
-  updateAlphabetButtonStates() {
-    // Get all first letters of terms
+  updateAlphabetButtonStates(moduleFilter = 'all') {
+    // Get first letters of terms that match the current module filter
     const umlautMap = { 'Ä': 'A', 'Ö': 'O', 'Ü': 'U', 'ß': 'S' };
     const availableLetters = new Set(['all']);
     
     this.glossaryItems.forEach(item => {
-      const title = item.querySelector('h3')?.textContent?.trim();
-      if (title) {
-        let firstLetter = title.charAt(0).toUpperCase();
-        firstLetter = umlautMap[firstLetter] || firstLetter;
-        availableLetters.add(firstLetter);
+      // Check if item matches current module filter
+      let itemMatches = true;
+      if (moduleFilter !== 'all') {
+        const itemModules = item.dataset.modules?.split(',') || [];
+        itemMatches = itemModules.some(module => module.trim() === moduleFilter);
+      }
+      
+      // Only add letter if item matches the module filter
+      if (itemMatches) {
+        const title = item.querySelector('h3')?.textContent?.trim();
+        if (title) {
+          let firstLetter = title.charAt(0).toUpperCase();
+          firstLetter = umlautMap[firstLetter] || firstLetter;
+          availableLetters.add(firstLetter);
+        }
       }
     });
 
