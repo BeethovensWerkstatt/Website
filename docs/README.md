@@ -18,6 +18,9 @@ This folder contains all technical documentation for the Beethovens Werkstatt Je
 - **[NAVIGATION_SUMMARY.md](./NAVIGATION_SUMMARY.md)** - Site navigation and menu structure
 - **[SPA_ISLANDS.md](./SPA_ISLANDS.md)** - SPA islands implementation and usage guide
 
+### 📄 **Content Management**
+- **[PDF_GENERATION.md](./PDF_GENERATION.md)** - PDF export system for glossary articles (Zenodo archiving)
+
 ## 🚀 Quick Start
 
 1. **Project Overview**: Start with [CURRENT_STATUS.md](./CURRENT_STATUS.md)
@@ -35,7 +38,9 @@ docs/
 ├── DOCS_ORGANIZATION.md         # Documentation structure changes
 ├── STYLING_SUMMARY.md           # Design and styling guide
 ├── FONTS_SETUP.md               # Font management setup
-└── NAVIGATION_SUMMARY.md        # Navigation structure
+├── NAVIGATION_SUMMARY.md        # Navigation structure
+├── SPA_ISLANDS.md               # SPA islands implementation
+└── PDF_GENERATION.md            # PDF export for glossary articles
 ```
 
 ## 🔄 Maintenance
