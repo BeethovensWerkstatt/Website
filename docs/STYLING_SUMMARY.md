@@ -27,6 +27,36 @@
 - **Navigation**: Header navigation with proper page structure
 - **SEO**: Proper meta descriptions and site configuration
 
+### 5. Image Standards
+Consistent image implementation across the entire site:
+
+#### **Large Standalone Images (with captions)**
+```html
+<figure>
+    <img src="{{ '/assets/images/posts/image.jpg' | relative_url }}" alt="Description" />
+    <figcaption>Image Caption</figcaption>
+</figure>
+```
+- Used for: News articles, documentation images, standalone illustrations
+- Location: `/assets/images/posts/` for news articles
+
+#### **Small Inline Images (in text flow)**
+```html
+<img src="{{ '/assets/images/glossary/image.jpg' | relative_url }}" alt="Description" class="inline-image" />
+```
+- Used for: Musical notation examples, small diagrams within text
+- Location: `/assets/images/glossary/` for glossary images
+- CSS class: `.inline-image` provides proper inline styling
+- Behavior: Displays at ~1.2em height, aligned with text baseline
+
+#### **Image Organization**
+```
+assets/images/
+├── posts/           # News article images (organized by year)
+├── glossary/        # Glossary term images
+└── [logo files]     # Site logos and general images
+```
+
 ## Key Features
 - ✅ **Multi-architecture Docker support** (x86_64 and ARM64/Apple M1)
 - ✅ **Academic styling** matching the original Beethovens Werkstatt website
