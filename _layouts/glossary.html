@@ -50,6 +50,41 @@ layout: default
           </div>
         {% endif %}
 
+        {% comment %}
+        Analysiere ausgehende Links im aktuellen Artikel:
+        - Extrahiere alle Jekyll-Links vom Format {% link _glossary/[dateiname].md %}
+        - Zähle die Links und sammle die Ziel-Artikel
+        {% endcomment %}
+        {% assign outgoing_links = "" | split: "," %}
+        {% assign link_count = 0 %}
+        {% assign content_str = content | strip %}
+        
+        {% comment %}Suche nach Link-Pattern{% endcomment %}
+        {% assign glossary_files = site.glossary %}
+        {% for glossary_term in glossary_files %}
+          {% assign filename = glossary_term.path | split: "/" | last %}
+          {% assign link_pattern = "_glossary/" | append: filename %}
+          
+          {% if content_str contains link_pattern %}
+            {% if glossary_term.title != page.title %}
+              {% assign outgoing_links = outgoing_links | push: glossary_term %}
+              {% assign link_count = link_count | plus: 1 %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+
+        {% if outgoing_links.size > 0 %}
+          <div class="outgoing-links">
+            <h4>{{ page.title }} <span class="muted-text">verweist auf {{ outgoing_links.size }} {% if outgoing_links.size == 1 %}Glossarbeitrag{% else %}Glossarbeiträge{% endif %}:</span></h4>
+            
+            <div class="outgoing-links-compact">
+              {% for term in outgoing_links %}
+                <a href="{{ term.url | relative_url }}" class="outgoing-link"><strong>{{ term.title }}</strong></a>{% unless forloop.last %}, {% endunless %}
+              {% endfor %}
+            </div>
+          </div>
+        {% endif %}
+
         {% if matching_terms.size > 0 %}
           <div class="related-terms">
             <h4>{{ page.title }} <span class="muted-text">wird verwendet in {{ matching_terms.size }} {% if matching_terms.size == 1 %}Glossarbeitrag{% else %}Glossarbeiträgen{% endif %}:</span></h4>
@@ -156,8 +191,15 @@ layout: default
   padding-top: 1.5rem;
 }
 
+.outgoing-links {
+  border-top: 1px solid #e0d6d5;
+  padding-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .term-category h4,
-.related-terms h4 {
+.related-terms h4,
+.outgoing-links h4 {
   color: #333;
   margin: 0 0 0.8rem 0;
   font-size: 1.1em;
@@ -182,18 +224,21 @@ layout: default
   gap: 0.8rem;
 }
 
-.related-terms-compact {
+.related-terms-compact,
+.outgoing-links-compact {
   line-height: 1.6;
   margin-top: 0.8rem;
 }
 
-.related-term-link {
+.related-term-link,
+.outgoing-link {
   color: #c93b22;
   text-decoration: none;
   font-weight: 500;
 }
 
-.related-term-link:hover {
+.related-term-link:hover,
+.outgoing-link:hover {
   text-decoration: underline;
   color: #a12e1a;
 }
@@ -342,5 +387,14 @@ layout: default
 .back-to-glossary:hover {
   text-decoration: underline;
   color: #a12e1a;
+}
+
+/* Direct inline image styling */
+.inline-image {
+  display: inline;
+  height: 1.2em;
+  max-width: none;
+  vertical-align: baseline;
+  margin: 0 0.2em;
 }
 </style>
