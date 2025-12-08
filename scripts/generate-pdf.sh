@@ -159,7 +159,7 @@ CSS_EOF
 fi
 
 # Extract frontmatter data
-TITLE=$(awk '/^title:/ {gsub(/title: */, ""); print}' "$INPUT_FILE")
+TITLE=$(awk '/^title:/ {gsub(/title: */, ""); print}' "$INPUT_FILE" | sed 's/^"//; s/"$//')
 AUTHOR=$(awk '/^author:/ {gsub(/author: */, ""); print}' "$INPUT_FILE")
 VERSION=$(awk '/^version:/ {gsub(/version: */, ""); print}' "$INPUT_FILE")
 DATE=$(awk '/^date:/ {gsub(/date: */, ""); print}' "$INPUT_FILE")
@@ -216,13 +216,31 @@ while IFS= read -r line; do
 done < /tmp/temp_content.txt | \
 # Convert markdown links to HTML links  
 sed 's/\[\([^]]*\)\](\([^)]*\))/<a href="\2">\1<\/a>/g' | \
-# Convert markdown to HTML (basic)
-sed 's/^\# /\<h1\>/; s/^\#\# /\<h2\>/; s/$/\<\/h1\>/' | \
+# Convert markdown headings
+sed 's/^## \(.*\)$/<h2>\1<\/h2>/' | \
+sed 's/^# \(.*\)$/<h1>\1<\/h1>/' | \
+# Convert markdown formatting
 sed 's/\*\*\([^*]*\)\*\*/\<strong\>\1\<\/strong\>/g' | \
 sed 's/\*\([^*]*\)\*/\<em\>\1\<\/em\>/g' | \
-sed 's/^$/\<\/p\>\<p\>/' | \
-sed '1s/^/\<p\>/' | \
-sed '$s/$/\<\/p\>/' >> "$OUTPUT_FILE"
+# Convert empty lines to paragraph breaks and wrap non-empty lines in <p> tags
+awk '
+BEGIN { in_paragraph = 0 }
+/^$/ { 
+    if (in_paragraph) { print "</p>"; in_paragraph = 0 }
+    print ""
+    next
+}
+/^<h[12]>/ {
+    if (in_paragraph) { print "</p>"; in_paragraph = 0 }
+    print $0
+    next
+}
+{
+    if (!in_paragraph) { print "<p>"; in_paragraph = 1 }
+    print $0
+}
+END { if (in_paragraph) print "</p>" }
+' >> "$OUTPUT_FILE"
 
 # Close HTML and add citation
 cat >> "$OUTPUT_FILE" << EOF

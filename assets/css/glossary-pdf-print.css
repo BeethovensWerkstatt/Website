@@ -13,6 +13,7 @@ body {
 .glossary-header {
     padding-bottom: 1rem;
     margin-bottom: 2rem;
+    border-bottom: 2px solid #c93b22;
 }
 
 .glossary-title {
@@ -41,8 +42,6 @@ body {
 
 h1 {
     color: #c93b22;
-    border-bottom: 2px solid #c93b22;
-    padding-bottom: 0.5rem;
     font-size: 1.8em;
     margin-bottom: 1rem;
     margin-top: 2.5rem;
