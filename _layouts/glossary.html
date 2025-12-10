@@ -148,7 +148,22 @@ article.glossary-term .glossary-content p em a {
   <footer class="glossary-footer">
     <!-- Categories and Related Terms Section -->
     {% assign current_term = page.title | downcase %}
-    {% assign related_terms = site.glossary | where_exp: "item", "item.title != page.title" %}
+    
+    {% comment %}
+    Erzeuge eine Liste mit nur den neuesten Versionen aller Glossareinträge:
+    - Gruppiere Artikel nach Titel
+    - Wähle nur die neueste Version jedes Artikels aus
+    - Schließe die aktuelle Seite aus
+    {% endcomment %}
+    {% assign all_terms = site.glossary | group_by: "title" %}
+    {% assign latest_terms = "" | split: "," %}
+    {% for group in all_terms %}
+      {% unless group.name == page.title %}
+        {% assign latest_version = group.items | sort: "version" | last %}
+        {% assign latest_terms = latest_terms | push: latest_version %}
+      {% endunless %}
+    {% endfor %}
+    
     {% assign matching_terms = "" | split: "," %}
     
     {% comment %}
@@ -158,7 +173,7 @@ article.glossary-term .glossary-content p em a {
     - Füge passende Begriffe zur matching_terms Liste hinzu
     Performance-Hinweis: Bei vielen Einträgen (>100) kann dies die Build-Zeit verlängern (Optimierungsmöglichkeiten bei Bedarf prüfen)
     {% endcomment %}
-    {% for term in related_terms %}
+    {% for term in latest_terms %}
       {% assign term_content = term.content | downcase %}
       {% if term_content contains current_term %}
         {% assign matching_terms = matching_terms | push: term %}
@@ -220,7 +235,8 @@ article.glossary-term .glossary-content p em a {
             
             <div class="related-terms-compact">
               {% for term in matching_terms %}
-                <a href="{{ term.url | relative_url }}" class="related-term-link"><strong>{{ term.title }}</strong></a>{% unless forloop.last %}, {% endunless %}
+                {% assign term_slug = term.url | remove: '/glossar/' | split: '/' | first %}
+                <a href="/glossar/{{ term_slug }}/" class="related-term-link"><strong>{{ term.title }}</strong></a>{% unless forloop.last %}, {% endunless %}
               {% endfor %}
             </div>
           </div>
