@@ -8,7 +8,7 @@ date: 2021-12-06
 categories: [Modul 2]
 permalink: /glossar/aehnlichkeit/1.0.1/
 changes: "Links zu anderen Glossarartikeln ergänzt"
-doi_version: # TODO: DOI aktualisieren
+doi_version: # TODO: DOI aktualisieren für Version 1.0.1
 doi_overview: 10.5281/zenodo.14671460
 ---
 

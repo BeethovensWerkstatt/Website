@@ -176,6 +176,32 @@ cat > "$OUTPUT_FILE" << EOF
     <meta charset="utf-8">
     <title>$TITLE</title>
     <link rel="stylesheet" href="../../assets/css/glossary-pdf-print.css">
+    <style>
+/* Figure caption styling */
+.caption-container {
+    margin: 0.5rem 0 2rem 0;
+    padding: 0;
+}
+
+.figure-caption {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.9em;
+    color: #666;
+    margin: 0.5rem auto;
+    max-width: 80%;
+    line-height: 1.4;
+}
+
+.figure-caption a {
+    color: #c93b22;
+    text-decoration: none;
+}
+
+.figure-caption a:hover {
+    text-decoration: underline;
+}
+    </style>
 </head>
 <body>
     <article class="glossary-term">
@@ -216,8 +242,11 @@ while IFS= read -r line; do
         full_img_path="$PROJECT_ROOT$img_path"
         
         if [ -f "$full_img_path" ]; then
-            base64_img=$(base64 < "$full_img_path" | tr -d '\n')
-            echo "$line" | sed "s|IMAGE_PLACEHOLDER:$img_path|data:image/jpeg;base64,$base64_img|g"
+            # Convert to relative path instead of Base64
+            # Remove leading slash if present to avoid double slashes
+            clean_path="${img_path#/}"
+            relative_img_path="../../$clean_path"
+            echo "$line" | sed "s|IMAGE_PLACEHOLDER:$img_path|$relative_img_path|g"
         else
             echo "$line" | sed "s|IMAGE_PLACEHOLDER:$img_path|[BILD NICHT GEFUNDEN]|g"
         fi
@@ -246,7 +275,44 @@ while IFS= read -r line; do
         echo "$line"
     fi
 done < /tmp/temp_content.txt | \
-# Convert markdown links to HTML links  
+# Convert markdown images to HTML with relative paths
+python3 -c "
+import sys, re, os
+
+content = sys.stdin.read()
+
+def convert_markdown_image(match):
+    alt_text = match.group(1)
+    img_path = match.group(2)
+    
+    # Convert absolute paths to relative paths from the output/pdf/ directory
+    if img_path.startswith('/assets/'):
+        # Convert /assets/... to ../../assets/...
+        relative_path = '../../assets/' + img_path[8:]  # Remove /assets/ prefix
+    elif img_path.startswith('assets/'):
+        # Convert assets/... to ../../assets/...
+        relative_path = '../../' + img_path
+    elif img_path.startswith('/'):
+        # Handle other absolute paths
+        relative_path = '../..' + img_path
+    else:
+        # Already relative
+        relative_path = '../../' + img_path
+    
+    # Check if file exists
+    full_path = '$PROJECT_ROOT' + (img_path if img_path.startswith('/') else '/' + img_path)
+    
+    if os.path.exists(full_path):
+        return f'<div style=\"text-align: center; margin: 2rem 0; padding: 0 1rem;\"><img src=\"{relative_path}\" alt=\"{alt_text}\" style=\"max-width: 80%; height: auto; border: 1px solid #e0d6d5; border-radius: 4px;\" /></div>'
+    else:
+        return f'<p style=\"color: red;\">[BILD NICHT GEFUNDEN: {img_path}]</p>'
+
+# Convert markdown images ![alt](path) to HTML img tags with relative paths
+content = re.sub(r'!\[([^]]*)\]\(([^)]+)\)', convert_markdown_image, content)
+
+sys.stdout.write(content)
+" | \
+# Convert markdown links to HTML links (but not images anymore)
 sed 's/\[\([^]]*\)\](\([^)]*\))/<a href="\2">\1<\/a>/g' | \
 # Convert markdown headings
 sed 's/^## \(.*\)$/<h2>\1<\/h2>/' | \
@@ -254,24 +320,52 @@ sed 's/^# \(.*\)$/<h1>\1<\/h1>/' | \
 # Convert markdown formatting
 sed 's/\*\*\([^*]*\)\*\*/\<strong\>\1\<\/strong\>/g' | \
 sed 's/\*\([^*]*\)\*/\<em\>\1\<\/em\>/g' | \
-# Convert empty lines to paragraph breaks and wrap non-empty lines in <p> tags
+# Convert figure captions (em tags that start with "Abb.") to proper figure captions
+python3 -c "
+import sys, re
+
+content = sys.stdin.read()
+
+def convert_figure_caption(match):
+    caption_text = match.group(1)
+    return f'<figure class=\"caption-container\"><figcaption class=\"figure-caption\">{caption_text}</figcaption></figure>'
+
+# Convert em tags that start with 'Abb.' to figure captions
+content = re.sub(r'<em>(Abb\.[^<]*(?:<a[^>]*>[^<]*</a>[^<]*)*[^<]*)</em>', convert_figure_caption, content)
+
+sys.stdout.write(content)
+" | \
+# Convert markdown lists (lines starting with -)
 awk '
-BEGIN { in_paragraph = 0 }
+BEGIN { in_paragraph = 0; in_list = 0 }
 /^$/ { 
     if (in_paragraph) { print "</p>"; in_paragraph = 0 }
+    if (in_list) { print "</ul>"; in_list = 0 }
     print ""
     next
 }
 /^<h[12]>/ {
     if (in_paragraph) { print "</p>"; in_paragraph = 0 }
+    if (in_list) { print "</ul>"; in_list = 0 }
     print $0
     next
 }
+/^- / {
+    if (in_paragraph) { print "</p>"; in_paragraph = 0 }
+    if (!in_list) { print "<ul>"; in_list = 1 }
+    gsub(/^- /, "")
+    print "<li>" $0 "</li>"
+    next
+}
 {
-    if (!in_paragraph) { print "<p>"; in_paragraph = 1 }
+    if (in_list) { print "</ul>"; in_list = 0 }
+    if (!in_paragraph && !/^</) { print "<p>"; in_paragraph = 1 }
     print $0
 }
-END { if (in_paragraph) print "</p>" }
+END { 
+    if (in_paragraph) print "</p>"
+    if (in_list) print "</ul>"
+}
 ' >> "$OUTPUT_FILE"
 
 # Close HTML and add citation

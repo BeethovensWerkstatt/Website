@@ -8,7 +8,7 @@ date: 2021-12-06
 categories: [Modul 3]
 permalink: /glossar/aenderungsmassnamen-klassifizierung/1.0.1/
 changes: "Links zu anderen Glossarartikeln ergänzt"
-doi_version: # TODO: DOI für Version 1.0.0
+doi_version: # TODO: DOI für Version 1.0.1
 doi_overview: 10.5281/zenodo.17852805
 ---
 
