@@ -12,11 +12,98 @@ layout: default
     {% endif %}
   </header>
 
+  {% comment %}Check versions of this article{% endcomment %}
+  {% assign current_version = page.version %}
+  {% assign newer_version_found = false %}
+  {% assign newer_url = '' %}
+  {% assign newer_version = '' %}
+  {% assign older_versions_array = '' | split: ',' %}
+  
+  {% for glossary_page in site.glossary %}
+    {% if glossary_page.url contains '/glossar/' %}
+      {% if glossary_page.title == page.title and glossary_page.version and glossary_page.version != current_version %}
+        {% comment %}Found a related version{% endcomment %}
+        {% if glossary_page.version > current_version %}
+          {% assign newer_version_found = true %}
+          {% assign newer_url = glossary_page.url %}
+          {% assign newer_version = glossary_page.version %}
+        {% else %}
+          {% assign older_versions_array = older_versions_array | push: glossary_page %}
+        {% endif %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
+  {% comment %}Show disclaimer for archived versions at top{% endcomment %}
+  {% if newer_version_found %}
+    <div class="version-notice archived">
+      <strong>Archivierte Version:</strong> Dies ist Version {{ current_version }} dieses Artikels.
+      <br><a href="{{ newer_url }}">Zur aktuellen Version {{ newer_version }}</a>
+      <br><small>Diese Version wird zu Archivierungszwecken und für wissenschaftliche Zitate beibehalten.</small>
+    </div>
+  {% endif %}
+
   <div class="glossary-content">
     {{ content }}
   </div>
 
+</article>
+
 <style>
+.version-notice {
+  padding: 1rem 1.25rem !important;
+  margin: 1.5rem 0 2rem 0 !important;
+  border-radius: 0 8px 8px 0 !important;
+  font-size: 0.9em !important;
+  border: 1px solid !important;
+  border-left: 4px solid !important;
+}
+
+.version-notice.archived {
+  background: linear-gradient(135deg, #fff3cd 0%, #fef8e7 100%) !important;
+  border-color: #ffeaa7 !important;
+  border-left-color: #f39c12 !important;
+  box-shadow: 0 2px 8px rgba(243, 156, 18, 0.1) !important;
+}
+
+.version-notice.archived strong {
+  color: #d68910 !important;
+  font-weight: 600 !important;
+}
+
+.version-notice.current {
+  background: linear-gradient(135deg, #d1ecf1 0%, #e7f3ff 100%) !important;
+  border-color: #bee5eb !important;
+  border-left-color: #17a2b8 !important;
+  box-shadow: 0 2px 8px rgba(23, 162, 184, 0.1) !important;
+}
+
+.version-notice.current strong {
+  color: #0c5460 !important;
+  font-weight: 600 !important;
+}
+
+.version-notice a {
+  color: #c93b22 !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+}
+
+.version-notice a:hover {
+  text-decoration: underline !important;
+  color: #a12e1a !important;
+}
+
+.version-notice.archived small {
+  color: #856404 !important;
+  font-style: italic !important;
+}
+
+.version-notice.current small {
+  color: #0c5460 !important;
+  font-style: italic !important;
+}
+
 article.glossary-term .glossary-content img {
   max-width: 100% !important;
   height: auto !important;
@@ -157,6 +244,18 @@ article.glossary-term .glossary-content p em a {
             </div>
           {% endif %}
         </div>
+      </div>
+    {% endif %}
+
+    {% comment %}Show disclaimer for current versions after citation{% endcomment %}
+    {% if older_versions_array.size > 0 %}
+      <div class="version-notice current">
+        <strong>Aktuelle Version:</strong> Dies ist die neueste Version ({{ current_version }}) dieses Artikels.
+        <br>Frühere Versionen: 
+        {% for old_version in older_versions_array %}
+          <a href="{{ old_version.url }}">{{ old_version.version }}</a>{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+        <br><small>Alle Versionen bleiben für wissenschaftliche Referenzen verfügbar.</small>
       </div>
     {% endif %}
 

@@ -80,13 +80,37 @@ Die hier vorgestellten philologischen Begriffe geben den aktuellen Stand der pro
 {% comment %}
 Manuelle Sortierung für deutsche Umlaute:
 Ersetzt Ä->AE, Ö->OE, Ü->UE, ß->SS für korrekte alphabetische Reihenfolge
+NEUE LOGIK: Sammle nur die neueste Version jedes Artikels
 {% endcomment %}
-{% assign unsorted_terms = site.glossary %}
-{% assign sorted_terms = "" | split: "," %}
 
-{% comment %}Erstelle sortierbare Titel und sammle Terme{% endcomment %}
+{% comment %}Schritt 1: Finde die neueste Version jedes Artikels{% endcomment %}
+{% assign latest_articles = "" | split: "," %}
+{% assign processed_titles = "" | split: "," %}
+
+{% for term in site.glossary %}
+  {% if term.title and term.version %}
+    {% unless processed_titles contains term.title %}
+      {% comment %}Neuer Artikel - finde die neueste Version{% endcomment %}
+      {% assign latest_term = term %}
+      {% assign latest_version = term.version %}
+      
+      {% for other_term in site.glossary %}
+        {% if other_term.title == term.title and other_term.version > latest_version %}
+          {% assign latest_term = other_term %}
+          {% assign latest_version = other_term.version %}
+        {% endif %}
+      {% endfor %}
+      
+      {% assign latest_articles = latest_articles | push: latest_term %}
+      {% assign processed_titles = processed_titles | push: term.title %}
+    {% endunless %}
+  {% endif %}
+{% endfor %}
+
+{% comment %}Schritt 2: Sortiere die neuesten Artikel alphabetisch{% endcomment %}
+{% assign sorted_terms = "" | split: "," %}
 {% assign term_data = "" | split: "," %}
-{% for term in unsorted_terms %}
+{% for term in latest_articles %}
   {% assign sort_title = term.title | downcase | replace: "ä", "ae" | replace: "ö", "oe" | replace: "ü", "ue" | replace: "ß", "ss" %}
   {% assign term_entry = sort_title | append: "|||" | append: forloop.index0 %}
   {% assign term_data = term_data | push: term_entry %}
@@ -99,14 +123,25 @@ Ersetzt Ä->AE, Ö->OE, Ü->UE, ß->SS für korrekte alphabetische Reihenfolge
 {% for entry in sorted_data %}
   {% assign parts = entry | split: "|||" %}
   {% assign index = parts[1] | plus: 0 %}
-  {% assign sorted_terms = sorted_terms | push: unsorted_terms[index] %}
+  {% assign sorted_terms = sorted_terms | push: latest_articles[index] %}
 {% endfor %}
 
 <div class="glossary-list">
 {% for term in sorted_terms %}
+  {% comment %}Extrahiere Artikel-Slug aus URL (z.B. /glossar/aehnlichkeit/1.0.1/ -> aehnlichkeit){% endcomment %}
+  {% assign url_parts = term.url | split: "/" %}
+  {% assign article_slug = "" %}
+  {% for part in url_parts %}
+    {% if part != "" and part != "glossar" and part != term.version %}
+      {% assign article_slug = part %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+  
   <div class="glossary-item" data-modules="{% for category in term.categories %}{{ category }}{% unless forloop.last %},{% endunless %}{% endfor %}">
     <div class="glossary-item-header">
-      <h3><a href="{{ term.url | relative_url }}">{{ term.title }}</a></h3>
+      {% comment %}Link zur Weiterleitungsseite ohne Versionsnummer{% endcomment %}
+      <h3><a href="/glossar/{{ article_slug }}/">{{ term.title }}</a></h3>
       {% if term.categories and term.categories.size > 0 %}
         <div class="module-tags">
           {% for category in term.categories %}

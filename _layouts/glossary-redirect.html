@@ -1,0 +1,70 @@
+---
+# Universal redirect layout for all glossary articles
+---
+{% comment %}Get article slug from page data{% endcomment %}
+{% assign article_slug = page.article_slug %}
+
+{% comment %}Find the latest version of this article by slug{% endcomment %}
+{% assign latest_version = "" %}
+{% assign latest_url = "" %}
+{% assign article_title = "" %}
+
+{% for glossary_page in site.glossary %}
+  {% if glossary_page.url contains article_slug and glossary_page.version %}
+    {% comment %}Extract slug from glossary page URL for comparison{% endcomment %}
+    {% assign page_url_parts = glossary_page.url | split: "/" %}
+    {% assign page_slug = "" %}
+    {% for page_part in page_url_parts %}
+      {% if page_part != "" and page_part != "glossar" and page_part != glossary_page.version %}
+        {% assign page_slug = page_part %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    
+    {% if page_slug == article_slug %}
+      {% if latest_version == "" or glossary_page.version > latest_version %}
+        {% assign latest_version = glossary_page.version %}
+        {% assign latest_url = glossary_page.url %}
+        {% assign article_title = glossary_page.title %}
+      {% endif %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Weiterleitung zu {{ article_title }}</title>
+    <link rel="canonical" href="{{ latest_url }}">
+    <meta http-equiv="refresh" content="0; url={{ latest_url }}">
+    <meta name="robots" content="noindex">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background: #f9f2f1;
+        }
+        h1 { color: #c93b22; }
+        a { color: #c93b22; text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; }
+        .loading { 
+            margin: 20px 0; 
+            color: #666;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weiterleitung zur aktuellsten Version</h1>
+    <p>Sie werden automatisch weitergeleitet zu:</p>
+    <p><a href="{{ latest_url }}">{{ article_title }} Version {{ latest_version }}</a></p>
+    <div class="loading">Weiterleitung in 1 Sekunde...</div>
+    <script>
+        setTimeout(function() {
+            window.location.replace("{{ latest_url }}");
+        }, 1000);
+    </script>
+</body>
+</html>

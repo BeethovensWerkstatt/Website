@@ -190,14 +190,25 @@ cat > "$OUTPUT_FILE" << EOF
     
 EOF
 
+# Function to get version from a glossary file
+get_version_from_file() {
+    local file_path="$1"
+    if [ -f "$file_path" ]; then
+        grep "^version:" "$file_path" | sed 's/version: *//' | tr -d '"'
+    else
+        echo "1.0.0"  # Default version if file not found
+    fi
+}
+
 # Process content and convert to HTML
-awk '/^---$/{if(++n==2) {getline; while((getline line) > 0) print line; exit}}' "$INPUT_FILE" | \
-# Convert Jekyll links to HTML links with correct domain
-sed -E 's|\{% link _glossary/([^}]+)\.md %\}|https://beethovens-werkstatt.de/glossary/\1|g' | \
+awk '/^---$/{if(++n==2) {getline; while((getline line) > 0) print line; exit}}' "$INPUT_FILE" > /tmp/temp_content_raw.txt
+
+# First pass: Convert Jekyll links to placeholder format for processing
+sed -E 's|\{% link _glossary/([^}]+)\.md %\}|LINK_PLACEHOLDER:\1|g' /tmp/temp_content_raw.txt | \
 # Process Jekyll images - convert to IMAGE_PLACEHOLDER  
 sed "s|{{ '/\([^']*\)' \| relative_url }}|IMAGE_PLACEHOLDER:/\1|g" > /tmp/temp_content.txt
 
-# Process each line and handle image replacements and markdown links
+# Process each line and handle image replacements and link replacements
 while IFS= read -r line; do
     if [[ "$line" == *"IMAGE_PLACEHOLDER:"* ]]; then
         # Extract image path using a more precise method
@@ -210,6 +221,27 @@ while IFS= read -r line; do
         else
             echo "$line" | sed "s|IMAGE_PLACEHOLDER:$img_path|[BILD NICHT GEFUNDEN]|g"
         fi
+    elif [[ "$line" == *"LINK_PLACEHOLDER:"* ]]; then
+        # Process Jekyll link placeholders with version numbers
+        processed_line="$line"
+        while [[ "$processed_line" == *"LINK_PLACEHOLDER:"* ]]; do
+            # Extract the filename from the placeholder
+            filename=$(echo "$processed_line" | sed -n 's/.*LINK_PLACEHOLDER:\([^)]*\).*/\1/p' | head -1)
+            if [ -n "$filename" ]; then
+                # Get version from the referenced file
+                glossary_file="$GLOSSARY_DIR/$filename.md"
+                version=$(get_version_from_file "$glossary_file")
+                
+                # Create versioned URL
+                versioned_url="https://beethovens-werkstatt.de/glossar/$filename/$version/"
+                
+                # Replace the placeholder with the versioned URL
+                processed_line=$(echo "$processed_line" | sed "s|LINK_PLACEHOLDER:$filename|$versioned_url|g")
+            else
+                break
+            fi
+        done
+        echo "$processed_line"
     else
         echo "$line"
     fi
