@@ -1,12 +1,12 @@
 ---
 layout: glossary
 title: "Änderungsmaßnahmen: Klassifizierung"
-short_definition: Systematische Kategorisierung der verschiedenen Arten von Revisionen und Korrekturen in kompositorischen Prozessen.
+short_definition: Systematische Kategorisierung der verschiedenen Arten von Revisionen und Korrekturen.
 author: Bernhard Appel
 version: 1.0.1
 date: 2021-12-06
 categories: [Modul 3]
-permalink: /glossar/aenderungsmassnamen-klassifizierung/1.0.1/
+permalink: /glossar/aenderungsmassnahmen-klassifizierung/1.0.1/
 changes: "Links zu anderen Glossarartikeln ergänzt"
 doi_version: # TODO: DOI für Version 1.0.1
 doi_overview: 10.5281/zenodo.17852805

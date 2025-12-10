@@ -320,6 +320,8 @@ sed 's/^# \(.*\)$/<h1>\1<\/h1>/' | \
 # Convert markdown formatting
 sed 's/\*\*\([^*]*\)\*\*/\<strong\>\1\<\/strong\>/g' | \
 sed 's/\*\([^*]*\)\*/\<em\>\1\<\/em\>/g' | \
+# Convert markdown line breaks (two spaces at end of line) to HTML line breaks
+sed 's/  $/<br\/>/g' | \
 # Convert figure captions (em tags that start with "Abb.") to proper figure captions
 python3 -c "
 import sys, re
