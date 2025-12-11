@@ -124,7 +124,10 @@ article.glossary-term .glossary-content img.inline-image {
   vertical-align: baseline !important;
 }
 
-article.glossary-term .glossary-content p em {
+/* Image caption styling - for em elements that follow images */
+article.glossary-term .glossary-content p img + em,
+article.glossary-term .glossary-content p:has(img) + p em,
+article.glossary-term .glossary-content figure em {
   display: block !important;
   text-align: center !important;
   font-style: normal !important;
@@ -137,6 +140,27 @@ article.glossary-term .glossary-content p em {
   max-width: 90% !important;
   margin: 0.5rem auto 1.5rem auto !important;
   box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
+}
+
+/* Alternative: Use a specific class for image captions */
+article.glossary-term .glossary-content em.caption {
+  display: block !important;
+  text-align: center !important;
+  font-style: normal !important;
+  color: #495057 !important;
+  font-size: 0.85em !important;
+  background-color: #f8f9fa !important;
+  padding: 0.75rem 1rem !important;
+  border-left: 3px solid #c93b22 !important;
+  border-radius: 0 4px 4px 0 !important;
+  max-width: 90% !important;
+  margin: 0.5rem auto 1.5rem auto !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
+}
+
+/* Normal italic text should stay italic */
+article.glossary-term .glossary-content p em {
+  font-style: italic !important;
 }
 
 article.glossary-term .glossary-content p em a {
