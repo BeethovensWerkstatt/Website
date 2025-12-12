@@ -19,8 +19,10 @@ layout: default
   {% assign newer_version = '' %}
   {% assign older_versions_array = '' | split: ',' %}
   
-  {% for glossary_page in site.glossary %}
-    {% if glossary_page.url contains '/glossar/' %}
+  {% comment %}Check both site.glossary and site.pages for all versions{% endcomment %}
+  {% assign all_pages = site.glossary | concat: site.pages %}
+  {% for glossary_page in all_pages %}
+    {% if glossary_page.url contains '/glossar/' and glossary_page.layout == 'glossary' %}
       {% if glossary_page.title == page.title and glossary_page.version and glossary_page.version != current_version %}
         {% comment %}Found a related version{% endcomment %}
         {% if glossary_page.version > current_version %}
@@ -38,7 +40,23 @@ layout: default
   {% if newer_version_found %}
     <div class="version-notice archived">
       <strong>Archivierte Version:</strong> Dies ist Version {{ current_version }} dieses Artikels.
-      <br><a href="{{ newer_url }}">Zur aktuellen Version {{ newer_version }}</a>
+      {% comment %}Show other archived versions if they exist{% endcomment %}
+      {% assign other_archived_versions = "" %}
+      {% for version_page in all_pages %}
+        {% if version_page.path contains "_glossary/versions/" and version_page.title == page.title and version_page.version != current_version %}
+          {% assign other_archived_versions = other_archived_versions | append: version_page.version | append: "," %}
+        {% endif %}
+      {% endfor %}
+      {% if other_archived_versions != "" %}
+        {% assign other_versions_array = other_archived_versions | split: "," | sort %}
+        <br>Andere verfügbare Versionen: 
+        {% for other_version in other_versions_array %}
+          {% if other_version != "" %}
+            <a href="/glossar/{{ page.title | slugify }}/{{ other_version }}/">{{ other_version }}</a>{% unless forloop.last %}, {% endunless %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+      <br><strong><a href="{{ newer_url }}">Zur aktuellen Version {{ newer_version }}</a></strong>
       <br><small>Diese Version wird zu Archivierungszwecken und für wissenschaftliche Zitate beibehalten.</small>
     </div>
   {% endif %}
@@ -69,6 +87,24 @@ layout: default
 .version-notice.archived strong {
   color: #d68910 !important;
   font-weight: 600 !important;
+}
+
+.version-notice.archived a {
+  color: #c93b22 !important;
+  text-decoration: none !important;
+}
+
+.version-notice.archived a:hover {
+  text-decoration: underline !important;
+}
+
+.version-notice.archived strong a {
+  font-weight: 700 !important;
+  color: #c93b22 !important;
+}
+
+.version-notice.archived strong a:hover {
+  text-decoration: underline !important;
 }
 
 .version-notice.current {
@@ -288,7 +324,7 @@ article.glossary-term .glossary-content p em a {
     {% endif %}
 
     {% comment %}Show disclaimer for current versions after citation{% endcomment %}
-    {% if older_versions_array.size > 0 %}
+    {% if older_versions_array.size > 0 and newer_version_found == false %}
       <div class="version-notice current">
         <strong>Aktuelle Version:</strong> Dies ist die neueste Version ({{ current_version }}) dieses Artikels.
         <br>Frühere Versionen: 
