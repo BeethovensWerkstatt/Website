@@ -226,6 +226,52 @@ get_version_from_file() {
     fi
 }
 
+# Get historical version that was current at the time of the source article
+get_historical_version() {
+    local filename="$1"
+    local source_date="$2"
+    local source_date_unix=$(date -j -f "%Y-%m-%d" "$source_date" +%s 2>/dev/null || echo 0)
+    
+    local best_version=""
+    local best_date_unix=0
+    
+    # Check main glossary file
+    local main_file="$GLOSSARY_DIR/$filename.md"
+    if [ -f "$main_file" ]; then
+        local main_version=$(grep "^version:" "$main_file" | sed 's/version: *//' | tr -d '"')
+        local main_date=$(grep "^date:" "$main_file" | sed 's/date: *//' | tr -d '"')
+        local main_date_unix=$(date -j -f "%Y-%m-%d" "$main_date" +%s 2>/dev/null || echo 0)
+        
+        if [ "$main_date_unix" -le "$source_date_unix" ] && [ "$main_date_unix" -gt "$best_date_unix" ]; then
+            best_version="$main_version"
+            best_date_unix="$main_date_unix"
+        fi
+    fi
+    
+    # Check archived versions
+    local versions_dir="$GLOSSARY_DIR/versions/$filename"
+    if [ -d "$versions_dir" ]; then
+        for version_file in "$versions_dir"/*.md; do
+            if [ -f "$version_file" ]; then
+                local version=$(grep "^version:" "$version_file" | sed 's/version: *//' | tr -d '"')
+                local version_date=$(grep "^date:" "$version_file" | sed 's/date: *//' | tr -d '"')
+                local version_date_unix=$(date -j -f "%Y-%m-%d" "$version_date" +%s 2>/dev/null || echo 0)
+                
+                if [ "$version_date_unix" -le "$source_date_unix" ] && [ "$version_date_unix" -gt "$best_date_unix" ]; then
+                    best_version="$version"
+                    best_date_unix="$version_date_unix"
+                fi
+            fi
+        done
+    fi
+    
+    if [ -n "$best_version" ]; then
+        echo "$best_version"
+    else
+        echo "1.0.0"  # Fallback
+    fi
+}
+
 # Process content and convert to HTML
 awk '/^---$/{if(++n==2) {getline; while((getline line) > 0) print line; exit}}' "$INPUT_FILE" > /tmp/temp_content_raw.txt
 
@@ -251,15 +297,14 @@ while IFS= read -r line; do
             echo "$line" | sed "s|IMAGE_PLACEHOLDER:$img_path|[BILD NICHT GEFUNDEN]|g"
         fi
     elif [[ "$line" == *"LINK_PLACEHOLDER:"* ]]; then
-        # Process Jekyll link placeholders with version numbers
+        # Process Jekyll link placeholders with historical version numbers
         processed_line="$line"
         while [[ "$processed_line" == *"LINK_PLACEHOLDER:"* ]]; do
             # Extract the filename from the placeholder
             filename=$(echo "$processed_line" | sed -n 's/.*LINK_PLACEHOLDER:\([^)]*\).*/\1/p' | head -1)
             if [ -n "$filename" ]; then
-                # Get version from the referenced file
-                glossary_file="$GLOSSARY_DIR/$filename.md"
-                version=$(get_version_from_file "$glossary_file")
+                # Get historical version that was current when this article was written
+                version=$(get_historical_version "$filename" "$DATE")
                 
                 # Create versioned URL
                 versioned_url="https://beethovens-werkstatt.de/glossar/$filename/$version/"

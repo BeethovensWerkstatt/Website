@@ -42,8 +42,15 @@
 - Empfehlung für versionierte URLs in Zitaten
 - Kanonische URLs für Querverweise
 
+### Phase 4: Historische Referenz-Integrität (✅ Implementiert)
+- **PDF-Export**: Automatische Ermittlung historisch korrekter Versionen
+- Links zeigen die Version, die zum Erstellungsdatum des Artikels aktuell war
+- Wissenschaftliche Korrektheit: Referenzen bleiben zeitlich nachvollziehbar
+- Beispiel: Artikel von 2021-10-20 verlinkt auf Version von 2021-01-25, nicht auf 2021-12-06
+
 ## Vorteile
 ✅ Interne Links bleiben wartbar
 ✅ Wissenschaftliche Zitierbarkeit erhalten
 ✅ Alte Links bleiben funktional
 ✅ Keine Kaskadierung von Versionsupdates
+✅ **Historische Referenz-Integrität in PDF-Exporten**

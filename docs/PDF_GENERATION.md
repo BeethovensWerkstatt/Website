@@ -29,10 +29,11 @@ open output/pdf/aehnlichkeit.html
 - Keine externen Abhängigkeiten
 - Offline-taugliche PDFs
 
-### ✅ Link-Konvertierung  
-- Automatische Umwandlung zu `beethovens-werkstatt.de` URLs
-- Korrekte Versionsnummern in URLs: `/glossary/artikel/1.0.1`
-- Klickbare Links zu anderen Glossar-Artikeln
+### ✅ Historische Link-Versionierung  
+- **Online (Website)**: Links zeigen immer auf aktuelle Versionen
+- **PDF-Export**: Links zeigen auf historisch korrekte Versionen
+- Automatische Ermittlung der Version, die zum Erstellungsdatum aktuell war
+- Wissenschaftliche Integrität: Referenzen bleiben historisch korrekt
 
 ### ✅ Metadaten-Integration
 - Extraktion aus YAML frontmatter
@@ -64,7 +65,19 @@ HTML-Dateien werden in `output/pdf/` gespeichert und enthalten:
 - Korrekte Links zu anderen Glossar-Artikeln
 - Professionelles Layout für Zenodo-Archivierung
 
-## Beispiel
+## Beispiel: Historische Versionierung
+
+```bash
+# Artikel "Änderungsimperativ" (2021-10-20) konvertieren
+./scripts/generate-pdf.sh aenderungsimperativ
+
+# Ergebnis zeigt historisch korrekte Links:
+# - Link zu "aenderungsmassnahmen-klassifizierung/1.0.0/" (von 2021-01-25)
+# - NICHT zu "aenderungsmassnahmen-klassifizierung/1.0.1/" (von 2021-12-06)
+# - Wissenschaftlich korrekte Referenz zum Zeitpunkt der Artikelerstellung
+```
+
+## Standard-Beispiel
 
 ```bash
 # Artikel "Ähnlichkeit" konvertieren
