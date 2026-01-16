@@ -17,7 +17,7 @@ Ein handschriftlich verfasstes Notat (z. B. ein **Monitum** <!-- TODO: Link zu _
 
 In derartigen, oft stenogrammartig formulierten, gelegentlich nur selbstadressierten und deshalb nur transitorisch relevanten „Composittexten“ sind konventionelle Zeichen und metatextliche Aussagen ineinander verwoben und wechselseitig aufeinander bezogen, weshalb eine selektiv orientierte **Cleartext-Transkription** <!-- TODO: Link zu _glossary/cleartext-transkription.md --> die Textaussage bzw. Bedeutung des Notats nicht vermitteln kann. In diesen Fällen ist eine annotierte Transkription erforderlich. Sie besteht aus einer diplomatischen, aber konventionellen Regeln (z. B. Untersatzregeln) folgenden Umschrift, in der sowohl die heterogene Mischung von Zeichen als auch deren Topographie möglichst getreu erhalten bleibt, und die auch die zum Leseverständnis nötigen expliziten **Metatexte** <!-- TODO: Link zu _glossary/metatext.md --> (z. B. Einfügungszeichen, Kanzellierungsstriche) wiedergibt. Zugleich sind alle zum Verständnis notwendigen, klärenden Zusätze des Editors in die Umschrift ad locum eingeschaltet (siehe Abb. 1).
 
-![Annotierte Transkription Beispiel](/assets/images/glossary/annotierte-transkription-op120_Beispiel-1.jpg)
+![Annotierte Transkription Beispiel](/assets/images/glossary/annotierte-transkription_op120_Beispiel-1.jpg)
 
 *Abb. 1: Beispiel für ein Monitum aus Beethovens Revisionsverzeichnis zu den Diabelli-Variationen in Faksimile ([Beethoven-Haus Bonn, Sammlung H. C. Bodmer, HCB Mh 60, S. 17](https://www.beethoven.de/de/media/view/5605781743337472/scan/20)) und annotierter Transkription.*
 
@@ -25,7 +25,7 @@ Editorische Annotationen werden diakritisch gekennzeichnet, um sie vom transkrib
 
 Eine annotierte Texterschließung kann – falls erforderlich – noch zusätzlich einer selektiven Cleartext-Transkription unterzogen werden, in der ein früherer bzw. anderer **Textzustand** <!-- TODO: Link zu _glossary/textzustand.md --> rekonstruiert wird (siehe Abb. 2).
 
-![Annotierte Transkription Beispiel 2](/assets/images/glossary/annotierte-transkription-op120_Beispiel-2.png)
+![Annotierte Transkription Beispiel 2](/assets/images/glossary/annotierte-transkription_op120_Beispiel-2.png)
 
 *Abb. 2: Op. 120, Var. 6, T. 3f.: Gegenüberstellung von Faksimile ([Beethoven-Haus, Bonn, NE 294, S. 10](https://www.beethoven.de/de/media/view/4981473048264704/scan/14)), annotierter Transkription und Cleartext-Transkription.*
 
