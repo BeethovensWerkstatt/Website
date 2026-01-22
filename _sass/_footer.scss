@@ -8,6 +8,12 @@
   color: #cccccc;
   padding: 45px 0 40px;
   
+  .wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
   .footer-heading {
     color: white;
     font-size: 1.1em;
@@ -103,6 +109,12 @@
   background-color: #151515;
   border-top: 1px solid $brand-color;
   padding: 30px 0 28px;
+  
+  .wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
   
   .partner-logos {
     display: flex;

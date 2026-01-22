@@ -29,60 +29,27 @@ collections:
   glossary:
     output: true
     permalink: /glossar/:name/
+  projekt:
+    output: true
+    permalink: /:name/
+  posts:
+    output: true
+    permalink: /:year-:month-:day-:title/
 
 # Navigation
 navigation:
-  - title: "HOME"
-    url: "/"
-  - title: "PROJEKT"
-    url: "/projekt/"
-    submenu:
-      - title: "Projektübersicht"
-        url: "/projekt/"
-      - title: "Team"
-        url: "/team/"
-      - title: "Beteiligte Institutionen"
-        url: "/beteiligte-institutionen/"
-      - title: "Publikationen"
-        url: "/publikationen/"
-      - title: "Vorträge"
-        url: "/vortraege/"
-      - title: "Bibliographie"
-        url: "/bibliographie/"
-      - title: "Kontakt"
-        url: "/kontakt/"
   - title: "MODULE"
     url: "/module/"
-    submenu:
-      - title: "Modulübersicht"
-        url: "/module/"
-      - title: "Modul 1"
-        url: "/modul-1/"
-      - title: "Modul 2"
-        url: "/modul-2/"
-      - title: "Modul 3"
-        url: "/modul-3/"
-      - title: "Modul 4"
-        url: "/modul-4/"
-      - title: "Modul 5"
-        url: "/modul-5/"
-      - title: "VideApp"
-        url: "/facs/"
+  - title: "VIDEAPP"
+    url: "/facs/"
+  - title: "WERKE"
+    url: "/werke/"
   - title: "GLOSSAR"
     url: "/glossar/"
-  - title: "TOOLS"
-    url: "/tools/"
   - title: "NEWS"
     url: "/news/"
-
-# header_pages specifies which pages to include in the header navigation
-header_pages:
-  - index.md
-  - _pages/projekt.md
-  - _pages/module.md
-  - _pages/glossar.md
-  - _pages/tools.md
-  - _pages/news.md
+  - title: "PROJEKT"
+    url: "/projekt/"
 
 # Include submodule source files in the site
 include:
@@ -113,6 +80,7 @@ exclude:
   - vide-component-facsimile/src
   - vide-component-facsimile/README.md
   - vide-component-facsimile/dist/styles.scss
+  - vide-component-facsimile/dist/styles.css
 
 # Default layout for different content types
 defaults:

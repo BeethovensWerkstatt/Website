@@ -518,9 +518,9 @@
 }
 
 .breadcrumb-wrapper {
-  max-width: 800px;
+  max-width: 1140px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 20px;
 }
 
 .breadcrumb {
@@ -562,7 +562,7 @@
 
 @media (max-width: 768px) {
   .breadcrumb-wrapper {
-    padding: 0 1rem;
+    padding: 0 20px;
   }
   
   .breadcrumb {

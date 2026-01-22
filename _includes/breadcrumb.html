@@ -58,6 +58,13 @@ Generates breadcrumbs based on page URL and title
       {% elsif first_part == 'module' %}
         <li class="breadcrumb-item active">Module</li>
       
+      {% elsif page.parent %}
+        {% comment %} Handle pages with custom parent (e.g., projekt collection) {% endcomment %}
+        <li class="breadcrumb-item">
+          <a href="{{ page.parent_url | relative_url }}">{{ page.parent }}</a>
+        </li>
+        <li class="breadcrumb-item active">{{ page.title }}</li>
+      
       {% else %}
         {% comment %} Generic handling for other pages {% endcomment %}
         {% if page.title %}
