@@ -15,7 +15,7 @@ permalink: /projekt/
 <div class="project-links">
   <div class="project-link-item" style="background-image: url('/assets/images/projekt/uebersicht.jpg');">
     <div class="project-link-content">
-      <h3><a href="/projektueberblick/">Projektübersicht</a></h3>
+      <h3><a href="/projektuebersicht/">Projektübersicht</a></h3>
     </div>
   </div>
   
