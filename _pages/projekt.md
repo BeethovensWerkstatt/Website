@@ -8,7 +8,7 @@ permalink: /projekt/
 
 <h1>{{ page.title }}</h1>
 
-<p>Das Projekt „Beethovens Werkstatt" kombiniert Genetische Textkritik<!-- TODO: add link to glossary-->  und <a href="/_glossary/digitale-musikedition.md">Digitale Musikedition</a>, um kompositorische Prozesse im Œuvre Beethovens zu untersuchen. Die folgenden Bereiche geben einen Überblick über administrative und wissenschaftliche Aspekte des Projekts.</p>
+<p>Das Projekt „Beethovens Werkstatt" kombiniert Genetische Textkritik<!-- TODO: add link to glossary-->  und <a href="/glossar/digitale-musikedition/">Digitale Musikedition</a>, um kompositorische Prozesse im Œuvre Beethovens zu untersuchen. Die folgenden Bereiche geben einen Überblick über administrative und wissenschaftliche Aspekte des Projekts.</p>
 
 <div class="project-sections">
 
@@ -43,13 +43,13 @@ permalink: /projekt/
   
   <div class="project-link-item" style="background-image: url('/assets/images/projekt/vortraege.jpg');">
     <div class="project-link-content">
-      <h3><a href="/vortraege-publikationen/">Vorträge und Publikationen</a></h3>
+      <h3><a href="/vortraege-publikationen/">Vorträge, Publikationen und Lehre</a></h3>
     </div>
   </div>
   
   <div class="project-link-item" style="background-image: url('/assets/images/projekt/bibliographie.jpg');">
     <div class="project-link-content">
-      <h3><a href="/bibliographie/">Bibliographie</a></h3>
+      <h3><a href="/bibliografie/">Bibliografie</a></h3>
     </div>
   </div>
 </div>

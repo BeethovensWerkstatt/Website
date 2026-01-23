@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Bibliographie
-permalink: /bibliographie/
+title: Bibliografie
+permalink: /bibliografie/
 parent: Projekt
 parent_url: /projekt
 ---
