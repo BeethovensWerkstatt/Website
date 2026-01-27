@@ -81,12 +81,6 @@
       }
     }
     
-    .funding-description {
-      font-size: 0.7rem;
-      font-weight: 100;
-      color: #aaaaaa;
-    }
-    
     .funding-logo {
       margin: 20px 0;
       
@@ -100,6 +94,13 @@
           opacity: 1;
         }
       }
+    }
+    
+    .funding-description {
+      font-size: 0.7rem;
+      font-weight: 100;
+      color: #aaaaaa;
+      max-width: 420px;
     }
   }
 }
