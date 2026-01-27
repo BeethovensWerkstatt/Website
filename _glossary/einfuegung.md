@@ -1,15 +1,24 @@
 ---
 layout: glossary
 title: Einfügung
-short_definition: # TODO: Kurzdefinition ergänzen
+short_definition: Hinzufügung neuer Textelemente zum vorhandenen Notentext.
 author: Bernhard Appel
 version: 1.2.2
 date: 2022-05-18
 categories: [Modul 2]
 permalink: /glossar/einfuegung/1.2.2/
-changes: # TODO: Änderungen für Version 1.2.2 beschreiben
+changes: Einfügung von zwei Glossar-Links
 doi_version: # TODO: DOI für Version 1.2.2 ergänzen
-doi_overview: # TODO: DOI für Übersicht ergänzen
+doi_overview: 10.5281/zenodo.18390540
 ---
 
-<!-- TODO: Inhalt ergänzen -->
+Eine Einfügung ist (1) eine von vier Formen der [Textoperation]({% link _glossary/textoperation.md %}). Zugleich bezeichnet Einfügung (2) einen von vier Variantentypen. Demnach besitzt der Begriff *Einfügung* ebenso wie die übrigen drei Bezeichnungen für Textoperationen ([Tilgung]({% link _glossary/tilgung.md %}), [Ersetzung]({% link _glossary/ersetzung.md %}), [Umstellung]({% link _glossary/umstellung.md %})) eine Doppelbedeutung: Wird er als *nomen actionis* gebraucht, bezeichnet er einen Prozess (Textoperation); als *nomen qualitatis* bezeichnet er dagegen das durch diesen Prozess erzielte Ergebnis, ein Produkt (Variantentypus).
+
+Eine Einfügung kann aus der Hinzufügung einer einzelnen Note bestehen oder auch größeren Umfangs sein und ein ganzes Partitursegment oder eine neu hinzugefügte Stimme betreffen. Innerhalb der Werkgenese vergrößert eine Einfügung den Gesamtumfang des [Werktextes]({% link _glossary/werktext.md %}), wenn ein neues Partitursegment in den vorhandenen Text eingeschoben wird: Das eingefügte Partitursegment (A) tritt an die Stelle eines zuvor nicht vorhandenen Textelements (Nullelement). Beispielsweise fügt Beethoven in der Arbeitspartitur seiner *Ecossaise* für Harmoniemusik, D-Dur WoO 22 (1810) (GB-Ob, Ms. M. Deneke Mendelssohn c.21) über einen nach Takt 10 notierten Vide-[Verweis]({% link _glossary/textwegweiser.md %}) noch vier weitere Takte ein, die er auf einem separaten Einlegeblatt niederschreibt und erweitert somit diese Harmoniemusik von 20 auf 24 Takte Gesamtumfang (NGA II,4, Militärmusiken, 2017, S. 98).
+Besteht die Einfügung jedoch aus einer oder mehreren zusätzlichen Stimmen, so wird zwar die Stimmenanzahl der Partitur, nicht aber deren Gesamtlänge (die Anzahl von Takten) vergrößert. Hierzu gehört beispielsweise Beethovens Praxis, zu einer bereits ausgearbeiteten Partitur nachträglich noch Posaunenstimmen oder eine Kontrafagottstimme hinzuzufügen (z. B. in der 9. Symphonie). Diese Einfügungen werden zumeist außerhalb der Partitur auf separaten Blättern notiert, weil die Arbeitspartitur hierfür keinen [Schreibraum]({% link _glossary/schreibraum.md %}) mehr bietet.  
+Werden die in einer oder in mehreren Stimmen vorhandenen Pausen durch Noten ersetzt oder umgekehrt, Pausen gegen Tonfolgen ausgetauscht, so handelt es sich nicht um eine Einfügung, sondern um eine Ersetzung. Der Taktumfang beider Varianten bleibt unverändert: Die metrische Quantität der ersetzten Pausen muss identisch sein mit der metrischen Quantität der sie ersetzenden Noten und umgekehrt ([Kontextzwang]({% link _glossary/kontextzwang.md %})). Gleiches gilt auch, wenn eine oder mehrere aktive Stimmen durch Pausen ersetzt werden: Es handelt sich auch hier nicht um eine Tilgung, sondern um eine Ersetzung. Freilich wird eine Ersetzung einer Pause durch ein ausdifferenziertes Textsegment (Thema, Motiv, Gegenstimme etc.) als strukturelle Erweiterung (Null -> A) wahrgenommen.
+
+Einfügungen treten nicht nur im Zuge der Erarbeitung eines Werks auf. Sie finden sich auch bei einer Umarbeitung einer Originalfassung eines Werkes in eine Parallelfassung ([Bearbeitungsfassung]({% link _glossary/bearbeitung.md %}), Neufassung). Auch hier führt die Einfügung zu einer Vergrößerung des Taktumfangs, wenn sie als eingeschobenes Partitursegment auftritt. Durch derartige Einschübe entstehen strukturelle [Differenzen]({% link _glossary/differenz.md %}) zwischen der Originalfassung und der Bearbeitungsfassung ein und desselben Werks. So besitzt beispielsweise Beethovens Streichquartettfassung der Großen Fuge op. 133 einen Umfang von 741 Takten, wohingegen ihre Bearbeitungsfassung für Klavier zu vier Händen op. 134 aufgrund einer Einfügung am Satzbeginn insgesamt 743 Takte umfasst. Es versteht sich von selbst, dass die mit verschiedenen Werkfassungen verbundenen Fassungsvarianten im Unterschied zu genetischen [Varianten]({% link _glossary/variante.md %}) sich nicht wechselseitig aufheben, sondern unabdingbare Bestandteile zweier koexistierender [Fassungen]({% link _glossary/fassung.md %}) sind.
+
+Auch innerhalb der späten Phase des [Revisionsprozesses]({% link _glossary/revisionsprozess.md %}) können Einfügungen auftreten. Ein Beispiel dafür stellt die Klaviersonate op. 106 dar, bei der Beethoven noch kurz vor der Drucklegung in einem Brief mit den Metronomzahlen mitteilt, dass am Anfang des dritten Satzes noch ein Takt eingefügt werden müsse: „Nb: hier muss der 1te Takt eingeschaltet werden der 2te bleibt wie vorhin“ (Fitzwilliam Museum, Cambridge, Music Ms 288).
+
