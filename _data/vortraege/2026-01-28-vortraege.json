@@ -1,0 +1,4223 @@
+{
+  "items": [
+    {
+      "id": "4185477/G58RE2DH",
+      "type": "speech",
+      "title": "Musik – Edition – Medien, oder: Warum multimodale digitale Forschungsdaten einen erweiterten Begriff vom wissenschaftlichen ‚Text’ erfordern",
+      "publisher-place": "Goethe-Universität Frankfurt am Main",
+      "genre": "Vortrag",
+      "event": "\"Forschungsdatenmanagement\", Ringvorlesung Sommersemester 2020 (Prof. Dr. Barbara Alge)",
+      "event-place": "Goethe-Universität Frankfurt am Main",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Münzmay",
+          "given": "Andreas"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            5,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/5WP8ICRR",
+      "type": "speech",
+      "title": "Roundtable: Skizzen als Werkstattdokumente: Schaffensprozesse im Vergleich",
+      "publisher-place": "Beethoven-Haus Bonn",
+      "genre": "Panel/Diskussion",
+      "event": "Internationaler wissenschaftlicher Kongress „Beethoven-Perspektiven“",
+      "event-place": "Beethoven-Haus Bonn",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Appel",
+          "given": "Bernhard R."
+        },
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        },
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        },
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            2,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/7XEWAUQG",
+      "type": "speech",
+      "title": "Lektüreseminar: Beethoven | Räume. Kulturwissenschaftliche Perspektiven, kulturelle Resonanzen",
+      "publisher-place": "Universität Paderborn/HfM Detmold",
+      "genre": "Workshop/Seminar",
+      "event-place": "Universität Paderborn/HfM Detmold",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Münzmay",
+          "given": "Andreas"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            1,
+            1
+          ]
+        ],
+        "season": "Sommersemester"
+      }
+    },
+    {
+      "id": "4185477/JCDEB9C3",
+      "type": "speech",
+      "title": "Ringvorlesung: Beethoven | Räume. Kulturwissenschaftliche Perspektiven, kulturelle Resonanzen",
+      "publisher-place": "Universität Paderborn/HfM Detmold",
+      "genre": "Panel/Diskussion",
+      "event-place": "Universität Paderborn/HfM Detmold",
+      "language": "deutsch",
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            1,
+            1
+          ]
+        ],
+        "season": "Sommersemester"
+      }
+    },
+    {
+      "id": "4185477/F5CFN7SB",
+      "type": "speech",
+      "title": "Beyond Editions. Zum Potential von Musikcodierung für die musikwissenschaftliche Arbeit",
+      "publisher-place": "HU Berlin",
+      "genre": "Vortrag",
+      "event-place": "HU Berlin",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            11,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/PBMFXSG4",
+      "type": "speech",
+      "title": "MEI-Workshop und Projektvorstellung Beethovens Werkstatt",
+      "publisher-place": "Vanderbilt University, Nashville",
+      "genre": "Workshop/Seminar",
+      "event": "MEI-Workshop und Entwicklertreffen",
+      "event-place": "Vanderbilt University, Nashville",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/JK82WJ6E",
+      "type": "speech",
+      "title": "Symposium: Brückenschläge – Informatik und Musikwissenschaft im Dialog",
+      "publisher-place": "Paderborn/Detmold",
+      "genre": "Panel/Diskussion",
+      "event": "GfM 2019",
+      "event-place": "Paderborn/Detmold",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Münzmay",
+          "given": "Andreas"
+        },
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            9,
+            23
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/5KTMZAXU",
+      "type": "speech",
+      "title": "Beethoven als Bearbeiter versus Beethoven-Bearbeitungen",
+      "publisher-place": "Beethoven-Haus, Bonn",
+      "genre": "Workshop/Seminar",
+      "event": "Studienkolleg",
+      "event-place": "Beethoven-Haus, Bonn",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        },
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            9,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/8JUW46QX",
+      "type": "speech",
+      "title": "Anwendungsorientiertes MEI",
+      "publisher-place": "Heinz-Nixdorf-Institut, Paderborn",
+      "genre": "Workshop/Seminar",
+      "event": "ESS 2019",
+      "event-place": "Heinz-Nixdorf-Institut, Paderborn",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            9,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/RMVGNCA9",
+      "type": "speech",
+      "title": "Einführung in TEI",
+      "publisher-place": "Hein-Nixdorf-Institut, Paderborn",
+      "genre": "Workshop/Seminar",
+      "event": "ESS 2019",
+      "event-place": "Hein-Nixdorf-Institut, Paderborn",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Herold",
+          "given": "Kristin"
+        },
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            9,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/KDW9D7XF",
+      "type": "speech",
+      "title": "Mining Music Data – Arbeiten mit RISM-Daten",
+      "publisher-place": "Heinz-Nixdorf-Institut, Paderborn",
+      "genre": "Workshop/Seminar",
+      "event": "ESS 2019",
+      "event-place": "Heinz-Nixdorf-Institut, Paderborn",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Ngonga",
+          "given": "Axel"
+        },
+        {
+          "family": "Pugin",
+          "given": "Laurent"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            9,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/ZV4XK49S",
+      "type": "speech",
+      "title": "Projektvorstellung Beethovens Werkstatt",
+      "publisher-place": "Beethoven-Haus, Bonn",
+      "genre": "Tool-/Projektvorstellung",
+      "event": "Seminar der Studierenden des Musikjournalismus an der Hochschule für Musik Karlsruhe unter der Leitung von Prof. Dr. Peter Overbeck",
+      "event-place": "Beethoven-Haus, Bonn",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            6,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/D8B4AHNM",
+      "type": "speech",
+      "title": "Projektvorstellung im Rahmen eines Workshops",
+      "publisher-place": "Akademie der Wissenschaften und der Literatur | Mainz",
+      "genre": "Tool-/Projektvorstellung",
+      "event": "Tag der Akademien",
+      "event-place": "Akademie der Wissenschaften und der Literatur | Mainz",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Appel",
+          "given": "Bernhard R."
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            6,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/TWKTR763",
+      "type": "speech",
+      "title": "Projektpräsentation als Teil der Projektstraße",
+      "publisher-place": "Akademie der Wissenschaften und der Literatur | Mainz",
+      "genre": "Tool-/Projektvorstellung",
+      "event": "Tag der Akademien",
+      "event-place": "Akademie der Wissenschaften und der Literatur | Mainz",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        },
+        {
+          "family": "Seipelt",
+          "given": "Agnes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            6,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/NEICHX6S",
+      "type": "speech",
+      "title": "Editionspraxis: Beethoven und Schumann zwischen Philologie und Editionstechnik",
+      "publisher-place": "Universität „Sapienza“ in Rom",
+      "genre": "Workshop/Seminar",
+      "event-place": "Universität „Sapienza“ in Rom",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            4,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/9MEVJGSD",
+      "type": "speech",
+      "title": "Genetische Textkritik und Digitale Musikedition",
+      "publisher-place": "Universität Bonn",
+      "genre": "Workshop/Seminar",
+      "event": "Einführung in die Musikwissenschaft/Sound Studies",
+      "event-place": "Universität Bonn",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            12,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/A2KWJEKT",
+      "type": "speech",
+      "title": "Genetische Textkritik in digitalem Gewand – Ein Einblick in Beethovens Werkstatt",
+      "publisher-place": "Osnabrück",
+      "genre": "Tool-/Projektvorstellung",
+      "event": "Jahrestagung der Gesellschaft für Musikforschung, Symposium „Born-digital. Digitales Material als Herausforderung für die Musikwissenschaft“",
+      "event-place": "Osnabrück",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            9,
+            28
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/72PEIQC8",
+      "type": "speech",
+      "title": "Panel: Geisteswissenschaftliche Arbeitswelten im digitalen Zeitalter. Herausforderungen, Risiken, Potentiale",
+      "publisher-place": "Berlin-Brandenburgische Akademie der Wissenschaften, Berlin",
+      "genre": "Panel/Diskussion",
+      "event": "Akademientag: Geisteswissenschaften 3.0: Vergegenwärtigung des kulturellen Welterbes.",
+      "event-place": "Berlin-Brandenburgische Akademie der Wissenschaften, Berlin",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Münzmay",
+          "given": "Andreas"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            6,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/M3VS42HD",
+      "type": "speech",
+      "title": "Panel-Beitrag: „Storied Collections“? Ein kritischer Blick auf die Arbeit an digitalen (Musik)-Editionen",
+      "publisher-place": "Köln",
+      "genre": "Panel/Diskussion",
+      "event": "DHd Jahrestagung",
+      "event-place": "Köln",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            3,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/4J33XUWU",
+      "type": "speech",
+      "title": "Roundtable: Verlage und EditorInnen im Gespräch. Herausforderungen der Digitalität – Wege des Miteinanders",
+      "publisher-place": "Kassel",
+      "genre": "Panel/Diskussion",
+      "event": "GfM Jahrestagung",
+      "event-place": "Kassel",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            9,
+            29
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/2WCVXIAT",
+      "type": "speech",
+      "title": "`The Project „Beethovens Werkstatt“: Two Examples from op. 101`and `The Edition of the Scheide Sketchbook`",
+      "publisher-place": "University of Alabama (School of Music)",
+      "genre": "Vortrag",
+      "event-place": "University of Alabama (School of Music)",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            11,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/ZM99TWUC",
+      "type": "speech",
+      "title": "Roundtable: Musikphilologie im Gespräch. Musikeditorische Arbeitswirklichkeiten im Kontext des „digital turn“",
+      "publisher-place": "Mainz",
+      "genre": "Panel/Diskussion",
+      "event": "Internationaler Kongress der Gesellschaft für Musikforschung (GfM)",
+      "event-place": "Mainz",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Münzmay",
+          "given": "Andreas"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            9,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/FHMGMH4Z",
+      "type": "speech",
+      "title": "Die Rolle des Zeigens",
+      "publisher-place": "Leipzig",
+      "genre": "Panel/Diskussion",
+      "event": "DHd 2016",
+      "event-place": "Leipzig",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            3,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/UVVBXG52",
+      "type": "speech",
+      "title": "Einführung in die genetische Textkritik – Revisionsprozesse in Beethovens Niederschriften der achten Symphonie op. 93",
+      "publisher-place": "Christian-Albrechts-Universität, Kiel",
+      "genre": "Vortrag",
+      "event-place": "Christian-Albrechts-Universität, Kiel",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            6,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/JKV8PKEX",
+      "type": "speech",
+      "title": "Digitale Fassungsvergleiche am Beispiel von Beethovens Eigenbearbeitungen",
+      "publisher-place": "Paderborn/Detmold",
+      "genre": "Poster",
+      "event": "GfM 2019",
+      "event-place": "Paderborn/Detmold",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            9,
+            23
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/486ZPV2H",
+      "type": "speech",
+      "title": "Kanon und digitale (Musik-)Edition",
+      "publisher-place": "Bergische Universität Wuppertal",
+      "genre": "Vortrag",
+      "event": "Tagung \"Kanonbildung und Editionspraxis\"",
+      "event-place": "Bergische Universität Wuppertal",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Münzmay",
+          "given": "Andreas"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            6,
+            28
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/PBA54FDP",
+      "type": "speech",
+      "title": "Cultivating MEI: Recent and Future Development",
+      "publisher-place": "Wien",
+      "genre": "Poster",
+      "event": "MEC",
+      "event-place": "Wien",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            5,
+            30
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/6CJ5H73N",
+      "type": "speech",
+      "title": "Modulares Zusammenspiel von Film-Annotation und Audio-to-Score-Align¬ment für die Film/Musik-Edition",
+      "publisher-place": "Akademie der Künste, Berlin",
+      "genre": "Vortrag",
+      "event": "Internationale Tagung „Kritische Film- und Literaturedition: Perspekti¬ven einer transdisziplinären Editionswissenschaft“ der Akademie der Künste, Berlin",
+      "event-place": "Akademie der Künste, Berlin",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Münzmay",
+          "given": "Andreas"
+        },
+        {
+          "family": "Hadjakos",
+          "given": "Aristotelis"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            1,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/3X6V2C4A",
+      "type": "speech",
+      "title": "Relating Content: How MEI, EMA and FRBR can be used to trace compositional processes across works",
+      "publisher-place": "University of Tours",
+      "genre": "Vortrag",
+      "event": "Music Encoding Conference",
+      "event-place": "University of Tours",
+      "URL": "https://music-encoding.org/conference/2017/",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/HA4AS9T8",
+      "type": "speech",
+      "title": "Das Scheide-Skizzenbuch von Beethoven",
+      "publisher-place": "\"New Center for Beethoven Research\", Boston",
+      "genre": "Vortrag",
+      "event-place": "\"New Center for Beethoven Research\", Boston",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            11,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/W8ZR5PB3",
+      "type": "speech",
+      "title": "Projektvorstellung",
+      "publisher-place": "Beethoven-Haus Bonn",
+      "genre": "Vortrag",
+      "event": "4th International Beethoven New Re¬search Conference „Beethoven und der Wiener Kongress“",
+      "event-place": "Beethoven-Haus Bonn",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Appel",
+          "given": "Bernhard R."
+        },
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2014,
+            9,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/3VASZSC5",
+      "type": "speech",
+      "title": "About the Methodological Approach of the Project Beethovens Werkstatt",
+      "publisher-place": "New Center for Beethoven Research, Boston University",
+      "genre": "Vortrag",
+      "event-place": "New Center for Beethoven Research, Boston University",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            11,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/IABR9E7C",
+      "type": "speech",
+      "title": "A tool for illustrating Genetic Processes",
+      "publisher-place": "Florenz",
+      "genre": "Poster",
+      "event": "Music Encoding Conference",
+      "event-place": "Florenz",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        },
+        {
+          "family": "Hartwig",
+          "given": "Maja"
+        },
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            19
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/ZCIVF7DZ",
+      "type": "speech",
+      "title": "Beethovens Werkstatt. Genetic Textual Criticism and the Digital Edition",
+      "publisher-place": "Charlottesville, Virginia",
+      "genre": "Poster",
+      "event": "Music Encoding Conference 2014",
+      "event-place": "Charlottesville, Virginia",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2014,
+            5,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/2IBHQWG2",
+      "type": "speech",
+      "title": "Projektvorstellung",
+      "publisher-place": "Universität, Bonn",
+      "genre": "Vortrag",
+      "event": "Seminar",
+      "event-place": "Universität, Bonn",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        },
+        {
+          "family": "Hartwig",
+          "given": "Maja"
+        },
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        },
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            1,
+            19
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/3NHVCK99",
+      "type": "speech",
+      "title": "Beethovens Werkstatt – Genetische Textkritik und Digitale Musikedition. Eine Projektvorstellung",
+      "publisher-place": "Musikwissenschaftliches Seminars Detmold/Paderborn",
+      "genre": "Vortrag",
+      "event": "Internes Kolloquium",
+      "event-place": "Musikwissenschaftliches Seminars Detmold/Paderborn",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2014,
+            5,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/7CI29P8V",
+      "type": "speech",
+      "title": "Encoding Genetics with MEI. Beethovens Werkstatt",
+      "publisher-place": "Charlottesville, Virginia",
+      "genre": "Vortrag",
+      "event": "Music Encoding Conference 2014",
+      "event-place": "Charlottesville, Virginia",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Hartwig",
+          "given": "Maja"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2014,
+            5,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/88QELH3Z",
+      "type": "speech",
+      "title": "Beethovens Werkstatt - Genetische Textkritik und Digitale Musikedition. Vorstellung des Forschungsprojekts",
+      "publisher-place": "Bonn",
+      "genre": "Vortrag",
+      "event": "Festakt und Vorstellung des Projekts",
+      "event-place": "Bonn",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        },
+        {
+          "family": "Hartwig",
+          "given": "Maja"
+        },
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        },
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2014,
+            12,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/KBAL28DR",
+      "type": "speech",
+      "title": "Beethovens Werkstatt",
+      "publisher-place": "Warschau",
+      "genre": "Vortrag",
+      "event": "Symposium des 19. Beethoven Easter Festivals",
+      "event-place": "Warschau",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            3,
+            23
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/USMXEXWP",
+      "type": "speech",
+      "title": "Beethovens Schaffensweise im Blick der Musikphilologie und Einführung in die Genetische Textkritik: Beethovens Werkstatt",
+      "publisher-place": "Venedig",
+      "genre": "Vortrag",
+      "event": "Doktoranden-Seminar in der Fondazione Levi",
+      "event-place": "Venedig",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Appel",
+          "given": "Bernhard R."
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            7,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/EN4D6Q6B",
+      "type": "speech",
+      "title": "Beethovens Werkstatt - Genetische Textkritik und Digitale Musikedition. Eine Projektvorstellung",
+      "publisher-place": "Detmold",
+      "genre": "Vortrag",
+      "event": "Projektvorstellung im internen Kolloquium des Musikwissenschaftlichen Seminars Detmold/Paderborn",
+      "event-place": "Detmold",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2014,
+            12,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/JGADDSDK",
+      "type": "speech",
+      "title": "Befund und Deutung in Beethovens Schreibprozessen",
+      "publisher-place": "Graz",
+      "genre": "Vortrag",
+      "event": "Digital Humanities im deutschsprachigen Raum. Tagung 23. - 27. Februar 2015",
+      "event-place": "Graz",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        },
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            2,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/RTU6DP9C",
+      "type": "speech",
+      "title": "Encoding Genetical Pocesses. Proposal for a genetic Module in MEI",
+      "publisher-place": "Florenz",
+      "genre": "Vortrag",
+      "event": "Music Encoding Conference 2015",
+      "event-place": "Florenz",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            19
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/CJYMEBXB",
+      "type": "speech",
+      "title": "Scholarly Editions 2.0 - How Digital Media Promote new Editorial Concepts",
+      "publisher-place": "New York",
+      "genre": "Vortrag",
+      "event": "IAML 2015",
+      "event-place": "New York",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            6,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/D8FPZGJM",
+      "type": "speech",
+      "title": "Revisionsprozesse in Beethovens Niederschriften der achten Symphonie op. 93",
+      "publisher-place": "Graz",
+      "genre": "Vortrag",
+      "event": "Tagung der Arbeitsgemeinschaft für germanistische Edition",
+      "event-place": "Graz",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            2,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/X3LBUJEU",
+      "type": "speech",
+      "title": "Writing Strategies and Mental Approaches in Beethoven's Compositional Practice: One Case from the Genesis of the Piano Sonata, op. 101",
+      "publisher-place": "Paris",
+      "genre": "Vortrag",
+      "event": "IRCAM 2015",
+      "event-place": "Paris",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            10,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/KHXXIN9D",
+      "type": "speech",
+      "title": "Einblicke in das Projekt Beethovens Werkstatt. Genetische Textkritik und digitale Musikedition",
+      "publisher-place": "Bonn",
+      "genre": "Vortrag",
+      "event": "ULB: Workshop „Digitale Geisteswissenschaften“",
+      "event-place": "Bonn",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Hartwig",
+          "given": "Maja"
+        },
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            29
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/AUZ6Q2JA",
+      "type": "speech",
+      "title": "A new module for encoding genetical processes",
+      "publisher-place": "Montréal",
+      "genre": "Poster",
+      "event": "Music Encoding Conference 2016",
+      "event-place": "Montréal",
+      "URL": "https://music-encoding.org/conference/2016/",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Hartwig",
+          "given": "Maja"
+        },
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            5,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/FUU64RTC",
+      "type": "speech",
+      "title": "Was erzählt Beethovens Handschrift zur Klaviersonate op. 111 über ihren Entstehungsprozess? Fragestellungen der genetischen Textkritik",
+      "publisher-place": "Mainz",
+      "genre": "Vortrag",
+      "event": "Musik im Landtag",
+      "event-place": "Mainz",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Appel",
+          "given": "Bernhard R."
+        },
+        {
+          "family": "Hartwig",
+          "given": "Maja"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/NMGV7KM9",
+      "type": "speech",
+      "title": "Beethovens Arbeit an einem wirkungsvollen Abschluss des Liedes „Neue Liebe, neues Leben“, op. 75/2. Warum sich die digitale Musikedition vom bedruckten Papier verabschiedet",
+      "publisher-place": "Mainz",
+      "genre": "Vortrag",
+      "event": "Musik im Landtag",
+      "event-place": "Mainz",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        },
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/SAIJNDQX",
+      "type": "speech",
+      "title": "Expression beyond Scope: How FRBR and MEI fit together",
+      "publisher-place": "Rom",
+      "genre": "Vortrag",
+      "event": "International Association of Music Libraries, Archives and Documentation Centres (IAML)",
+      "event-place": "Rom",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/GIIM3DFN",
+      "type": "speech",
+      "title": "Lesen und Schreiben im digitalen Dickicht: Musikwissenschaft, Digital Humanities und die hybride Musikbibliothek",
+      "publisher-place": "Detmold",
+      "genre": "Vortrag",
+      "event": "AIBM-Jahrestagung (Symposium der AG Musikabteilungen an wissenschaftichen Bibliotheken)",
+      "event-place": "Detmold",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Münzmay",
+          "given": "Andreas"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            9,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/IUPSHXG3",
+      "type": "speech",
+      "title": "Virtualitäten in der Opéra comique und der XML-Code als Teleskop",
+      "publisher-place": "Mainz",
+      "genre": "Vortrag",
+      "event": "Internationaler Kongress der Gesellschaft für Musikforschung (GfM)",
+      "event-place": "Mainz",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Münzmay",
+          "given": "Andreas"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            9,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/BM2S7JFZ",
+      "type": "speech",
+      "title": "Vom Werkverzeichnis zur genetischen Edition – Einsatz und Weiterentwicklung von internationalen Datenstandards für die Musikwissenschaft",
+      "publisher-place": "Mainz",
+      "genre": "Vortrag",
+      "event": "Internationaler Kongress der Gesellschaft für Musikforschung (GfM)",
+      "event-place": "Mainz",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            9,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/X8MEGTQE",
+      "type": "speech",
+      "title": "Perspektiven der genetischen Textkritik in der Sektion: Zum Werken und Weben Max Regers – Quellen kompositorischen Schaffens im Diskurs",
+      "publisher-place": "Mainz",
+      "genre": "Vortrag",
+      "event": "Internationaler Kongress der Gesellschaft für Musikforschung (GfM)",
+      "event-place": "Mainz",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Appel",
+          "given": "Bernhard R."
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            9,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/EW2GSW88",
+      "type": "speech",
+      "title": "Beethoven’s Folksong Settings WoO 158: Insights into the Compositional Process",
+      "publisher-place": "Vancouver",
+      "genre": "Vortrag",
+      "event": "Sixth New Beethoven Research Conference",
+      "event-place": "Vancouver",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            11,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/PZ2VZE39",
+      "type": "speech",
+      "title": "Some Reflections on the Genesis of the Eigth Symphony op. 93",
+      "publisher-place": "Vancouver",
+      "genre": "Vortrag",
+      "event": "Sixth New Beethoven Research Conference",
+      "event-place": "Vancouver",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            11,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/6J6U7Q8F",
+      "type": "speech",
+      "title": "Genetische Textkritik von Musikwerken: 1. Textbegriff und methodisches Konzept 2. Variantenbildung in Ludwig van Beethovens Werken: Das Beispiel von Op. 59, Nr. 3",
+      "publisher-place": "Institut des Textes et Manuscrits Modernes, Paris",
+      "genre": "Vortrag",
+      "event": "ITEM",
+      "event-place": "Institut des Textes et Manuscrits Modernes, Paris",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Appel",
+          "given": "Bernhard R."
+        },
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            11,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/E3CD7SMD",
+      "type": "speech",
+      "title": "From 0 to 1. Why getting digital requires more than one step",
+      "publisher-place": "Oslo",
+      "genre": "Vortrag",
+      "event": "Musical Heritage Conference",
+      "event-place": "Oslo",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            12,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/379ATZKX",
+      "type": "speech",
+      "title": "Why do we edit anyway? Modifying a nineteenth-century concept through digital methods",
+      "publisher-place": "Cambridge",
+      "genre": "Vortrag",
+      "event": "OCVE Conference",
+      "event-place": "Cambridge",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/B75PZXCZ",
+      "type": "speech",
+      "title": "Der Umgang mit digitalen Methoden in der Genese musikalischer Schreibprozesse. Zur Darstellung von Schreiboperationen in Beethovens Handschriften",
+      "publisher-place": "Klagenfurt",
+      "genre": "Vortrag",
+      "event": "Internationale und interdisziplinäre Tagung „Textgenese in der digitalen Edition“",
+      "event-place": "Klagenfurt",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/TFKIMFDJ",
+      "type": "speech",
+      "title": "Musikalische Schaffensprozesse im Blick der genetischen Textkritik",
+      "publisher-place": "Universität, Hamburg",
+      "genre": "Vortrag",
+      "event-place": "Universität, Hamburg",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Appel",
+          "given": "Bernhard R."
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/A9NEXI6E",
+      "type": "speech",
+      "title": "Von „ikonischen Surrogaten“ zu „archäologischen Ausgrabungen“. Skizzenbuch-Ausgaben in der Ideengeschichte",
+      "publisher-place": "Hochschule der Künste, Bern",
+      "genre": "Vortrag",
+      "event": "Symposium „Rund um Beethoven – Interpretationsforschung heute“",
+      "event-place": "Hochschule der Künste, Bern",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            9,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/HU727WDB",
+      "type": "speech",
+      "title": "Music Encoding as Initiative and Inspiration: a vision through the eyes of a traditional editor",
+      "publisher-place": "University of Tours",
+      "genre": "Vortrag",
+      "event": "Music Encoding Conference",
+      "event-place": "University of Tours",
+      "URL": "https://music-encoding.org/conference/2017/",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/4HUJS969",
+      "type": "speech",
+      "title": "Encoding musical variants in MEI. A survey of the first module of “Beethovens Werkstatt”",
+      "publisher-place": "University of Tours",
+      "genre": "Poster",
+      "event": "Music Encoding Conference",
+      "event-place": "University of Tours",
+      "URL": "https://music-encoding.org/conference/2017/",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        },
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        },
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/9DVTQFZS",
+      "type": "speech",
+      "title": "Beethovens Werkstatt – Projektvorstellung",
+      "publisher-place": "Universität, Köln",
+      "genre": "Vortrag",
+      "event-place": "Universität, Köln",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        },
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        },
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            6,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/WDCWPFM8",
+      "type": "speech",
+      "title": "Einführung in die genetische Textkritik – Revisionsprozesse in Beethovens Niederschriften der achten Symphonie op. 93",
+      "publisher-place": "Universität, Köln",
+      "genre": "Vortrag",
+      "event-place": "Universität, Köln",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            6,
+            23
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/PRKBBN5K",
+      "type": "speech",
+      "title": "Textgenese im Kleinen wie im Großen. Variantenarrangements aus Beethovens Werkstatt",
+      "publisher-place": "Universität Wuppertal",
+      "genre": "Vortrag",
+      "event": "Graduiertenkolleg: „Digitale Variantendarstellung“",
+      "event-place": "Universität Wuppertal",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            7,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/PMM5UIQC",
+      "type": "speech",
+      "title": "Das Projekt „Beethovens Werkstatt“",
+      "publisher-place": "Münster",
+      "genre": "Vortrag",
+      "event": "AIBM Jahrestagung",
+      "event-place": "Münster",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            9,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/F8NRHBHU",
+      "type": "speech",
+      "title": "Beethovens Volksliedbearbeitungen WoO 158 – Einblicke in den Kompositionsprozess",
+      "publisher-place": "Kassel",
+      "genre": "Vortrag",
+      "event": "GfM Jahrestagung",
+      "event-place": "Kassel",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            9,
+            29
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/3UISFRUK",
+      "type": "speech",
+      "title": "Beethovens Arbeitsweise: Werkstattdokumente im Blick der genetischen Textkritik. Bericht über ein Forschungsprojekt",
+      "publisher-place": "Germanistisches Institut der Universität Heidelberg",
+      "genre": "Vortrag",
+      "event": "Doktoranden-Seminar",
+      "event-place": "Germanistisches Institut der Universität Heidelberg",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Appel",
+          "given": "Bernhard R."
+        },
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            11,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/CQNJMDPZ",
+      "type": "speech",
+      "title": "The Eighth is Singular. Some Hypothesis on the Genesis of Op. 93",
+      "publisher-place": "Boston",
+      "genre": "Vortrag",
+      "event": "Syposium der Boston University (Center for Beethoven Research) „Latest Research Shines New Light on Beethoven’s Fifth and Eighth Symphonies“",
+      "event-place": "Boston",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            10,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/27RST3MT",
+      "type": "speech",
+      "title": "„…in unserem laboratorium artificiosum…“ – Beethovens Schreibprozesse im Blick der digitalen Edition",
+      "publisher-place": "Oldenburg",
+      "genre": "Vortrag",
+      "event": "Veranstaltungen der Goethe-Gesellschaft im Vortragssaal der Landesbibliothek",
+      "event-place": "Oldenburg",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            2,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/XUB5P2TI",
+      "type": "speech",
+      "title": "Phonographischer Text, Interpretation und Aufführungsmaterial als kritisch edierbarer Sachzusammenhang. Ein Beitrag zur Theorie der Edition von Klangdokumenten",
+      "publisher-place": "Goethe-Universität, Frankfurt am Main",
+      "genre": "Vortrag",
+      "event": "Tagung der Arbeitsgemeinschaft für germanistische Edition",
+      "event-place": "Goethe-Universität, Frankfurt am Main",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Münzmay",
+          "given": "Andreas"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            2,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/3HDVF5TV",
+      "type": "speech",
+      "title": "Inszenierungsprobleme oder Probleme durch Inszenierung? Musikedition am Scheideweg",
+      "publisher-place": "Goethe-Universität, Frankfurt am Main",
+      "genre": "Vortrag",
+      "event": "Tagung der Arbeitsgemeinschaft für germanistische Edition",
+      "event-place": "Goethe-Universität, Frankfurt am Main",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            2,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/MQDJITFS",
+      "type": "speech",
+      "title": "Markup ohne Basistext. Musik modellieren",
+      "publisher-place": "Universität Paderborn",
+      "genre": "Vortrag",
+      "event": "DH-Ringvorlesung „Wissensmodellierung durch Markup“",
+      "event-place": "Universität Paderborn",
+      "URL": "https://www.muwi-detmold-paderborn.de/nachricht/ringvorlesung-wissensmodellierung-durch-markup",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            5,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/5HGSX2EP",
+      "type": "speech",
+      "title": "Das Engelmann-Skizzenbuch – Ein Blick auf Beethovens Schreibtisch",
+      "publisher-place": "Universität Kiel",
+      "genre": "Vortrag",
+      "event": "Musikhistorisches Kolloquium",
+      "event-place": "Universität Kiel",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            1,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/PTZHT8PP",
+      "type": "speech",
+      "title": "Möglichkeiten der digitalen Musikedition und Analyse mit dem Codierungsstandard der Music Encoding Initiative",
+      "publisher-place": "Musikwissenschaftliches Seminar der Universität Wien",
+      "genre": "Vortrag",
+      "event-place": "Musikwissenschaftliches Seminar der Universität Wien",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Pugin",
+          "given": "Laurent"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            4,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/TCIN4KCP",
+      "type": "speech",
+      "title": "Prospettive digitali per le edizioni dei quaderni di schizzi di Beethoven",
+      "publisher-place": "Rom",
+      "genre": "Vortrag",
+      "event": "Textual Philology Facing Liquid Modernity: Identifying Objects, Evaluating Methods, Exploiting Media",
+      "event-place": "Rom",
+      "language": "italienisch",
+      "author": [
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            4,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/TIPW5TUG",
+      "type": "speech",
+      "title": "Von Beethovens Schreibprozessen und deren digitaler Darstellung. Einblicke in das Forschungsprojekt „Beethovens Werkstatt“",
+      "publisher-place": "Akademie der Wissenschaften und der Literatur, Mainz",
+      "genre": "Vortrag",
+      "event": "Werkstattgespräche",
+      "event-place": "Akademie der Wissenschaften und der Literatur, Mainz",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            5,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/V37XRNHB",
+      "type": "speech",
+      "title": "(Digitaler) Editor und DH’ler",
+      "publisher-place": "Folkwang-Hochschule, Essen",
+      "genre": "Vortrag",
+      "event-place": "Folkwang-Hochschule, Essen",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            5,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/CHNGNQZC",
+      "type": "speech",
+      "title": "Seeing is believing. The VideApp from Beethovens Werkstatt",
+      "publisher-place": "University of Maryland",
+      "genre": "Poster",
+      "event": "Music Encoding Conference 2018",
+      "event-place": "University of Maryland",
+      "URL": "https://music-encoding.org/conference/2018/",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            5,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/7BE6H643",
+      "type": "speech",
+      "title": "Die VideApp: Ein Blick in Beethovens Werkstatt",
+      "publisher-place": "Berlin-Brandenburgische Akademie der Wissenschaften, Berlin",
+      "genre": "Poster",
+      "event": "Akademientag: Geisteswissenschaften 3.0: Vergegenwärtigung des kulturellen Welterbes.",
+      "event-place": "Berlin-Brandenburgische Akademie der Wissenschaften, Berlin",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Hartwig",
+          "given": "Maja"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            6,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/Z3N6N3HG",
+      "type": "speech",
+      "title": "Wie sieht Audio aus? Modellierung und Visualisierung als grundlegende Herausforderungen einer wissenschaftlichen digitalen Audio-Edition",
+      "publisher-place": "Wuppertal",
+      "genre": "Vortrag",
+      "event": "interdisziplinäre Fachtagung „Kritische Audio-Edition“",
+      "event-place": "Wuppertal",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Münzmay",
+          "given": "Andreas"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            7,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/T7R9K86M",
+      "type": "speech",
+      "title": "The future role of digital editions in the context of performance practice of the 18th and 19th century",
+      "publisher-place": "Utrecht",
+      "genre": "Vortrag",
+      "event": "KVNM/STIMU-Symposium „Editing the Past“",
+      "event-place": "Utrecht",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            8,
+            30
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/SAURFB2P",
+      "type": "speech",
+      "title": "Die Beethoven-Skizzenforschung zwischen deiktischen Darstellungsstrategien und multiperspektivischen Vermittlungsformen",
+      "publisher-place": "Greifswald",
+      "genre": "Vortrag",
+      "event": "Neue Ansätze zur Skizzenforschung für die Musik des langen 19. Jahrhunderts",
+      "event-place": "Greifswald",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            9,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/7WZWBZU9",
+      "type": "speech",
+      "title": "Digital Music Editions beyond (Edited) Musical Text",
+      "publisher-place": "Mainz",
+      "genre": "Vortrag",
+      "event": "Music as Reference in Mobility Contexts: Operatic Pasticcios in 18th Century Europe",
+      "event-place": "Mainz",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/5QGWVI5W",
+      "type": "speech",
+      "title": "Digitale Musikedition als ‚Moving Target‘. Einige Thesen zu den Herausforderungen einer zeitgemäßen Musikphilologie",
+      "publisher-place": "Universität Würzburg",
+      "genre": "Vortrag",
+      "event": "Musikwissenschaftliches Institut",
+      "event-place": "Universität Würzburg",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            11,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/KJ3WS9ZF",
+      "type": "speech",
+      "title": "Beethovens Skizzen: Völlige Unordnung oder geordnetes Chaos?",
+      "publisher-place": "Universität Koblenz",
+      "genre": "Vortrag",
+      "event": "Kulturwissenschaftliches Nachwuchskolloquium „(Un-)Ordnungen“",
+      "event-place": "Universität Koblenz",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            12,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/AGEU73KV",
+      "type": "speech",
+      "title": "Beethoven Searching for Melodies: His Folksong Settings WoO 158",
+      "publisher-place": "Warschau",
+      "genre": "Vortrag",
+      "event": "Beethoven-Symposium",
+      "event-place": "Warschau",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            4,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/CJB28QEH",
+      "type": "speech",
+      "title": "MEI Metadata und RISM",
+      "publisher-place": "Akademie der Wissenschaften und der Literatur, Mainz",
+      "genre": "Vortrag",
+      "event": "Werke, Werktitel, Werknorm – Perspektiven der Einführung einer Werkebene bei RISM",
+      "event-place": "Akademie der Wissenschaften und der Literatur, Mainz",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Herold",
+          "given": "Kristin"
+        },
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Richts",
+          "given": "Kristina"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            5,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/HDPH9MD8",
+      "type": "speech",
+      "title": "Rück- und Ausblicke: 15 Jahre digitale Musikedition mit Edirom",
+      "publisher-place": "Musikhochschule Karlsruhe",
+      "genre": "Vortrag",
+      "event-place": "Musikhochschule Karlsruhe",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            5,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/JJCFTXUH",
+      "type": "speech",
+      "title": "MEI Based Tools for Score Comparison and Analysis",
+      "publisher-place": "Wien",
+      "genre": "Poster",
+      "event": "Music Encoding Conference 2019",
+      "event-place": "Wien",
+      "URL": "https://music-encoding.org/conference/2019/program/",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            5,
+            30
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/GNW7ZPB5",
+      "type": "speech",
+      "title": "Zur Übertragbarkeit der Methoden des Projektes „Beethovens Werkstatt“ auf andere Komponisten: Robert Schumanns Schreibstrategien",
+      "publisher-place": "Universität Paderborn",
+      "genre": "Vortrag",
+      "event": "Jahrestagung der Gesellschaft für Musikforschung",
+      "event-place": "Universität Paderborn",
+      "URL": "https://www.muwi-detmold-paderborn.de/seminar/veranstaltungsarchiv/gfm-2019",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            9,
+            23
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/ZXH6UJ4A",
+      "type": "speech",
+      "title": "Zur Rolle von Standardisierungsinitiativen im Bereich Text- und Musikedition",
+      "publisher-place": "Akademie der Wissenschaften und der Literatur, Mainz",
+      "genre": "Vortrag",
+      "event": "Musikwissenschaftliche Vorhaben im 21. Jahrhundert – Chancen und Perspektiven",
+      "event-place": "Akademie der Wissenschaften und der Literatur, Mainz",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Stadler",
+          "given": "Peter"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/758F7GNH",
+      "type": "speech",
+      "title": "Entwicklung musikwissenschaftlicher Vorhaben im kommenden Jahrzehnt",
+      "publisher-place": "Akademie der Wissenschaften und der Literatur, Mainz",
+      "genre": "Vortrag",
+      "event": "Musikwissenschaftliche Vorhaben im 21. Jahrhundert – Chancen und Perspektiven",
+      "event-place": "Akademie der Wissenschaften und der Literatur, Mainz",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/JIV4Z3UC",
+      "type": "speech",
+      "title": "Freylich war der Effect ganz derselbe, aber nicht für das Auge: Beethoven‘s own arrangement of the Great Fugue op. 133/134",
+      "publisher-place": "Boston",
+      "genre": "Vortrag",
+      "event": "Eighth International New Beethoven Research Conference",
+      "event-place": "Boston",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            30
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/XTJR5UB7",
+      "type": "speech",
+      "title": "Beethovens Eigenbearbeitungen und digitale Heuristik. Erfahrungen mit den synoptischen Doppeleditionen und Analysewerkzeugen des Projekts „Beethovens Werkstatt“",
+      "publisher-place": "Beethoven-Haus Bonn",
+      "genre": "Vortrag",
+      "event": "Internationaler wissenschaftlicher Kongress „Beethoven-Perspektiven“, Hauptsymposium IV: „Der schaffende Beethoven“",
+      "event-place": "Beethoven-Haus Bonn",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Münzmay",
+          "given": "Andreas"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            2,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/JKN8ZT9H",
+      "type": "speech",
+      "title": "Zu den Anforderungen einer musikalischen Stilometrie",
+      "publisher-place": "Universität Paderborn",
+      "genre": "Vortrag",
+      "event": "7. Jahrestagung des Verbands Digital Humanities im deutschsprachigen Raum",
+      "event-place": "Universität Paderborn",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            3,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/F7ISESN2",
+      "type": "speech",
+      "title": "Würgegriff oder Rettungsanker? – Interpretationsspielräume handschriftlicher (Musik-)Quellen im digitalen Kontext",
+      "publisher-place": "Universität Paderborn",
+      "genre": "Vortrag",
+      "event": "7. Jahrestagung des Verbands Digital Humanities im deutschsprachigen Raum",
+      "event-place": "Universität Paderborn",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            3,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/CEGAHSQU",
+      "type": "speech",
+      "title": "Beethovens Werkstatt – A Digital Edition of Notirungsbuch K.",
+      "publisher-place": "Hungarian Department for Music History (HUN-REN RCH)",
+      "genre": "Workshop/Seminar",
+      "event": "Digital Critical Editions in Music",
+      "event-place": "Hungarian Department for Music History (HUN-REN RCH)",
+      "URL": "https://zti.hu/en/119-zti-esemenyek/2025/1336-digital-critical-editions-in-music-3-online-workshop-2",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            23
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/I7BI4QFT",
+      "type": "speech",
+      "title": "Beyond the Standard Model",
+      "publisher-place": "Texas",
+      "genre": "Vortrag",
+      "event": "Music Encoding Conference",
+      "event-place": "Texas",
+      "URL": "https://music-encoding.org/conference/2024/",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Rosendahl",
+          "given": "Lisa"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            5,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/WPWH7UQK",
+      "type": "speech",
+      "title": "MusicDiff",
+      "publisher-place": "Saarbrücken",
+      "genre": "Tool-/Projektvorstellung",
+      "event": "GfM, Methoden und Ziele digitaler Musikwissenschaft: Ein Marktplatz aktueller Forschung",
+      "event-place": "Saarbrücken",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Seipelt",
+          "given": "Agnes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/HC44BCN7",
+      "type": "speech",
+      "title": "CollAna",
+      "publisher-place": "Saarbrücken",
+      "genre": "Tool-/Projektvorstellung",
+      "event": "GfM, Methoden und Ziele digitaler Musikwissenschaft: Ein Marktplatz aktueller Forschung",
+      "event-place": "Saarbrücken",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Mo",
+          "given": "Ran"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/4XSUKEEE",
+      "type": "speech",
+      "title": "Facsimile Explorer",
+      "publisher-place": "Saarbrücken",
+      "genre": "Tool-/Projektvorstellung",
+      "event": "GfM, Methoden und Ziele digitaler Musikwissenschaft: Ein Marktplatz aktueller Forschung",
+      "event-place": "Saarbrücken",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/3R8FEM4H",
+      "type": "speech",
+      "title": "Vorstellung des „Facsimile Explorers“, „CollAna“ und „MusicDiff“ bei „Methoden und Ziele digitaler Musikwissenschaft: Ein Marktplatz aktueller Forschung“",
+      "publisher-place": "Saarbrücken",
+      "genre": "Tool-/Projektvorstellung",
+      "event": "Jahrestagung der Gesellschaft für Musikforschung",
+      "event-place": "Saarbrücken",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        },
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Mo",
+          "given": "Ran"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        },
+        {
+          "family": "Seipelt",
+          "given": "Agnes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/E3NSXQF3",
+      "type": "speech",
+      "title": "A Beethoven Sketchbook and its Journey from East to West or: How Beethoven’s Engelmann Sketchbook Found its Way to Johannes Brahms",
+      "publisher-place": "Warschau",
+      "genre": "Vortrag",
+      "event": "26th International Beethoven Symposium „Beethoven – Between East and West“",
+      "event-place": "Warschau",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/IFPXMQKV",
+      "type": "speech",
+      "title": "Symposium: Digitale Heuristik in der Musikwissenschaft",
+      "publisher-place": "Berlin",
+      "genre": "Vortrag",
+      "event": "Symposium der Fachgruppe Digitale Musikwissenschaft „Musikwissenschaft 4.0 ,nach der Norm‘ und die Frage nach dem Erkenntnisgewinn“ im Rahmen der Jahrestagung der Gesellschaft für Musikforschung",
+      "event-place": "Berlin",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Münzmay",
+          "given": "Andreas"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            9,
+            29
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/ZAUQZKCQ",
+      "type": "speech",
+      "title": "Das „Engelmann-Skizzenbuch“ von L. van Beethoven – Auf dem Weg zu einer digitalen Skizzenbuch-Edition",
+      "publisher-place": "Mainz",
+      "genre": "Vortrag",
+      "event": "„Wissenschaftsgespräche digital“ der Akademie der Wissenschaften und der Literatur | Mainz",
+      "event-place": "Mainz",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            9,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/MWRAT8E3",
+      "type": "speech",
+      "title": "Roundtable: Beethoven’s arrangements of own works – the 2nd module of Beethovens Werkstatt",
+      "publisher-place": "Athen",
+      "genre": "Panel/Diskussion",
+      "event": "Roundtable: „Beethoven’s Large Scale Works outside the Concert Hall: Towards a Digital Representation of Domestic Arrangements“ bei der IMS 2022",
+      "event-place": "Athen",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        },
+        {
+          "family": "Seipelt",
+          "given": "Agnes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            8,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/UZUIMR5R",
+      "type": "speech",
+      "title": "Podiumsdiskussion: Digitale Geisteswissenschaften als Werkzeug oder Wissenschaft?",
+      "publisher-place": "Karl-Franzens-Universität Graz",
+      "genre": "Panel/Diskussion",
+      "event-place": "Karl-Franzens-Universität Graz",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            6,
+            23
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/QK2MNTTI",
+      "type": "speech",
+      "title": "Panel-Session: Musicology and Music Philology. Can digitization revive an old connection?",
+      "publisher-place": "Halifax, Kanada",
+      "genre": "Panel/Diskussion",
+      "event": "Music Encoding Conference 2022",
+      "event-place": "Halifax, Kanada",
+      "URL": "https://music-encoding.org/conference/2022/",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Münzmay",
+          "given": "Andreas"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/RMJAZJCJ",
+      "type": "speech",
+      "title": "Johannes Brahms und Beethovens Engelmann-Skizzenbuch",
+      "publisher-place": "Bonn",
+      "genre": "Vortrag",
+      "event": "10. Bonner Humboldt-Preisträger-Forum „Beethovens ‚Geistiges Reich‘: ‚Symbole des Vortrefflichen‘ in der Kunst und die kulturelle Politik des Widerstandes.“",
+      "event-place": "Bonn",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2021,
+            10,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/C4FGRJT2",
+      "type": "speech",
+      "title": "About ‚die Kunst musikalische Gerippe zu erschaffen‘. For a comparative approach to Beethoven’s Composing Strategies",
+      "publisher-place": "Bonn",
+      "genre": "Vortrag",
+      "event": "10. Bonner Humboldt-Preisträger-Forum „Beethovens ‚Geistiges Reich‘: ‚Symbole des Vortrefflichen‘ in der Kunst und die kulturelle Politik des Widerstandes.“",
+      "event-place": "Bonn",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2021,
+            10,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/8R79M25Z",
+      "type": "speech",
+      "title": "Beethovens Werkstatt. Genetische Textkritik und Digitale Musikedition",
+      "publisher-place": "Bonn",
+      "genre": "Tool-/Projektvorstellung",
+      "event": "17. Internationaler Kongress der Gesellschaft für Musikforschung, Projektpräsentationen IV",
+      "event-place": "Bonn",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        },
+        {
+          "family": "Herold",
+          "given": "Kristin"
+        },
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Mo",
+          "given": "Ran"
+        },
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2021,
+            10,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/366X3ED7",
+      "type": "speech",
+      "title": "Beethovens Werkstatt – neuartige Zugänge zu den Arbeitsprozessen des Komponisten",
+      "publisher-place": "Alfried Krupp Wissenschaftskolleg Greifswald",
+      "genre": "Vortrag",
+      "event": "Vortragsreihe \"Beethoven\"",
+      "event-place": "Alfried Krupp Wissenschaftskolleg Greifswald",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2021,
+            6,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/A7VACHP3",
+      "type": "speech",
+      "title": "Beethovens Werkstatt: Einblicke in den Schaffensprozess",
+      "publisher-place": "Hochschule für Musik und Tanz Köln",
+      "genre": "Vortrag",
+      "event": "Ringvorlesung: Beethoven unter der Lupe. Neue Perspektiven der Interpretation, Analyse und Rezeption",
+      "event-place": "Hochschule für Musik und Tanz Köln",
+      "URL": "https://youtu.be/YA8z0P0EGqE?feature=shared",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2021,
+            1,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/2CP6V45F",
+      "type": "speech",
+      "title": "Beethoven’s “Concept” – Working Manuscripts Between Sketch and Fair Copy",
+      "publisher-place": "Lugano",
+      "genre": "Vortrag",
+      "event": "Beethoven and the Piano: Philology, Context and Performance Practice",
+      "event-place": "Lugano",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            11,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/GFW2WT46",
+      "type": "speech",
+      "title": "Sheet 154 of the Kafka Sketchbook. A Continuity Draft Written by the Young Beethoven",
+      "publisher-place": "Siena",
+      "genre": "Vortrag",
+      "event": "XXVII. Tagung der Società Italiana di Musicologia",
+      "event-place": "Siena",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            10,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/4WKHR8RD",
+      "type": "speech",
+      "title": "Il principio compositivo della voce-guida fra schizzi e autografi: un esempio dal Kyrie della Messa in Do Maggiore op. 86",
+      "publisher-place": "Siena",
+      "genre": "Vortrag",
+      "event": "Beethoven's ‚Concept‘: Working Manuscripts between Sketch and Fair Copy",
+      "event-place": "Siena",
+      "language": "italienisch",
+      "author": [
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            9,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/ZV9RAZT2",
+      "type": "speech",
+      "title": "Il principio compositivo della voce-guida fra schizzi e autografi: un esempio dal Kyrie della Messa in Do Maggiore op. 86",
+      "publisher-place": "Siena",
+      "genre": "Vortrag",
+      "event": "XXVII. Tagung der Società Italiana di Musicologia",
+      "event-place": "Siena",
+      "language": "italienisch",
+      "author": [
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            10,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/MVS5QXMH",
+      "type": "speech",
+      "title": "Skizzenblatt 154 des Kafka-Konvolutes – Ein Kompositionsentwurf des jungen Beethoven",
+      "publisher-place": "Siena",
+      "genre": "Vortrag",
+      "event": "Beethoven's ‚Concept‘: Working Manuscripts between Sketch and Fair Copy",
+      "event-place": "Siena",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            9,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/U4BAF6WR",
+      "type": "speech",
+      "title": "Beethovens Engelmann-Skizzenbuch – Völlige Unordnung oder geordnetes Chaos?",
+      "publisher-place": "Musikwissenschaftliches Seminar Detmold/Paderborn",
+      "genre": "Vortrag",
+      "event": "Ringvorlesung: Beethoven | Räume. Kulturwissenschaftliche Perspektiven, Kulturelle Resonanzen",
+      "event-place": "Musikwissenschaftliches Seminar Detmold/Paderborn",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            6,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/F2ZQWBB4",
+      "type": "speech",
+      "title": "MEI Einführung und Vorstellung der Tools",
+      "publisher-place": "ÖAW Wien",
+      "genre": "Tool-/Projektvorstellung",
+      "event": "Tool Gallery",
+      "event-place": "ÖAW Wien",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            6,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/IE2ZGXW3",
+      "type": "speech",
+      "title": "Integrating Score Rendition into the MEIGarage",
+      "publisher-place": "Tufts University in Boston",
+      "genre": "Vortrag",
+      "event": "Music Encoding Conference 2020",
+      "event-place": "Tufts University in Boston",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            5,
+            28
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/FSGSWWGZ",
+      "type": "speech",
+      "title": "MusicDiff: A Diff Tool for MEI",
+      "publisher-place": "Tufts University in Boston",
+      "genre": "Vortrag",
+      "event": "Music Encoding Conference 2020",
+      "event-place": "Tufts University in Boston",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Herold",
+          "given": "Kristin"
+        },
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Mo",
+          "given": "Ran"
+        },
+        {
+          "family": "Seipelt",
+          "given": "Agnes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            5,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/3JZ5IMH4",
+      "type": "speech",
+      "title": "A Musical Installation for a New Listening Perspective",
+      "publisher-place": "Graz",
+      "genre": "Poster",
+      "event": "Audio Mostly",
+      "event-place": "Graz",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        },
+        {
+          "family": "Berndt",
+          "given": "Axel"
+        },
+        {
+          "family": "Hadjakos",
+          "given": "Aristotelis"
+        },
+        {
+          "family": "Waloschek",
+          "given": "Simon"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            9,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/CW6XUPI7",
+      "type": "speech",
+      "title": "Beethovens Werkstatt: Genetische Textkritik und Digitale Musikedition",
+      "publisher-place": "Bonn",
+      "genre": "Vortrag",
+      "event": "Internationaler Kongress der GfM",
+      "event-place": "Bonn",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        },
+        {
+          "family": "Herold",
+          "given": "Kristin"
+        },
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Mo",
+          "given": "Ran"
+        },
+        {
+          "family": "Münzmay",
+          "given": "Andreas"
+        },
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        },
+        {
+          "family": "Seipelt",
+          "given": "Agnes"
+        },
+        {
+          "family": "Voigt",
+          "given": "Jan-Peter"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            28
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/ZXI7G2C9",
+      "type": "speech",
+      "title": "Annotations and Digitale Music Edition",
+      "publisher-place": "Mainz",
+      "genre": "Vortrag",
+      "event": "Possibilities and Limitations of Digital Annotation Tools for Audio-Visual Material with a Focus on Sound and Music",
+      "event-place": "Mainz",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Münzmay",
+          "given": "Andreas"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/JK4M7U8N",
+      "type": "speech",
+      "title": "Beethoven's arrangements of own works – the 2nd module of Beethovens Werkstatt",
+      "publisher-place": "Athen",
+      "genre": "Vortrag",
+      "event": "IMS 2022 – Roundtable „Beethoven’s Large Scale Works outside the Concert Hall: Towards a Digital Representation of Domestic Arrangements“",
+      "event-place": "Athen",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        },
+        {
+          "family": "Seipelt",
+          "given": "Agnes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            8,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/J8GQBMNW",
+      "type": "speech",
+      "title": "Beethovens Skizzen",
+      "publisher-place": "Universität Frankfurt",
+      "genre": "Vortrag",
+      "event": "Skizze, Fragment, Torso – Das Unvollendete der Musik",
+      "event-place": "Universität Frankfurt",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            1,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/PKQXZP9E",
+      "type": "speech",
+      "title": "Vorstellung zweier Fallbeispiele",
+      "publisher-place": "Menaggio",
+      "genre": "Vortrag",
+      "event": "Villa-Vigoni-Gespräche: \"Auf dem Weg zu einer vergleichenden Erforschung kompositorischer Schaffensprozesse\"",
+      "event-place": "Menaggio",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            5,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/EAW7M5XB",
+      "type": "speech",
+      "title": "Let’s get visual. Dealing with layout information in MEI",
+      "publisher-place": "London, UK",
+      "genre": "Vortrag",
+      "event": "Music Encoding Conference 2025",
+      "event-place": "London, UK",
+      "URL": "https://music-encoding.org/conference/2025/",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Pugin",
+          "given": "Laurent"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/AR7HS8NH",
+      "type": "speech",
+      "title": "Beethovens Werkstatt – A Digital Edition of Notirungsbuch K",
+      "publisher-place": "Vilnius, Lithuania",
+      "genre": "Vortrag",
+      "event": "Baltic Musicological Conference 2024",
+      "event-place": "Vilnius, Lithuania",
+      "URL": "https://lmta.lt/en/baltic-musicological-conference-call-for-papers/",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            30
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/NE7WE4SP",
+      "type": "speech",
+      "title": "Encoding Genetic Processes II",
+      "publisher-place": "University of Alicante",
+      "genre": "Vortrag",
+      "event": "Music Encoding Conference 2021",
+      "event-place": "University of Alicante",
+      "URL": "https://music-encoding.org/conference/2021/",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        },
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2021,
+            7,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/C3BXFPW6",
+      "type": "speech",
+      "title": "Beethovens Werkstatt – neuartige Zugänge zu den Arbeitsprozessen des Komponisten",
+      "publisher-place": "Greifswald",
+      "genre": "Vortrag",
+      "event": "Alfried Krupp Wissenschaftskolleg Greifswald: Digital Lecture im Rahmen der Vortragsreihe „Beethoven“",
+      "event-place": "Greifswald",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2021,
+            6,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/KA9NXMNS",
+      "type": "speech",
+      "title": "Forschungsperspektiven aus der Sicht von Beethovens Werkstatt",
+      "publisher-place": "Bonn",
+      "genre": "Vortrag",
+      "event": "17. Internationaler Kongress der Gesellschaft für Musikforschung, Hauptsymposium I: Neue Aufgaben der Beethoven-Forschung",
+      "event-place": "Bonn",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            28
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/AW76GJ72",
+      "type": "speech",
+      "title": "Beethovens Op. 20 und Op. 38: Eine Frage der Perspektive",
+      "publisher-place": "Beethoven-Haus Bonn",
+      "genre": "Vortrag",
+      "event": "Eröffnung der Sonderausstellung „Inside Beethoven“",
+      "event-place": "Beethoven-Haus Bonn",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2021,
+            10,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/CIRWVSUE",
+      "type": "speech",
+      "title": "Italienische Kompositionsmethoden in Beethovens Wien",
+      "publisher-place": "Deutsches Historisches Institut in Rom",
+      "genre": "Vortrag",
+      "event": "Ludwig van Beethoven und Italien. Person und Werk im Zeichen nationaler Erinnerungskultur",
+      "event-place": "Deutsches Historisches Institut in Rom",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2021,
+            11,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/VC2I9B3G",
+      "type": "speech",
+      "title": "Beethoven’s Sketches for the Ninth Symphony in the Engelmann Sketchbook",
+      "publisher-place": "Warschau",
+      "genre": "Vortrag",
+      "event": "25th International Beethoven Symposium „Beethoven – Father of Great Symphonism“",
+      "event-place": "Warschau",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/CQPSPNH5",
+      "type": "speech",
+      "title": "Beethoven, die Familie Ries und Joseph Joachim. Beobachtungen zu Musikernetzwerken im 19. Jahrhundert",
+      "publisher-place": "Beethoven-Haus Bonn",
+      "genre": "Vortrag",
+      "event": "Tagung „Beethoven und seine rheinischen Musikerkollegen“ der Arbeitsgemeinschaft für Rheinische Musikgeschichte",
+      "event-place": "Beethoven-Haus Bonn",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            6,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/ZQMJXNCP",
+      "type": "speech",
+      "title": "Beethovens Werkstatt. Genetische Textkritik und Digitale Edition. Ein Grundlagenforschungsprojekt.",
+      "publisher-place": "Koblenz",
+      "genre": "Vortrag",
+      "event": "Tagung „Understanding Beethoven: Musicology and Computer Science in Dialogue“ veranstaltet vom Mittelrhein-Museum Koblenz und dem Institut für Musikwissenschaft der Universität des Saarlandes im Mutter-Beethoven-Haus",
+      "event-place": "Koblenz",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            7,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/2P4V6EAE",
+      "type": "speech",
+      "title": "Für Wissenschaft und Praxis gleichermaßen – Neue Möglichkeiten der Vermittlung musikalischer Editionsinhalte",
+      "publisher-place": "Klagenfurt",
+      "genre": "Vortrag",
+      "event": "19. internationale Tagung der Arbeitsgemeinschaft für germanistische Edition",
+      "event-place": "Klagenfurt",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            9,
+            23
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/T9DGH7E9",
+      "type": "speech",
+      "title": "Beethoven liest Korrektur. Zur Revision des 5. Klavierkonzerts op. 73",
+      "publisher-place": "Berlin",
+      "genre": "Vortrag",
+      "event": "Jahrestagung der Gesellschaft für Musikforschung",
+      "event-place": "Berlin",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            9,
+            29
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/QKCJNHV3",
+      "type": "speech",
+      "title": "Beethoven’s Early Sketches for the Ninth Symphony",
+      "publisher-place": "New Orleans",
+      "genre": "Vortrag",
+      "event": "9th New Beethoven Research Conference",
+      "event-place": "New Orleans",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            11,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/4FEUZMGF",
+      "type": "speech",
+      "title": "The Reception of Italian Compositional Methods in Beethoven’s Vienna",
+      "publisher-place": "New Orleans",
+      "genre": "Vortrag",
+      "event": "9th New Beethoven Research Conference",
+      "event-place": "New Orleans",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            11,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/ITHXXS7S",
+      "type": "speech",
+      "title": "Getting to Beethoven with Digital Tools: Tracing the Compositional Process in Beethovens Werkstatt",
+      "publisher-place": "Boston University, College of Fine Arts",
+      "genre": "Vortrag",
+      "event-place": "Boston University, College of Fine Arts",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            11,
+            30
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/SU29VHBD",
+      "type": "speech",
+      "title": "Beethoven as an Arranger of his Great Fugue – From Playability to Augenmusik",
+      "publisher-place": "Juilliard School of Music, New York",
+      "genre": "Vortrag",
+      "event-place": "Juilliard School of Music, New York",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            11,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/IXT2ZNZM",
+      "type": "speech",
+      "title": "Open Data in musikphilologischen Projekten: Herausforderungen, Strategien, Potenziale",
+      "publisher-place": "Universität Trier",
+      "genre": "Vortrag",
+      "event": "DHd-Jahrestagung,",
+      "event-place": "Universität Trier",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Münzmay",
+          "given": "Andreas"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/MQQBCVT5",
+      "type": "speech",
+      "title": "Exploring the Genesis of Musical Works – Beethovens Werkstatt",
+      "publisher-place": "Northumbria University, Newcastle upon Tyne",
+      "genre": "Vortrag",
+      "event": "The Future of Digital Editions of Music",
+      "event-place": "Northumbria University, Newcastle upon Tyne",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            29
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/WKR6684S",
+      "type": "speech",
+      "title": "Mashing up the Tools. Digital Scholarly Annotations in the Beethoven in the House Project",
+      "publisher-place": "Cambridge",
+      "genre": "Vortrag",
+      "event": "IAML-Jahrestagung",
+      "event-place": "Cambridge",
+      "URL": "https://www.iaml.info/congresses/2023-cambridge",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            8,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/F7RJKDK4",
+      "type": "speech",
+      "title": "Exploring the Genesis of Complex Music Manuscripts",
+      "publisher-place": "Paderborn",
+      "genre": "Vortrag",
+      "event": "Joint MEC and TEI Conference",
+      "event-place": "Paderborn",
+      "URL": "https://teimec2023.uni-paderborn.de/contributions/112.html",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        },
+        {
+          "family": "Voigt",
+          "given": "Jan-Peter"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            9,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/CS4HU2K5",
+      "type": "speech",
+      "title": "Beethovens erste Niederschriften seiner Werke: Arbeitsmanuskripte zwischen Skizze und Reinschrift",
+      "publisher-place": "Saarbrücken",
+      "genre": "Vortrag",
+      "event": "Jahrestagung der Gesellschaft für Musikforschung",
+      "event-place": "Saarbrücken",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/7GIHFNWE",
+      "type": "speech",
+      "title": "’Of course the effect was the same – but not for the eye’: Beethoven’s own arrangement of the ‘Grosse Fuge’ op. 133/134",
+      "publisher-place": "Tianjin, China",
+      "genre": "Vortrag",
+      "event": "Eröffnung der Juilliard School of Music in Tianjin, China",
+      "event-place": "Tianjin, China",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/4WNK2MHP",
+      "type": "speech",
+      "title": "Beethovens Revisionsprozesse und ihre digitale Darstellung",
+      "publisher-place": "München",
+      "genre": "Vortrag",
+      "event": "Symposium „Musikquellen des 19. Jahrhunderts in Deutschland: Herausforderungen und Chancen“",
+      "event-place": "München",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            11,
+            22
+          ]
+        ]
+      }
+    }
+  ]
+}
