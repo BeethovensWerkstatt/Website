@@ -635,19 +635,6 @@ function updateFilterOptions() {
   const currentSprache = document.getElementById('filter-sprache').value;
   const currentPerson = document.getElementById('filter-person').value;
   
-  // Für Jahre: ALLE Vorträge (nicht nur sichtbare)
-  const alleVortraege = document.querySelectorAll('.vortrag-item');
-  const alleJahre = new Set();
-  alleVortraege.forEach(vortrag => {
-    alleJahre.add(vortrag.dataset.jahr);
-  });
-  
-  // Für andere Filter: nur sichtbare Vorträge
-  const vortraege = document.querySelectorAll('.vortrag-item:not(.hidden)');
-  const genres = new Set();
-  const sprachen = new Set();
-  const personen = new Set();
-  
   // Team-Mitglieder (aktuelle und ehemalige)
   const teamMitglieder = new Set([
     'appel', 'cox', 'greshake', 'herold', 'kepper', 'münzmay', 'rosendahl', 
@@ -655,24 +642,6 @@ function updateFilterOptions() {
     'saccomano', 'novara', 'mo', 'pauls', 'obert', 'markert', 'rovelli', 
     'hartwig', 'schlicht', 'zhang', 'scheffler'
   ]);
-  
-  // Nur aus sichtbaren Vorträgen sammeln (außer Jahre)
-  vortraege.forEach(vortrag => {
-    if (vortrag.dataset.genre) genres.add(vortrag.dataset.genre);
-    if (vortrag.dataset.sprache) sprachen.add(vortrag.dataset.sprache);
-    
-    if (vortrag.dataset.autoren) {
-      const autorListe = vortrag.dataset.autoren.split('; ');
-      autorListe.forEach(autor => {
-        if (autor.trim()) {
-          const nachname = autor.split(',')[0].trim().toLowerCase();
-          if (teamMitglieder.has(nachname)) {
-            personen.add(autor.trim());
-          }
-        }
-      });
-    }
-  });
   
   function capitalizeWords(str) {
     return str.split(' ').map(word => 
@@ -682,9 +651,48 @@ function updateFilterOptions() {
     ).join(' ');
   }
   
-  // Update Jahr filter (ALLE Jahre, immer verfügbar)
+  // Hilfsfunktion: Sammle Optionen für einen Filter, ignoriere dabei diesen Filter selbst
+  function getOptionsForFilter(filterToUpdate) {
+    const alleVortraege = document.querySelectorAll('.vortrag-item');
+    const jahre = new Set();
+    const genres = new Set();
+    const sprachen = new Set();
+    const personen = new Set();
+    
+    alleVortraege.forEach(vortrag => {
+      // Prüfe ob Vortrag zu den ANDEREN Filtern passt (nicht zum aktuellen Filter!)
+      const jahrMatch = filterToUpdate === 'jahr' || !currentJahr || vortrag.dataset.jahr === currentJahr;
+      const genreMatch = filterToUpdate === 'genre' || !currentGenre || vortrag.dataset.genre === currentGenre;
+      const spracheMatch = filterToUpdate === 'sprache' || !currentSprache || vortrag.dataset.sprache === currentSprache;
+      const personMatch = filterToUpdate === 'person' || !currentPerson || vortrag.dataset.autoren.includes(currentPerson);
+      
+      // Nur wenn alle ANDEREN Filter passen, füge die Option hinzu
+      if (jahrMatch && genreMatch && spracheMatch && personMatch) {
+        jahre.add(vortrag.dataset.jahr);
+        if (vortrag.dataset.genre) genres.add(vortrag.dataset.genre);
+        if (vortrag.dataset.sprache) sprachen.add(vortrag.dataset.sprache);
+        
+        if (vortrag.dataset.autoren) {
+          const autorListe = vortrag.dataset.autoren.split('; ');
+          autorListe.forEach(autor => {
+            if (autor.trim()) {
+              const nachname = autor.split(',')[0].trim().toLowerCase();
+              if (teamMitglieder.has(nachname)) {
+                personen.add(autor.trim());
+              }
+            }
+          });
+        }
+      }
+    });
+    
+    return { jahre, genres, sprachen, personen };
+  }
+  
+  // Update Jahr filter (basierend auf Genre, Sprache, Person - aber nicht Jahr)
+  const jahrOptions = getOptionsForFilter('jahr');
   const jahrSelect = document.getElementById('filter-jahr');
-  const jahrWerte = Array.from(alleJahre).sort((a, b) => b - a);
+  const jahrWerte = Array.from(jahrOptions.jahre).sort((a, b) => b - a);
   jahrSelect.innerHTML = '<option value="">Alle Jahre</option>';
   jahrWerte.forEach(jahr => {
     const option = document.createElement('option');
@@ -694,9 +702,10 @@ function updateFilterOptions() {
     jahrSelect.appendChild(option);
   });
   
-  // Update Genre filter
+  // Update Genre filter (basierend auf Jahr, Sprache, Person - aber nicht Genre)
+  const genreOptions = getOptionsForFilter('genre');
   const genreSelect = document.getElementById('filter-genre');
-  const genreWerte = Array.from(genres).sort();
+  const genreWerte = Array.from(genreOptions.genres).sort();
   genreSelect.innerHTML = '<option value="">Alle Genres</option>';
   genreWerte.forEach(genre => {
     const option = document.createElement('option');
@@ -706,9 +715,10 @@ function updateFilterOptions() {
     genreSelect.appendChild(option);
   });
   
-  // Update Sprache filter
+  // Update Sprache filter (basierend auf Jahr, Genre, Person - aber nicht Sprache)
+  const spracheOptions = getOptionsForFilter('sprache');
   const spracheSelect = document.getElementById('filter-sprache');
-  const spracheWerte = Array.from(sprachen).sort();
+  const spracheWerte = Array.from(spracheOptions.sprachen).sort();
   spracheSelect.innerHTML = '<option value="">Alle Sprachen</option>';
   spracheWerte.forEach(sprache => {
     const option = document.createElement('option');
@@ -718,9 +728,10 @@ function updateFilterOptions() {
     spracheSelect.appendChild(option);
   });
   
-  // Update Person filter
+  // Update Person filter (basierend auf Jahr, Genre, Sprache - aber nicht Person)
+  const personOptions = getOptionsForFilter('person');
   const personSelect = document.getElementById('filter-person');
-  const personWerte = Array.from(personen).sort();
+  const personWerte = Array.from(personOptions.personen).sort();
   personSelect.innerHTML = '<option value="">Alle Personen</option>';
   personWerte.forEach(person => {
     const option = document.createElement('option');
