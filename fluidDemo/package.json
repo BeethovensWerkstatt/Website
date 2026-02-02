@@ -1,0 +1,26 @@
+{
+  "name": "fluid-demo",
+  "version": "1.0.0",
+  "description": "Interactive SVG animation controller for fluid transcripts",
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve . -p 3000",
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint src/**/*.js --fix"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "serve": "^14.2.1"
+  },
+  "keywords": [
+    "svg",
+    "animation",
+    "beethoven"
+  ],
+  "author": "Beethovens Werkstatt",
+  "license": "MIT"
+}

@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fluid Transcript Viewer</title>
+  <style>
+/* Reset and base styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #2c3e50;
+  --color-accent: #3498db;
+  --color-accent-hover: #2980b9;
+  --color-background: #f5f5f5;
+  --color-surface: #ffffff;
+  --color-text: #333333;
+  --color-text-muted: #666666;
+  --color-stop: #e74c3c;
+  --color-stop-inactive: #bdc3c7;
+  --border-radius: 8px;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --transition: 0.2s ease;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.header {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.75rem;
+  color: var(--color-primary);
+}
+
+/* Examples navigation */
+.examples-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.examples-label {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.example-link {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-accent);
+  border-radius: 4px;
+  color: var(--color-accent);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color var(--transition), color var(--transition);
+}
+
+.example-link:hover {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+.example-link.active {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem 0;
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* SVG Container */
+.svg-container {
+  flex: 1;
+  background-color: var(--color-surface);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  overflow: auto;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.svg-container svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.loading {
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.error {
+  color: var(--color-stop);
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Controls */
+.controls {
+  background-color: var(--color-surface);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+}
+
+.slider-container {
+  margin-bottom: 1rem;
+}
+
+.slider-track {
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+/* Stop indicators */
+.slider-stops {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.stop-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--color-stop-inactive);
+  border: 2px solid var(--color-surface);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: background-color var(--transition), transform var(--transition);
+}
+
+.stop-indicator.active {
+  background-color: var(--color-stop);
+  transform: scale(1.2);
+}
+
+/* Range slider */
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background: linear-gradient(
+    to right,
+    var(--color-accent) 0%,
+    var(--color-accent) var(--progress, 0%),
+    #ddd var(--progress, 0%),
+    #ddd 100%
+  );
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  cursor: pointer;
+  border: 3px solid var(--color-surface);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color var(--transition), transform var(--transition);
+}
+
+.slider::-webkit-slider-thumb:hover {
+  background: var(--color-accent-hover);
+  transform: scale(1.1);
+}
+
+.slider::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  cursor: pointer;
+  border: 3px solid var(--color-surface);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color var(--transition), transform var(--transition);
+}
+
+.slider::-moz-range-thumb:hover {
+  background: var(--color-accent-hover);
+}
+
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.step-label {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.step-indicator {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+#current-step {
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 0.5rem;
+  }
+
+  .header h1 {
+    font-size: 1.25rem;
+  }
+
+  .controls {
+    padding: 1rem;
+  }
+
+  .svg-container {
+    min-height: 300px;
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Fluid Transcript Viewer</h1>
+      <nav class="examples-nav">
+        <span class="examples-label">Examples:</span>
+        <a href="?svg=https://raw.githubusercontent.com/BeethovensWerkstatt/data-cache/refs/heads/main/cache/sources/D-BNba_MH_60_Engelmann/fluidTranscripts/p005/D-BNba_MH_60_Engelmann_p005_wz06_syss289fb17d-10e3-4b27-9b64-8d2d6a560c1d_ft.svg" class="example-link">NK 1/6</a>
+        <a href="?svg=https://raw.githubusercontent.com/BeethovensWerkstatt/data-cache/refs/heads/main/cache/sources/D-BNba_MH_60_Engelmann/fluidTranscripts/p013/D-BNba_MH_60_Engelmann_p013_wz03_syssa22641f6-8a96-46d6-ab5d-4ace61e4687d_ft.svg" class="example-link">NK 11/3</a>
+        <a href="?svg=https://raw.githubusercontent.com/BeethovensWerkstatt/data-cache/refs/heads/main/cache/sources/D-BNba_MH_60_Engelmann/fluidTranscripts/p042/D-BNba_MH_60_Engelmann_p042_wz01_syss8bc4f2e3-fa56-44ff-832b-8e4433d63fb5_ft.svg" class="example-link">NK 42/1</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="svg-container" id="svg-container">
+        <div class="loading" id="loading">Loading SVG...</div>
+      </div>
+
+      <div class="controls">
+        <div class="slider-container">
+          <div class="slider-track">
+            <div class="slider-stops" id="slider-stops">
+              <!-- Stop indicators will be generated by JS -->
+            </div>
+            <input
+              type="range"
+              id="animation-slider"
+              class="slider"
+              min="0"
+              max="100"
+              value="0"
+              step="0.1"
+            >
+          </div>
+          <div class="slider-labels">
+            <span class="step-label">Step 1</span>
+            <span class="step-label">Step 6</span>
+          </div>
+        </div>
+        <div class="step-indicator">
+          Current position: <span id="current-step">1</span>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>Beethovens Werkstatt – Fluid Transcript Demo</p>
+    </footer>
+  </div>
+
+  <script>
+/**
+ * @fileoverview Fluid Transcript Viewer - Standalone Bundle
+ * @author Beethovens Werkstatt
+ */
+
+/* ============================================================================
+ * FluidAnimationController Class
+ * ============================================================================ */
+
+/**
+ * @typedef {Object} AnimationData
+ * @property {Element} element - The animate or animateTransform element
+ * @property {Element} targetElement - The parent element being animated
+ * @property {string} attributeName - Name of the attribute being animated
+ * @property {string[]} values - Array of keyframe values
+ * @property {string} type - Animation type ('animate' or 'animateTransform')
+ * @property {string} [transformType] - Transform type for animateTransform (e.g., 'translate')
+ */
+
+/**
+ * Controller class for managing SVG animations
+ */
+class FluidAnimationController {
+  /**
+   * Create a new FluidAnimationController
+   * @param {SVGElement} svgElement - The SVG element to control
+   * @param {number} stepCount - Number of animation steps
+   */
+  constructor (svgElement, stepCount) {
+    /** @type {SVGElement} */
+    this.svgElement = svgElement
+
+    /** @type {number} */
+    this.stepCount = stepCount
+
+    /** @type {AnimationData[]} */
+    this.animations = []
+
+    /** @type {number} */
+    this.currentProgress = 0
+  }
+
+  /**
+   * Initialize the controller by parsing and disabling SMIL animations
+   */
+  init () {
+    this.parseAnimations()
+    this.disableAutoAnimation()
+    this.setProgress(0)
+  }
+
+  /**
+   * Parse all SMIL animation elements from the SVG
+   */
+  parseAnimations () {
+    const animateElements = this.svgElement.querySelectorAll('animate, animateTransform')
+
+    animateElements.forEach((element) => {
+      const valuesAttr = element.getAttribute('values')
+      const attributeName = element.getAttribute('attributeName')
+      const targetElement = element.parentElement
+
+      if (!valuesAttr || !attributeName || !targetElement) {
+        return
+      }
+
+      const values = valuesAttr.split(';').map(v => v.trim())
+
+      if (values.length !== this.stepCount) {
+        console.warn(
+          `Animation has ${values.length} keyframes, expected ${this.stepCount}:`,
+          element.id || element
+        )
+      }
+
+      /** @type {AnimationData} */
+      const animationData = {
+        element,
+        targetElement,
+        attributeName,
+        values,
+        type: element.tagName.toLowerCase()
+      }
+
+      if (element.tagName.toLowerCase() === 'animatetransform') {
+        animationData.transformType = element.getAttribute('type') || 'translate'
+      }
+
+      this.animations.push(animationData)
+    })
+
+    console.log(`Parsed ${this.animations.length} animations`)
+  }
+
+  /**
+   * Disable automatic SMIL animation playback
+   */
+  disableAutoAnimation () {
+    this.animations.forEach(({ element }) => {
+      element.setAttribute('begin', 'indefinite')
+      element.removeAttribute('repeatCount')
+      if (typeof element.endElement === 'function') {
+        try {
+          element.endElement()
+        } catch (_e) {
+          // Some browsers may throw if animation isn't active
+        }
+      }
+    })
+  }
+
+  /**
+   * Set the animation progress
+   * @param {number} progress - Progress value from 0 to 1
+   */
+  setProgress (progress) {
+    this.currentProgress = Math.max(0, Math.min(1, progress))
+
+    this.animations.forEach((animation) => {
+      const interpolatedValue = this.interpolateValue(animation, this.currentProgress)
+      this.applyValue(animation, interpolatedValue)
+    })
+  }
+
+  /**
+   * Interpolate between keyframe values based on progress
+   * @param {AnimationData} animation - The animation data
+   * @param {number} progress - Progress value from 0 to 1
+   * @returns {string} Interpolated value
+   */
+  interpolateValue (animation, progress) {
+    const { values } = animation
+    const segmentCount = values.length - 1
+
+    if (segmentCount <= 0) {
+      return values[0] || ''
+    }
+
+    const scaledProgress = progress * segmentCount
+    const segmentIndex = Math.min(Math.floor(scaledProgress), segmentCount - 1)
+    const segmentProgress = scaledProgress - segmentIndex
+
+    const startValue = values[segmentIndex]
+    const endValue = values[segmentIndex + 1]
+
+    return this.interpolateBetweenValues(startValue, endValue, segmentProgress, animation)
+  }
+
+  /**
+   * Interpolate between two values
+   * @param {string} startValue - Starting value
+   * @param {string} endValue - Ending value
+   * @param {number} t - Interpolation factor (0-1)
+   * @param {AnimationData} animation - Animation context
+   * @returns {string} Interpolated value
+   */
+  interpolateBetweenValues (startValue, endValue, t, animation) {
+    const { attributeName } = animation
+
+    if (attributeName === 'opacity') {
+      return this.interpolateNumbers(startValue, endValue, t)
+    }
+
+    if (attributeName === 'transform' && animation.transformType === 'translate') {
+      return this.interpolateTranslate(startValue, endValue, t)
+    }
+
+    if (attributeName === 'd') {
+      return this.interpolatePathData(startValue, endValue, t)
+    }
+
+    if (attributeName === 'points') {
+      return this.interpolatePoints(startValue, endValue, t)
+    }
+
+    return t < 0.5 ? startValue : endValue
+  }
+
+  /**
+   * Interpolate between two numeric values
+   * @param {string} startValue - Starting value
+   * @param {string} endValue - Ending value
+   * @param {number} t - Interpolation factor (0-1)
+   * @returns {string} Interpolated value
+   */
+  interpolateNumbers (startValue, endValue, t) {
+    const start = parseFloat(startValue) || 0
+    const end = parseFloat(endValue) || 0
+    const result = start + (end - start) * t
+    return result.toString()
+  }
+
+  /**
+   * Interpolate between two translate transform values
+   * @param {string} startValue - Starting value (e.g., "10 20")
+   * @param {string} endValue - Ending value
+   * @param {number} t - Interpolation factor (0-1)
+   * @returns {string} Interpolated value
+   */
+  interpolateTranslate (startValue, endValue, t) {
+    const startParts = this.parseTranslateValues(startValue)
+    const endParts = this.parseTranslateValues(endValue)
+
+    const x = startParts.x + (endParts.x - startParts.x) * t
+    const y = startParts.y + (endParts.y - startParts.y) * t
+
+    return `${x} ${y}`
+  }
+
+  /**
+   * Parse translate transform values
+   * @param {string} value - Translate value string
+   * @returns {{x: number, y: number}} Parsed coordinates
+   */
+  parseTranslateValues (value) {
+    const parts = value.trim().split(/\s+/)
+    return {
+      x: parseFloat(parts[0]) || 0,
+      y: parseFloat(parts[1]) || 0
+    }
+  }
+
+  /**
+   * Interpolate between two SVG path data strings
+   * @param {string} startPath - Starting path data
+   * @param {string} endPath - Ending path data
+   * @param {number} t - Interpolation factor (0-1)
+   * @returns {string} Interpolated path data
+   */
+  interpolatePathData (startPath, endPath, t) {
+    const numberPattern = /-?[\d.]+/g
+    const startNumbers = startPath.match(numberPattern) || []
+    const endNumbers = endPath.match(numberPattern) || []
+
+    if (startNumbers.length !== endNumbers.length) {
+      return t < 0.5 ? startPath : endPath
+    }
+
+    let result = startPath
+    let index = 0
+
+    result = result.replace(numberPattern, () => {
+      const startNum = parseFloat(startNumbers[index]) || 0
+      const endNum = parseFloat(endNumbers[index]) || 0
+      index++
+      const interpolated = startNum + (endNum - startNum) * t
+      return Math.round(interpolated * 100) / 100
+    })
+
+    return result
+  }
+
+  /**
+   * Interpolate between two polygon/polyline points strings
+   * @param {string} startPoints - Starting points (e.g., "x1,y1 x2,y2 x3,y3")
+   * @param {string} endPoints - Ending points
+   * @param {number} t - Interpolation factor (0-1)
+   * @returns {string} Interpolated points string
+   */
+  interpolatePoints (startPoints, endPoints, t) {
+    const startCoords = this.parsePointsString(startPoints)
+    const endCoords = this.parsePointsString(endPoints)
+
+    if (startCoords.length !== endCoords.length) {
+      return t < 0.5 ? startPoints : endPoints
+    }
+
+    const interpolatedCoords = startCoords.map((startPt, i) => {
+      const endPt = endCoords[i]
+      const x = startPt.x + (endPt.x - startPt.x) * t
+      const y = startPt.y + (endPt.y - startPt.y) * t
+      return `${Math.round(x)},${Math.round(y)}`
+    })
+
+    return interpolatedCoords.join(' ')
+  }
+
+  /**
+   * Parse a points attribute string into coordinate pairs
+   * @param {string} pointsStr - Points string (e.g., "x1,y1 x2,y2")
+   * @returns {Array<{x: number, y: number}>} Array of coordinate objects
+   */
+  parsePointsString (pointsStr) {
+    const points = []
+    const pairs = pointsStr.trim().split(/\s+/)
+
+    for (const pair of pairs) {
+      const [xStr, yStr] = pair.split(',')
+      const x = parseFloat(xStr) || 0
+      const y = parseFloat(yStr) || 0
+      points.push({ x, y })
+    }
+
+    return points
+  }
+
+  /**
+   * Apply an interpolated value to the target element
+   * @param {AnimationData} animation - The animation data
+   * @param {string} value - Value to apply
+   */
+  applyValue (animation, value) {
+    const { targetElement, attributeName, transformType } = animation
+
+    if (attributeName === 'transform' && transformType) {
+      targetElement.setAttribute('transform', `${transformType}(${value})`)
+    } else if (attributeName === 'd') {
+      targetElement.setAttribute('d', value)
+    } else {
+      targetElement.setAttribute(attributeName, value)
+    }
+  }
+
+  /**
+   * Get the current progress value
+   * @returns {number} Current progress (0-1)
+   */
+  getProgress () {
+    return this.currentProgress
+  }
+
+  /**
+   * Get the number of parsed animations
+   * @returns {number} Animation count
+   */
+  getAnimationCount () {
+    return this.animations.length
+  }
+}
+
+/* ============================================================================
+ * Main Application
+ * ============================================================================ */
+
+/**
+ * Default SVG URL for testing
+ * @type {string}
+ */
+const DEFAULT_SVG_URL = 'https://raw.githubusercontent.com/BeethovensWerkstatt/data-cache/refs/heads/main/cache/sources/D-BNba_MH_60_Engelmann/fluidTranscripts/p005/D-BNba_MH_60_Engelmann_p005_wz06_syss289fb17d-10e3-4b27-9b64-8d2d6a560c1d_ft.svg'
+
+/**
+ * Number of animation steps
+ * @type {number}
+ */
+const STEP_COUNT = 6
+
+/**
+ * Initialize the application
+ * @returns {Promise<void>}
+ */
+async function init () {
+  const container = document.getElementById('svg-container')
+  const loadingElement = document.getElementById('loading')
+  const slider = document.getElementById('animation-slider')
+  const stopsContainer = document.getElementById('slider-stops')
+  const stepDisplay = document.getElementById('current-step')
+
+  const urlParams = new URLSearchParams(window.location.search)
+  const svgUrl = urlParams.get('svg') || DEFAULT_SVG_URL
+
+  highlightActiveExample(svgUrl)
+  createStopIndicators(stopsContainer, STEP_COUNT)
+
+  try {
+    const response = await fetch(svgUrl)
+    if (!response.ok) {
+      throw new Error(`Failed to fetch SVG: ${response.status} ${response.statusText}`)
+    }
+
+    const svgText = await response.text()
+
+    const parser = new DOMParser()
+    const svgDoc = parser.parseFromString(svgText, 'image/svg+xml')
+    const svgElement = svgDoc.documentElement
+
+    const parserError = svgDoc.querySelector('parsererror')
+    if (parserError) {
+      throw new Error('Failed to parse SVG: Invalid SVG format')
+    }
+
+    loadingElement.remove()
+    container.appendChild(svgElement)
+
+    const controller = new FluidAnimationController(svgElement, STEP_COUNT)
+    controller.init()
+
+    setupSlider(slider, controller, stepDisplay, STEP_COUNT)
+
+    updateSliderProgress(slider, 0)
+    updateStopIndicators(0, STEP_COUNT)
+  } catch (error) {
+    console.error('Error loading SVG:', error)
+    loadingElement.textContent = `Error: ${error.message}`
+    loadingElement.classList.add('error')
+  }
+}
+
+/**
+ * Create stop indicator elements
+ * @param {HTMLElement} container - Container element for stops
+ * @param {number} stepCount - Number of steps
+ */
+function createStopIndicators (container, stepCount) {
+  for (let i = 0; i < stepCount; i++) {
+    const stop = document.createElement('div')
+    stop.className = 'stop-indicator'
+    stop.dataset.step = i.toString()
+    if (i === 0) {
+      stop.classList.add('active')
+    }
+    container.appendChild(stop)
+  }
+}
+
+/**
+ * Set up slider event handlers
+ * @param {HTMLInputElement} slider - Range input element
+ * @param {FluidAnimationController} controller - Animation controller
+ * @param {HTMLElement} stepDisplay - Element to display current step
+ * @param {number} stepCount - Number of steps
+ */
+function setupSlider (slider, controller, stepDisplay, stepCount) {
+  const handleInput = () => {
+    const value = parseFloat(slider.value)
+    const progress = value / 100
+
+    controller.setProgress(progress)
+
+    updateSliderProgress(slider, value)
+    updateStopIndicators(progress, stepCount)
+
+    const stepProgress = progress * (stepCount - 1)
+    const currentStep = Math.round(stepProgress) + 1
+    stepDisplay.textContent = currentStep.toString()
+  }
+
+  slider.addEventListener('input', handleInput)
+}
+
+/**
+ * Update slider progress visual
+ * @param {HTMLInputElement} slider - Range input element
+ * @param {number} value - Current value (0-100)
+ */
+function updateSliderProgress (slider, value) {
+  slider.style.setProperty('--progress', `${value}%`)
+}
+
+/**
+ * Update stop indicator active states
+ * @param {number} progress - Current progress (0-1)
+ * @param {number} stepCount - Number of steps
+ */
+function updateStopIndicators (progress, stepCount) {
+  const stepProgress = progress * (stepCount - 1)
+  const nearestStep = Math.round(stepProgress)
+
+  const stops = document.querySelectorAll('.stop-indicator')
+  stops.forEach((stop, index) => {
+    if (index === nearestStep) {
+      stop.classList.add('active')
+    } else {
+      stop.classList.remove('active')
+    }
+  })
+}
+
+/**
+ * Highlight the currently active example link
+ * @param {string} currentSvgUrl - The currently loaded SVG URL
+ */
+function highlightActiveExample (currentSvgUrl) {
+  const exampleLinks = document.querySelectorAll('.example-link')
+
+  exampleLinks.forEach((link) => {
+    const linkUrl = new URL(link.href)
+    const linkSvg = linkUrl.searchParams.get('svg')
+
+    if (linkSvg === currentSvgUrl) {
+      link.classList.add('active')
+    } else {
+      link.classList.remove('active')
+    }
+  })
+}
+
+// Initialize when DOM is ready
+document.addEventListener('DOMContentLoaded', init)
+  </script>
+</body>
+</html>
