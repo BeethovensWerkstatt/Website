@@ -1,0 +1,14 @@
+<div class="midi-player-container">
+  <midi-player id="player"
+               src="{{ page.midi | relative_url }}"
+               sound-font>
+  </midi-player>
+  <div class="controls">
+    <label for="speed">
+      Geschwindigkeit:
+      <span id="speedDisplay">1.0</span>x
+    </label>
+    <!-- 0.5x bis 2.0x in 0.1er-Schritten -->
+    <input id="speed" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  </div>
+</div>
