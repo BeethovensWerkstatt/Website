@@ -6,11 +6,7 @@ permalink: /news/
 
 # {{ page.title }}
 
-Die hier zusammengestellten Nachrichten dokumentieren ausgewählte Aktivitäten, Veranstaltungen und Arbeitsergebnisse des Projekts „Beethovens Werkstatt". Sie geben einen Einblick in die vielfältigen Forschungs- und Entwicklungstätigkeiten sowie die wissenschaftlichen Vernetzungsaktivitäten des Projektteams.
-
-<div class="notice">
-<strong>Hinweis:</strong> Diese Übersicht erhebt keinen Anspruch auf Vollständigkeit aller im Projekt durchgeführten Arbeiten und Aktivitäten. Sie soll vielmehr einen repräsentativen Eindruck der kontinuierlichen Forschungs- und Entwicklungsarbeit vermitteln.
-</div>
+Die hier zusammengestellten Nachrichten dokumentieren ausgewählte Aktivitäten, Veranstaltungen und Arbeitsergebnisse des Projekts „Beethovens Werkstatt". 
 
 <!-- Filter Section -->
 <div class="filter-section">

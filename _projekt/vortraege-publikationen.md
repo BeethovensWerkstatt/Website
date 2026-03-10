@@ -239,15 +239,13 @@ parent_url: /projekt
 }
 
 .vortrag-event a {
-  color: inherit;
+  color: #c93b22;
   text-decoration: none;
-  border-bottom: 1px dotted #666;
-  transition: all 0.2s ease;
+  transition: color 0.2s ease;
 }
 
 .vortrag-event a:hover {
-  color: #c93b22;
-  border-bottom-color: #c93b22;
+  color: #9d1d20;
 }
 
 .vortrag-ort {
