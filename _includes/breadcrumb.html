@@ -15,7 +15,14 @@ Generates breadcrumbs based on page URL and title
       {% assign first_part = url_parts[1] %}
       
       {% comment %} Main section breadcrumb {% endcomment %}
-      {% if first_part == 'glossar' %}
+      {% comment %} Check for post layout first (for URLs like /2026-03-10-title/) {% endcomment %}
+      {% if page.layout == 'post' and page.categories contains 'news' %}
+        <li class="breadcrumb-item">
+          <a href="{{ '/news/' | relative_url }}">News</a>
+        </li>
+        <li class="breadcrumb-item active">{{ page.title }}</li>
+      
+      {% elsif first_part == 'glossar' %}
         {% comment %} If this is a specific glossary term, show link to glossar + term title {% endcomment %}
         {% if url_parts.size > 2 and page.title %}
           <li class="breadcrumb-item">
@@ -57,6 +64,13 @@ Generates breadcrumbs based on page URL and title
       
       {% elsif first_part == 'module' %}
         <li class="breadcrumb-item active">Module</li>
+      
+      {% elsif page.parent %}
+        {% comment %} Handle pages with custom parent (e.g., projekt collection) {% endcomment %}
+        <li class="breadcrumb-item">
+          <a href="{{ page.parent_url | relative_url }}">{{ page.parent }}</a>
+        </li>
+        <li class="breadcrumb-item active">{{ page.title }}</li>
       
       {% else %}
         {% comment %} Generic handling for other pages {% endcomment %}

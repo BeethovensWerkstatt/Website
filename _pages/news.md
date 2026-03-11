@@ -6,61 +6,51 @@ permalink: /news/
 
 # {{ page.title }}
 
-Die hier zusammengestellten Nachrichten dokumentieren ausgewählte Aktivitäten, Veranstaltungen und Arbeitsergebnisse des Projekts „Beethovens Werkstatt". Sie geben einen Einblick in die vielfältigen Forschungs- und Entwicklungstätigkeiten sowie die wissenschaftlichen Vernetzungsaktivitäten des Projektteams.
+Die hier zusammengestellten Nachrichten dokumentieren ausgewählte Aktivitäten, Veranstaltungen und Arbeitsergebnisse des Projekts. 
 
-<div class="notice">
-<strong>Hinweis:</strong> Diese Übersicht erhebt keinen Anspruch auf Vollständigkeit aller im Projekt durchgeführten Arbeiten und Aktivitäten. Sie soll vielmehr einen repräsentativen Eindruck der kontinuierlichen Forschungs- und Entwicklungsarbeit vermitteln.
+<!-- Filter Toggle Button -->
+<div class="filter-toggle-header">
+  <button id="news-filter-toggle" class="news-filter-toggle-btn">
+    <svg class="toggle-icon" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2z"/>
+    </svg>
+    <span>Filter</span>
+    <svg class="chevron-icon" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+    </svg>
+  </button>
 </div>
 
 <!-- Filter Section -->
-<div class="filter-section">
-  <div class="filter-label">Filter nach Themenbereich:</div>
-  <div class="filter-controls">
-    <div class="filter-buttons">
-      <button class="filter-btn active" data-filter="all">Alle Themen</button>
-      <button class="filter-btn" data-filter="Aktivitäten">Aktivitäten</button>
-      <button class="filter-btn" data-filter="Lehre">Lehre</button>
-      <button class="filter-btn" data-filter="Projekt">Projekt</button>
-      <button class="filter-btn" data-filter="Release">Release</button>
-      <button class="filter-btn" data-filter="Vortrag">Vortrag</button>
-    </div>
+<div class="news-filters" id="news-filters">
+  <div class="filter-group">
+    <label for="topic-filter">Themenbereich:</label>
+    <select id="topic-filter">
+      <option value="all">Alle Themen</option>
+      <!-- Wird dynamisch befüllt -->
+    </select>
   </div>
   
-  <!-- Year Navigation -->
-  <div class="secondary-navigation">
-    <div class="secondary-label">Jahr:</div>
-    <div class="secondary-buttons">
-      <button class="secondary-btn active" data-year="all">Alle</button>
-      <button class="secondary-btn" data-year="2025">2025</button>
-      <button class="secondary-btn" data-year="2024">2024</button>
-      <button class="secondary-btn" data-year="2023">2023</button>
-      <button class="secondary-btn" data-year="2022">2022</button>
-      <button class="secondary-btn" data-year="2021">2021</button>
-      <button class="secondary-btn" data-year="2020">2020</button>
-      <button class="secondary-btn" data-year="2019">2019</button>
-      <button class="secondary-btn" data-year="2018">2018</button>
-      <button class="secondary-btn" data-year="2017">2017</button>
-      <button class="secondary-btn" data-year="2016">2016</button>
-      <button class="secondary-btn" data-year="2015">2015</button>
-      <button class="secondary-btn" data-year="2014">2014</button>
-    </div>
+  <div class="filter-group">
+    <label for="year-filter">Jahr:</label>
+    <select id="year-filter">
+      <option value="all">Alle</option>
+      <!-- Wird dynamisch befüllt -->
+    </select>
   </div>
   
-  <!-- Search Field -->
-  <div class="search-controls">
-    <div class="search-label">Textsuche:</div>
+  <div class="filter-group">
+    <label for="news-search">Textsuche:</label>
     <div class="search-container">
       <input type="text" id="news-search" class="search-input" placeholder="News durchsuchen...">
-      <button class="clear-search" id="clear-news-search" title="Suche löschen">&times;</button>
+      <button class="search-clear" id="clear-news-search" title="Suche löschen">&times;</button>
     </div>
   </div>
 </div>
 
 <!-- Filter Results Counter -->
-<div class="filter-results-section">
-  <div class="results-counter-btn">
-    <span class="news-count-number">0</span> von <span class="total-news-count">0</span> <span class="news-count-text">Beiträgen</span> angezeigt
-  </div>
+<div class="news-count">
+  <span class="news-count-number">0</span> von <span class="total-news-count">0</span> <span class="news-count-text">Beiträgen</span>
 </div>
 
 {% comment %}Sammle und sortiere alle Posts{% endcomment %}
@@ -73,9 +63,11 @@ Die hier zusammengestellten Nachrichten dokumentieren ausgewählte Aktivitäten,
   
   <div class="news-item" data-year="{{ post_year }}" data-topic="{{ topic_class }}">
     <div class="news-item-header">
-      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-      <div class="news-meta">
+      <h3>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
         <span class="news-date">{{ post.date | date: "%d.%m.%Y" }}</span>
+      </h3>
+      <div class="topic-tags">
         <span class="topic-tag">{{ topic_class }}</span>
       </div>
     </div>
@@ -87,56 +79,149 @@ Die hier zusammengestellten Nachrichten dokumentieren ausgewählte Aktivitäten,
 </div>
 
 <style>
-/* News Filter Styling */
-.news-filter-section {
-  background: #ffffff;
-  border: 1px solid #dee2e6;
-  border-radius: 8px;
-  padding: 1.5rem;
-  margin: 1.5rem 0 2rem 0;
-}
-
-.news-filter-section .filter-label,
-.news-filter-section .year-label,
-.news-filter-section .search-label {
-  font-weight: 600;
-  color: #495057;
-  margin-bottom: 0.8rem;
-  display: block;
-}
-
-.news-filter-section .filter-controls,
-.news-filter-section .year-navigation,
-.news-filter-section .search-controls {
-  margin-bottom: 1.5rem;
-}
-
-.news-filter-section .filter-controls:last-child,
-.news-filter-section .year-navigation:last-child,
-.news-filter-section .search-controls:last-child {
-  margin-bottom: 0;
-}
-
-.filter-buttons,
-.year-buttons {
+/* Filter Toggle Header */
+.filter-toggle-header {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 1.5rem 0 1rem 0;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.news-filter-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.75rem;
+  background: #f8f9fa;
+  color: #495057;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.news-filter-toggle-btn:hover {
+  background: #e9ecef;
+  border-color: #c93b22;
+  color: #c93b22;
+}
+
+.news-filter-toggle-btn .toggle-icon {
+  flex-shrink: 0;
+}
+
+.news-filter-toggle-btn .chevron-icon {
+  flex-shrink: 0;
+  transition: transform 0.3s;
+}
+
+.news-filter-toggle-btn.collapsed .chevron-icon {
+  transform: rotate(-90deg);
+}
+
+/* News Filters */
+.news-filters {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.news-filters.collapsed {
+  max-height: 0;
+  padding: 0 1.5rem;
+  margin-bottom: 0;
+  opacity: 0;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .news-filters {
+    grid-template-columns: 1fr;
+  }
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
   gap: 0.5rem;
 }
 
-.filter-btn,
-.year-btn {
-  @extend %button-base;
-  background-color: #f8f9fa;
-  border: 1px solid #dee2e6;
-  color: #495057;
+.filter-group label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #333;
 }
 
-.filter-btn.active,
-.year-btn.active {
-  background-color: #c93b22;
-  color: white;
+.filter-group select,
+.filter-group input {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  background: white;
+}
+
+.filter-group select:focus,
+.filter-group input:focus {
+  outline: none;
   border-color: #c93b22;
+}
+
+.filter-results-section {
+  margin-bottom: 2rem;
+}
+
+.news-count {
+  margin-bottom: 1.5rem;
+  color: #666;
+  font-size: 0.875rem;
+}
+
+/* Search controls */
+.search-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.search-container input {
+  flex: 1;
+  padding-right: 2.5rem;
+}
+
+.search-clear {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #999;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.2s ease, color 0.2s ease;
+  z-index: 10;
+}
+
+.search-clear:hover {
+  color: #c93b22;
+}
+
+.search-clear.visible {
+  opacity: 1;
 }
 
 /* News List Styling */
@@ -145,11 +230,14 @@ Die hier zusammengestellten Nachrichten dokumentieren ausgewählte Aktivitäten,
 }
 
 .news-item {
-  margin-bottom: 1.5rem;
-  padding: 1rem;
-  border-left: 3px solid #c93b22;
-  background-color: #f9f9f9;
-  border-radius: 0 5px 5px 0;
+  padding: 1.5rem 0 1rem 0;
+  border-bottom: 1px solid #e8e8e8;
+  border-left: 3px solid transparent;
+  padding-left: 1rem;
+}
+
+.news-item:last-child {
+  border-bottom: none;
 }
 
 .news-item-header {
@@ -163,11 +251,17 @@ Die hier zusammengestellten Nachrichten dokumentieren ausgewählte Aktivitäten,
   margin: 0;
   flex: 1;
   padding-right: 1rem;
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .news-item h3 a {
   color: #c93b22;
   text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .news-item h3 a:hover {
@@ -175,33 +269,30 @@ Die hier zusammengestellten Nachrichten dokumentieren ausgewählte Aktivitäten,
   color: #a12e1a;
 }
 
-.news-meta {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 0.3rem;
-  flex-shrink: 0;
-}
-
 .news-date {
   font-size: 0.9rem;
-  color: #6c757d;
+  color: #666;
   font-weight: 500;
+}
+
+.topic-tags {
+  flex-shrink: 0;
 }
 
 .topic-tag {
   display: inline-block;
-  background-color: #c93b22;
-  color: white;
-  padding: 0.2rem 0.5rem;
+  background: #f0f0f0;
+  color: #555;
+  padding: 0.25rem 0.6rem;
   border-radius: 3px;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 
 .news-excerpt {
   color: #666;
   margin: 0.5rem 0 0 0;
+  padding-right: 150px;
   line-height: 1.5;
   font-style: italic;
 }
@@ -211,50 +302,35 @@ Die hier zusammengestellten Nachrichten dokumentieren ausgewählte Aktivitäten,
   display: none;
 }
 
-/* Search controls styling */
-.search-container {
-  position: relative;
-  display: inline-block;
-}
-
-.search-input {
-  padding: 8px 35px 8px 12px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 14px;
-  width: 250px;
-}
-
-
-
 @media (max-width: 768px) {
-  .news-item-header {
-    flex-direction: column;
-    gap: 0.5rem;
+  .news-filters {
+    grid-template-columns: 1fr;
   }
   
-  .news-meta {
-    align-items: flex-start;
-    flex-direction: row;
-    gap: 1rem;
-  }
-  
-  .filter-buttons,
-  .year-buttons {
-    gap: 0.3rem;
-  }
-  
-  .filter-btn,
-  .year-btn {
-    font-size: 0.8rem;
-    padding: 0.4rem 0.6rem;
+  .news-excerpt {
+    padding-right: 0;
   }
 }
 </style>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  const filterBtns = document.querySelectorAll('.filter-btn');
+  // Filter toggle functionality
+  const toggleBtn = document.getElementById('news-filter-toggle');
+  const newsFilters = document.getElementById('news-filters');
+  let filtersVisible = true;
+  
+  if (toggleBtn && newsFilters) {
+    toggleBtn.addEventListener('click', function() {
+      filtersVisible = !filtersVisible;
+      newsFilters.classList.toggle('collapsed', !filtersVisible);
+      toggleBtn.classList.toggle('collapsed', !filtersVisible);
+    });
+  }
+  
+  // Filter and search functionality
+  const topicFilter = document.getElementById('topic-filter');
+  const yearFilter = document.getElementById('year-filter');
   const searchInput = document.getElementById('news-search');
   const clearSearchBtn = document.getElementById('clear-news-search');
   const newsItems = document.querySelectorAll('.news-item');
@@ -266,25 +342,59 @@ document.addEventListener('DOMContentLoaded', function() {
   let currentYear = 'all';
   let currentSearch = '';
   
+  // Collect available topics from news items
+  const availableTopics = new Set();
+  newsItems.forEach(item => {
+    const topic = item.dataset.topic;
+    if (topic) {
+      availableTopics.add(topic);
+    }
+  });
+  
+  // Populate topic dropdown with available topics (sorted alphabetically)
+  if (topicFilter) {
+    const sortedTopics = Array.from(availableTopics).sort();
+    sortedTopics.forEach(topic => {
+      const option = document.createElement('option');
+      option.value = topic;
+      option.textContent = topic;
+      topicFilter.appendChild(option);
+    });
+  }
+  
+  // Collect available years from news items
+  const availableYears = new Set();
+  newsItems.forEach(item => {
+    const year = item.dataset.year;
+    if (year) {
+      availableYears.add(year);
+    }
+  });
+  
+  // Populate year dropdown with available years (sorted descending)
+  if (yearFilter) {
+    const sortedYears = Array.from(availableYears).sort((a, b) => b - a);
+    sortedYears.forEach(year => {
+      const option = document.createElement('option');
+      option.value = year;
+      option.textContent = year;
+      yearFilter.appendChild(option);
+    });
+  }
+  
   // Gesamtanzahl setzen
-  totalElement.textContent = newsItems.length;
+  if (totalElement) {
+    totalElement.textContent = newsItems.length;
+  }
   
   // Event Handlers
-  function handleFilterClick(e) {
-    if (!e.target.classList.contains('filter-btn')) return;
-    
-    filterBtns.forEach(btn => btn.classList.remove('active'));
-    e.target.classList.add('active');
-    currentFilter = e.target.dataset.filter;
+  function handleTopicChange() {
+    currentFilter = topicFilter.value;
     applyFilters();
   }
   
-  function handleYearClick(e) {
-    if (!e.target.classList.contains('secondary-btn')) return;
-    
-    document.querySelectorAll('.secondary-btn').forEach(btn => btn.classList.remove('active'));
-    e.target.classList.add('active');
-    currentYear = e.target.dataset.year;
+  function handleYearChange() {
+    currentYear = yearFilter.value;
     applyFilters();
   }
   
@@ -322,15 +432,27 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Counter aktualisieren
-    countElement.textContent = visibleCount;
-    textElement.textContent = visibleCount === 1 ? 'Beitrag' : 'Beiträgen';
+    if (countElement) {
+      countElement.textContent = visibleCount;
+    }
+    if (textElement) {
+      textElement.textContent = visibleCount === 1 ? 'Beitrag' : 'Beiträgen';
+    }
   }
   
   // Event Listeners
-  document.querySelector('.filter-buttons').addEventListener('click', handleFilterClick);
-  document.querySelector('.secondary-buttons').addEventListener('click', handleYearClick);
-  searchInput.addEventListener('input', handleSearch);
-  clearSearchBtn.addEventListener('click', clearSearch);
+  if (topicFilter) {
+    topicFilter.addEventListener('change', handleTopicChange);
+  }
+  if (yearFilter) {
+    yearFilter.addEventListener('change', handleYearChange);
+  }
+  if (searchInput) {
+    searchInput.addEventListener('input', handleSearch);
+  }
+  if (clearSearchBtn) {
+    clearSearchBtn.addEventListener('click', clearSearch);
+  }
   
   // Initiale Anzeige
   applyFilters();

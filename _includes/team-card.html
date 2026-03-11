@@ -1,0 +1,74 @@
+{% comment %}
+  Team Card Component
+  Parameters:
+  - name: Full name of the team member
+  - position: Job title
+  - location: Work location (Bonn or Paderborn)
+  - photo: Filename of photo in assets/images/team/ (optional)
+  - email: Email address
+  - orcid: ORCID ID (optional)
+  - gnd: GND ID (optional)
+  - github: GitHub username (optional)
+  - bio: Biography text
+{% endcomment %}
+
+{% comment %}Filter out academic titles (words ending with .) and commas{% endcomment %}
+{% assign name_clean = include.name | replace: ',', '' %}
+{% assign name_parts = name_clean | split: ' ' %}
+{% assign real_names = '' | split: '' %}
+{% for part in name_parts %}
+  {% unless part contains '.' %}
+    {% assign real_names = real_names | push: part %}
+  {% endunless %}
+{% endfor %}
+{% assign first_initial = real_names[0] | slice: 0 %}
+{% assign last_initial = real_names[-1] | slice: 0 %}
+{% assign initials_temp = first_initial | append: last_initial %}
+{% comment %}Handle SS and SA exceptions - use first two letters of last name{% endcomment %}
+{% if initials_temp == 'SS' or initials_temp == 'SA' %}
+  {% assign first_char = real_names[-1] | slice: 0 | upcase %}
+  {% assign second_char = real_names[-1] | slice: 1 | downcase %}
+  {% assign initials = first_char | append: second_char %}
+{% else %}
+  {% assign initials = initials_temp %}
+{% endif %}
+
+{% comment %}Generate person ID from last name{% endcomment %}
+{% assign person_id = real_names[-1] | downcase | replace: 'ä', 'ae' | replace: 'ö', 'oe' | replace: 'ü', 'ue' | replace: 'ß', 'ss' %}
+
+<div class="team-card" onclick="openTeamModal(this)" 
+     data-id="{{ person_id }}"
+     data-name="{{ include.name }}"
+     data-position="{{ include.position }}"
+     data-location="{{ include.location }}"
+     data-photo="{{ include.photo }}"
+     data-email="{{ include.email }}"
+     data-orcid="{{ include.orcid }}"
+     data-gnd="{{ include.gnd }}"
+     data-github="{{ include.github }}"
+     data-bio="{{ include.bio | escape }}">
+  
+  {% if include.photo %}
+    <div class="team-photo-wrapper">
+      <img src="{{ '/assets/images/team/' | append: include.photo | relative_url }}" 
+           alt="{{ include.name }}" 
+           class="team-photo"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="team-initials" style="display: none;">
+        {{ initials }}
+      </div>
+    </div>
+  {% else %}
+    <div class="team-photo-wrapper">
+      <div class="team-initials">
+        {{ initials }}
+      </div>
+    </div>
+  {% endif %}
+  
+  <h3>{{ include.name }}</h3>
+  <div class="position">{{ include.position }}</div>
+  {% if include.location %}
+    <div class="location">{{ include.location }}</div>
+  {% endif %}
+</div>
