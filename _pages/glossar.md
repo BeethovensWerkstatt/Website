@@ -6,75 +6,55 @@ permalink: /glossar/
 
 # {{ page.title }}
 
-Die hier vorgestellten philologischen Begriffe geben den aktuellen Stand der projektspezifischen Terminologie von Beethovens Werkstatt wieder. Die Begriffe sollen für weitere Forschung nutzbar gemacht und zur Diskussion gestellt werden. Oftmals konnte auf bereits vorhandenes philologisches Vokabular zurückgegriffen werden, wobei die Definitionen gegebenenfalls erweitert und modifiziert werden mussten. Mitunter ergab sich die Notwendigkeit, neue Begriffe einzuführen, um Sachverhalte klar benennen zu können.
+Die hier vorgestellten philologischen Begriffe geben den aktuellen Stand der projektspezifischen Terminologie von Beethovens Werkstatt wieder. 
 
-<div class="notice">
-<strong>Hinweis:</strong> Im Zuge des ständigen Erkenntnisgewinns können sich einzelne Definitionen verändern und neue hinzutreten.
+<!-- Filter Toggle Button -->
+<div class="filter-toggle-header">
+  <button id="glossary-filter-toggle" class="glossary-filter-toggle-btn">
+    <svg class="toggle-icon" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2z"/>
+    </svg>
+    <span>Filter</span>
+    <svg class="chevron-icon" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+    </svg>
+  </button>
 </div>
 
 <!-- Filter Section -->
-<div class="filter-section">
-  <div class="filter-label">Filter nach Modulen:</div>
-  <div class="filter-controls">
-    <div class="filter-buttons">
-      <button class="filter-btn active" data-filter="all">Alle Module</button>
-      <button class="filter-btn" data-filter="Modul 1">Modul 1</button>
-      <button class="filter-btn" data-filter="Modul 2">Modul 2</button>
-      <button class="filter-btn" data-filter="Modul 3">Modul 3</button>
-      <button class="filter-btn" data-filter="Modul 4">Modul 4</button>
-      <button class="filter-btn" data-filter="Modul 5">Modul 5</button>
-    </div>
+<div class="glossary-filters" id="glossary-filters">
+  <div class="filter-group">
+    <label for="module-filter">Modul:</label>
+    <select id="module-filter">
+      <option value="all">Alle Module</option>
+      <option value="Modul 1">Modul 1</option>
+      <option value="Modul 2">Modul 2</option>
+      <option value="Modul 3">Modul 3</option>
+      <option value="Modul 4">Modul 4</option>
+      <option value="Modul 5">Modul 5</option>
+    </select>
   </div>
   
-  <!-- Alphabetical Jump Navigation -->
-  <div class="secondary-navigation">
-    <div class="secondary-label">Anfangsbuchstabe:</div>
-    <div class="secondary-buttons">
-      <button class="secondary-btn active" data-letter="all">Alle</button>
-      <button class="secondary-btn" data-letter="A">A</button>
-      <button class="secondary-btn" data-letter="B">B</button>
-      <button class="secondary-btn" data-letter="C">C</button>
-      <button class="secondary-btn" data-letter="D">D</button>
-      <button class="secondary-btn" data-letter="E">E</button>
-      <button class="secondary-btn" data-letter="F">F</button>
-      <button class="secondary-btn" data-letter="G">G</button>
-      <button class="secondary-btn" data-letter="H">H</button>
-      <button class="secondary-btn" data-letter="I">I</button>
-      <button class="secondary-btn" data-letter="J">J</button>
-      <button class="secondary-btn" data-letter="K">K</button>
-      <button class="secondary-btn" data-letter="L">L</button>
-      <button class="secondary-btn" data-letter="M">M</button>
-      <button class="secondary-btn" data-letter="N">N</button>
-      <button class="secondary-btn" data-letter="O">O</button>
-      <button class="secondary-btn" data-letter="P">P</button>
-      <button class="secondary-btn" data-letter="Q">Q</button>
-      <button class="secondary-btn" data-letter="R">R</button>
-      <button class="secondary-btn" data-letter="S">S</button>
-      <button class="secondary-btn" data-letter="T">T</button>
-      <button class="secondary-btn" data-letter="U">U</button>
-      <button class="secondary-btn" data-letter="V">V</button>
-      <button class="secondary-btn" data-letter="W">W</button>
-      <button class="secondary-btn" data-letter="X">X</button>
-      <button class="secondary-btn" data-letter="Y">Y</button>
-      <button class="secondary-btn" data-letter="Z">Z</button>
-    </div>
+  <div class="filter-group">
+    <label for="letter-filter">Anfangsbuchstabe:</label>
+    <select id="letter-filter">
+      <option value="all">Alle</option>
+      <!-- Wird dynamisch befüllt -->
+    </select>
   </div>
   
-  <!-- Search Field -->
-  <div class="search-controls">
-    <div class="search-label">Textsuche:</div>
+  <div class="filter-group">
+    <label for="glossary-search">Textsuche:</label>
     <div class="search-container">
       <input type="text" id="glossary-search" class="search-input" placeholder="Begriff suchen...">
-      <button class="clear-search" id="clear-search" title="Suche löschen">&times;</button>
+      <button class="search-clear" id="clear-search" title="Suche löschen">&times;</button>
     </div>
   </div>
 </div>
 
 <!-- Filter Results Counter -->
-<div class="filter-results-section">
-  <div class="results-counter-btn">
-    <span class="term-count-number">0</span> von <span class="total-count-number">0</span> <span class="term-count-text">Begriffen</span> angezeigt
-  </div>
+<div class="glossary-count">
+  <span class="term-count-number">0</span> von <span class="total-count-number">0</span> <span class="term-count-text">Begriffen</span>
 </div>
 
 {% comment %}
@@ -138,7 +118,13 @@ NEUE LOGIK: Sammle nur die neueste Version jedes Artikels
     {% endif %}
   {% endfor %}
   
-  <div class="glossary-item" data-modules="{% for category in term.categories %}{{ category }}{% unless forloop.last %},{% endunless %}{% endfor %}">
+  {% comment %}Bestimme Anfangsbuchstabe für Filter{% endcomment %}
+  {% assign first_char = term.title | slice: 0 | upcase %}
+  {% if first_char == "Ä" %}{% assign first_char = "A" %}{% endif %}
+  {% if first_char == "Ö" %}{% assign first_char = "O" %}{% endif %}
+  {% if first_char == "Ü" %}{% assign first_char = "U" %}{% endif %}
+  
+  <div class="glossary-item" data-modules="{% for category in term.categories %}{{ category }}{% unless forloop.last %},{% endunless %}{% endfor %}" data-letter="{{ first_char }}">
     <div class="glossary-item-header">
       {% comment %}Link zur Weiterleitungsseite ohne Versionsnummer{% endcomment %}
       <h3><a href="/glossar/{{ article_slug }}/">{{ term.title }}</a></h3>
@@ -158,15 +144,159 @@ NEUE LOGIK: Sammle nur die neueste Version jedes Artikels
 </div>
 
 <style>
+/* Filter Toggle Header */
+.filter-toggle-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 1.5rem 0 1rem 0;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.glossary-filter-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.75rem;
+  background: #f8f9fa;
+  color: #495057;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.glossary-filter-toggle-btn:hover {
+  background: #e9ecef;
+  border-color: #c93b22;
+  color: #c93b22;
+}
+
+.glossary-filter-toggle-btn .toggle-icon {
+  flex-shrink: 0;
+}
+
+.glossary-filter-toggle-btn .chevron-icon {
+  flex-shrink: 0;
+  transition: transform 0.3s;
+}
+
+.glossary-filter-toggle-btn.collapsed .chevron-icon {
+  transform: rotate(-90deg);
+}
+
+/* Glossary Filters */
+.glossary-filters {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.glossary-filters.collapsed {
+  max-height: 0;
+  padding: 0 1.5rem;
+  margin-bottom: 0;
+  opacity: 0;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .glossary-filters {
+    grid-template-columns: 1fr;
+  }
+}
+
+.glossary-count {
+  margin-bottom: 1.5rem;
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filter-group label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.filter-group select,
+.filter-group input {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  background: white;
+}
+
+.filter-group select:focus,
+.filter-group input:focus {
+  outline: none;
+  border-color: #c93b22;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.search-container input {
+  flex: 1;
+  padding-right: 2.5rem;
+}
+
+.search-clear {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #999;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.2s ease, color 0.2s ease;
+  z-index: 10;
+}
+
+.search-clear:hover {
+  color: #c93b22;
+}
+
+.search-clear.visible {
+  opacity: 1;
+}
+
 .glossary-list {
   margin-top: 2rem;
 }
 
 .glossary-item {
-  margin-bottom: 1rem;
-  padding: 0.8rem;
-  border-left: 3px solid #c93b22;
-  background-color: #f9f9f9;
+  padding: 1.5rem 0 1rem 0;
+  border-bottom: 1px solid #e8e8e8;
+  border-left: 3px solid transparent;
+  padding-left: 1rem;
+}
+
+.glossary-item:last-child {
+  border-bottom: none;
 }
 
 .glossary-item-header {
@@ -215,271 +345,146 @@ NEUE LOGIK: Sammle nur die neueste Version jedes Artikels
 
 .category-tag {
   display: inline-block;
-  background-color: #c93b22;
-  color: white;
-  padding: 0.2rem 0.5rem;
+  background: #f0f0f0;
+  color: #555;
+  padding: 0.25rem 0.6rem;
   margin: 0.1rem;
   border-radius: 3px;
   font-size: 0.8rem;
+  font-weight: 500;
+  white-space: nowrap;
 }
 </style>
 
 <script>
-/**
- * Glossary Filter Functionality
- * Provides module-based filtering, alphabet navigation and text search for glossary terms
- */
-
-// Check if GlossaryFilter is already defined to prevent redeclaration
-if (typeof window.GlossaryFilter === 'undefined') {
-  
-class GlossaryFilter {
-  constructor() {
-    this.filterButtons = document.querySelectorAll('.filter-btn');
-    this.alphabetButtons = document.querySelectorAll('.secondary-btn[data-letter]');
-    this.glossaryItems = document.querySelectorAll('.glossary-item');
-    this.termCounter = document.querySelector('.term-count-number');
-    this.totalCounter = document.querySelector('.total-count-number');
-    this.searchInput = document.querySelector('#glossary-search');
-    this.clearButton = document.querySelector('#clear-search');
-    this.currentFilter = 'all';
-    this.currentLetter = 'all';
-    this.currentSearchTerm = '';
-    
-    this.init();
-  }
-
-  init() {
-    // Bind event listeners with unified handler
-    [...this.filterButtons, ...this.alphabetButtons].forEach(button => {
-      button.addEventListener('click', (e) => this.handleButtonClick(e));
-    });
-
-    // Search functionality
-    if (this.searchInput) {
-      this.searchInput.addEventListener('input', (e) => this.handleSearch(e));
-      this.searchInput.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') this.clearSearch();
-      });
-    }
-
-    if (this.clearButton) {
-      this.clearButton.addEventListener('click', () => this.clearSearch());
-    }
-
-    // Initialize
-    this.updateTermCount();
-    this.setActiveButton('all');
-    this.setActiveAlphabetButton('all');
-    this.updateAlphabetButtonStates('all');
-  }
-
-  handleButtonClick(event) {
-    event.preventDefault();
-    const button = event.target;
-    
-    if (button.classList.contains('filter-btn')) {
-      this.handleFilterClick(button);
-    } else if (button.classList.contains('secondary-btn')) {
-      this.handleAlphabetClick(button);
-    }
-  }
-
-  handleFilterClick(button) {
-    const filterValue = button.dataset.filter;
-    this.setActiveButton(filterValue);
-    this.applyAllFilters(filterValue, this.currentLetter, this.currentSearchTerm);
-    this.currentFilter = filterValue;
-    
-    // Update alphabet button states based on current module filter
-    this.updateAlphabetButtonStates(filterValue);
-    
-    // Reset letter filter if current letter is now disabled
-    if (this.currentLetter !== 'all') {
-      const currentLetterButton = document.querySelector(`.secondary-btn[data-letter="${this.currentLetter}"]`);
-      if (currentLetterButton?.classList.contains('disabled')) {
-        this.setActiveAlphabetButton('all');
-        this.currentLetter = 'all';
-        this.applyAllFilters(filterValue, 'all', this.currentSearchTerm);
-      }
-    }
-  }
-
-  handleAlphabetClick(button) {
-    const letterValue = button.dataset.letter;
-    this.setActiveAlphabetButton(letterValue);
-    this.applyAllFilters(this.currentFilter, letterValue, this.currentSearchTerm);
-    this.currentLetter = letterValue;
-  }
-
-  handleSearch(event) {
-    const searchTerm = event.target.value.toLowerCase().trim();
-    this.currentSearchTerm = searchTerm;
-
-    // Show/hide clear button
-    if (this.clearButton) {
-      if (searchTerm.length > 0) {
-        this.clearButton.classList.add('visible');
-      } else {
-        this.clearButton.classList.remove('visible');
-      }
-    }
-
-    // Apply combined filter (module + letter + search)
-    this.applyAllFilters(this.currentFilter, this.currentLetter, searchTerm);
-  }
-
-  clearSearch() {
-    if (this.searchInput) {
-      this.searchInput.value = '';
-      this.currentSearchTerm = '';
-    }
-    
-    if (this.clearButton) {
-      this.clearButton.classList.remove('visible');
-    }
-
-    // Apply filter without search term
-    this.applyAllFilters(this.currentFilter, this.currentLetter, '');
-  }
-
-  setActiveButton(filterValue) {
-    this.filterButtons.forEach(button => {
-      button.classList.toggle('active', button.dataset.filter === filterValue);
-    });
-  }
-
-  setActiveAlphabetButton(letterValue) {
-    this.alphabetButtons.forEach(button => {
-      button.classList.toggle('active', button.dataset.letter === letterValue);
-    });
-  }
-
-  updateAlphabetButtonStates(moduleFilter = 'all') {
-    // Get first letters of terms that match the current module filter
-    const umlautMap = { 'Ä': 'A', 'Ö': 'O', 'Ü': 'U', 'ß': 'S' };
-    const availableLetters = new Set(['all']);
-    
-    this.glossaryItems.forEach(item => {
-      // Check if item matches current module filter
-      let itemMatches = true;
-      if (moduleFilter !== 'all') {
-        const itemModules = item.dataset.modules?.split(',') || [];
-        itemMatches = itemModules.some(module => module.trim() === moduleFilter);
-      }
-      
-      // Only add letter if item matches the module filter
-      if (itemMatches) {
-        const title = item.querySelector('h3')?.textContent?.trim();
-        if (title) {
-          let firstLetter = title.charAt(0).toUpperCase();
-          firstLetter = umlautMap[firstLetter] || firstLetter;
-          availableLetters.add(firstLetter);
-        }
-      }
-    });
-
-    // Update button states
-    this.alphabetButtons.forEach(button => {
-      const letter = button.dataset.letter;
-      button.classList.toggle('disabled', !availableLetters.has(letter));
-    });
-  }
-
-  applyAllFilters(moduleFilter, letterFilter, searchTerm) {
-    const umlautMap = { 'Ä': 'A', 'Ö': 'O', 'Ü': 'U', 'ß': 'S' };
-    
-    this.glossaryItems.forEach(item => {
-      let shouldShow = true;
-
-      // Module filter check
-      if (moduleFilter !== 'all') {
-        const itemModules = item.dataset.modules?.split(',') || [];
-        shouldShow = itemModules.some(module => module.trim() === moduleFilter);
-      }
-
-      // Letter filter check
-      if (shouldShow && letterFilter !== 'all') {
-        const title = item.querySelector('h3')?.textContent?.trim();
-        if (title) {
-          let firstLetter = title.charAt(0).toUpperCase();
-          firstLetter = umlautMap[firstLetter] || firstLetter;
-          shouldShow = firstLetter === letterFilter;
-        } else {
-          shouldShow = false;
-        }
-      }
-
-      // Search filter check
-      if (shouldShow && searchTerm) {
-        shouldShow = item.textContent.toLowerCase().includes(searchTerm);
-      }
-
-      // Toggle visibility
-      item.classList.toggle('hidden', !shouldShow);
-    });
-
-    this.updateTermCount();
-  }
-
-  updateTermCount() {
-    if (!this.termCounter) return;
-    
-    // Count visible items (not hidden)
-    const visibleItems = Array.from(this.glossaryItems).filter(item => {
-      return !item.classList.contains('hidden');
-    });
-    
-    const count = visibleItems.length;
-    const totalCount = this.glossaryItems.length;
-    
-    this.termCounter.textContent = count;
-    
-    // Set total count (only needs to be done once, but doing it each time is fine)
-    if (this.totalCounter) {
-      this.totalCounter.textContent = totalCount;
-    }
-    
-    // Update German pluralization based on TOTAL count, not filtered count
-    const termTextElement = document.querySelector('.term-count-text');
-    if (termTextElement) {
-      termTextElement.textContent = totalCount === 1 ? 'Begriff' : 'Begriffen';
-    }
-  }
-
-  // Public method to get current filter state
-  getCurrentFilter() {
-    return {
-      module: this.currentFilter,
-      letter: this.currentLetter,
-      search: this.currentSearchTerm
-    };
-  }
-
-  // Public method to reset all filters
-  resetFilters() {
-    this.setActiveButton('all');
-    this.setActiveAlphabetButton('all');
-    this.clearSearch();
-    this.applyAllFilters('all', 'all', '');
-    this.currentFilter = 'all';
-    this.currentLetter = 'all';
-    this.currentSearchTerm = '';
-  }
-}
-
-// Store GlossaryFilter globally to prevent redeclaration
-window.GlossaryFilter = GlossaryFilter;
-
-} // End of GlossaryFilter definition check
-
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
   // Check if we're on a glossary page
-  const filterSection = document.querySelector('.filter-section');
+  const glossaryFilters = document.getElementById('glossary-filters');
   
-  if (filterSection) {
-    window.glossaryFilter = new window.GlossaryFilter();
+  if (glossaryFilters) {
+    const toggleBtn = document.getElementById('glossary-filter-toggle');
+    const moduleFilter = document.getElementById('module-filter');
+    const letterFilter = document.getElementById('letter-filter');
+    const searchInput = document.getElementById('glossary-search');
+    const searchClear = document.getElementById('clear-search');
+    const glossaryItems = document.querySelectorAll('.glossary-item');
+    const termCounter = document.querySelector('.term-count-number');
+    const totalCounter = document.querySelector('.total-count-number');
+    const termTextElement = document.querySelector('.term-count-text');
+    
+    let currentModule = 'all';
+    let currentLetter = 'all';
+    let currentSearch = '';
+    let filtersVisible = true;
+    
+    // Toggle filter visibility
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', function() {
+        filtersVisible = !filtersVisible;
+        glossaryFilters.classList.toggle('collapsed', !filtersVisible);
+        toggleBtn.classList.toggle('collapsed', !filtersVisible);
+      });
+    }
+    
+    // Collect available letters from glossary items
+    const availableLetters = new Set();
+    glossaryItems.forEach(item => {
+      const letter = item.dataset.letter;
+      if (letter) {
+        availableLetters.add(letter);
+      }
+    });
+    
+    // Populate letter dropdown with only available letters
+    if (letterFilter) {
+      const sortedLetters = Array.from(availableLetters).sort();
+      sortedLetters.forEach(letter => {
+        const option = document.createElement('option');
+        option.value = letter;
+        option.textContent = letter;
+        letterFilter.appendChild(option);
+      });
+    }
+    
+    // Set total count
+    if (totalCounter) {
+      totalCounter.textContent = glossaryItems.length;
+    }
+    
+    // Apply filters
+    function applyFilters() {
+      let visibleCount = 0;
+      
+      glossaryItems.forEach(item => {
+        const itemModules = item.dataset.modules || '';
+        const itemLetter = item.dataset.letter;
+        const itemText = item.textContent.toLowerCase();
+        
+        // Module matching: check if selected module is in the comma-separated list
+        let moduleMatch = currentModule === 'all';
+        if (!moduleMatch && itemModules) {
+          const modulesList = itemModules.split(',').map(m => m.trim());
+          moduleMatch = modulesList.includes(currentModule);
+        }
+        
+        const letterMatch = currentLetter === 'all' || itemLetter === currentLetter;
+        const searchMatch = !currentSearch || itemText.includes(currentSearch);
+        
+        const shouldShow = moduleMatch && letterMatch && searchMatch;
+        
+        item.classList.toggle('hidden', !shouldShow);
+        if (shouldShow) visibleCount++;
+      });
+      
+      // Update counter
+      if (termCounter) {
+        termCounter.textContent = visibleCount;
+      }
+      if (termTextElement) {
+        termTextElement.textContent = visibleCount === 1 ? 'Begriff' : 'Begriffen';
+      }
+    }
+    
+    // Module filter change
+    if (moduleFilter) {
+      moduleFilter.addEventListener('change', function() {
+        currentModule = this.value;
+        applyFilters();
+      });
+    }
+    
+    // Letter filter change
+    if (letterFilter) {
+      letterFilter.addEventListener('change', function() {
+        currentLetter = this.value;
+        applyFilters();
+      });
+    }
+    
+    // Search input
+    if (searchInput) {
+      searchInput.addEventListener('input', function() {
+        currentSearch = this.value.toLowerCase().trim();
+        if (searchClear) {
+          searchClear.classList.toggle('visible', currentSearch.length > 0);
+        }
+        applyFilters();
+      });
+    }
+    
+    // Clear search
+    if (searchClear) {
+      searchClear.addEventListener('click', function() {
+        searchInput.value = '';
+        currentSearch = '';
+        this.classList.remove('visible');
+        applyFilters();
+      });
+    }
+    
+    // Initial filter application
+    applyFilters();
   }
 });
 </script>

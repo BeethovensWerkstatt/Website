@@ -247,7 +247,7 @@ article.glossary-term .glossary-content p em a {
             <h4>{{ page.title }} <span class="muted-text">wurde entwickelt in:</span></h4>
             {% for category in page.categories %}
               {% assign module_url = category | downcase | replace: ' ', '-' %}
-              <a href="/{{ module_url }}/" class="category-tag-link">
+              <a href="/module/#{{ module_url }}" class="category-tag-link">
                 <span class="category-tag">{{ category }}</span>
               </a>{% unless forloop.last %}, {% endunless %}
             {% endfor %}
@@ -307,16 +307,16 @@ article.glossary-term .glossary-content p em a {
       <div class="citation-box">
         <h3>Zitierhinweis</h3>
         <div class="citation-content">
-          <p><strong>{{ page.author }}:</strong> „{{ page.title }}"{% if page.version %}, Version {{ page.version }}{% endif %}{% if page.date %} ({{ page.date | date: "%d.%m.%Y" }}){% endif %}, in: Beethovens Werkstatt - Glossar, <a href="https://beethovens-werkstatt.de{{ page.url }}" target="_blank">https://beethovens-werkstatt.de{{ page.url }}</a></p>
+          {% if page.doi_version %}
+            <p><strong>{{ page.author }}:</strong> „{{ page.title }}"{% if page.version %}, Version {{ page.version }}{% endif %}{% if page.date %} ({{ page.date | date: "%d.%m.%Y" }}){% endif %}, in: Beethovens Werkstatt - Glossar, <a href="https://doi.org/{{ page.doi_version }}" target="_blank">https://doi.org/{{ page.doi_version }}</a></p>
+          {% else %}
+            <p><strong>{{ page.author }}:</strong> „{{ page.title }}"{% if page.version %}, Version {{ page.version }}{% endif %}{% if page.date %} ({{ page.date | date: "%d.%m.%Y" }}){% endif %}, in: Beethovens Werkstatt - Glossar</p>
+            <p class="doi-pending"><em>DOI für diese Version wird noch vergeben</em></p>
+          {% endif %}
           
-          {% if page.doi_version or page.doi_overview %}
+          {% if page.doi_overview %}
             <div class="doi-links">
-              {% if page.doi_version %}
-                <p>DOI der Version {{ page.version }}: <a href="https://doi.org/{{ page.doi_version }}" target="_blank">{{ page.doi_version }}</a></p>
-              {% endif %}
-              {% if page.doi_overview %}
-                <p>DOI aller Versionen: <a href="https://doi.org/{{ page.doi_overview }}" target="_blank">{{ page.doi_overview }}</a></p>
-              {% endif %}
+              <p>DOI aller Versionen: <a href="https://doi.org/{{ page.doi_overview }}" target="_blank">{{ page.doi_overview }}</a></p>
             </div>
           {% endif %}
         </div>
@@ -349,7 +349,7 @@ article.glossary-term .glossary-content p em a {
 <style>
 /* Glossary-specific styling */
 .glossary-term {
-  max-width: 800px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -559,6 +559,15 @@ article.glossary-term .glossary-content p em a {
 .citation-content p {
   margin-bottom: 0.5rem;
   line-height: 1.5;
+}
+
+.citation-content .doi-pending {
+  color: #856404;
+  background: #fff3cd;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  border-left: 3px solid #ffc107;
+  margin-top: 0.75rem;
 }
 
 .doi-links {
