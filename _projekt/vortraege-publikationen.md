@@ -263,6 +263,14 @@ parent_url: /projekt
   line-height: 1.4;
   flex: 1;
   padding-right: 1rem;
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.titel-text {
+  color: #333;
 }
 
 .vortrag-meta {
@@ -305,8 +313,16 @@ parent_url: /projekt
   color: #666;
 }
 
+.vortrag-ort::before {
+  content: "· ";
+  color: #999;
+  margin-right: 0.3rem;
+}
+
 .vortrag-datum {
-  color: #888;
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
 }
 
 .vortrag-genre {
@@ -447,7 +463,10 @@ parent_url: /projekt
            data-sortkey="{{ sortkey }}">
         
         <div class="vortrag-header">
-          <h3 class="vortrag-titel">{{ vortrag.title }}</h3>
+          <h3 class="vortrag-titel">
+            <span class="titel-text">{{ vortrag.title }}</span>
+            <span class="vortrag-datum">{{ tag }}.{{ monat }}.{{ jahr }}</span>
+          </h3>
           {% if vortrag.genre %}
             <span class="vortrag-genre">{{ vortrag.genre }}</span>
           {% endif %}
@@ -460,7 +479,9 @@ parent_url: /projekt
                 {{ author.family }}, {{ author.given }}{% unless forloop.last %}; {% endunless %}
               {% endfor %}
             </span>
-            
+          </div>
+          
+          <div class="vortrag-meta-row">
             {% if vortrag.event %}
               <span class="vortrag-event">
                 {% if vortrag.URL %}
@@ -470,14 +491,10 @@ parent_url: /projekt
                 {% endif %}
               </span>
             {% endif %}
-          </div>
-          
-          <div class="vortrag-meta-row">
+            
             {% if vortrag.event-place %}
               <span class="vortrag-ort">{{ vortrag.event-place }}</span>
             {% endif %}
-            
-            <span class="vortrag-datum">{{ tag }}.{{ monat }}.{{ jahr }}</span>
           </div>
         </div>
       </div>

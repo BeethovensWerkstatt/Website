@@ -319,6 +319,8 @@ NEUE LOGIK: Sammle nur die neueste Version jedes Artikels
 .glossary-item h3 a {
   color: #c93b22;
   text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .glossary-item h3 a:hover {
