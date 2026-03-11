@@ -282,7 +282,18 @@ article.glossary-term .glossary-content p em a {
             <h4>{{ page.title }} <span class="muted-text">verweist auf {{ outgoing_links.size }} {% if outgoing_links.size == 1 %}Glossarbeitrag{% else %}Glossarbeiträge{% endif %}:</span></h4>
             
             <div class="outgoing-links-compact">
+              {% comment %}Manuelle Sortierung für deutsche Umlaute{% endcomment %}
+              {% assign outgoing_data = "" | split: "," %}
               {% for term in outgoing_links %}
+                {% assign sort_title = term.title | downcase | replace: "ä", "ae" | replace: "ö", "oe" | replace: "ü", "ue" | replace: "ß", "ss" %}
+                {% assign term_entry = sort_title | append: "|||" | append: forloop.index0 %}
+                {% assign outgoing_data = outgoing_data | push: term_entry %}
+              {% endfor %}
+              {% assign sorted_outgoing_data = outgoing_data | sort %}
+              {% for entry in sorted_outgoing_data %}
+                {% assign parts = entry | split: "|||" %}
+                {% assign index = parts[1] | plus: 0 %}
+                {% assign term = outgoing_links[index] %}
                 <a href="{{ term.url | relative_url }}" class="outgoing-link"><strong>{{ term.title }}</strong></a>{% unless forloop.last %}, {% endunless %}
               {% endfor %}
             </div>
@@ -294,7 +305,18 @@ article.glossary-term .glossary-content p em a {
             <h4>{{ page.title }} <span class="muted-text">wird verwendet in {{ matching_terms.size }} {% if matching_terms.size == 1 %}Glossarbeitrag{% else %}Glossarbeiträgen{% endif %}:</span></h4>
             
             <div class="related-terms-compact">
+              {% comment %}Manuelle Sortierung für deutsche Umlaute{% endcomment %}
+              {% assign matching_data = "" | split: "," %}
               {% for term in matching_terms %}
+                {% assign sort_title = term.title | downcase | replace: "ä", "ae" | replace: "ö", "oe" | replace: "ü", "ue" | replace: "ß", "ss" %}
+                {% assign term_entry = sort_title | append: "|||" | append: forloop.index0 %}
+                {% assign matching_data = matching_data | push: term_entry %}
+              {% endfor %}
+              {% assign sorted_matching_data = matching_data | sort %}
+              {% for entry in sorted_matching_data %}
+                {% assign parts = entry | split: "|||" %}
+                {% assign index = parts[1] | plus: 0 %}
+                {% assign term = matching_terms[index] %}
                 {% assign term_slug = term.url | remove: '/glossar/' | split: '/' | first %}
                 <a href="/glossar/{{ term_slug }}/" class="related-term-link"><strong>{{ term.title }}</strong></a>{% unless forloop.last %}, {% endunless %}
               {% endfor %}
