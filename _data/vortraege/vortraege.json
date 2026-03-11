@@ -1,6 +1,94 @@
 {
   "items": [
     {
+      "id": "4185477/VZKRJW6X",
+      "type": "speech",
+      "citation-key": "coxBeethovenSkizzenDigitalEdieren2026",
+      "title": "Beethoven-Skizzen digital edieren: über die Transparenz editorischer Entscheidungen im Digitalen",
+      "publisher-place": "Erlangen",
+      "genre": "Vortrag",
+      "event": "21. Plenartagung der AG für germanistische Edition",
+      "event-place": "Erlangen",
+      "language": "deutsch",
+      "URL": "https://www.ized.fau.de/beispiel-seite/aktuelles/21-plenartagung-der-ag-fuer-germanistische-edition/#collapse_4",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/QEKSUC4F",
+      "type": "speech",
+      "citation-key": "kepperDokument2026",
+      "title": "Dokument und (Noten-)Text",
+      "publisher-place": "Erlangen",
+      "genre": "Vortrag",
+      "event": "21. Plenartagung der AG für germanistische Edition",
+      "event-place": "Erlangen",
+      "language": "deutsch",
+      "URL": "https://www.ized.fau.de/beispiel-seite/aktuelles/21-plenartagung-der-ag-fuer-germanistische-edition/#collapse_4",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/RR4P3GC7",
+      "type": "speech",
+      "title": "Fluide Workflows für musikalische Skizzen – Zum Umgang mit einem komplexen Datenmodell.",
+      "publisher-place": "Wien",
+      "genre": "Poster",
+      "event": "DHd2026",
+      "event-place": "Wien",
+      "URL": "https://dhd2026.digitalhumanities.de/",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Herold",
+          "given": "Kristin"
+        },
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Voigt",
+          "given": "Jan-Peter"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            26
+          ]
+        ]
+      }
+    },
+    {
       "id": "4185477/G58RE2DH",
       "type": "speech",
       "title": "Musik – Edition – Medien, oder: Warum multimodale digitale Forschungsdaten einen erweiterten Begriff vom wissenschaftlichen ‚Text’ erfordern",
@@ -67,31 +155,6 @@
       }
     },
     {
-      "id": "4185477/7XEWAUQG",
-      "type": "speech",
-      "title": "Lektüreseminar: Beethoven | Räume. Kulturwissenschaftliche Perspektiven, kulturelle Resonanzen",
-      "publisher-place": "Universität Paderborn/HfM Detmold",
-      "genre": "Workshop/Seminar",
-      "event-place": "Universität Paderborn/HfM Detmold",
-      "language": "deutsch",
-      "author": [
-        {
-          "family": "Münzmay",
-          "given": "Andreas"
-        }
-      ],
-      "issued": {
-        "date-parts": [
-          [
-            2020,
-            1,
-            1
-          ]
-        ],
-        "season": "Sommersemester"
-      }
-    },
-    {
       "id": "4185477/JCDEB9C3",
       "type": "speech",
       "title": "Ringvorlesung: Beethoven | Räume. Kulturwissenschaftliche Perspektiven, kulturelle Resonanzen",
@@ -139,9 +202,10 @@
       "type": "speech",
       "title": "MEI-Workshop und Projektvorstellung Beethovens Werkstatt",
       "publisher-place": "Vanderbilt University, Nashville",
-      "genre": "Workshop/Seminar",
+      "genre": "Tool-/Projektvorstellung",
       "event": "MEI-Workshop und Entwicklertreffen",
       "event-place": "Vanderbilt University, Nashville",
+      "URL": "https://music-encoding.org/conference/2019/",
       "language": "englisch",
       "author": [
         {
@@ -184,126 +248,6 @@
             2019,
             9,
             23
-          ]
-        ]
-      }
-    },
-    {
-      "id": "4185477/5KTMZAXU",
-      "type": "speech",
-      "title": "Beethoven als Bearbeiter versus Beethoven-Bearbeitungen",
-      "publisher-place": "Beethoven-Haus, Bonn",
-      "genre": "Workshop/Seminar",
-      "event": "Studienkolleg",
-      "event-place": "Beethoven-Haus, Bonn",
-      "language": "deutsch",
-      "author": [
-        {
-          "family": "Cox",
-          "given": "Susanne"
-        },
-        {
-          "family": "Novara",
-          "given": "Elisa"
-        },
-        {
-          "family": "Sänger",
-          "given": "Richard"
-        }
-      ],
-      "issued": {
-        "date-parts": [
-          [
-            2019,
-            9,
-            18
-          ]
-        ]
-      }
-    },
-    {
-      "id": "4185477/8JUW46QX",
-      "type": "speech",
-      "title": "Anwendungsorientiertes MEI",
-      "publisher-place": "Heinz-Nixdorf-Institut, Paderborn",
-      "genre": "Workshop/Seminar",
-      "event": "ESS 2019",
-      "event-place": "Heinz-Nixdorf-Institut, Paderborn",
-      "language": "deutsch",
-      "author": [
-        {
-          "family": "Kepper",
-          "given": "Johannes"
-        }
-      ],
-      "issued": {
-        "date-parts": [
-          [
-            2019,
-            9,
-            2
-          ]
-        ]
-      }
-    },
-    {
-      "id": "4185477/RMVGNCA9",
-      "type": "speech",
-      "title": "Einführung in TEI",
-      "publisher-place": "Hein-Nixdorf-Institut, Paderborn",
-      "genre": "Workshop/Seminar",
-      "event": "ESS 2019",
-      "event-place": "Hein-Nixdorf-Institut, Paderborn",
-      "language": "deutsch",
-      "author": [
-        {
-          "family": "Herold",
-          "given": "Kristin"
-        },
-        {
-          "family": "Veit",
-          "given": "Joachim"
-        }
-      ],
-      "issued": {
-        "date-parts": [
-          [
-            2019,
-            9,
-            2
-          ]
-        ]
-      }
-    },
-    {
-      "id": "4185477/KDW9D7XF",
-      "type": "speech",
-      "title": "Mining Music Data – Arbeiten mit RISM-Daten",
-      "publisher-place": "Heinz-Nixdorf-Institut, Paderborn",
-      "genre": "Workshop/Seminar",
-      "event": "ESS 2019",
-      "event-place": "Heinz-Nixdorf-Institut, Paderborn",
-      "language": "deutsch",
-      "author": [
-        {
-          "family": "Kepper",
-          "given": "Johannes"
-        },
-        {
-          "family": "Ngonga",
-          "given": "Axel"
-        },
-        {
-          "family": "Pugin",
-          "given": "Laurent"
-        }
-      ],
-      "issued": {
-        "date-parts": [
-          [
-            2019,
-            9,
-            2
           ]
         ]
       }
@@ -392,35 +336,12 @@
       }
     },
     {
-      "id": "4185477/NEICHX6S",
+      "id": "4185477/8VVNTHDY",
       "type": "speech",
-      "title": "Editionspraxis: Beethoven und Schumann zwischen Philologie und Editionstechnik",
-      "publisher-place": "Universität „Sapienza“ in Rom",
-      "genre": "Workshop/Seminar",
-      "event-place": "Universität „Sapienza“ in Rom",
-      "language": "deutsch",
-      "author": [
-        {
-          "family": "Novara",
-          "given": "Elisa"
-        }
-      ],
-      "issued": {
-        "date-parts": [
-          [
-            2019,
-            4,
-            15
-          ]
-        ]
-      }
-    },
-    {
-      "id": "4185477/9MEVJGSD",
-      "type": "speech",
-      "title": "Genetische Textkritik und Digitale Musikedition",
+      "citation-key": "novaraProjektvorstellung2018",
+      "title": "Projektvorstellung",
       "publisher-place": "Universität Bonn",
-      "genre": "Workshop/Seminar",
+      "genre": "Tool-/Projektvorstellung",
       "event": "Einführung in die Musikwissenschaft/Sound Studies",
       "event-place": "Universität Bonn",
       "language": "deutsch",
@@ -702,8 +623,9 @@
       "title": "Cultivating MEI: Recent and Future Development",
       "publisher-place": "Wien",
       "genre": "Poster",
-      "event": "MEC",
+      "event": "Music Encoding Conference 2019",
       "event-place": "Wien",
+      "URL": "https://music-encoding.org/conference/2019/",
       "language": "englisch",
       "author": [
         {
@@ -859,7 +781,7 @@
       "title": "A tool for illustrating Genetic Processes",
       "publisher-place": "Florenz",
       "genre": "Poster",
-      "event": "Music Encoding Conference",
+      "event": "Music Encoding Conference 2015",
       "event-place": "Florenz",
       "language": "englisch",
       "author": [
@@ -884,7 +806,8 @@
             19
           ]
         ]
-      }
+      },
+      "URL": "https://music-encoding.org/conference/2015/"
     },
     {
       "id": "4185477/ZCIVF7DZ",
@@ -909,7 +832,8 @@
             22
           ]
         ]
-      }
+      },
+      "URL": "https://music-encoding.org/conference/2014/"
     },
     {
       "id": "4185477/2IBHQWG2",
@@ -1004,7 +928,8 @@
             22
           ]
         ]
-      }
+      },
+      "URL": "https://music-encoding.org/conference/2014/"
     },
     {
       "id": "4185477/88QELH3Z",
@@ -1186,7 +1111,8 @@
             19
           ]
         ]
-      }
+      },
+      "URL": "https://music-encoding.org/conference/2015/"
     },
     {
       "id": "4185477/CJYMEBXB",
@@ -1722,7 +1648,7 @@
       "title": "Music Encoding as Initiative and Inspiration: a vision through the eyes of a traditional editor",
       "publisher-place": "University of Tours",
       "genre": "Vortrag",
-      "event": "Music Encoding Conference",
+      "event": "Music Encoding Conference 2017",
       "event-place": "University of Tours",
       "URL": "https://music-encoding.org/conference/2017/",
       "language": "englisch",
@@ -1748,7 +1674,7 @@
       "title": "Encoding musical variants in MEI. A survey of the first module of “Beethovens Werkstatt”",
       "publisher-place": "University of Tours",
       "genre": "Poster",
-      "event": "Music Encoding Conference",
+      "event": "Music Encoding Conference 2017",
       "event-place": "University of Tours",
       "URL": "https://music-encoding.org/conference/2017/",
       "language": "englisch",
@@ -2227,6 +2153,7 @@
       "genre": "Poster",
       "event": "Akademientag: Geisteswissenschaften 3.0: Vergegenwärtigung des kulturellen Welterbes.",
       "event-place": "Berlin-Brandenburgische Akademie der Wissenschaften, Berlin",
+      "URL": "https://www.akademienunion.de/akademientag/akademientag/2018-geisteswissenschaften-30",
       "language": "deutsch",
       "author": [
         {
@@ -2488,7 +2415,7 @@
       "genre": "Poster",
       "event": "Music Encoding Conference 2019",
       "event-place": "Wien",
-      "URL": "https://music-encoding.org/conference/2019/program/",
+      "URL": "https://music-encoding.org/conference/2019/",
       "language": "englisch",
       "author": [
         {
@@ -2686,36 +2613,6 @@
             2020,
             3,
             3
-          ]
-        ]
-      }
-    },
-    {
-      "id": "4185477/CEGAHSQU",
-      "type": "speech",
-      "title": "Beethovens Werkstatt – A Digital Edition of Notirungsbuch K.",
-      "publisher-place": "Hungarian Department for Music History (HUN-REN RCH)",
-      "genre": "Workshop/Seminar",
-      "event": "Digital Critical Editions in Music",
-      "event-place": "Hungarian Department for Music History (HUN-REN RCH)",
-      "URL": "https://zti.hu/en/119-zti-esemenyek/2025/1336-digital-critical-editions-in-music-3-online-workshop-2",
-      "language": "englisch",
-      "author": [
-        {
-          "family": "Kepper",
-          "given": "Johannes"
-        },
-        {
-          "family": "Sänger",
-          "given": "Richard"
-        }
-      ],
-      "issued": {
-        "date-parts": [
-          [
-            2025,
-            6,
-            23
           ]
         ]
       }
