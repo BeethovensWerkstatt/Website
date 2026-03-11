@@ -1,14 +1,18 @@
 ---
 layout: glossary
 title: Fassung
-short_definition: # TODO: Kurzdefinition ergänzen
+short_definition: Textgestalt, die sich von anderen unterscheidet.
 author: Bernhard Appel
 version: 1.0.0
 date: 2020-01-13
 categories: [Modul 3]
 changes: "Erstveröffentlichung"
 permalink: /glossar/fassung/1.0.0/
-doi_version: # TODO: DOI für Version 1.0.0 ergänzen
-doi_overview: # TODO: DOI für Übersicht ergänzen
+doi_version: 10.5281/zenodo.18960212
+doi_overview: 10.5281/zenodo.18960211
 ---
 
+Der stets relational gebrauchte Begriff „Fassung“ bezeichnet eine bestimmte Textgestalt, die sich von anderen, früheren oder späteren, aufeinander beziehbaren Textgestalten unterscheidet. Aufeinander beziehbar sind Texte, wenn sie eine gemeinsame strukturelle Schnittmenge miteinander teilen ([Invarianz]({% link _glossary/invarianz.md %})) und zugleich auch strukturelle Unterschiede (Varianz) aufweisen, wobei sie auch völlig voneinander abweichende Struktursegmente ([Differenz]({% link _glossary/differenz.md %})) enthalten können. In allen Fällen bestehen zwischen Fassungen objektiv feststellbare textuelle [Ähnlichkeit]({% link _glossary/aehnlichkeit.md %})s- oder Verwandtschaftsbeziehungen.  
+So sind Skizzen, Entwürfe, Arbeitsmanuskripte etc. unterschiedlich ausgereifte textliche Zwischenstufen, d. h. (Zwischen-)Fassungen eines Werkprojekts. Man spricht dann beispielsweise von einer „Skizzenfassung“, von einer „Fassung des Arbeitsmanuskripts“ oder von einer „Fassung letzter Hand“. Aus schaffensgenetischer Sicht sind textuelle Zwischenstufen nur temporär gültig, weil sie durch die jeweils folgende nächste Fassung in eine neue Gestalt überführt und damit quasi „überholt“ werden.  
+Liegt dagegen ein abgeschlossener, ausgereifter Werktext in zwei oder mehreren Versionen vor, so handelt es sich um gleichrangige (Werk-)Fassungen. Als ursprüngliche Fassung (Originalfassung) dominiert die frühere Fassung sowohl in chronologischer als auch in struktureller Hinsicht die ihr nachfolgende Bearbeitungsfassung, weil sie die invarianten Vorgaben definiert, denen die [Bearbeitung]({% link _glossary/bearbeitung.md %}) folgt. Sofern beide Fassungen von ein und demselben Komponisten stammen, sind beide autorisiert und authentisch und erheben ungeachtet ihrer chronologischen Distanz einen jeweils eigenen Werkanspruch. Über den ästhetischen Rang beider Fassungen ist damit nichts ausgesagt. Zwischen einer Originalfassung und deren Klavierbearbeitung ([Klavierauszug]({% link _glossary/klavierauszug.md %})) beispielsweise besteht zumeist eine ästhetische Differenz, die u. a. durch deren unterschiedliche Gebrauchsfunktionen begründet werden kann. Beethovens „Große Fuge“ für Streichquartett op. 133 und seine Eigenbearbeitung als Klavierstück für vier Hände op. 134 dagegen erheben allein schon durch die vom Komponisten selbst veranlasste Vergabe getrennter Opuszahlen einen jeweils eigenständigen Werkrang. Die Klavierfassung fungiert nicht als reduktionistisches Arrangement der Streichquartettfassung. Sie versteht sich vielmehr als eine dem Original nachkomponierte Adaptation, als Transfer einer Gattung in eine andere, wobei alle wesentlichen Strukturmerkmale der früheren Fassung erhalten bleiben. Ein ähnlicher Gattungstransfer liegt in Beethovens Eigenbearbeitung des Septetts op. 20 für eine Triobesetzung op. 38 vor.  
+Fassungen entstehen nicht nur durch Bearbeitungen eigener Werke, sondern auch durch Bearbeitungen fremder Werke. In diesen Fällen stellt sich die Frage, ob die Fremdbearbeitung im Auftrag des Komponisten erstellt wurde und mithin autorisiert ist oder ob es sich um eine nicht-autorisierte Fremdbearbeitung handelt. In beiden Fällen kann es aufschlussreich sein zu prüfen, auf welch unterschiedliche Weisen dieselben Ideen bearbeitet oder dasselbe Werk in verschiedenen Fassungen realisiert worden ist. Bearbeitungspraktiken geben u. a. Einblicke in kompositorische Arbeitsprozesse. Sie sind Thema des zweiten Moduls innerhalb des Projekts *Beethovens Werkstatt*.
