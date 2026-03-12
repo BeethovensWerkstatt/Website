@@ -1,15 +1,17 @@
 ---
 layout: glossary
 title: Kohärenz
-short_definition: # TODO: Kurzdefinition ergänzen
+short_definition: Inhaltliche oder formale Beziehung zwischen zwei oder mehreren Varianten.
 author: Bernhard Appel und Federica Rovelli
 version: 1.0.1
 date: 2019-11-14
 categories: [Modul 1]
 permalink: /glossar/kohaerenz/1.0.1/
-changes: # TODO: Änderungen für Version 1.0.1 beschreiben
+changes: Formatierung, Schrift bold von Links entfernt
 doi_version: # TODO: DOI für Version 1.0.1 ergänzen
-doi_overview: # TODO: DOI für Übersicht ergänzen
+doi_overview: 10.5281/zenodo.18982195
 ---
 
-<!-- TODO: Inhalt ergänzen -->
+Die inhaltliche oder formale Beziehung zwischen zwei oder mehreren [Varianten]({% link _glossary/variante.md %}) wird als Kohärenz bezeichnet, wenn diese Varianten derselben Phase eines Schreibprozesses angehören oder in einem erkennbaren kausalen Zusammenhang stehen. Man kann demnach zwei Typen kohärenter Varianten unterscheiden. Jene des ersten Typs, die auf einer gleichen [mikrochronologischen]({% link _glossary/mikrochronologie.md %}) Ebene liegen, sind meistens anhand gewisser [metatextlicher Elemente]({% link _glossary/metatext.md %}) (z. B. aufgrund eines gleichen Schreibmittels) zu identifizieren. Kohärente Varianten des zweiten Typs treten in eng verbundenen Textstellen auf, wobei die Beziehung auf einer formalen bzw. melodischen, rhythmischen oder harmonischen Ebene erkennbar ist. Derartige „Parallelstellen“ werden in Werkeditionen oft angepasst, so dass eine Variantenkohärenz editorisch hergestellt oder bekräftigt wird; andererseits kann die Veränderung einer Stimme harmonische Konsequenzen im polyphonen Kontext haben, so dass auch die anderen Stimmen angepasst werden müssen (in diesem Fall ergibt sich eine vertikale Kohärenz).
+
+Kohärenz-Phänomene, die innerhalb einer [Intervention]({% link _glossary/intervention.md %})sphase auftreten, geben Auskunft über die systemische Konzeption des Textes und können einige innere Konstanten der kompositorischen Logik erhellen.
