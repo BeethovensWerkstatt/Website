@@ -1,15 +1,49 @@
 ---
 layout: glossary
 title: Metatext
-short_definition: # TODO: Kurzdefinition ergänzen
+short_definition: Schreibspur, ohne selbst bedeutungstragender Notentext zu sein.
 author: Susanne Cox
 version: 2.0.5
 date: 2020-08-13
 categories: [Modul 1]
 permalink: /glossar/metatext/2.0.5/
-changes: # TODO: Änderungen für Version 2.0.5 beschreiben
+changes: typografische Kleinigkeiten
 doi_version: # TODO: DOI für Version 2.0.5 ergänzen
-doi_overview: # TODO: DOI für Übersicht ergänzen
+doi_overview: 10.5281/zenodo.19091383
 ---
 
-<!-- TODO: Inhalt ergänzen -->
+Metatexte sind Schreibspuren, die Aufschluss über den Schreibvorgang und die Entstehungsweise eines Notentextes geben, ohne selbst bedeutungstragender Notentext zu sein. Dazu gehören einerseits vom Komponisten absichtsvoll geschriebene Kommentare und Zeichen im Notentext (explizite Metatexte) und andererseits unabsichtlich entstandene Begleiterscheinungen des Schreibprozesses (implizite Metatexte).
+
+### Explizite Metatexte
+sind vom Komponisten mit Absicht verwendete verbalschriftliche Kommentare oder graphische Zeichen mit kommunikativer Funktion. Da sich der Komponist mit expliziten Metatexten an einen oder mehrere Adressaten – z. B. an sich selbst, an Kopisten, Musiker, Verlagslektoren, etc. – richtet, bedient er sich dabei konventioneller Symbole, Zeichen und graphischer Maßnahmen. Diese Metatexte erhalten ihre Bedeutung erst durch den Notentext, auf den sie sich beziehen, weshalb sie ohne diesen bedeutungsleer sind.
+Zu den expliziten Metatexten gehören u.a.:
+- [Textwegweiser]({% link _glossary/textwegweiser.md %})
+- [Verbalanmerkungen]({% link _glossary/verbalanmerkungen.md %})
+- selbsterklärende graphische Maßnahmen ([Streichung]({% link _glossary/streichung.md %}), [Rasur]({% link _glossary/rasur.md %}))
+- Einfügungsstriche und Zuordnungspfeile
+- Wechsel der Schriftfarbe durch kalkulierten Gebrauch unterschiedlicher [Schreibmittel]({% link _glossary/schreibmittel.md %}) (Tinte, Bleistift, Rötel)
+- [Über-Schreibung]({% link _glossary/ueber-schreibung.md %})
+
+### Implizite Metatexte
+werden vom Komponisten unabsichtlich durch seine Arbeit mit den Textträgern und Schreibmitteln erzeugt und zeigen sich in vielen verschiedenen bedeutungsdifferenzierenden Merkmalen des Schriftbilds. Sie haften an der schriftlichen Aufzeichnung wie ein Schatten an einem beleuchteten Gegenstand und begleiten sie in der Art eines unbeabsichtigten Handlungs- oder Herstellungskommentars.  
+Doch auch *kodikologische Phänomene*, also materielle Merkmale des Dokuments, stellen eine Form des impliziten Metatextes dar, sofern sie vom Komponisten im Zuge der [Textualisierung]({% link _glossary/textualisierung.md %}) erzeugt worden sind. Diese Art des impliziten Metatextes ist nicht an den Notentext, sondern an den Textträger gebunden.  
+Im Gegensatz zu expliziten Metatexten sind implizite Metatexte nicht adressiert und bestehen auch nicht aus einer begrenzten Anzahl gebräuchlicher Zeichen. Deshalb können sie, anders als der eigentliche Notentext, nicht einfach abgeschrieben oder ediert werden, sondern müssen durch die Interpretation von Befunden über eine Indizienverkettung erst konstituiert werden. Die Deutungen impliziter Metatexte sind philologische Konstrukte.  
+Zu den impliziten Metatexten gehören u.a.:
+- Graphische Charakteristika des Schriftbilds, wie wechselnde Breite der Schreibspur durch Wechsel des verwendeten Schreibgeräts (Federbreite), nicht kalkuliert eingesetzter [Wechsel der Tintenfarbe]({% link _glossary/schreibmittelwechsel-bzw-schriftfarbwechsel.md %}), schwankende Intensität der Tintenfarbe
+- Schreibdichte innerhalb eines oder mehrerer Takte (Verschiebungen im Notenuntersatz)
+- Anordnung der Notate im Schreibraum (Topographie):
+  - Notierung außerhalb des kontinuierlichen Textflusses (in [Cue staff-Systemen]({% link _glossary/cue-staff.md %}), Verlängerung von Notensystemen auf dem Rand der Notenseite)
+  - Auslagerung von Notentextsegmenten auf Einlegeblätter
+- verfügbarer Schreibraum in einer spezifischen Schreibsituation
+- Dispositionsmaßnahmen im Zuge des Schreibens (Seiten- und Takteinteilung)
+- Schreibduktus (Skizzen-, Konzept-, Reinschrift)
+- [Um-Schreibung]({% link _glossary/um-schreibung.md %})
+
+Kodikologische Besonderheiten:
+- Wechselnde Papiersorten
+- Unregelmäßigkeiten der Lagenstruktur
+- Blattstümpfe (zeugen von der Entfernung eines Blattes)
+- Einstichlöcher, die auf eine eigenhändige Faszikelbindung des Komponisten zurückgehen
+- aufgeklebte oder aufgenähte Tekturen
+- Knickfalten im Papier aufgrund von Rückblenden
+- zufälliger Tintenabklatsch auf einer gegenüberliegenden Seite, Tintenkleckse
