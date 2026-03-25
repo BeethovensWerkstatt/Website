@@ -21,4 +21,4 @@ Cue staff-Notierungen dürfen nicht mit reinschriftlichen Ersatzlesarten und **K
 
 ![Cue staff-Notierungen](/assets/images/glossary/cuestaff_op75-Nr2.jpg)
 
-*Abbildung 1: Ludwig van Beethoven, Werkniederschrift des Liedes Neue Liebe, neues Leben op. 75/2, T. 113–125 (Beethoven-Haus Bonn, HCB Mh 34, fol. 5r)*
+*Ludwig van Beethoven, Werkniederschrift des Liedes Neue Liebe, neues Leben op. 75/2, T. 113–125 (Beethoven-Haus Bonn, HCB Mh 34, fol. 5r)*

@@ -1,15 +1,16 @@
 ---
 layout: glossary
 title: Implement
-short_definition: # TODO: Kurzdefinition ergänzen
+short_definition: Sachlich richtige Umsetzung eines Änderungsimperativs.
 author: Bernhard Appel
 version: 1.0.2
 date: 2023-08-06
 categories: [Modul 3]
 permalink: /glossar/implement/1.0.2/
-changes: # TODO: Änderungen für Version 1.0.2 beschreiben
+changes: Links zu neuen Glossar-Artikeln ergänzt
 doi_version: # TODO: DOI für Version 1.0.2 ergänzen
-doi_overview: # TODO: DOI für Übersicht ergänzen
+doi_overview: 10.5281/zenodo.18978387
 ---
 
-<!-- TODO: Inhalt ergänzen -->
+Die in einem [Zieltext]({% link _glossary/zieltext.md %}) sachlich richtige Umsetzung eines [Änderungsimperativs]({% link _glossary/aenderungsimperativ.md %}), der in einem [Monitum]({% link _glossary/monitum.md %}) gefordert wird, bezeichnen wir als Implement (lat. *impleo*: erfüllen, vollbringen, etwas vertraglich einlösen; nicht zu verwechseln mit „Implantat“).  
+In Bezug auf den [Ausgangstext]({% link _glossary/ausgangstext.md %}) tritt das Implement im Zieltext als (1) [Korrektur]({% link _glossary/korrektur.md %}), (2) als [Variante]({% link _glossary/variante.md %}), (3) als sinnbewahrende Textpräzisierung, (4) als Optimierung der Schriftbildlichkeit oder aber (5) als paratextlicher Eingriff in Erscheinung ([Klassifizierung von Änderungsmaßnahmen]({% link _glossary/aenderungsmassnahmen-klassifizierung.md %})). Die Installierung eines Implements im Zieltext geschieht über eine der vier [Textoperationen]({% link _glossary/textoperation.md %}) ([Tilgung]({% link _glossary/tilgung.md %}), [Ersetzung]({% link _glossary/ersetzung.md %}), [Erweiterung]({% link _glossary/einfuegung.md %}), [Umstellung]({% link _glossary/umstellung.md %})), die durch den Änderungsimperativ vorgegeben wird. Während ein im Zieltext handschriftlich integriertes Implement als solches durch die [Skriptur]({% link _glossary/skriptur.md %}) metatextlich „markiert“ ist und somit seinen genetischen Ursprung als Revisionsmaßnahme erkennen lässt, werden die Herkunftsspuren eines Implements vollkommen gelöscht, sobald es in eine neue Werktextabschrift oder in eine Druckausgabe übernommen worden ist.

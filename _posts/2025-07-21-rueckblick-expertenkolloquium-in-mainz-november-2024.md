@@ -6,7 +6,7 @@ categories: news
 authors:
 - Beethovens Werkstatt
 version: 1.0.0
-topic: Release
+topic: Projekt
 ---
 Am 18. und 19. November 2024 fand an der Akademie der Wissenschaften und der Literatur in Mainz ein interdisziplinärer Expertenworkshop im Rahmen des Projekts Beethovens Werkstatt statt. Im Mittelpunkt der zweitägigen Veranstaltung stand die editorische und philologische Auseinandersetzung mit Beethovens Skizzenmaterial – insbesondere mit dem sogenannten Notirungsbuch K und den Herausforderungen einer digitalen Skizzenbuch-Edition.
 

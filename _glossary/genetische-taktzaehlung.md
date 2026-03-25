@@ -1,15 +1,23 @@
 ---
 layout: glossary
 title: Genetische Taktzählung
-short_definition: # TODO: Kurzdefinition ergänzen
-author: Susanne Cox und Elisa Novara und Richard Sänger
+short_definition: Nimmt Funktionsbestimmungen vor.
+author: Susanne Cox, Elisa Novara und Richard Sänger
 version: 1.0.1
 date: 2019-11-14
 categories: [Modul 1]
 permalink: /glossar/genetische-taktzaehlung/1.0.1/
-changes: # TODO: Änderungen für Version 1.0.1 beschreiben
+changes: bold Formatierung bei links entfernt
 doi_version: # TODO: DOI für Version 1.0.1 ergänzen
-doi_overview: # TODO: DOI für Übersicht ergänzen
+doi_overview: 10.5281/zenodo.18960406
 ---
 
-<!-- TODO: Inhalt ergänzen -->
+Lokal begrenzte Taktzählung, die sich auf die jeweils betrachtete [Textnarbe]({% link _glossary/textnarbe.md %}) beschränkt und die Möglichkeit bietet, sich innerhalb der Chronologie der Variantenbildung zu orientieren.
+
+Die konventionelle Taktzählung wird in der musikwissenschaftlichen Analyse, bei philologischen Nachweisen (z. B. im Lesartenverzeichnis) und zur Verständigung in der musikalischen Probenpraxis genutzt. Da sie in geschlossenen Werktexten gebraucht wird, bezeichnet jede einzelne Taktzahl einen bestimmten Takt innerhalb eines durchweg gültigen Notentextes.  
+Für die genetische Darstellung von Werkstattdokumenten reicht die Zählung allerdings nicht aus, weshalb im Projekt *Beethovens Werkstatt* eine genetische Taktzählung eingeführt wurde. Diese nimmt neben der numerisch-chronologischen Einzeltaktzählung zugleich auch Funktionsbestimmungen vor. So enthält sie Informationen zum genetischen Stellenwert eines Taktes und zur kontextuellen Einbettung der [Varianten]({% link _glossary/variante.md %}).  
+Die genetische Taktzählung knüpft an die reguläre Taktzählung an und erweitert diese um Buchstaben. Alle Varianten werden der Reihenfolge ihrer Entstehung entsprechend mit Buchstaben benannt: Die erste Variante wird mit „a“ bezeichnet, die danach entstandene mit „b“, usw. Bei geschlossenen Varianten, die vollständig in einen Kontext integriert sind, wird ein Großbuchstabe, bei offenen, also nicht kontextintegrierten Varianten ein Kleinbuchstabe verwendet. Eine finale, kontextintegrierte Variante kann man unter zwei Zählperspektiven erfassen: Die jeweils letzte, gültige und kontextintegrierte Variante wird unter der Perspektive ihrer Entstehung mit einer genetischen Taktzählung versehen. Betrachtet man sie jedoch als Bestandteil des gültigen Gesamttextes, so wird sie durch die konventionelle Taktzählung erfasst.
+
+![Genetische Taktzählung](/assets/images/glossary/genetische-taktzaehlung-op59_3.jpg)
+
+*Ludwig van Beethoven, Op. 59/3, T. 32–37, Werkniederschrift (Beethoven-Haus Bonn, BH 62, S. 18)*

@@ -1,3 +1,6 @@
 [submodule "vide-component-facsimile"]
 	path = vide-component-facsimile
 	url = https://github.com/BeethovensWerkstatt/vide-component-facsimile.git
+[submodule "vide-component-transcriptions"]
+	path = vide-component-transcriptions
+	url = https://github.com/BeethovensWerkstatt/vide-component-transcriptions.git

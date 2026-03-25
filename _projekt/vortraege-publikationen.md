@@ -79,7 +79,63 @@ parent_url: /projekt
   }
 }
 
+/* Filter Toggle Button */
+.filter-toggle-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 1.5rem 0 1rem 0;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.vortraege-filter-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.75rem;
+  background: #f8f9fa;
+  color: #495057;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.vortraege-filter-toggle-btn:hover {
+  background: #e9ecef;
+  border-color: #c93b22;
+  color: #c93b22;
+}
+
+.vortraege-filter-toggle-btn .toggle-icon {
+  flex-shrink: 0;
+}
+
+.vortraege-filter-toggle-btn .chevron-icon {
+  flex-shrink: 0;
+  transition: transform 0.3s;
+}
+
+.vortraege-filter-toggle-btn.collapsed .chevron-icon {
+  transform: rotate(-90deg);
+}
+
 /* Vorträge Filter */
+.vortraege-filters {
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.vortraege-filters.collapsed {
+  max-height: 0;
+  padding: 0 1.5rem;
+  margin-bottom: 0;
+  opacity: 0;
+  border: none;
+}
+
 .vortraege-filters {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -174,21 +230,18 @@ parent_url: /projekt
 .vortraege-liste {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 0;
 }
 
 .vortrag-item {
-  padding: 1.25rem;
-  background: white;
-  border: 1px solid #e8e8e8;
-  border-left: 4px solid #c93b22;
-  border-radius: 4px;
-  transition: all 0.2s ease;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #e8e8e8;
+  border-left: 3px solid transparent;
+  padding-left: 1rem;
 }
 
-.vortrag-item:hover {
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  border-left-color: #9d1d20;
+.vortrag-item:last-child {
+  border-bottom: none;
 }
 
 .vortrag-item.hidden {
@@ -210,6 +263,14 @@ parent_url: /projekt
   line-height: 1.4;
   flex: 1;
   padding-right: 1rem;
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.titel-text {
+  color: #333;
 }
 
 .vortrag-meta {
@@ -239,23 +300,29 @@ parent_url: /projekt
 }
 
 .vortrag-event a {
-  color: inherit;
+  color: #c93b22;
   text-decoration: none;
-  border-bottom: 1px dotted #666;
-  transition: all 0.2s ease;
+  transition: color 0.2s ease;
 }
 
 .vortrag-event a:hover {
-  color: #c93b22;
-  border-bottom-color: #c93b22;
+  color: #9d1d20;
 }
 
 .vortrag-ort {
   color: #666;
 }
 
+.vortrag-ort::before {
+  content: "· ";
+  color: #999;
+  margin-right: 0.3rem;
+}
+
 .vortrag-datum {
-  color: #888;
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
 }
 
 .vortrag-genre {
@@ -318,8 +385,21 @@ parent_url: /projekt
     <strong>Datenquelle:</strong> Die hier aufgelisteten Vorträge werden in unserer <a href="https://www.zotero.org/groups/1157767/beethovens_werkstatt/collections/QUXS9UZ9/collection" target="_blank" rel="noopener noreferrer">öffentlichen Zotero-Collection</a> verwaltet. Dort können Sie die Daten in verschiedenen Formaten (BibTeX, RIS, EndNote, etc.) exportieren und für eigene Zwecke nutzen.
   </div>
   
+  <!-- Filter Toggle Button -->
+  <div class="filter-toggle-header">
+    <button id="vortraege-filter-toggle" class="vortraege-filter-toggle-btn">
+      <svg class="toggle-icon" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2z"/>
+      </svg>
+      <span>Filter</span>
+      <svg class="chevron-icon" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+      </svg>
+    </button>
+  </div>
+  
   <!-- Filter Section -->
-  <div class="vortraege-filters">
+  <div class="vortraege-filters" id="vortraege-filters">
     <div class="filter-group">
       <label for="filter-jahr">Jahr:</label>
       <select id="filter-jahr" onchange="filterVortraege()">
@@ -383,7 +463,10 @@ parent_url: /projekt
            data-sortkey="{{ sortkey }}">
         
         <div class="vortrag-header">
-          <h3 class="vortrag-titel">{{ vortrag.title }}</h3>
+          <h3 class="vortrag-titel">
+            <span class="titel-text">{{ vortrag.title }}</span>
+            <span class="vortrag-datum">{{ tag }}.{{ monat }}.{{ jahr }}</span>
+          </h3>
           {% if vortrag.genre %}
             <span class="vortrag-genre">{{ vortrag.genre }}</span>
           {% endif %}
@@ -396,7 +479,9 @@ parent_url: /projekt
                 {{ author.family }}, {{ author.given }}{% unless forloop.last %}; {% endunless %}
               {% endfor %}
             </span>
-            
+          </div>
+          
+          <div class="vortrag-meta-row">
             {% if vortrag.event %}
               <span class="vortrag-event">
                 {% if vortrag.URL %}
@@ -406,14 +491,10 @@ parent_url: /projekt
                 {% endif %}
               </span>
             {% endif %}
-          </div>
-          
-          <div class="vortrag-meta-row">
+            
             {% if vortrag.event-place %}
               <span class="vortrag-ort">{{ vortrag.event-place }}</span>
             {% endif %}
-            
-            <span class="vortrag-datum">{{ tag }}.{{ monat }}.{{ jahr }}</span>
           </div>
         </div>
       </div>
@@ -500,11 +581,7 @@ function filterVortraege() {
   // Update count
   const totalCount = vortraege.length;
   const countEl = document.getElementById('vortraege-count');
-  if (visibleCount === totalCount) {
-    countEl.textContent = `${totalCount} Vorträge`;
-  } else {
-    countEl.textContent = `${visibleCount} von ${totalCount} Vorträgen`;
-  }
+  countEl.textContent = `${visibleCount} von ${totalCount} Vorträgen`;
   
   // Update filter options basierend auf sichtbaren Vorträgen
   updateFilterOptions();
@@ -745,6 +822,20 @@ function updateFilterOptions() {
   });
 }
 
+// Filter Toggle Functionality
+let vortraegeFiltersVisible = true;
+
+function toggleVortraegeFilters() {
+  const filters = document.getElementById('vortraege-filters');
+  const toggleBtn = document.getElementById('vortraege-filter-toggle');
+  
+  if (filters && toggleBtn) {
+    vortraegeFiltersVisible = !vortraegeFiltersVisible;
+    filters.classList.toggle('collapsed', !vortraegeFiltersVisible);
+    toggleBtn.classList.toggle('collapsed', !vortraegeFiltersVisible);
+  }
+}
+
 // Handle page load with hash
 window.addEventListener('DOMContentLoaded', function() {
   const hash = window.location.hash.substring(1);
@@ -759,6 +850,12 @@ window.addEventListener('DOMContentLoaded', function() {
   // Populate filter dropdowns and sort
   if (document.getElementById('filter-jahr')) {
     populateFilterOptions();
+  }
+  
+  // Setup filter toggle button
+  const toggleBtn = document.getElementById('vortraege-filter-toggle');
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', toggleVortraegeFilters);
   }
 });
 </script>
