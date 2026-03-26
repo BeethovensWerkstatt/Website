@@ -12,7 +12,7 @@ Vom 23. bis 27. Februar 2026 fand in Wien die Jahrestagung <em>Digital Humanitie
 
 Der Tagungsort an der Universität Wien bot eine hervorragende Umgebung für spannende Vorträge und Diskussionen, und die Stadt selbst erwies sich als kulturell sehr inspirierend. Mit Susanne Cox, Max Greshake, Kristin Herold, Johannes Kepper, Lisa Rosendahl und Richard Sänger waren insgesamt sechs Teammitglieder von Beethovens Werkstatt in Wien, was den fachlichen Austausch und die Vernetzung zusätzlich bereicherte. Die Gelegenheit der Wien-Reise wurde außerdem für Recherche-Arbeiten bei der Gesellschaft der Musikfreunde genutzt.
 
-Abstract zum Poster: [10.5281/zenodo.18703062] 
+Abstract zum Poster: [10.5281/zenodo.18703062]  
 Poster-Publikation: [10.5281/zenodo.18999793]
 
 <figure>
@@ -20,5 +20,5 @@ Poster-Publikation: [10.5281/zenodo.18999793]
     <figcaption>Johannes Kepper im Gespräch während der Poster Session (unten rechts) und weitere Impressionen: Prunksaal der Österreichischen Nationalbibliothek (oben links), Hunderwasserhaus (mitte links), Universität Wien (unten links), Hofburg (oben rechts)</figcaption>
 </figure>
 
-[https://zenodo.org/records/18703063]: https://zenodo.org/records/18703063
-[DHd2026]: https://dhd2026.digitalhumanities.de/
+[10.5281/zenodo.18703062]: https://doi.org/10.5281/zenodo.18703063
+[10.5281/zenodo.18999793]: https://doi.org/10.5281/zenodo.18999794
