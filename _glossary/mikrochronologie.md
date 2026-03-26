@@ -1,15 +1,16 @@
 ---
 layout: glossary
 title: Mikrochronologie
-short_definition: # TODO: Kurzdefinition ergänzen
+short_definition: Zeitlicher Verlauf von kleinen Arbeitsschritten.
 author: Bernhard Appel
 version: 1.0.1
 date: 2019-09-20
 categories: [Modul 1]
 permalink: /glossar/mikrochronologie/1.0.1/
-changes: # TODO: Änderungen für Version 1.0.1 beschreiben
+changes: Formatierung Links bold entfernt, Link hinzugefügt
 doi_version: # TODO: DOI für Version 1.0.1 ergänzen
-doi_overview: # TODO: DOI für Übersicht ergänzen
+doi_overview: 10.5281/zenodo.19098328
 ---
 
-<!-- TODO: Inhalt ergänzen -->
+Unter Mikrochronologie versteht man den zeitlichen Verlauf von kleinen Arbeitsschritten, die vom Komponisten notwendigerweise zur Produktion eines Textes vollzogen werden müssen. Historisch verbürgte, „absolute“ Entstehungsdaten (z. B. das Tagesdatum des Beginns oder der Beendigung einer Komposition) enthalten keine textgenetisch relevanten Informationen. Dagegen beschreibt die Mikrochronologie den relativen zeitlichen Verlauf von Schreibprozessen, ohne konkrete Tagesdaten, geschweige denn minutiöse Uhrzeitangaben anzugeben. Eine mikrochronologische Beschreibung bedient sich ausschließlich relativer zeitlicher Kategorien („früher, später, dazwischenliegend“), die beispielsweise auch in der synoptischen Anordnung von Transkriptionen dargestellt werden können.  
+Der mikrochronologische Verlauf des Komponierens lässt sich aus einem authentischen Werkstattdokument bzw. aus der Abfolge aufeinander beziehbarer Werkstattdokumente nur mittelbar erschließen. Denn die [Skriptur]({% link _glossary/skriptur.md %}) eines Dokuments konserviert die in ihm vollzogenen Schreibakte in statischer, d.h. synchronischer Gleichzeitigkeit, während die Diachronie der Schreibakte, d.h. die Mikrochronologie des Schreibprozesses, der Skriptur nicht unmittelbar zu entnehmen ist. Die Mikrochronologie des Schreibens wird durch die Interpretation von [metatextlichen Elementen]({% link _glossary/metatext.md %}) rekonstruiert. Dabei wird der synchronische Gesamtzustand der Skriptur auf der Basis erkannter [Schreibschichten]({% link _glossary/schreibschichttextschicht.md %}) in temporäre Zwischenstadien des Notentextes ([Textzustand]({% link _glossary/textzustand.md %}), [Textstufe]({% link _glossary/textstufe.md %})) überführt. Aus der diachronischen Reihung (Synopse) der ermittelten und transkribierten Textzustände (s. [Transkription]({% link _glossary/transkription-methoden.md %})) (die ihrerseits jeweils einen rekonstruierten synchronischen Zwischenzustand darstellen) lässt sich die Mikrochronologie des Schreibprozesses beschreiben.

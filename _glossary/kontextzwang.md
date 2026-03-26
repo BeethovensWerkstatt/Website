@@ -1,15 +1,20 @@
 ---
 layout: glossary
 title: Kontextzwang
-short_definition: # TODO: Kurzdefinition ergänzen
+short_definition: Textentwicklung unterliegt vorliegenden Kontext.
 author: Bernhard Appel
 version: 1.0.0
 date: 2020-04-15
 categories: [Modul 3]
 permalink: /glossar/kontextzwang/1.0.0/
 changes: "Erstveröffentlichung"
-doi_version: # TODO: DOI ergänzen
-doi_overview: # TODO: DOI für Übersicht ergänzen
+doi_version: 10.5281/zenodo.19068676
+doi_overview: 10.5281/zenodo.19068675
 ---
 
-<!-- TODO: Inhalt ergänzen -->
+In Kompositionen, die an satztechnische, kontrapunktische und harmonische Regeln und Konventionen gebunden sind, unterliegt die Textentwicklung ([Progression]({% link _glossary/progression.md %}), [Intervention]({% link _glossary/intervention.md %}) und [Redaktion]({% link _glossary/redaktion.md %}), mithin also jede Form der [Bearbeitung]({% link _glossary/bearbeitung.md %})) den strukturellen Bedingungen des jeweils bereits vorliegenden Kontextes. Diese regulativen Vorgaben einer vom Komponisten selbst geschaffenen Textgestalt schränken die Möglichkeiten ihrer strukturellen Weiterentwicklung ein. Wir bezeichnen diese vom Kontext diktierten Beschränkungen als Kontextzwang. Er bedingt und formt die nachfolgende kompositorische Weiterentwicklung des Textes, indem er das Spektrum zukünftig möglicher, neuer kompositorischer Entscheidungen einschränkt.
+
+In einstimmigen Strukturen ist jedes einzelne Notationselement zwischen einem vorausgehenden und einem nachfolgenden Element, also zweifach eingebettet, wobei auch die dieser Struktur vorausgehende und nachfolgende „implizite Pause“ als notwendige, begrenzende Elemente des Textes betrachtet werden müssen. Jedes Notationselement konstituiert einen Kontext und ist zugleich von ihm abhängig. In einem zweistimmigen Tonsatz ist jedes Notationselement dreifach kontextualisiert, denn zur Linearität der beiden Stimmen kommt die Vertikalität der Harmonik hinzu. Eine dreistimmige Komposition unterliegt einer vierfachen Kontextbindung usw.
+Je differenzierter und vollständiger ein Tonsatz ausformuliert ist, um so mehr schränkt er weitere kompositorische Anreicherungen und Änderungen ein: Mit der Komplexität eines Textes wächst auch der ihm innewohnende Kontextzwang.  
+Dem Kontextzwang, der in jeder Textentwicklung wirksam ist, kann ein Komponist nur scheinbar entgehen, indem er den von ihm selbst konstituierten Kontext verwirft, um ihn durch einen neuen zu ersetzen, der dann aber seinerseits wieder einen neuen, wenn auch anders gearteten Kontextzwang erzeugt. Eine echte, allerdings nur punktuell einsetzbare Möglichkeit, den Kontextzwang zu überwinden, besteht in der gezielten Regelverletzung (Lizenz). In einem für Fürst Nikolaus Galitzin bestimmten, hitzig formulierten Briefentwurf (1825) postuliert Beethoven „fort mit allen Regeln“; man könne „sobald das gefühl unß – eine[n] weg eröfnet“ sich kompositorische Freiheiten erlauben „ohne im mindesten an grundsäze zu denken“ (BGA 2003, Anm. 9). Ein von Regelbindungen gänzlich befreiter Tonsatz, für den auch der späte Beethoven kein Beispiel liefern kann, verbietet sich allerdings von selbst: Er erschiene als stümperhaftes Machwerk. (Hierzu: Dominique Ehrenbaum, *Con alcune licenze. Die Instrumentalfuge im Spätwerk Ludwig van Beethovens, Bonn 2012, Schriften zur Beethoven-Forschung*, 23, besonders S. 102ff.) 
+Auch die kompositorische Bearbeitung eines eigenen oder fremden Werktextes (siehe Bearbeitung und Fassung) unterliegt den formativen Zwängen des Kontextes. Sie werden vom Satzkern ausgeübt, der zwei (oder auch mehrere) Fassungen ein und desselben Werks aufgrund invarianter Strukturen miteinander verbindet. Der invariante Satzkern dominiert die ihm untergeordneten Bearbeitungsvarianten, d. h. er begrenzt das Spektrum möglicher Varianz. Der Satzkern diktiert die taktmetrischen Vorgaben von Ton-/Pausendauern (siehe taktmetrische Position) und die harmonischen und stimmführungstechnischen Rahmenbedingungen, denen sich alle weiteren Bearbeitungsmaßnahmen unterwerfen müssen. Die zwischen Fassungen bestehenden Optionen der Varianz sind zwar außerordentlich groß, aber weder unbegrenzt noch beliebig.
