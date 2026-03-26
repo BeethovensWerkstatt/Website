@@ -54,6 +54,7 @@ navigation:
 # Include submodule source files in the site
 include:
   - vide-component-facsimile
+  - vide-component-transcriptions
 
 # Exclude from processing
 exclude:
@@ -81,6 +82,16 @@ exclude:
   - vide-component-facsimile/README.md
   - vide-component-facsimile/dist/styles.scss
   - vide-component-facsimile/dist/styles.css
+  - vide-component-transcriptions/.git
+  - vide-component-transcriptions/node_modules
+  - vide-component-transcriptions/package.json
+  - vide-component-transcriptions/package-lock.json
+  - vide-component-transcriptions/.gitignore
+  - vide-component-transcriptions/LICENSE
+  - vide-component-transcriptions/src
+  - vide-component-transcriptions/README.md
+  - vide-component-transcriptions/dist/styles.scss
+  - vide-component-transcriptions/dist/styles.css
 
 # Default layout for different content types
 defaults:
