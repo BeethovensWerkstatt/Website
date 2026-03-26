@@ -1,15 +1,17 @@
 ---
 layout: glossary
 title: Progression
-short_definition: # TODO: Kurzdefinition ergänzen
+short_definition: Fortschreibung eines vorhandenen Textes.
 author: Elisa Novara
 version: 1.0.2
 date: 2019-09-20
 categories: [Modul 1]
 permalink: /glossar/progression/1.0.2/
-changes: # TODO: Änderungen für Version 1.0.2 beschreiben
+changes: Formatierung, bold von Links entfernt
 doi_version: # TODO: DOI für Version 1.0.2 ergänzen
 doi_overview: # TODO: DOI für Übersicht ergänzen
 ---
 
-<!-- TODO: Inhalt ergänzen -->
+Unter Progression wird im Projekt *Beethovens Werkstatt* eine von drei Grundformen der [Textualisierung]({% link _glossary/textualisierung.md %}) verstanden. Ein Schreibprozess wird als Progression interpretiert, wenn ein vorhandener Text regulär fortgeschrieben wird und somit „störungsfrei“ anwächst. Ein progressiv erzeugter Textteil ist frei von [Varianten]({% link _glossary/variante.md %}) und seine [Skriptur]({% link _glossary/skriptur.md %}) ist deshalb auch frei von expliziten [Metatexten]({% link _glossary/metatext.md %}), wie z. B. [Durchstreichungen]({% link _glossary/streichung.md %}) oder [Über-Schreibungen]({% link _glossary/ueber-schreibung.md %}). Allenfalls können [implizite metatextliche Indikatoren]({% link _glossary/metatext.md %}) (z. B. zufällig veränderte Tintenfarbe bzw. schwankende Intensität der Tintenfärbung) anzeigen, wo und welche Textsegmente innerhalb eines Dokuments progressiv vervollständigt oder weiterentwickelt worden sind. Eine dokumentinterne Progression liefert demnach nur wenige, oft sogar keinerlei Indizien, die Rückschlüsse auf den ihr zugrundeliegenden zeitlichen Verlauf des Schreibprozesses zulassen würden. Verfügt man aber über ein weiteres Dokument, in dem eine vorangegangene [Textstufe]({% link _glossary/textstufe.md %}) greifbar ist, so lässt sich die zwischen beiden Dokumenten vollzogene Progression mehr oder weniger detailgenau rekonstruieren.  
+Weitere Grundformen der Textualisierung sind [Intervention]({% link _glossary/intervention.md %}) und [Redaktion]({% link _glossary/redaktion.md %}).
+
