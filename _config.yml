@@ -29,6 +29,9 @@ collections:
   glossary:
     output: true
     permalink: /glossar/:name/
+  publications:
+    output: true
+    permalink: /:name/
   projekt:
     output: true
     permalink: /:name/

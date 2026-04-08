@@ -1,0 +1,316 @@
+---
+layout: default
+---
+
+<article class="publication">
+  <header class="publication-header">
+    <h1 class="publication-title">{{ page.title | escape }}</h1>
+    {% if page.author or page.date or page.categories %}
+      <p class="publication-meta">
+        {% if page.author %}von {{ page.author }}{% endif %}
+        {% if page.author and page.date %} | {% endif %}
+        {% if page.date %}{{ page.date | date: "%d.%m.%Y" }}{% endif %}
+        {% if page.categories and page.categories.size > 0 %}
+          <span class="publication-categories">
+            {% for category in page.categories %}
+              <span class="category-tag">{{ category }}</span>
+            {% endfor %}
+          </span>
+        {% endif %}
+      </p>
+    {% endif %}
+  </header>
+
+  <div class="publication-content">
+    {{ content }}
+  </div>
+</article>
+
+<style>
+/* Publication Article Styling */
+.publication {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: "Open Sans", "Calibri", "Trebuchet MS", sans-serif;
+}
+
+.publication-header {
+  margin-bottom: 3rem;
+  border-bottom: 2px solid #e8e8e8;
+  padding-bottom: 1.5rem;
+}
+
+.publication-title {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: 400;
+  font-family: "Open Sans", "Calibri", "Trebuchet MS", sans-serif;
+}
+
+.publication-meta {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 1rem;
+}
+
+.publication-categories {
+  margin-left: 0.5rem;
+}
+
+.category-tag {
+  display: inline-block;
+  background-color: #f8f9fa;
+  padding: 0.25rem 0.75rem;
+  margin: 0 0.25rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: #666;
+  border: 1px solid #e8e8e8;
+}
+
+/* Content Styling */
+.publication-content {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.publication-content h2 {
+  font-size: 1.8rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: #c93b22;
+  font-weight: 400;
+  border-bottom: 2px solid #c93b22;
+  padding-bottom: 0.5rem;
+}
+
+.publication-content h3 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  color: #333;
+  font-weight: 400;
+}
+
+.publication-content h4 {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.6rem;
+  color: #333;
+  font-weight: 400;
+}
+
+.publication-content p {
+  margin-bottom: 1.2rem;
+}
+
+/* Enhanced Table Styling */
+.publication-content table {
+  width: 100%;
+  margin: 2rem 0;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 8px;
+}
+c93b22 0%, #a12e1a 100%);
+  color: white;
+}
+
+.publication-content table thead th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 4
+  text-align: left;
+  font-weight: 600;
+  border-bottom: none;
+}
+
+.publication-content table tbody tr {
+  border-bottom: 1px solid #e8e8e8;
+  transition: background-color 0.3s ease;
+}
+
+.publication-content table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.publication-content table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.publication-content table td {
+  padding: 0.85rem 1rem;
+  border-right: 1px solid #e8e8e8;
+}
+
+.publication-content table td:last-child {
+  border-right: none;
+}
+
+.publication-content table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+/* Highlighted/Important Content */
+.publication-content .highlight,
+.publication-content mark {
+  background-color: #fff3cd;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  border-left: 3px solid #ffc107;
+  display: inline-block;
+}
+
+.publication-content blockquote {
+  border-left: 4px solid #c93b22;
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: #666;
+  background-color: #f8f9fa;
+  padding: 1rem 1rem 1rem 1.5rem;
+  border-radius: 0 8px 8px 0;
+}
+
+/* Lists */
+.publication-content ul,
+.publication-content ol {
+  margin: 1rem 0 1.5rem 1.5rem;
+  line-height: 1.8;
+}
+
+.publication-content li {
+  margin-bottom: 0.5rem;
+}
+
+/* Images */
+.publication-content img {
+  max-width: 70%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.publication-content figure {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.publication-content figure img {
+  margin-bottom: 1rem;
+}
+
+.publication-content figcaption,
+.publication-content figure em {
+  display: block;
+  font-style: normal;
+  color: #666;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  padding: 0.75rem 1rem;
+  background-color: #f8f9fa;
+  border-left: 3px solid #c93b22;
+  border-radius: 0 4px 4px 0;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Code blocks */
+.publication-content code {
+  background-color: #f8f9fa;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: 'Monaco', 'Menlo', monospace;
+  font-size: 0.9em;
+  color: #c93b22;
+}
+
+.publication-content pre {
+  background-color: #2d2d2d;
+  color: #f8f8f2;
+  padding: 1.5rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.publication-content pre code {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+/* Text Highlights & Special Formatting */
+.publication-content strong {
+  font-wei333;
+}
+
+.publication-content em {
+  font-style: italic;
+  color: #333 italic;
+  color: #555;
+}
+
+/* Footnotes / References */
+.publication-content .footnotes {
+  margin-top: 3rem;
+  padding-top: 2rem;8e8e8;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.publication-content sup a {
+  text-decoration: none;
+  color: #c93b22;
+  font-weight: 400;
+}
+
+/* Links */
+.publication-content a {
+  color: #c93b22;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.publication-content a:hover {
+  text-decoration: underline;
+  color: #a12e1a
+  border-bottom-color: #c93b22;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .publication {
+    padding: 1rem 0.5rem;
+  }
+
+  .publication-title {
+    font-size: 1.8rem;
+  }
+
+  .publication-content {
+    font-size: 1rem;
+  }
+
+  .publication-content table {
+    font-size: 0.85rem;
+  }
+
+  .publication-content table thead th,
+  .publication-content table td {
+    padding: 0.6rem;
+  }
+}
+</style>
