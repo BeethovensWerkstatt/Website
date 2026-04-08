@@ -1,15 +1,31 @@
 ---
 layout: glossary
 title: Rastrierung
-short_definition: # TODO: Kurzdefinition ergänzen
+short_definition: Die auf Papier gezogenen Notenlinien.
 author: Richard Sänger
 version: 1.0.1
 date: 2023-09-28
 categories: [Modul 4]
 permalink: /glossar/rastrierung/1.0.1/
-changes: # TODO: Änderungen für Version 1.0.1 beschreiben
-doi_version: # TODO: DOI für Version 1.0.1 ergänzen
-doi_overview: # TODO: DOI für Übersicht ergänzen
+changes: Link ergänzt zu Wasserzeichen-Artikel
+doi_version: #
+doi_overview: 10.5281/zenodo.19223401
 ---
 
-<!-- TODO: Inhalt ergänzen -->
+Als Rastrierung bezeichnet man die auf Papier gezogenen Notenlinien. Bis ins späte 19. Jahrhundert wurden die notwendigen Linien von Hand oder maschinell – mit sogenannten „Linirmaschinen“ ([Müller 2010]({% link _projekt/bibliografie.md %}), S. 78) – auf Papier aufgebracht. Daneben gab es auch durch lithographische Technik bedrucktes Notenpapier. Erstaunlicherweise war handrastriertes Papier trotz der bereits vorhandenen Druckmöglichkeiten zu Beethovens Zeit dennoch weitaus häufiger in Gebrauch als bedrucktes. Beethoven erwarb in aller Regel bereits rastriertes Notenpapier.
+
+Die manuelle Rastrierung wurde mit Hilfe sogenannter Rastrale (lat. *rastrum*: Harke, Rechen) vorgenommen, die es in verschiedenen Ausführungen gab, sodass ganze Systeme bis hin zu mehrstimmigen Akkoladen mit einer Bewegung aufs Papier gebracht werden konnten. Mit einem solchen Rastral wurden „die Notenlinien über fünf leicht abgestumpfte Schnäbel beziehungsweise Federn mit Tinte auf Papier gezeichnet. Die Schreibspitzen waren aus Messing- oder Kupferblech geformt und in gleichen Abständen zueinander angeordnet“ ([Müller 2010]({% link _projekt/bibliografie.md %}), S. 81). Dabei wurde eine Seite nicht immer in einem einzigen Zug mit dem Rastral liniert, sondern je nach Verfügbarkeit des Rastrals in mehreren. Mitunter wurden auch ganze Seiten mit einem einzeiligen Rastral liniert. Hier wurde dann offensichtlich mit einem Lineal der Abstand reguliert und nicht einfach von Hand rastriert.
+
+Für die Skizzenforschung ist die Rastrierung von Papieren vor allem deshalb von Bedeutung, weil der damit verbundene manuelle Arbeitsschritt verschiedene Unregelmäßigkeiten und Regelmäßigkeiten erkennen lässt, die kodikologisch interpretiert werden können. Die Regelmäßigkeiten bestehen im Abstand der einzelnen Linien und der Systeme, sowie der Länge der Systeme. Unregelmäßigkeiten können ebenfalls die Abstände betreffen oder den Zeilenanfang bzw. das Zeilenende, bei dem die Linien „ausfransen“, d. h. unregelmäßig enden, sodass markante Notenlinienprofile am Zeilenanfang bzw. -ende erkennbar sind.  
+Da in aller Regel große Papiermengen in einem Arbeitsgang liniert wurden, kann sich im Zusammenspiel mit dem [Wasserzeichen]({% link _glossary/wasserzeichen.md %}) eine genauere Papierklassifikation ergeben. So lässt sich beispielsweise feststellen, dass zusammengebundene Seiten eines Skizzenbuchs mitunter mit dem gleichen Rastral liniert wurden.
+
+Untersucht man die Rastrierung einer Seite, sind verschiedene Parameter wichtig. Gemessen werden müssen 1) der Abstand von einem zum nächsten Einzelsystem, der in der Regel innerhalb eines Rastrals zwischen allen Systemen gleich groß ist, sowie die Höhe jedes Notensystems, 2) der Abstand zwischen den einzelnen Notenlinien innerhalb eines Systems und 3) die gesamte Spanne von der obersten Linie des obersten Systems und bis zur untersten Linie im untersten System (engl. total span). Letzteres ist nur relevant, wenn alle Notensysteme mit einem Rastralzug aufgebracht wurden.  
+Lose Einzelblätter können so daraufhin überprüft werden, ob sie womöglich einmal zu einem Skizzenbuch gehört haben. Somit kann die Rastrierung Anhaltspunkte für die [Rekonstruktion von Skizzenbüchern]({% link _glossary/rekonstruktion-von-skizzenbuechern.md %}) liefern.
+
+---
+
+- Duda, Erich: *Wie wurden Notenblätter im 18. Jahrhundert liniert?*, in: Mozart-Studien 16 (2007), S. 301–322.
+- Johnson, Douglas, Alan Tyson, Robert Winter: *The Beethoven Sketchbooks. History, Reconstruction, Inventory*, hg. von Douglas Johnson, Oxford 1985, S. 45–67.
+- Müller, Anette: *Komponist und Kopist. Notenschreiber im Dienste Robert Schumanns*, Hildesheim 2010, S. 67–97.
+- Shannon, Jacqueline Faissal: *Establishing Paper-types for Manuscript Dating Purposes, Filigranology, Rastrology and their Application to HR III 4 1/2 2 427 and Other Manuscripts from the Oettingen-Wallerstein Music Collection*, Seattle, Washington 2000, S. 40–61.
+- Wolf, Jean K. und Eugene K.: *Rastrology and its Use in Eighteenth-Century Manuscript Studies*, in: Studies in Musical Sources and Style: Essays in Honor of Jan LaRue, Madison, Wis (1990), S. 237–291 und 441–479.
