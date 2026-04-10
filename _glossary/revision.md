@@ -1,15 +1,15 @@
 ---
 layout: glossary
 title: Revision
-short_definition: # TODO: Kurzdefinition ergänzen
+short_definition: „Wiederlesen“ eines temporär bereits validen Textes.
 author: Federica Rovelli
 version: 1.0.1
 date: 2019-11-14
 categories: [Modul 1]
 permalink: /glossar/revision/1.0.1/
-changes: # TODO: Änderungen für Version 1.0.1 beschreiben
+changes: Formatierung, Enterfernung von bold an Links
 doi_version: # TODO: DOI für Version 1.0.1 ergänzen
-doi_overview: # TODO: DOI für Übersicht ergänzen
+doi_overview: 10.5281/zenodo.19497205
 ---
 
-<!-- TODO: Inhalt ergänzen -->
+Der Begriff „Revision“ bedeutet im weiten Wortsinn ein selbstkritisches „Wiederlesen“ (lat. revidere = nochmals betrachten) eines temporär bereits validen Textes durch den Komponisten selbst. Diese erneute Lektüre dient (1) entweder der Berichtigung von Fehlern ([Korrektur]({% link _glossary/korrektur.md %})) oder (2) der redaktionellen Glättung und Vereinheitlichung ([Redaktion]({% link _glossary/redaktion.md %})) eines in der Regel bereits weitgehend abgeschlossenen Textes. Eine Revision durch den Komponisten kann jedoch auch (3) konzeptionelle Änderungen bzw. [Varianten]({% link _glossary/variante.md %}) am Textbestand auslösen und das sogar dann noch, wenn eine Komposition bereits gedruckt vorliegt. Im engen genetischen Sinn wird der Begriff benutzt, um die innerhalb einer Revision entstandenen [Revisionsvarianten]({% link _glossary/variante.md %}) von den spontan im Zuge der [Textualisierung]({% link _glossary/textualisierung.md %}) auftretenden [Adhoc-Varianten]({% link _glossary/variante.md %}) zu unterscheiden. Das begriffliche Gegensatz-Paar dient dazu, einerseits die Entstehung von Varianten zeitlich zu ordnen ([Mikrochronologie]({% link _glossary/mikrochronologie.md %})) und andererseits deren Fassungsrelevanz zu bestimmen.

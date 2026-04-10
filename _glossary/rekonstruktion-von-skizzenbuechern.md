@@ -7,7 +7,7 @@ version: 1.2.0
 date: 2023-12-03
 categories: [Modul 4]
 permalink: /glossar/rekonstruktion-von-skizzenbuechern/1.2.0/
-changes: # TODO: Änderungen für Version 1.2.0 beschreiben
+changes: Textliche Änderungen, v.a. in der Einleitung; Links ergänzt zu Wasserzeichen, Rastrierung, Bindung und Tintenabklatsch
 doi_version: # TODO: DOI für Version 1.2.0 ergänzen
 doi_overview: 10.5281/zenodo.19469472
 ---
