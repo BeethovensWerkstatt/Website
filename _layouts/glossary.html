@@ -286,12 +286,12 @@ article.glossary-term .glossary-content p em a {
               {% assign outgoing_data = "" | split: "," %}
               {% for term in outgoing_links %}
                 {% assign sort_title = term.title | downcase | replace: "ä", "ae" | replace: "ö", "oe" | replace: "ü", "ue" | replace: "ß", "ss" %}
-                {% assign term_entry = sort_title | append: "|||" | append: forloop.index0 %}
+                {% assign term_entry = sort_title | append: "!" | append: forloop.index0 %}
                 {% assign outgoing_data = outgoing_data | push: term_entry %}
               {% endfor %}
               {% assign sorted_outgoing_data = outgoing_data | sort %}
               {% for entry in sorted_outgoing_data %}
-                {% assign parts = entry | split: "|||" %}
+                {% assign parts = entry | split: "!" %}
                 {% assign index = parts[1] | plus: 0 %}
                 {% assign term = outgoing_links[index] %}
                 <a href="{{ term.url | relative_url }}" class="outgoing-link"><strong>{{ term.title }}</strong></a>{% unless forloop.last %}, {% endunless %}
@@ -309,12 +309,12 @@ article.glossary-term .glossary-content p em a {
               {% assign matching_data = "" | split: "," %}
               {% for term in matching_terms %}
                 {% assign sort_title = term.title | downcase | replace: "ä", "ae" | replace: "ö", "oe" | replace: "ü", "ue" | replace: "ß", "ss" %}
-                {% assign term_entry = sort_title | append: "|||" | append: forloop.index0 %}
+                {% assign term_entry = sort_title | append: "!" | append: forloop.index0 %}
                 {% assign matching_data = matching_data | push: term_entry %}
               {% endfor %}
               {% assign sorted_matching_data = matching_data | sort %}
               {% for entry in sorted_matching_data %}
-                {% assign parts = entry | split: "|||" %}
+                {% assign parts = entry | split: "!" %}
                 {% assign index = parts[1] | plus: 0 %}
                 {% assign term = matching_terms[index] %}
                 {% assign term_slug = term.url | remove: '/glossar/' | split: '/' | first %}

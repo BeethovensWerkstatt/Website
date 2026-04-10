@@ -92,7 +92,7 @@ NEUE LOGIK: Sammle nur die neueste Version jedes Artikels
 {% assign term_data = "" | split: "," %}
 {% for term in latest_articles %}
   {% assign sort_title = term.title | downcase | replace: "ä", "ae" | replace: "ö", "oe" | replace: "ü", "ue" | replace: "ß", "ss" %}
-  {% assign term_entry = sort_title | append: "|||" | append: forloop.index0 %}
+  {% assign term_entry = sort_title | append: "!" | append: forloop.index0 %}
   {% assign term_data = term_data | push: term_entry %}
 {% endfor %}
 
@@ -101,7 +101,7 @@ NEUE LOGIK: Sammle nur die neueste Version jedes Artikels
 
 {% comment %}Baue die sortierte Term-Liste auf{% endcomment %}
 {% for entry in sorted_data %}
-  {% assign parts = entry | split: "|||" %}
+  {% assign parts = entry | split: "!" %}
   {% assign index = parts[1] | plus: 0 %}
   {% assign sorted_terms = sorted_terms | push: latest_articles[index] %}
 {% endfor %}
