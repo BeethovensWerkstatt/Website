@@ -1,15 +1,23 @@
 ---
 layout: glossary
 title: Schreibmittelwechsel bzw. Schriftfarbwechsel
-short_definition: # TODO: Kurzdefinition ergänzen
+short_definition: Nutzung verschiedener Schreibmittel.
 author: Bernhard Appel und Susanne Cox
 version: 1.0.2
 date: 2019-11-14
 categories: [Modul 1]
 permalink: /glossar/schreibmittelwechsel-bzw-schriftfarbwechsel/1.0.2/
-changes: # TODO: Änderungen für Version 1.0.2 beschreiben
+changes: Formatierung, Entfernung von bold an Links
 doi_version: # TODO: DOI für Version 1.0.2 ergänzen
-doi_overview: # TODO: DOI für Übersicht ergänzen
+doi_overview: 10.5281/zenodo.19686238
 ---
 
-<!-- TODO: Inhalt ergänzen -->
+Komponisten gebrauchen im Dienste einer skripturalen Ökonomie sehr bewusst verschiedene [Schreibmittel]({% link _glossary/schreibmittel.md %}) (schwarze oder rote Tinte, Bleistift, Rötel etc.) So werden z. B. vorläufige Zwischenskizzen und [Cue staff-Notate]({% link _glossary/cue-staff.md %}) häufig mit Bleistift notiert, während der Basistext mit Tinte aufgezeichnet worden ist. Da mit dem absichtlichen Wechsel von Schreibmitteln kalkulierte Aussagen über den Textstatus verbunden sind, gehört der bewusst vollzogene Schreibmittel- oder Schriftfarbenwechsel zum Repertoire expliziter [Metatexte]({% link _glossary/metatext.md %}). Der zufällige Wechsel des Schreibmittels oder der Schriftfarbe (z. B. veränderte Intensität der Tintenfarbe) gehört dagegen zu den impliziten Metatexten.
+
+### Schreibmittelwechsel als Teil des expliziten Metatextes:
+
+Der kalkulierte Gebrauch unterschiedlicher Schreibmittel (Tinte, Bleistift, Rötel) ist mit einer metatextlichen Signalfunktion verbunden und erfüllt demnach eine klare kommunikative Funktion. Mit dem Wechsel des Schreibmittels zeigt ein Komponist sich selber oder einem Kopisten beispielsweise an, dass das mit einem bestimmten, von der Farbe des Grundtextes abweichenden Schreibmittel fixierte Notat zu einem späteren Zeitpunkt eingefügt worden ist und es eventuell noch in bereits vorliegende Abschriften nachgetragen werden muss. Die Wahl des Schreibmittels steht hier im Dienste einer klaren [Redaktionsregie]({% link _glossary/redaktion.md %}).
+
+### Schreibmittelwechsel als Teil des impliziten Metatextes:
+
+Während des mit einer Tauchfeder ausgeführten Kompositionsprozesses wechselt die Intensität der Tintenfarbe unwillkürlich. Eine frisch eingetauchte Feder produziert eine satte, fließende Tintenfarbe, die beim Weiterschreiben allmählich blasser und brüchiger wird. Dadurch entsteht gelegentlich eine deutlich interpunktierte Gliederung des Textes in Schreibsequenzen. Auch der mit zeitlich versetzten Arbeitsgängen verbundene, zufällige Wechsel der Tintensorten verursacht Farbunterschiede, die ebenso wie der unwillkürliche Verblassungsvorgang der Tintenschriftzüge zur Bestimmung [mikrochronologischer Prozesse]({% link _glossary/mikrochronologie.md %}) und zur Trennung von [Schreibschichten]({% link _glossary/schreibschichttextschicht.md %}) herangezogen werden kann. Diese unwillkürlich skriptural erzeugten Farbwertdifferenzen können als implizite Metatexte zur Erkennung mikrochronologischer Abläufe genutzt werden.
