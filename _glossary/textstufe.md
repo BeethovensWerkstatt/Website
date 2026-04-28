@@ -1,15 +1,28 @@
 ---
 layout: glossary
 title: Textstufe
-short_definition: # TODO: Kurzdefinition ergänzen
+short_definition: Ermitteltes (Zwischen-)Stadium eines Textes innerhalb seiner Genese.
 author: Elisa Novara
 version: 1.0.1
 date: 2019-11-14
 categories: [Modul 1]
 permalink: /glossar/textstufe/1.0.1/
-changes: # TODO: Änderungen für Version 1.0.1 beschreiben
+changes: Formatierung, bold an Links entfernt 
 doi_version: # TODO: DOI für Version 1.0.1 ergänzen
-doi_overview: # TODO: DOI für Übersicht ergänzen
+doi_overview: 10.5281/zenodo.19857911
 ---
 
-<!-- TODO: Inhalt ergänzen -->
+Begriff zur Bezeichnung eines ermittelten (Zwischen-)Stadiums des Textes innerhalb seiner Genese. Die mit dem Begriff verbundene Vorstellung einer „Stufe“ ist nicht als allmählicher Aufstieg des Textes zur Perfektion hin zu verstehen, sondern bezieht sich auf ein im Dokument manifestes und beschreibbares Niveau der [Textualisierung]({% link _glossary/textualisierung.md %}), das zu einem bestimmten Zeitpunkt vorlag.  
+Dieses Niveau kann mittels philologischer Methoden entweder für das gesamte Manuskript identifiziert werden (z. B. im Fall einer überprüften Abschrift, wo die Eingriffe des Komponisten eine neue [Schreibschicht]({% link _glossary/schreibschichttextschicht.md %}) innerhalb des ganzen Manuskriptes zeigen und somit gegenüber der ursprünglichen Kopistenabschrift eine neue Textstufe begründen) oder in Relation zu weiteren Textzeugen, die vergleichend herangezogen werden (z. B. können ein Textsegment in der Skizzenfassung einerseits und seine Ausarbeitung in Partitur andererseits als zwei verschiedene Textstufen betrachtet werden). Daher ist die Bestimmung einer Textstufe innerhalb eines Manuskriptes u.a. abhängig vom genetischen Status des Dokumentes und von der Verfügbarkeit anderer Textquellen.  
+Durch die Ermittlung und zeitliche Anordnung verschiedener Textstufen wird die zwischen ihnen vermittelnde Textgestaltung, die Dynamik des Schreibprozesses sichtbar.  
+Im Projekt *Beethovens Werkstatt* wird der Begriff Textstufe auf die jeweils vorliegende Gesamtheit eines Textes bezogen, wie sie entweder innerhalb eines einzelnen Dokuments oder im Vergleich zwischen mehreren Dokumenten ermittelt werden kann. Im Gegensatz dazu bezeichnet der Begriff [Textzustand]({% link _glossary/textzustand.md %}) einen lokal begrenzten Textausschnitt, der lediglich ein vom Textgenetiker pragmatisch gewähltes Beobachtungssegment identifiziert.
+
+---
+
+Literatur dazu:
+
+- Gunter Martens: *Textdynamik und Edition. Überlegungen zur Bedeutung und Darstellung variierender Textstufen*, in: [Martens 1971]({% link _projekt/bibliografie.md %}), S. 165–201
+- [Zwerschina 1998]({% link _projekt/bibliografie.md %})
+- [Appel 1999]({% link _projekt/bibliografie.md %})
+
+
