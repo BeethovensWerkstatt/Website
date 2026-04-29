@@ -14,6 +14,14 @@ layout: default
 
   {% comment %}Check versions of this article{% endcomment %}
   {% assign current_version = page.version %}
+  {% assign page_url_parts = page.url | split: '/' %}
+  {% assign article_slug = '' %}
+  {% for page_part in page_url_parts %}
+    {% if page_part != '' and page_part != 'glossar' and page_part != page.version %}
+      {% assign article_slug = page_part %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
   {% assign newer_version_found = false %}
   {% assign newer_url = '' %}
   {% assign newer_version = '' %}
@@ -52,7 +60,7 @@ layout: default
         <br>Andere verfügbare Versionen: 
         {% for other_version in other_versions_array %}
           {% if other_version != "" %}
-            <a href="/glossar/{{ page.title | slugify }}/{{ other_version }}/">{{ other_version }}</a>{% unless forloop.last %}, {% endunless %}
+            <a href="/glossar/{{ article_slug }}/{{ other_version }}/">{{ other_version }}</a>{% unless forloop.last %}, {% endunless %}
           {% endif %}
         {% endfor %}
       {% endif %}
@@ -201,7 +209,6 @@ article.glossary-term .glossary-content p em {
 
 article.glossary-term .glossary-content p em a {
   color: #c93b22 !important;
-  text-decoration: underline !important;
 }
 </style>
 
@@ -351,7 +358,7 @@ article.glossary-term .glossary-content p em a {
         <strong>Aktuelle Version:</strong> Dies ist die neueste Version ({{ current_version }}) dieses Artikels.
         <br>Frühere Versionen: 
         {% for old_version in older_versions_array %}
-          <a href="{{ old_version.url }}">{{ old_version.version }}</a>{% unless forloop.last %}, {% endunless %}
+          <a href="/glossar/{{ article_slug }}/{{ old_version.version }}/">{{ old_version.version }}</a>{% unless forloop.last %}, {% endunless %}
         {% endfor %}
         <br><small>Alle Versionen bleiben für wissenschaftliche Referenzen verfügbar.</small>
       </div>
