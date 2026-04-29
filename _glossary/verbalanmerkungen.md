@@ -1,15 +1,16 @@
 ---
 layout: glossary
 title: Verbalanmerkungen
-short_definition: # TODO: Kurzdefinition ergänzen
+short_definition: Im Notentext hinzugefügte Verbalkommentare.
 author: Susanne Cox
 version: 1.0.2
 date: 2019-11-14
 categories: [Modul 1]
 permalink: /glossar/verbalanmerkungen/1.0.2/
-changes: # TODO: Änderungen für Version 1.0.2 beschreiben
+changes: Formatierung, bold an Links entfernt
 doi_version: # TODO: DOI für Version 1.0.2 ergänzen
-doi_overview: # TODO: DOI für Übersicht ergänzen
+doi_overview: 10.5281/zenodo.19881953
 ---
 
-<!-- TODO: Inhalt ergänzen -->
+Beethoven versieht seinen Notentext mitunter mit Verbalkommentaren, die an verschiedene Adressaten (an sich selbst, an Kopisten, Notensetzer, etc.) gerichtet sein und unterschiedliche Funktionen haben können. Häufig hebt er solche Kommentare mit „Nb“ (= Nota bene) hervor.  
+Zu den Verbalanmerkungen gehören Qualitätsurteile, die den Notentext betreffen („gut“, „besser“) oder auch Einfügungsvermerke, Kopier- und Restituierungsanweisungen („bleibt“, „gilt“). Zudem können undeutlich geschriebene Zeichen durch verbale Anmerkungen geklärt werden – beispielsweise Tonhöhen durch Hinzufügung von Tonbuchstaben ([Textsicherung]({% link _glossary/textsicherung.md %})). Verbale Anmerkungen gehören zum Repertoire [expliziter Metatexte]({% link _glossary/metatext.md %}).
