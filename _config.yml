@@ -31,7 +31,7 @@ collections:
     permalink: /glossar/:name/
   publications:
     output: true
-    permalink: /:name/
+    permalink: /:path/
   projekt:
     output: true
     permalink: /:name/

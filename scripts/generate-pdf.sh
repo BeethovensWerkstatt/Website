@@ -1,22 +1,39 @@
 #!/bin/bash
 
-# PDF generation script for glossary terms
+# PDF generation script for glossary terms and publications
 set -e
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
 GLOSSARY_DIR="$PROJECT_ROOT/_glossary"
+PUBLICATIONS_DIR="$PROJECT_ROOT/_publications"
 OUTPUT_DIR="$PROJECT_ROOT/output/pdf"
-TERM="$1"
+
+# Parse arguments
+MODE="glossary"
+if [ "$1" = "--publication" ]; then
+    MODE="publication"
+    TERM="$2"
+else
+    TERM="$1"
+fi
 
 # Check arguments
-if [ $# -eq 0 ]; then
-    echo "Usage: $0 <glossary-term>"
+if [ -z "$TERM" ]; then
+    echo "Usage:"
+    echo "  $0 <glossary-term>                  # generate PDF for a glossary term"
+    echo "  $0 --publication <path>             # generate PDF for a publication"
+    echo "  Example: $0 --publication expertenworkshop-2015/gabler-textbegriff"
     exit 1
 fi
 
-INPUT_FILE="$GLOSSARY_DIR/${TERM}.md"
-OUTPUT_FILE="$OUTPUT_DIR/${TERM}.html"
+if [ "$MODE" = "publication" ]; then
+    INPUT_FILE="$PUBLICATIONS_DIR/${TERM}.md"
+    OUTPUT_FILE="$OUTPUT_DIR/publications/${TERM}.html"
+else
+    INPUT_FILE="$GLOSSARY_DIR/${TERM}.md"
+    OUTPUT_FILE="$OUTPUT_DIR/${TERM}.html"
+fi
 
 # Check if input file exists
 if [ ! -f "$INPUT_FILE" ]; then
@@ -24,11 +41,17 @@ if [ ! -f "$INPUT_FILE" ]; then
     exit 1
 fi
 
-# Create output directory and CSS file
+# Create output directory
 mkdir -p "$OUTPUT_DIR"
-mkdir -p "$PROJECT_ROOT/assets/css"
 
-# Create CSS file if it doesn't exist
+# Select CSS file based on mode
+if [ "$MODE" = "publication" ]; then
+    CSS_HREF="../../assets/css/publication-pdf-print.css"
+else
+    CSS_HREF="../../assets/css/glossary-pdf-print.css"
+fi
+
+# Create glossary CSS file if it doesn't exist
 CSS_FILE="$PROJECT_ROOT/assets/css/glossary-pdf-print.css"
 if [ ! -f "$CSS_FILE" ]; then
     cat > "$CSS_FILE" << 'CSS_EOF'
@@ -71,6 +94,39 @@ body {
 .glossary-content p {
     margin-bottom: 1.5rem;
     text-align: justify;
+}
+
+.glossary-content table {
+    width: 100%;
+    margin: 1.5rem 0;
+    border-collapse: collapse;
+    border: 1px solid #d0d0d0;
+    font-size: 0.98em;
+}
+
+.glossary-content thead {
+    background: #cfcfcf;
+}
+
+.glossary-content th,
+.glossary-content td {
+    padding: 0.6rem 0.85rem;
+    border: 1px solid #d0d0d0;
+    vertical-align: top;
+    text-align: left;
+}
+
+.glossary-content th {
+    font-weight: 700;
+    color: #333;
+}
+
+.glossary-content tbody tr:nth-child(odd) {
+    background: #f4f4f4;
+}
+
+.glossary-content tbody tr:nth-child(even) {
+    background: #ffffff;
 }
 
 h1 {
@@ -166,7 +222,29 @@ DATE=$(awk '/^date:/ {gsub(/date: */, ""); print}' "$INPUT_FILE")
 DOI_VERSION=$(awk '/^doi_version:/ {gsub(/doi_version: */, ""); print}' "$INPUT_FILE")
 DOI_OVERVIEW=$(awk '/^doi_overview:/ {gsub(/doi_overview: */, ""); print}' "$INPUT_FILE")
 
+# Publication-specific frontmatter
+if [ "$MODE" = "publication" ]; then
+    PUB_TYPE=$(awk '/^type:/ {gsub(/type: */, ""); print}' "$INPUT_FILE" | sed 's/^"//; s/"$//')
+    CONFERENCE_TITLE=$(awk '/^conference_title:/ {gsub(/conference_title: */, ""); print}' "$INPUT_FILE" | sed 's/^"//; s/"$//')
+    CONFERENCE_PLACE=$(awk '/^conference_place:/ {gsub(/conference_place: */, ""); print}' "$INPUT_FILE" | sed 's/^"//; s/"$//')
+    CONFERENCE_DATE=$(awk '/^conference_date:/ {gsub(/conference_date: */, ""); print}' "$INPUT_FILE" | sed 's/^"//; s/"$//')
+    CONFERENCE_URL=$(awk '/^conference_overview_url:/ {gsub(/conference_overview_url: */, ""); print}' "$INPUT_FILE" | sed 's/^"//; s/"$//')
+
+    case "$PUB_TYPE" in
+        conference_paper)  TYPE_LABEL="Tagungsbeitrag" ;;
+        conference_report) TYPE_LABEL="Tagungsprotokoll" ;;
+        article)           TYPE_LABEL="Aufsatz" ;;
+        edition)           TYPE_LABEL="Edition" ;;
+        *)                 TYPE_LABEL="" ;;
+    esac
+fi
+
 echo "Generating HTML for: $TITLE"
+
+# For publications, create the output subdirectory if needed
+if [ "$MODE" = "publication" ]; then
+    mkdir -p "$(dirname "$OUTPUT_FILE")"
+fi
 
 # Start HTML output
 cat > "$OUTPUT_FILE" << EOF
@@ -175,7 +253,7 @@ cat > "$OUTPUT_FILE" << EOF
 <head>
     <meta charset="utf-8">
     <title>$TITLE</title>
-    <link rel="stylesheet" href="../../assets/css/glossary-pdf-print.css">
+    <link rel="stylesheet" href="$CSS_HREF">
     <style>
 /* Figure caption styling */
 .caption-container {
@@ -204,6 +282,53 @@ cat > "$OUTPUT_FILE" << EOF
     </style>
 </head>
 <body>
+EOF
+
+if [ "$MODE" = "publication" ]; then
+    # Publication HTML structure
+    cat >> "$OUTPUT_FILE" << EOF
+    <article class="publication">
+EOF
+    if [ -n "$CONFERENCE_TITLE" ]; then
+        cat >> "$OUTPUT_FILE" << EOF
+      <div class="conference-banner">
+EOF
+        if [ -n "$TYPE_LABEL" ]; then
+            cat >> "$OUTPUT_FILE" << EOF
+        <span class="conference-type-label">$TYPE_LABEL</span>
+EOF
+        fi
+        if [ -n "$CONFERENCE_URL" ]; then
+            cat >> "$OUTPUT_FILE" << EOF
+        <a href="https://beethovens-werkstatt.de$CONFERENCE_URL" class="conference-title-link">$CONFERENCE_TITLE</a>
+EOF
+        else
+            cat >> "$OUTPUT_FILE" << EOF
+        <span class="conference-title-text">$CONFERENCE_TITLE</span>
+EOF
+        fi
+        if [ -n "$CONFERENCE_PLACE" ] || [ -n "$CONFERENCE_DATE" ]; then
+            cat >> "$OUTPUT_FILE" << EOF
+        <span class="conference-meta">$CONFERENCE_PLACE${CONFERENCE_PLACE:+${CONFERENCE_DATE:+, }}$CONFERENCE_DATE</span>
+EOF
+        fi
+        cat >> "$OUTPUT_FILE" << EOF
+      </div>
+EOF
+    fi
+    cat >> "$OUTPUT_FILE" << EOF
+      <header class="publication-header">
+          <h1 class="publication-title">$TITLE</h1>
+          <p class="publication-meta">
+              von $AUTHOR${DATE:+ | $DATE}${TYPE_LABEL:+<span class="type-badge">$TYPE_LABEL</span>}
+          </p>
+      </header>
+      <div class="publication-content">
+    
+EOF
+else
+    # Glossary HTML structure
+    cat >> "$OUTPUT_FILE" << EOF
     <article class="glossary-term">
         <header class="glossary-header">
             <h1 class="glossary-title">$TITLE</h1>
@@ -215,6 +340,7 @@ cat > "$OUTPUT_FILE" << EOF
         <div class="glossary-content">
     
 EOF
+fi
 
 # Function to get version from a glossary file
 get_version_from_file() {
@@ -416,7 +542,53 @@ END {
 ' >> "$OUTPUT_FILE"
 
 # Close HTML and add citation
-cat >> "$OUTPUT_FILE" << EOF
+if [ "$MODE" = "publication" ]; then
+    # Publication closing structure
+    cat >> "$OUTPUT_FILE" << EOF
+      </div>
+EOF
+    if [[ -n "$DOI_VERSION" || -n "$DOI_OVERVIEW" ]]; then
+        IN_SOURCE=""
+        if [ -n "$CONFERENCE_TITLE" ]; then
+            IN_SOURCE="$CONFERENCE_TITLE"
+        else
+            IN_SOURCE="Beethovens Werkstatt"
+        fi
+        cat >> "$OUTPUT_FILE" << EOF
+      <div class="citation-box">
+          <h3>Zitierhinweis</h3>
+          <div class="citation-content">
+EOF
+        if [ -n "$DOI_VERSION" ]; then
+            cat >> "$OUTPUT_FILE" << EOF
+              <p><strong>$AUTHOR:</strong> „$TITLE“${VERSION:+, Version $VERSION}${DATE:+ ($DATE)}, in: $IN_SOURCE, <a href="https://doi.org/$DOI_VERSION" target="_blank">https://doi.org/$DOI_VERSION</a></p>
+EOF
+        else
+            cat >> "$OUTPUT_FILE" << EOF
+              <p><strong>$AUTHOR:</strong> „$TITLE“${VERSION:+, Version $VERSION}${DATE:+ ($DATE)}, in: $IN_SOURCE</p>
+              <p class="doi-pending"><em>DOI für diese Version wird noch vergeben</em></p>
+EOF
+        fi
+        if [ -n "$DOI_OVERVIEW" ]; then
+            cat >> "$OUTPUT_FILE" << EOF
+              <div class="doi-links">
+                  <p>DOI aller Versionen: <a href="https://doi.org/$DOI_OVERVIEW" target="_blank">$DOI_OVERVIEW</a></p>
+              </div>
+EOF
+        fi
+        cat >> "$OUTPUT_FILE" << EOF
+          </div>
+      </div>
+EOF
+    fi
+    cat >> "$OUTPUT_FILE" << EOF
+    </article>
+</body>
+</html>
+EOF
+else
+    # Glossary closing structure
+    cat >> "$OUTPUT_FILE" << EOF
         </div>
 
         <footer class="glossary-footer">
@@ -426,29 +598,25 @@ cat >> "$OUTPUT_FILE" << EOF
                     <p><strong>$AUTHOR:</strong> „$TITLE"${VERSION:+, Version $VERSION}${DATE:+ ($DATE)}, in: Beethovens Werkstatt - Glossar, <a href="https://beethovens-werkstatt.de/glossary/${TERM}${VERSION:+/$VERSION}" target="_blank">https://beethovens-werkstatt.de/glossary/${TERM}${VERSION:+/$VERSION}</a></p>
                     
 EOF
-
-# Add DOI links if available
-if [[ -n "$DOI_VERSION" || -n "$DOI_OVERVIEW" ]]; then
-    cat >> "$OUTPUT_FILE" << EOF
+    # Add DOI links if available
+    if [[ -n "$DOI_VERSION" || -n "$DOI_OVERVIEW" ]]; then
+        cat >> "$OUTPUT_FILE" << EOF
                     <div class="doi-links">
 EOF
-    
-    if [[ -n "$DOI_VERSION" ]]; then
-        cat >> "$OUTPUT_FILE" << EOF
+        if [[ -n "$DOI_VERSION" ]]; then
+            cat >> "$OUTPUT_FILE" << EOF
                         <p>DOI der Version $VERSION: <a href="https://doi.org/$DOI_VERSION" target="_blank">$DOI_VERSION</a></p>
 EOF
-    fi
-    
-    if [[ -n "$DOI_OVERVIEW" ]]; then
-        cat >> "$OUTPUT_FILE" << EOF
+        fi
+        if [[ -n "$DOI_OVERVIEW" ]]; then
+            cat >> "$OUTPUT_FILE" << EOF
                         <p>DOI aller Versionen: <a href="https://doi.org/$DOI_OVERVIEW" target="_blank">$DOI_OVERVIEW</a></p>
 EOF
-    fi
-    
-    cat >> "$OUTPUT_FILE" << EOF
+        fi
+        cat >> "$OUTPUT_FILE" << EOF
                     </div>
 EOF
-fi
+    fi
 
 cat >> "$OUTPUT_FILE" << EOF
                 </div>
@@ -458,6 +626,7 @@ cat >> "$OUTPUT_FILE" << EOF
 </body>
 </html>
 EOF
+fi  # end mode check
 
 # Clean up
 rm -f /tmp/temp_content.txt
