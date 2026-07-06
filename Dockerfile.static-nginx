@@ -1,0 +1,28 @@
+# build stage
+FROM ruby:3.1 AS build
+# Install system dependencies
+RUN apt-get update && apt-get install -y build-essential git nodejs npm tzdata && rm -rf /var/lib/apt/lists/*
+# Create jekyll user and group
+RUN groupadd -g 1000 jekyll && useradd -u 1000 -g jekyll -s /bin/bash -m jekyll
+# Set up directories with proper permissions
+RUN mkdir -p /srv/jekyll && mkdir -p /usr/local/bundle && chown -R jekyll:jekyll /srv/jekyll && chown -R jekyll:jekyll /usr/local/bundle
+WORKDIR /srv/jekyll
+USER jekyll
+ENV BUNDLE_PATH=/usr/local/bundle \
+    BUNDLE_BIN=/usr/local/bundle/bin \
+    GEM_HOME=/usr/local/bundle
+ENV PATH="${BUNDLE_BIN}:${PATH}"
+RUN gem install bundler:2.5.23
+COPY --chown=jekyll:jekyll Gemfile* ./
+RUN bundle install --jobs 4 --retry 3
+COPY --chown=jekyll:jekyll . .
+# Build facsimile component from submodule
+RUN cd vide-component-facsimile \
+    && npm install \
+    && npm run build
+RUN bundle exec jekyll build
+
+# serve site with nginx
+FROM nginx AS static
+COPY --from=build /srv/jekyll/_site /usr/share/nginx/html
+
