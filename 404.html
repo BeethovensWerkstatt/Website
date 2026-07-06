@@ -22,10 +22,10 @@ permalink: /404.html
       return;
     }
 
-    // Handle /transcr/* paths - redirect to Transcriptions SPA
-    if (path.startsWith('/transcr/') && path !== '/transcr/') {
-      const subPath = path.slice('/transcr'.length);
-      window.location.replace('/transcr/?_path=' + encodeURIComponent(subPath));
+    // Handle /transcription/* paths - redirect to Transcriptions SPA
+    if (path.startsWith('/transcription/') && path !== '/transcription/') {
+      const subPath = path.slice('/transcription'.length);
+      window.location.replace('/transcription/?_path=' + encodeURIComponent(subPath));
       return;
     }
 

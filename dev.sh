@@ -8,6 +8,15 @@ build_facsimile_component() {
     fi
 }
 
+# Build transcriptions component
+build_transcriptions_component() {
+    print_status "Building transcriptions component..."
+    if [ -d "vide-component-transcriptions" ]; then
+        (cd vide-component-transcriptions && npm install --silent 2>/dev/null || true)
+        (cd vide-component-transcriptions && npm run build 2>/dev/null || true)
+    fi
+}
+
 # Watch facsimile component for changes
 watch_facsimile_component() {
     print_status "Watching facsimile component for changes..."
@@ -16,6 +25,34 @@ watch_facsimile_component() {
         return
     fi
     find vide-component-facsimile/src -type f 2>/dev/null | entr -r sh -c 'cd vide-component-facsimile && npm run build'
+}
+
+# Watch transcriptions component for changes
+watch_transcriptions_component() {
+    print_status "Watching transcriptions component for changes..."
+    if ! command -v entr > /dev/null 2>&1; then
+        print_error "entr is not installed. Please install it (e.g., 'apk add entr' in Alpine, 'brew install entr' on macOS)."
+        return
+    fi
+    find vide-component-transcriptions/src -type f 2>/dev/null | entr -r sh -c 'cd vide-component-transcriptions && npm run build'
+}
+
+# Watch both SPA components and run Jekyll
+watch_dev() {
+    print_status "Building components before watch..."
+    build_facsimile_component
+    build_transcriptions_component
+    print_status "Starting component watchers in background..."
+    watch_facsimile_component &
+    WATCH_FACSIMILE_PID=$!
+    watch_transcriptions_component &
+    WATCH_TRANSCRIPTIONS_PID=$!
+    trap 'kill $WATCH_FACSIMILE_PID $WATCH_TRANSCRIPTIONS_PID 2>/dev/null; exit' INT TERM EXIT
+    print_status "Ensuring Ruby gems are installed..."
+    check_docker
+    $DC_CMD run --rm jekyll bundle install
+    print_status "Starting Jekyll development server (Ctrl+C to stop all watchers)..."
+    $DC_CMD up --build jekyll
 }
 #!/bin/bash
 
@@ -77,6 +114,7 @@ show_help() {
     echo "  build     Build the site for production"
     echo "  clean     Clean up Docker containers and volumes"
     echo "  rebuild   Rebuild the Docker image"
+    echo "  watch     Watch SPA component src and run Jekyll (requires entr)"
     echo "  shell     Open a shell in the Jekyll container"
     echo "  logs      Show container logs"
     echo "  help      Show this help message"
@@ -85,6 +123,7 @@ show_help() {
     echo "  ./dev.sh start    # Start development server at http://localhost:4000"
     echo "  ./dev.sh build    # Build production site to _site/"
     echo "  ./dev.sh clean    # Clean up all containers and volumes"
+    echo "  ./dev.sh watch    # Auto-rebuild SPA components on src changes, then start Jekyll"
 }
 
 # Start development server
@@ -92,6 +131,7 @@ start_dev() {
     print_status "Building component styles..."
     build_component_styles
     build_facsimile_component
+    build_transcriptions_component
     print_status "Ensuring Ruby gems are installed..."
     check_docker
     $DC_CMD run --rm jekyll bundle install
@@ -120,6 +160,8 @@ build_component_styles() {
 build_site() {
     print_status "Building component styles..."
     build_component_styles
+    build_facsimile_component
+    build_transcriptions_component
     
     print_status "Building Jekyll site for production..."
     check_docker
@@ -149,6 +191,7 @@ rebuild_image() {
     check_docker
     $DC_CMD build --no-cache
     print_success "Docker image rebuilt"
+    print_warning "Note: './dev.sh rebuild' only rebuilds images. Run './dev.sh start' or './dev.sh build' to rebuild and serve updated site assets."
 }
 
 # Open shell in container
@@ -184,6 +227,9 @@ case "${1:-start}" in
         ;;
     logs)
         show_logs
+        ;;
+    watch)
+        watch_dev
         ;;
     help|--help|-h)
         show_help
