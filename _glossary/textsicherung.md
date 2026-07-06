@@ -1,15 +1,18 @@
 ---
 layout: glossary
 title: Textsicherung
-short_definition: # TODO: Kurzdefinition ergänzen
+short_definition: Skriptuale Massnahme zur Bedeutungsklärung  einer Textstelle.
 author: Bernhard Appel
 version: 1.0.2
 date: 2019-11-14
 categories: [Modul 1]
 permalink: /glossar/textsicherung/1.0.2/
-changes: # TODO: Änderungen für Version 1.0.2 beschreiben
+changes: Formatierung, bold an Links entfernt
 doi_version: # TODO: DOI für Version 1.0.2 ergänzen
-doi_overview: # TODO: DOI für Übersicht ergänzen
+doi_overview: 10.5281/zenodo.19856675
 ---
 
-<!-- TODO: Inhalt ergänzen -->
+Skripturale Maßnahme des Komponisten, durch die eine unklare oder ambige Textstelle hinsichtlich ihrer Bedeutung geklärt werden soll.
+
+Textsicherungen (auch Textklärungen) verändern den Text nicht, sondern präzisieren ihn nur. Bezogen auf den komponierten Text sind sie im Grunde pleonastisch, aber hilfreich, um eine unklare Textstelle sicher lesen und verstehen zu können. Textsicherungsmaßnahmen gehören zu den expliziten [Metatexten]({% link _glossary/progression.md %}).  
+Zur Textsicherung gehören affirmative Zeichen (Verdeutlichungszeichen), wie z. B. Tonbuchstaben, die die gemeinte Tonhöhe einer benachbarten, unklar geschriebenen Note benennen. Derartige Textsicherungsmaßnahmen reagieren oft auf vorangegangene Texteingriffe ([Korrekturen]({% link _glossary/korrektur.md %}), [Varianten]({% link _glossary/variante.md %}), [Um-Schreibungen]({% link _glossary/um-schreibung.md %})), die den gemeinten Text verunklart haben. Auch am Blattrand angebrachte Korrekturkreuze, die auf Textänderungen hinweisen, dienen der Textsicherung. Zusätze des Komponisten, wie „aus“ oder „bleibt aus“ klären den Text, indem sie bereits vorhandene [Streichungen]({% link _glossary/streichung.md %}) als solche bestätigen. Zusätze wie „gilt“, „gut“ oder „bleibt“ sind jedoch keine Textklärung, sondern Restitutionsmaßnahmen. Das Überschreiben von Bleistift- oder Röteleintragungen mit Tinte, um zu verhindern, dass die Schreibspur verschwindet, ist eine weitere textbezogene Sicherungsmaßnahme. Davon zu unterscheiden sind jedoch andere textuelle Anlässe, die sich hinter dem Befund der [Über-Schreibung]({% link _glossary/ueber-schreibung.md %}) verbergen können.

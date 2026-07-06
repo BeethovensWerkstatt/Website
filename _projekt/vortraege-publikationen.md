@@ -361,6 +361,125 @@ parent_url: /projekt
     grid-template-columns: 1fr;
   }
 }
+
+/* Publikationen Liste */
+.publikationen-liste {
+  margin-top: 1.5rem;
+}
+
+.publikation-item {
+  padding: 1.1rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.publikation-item:last-child {
+  border-bottom: none;
+}
+
+.publikation-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.publikation-titel {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  flex: 1;
+  min-width: 0;
+}
+
+.publikation-titel a {
+  color: #c93b22;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.publikation-titel a:hover {
+  border-bottom-color: #c93b22;
+}
+
+.publikation-datum {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.publikation-autoren {
+  font-size: 0.92rem;
+  color: #555;
+}
+
+.publikation-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.pub-genre {
+  display: inline-block;
+  background: #f0f0f0;
+  color: #555;
+  padding: 0.2rem 0.55rem;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.pub-container {
+  font-style: italic;
+  color: #666;
+}
+
+.pub-container::before {
+  content: "In: ";
+  font-style: normal;
+}
+
+.pub-ort {
+  color: #666;
+}
+
+.pub-ort::before {
+  content: "· ";
+  color: #999;
+}
+
+.publikationen-count {
+  margin: 1rem 0 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.pub-website-badge {
+  display: inline-block;
+  background: #f0f7f0;
+  color: #2e7d32;
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: 1px solid #c8e6c9;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .publikationen-filters {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 
 <div class="content-wrapper module-page">
@@ -504,7 +623,129 @@ parent_url: /projekt
 
 <!-- Publikationen Content -->
 <div id="publikationen-content" class="module-content">
-  <p>Hier entsteht die Übersicht über Publikationen und Forschungsbeiträge des Projekts.</p>
+  <div class="zotero-hinweis">
+    <strong>Datenquelle:</strong> Die hier aufgelisteten Publikationen werden in unserer <a href="https://www.zotero.org/groups/1157767/beethovens_werkstatt" target="_blank" rel="noopener noreferrer">öffentlichen Zotero-Collection</a> verwaltet. Dort können Sie die Daten in verschiedenen Formaten (BibTeX, RIS, EndNote, etc.) exportieren und für eigene Zwecke nutzen.
+  </div>
+
+  <!-- Filter Toggle Button -->
+  <div class="filter-toggle-header">
+    <button id="publikationen-filter-toggle" class="vortraege-filter-toggle-btn">
+      <svg class="toggle-icon" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2z"/>
+      </svg>
+      <span>Filter</span>
+      <svg class="chevron-icon" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Filter Section -->
+  <div class="vortraege-filters" id="publikationen-filters">
+    <div class="filter-group">
+      <label for="pub-filter-jahr">Jahr:</label>
+      <select id="pub-filter-jahr" onchange="filterPublikationen()">
+        <option value="">Alle Jahre</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="pub-filter-genre">Typ:</label>
+      <select id="pub-filter-genre" onchange="filterPublikationen()">
+        <option value="">Alle Typen</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="pub-filter-sprache">Sprache:</label>
+      <select id="pub-filter-sprache" onchange="filterPublikationen()">
+        <option value="">Alle Sprachen</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="pub-filter-person">Person:</label>
+      <select id="pub-filter-person" onchange="filterPublikationen()">
+        <option value="">Alle Personen</option>
+      </select>
+    </div>
+
+    <div class="filter-group search-group">
+      <label for="search-publikationen">Suche:</label>
+      <div class="search-container">
+        <input type="text" id="search-publikationen" placeholder="Titel oder Verlag durchsuchen..." oninput="filterPublikationen()">
+        <button type="button" class="search-clear" id="pub-search-clear" title="Suche löschen" onclick="clearPubSearch()">&times;</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="publikationen-count" id="publikationen-count"></div>
+
+  <!-- Publikationen Liste -->
+  <div class="publikationen-liste">
+    {% if site.data.publikationen.publikationen.items %}
+      {% assign pub_items = site.data.publikationen.publikationen.items | sort: "issued.date-parts" | reverse %}
+      {% for pub in pub_items %}
+        {% assign pub_jahr = pub.issued.date-parts[0][0] %}
+        {% assign pub_monat = pub.issued.date-parts[0][1] | default: 1 %}
+        {% assign pub_tag = pub.issued.date-parts[0][2] | default: 1 %}
+        {% assign pub_sortkey = pub_jahr | times: 10000 | plus: pub_monat | times: 100 | plus: pub_tag %}
+
+        {% assign pub_autoren_liste = "" %}
+        {% for author in pub.author %}
+          {% assign pub_autoren_liste = pub_autoren_liste | append: author.family | append: ", " | append: author.given | append: "; " %}
+        {% endfor %}
+
+        <div class="publikation-item"
+             data-jahr="{{ pub_jahr }}"
+             data-genre="{{ pub.genre | escape }}"
+             data-sprache="{{ pub.language | escape }}"
+             data-autoren="{{ pub_autoren_liste | downcase | escape }}"
+             data-titel="{{ pub.title | downcase | escape }}"
+             data-container="{{ pub.container-title | downcase | escape }}"
+             data-sortkey="{{ pub_sortkey }}">
+
+          <div class="publikation-header">
+            <span class="publikation-titel">
+              {% if pub.URL %}
+                {% if pub.URL contains 'http' %}
+                  <a href="{{ pub.URL }}" target="_blank" rel="noopener noreferrer">{{ pub.title }}</a>
+                {% else %}
+                  <a href="{{ pub.URL }}">{{ pub.title }}</a>
+                {% endif %}
+                {% unless pub.URL contains 'http' %}
+                  <span class="pub-website-badge">auf dieser Website</span>
+                {% endunless %}
+              {% else %}
+                {{ pub.title }}
+              {% endif %}
+            </span>
+            <span class="publikation-datum">{% if pub_tag != 1 %}{{ pub_tag }}.{% endif %}{% if pub_monat != 1 %}{{ pub_monat }}.{% endif %}{{ pub_jahr }}</span>
+          </div>
+
+          <div class="publikation-autoren">
+            {% for author in pub.author %}
+              {{ author.family }}, {{ author.given }}{% unless forloop.last %}; {% endunless %}
+            {% endfor %}
+          </div>
+
+          <div class="publikation-meta-row">
+            {% if pub.genre %}
+              <span class="pub-genre">{{ pub.genre }}</span>
+            {% endif %}
+            {% if pub.container-title %}
+              <span class="pub-container">{{ pub.container-title }}</span>
+            {% endif %}
+            {% if pub.publisher-place %}
+              <span class="pub-ort">{{ pub.publisher-place }}</span>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    {% else %}
+      <p class="publikationen-placeholder">Publikationsdaten werden geladen, sobald <code>_data/publikationen/publikationen.json</code> verfügbar ist.</p>
+    {% endif %}
+  </div>
 </div>
 
 <!-- Lehre Content -->
@@ -837,6 +1078,89 @@ function toggleVortraegeFilters() {
 }
 
 // Handle page load with hash
+// Publikationen Filter Funktionalität
+function filterPublikationen() {
+  const jahrFilter = document.getElementById('pub-filter-jahr').value;
+  const genreFilter = document.getElementById('pub-filter-genre').value;
+  const spracheFilter = document.getElementById('pub-filter-sprache').value;
+  const personFilter = document.getElementById('pub-filter-person').value.toLowerCase();
+  const searchTerm = document.getElementById('search-publikationen').value.toLowerCase();
+
+  const clearBtn = document.getElementById('pub-search-clear');
+  if (clearBtn) {
+    clearBtn.classList.toggle('visible', !!searchTerm);
+  }
+
+  const items = document.querySelectorAll('.publikation-item');
+  let visibleCount = 0;
+
+  items.forEach(item => {
+    const jahrMatch = !jahrFilter || item.dataset.jahr === jahrFilter;
+    const genreMatch = !genreFilter || item.dataset.genre === genreFilter;
+    const spracheMatch = !spracheFilter || item.dataset.sprache === spracheFilter;
+    const personMatch = !personFilter || (item.dataset.autoren || '').includes(personFilter);
+    const searchMatch = !searchTerm ||
+      (item.dataset.titel || '').includes(searchTerm) ||
+      (item.dataset.container || '').includes(searchTerm);
+
+    const visible = jahrMatch && genreMatch && spracheMatch && personMatch && searchMatch;
+    item.classList.toggle('hidden', !visible);
+    if (visible) visibleCount++;
+  });
+
+  const countEl = document.getElementById('publikationen-count');
+  if (countEl) countEl.textContent = `${visibleCount} von ${items.length} Publikationen`;
+
+  updatePubFilterOptions();
+}
+
+function clearPubSearch() {
+  document.getElementById('search-publikationen').value = '';
+  filterPublikationen();
+}
+
+function sortPublikationen() {
+  const container = document.querySelector('.publikationen-liste');
+  if (!container) return;
+  const items = Array.from(container.querySelectorAll('.publikation-item'));
+  items.sort((a, b) => parseInt(b.dataset.sortkey) - parseInt(a.dataset.sortkey));
+  items.forEach(item => container.appendChild(item));
+}
+
+function populatePubFilterOptions() {
+  const items = Array.from(document.querySelectorAll('.publikation-item'));
+  const jahre = [...new Set(items.map(i => i.dataset.jahr).filter(Boolean))].sort().reverse();
+  const genres = [...new Set(items.map(i => i.dataset.genre).filter(Boolean))].sort();
+  const sprachen = [...new Set(items.map(i => i.dataset.sprache).filter(Boolean))].sort();
+  const autorenSet = new Set();
+  items.forEach(item => {
+    (item.dataset.autoren || '').split('; ').forEach(a => { if (a.trim()) autorenSet.add(a.trim()); });
+  });
+  const personen = [...autorenSet].sort();
+
+  function fillSelect(id, options) {
+    const sel = document.getElementById(id);
+    if (!sel) return;
+    const first = sel.options[0];
+    sel.innerHTML = '';
+    sel.appendChild(first);
+    options.forEach(val => {
+      const opt = document.createElement('option');
+      opt.value = val;
+      opt.textContent = val;
+      sel.appendChild(opt);
+    });
+  }
+  fillSelect('pub-filter-jahr', jahre);
+  fillSelect('pub-filter-genre', genres);
+  fillSelect('pub-filter-sprache', sprachen);
+  fillSelect('pub-filter-person', personen);
+}
+
+function updatePubFilterOptions() {
+  // No-op for now; can be expanded to hide irrelevant filter options
+}
+
 window.addEventListener('DOMContentLoaded', function() {
   const hash = window.location.hash.substring(1);
   if (hash && ['vortraege', 'publikationen', 'lehre'].includes(hash)) {
@@ -846,16 +1170,35 @@ window.addEventListener('DOMContentLoaded', function() {
       tabs[tabIndex].click();
     }
   }
-  
-  // Populate filter dropdowns and sort
+
+  // Populate filter dropdowns and sort — Vorträge
   if (document.getElementById('filter-jahr')) {
     populateFilterOptions();
   }
-  
-  // Setup filter toggle button
+
+  // Populate filter dropdowns and sort — Publikationen
+  if (document.getElementById('pub-filter-jahr')) {
+    sortPublikationen();
+    populatePubFilterOptions();
+    filterPublikationen();
+  }
+
+  // Setup filter toggle button — Vorträge
   const toggleBtn = document.getElementById('vortraege-filter-toggle');
   if (toggleBtn) {
     toggleBtn.addEventListener('click', toggleVortraegeFilters);
+  }
+
+  // Setup filter toggle button — Publikationen
+  const pubToggleBtn = document.getElementById('publikationen-filter-toggle');
+  if (pubToggleBtn) {
+    pubToggleBtn.addEventListener('click', function() {
+      const filtersEl = document.getElementById('publikationen-filters');
+      if (!filtersEl) return;
+      const isHidden = filtersEl.style.display === 'none' || filtersEl.classList.contains('hidden');
+      filtersEl.style.display = isHidden ? '' : 'none';
+      pubToggleBtn.classList.toggle('active', isHidden);
+    });
   }
 });
 </script>

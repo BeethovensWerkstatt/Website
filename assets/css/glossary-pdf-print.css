@@ -40,6 +40,39 @@ body {
     text-align: justify;
 }
 
+.glossary-content table {
+    width: 100%;
+    margin: 1.5rem 0;
+    border-collapse: collapse;
+    border: 1px solid #d0d0d0;
+    font-size: 0.98em;
+}
+
+.glossary-content thead {
+    background: #cfcfcf;
+}
+
+.glossary-content th,
+.glossary-content td {
+    padding: 0.6rem 0.85rem;
+    border: 1px solid #d0d0d0;
+    vertical-align: top;
+    text-align: left;
+}
+
+.glossary-content th {
+    font-weight: 700;
+    color: #333;
+}
+
+.glossary-content tbody tr:nth-child(odd) {
+    background: #f4f4f4;
+}
+
+.glossary-content tbody tr:nth-child(even) {
+    background: #ffffff;
+}
+
 h1 {
     color: #c93b22;
     font-size: 1.8em;

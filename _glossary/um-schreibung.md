@@ -1,15 +1,18 @@
 ---
 layout: glossary
 title: Um-Schreibung
-short_definition: # TODO: Kurzdefinition ergänzen
+short_definition: Umwandlung eines vorhandenen Textteils in eine andere Version.
 author: Bernhard Appel und Susanne Cox
 version: 1.0.2
 date: 2020-08-13
 categories: [Modul 1]
 permalink: /glossar/um-schreibung/1.0.2/
-changes: # TODO: Änderungen für Version 1.0.2 beschreiben
+changes: Formatierung, bold an Links entfernt
 doi_version: # TODO: DOI für Version 1.0.2 ergänzen
-doi_overview: # TODO: DOI für Übersicht ergänzen
+doi_overview: 10.5281/zenodo.19879801
 ---
 
-<!-- TODO: Inhalt ergänzen -->
+Um-Schreibung ist eine skripturale Maßnahme im Zusammenhang mit der Bildung von [Varianten]({% link _glossary/variante.md %}), bei der ein vorhandener Textteil unter Nutzung seiner Zeichenelemente in eine andere Version umgewandelt wird. Hierzu gehört beispielsweise die Umwandlung einer halben Note in eine Viertel durch Ausfüllen des Notenkopfes oder eine Rhythmusänderung durch Hinzufügung von Notenhälsen, Balken oder Fähnchen an vorhandene Notenköpfe oder vice versa, die Tilgung eines Notenhalses, um eine Halbe in eine Ganze zu verwandeln. Innerhalb des Sekundraums können auch Tonhöhen durch Um-Schreibung geändert werden.  
+Um-Schreibungen stehen im Dienste der Schreibökonomie: Sie nutzen bereits früher Notiertes („skripturales Recycling“), bringen nur die für die Änderung notwendigen Zeichen zum Einsatz, vermeiden Rasuren und beanspruchen keinen oder nur wenig neuen Schreibraum. Sie bewahren dabei weitgehend den regulären Textfluss. Die Um-Schreibung ist eine skripturale Sparmaßnahme, bei der der arbeitstechnisch notwendige Zwischenschritt der Tilgung übersprungen wird: Die Um-Schreibung kombiniert quasi Tilgung und Neuformulierung in einem einzigen Arbeitsgang. Allerdings verursacht die Um-Schreibung oft Ungenauigkeiten und provoziert Lesemissverständnisse und Mehrdeutigkeiten.  
+Unter genetischer Perspektive erzeugt eine Um-Schreibung, die ein vorhandenes Textsegment durch ein neu formuliertes Textsegment ersetzt, entweder eine [Korrektur]({% link _glossary/korrektur.md %}) oder eine [Variante]({% link _glossary/variante.md %}). Eine textsichernde, verdeutlichende Nachzeichnung eines Notenzeichens, d. h. eine [Über-Schreibung]({% link _glossary/ueber-schreibung.md %}), ist oft nicht sicher von einer Um-Schreibung zu unterscheiden, darf aber nicht mit ihr gleichgesetzt werden.  
+Die Schreibweise des Begriffes „Um-Schreibung“ vermeidet eine Verwechslung mit dem Wort „Umschreibung“ (= Paraphrase).

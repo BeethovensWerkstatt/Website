@@ -1,15 +1,28 @@
 ---
 layout: glossary
 title: Seitenfaltungen
-short_definition: # TODO: Kurzdefinition ergänzen
+short_definition: Materielle Spuren kompositorischer Prozesse.
 author: Susanne Cox
 version: 1.0.0
 date: 2023-02-02
 categories: [Modul 4]
 permalink: /glossar/seitenfaltungen/1.0.0/
 changes: "Erstveröffentlichung"
-doi_version: # TODO: DOI für Version 1.0.0 ergänzen
-doi_overview: # TODO: DOI für Übersicht ergänzen
+doi_version: 10.5281/zenodo.19737135
+doi_overview: 10.5281/zenodo.19737134
 ---
 
-<!-- TODO: Inhalt ergänzen -->
+Seitenfaltungen und „Eselsohren“, die Beethoven in seinen Arbeitsmanuskripten vorgenommen hat, sind materielle Spuren kompositorischer Prozesse. Sie gehören zu den metatextlichen Eigenschaften von Werkstattdokumenten, vor allem von Skizzenbüchern Beethovens, und lassen sich als solche textgenetisch deuten.
+
+Die Seitenfaltungen in Beethovens Skizzenbüchern wurden bisher nur in wenigen Fällen systematisch untersucht, und zwar in Bezug auf das „Eroica-Skizzenbuch“ (Landsberg 6) von 1803/1804 (vgl. [Syer 2006]({% link _projekt/bibliografie.md %}) und [Gosman 2013]({% link _projekt/bibliografie.md %})) und auf das „Engelmann-Skizzenbuch“ von 1823 (vgl. [Cox 2022]({% link _projekt/vortraege-publikationen.md %}), S. 60–64). In den untersuchten Skizzenbüchern finden sich verschiedene Arten von Faltungen: Es gibt vertikale Faltungen, die sowohl gerade als auch leicht schräg verlaufen können. Dabei faltete Beethoven mitunter mehrere, aufeinander folgende Seiten gemeinsam. Manche Seiten wurden auch mehrmals gefaltet. Daneben findet man Eselsohren (von Beethoven absichtlich umgeknickte Ecken). Zur Untersuchung von Seitenfaltungen ist stets eine Quellenautopsie des originalen Skizzenbuchs notwendig, da die Knicke im Papier im [digitalen Faksimile]({% link _glossary/digitales-faksimile.md %}) nur selten erkennbar sind. Am Original sind manche Faltungen deutlich sichtbar, während sich andere nur ganz schwach erkennen lassen. Die Deutlichkeit der Faltung kann ein Hinweis dafür sein, wie intensiv Beethoven damit gearbeitet hat. Auch die Knickrichtung lässt sich mitunter im Original, nie jedoch am Digitalisat, erkennen. Die Schwierigkeit bei der Deutung der Faltungen liegt darin, dass manche Falze und vor allem auch umgeknickte Ecken versehentlich entstanden sein können und somit philologisch bedeutungslos sind.  
+Um Beethovens Gründe für das Falten der Seiten zu verstehen, muss man den musikalischen Inhalt der Skizzen auf den umgeknickten Seiten betrachten. Bisher konnten folgende Zwecke, die die Faltungen mutmaßlich für Beethoven erfüllten, ermittelt werden:
+- Beethoven nutzte die Faltungen (insbesondere Eselsohren) häufig, um Seiten mit wichtigen Skizzen zu markieren. So konnte er diese Skizzen zu einem späteren Zeitpunkt schnell wiederfinden (vgl. [Syer 2006]({% link _projekt/bibliografie.md %}), S. 167).
+- Wenn sich auf mehreren hintereinander liegenden Seiten Skizzen befinden, die inhaltlich zusammengehören, faltete Beethoven diese Seiten gemeinsam. Dadurch wurde dieser zusammenhängende Abschnitt vom Rest des Skizzenbuchs abgetrennt und zugleich die Position der Skizzen markiert (vgl. [Gosman 2013]({% link _projekt/bibliografie.md %}), S. 15).
+- In anderen Fällen knickte Beethoven Seiten, die im Skizzenbuch nicht direkt aufeinander folgen, aber dennoch inhaltlich zusammengehören, weil sie z. B. ähnliche Skizzen enthalten, auf dieselbe Art und Weise. Damit kennzeichnete er die textuelle Zusammengehörigkeit der entfernt voneinander liegenden Seiten. Ein Beispiel dafür sind die Seiten 8 und 42 des [„Notirungsbuchs K“]({% link _publications/zum-notirungsbuch-k.md %}). Beethoven faltete diese Seiten zweimal: zunächst in der Mitte. Danach wurden die halbierten Seiten noch einmal halbiert und gefaltet. Dadurch entstanden, wenn man die Seiten wieder entfaltete, drei vertikale Knicke. Beethoven markierte S. 8 und 42 auf diese Weise, weil sie ähnliche Skizzen enthalten.
+- Mitunter hat Beethoven auch eine oder mehrere Seiten weggebogen, um eine frühere Seite ansehen zu können, während er an einer Skizze arbeitete. Manche Seiten wurden mehrfach geknickt, damit Beethoven bestimmte Skizzen, die sich auf verschiedenen Seiten befanden, gleichzeitig betrachten konnte. Im Eroica-Skizzenbuch faltete er z. B. mehrere Blätter so, dass er die auf verschiedenen Seiten stehenden Skizzen mit Themen zu den ersten drei Sätzen der Dritten Symphonie gleichzeitig ansehen konnte (vgl. [Gosman 2013]({% link _projekt/bibliografie.md %}), S. 16–19).
+- Im Skizzenbuch „Artaria 195“ von 1820/1821 faltete Beethoven eine Gruppe von 27 Seiten gemeinsam, um sie visuell überspringen zu können: Er führte eine auf S. 6 begonnene Skizze auf S. 33 fort, weil die 27 dazwischen liegenden Seiten bereits beschrieben waren. Diese übersprungenen Seiten wurden gemeinsam gefaltet, um S. 6 und 33 gleichzeitig in den Blick nehmen zu können (vgl. [Kinderman 2003]({% link _projekt/bibliografie.md %}), S. 21).
+
+Zusammenfassend kann festgehalten werden, dass Beethoven in seinen Skizzenbüchern absichtsvoll Faltungen vornahm, um sich darin zu orientieren, die Bücher einzuteilen, bestimmte Seiten zu markieren oder zu gruppieren und um den Arbeitsprozess zu erleichtern, wenn er z. B. entfernt liegende Skizzen gleichzeitig betrachten wollte. Damit handelt es sich bei solchen Knicken um [explizite Metatexte]({% link _glossary/metatext.md %}). Seitenfaltungen dokumentieren somit, dass Beethoven mit seinen Skizzen in einen kreativen Dialog trat, um Varianten zu bilden und verschiedene Skizzen aufeinander abzustimmen.  
+Die häufig anzutreffende gemeinsame Faltung mehrerer hintereinanderliegender Seiten kann zudem auch als kodikologisches Indiz für die [Rekonstruktion]({% link _glossary/rekonstruktion-von-skizzenbuechern.md %}) des ursprünglichen Zustands von Skizzenbüchern herangezogen werden. Die im [4. Modul]({% link _pages/module.md %}#modul-4) von Beethovens Werkstatt zu erarbeitende [digitale Edition des Notirungsbuchs K] erfasst und deutet die dort vorliegenden Seitenfaltungen.
+
+[digitale Edition des Notirungsbuchs K]: https://videapp.beethovens-werkstatt.de/document/m57bab171-9222-451d-8f7d-7fe7db6064bb <!-- TODO: replace with new link after migration of website -->
