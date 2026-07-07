@@ -20,7 +20,7 @@ COPY --chown=jekyll:jekyll . .
 RUN cd vide-component-facsimile \
     && npm install \
     && npm run build
-RUN bundle exec jekyll build
+RUN ./dev.sh build
 
 # serve site with nginx
 FROM nginx AS static
