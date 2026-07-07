@@ -1,12 +1,12 @@
 ---
 layout: default
 title: "Transkriptionen"
-permalink: /transcr/
+permalink: /transcription/
 ---
 
-<link rel="stylesheet" href="{{ '/vide-component-transcriptions/dist/vide-transcr.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/vide-component-transcriptions/dist/vide-transcr.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 
 <!-- Web Component SPA Island -->
 <vide-transcr></vide-transcr>
 
-<script type="module" src="{{ '/vide-component-transcriptions/dist/index.js' | relative_url }}"></script>
+<script type="module" src="{{ '/vide-component-transcriptions/dist/index.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
