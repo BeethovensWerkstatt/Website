@@ -313,7 +313,7 @@ parent_url: /projekt
   color: #666;
 }
 
-.vortrag-ort::before {
+.vortrag-ort.with-event::before {
   content: "· ";
   color: #999;
   margin-right: 0.3rem;
@@ -480,6 +480,123 @@ parent_url: /projekt
     grid-template-columns: 1fr;
   }
 }
+
+/* Lehre Liste */
+.lehre-liste {
+  margin-top: 1.5rem;
+}
+
+.lehre-item {
+  padding: 1.1rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.lehre-item.hidden {
+  display: none;
+}
+
+.lehre-item:last-child {
+  border-bottom: none;
+}
+
+.lehre-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.lehre-titel {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  color: #333;
+  line-height: 1.4;
+  flex: 1;
+  padding-right: 1rem;
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.lehre-datum {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.lehre-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.lehre-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  align-items: baseline;
+}
+
+.lehre-autoren {
+  font-style: italic;
+  color: #333;
+  font-weight: 500;
+}
+
+.lehre-event {
+  color: #555;
+}
+
+.lehre-event a {
+  color: #c93b22;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.lehre-event a:hover {
+  color: #9d1d20;
+}
+
+.lehre-ort {
+  color: #666;
+}
+
+.lehre-ort.with-event::before {
+  content: "· ";
+  color: #999;
+  margin-right: 0.3rem;
+}
+
+.lehre-genre {
+  display: inline-block;
+  background: #f0f0f0;
+  color: #555;
+  padding: 0.25rem 0.6rem;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.lehre-count {
+  margin: 1rem 0 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .lehre-filters {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 
 <div class="content-wrapper module-page">
@@ -560,7 +677,7 @@ parent_url: /projekt
   
   <!-- Vorträge Liste -->
   <div class="vortraege-liste">
-    {% for vortrag in site.data.vortraege.vortraege.items %}
+    {% for vortrag in site.data.vortraege.items %}
       {% assign jahr = vortrag.issued.date-parts[0][0] %}
       {% assign monat = vortrag.issued.date-parts[0][1] | default: 1 %}
       {% assign tag = vortrag.issued.date-parts[0][2] | default: 1 %}
@@ -578,7 +695,7 @@ parent_url: /projekt
            data-autoren="{{ autoren_liste | downcase | escape }}"
            data-titel="{{ vortrag.title | downcase | escape }}"
            data-event="{{ vortrag.event | downcase | escape }}"
-           data-ort="{{ vortrag.event-place | downcase | escape }}"
+         data-ort="{{ vortrag.place | downcase | escape }}"
            data-sortkey="{{ sortkey }}">
         
         <div class="vortrag-header">
@@ -595,13 +712,15 @@ parent_url: /projekt
           <div class="vortrag-meta-row">
             <span class="vortrag-autoren">
               {% for author in vortrag.author %}
-                {{ author.family }}, {{ author.given }}{% unless forloop.last %}; {% endunless %}
+                {% if author.given %}{{ author.given }} {{ author.family }}{% else %}{{ author.family }}{% endif %}{% unless forloop.last %}; {% endunless %}
               {% endfor %}
             </span>
           </div>
           
           <div class="vortrag-meta-row">
+            {% assign has_event = false %}
             {% if vortrag.event %}
+              {% assign has_event = true %}
               <span class="vortrag-event">
                 {% if vortrag.URL %}
                   <a href="{{ vortrag.URL }}" target="_blank" rel="noopener noreferrer">{{ vortrag.event }}</a>
@@ -611,8 +730,8 @@ parent_url: /projekt
               </span>
             {% endif %}
             
-            {% if vortrag.event-place %}
-              <span class="vortrag-ort">{{ vortrag.event-place }}</span>
+            {% if vortrag.place %}
+              <span class="vortrag-ort{% if has_event %} with-event{% endif %}">{{ vortrag.place }}</span>
             {% endif %}
           </div>
         </div>
@@ -725,7 +844,7 @@ parent_url: /projekt
 
           <div class="publikation-autoren">
             {% for author in pub.author %}
-              {{ author.family }}, {{ author.given }}{% unless forloop.last %}; {% endunless %}
+              {% if author.given %}{{ author.given }} {{ author.family }}{% else %}{{ author.family }}{% endif %}{% unless forloop.last %}; {% endunless %}
             {% endfor %}
           </div>
 
@@ -750,7 +869,151 @@ parent_url: /projekt
 
 <!-- Lehre Content -->
 <div id="lehre-content" class="module-content">
-  <p>Hier entsteht die Übersicht über Lehrveranstaltungen und -aktivitäten des Projekts.</p>
+  <div class="zotero-hinweis">
+    <strong>Datenquelle:</strong> Die hier aufgelisteten Lehrveranstaltungen werden in unserer <a href="https://www.zotero.org/groups/1157767/beethovens_werkstatt" target="_blank" rel="noopener noreferrer">öffentlichen Zotero-Collection</a> verwaltet. Dort können Sie die Daten in verschiedenen Formaten (BibTeX, RIS, EndNote, etc.) exportieren und für eigene Zwecke nutzen.
+  </div>
+
+  <!-- Filter Toggle Button -->
+  <div class="filter-toggle-header">
+    <button id="lehre-filter-toggle" class="vortraege-filter-toggle-btn">
+      <svg class="toggle-icon" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2z"/>
+      </svg>
+      <span>Filter</span>
+      <svg class="chevron-icon" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Filter Section -->
+  <div class="vortraege-filters" id="lehre-filters">
+    <div class="filter-group">
+      <label for="lehre-filter-jahr">Jahr:</label>
+      <select id="lehre-filter-jahr" onchange="filterLehre()">
+        <option value="">Alle Jahre</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="lehre-filter-genre">Format:</label>
+      <select id="lehre-filter-genre" onchange="filterLehre()">
+        <option value="">Alle Formate</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="lehre-filter-sprache">Sprache:</label>
+      <select id="lehre-filter-sprache" onchange="filterLehre()">
+        <option value="">Alle Sprachen</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="lehre-filter-person">Person:</label>
+      <select id="lehre-filter-person" onchange="filterLehre()">
+        <option value="">Alle Personen</option>
+      </select>
+    </div>
+
+    <div class="filter-group search-group">
+      <label for="search-lehre">Suche:</label>
+      <div class="search-container">
+        <input type="text" id="search-lehre" placeholder="Titel, Veranstaltung oder Ort durchsuchen..." oninput="filterLehre()">
+        <button type="button" class="search-clear" id="lehre-search-clear" title="Suche löschen" onclick="clearLehreSearch()">&times;</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="lehre-count" id="lehre-count"></div>
+
+  <!-- Lehre Liste -->
+  <div class="lehre-liste">
+    {% for item in site.data.lehre.items %}
+      {% comment %}Parse note field for date (single: YYYY-MM-DD or range: YYYY-MM-DD/YYYY-MM-DD){% endcomment %}
+      {% assign note_parts = item.note | split: "/" %}
+      {% assign note_start = note_parts[0] %}
+      {% assign note_start_p = note_start | split: "-" %}
+      {% assign note_start_y = note_start_p[0] %}
+      {% assign note_start_m = note_start_p[1] %}
+      {% assign note_start_d = note_start_p[2] %}
+      {% if note_parts.size > 1 %}
+        {% assign note_end = note_parts[1] %}
+        {% assign note_end_p = note_end | split: "-" %}
+        {% assign note_end_y = note_end_p[0] %}
+        {% assign note_end_m = note_end_p[1] %}
+        {% assign note_end_d = note_end_p[2] %}
+      {% else %}
+        {% assign note_end_y = note_start_y %}
+        {% assign note_end_m = "" %}
+        {% assign note_end_d = "" %}
+      {% endif %}
+
+      {% comment %}Build authors list for filter{% endcomment %}
+      {% assign lehre_autoren_liste = "" %}
+      {% for author in item.author %}
+        {% if author.given and author.given != "" %}
+          {% assign autor_eintrag = author.family | append: ", " | append: author.given %}
+        {% else %}
+          {% assign autor_eintrag = author.family %}
+        {% endif %}
+        {% assign lehre_autoren_liste = lehre_autoren_liste | append: autor_eintrag | append: "; " %}
+      {% endfor %}
+
+      {% assign has_event_title = false %}
+      {% if item.event %}{% assign has_event_title = true %}{% endif %}
+
+      <div class="lehre-item"
+           data-startjahr="{{ note_start_y }}"
+           data-endjahr="{{ note_end_y }}"
+           data-genre="{{ item.genre | escape }}"
+           data-sprache="{{ item.language | escape }}"
+           data-autoren="{{ lehre_autoren_liste | downcase | escape }}"
+           data-titel="{{ item.title | downcase | escape }}"
+           data-event="{{ item.event | downcase | escape }}"
+           data-ort="{{ item.place | downcase | escape }}"
+           data-sortkey="{{ note_start }}">
+
+        <div class="lehre-header">
+          <h3 class="lehre-titel">
+            <span class="titel-text">{{ item.title }}</span>
+            <span class="lehre-datum">
+              {% if note_start_d %}{{ note_start_d }}.{{ note_start_m }}.{{ note_start_y }}{% elsif note_start_m %}{{ note_start_m }}/{{ note_start_y }}{% else %}{{ note_start_y }}{% endif %}
+              {% if note_parts.size > 1 %} &ndash; {% if note_end_d %}{{ note_end_d }}.{{ note_end_m }}.{{ note_end_y }}{% elsif note_end_m %}{{ note_end_m }}/{{ note_end_y }}{% else %}{{ note_end_y }}{% endif %}{% endif %}
+            </span>
+          </h3>
+          {% if item.genre %}
+            <span class="lehre-genre">{{ item.genre }}</span>
+          {% endif %}
+        </div>
+
+        <div class="lehre-meta">
+          <div class="lehre-meta-row">
+            <span class="lehre-autoren">
+              {% for author in item.author %}
+                {% if author.given and author.given != "" %}{{ author.given }} {{ author.family }}{% else %}{{ author.family }}{% endif %}{% unless forloop.last %}; {% endunless %}
+              {% endfor %}
+            </span>
+          </div>
+
+          <div class="lehre-meta-row">
+            {% if item.event %}
+              <span class="lehre-event">
+                {% if item.URL %}
+                  <a href="{{ item.URL }}" target="_blank" rel="noopener noreferrer">{{ item.event }}</a>
+                {% else %}
+                  {{ item.event }}
+                {% endif %}
+              </span>
+            {% endif %}
+            {% if item.place %}
+              <span class="lehre-ort{% if has_event_title %} with-event{% endif %}">{{ item.place }}</span>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
 </div>
 
 </div>
@@ -1161,6 +1424,145 @@ function updatePubFilterOptions() {
   // No-op for now; can be expanded to hide irrelevant filter options
 }
 
+// Lehre Filter Funktionalität
+let lehreFiltersVisible = true;
+
+function toggleLehreFilters() {
+  const filters = document.getElementById('lehre-filters');
+  const toggleBtn = document.getElementById('lehre-filter-toggle');
+  if (filters && toggleBtn) {
+    lehreFiltersVisible = !lehreFiltersVisible;
+    filters.classList.toggle('collapsed', !lehreFiltersVisible);
+    toggleBtn.classList.toggle('collapsed', !lehreFiltersVisible);
+  }
+}
+
+function filterLehre() {
+  const jahrFilter = parseInt(document.getElementById('lehre-filter-jahr').value) || 0;
+  const genreFilter = document.getElementById('lehre-filter-genre').value;
+  const spracheFilter = document.getElementById('lehre-filter-sprache').value;
+  const personFilter = document.getElementById('lehre-filter-person').value.toLowerCase();
+  const searchTerm = document.getElementById('search-lehre').value.toLowerCase();
+
+  const clearBtn = document.getElementById('lehre-search-clear');
+  if (clearBtn) clearBtn.classList.toggle('visible', !!searchTerm);
+
+  const items = document.querySelectorAll('.lehre-item');
+  let visibleCount = 0;
+
+  items.forEach(item => {
+    const startJahr = parseInt(item.dataset.startjahr) || 0;
+    const endJahr = parseInt(item.dataset.endjahr) || startJahr;
+    const jahrMatch = !jahrFilter || (jahrFilter >= startJahr && jahrFilter <= endJahr);
+    const genreMatch = !genreFilter || item.dataset.genre === genreFilter;
+    // Multi-language: split by ', ' and check inclusion
+    const sprachen = (item.dataset.sprache || '').split(',').map(s => s.trim());
+    const spracheMatch = !spracheFilter || sprachen.includes(spracheFilter);
+    const personMatch = !personFilter || (item.dataset.autoren || '').includes(personFilter);
+    const searchMatch = !searchTerm ||
+      (item.dataset.titel || '').includes(searchTerm) ||
+      (item.dataset.event || '').includes(searchTerm) ||
+      (item.dataset.ort || '').includes(searchTerm);
+
+    const visible = jahrMatch && genreMatch && spracheMatch && personMatch && searchMatch;
+    item.classList.toggle('hidden', !visible);
+    if (visible) visibleCount++;
+  });
+
+  const countEl = document.getElementById('lehre-count');
+  if (countEl) countEl.textContent = `${visibleCount} von ${items.length} Lehrveranstaltungen`;
+}
+
+function clearLehreSearch() {
+  document.getElementById('search-lehre').value = '';
+  filterLehre();
+}
+
+function sortLehre() {
+  const container = document.querySelector('.lehre-liste');
+  if (!container) return;
+  const items = Array.from(container.querySelectorAll('.lehre-item'));
+  // ISO date strings sort lexicographically — descending = newest first
+  items.sort((a, b) => (b.dataset.sortkey || '').localeCompare(a.dataset.sortkey || ''));
+  items.forEach(item => container.appendChild(item));
+}
+
+function populateLehreFilterOptions() {
+  const items = Array.from(document.querySelectorAll('.lehre-item'));
+
+  // Aktuelle und ehemalige Projektmitglieder (Nachnamen lowercase)
+  const teamMitglieder = new Set([
+    'appel', 'cox', 'greshake', 'herold', 'kepper', 'münzmay', 'rosendahl',
+    'sänger', 'seipelt', 'stremel', 'veit', 'voigt',
+    'saccomano', 'novara', 'mo', 'pauls', 'obert', 'markert', 'rovelli',
+    'hartwig', 'schlicht', 'zhang', 'scheffler'
+  ]);
+
+  // Hilfsfunktion: Ersten Buchstaben jedes Wortes großschreiben (auch Bindestriche)
+  function capitalizeWords(str) {
+    return str.split(' ').map(word =>
+      word.split('-').map(part => part.charAt(0).toUpperCase() + part.slice(1)).join('-')
+    ).join(' ');
+  }
+
+  // Collect all years within date ranges
+  const jahreSet = new Set();
+  items.forEach(item => {
+    const start = parseInt(item.dataset.startjahr) || 0;
+    const end = parseInt(item.dataset.endjahr) || start;
+    for (let y = start; y <= end; y++) { if (y) jahreSet.add(y); }
+  });
+  const jahre = [...jahreSet].sort().reverse();
+
+  const genres = [...new Set(items.map(i => i.dataset.genre).filter(Boolean))].sort();
+
+  // Split multi-language values
+  const sprachenSet = new Set();
+  items.forEach(item => {
+    (item.dataset.sprache || '').split(',').forEach(s => { if (s.trim()) sprachenSet.add(s.trim()); });
+  });
+  const sprachen = [...sprachenSet].sort();
+
+  // Persons: only team members, display as "Vorname Nachname"
+  const personenSet = new Set();
+  items.forEach(item => {
+    (item.dataset.autoren || '').split(';').forEach(a => {
+      const entry = a.trim();
+      if (!entry) return;
+      const nachname = entry.split(',')[0].trim().toLowerCase();
+      if (teamMitglieder.has(nachname)) personenSet.add(entry);
+    });
+  });
+  const personen = [...personenSet].sort();
+
+  function fillSelect(id, options) {
+    const sel = document.getElementById(id);
+    if (!sel) return;
+    const first = sel.options[0];
+    sel.innerHTML = '';
+    sel.appendChild(first);
+    options.forEach(val => {
+      const opt = document.createElement('option');
+      opt.value = String(val);
+      // For person options: "nachname, vorname" → "Vorname Nachname"
+      if (id === 'lehre-filter-person') {
+        const parts = String(val).split(', ');
+        const vorname = capitalizeWords(parts[1] || '');
+        const nachname = capitalizeWords(parts[0] || '');
+        opt.textContent = `${vorname} ${nachname}`.trim();
+      } else {
+        opt.textContent = String(val);
+      }
+      sel.appendChild(opt);
+    });
+  }
+
+  fillSelect('lehre-filter-jahr', jahre);
+  fillSelect('lehre-filter-genre', genres);
+  fillSelect('lehre-filter-sprache', sprachen);
+  fillSelect('lehre-filter-person', personen);
+}
+
 window.addEventListener('DOMContentLoaded', function() {
   const hash = window.location.hash.substring(1);
   if (hash && ['vortraege', 'publikationen', 'lehre'].includes(hash)) {
@@ -1199,6 +1601,19 @@ window.addEventListener('DOMContentLoaded', function() {
       filtersEl.style.display = isHidden ? '' : 'none';
       pubToggleBtn.classList.toggle('active', isHidden);
     });
+  }
+
+  // Populate filter dropdowns and sort — Lehre
+  if (document.getElementById('lehre-filter-jahr')) {
+    sortLehre();
+    populateLehreFilterOptions();
+    filterLehre();
+  }
+
+  // Setup filter toggle button — Lehre
+  const lehreToggleBtn = document.getElementById('lehre-filter-toggle');
+  if (lehreToggleBtn) {
+    lehreToggleBtn.addEventListener('click', toggleLehreFilters);
   }
 });
 </script>
