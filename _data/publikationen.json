@@ -1,0 +1,1647 @@
+{
+  "items": [
+    {
+      "id": "local/zum-notirungsbuch-k",
+      "type": "article",
+      "language": "deutsch",
+      "title": "Zum Notirungsbuch K",
+      "URL": "/zum-notirungsbuch-k/",
+      "author": [],
+      "issued": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/VE9IX9DF",
+      "type": "book",
+      "call-number": "BW0005 / MA 20 (3)",
+      "citation-key": "appelMusikphilologieGrundlagenMethoden2017",
+      "collection-title": "Kompendium Musik",
+      "ISBN": "978-3-89007-723-9",
+      "language": "deutsch",
+      "number-of-pages": "325",
+      "publisher-place": "Laaber",
+      "source": "D-BNba / D-DTms",
+      "title": "Musikphilologie. Grundlagen - Methoden - Praxis",
+      "volume": "3",
+      "editor": [
+        {
+          "family": "Appel",
+          "given": "Bernhard R."
+        },
+        {
+          "family": "Emans",
+          "given": "Reinmar"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2017
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/NPJWHI2P",
+      "type": "chapter",
+      "citation-key": "coxEsquissesBeethovenPour2024a",
+      "collection-number": "24",
+      "container-title": "Beethoven, sa vie, son oeuvre. Revue semestrielle éditée par l'ABF (Association Beethoven France & Francophonie)",
+      "language": "französisch",
+      "page": "69–77",
+      "title": "Les esquisses de Beethoven pour la Neuvième Symphonie dans les carnets de croquis Artaria 201 et Engelmann",
+      "volume": "1er semestre 2024",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/72H3PEWR",
+      "type": "article-journal",
+      "citation-key": "muenzmayBeethovenWieKlingt2020",
+      "collection-title": "Forschung und Lehre (Rubrik \"Text-Bild-Ton\")",
+      "issue": "4",
+      "language": "deutsch",
+      "page": "342",
+      "title": "Inside Beethoven. Wie klingt klassische Kammermusik 'von innen'?",
+      "volume": "27 (2020)",
+      "author": [
+        {
+          "family": "Münzmay",
+          "given": "Andreas"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/H3VA3CDW",
+      "type": "chapter",
+      "citation-key": "muenzmayPhonographischerTextInterpretation2019",
+      "collection-number": "33",
+      "collection-title": "editio",
+      "language": "deutsch",
+      "page": "10–30",
+      "title": "Phonographischer Text, Interpretation und Aufführungsmaterial als kritisch edierbarer Sachzusammenhang. Ein Beitrag zur Theorie der Edition von Klangdokumenten",
+      "author": [
+        {
+          "family": "Münzmay",
+          "given": "Andreas"
+        },
+        {
+          "family": "Siegert",
+          "given": "Christine"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/WZ34WJDX",
+      "type": "chapter",
+      "citation-key": "hartwigZurDigitalenVariantendarstellung2019a",
+      "collection-number": "45",
+      "collection-title": "Beihefte zu editio",
+      "container-title": "Textgenese in der digitalen Edition",
+      "language": "deutsch",
+      "page": "171–184",
+      "publisher": "Anke Bosse, Walter Fanta",
+      "publisher-place": "Berlin/Boston",
+      "title": "Zur digitalen Variantendarstellung im Projekt Beet¬hovens Werkstatt am Beispiel des Duetts mit zwei obligaten Augengläsern WoO 32 – Ein Werkstattbericht",
+      "author": [
+        {
+          "family": "Hartwig",
+          "given": "Maja"
+        },
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/JM9B33RP",
+      "type": "chapter",
+      "citation-key": "rovelliRezensionMusicSketches2019",
+      "collection-number": "41/1",
+      "collection-title": "Music Theory Spectrum",
+      "language": "englisch",
+      "page": "175–178",
+      "title": "Rezension zu Music Sketches by Friedemann Sallis. Cambridge Introductions to Music",
+      "author": [
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/4RG77NV3",
+      "type": "chapter",
+      "citation-key": "rovelliEdizioniGeneticheStrategie2019a",
+      "collection-title": "5/1",
+      "container-title": "Storie e linguaggi",
+      "language": "italienisch",
+      "page": "199–218",
+      "title": "Edizioni genetiche e strategie di visualizzazione digitale. Un pro¬totipo per il quar¬tetto op. 59, nr. 3 di Beethoven",
+      "author": [
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/AAJ8BW87",
+      "type": "book",
+      "citation-key": "heroldBeethovenBegehbareEnsemble2019",
+      "collection-title": "Begleitpublikationen zu Ausstellungen des Beet¬hoven-Hauses",
+      "language": "deutsch",
+      "publisher-place": "Bonn",
+      "title": "Inside Beethoven! Das begehbare Ensemble. Begleitpublikation zur Klanginstallation der Hochschule für Musik Detmold zum Septett op. 20 und Trio op. 38 (mit CD)",
+      "volume": "28",
+      "author": [
+        {
+          "family": "Herold",
+          "given": "Kristin"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        },
+        {
+          "family": "Seipelt",
+          "given": "Agnes"
+        },
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        },
+        {
+          "family": "und weitere",
+          "given": ""
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/9J39UD98",
+      "type": "chapter",
+      "citation-key": "coxBeethovensEarlySketches2024a",
+      "container-title": "Beethoven 9. Studies and Interpretations",
+      "language": "englisch",
+      "page": "93–107",
+      "publisher-place": "Krakau",
+      "title": "Beethoven's Early Sketches for the Ninth Symphony",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Chrenkoff",
+          "given": "Magdalena"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/FJEHMCF5",
+      "type": "chapter",
+      "citation-key": "appelBeethovensWerkstattGenetische2017",
+      "collection-title": "Symposiumsbericht »Zum kompositorischen Schreiben und Weben bei Max Reger – Quellen kompositorischen Schaffens im Diskurs«",
+      "container-title": "BEITRÄGE ZUM XVI. INTERNATIONALEN KONGRESS DER GESELLSCHAFT FÜR MUSIKFORSCHUNG 2016",
+      "language": "deutsch",
+      "publisher": "Schott Campus",
+      "publisher-place": "Mainz",
+      "title": "Beethovens Werkstatt. Genetische Textkritik und Digitale Musikedition",
+      "URL": "https://nbn-resolving.org/urn:nbn:de:101:1-201709153237",
+      "author": [
+        {
+          "family": "Appel",
+          "given": "Bernhard R."
+        }
+      ],
+      "editor": [
+        {
+          "family": "Buschmeier",
+          "given": "Gabriele"
+        },
+        {
+          "family": "Pietschmann",
+          "given": "Klaus"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2017
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/2NE8XKGS",
+      "type": "book",
+      "citation-key": "veitBeethovenBegehbareEnsemble2019",
+      "language": "deutsch",
+      "note": "mit Beiträgen von Kristin Herold, Richard Sänger, Agnes Seipelt und Joachim Veit",
+      "publisher-place": "Bonn",
+      "title": "Inside Beethoven! Das begehbare Ensemble. Begleitpublikation zur Klanginstallation der Hochschule für Musik Detmold zum Septett op. 20 und Trio op. 38 (mit CD)",
+      "editor": [
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        },
+        {
+          "family": "Berndt",
+          "given": "Axel"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/PE88CCJ4",
+      "type": "chapter",
+      "citation-key": "veitInszenierungsproblemeOderProbleme2018a",
+      "collection-number": "32",
+      "container-title": "editio",
+      "language": "deutsch",
+      "page": "22–38",
+      "title": "Inszenierungsprobleme oder Probleme durch Inszenierung? Musikedition am Scheideweg",
+      "author": [
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2018
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/N9RAUD6J",
+      "type": "chapter",
+      "citation-key": "muenzmayBrueckenschlaegeZwischenMusikwissenschaft2020",
+      "collection-title": "Musikwissenschaft: Aktuelle Perspektiven. Bericht über die Jahrestagung der Gesellschaft für Musikforschung 2019 in Paderborn und Detmold",
+      "container-title": "Brückenschläge zwischen Musikwissenschaft und Informatik. Theoretische und praktische Aspekte der Kooperation",
+      "language": "deutsch",
+      "page": "XI–XIV",
+      "title": "Brückenschläge zwischen Musikwissenschaft und Informatik – Vorbemerkung",
+      "volume": "3",
+      "author": [
+        {
+          "family": "Münzmay",
+          "given": "Andreas"
+        },
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        },
+        {
+          "family": "Acquavella-Rauch",
+          "given": "Stefanie"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      },
+      "DOI": "10.25366/2020.88"
+    },
+    {
+      "id": "4185477/DVTH6T4M",
+      "type": "article-journal",
+      "citation-key": "veitStandUndPerspektiven2018",
+      "container-title": "Bibliothek. Forschung und Praxis",
+      "issue": "2",
+      "language": "deutsch",
+      "page": "292–301",
+      "title": "Stand und Perspektiven der Nutzung von MEI in der Musikwissenschaft und in Bibliotheken",
+      "volume": "42",
+      "author": [
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        },
+        {
+          "family": "Richts",
+          "given": "Kristina"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2018
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/677KV9P2",
+      "type": "chapter",
+      "citation-key": "seipeltDigitaleEditionUnd2020",
+      "collection-title": "Musikwissenschaft: Aktuelle Perspektiven. Bericht über die Jahrestagung der Gesellschaft für Musikforschung 2019 in Paderborn und Detmold",
+      "container-title": "Brückenschläge zwischen Musikwissenschaft und Informatik. Theoretische und praktische Aspekte der Kooperation",
+      "language": "deutsch",
+      "page": "105–114",
+      "publisher-place": "Detmold",
+      "title": "Digitale Edition und Harmonische Analyse mit MEI von Anton Bruckners Studienbuch",
+      "volume": "3",
+      "author": [
+        {
+          "family": "Seipelt",
+          "given": "Agnes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      },
+      "DOI": "10.25366/2020.100"
+    },
+    {
+      "id": "4185477/V62Q3AHU",
+      "type": "chapter",
+      "citation-key": "rovelliProgettiAbbandonatiEsercizi2018a",
+      "container-title": "Cara scientia mia, musica. Studi per Maria Caraci Vela",
+      "language": "italienisch",
+      "page": "447–460",
+      "publisher": "ETS",
+      "publisher-place": "Pisa",
+      "title": "Progetti abbandonati, esercizi e letture beethoveniane tra il 1815 e il 1816",
+      "author": [
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Romagnoli",
+          "given": "Angela"
+        },
+        {
+          "family": "Sabaino",
+          "given": "Daniele"
+        },
+        {
+          "family": "Tibaldi",
+          "given": "Rodobaldo"
+        },
+        {
+          "family": "Zappalà",
+          "given": "Pietro"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2018
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/G9BRFS85",
+      "type": "article-journal",
+      "citation-key": "rovelliEdizioniGeneticheStrategie2019",
+      "collection-title": "Storie e linguaggi",
+      "issue": "1",
+      "language": "italienisch",
+      "page": "199–218",
+      "title": "Edizioni genetiche e strategie di visualizzazione digitale. Un prototipo per il quartetto op. 59, nr. 3 di Beethoven",
+      "volume": "5",
+      "author": [
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/6RFVGQHW",
+      "type": "article-journal",
+      "citation-key": "rovelliMusicSketchesFriedemann2019",
+      "collection-title": "Music Theory Spectrum",
+      "DOI": "https://doi.org/10.1093/mts/mtz002",
+      "issue": "1",
+      "language": "englisch",
+      "page": "175–178",
+      "title": "Music Sketches by Friedemann Sallis. Cambridge Introductions to Music. Cambridge 2015 (Rezension)",
+      "volume": "41",
+      "author": [
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/C92X6UWW",
+      "type": "chapter",
+      "citation-key": "rovelliSkizzenbuchAusgabenUndIhre2019",
+      "collection-title": "Musikforschung der Hochschule der Künste Bern",
+      "container-title": "Rund um Beethoven. Interpretationsforschung heute,",
+      "language": "deutsch",
+      "page": "317–333",
+      "publisher-place": "Schliengen",
+      "title": "Die Skizzenbuch-Ausgaben und ihre mögliche digitale Zukunft",
+      "volume": "14",
+      "author": [
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Gartmann",
+          "given": "Thomas"
+        },
+        {
+          "family": "Allenbach",
+          "given": "Daniel"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/NE86MTQ4",
+      "type": "chapter",
+      "citation-key": "rovelliRevisionsprozesseBeethovensNiederschriften2017",
+      "collection-number": "31",
+      "container-title": "Editio. Internationales Jahrbuch für Editionswissenschaft",
+      "language": "deutsch",
+      "page": "90–116",
+      "title": "Revisionsprozesse in Beethovens Niederschriften der achten Symphonie op. 93",
+      "author": [
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2017
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/6RMH5PPG",
+      "type": "chapter",
+      "citation-key": "rovelliAutographeSpurBeethovens2016a",
+      "collection-number": "12",
+      "container-title": "Bonner Beethoven Studien",
+      "language": "deutsch",
+      "page": "103–106",
+      "title": "Eine autographe Spur zu Beethovens 1. Symphonie op. 21",
+      "author": [
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/96D3TM68",
+      "type": "article-journal",
+      "citation-key": "rovelliEpistemologiaFenomenologiaEdizioni2015",
+      "container-title": "Philomusica on-line",
+      "DOI": "http://dx.doi.org/10.6092/1826-9001/14.1761",
+      "issue": "14",
+      "language": "italienisch",
+      "page": "289–308",
+      "title": "Epistemologia e fenomenologia delle edizioni dei quaderni di schizzi di Beethoven",
+      "URL": "http://riviste.paviauniversitypress.it/index.php/phi/article/view/1761",
+      "volume": "1",
+      "author": [
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2015
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/2RQHNUPB",
+      "type": "article-journal",
+      "citation-key": "rovelliLaboratoriumArtificiosumRegard2016a",
+      "collection-title": "Genesis. Revue internationale de critique génétique",
+      "issue": "42",
+      "language": "italienisch",
+      "page": "169–181",
+      "title": "“Laboratorium artificiosum”. Un regard dans l’atelier de Beethoven",
+      "author": [
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/NQ5HUX28",
+      "type": "article-journal",
+      "citation-key": "novaraCodificareBeethovenSullutilizzo2021",
+      "collection-title": "IL SAGGIATORE MUSICALE. Rivista semestrale di Musicologia",
+      "issue": "2",
+      "language": "italienisch",
+      "page": "245–270",
+      "title": "Codificare Beethoven. Sull’utilizzo di MEI nelle edizioni genetiche born digital",
+      "volume": "XXVIII",
+      "author": [
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/9MNR255T",
+      "type": "chapter",
+      "citation-key": "rovelliSkizzeneditionenBeethovenNutzen2015",
+      "collection-number": "39",
+      "collection-title": "Beihefte zu editio",
+      "container-title": "Vom Nutzen der Editionen. Zur Bedeutung moderner Editorik für die Erforschung von Literatur- und Kulturgeschichte",
+      "language": "deutsch",
+      "page": "297–311",
+      "publisher-place": "Berlin",
+      "title": "Skizzeneditionen zu Beethoven. Nutzen und Aufgaben im wissenschaftsgeschichtlichen Rückblick",
+      "author": [
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Bein",
+          "given": "Thomas"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2015
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/Q9D6HCVV",
+      "type": "paper-conference",
+      "citation-key": "novaraSchumannWerkstattZurUebertragbarkeit2019",
+      "container-title": "Freie Beiträge zur Jahrestagung der Gesellschaft für Musikforschung 2019",
+      "DOI": "10.25366/2020.66",
+      "event-title": "Jahrestagung der Gesellschaft für Musikforschung",
+      "language": "deutsch",
+      "page": "244–259",
+      "publisher-place": "Detmold",
+      "title": "Eine Schumann-Werkstatt? Zur Übertragbarkeit der Methoden vom Projekt „Beethovens Werkstatt“ auf andere Komponisten",
+      "author": [
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Grotjahn",
+          "given": "Rebecca"
+        },
+        {
+          "family": "Jaeschke",
+          "given": "Nina"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/92QJ4M2S",
+      "type": "article-journal",
+      "citation-key": "munzmayGenesesMusicalesRezension2016",
+      "collection-title": "Presses de l’université Paris-Sorbonne",
+      "container-title": "Editio. Internationales Jahrbuch für Editionswissenschaft",
+      "language": "französisch",
+      "page": "248–252",
+      "title": "Genèses musicales (Rezension)",
+      "volume": "30",
+      "author": [
+        {
+          "family": "Münzmay",
+          "given": "Andreas"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Donin",
+          "given": "Nicolas"
+        },
+        {
+          "family": "Grésillon",
+          "given": "Almut"
+        },
+        {
+          "family": "Lebrave",
+          "given": "Jean-Louis"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/66MVHB98",
+      "type": "paper-conference",
+      "citation-key": "kepperOpenDataMusikphilologischen2023",
+      "DOI": "10.5281/zenodo.7715387",
+      "event-title": "DHd 2023 Open Humanities Open Culture. 9. Tagung des Verbands \"Digital Humanities im deutschsprachigen Raum\" (DHd 2023)",
+      "language": "deutsch",
+      "license": "Creative Commons Attribution 4.0 International",
+      "publisher-place": "Trier",
+      "title": "Open Data in musikphilologischen Projekten: Herausforderungen, Strategien, Potenziale",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Münzmay",
+          "given": "Andreas"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/35C83UTQ",
+      "type": "paper-conference",
+      "citation-key": "coxEncodingGeneticProcesses2022",
+      "container-title": "Music Encoding Conference Proceedings 2021. 19–22 July, 2021 University of Alicante (Spain): Onsite & Online",
+      "DOI": "10.17613/77t79-tc220",
+      "event-title": "Music Encoding Conference 2021",
+      "language": "englisch",
+      "page": "85–95",
+      "publisher-place": "Alicante",
+      "title": "Encoding Genetic Processes II",
+      "URL": "https://works.hcommons.org/records/8mxry-wyp22",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        },
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Münnich",
+          "given": "Stefan"
+        },
+        {
+          "family": "Rizo",
+          "given": "David"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/DRNV3W99",
+      "type": "paper-conference",
+      "citation-key": "kepperEncodingGeneticalProcesses2019",
+      "container-title": "Music Encoding Conference Proceedings. 2015, 2016 and 2017",
+      "DOI": "https://doi.org/10.15463/music-1",
+      "event-title": "Music Encoding Conference 2015",
+      "language": "englisch",
+      "note": "https://music-encoding.org/update/2019/08/08/mec2015-17proceedings-published.html",
+      "page": "37–44",
+      "publisher-place": "Tours",
+      "title": "Encoding Genetical Processes",
+      "URL": "https://bibdorm.bsb-muenchen.de/b/bv/BV045900855",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Di Bacco",
+          "given": "Giuliano"
+        },
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Roland",
+          "given": "Perry D."
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/BFB6C3JZ",
+      "type": "chapter",
+      "citation-key": "hartwigZurDigitalenVariantendarstellung2019",
+      "collection-number": "44",
+      "collection-title": "Beihefte zu editio",
+      "container-title": "Textgenese in der digitalen Edition",
+      "language": "deutsch",
+      "page": "171–184",
+      "publisher-place": "Berlin/Boston",
+      "title": "Zur digitalen Variantendarstellung im Projekt Beethovens Werkstatt am Beispiel des „Duetts mit zwei obligaten Augengläsern“ WoO 32. Ein Werkstattbericht",
+      "author": [
+        {
+          "family": "Hartwig",
+          "given": "Maja"
+        },
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Bosse",
+          "given": "Anke"
+        },
+        {
+          "family": "Fanta",
+          "given": "Walter"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/DUMTVVKK",
+      "type": "chapter",
+      "citation-key": "coxBeethovensRevisionsprozesseUnd2025",
+      "container-title": "Musikquellen des 19. Jahrhunderts in Deutschland. Herausforderungen und Chancen",
+      "language": "deutsch",
+      "page": "131–152",
+      "publisher-place": "Dresden",
+      "title": "Beethovens Revisionsprozesse und ihre digitale Darstellung",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Schwindt",
+          "given": "Nicole"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/ZJ6QIZ8H",
+      "type": "article-journal",
+      "citation-key": "coxEsquissesBeethovenPour2024",
+      "container-title": "Beethoven, sa vie, son oeuvre. Revue semestrielle éditée par l’ABF (Association Beethoven France & Francophonie)",
+      "language": "französisch",
+      "page": "69–77",
+      "title": "Les esquisses de Beethoven pour la Neuvième Symphonie dans les carnets de croquis Artaria 201 et Engelmann",
+      "volume": "24",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/PH9WK2IA",
+      "type": "chapter",
+      "citation-key": "coxBeethovenSketchbookIts2024",
+      "container-title": "Beethoven 9. Studies and Interpretations",
+      "language": "englisch",
+      "page": "273–284",
+      "publisher-place": "Krakau",
+      "title": "A Beethoven Sketchbook and its Journey from East to West or: How Beethoven’s Engelmann Sketchbook Found its Way to Johannes Brahms",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Chrenkoff",
+          "given": "Magdalena"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/G3G5GR77",
+      "type": "chapter",
+      "citation-key": "coxBeethovensEarlySketches2024",
+      "container-title": "Beethoven 9. Studies and Interpretations",
+      "language": "englisch",
+      "page": "93–107",
+      "publisher-place": "Krakau",
+      "title": "Beethoven’s Early Sketches for the Ninth Symphony",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Chrenkoff",
+          "given": "Magdalena"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/2DVF7U8E",
+      "type": "chapter",
+      "citation-key": "coxBeethovensConceptWorking2023",
+      "collection-number": "16",
+      "collection-title": "Musikforschung der Hochschule der Künste Bern",
+      "container-title": "Beethoven and the Piano. Philology, Context and Performance Practice",
+      "language": "deutsch",
+      "page": "188–209",
+      "publisher-place": "Schliengen",
+      "title": "Beethoven’s ‘Concept’. Working Manuscripts Between Sketch and Fair Copy",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Miucci",
+          "given": "Leonardo"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/VWE4WTTQ",
+      "type": "book",
+      "citation-key": "coxSkizzenbuchEngelmannUntersuchungen2021",
+      "collection-number": "21",
+      "collection-title": "Studien zur Musik",
+      "ISBN": "978-3-8467-6593-7",
+      "language": "deutsch",
+      "note": "Das Engelmann-Skizzenbuch ermöglicht einen Einblick in die Entstehung von zwei der bekanntesten Werke Ludwig van Beethovens: Es dokumentiert Beethovens letzte Arbeiten an den Diabelli-Variationen und enthält frühe Skizzen zur Neunten Symphonie. Das Skizzenbuch wird hier erstmals vollständig in Transkription vorgelegt. Die enthaltenen Skizzen werden bestimmten Werken und Werkabschnitten zugeordnet und analysiert. Zudem konnten durch die Untersuchung der Schreibprozesse neue Erkenntnisse über Beethovens Arbeitsorganisation und seine Schreibstrategien gewonnen werden. Dies wird durch neue Forschungen zur Provenienz des Skizzenbuchs ergänzt: Wie zuvor nicht bekannt, beschäftigte sich bereits Johannes Brahms mit diesem Skizzenbuch.",
+      "publisher": "Brill Fink",
+      "publisher-place": "Paderborn",
+      "shortTitle": "Das Skizzenbuch \"Engelmann\"",
+      "title": "Das Skizzenbuch \"Engelmann\": Untersuchungen zu Skizzen Beethovens aus dem Frühjahr 1823",
+      "title-short": "Das Skizzenbuch \"Engelmann\"",
+      "URL": "https://brill.com/display/title/58467",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2022,
+            2,
+            7
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/E6S87RRM",
+      "type": "article-journal",
+      "citation-key": "coxDigitaleFassungsvergleicheAm2020",
+      "collection-title": "Musikwissenschaft: Aktuelle Perspektiven. Bericht über die Jahrestagung der Gesellschaft für Musikforschung 2019 in Paderborn und Detmold",
+      "container-title": "Brückenschläge zwischen Musikwissenschaft und Informatik. Theoretische und praktische Aspekte der Kooperation",
+      "DOI": "10.25366/2020.87",
+      "language": "deutsch",
+      "page": "97–104",
+      "title": "Digitale Fassungsvergleiche am Beispiel von Beethovens Eigenbearbeitungen",
+      "volume": "3",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/WEN2GBBJ",
+      "type": "article-journal",
+      "citation-key": "coxBeethovensVolksliedbearbeitungenWoO2018",
+      "container-title": "Die Musikforschung",
+      "DOI": "https://doi.org/10.52412/mf.2018.H2.303",
+      "issue": "2",
+      "language": "deutsch",
+      "page": "132–145",
+      "title": "Beethovens Volksliedbearbeitungen WoO 158 – Einblicke in den Kompositionsprozess",
+      "volume": "71",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2018
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/M6XU2HNM",
+      "type": "article-journal",
+      "citation-key": "coxBeethovensEngelmannSkizzenbuchVoellige2020a",
+      "collection-title": "Koblenz-Landauer Studien zu Geistes-, Kultur- und Bildungswissenschaften",
+      "container-title": "(Un-)Ordnungen. Kulturwissenschaftliche Perspektiven",
+      "language": "deutsch",
+      "page": "205–219",
+      "title": "Beethovens Engelmann-Skizzenbuch – Völlige Unordnung oder geordnetes Chaos?",
+      "volume": "27",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Aadam",
+          "given": "Janin"
+        },
+        {
+          "family": "Mader",
+          "given": "Ilona"
+        },
+        {
+          "family": "Mattern",
+          "given": "Nicole"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/8B359PDB",
+      "type": "chapter",
+      "citation-key": "coxBeethovenSearchingMelodies2021",
+      "container-title": "Beethoven 8. Studies and Interpretations",
+      "language": "englisch",
+      "page": "193–201",
+      "publisher-place": "Krakau",
+      "title": "Beethoven Searching for Melodies: His Folksong Settings WoO 158",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Chrenkoff",
+          "given": "Magdalena"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/TPGH5G8H",
+      "type": "article-journal",
+      "citation-key": "veitNotenJenseitsPapiers2015",
+      "container-title": "Forschungsforum Paderborn",
+      "ISSN": "1435-3709",
+      "issue": "18",
+      "language": "deutsch",
+      "page": "40–49",
+      "title": "Noten jenseits des Papiers - Zur Entwicklung von Werkzeugen für die Digital Humanities im Bereich der Musikedition",
+      "volume": "2015",
+      "author": [
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2015
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/TXTCVABC",
+      "type": "article-journal",
+      "call-number": "Zs 2235",
+      "citation-key": "appelSkizzierungsprozesseImSchaffen2015",
+      "collection-title": "Die Tonkunst",
+      "issue": "2",
+      "language": "deutsch",
+      "page": "122–130",
+      "source": "D-DTbhm",
+      "title": "Skizzierungsprozesse im Schaffen Beethovens: Probleme der Erschließung und der Digitalen Edition",
+      "volume": "9",
+      "author": [
+        {
+          "family": "Appel",
+          "given": "Bernhard R."
+        },
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2015
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/8JRUMMRF",
+      "type": "chapter",
+      "call-number": "FS Veit 1",
+      "citation-key": "appelTextkategorienKompositorischenWerkstattdokumenten2016",
+      "container-title": "„Ei, dem alten Herrn zoll’ ich Achtung gern’“. Festschrift für Joachim Veit zum 60. Geburtstag",
+      "ISBN": "978-3-86906-842-8",
+      "language": "deutsch",
+      "page": "49–57",
+      "publisher": "Allitera",
+      "publisher-place": "München",
+      "source": "D-DTms",
+      "title": "Textkategorien in kompositorischen Werkstattdokumenten",
+      "author": [
+        {
+          "family": "Appel",
+          "given": "Bernhard R."
+        }
+      ],
+      "editor": [
+        {
+          "family": "Richts",
+          "given": "Kristina"
+        },
+        {
+          "family": "Stadler",
+          "given": "Peter"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/BN9MAVDS",
+      "type": "chapter",
+      "call-number": "FS Veit 1",
+      "citation-key": "hartwigSpurenDigitalenUeber2016",
+      "container-title": "„Ei, dem alten Herrn zoll’ ich Achtung gern’“. Festschrift für Joachim Veit zum 60. Geburtstag",
+      "ISBN": "978-3-86906-842-8",
+      "language": "deutsch",
+      "page": "319–330",
+      "publisher": "Allitera",
+      "publisher-place": "München",
+      "source": "D-DTms",
+      "title": "Die Spuren des Digitalen. Über die Nachnutzbarkeit digitaler Inhalte",
+      "author": [
+        {
+          "family": "Hartwig",
+          "given": "Maja"
+        },
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Richts",
+          "given": "Kristina"
+        },
+        {
+          "family": "Stadler",
+          "given": "Peter"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/4HQCDTFC",
+      "type": "chapter",
+      "call-number": "BJS 105",
+      "citation-key": "rovelliSkizzeneditionenBeethovenNutzen2015a",
+      "collection-title": "Beihefte zu editio",
+      "container-title": "Vom Nutzen der Editionen. Zur Bedeutung moderner Editorik für die Erforschung von Literatur- und Kulturgeschichte",
+      "ISBN": "978-3-11-040067-0",
+      "language": "deutsch",
+      "page": "297–311",
+      "publisher": "De Gruyter",
+      "publisher-place": "Berlin",
+      "source": "D-DT",
+      "title": "Skizzeneditionen zu Beethoven. Nutzen und Aufgaben im wissenschaftsgeschichtlichen Rückblick",
+      "volume": "39",
+      "author": [
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Bein",
+          "given": "Thomas"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2015
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/S8734VK8",
+      "type": "article-journal",
+      "citation-key": "coxBeethovensWerkstattGenetische2015",
+      "container-title": "Forum Musikbibliothek. Beiträge und Informationen aus der musikbibliothekarischen Praxis",
+      "issue": "2",
+      "language": "deutsch",
+      "page": "13–20",
+      "title": "Beethovens Werkstatt: Genetische Textkritik und Digitale Musikedition. Projektvorstellung",
+      "volume": "36",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        },
+        {
+          "family": "Hartwig",
+          "given": "Maja"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2015
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/SJB8MJPH",
+      "type": "chapter",
+      "call-number": "BMo 552 (2013)",
+      "citation-key": "veitEditionstechnikerHerausforderungenKuenftige2014",
+      "container-title": "Mozart-Jahrbuch 2013",
+      "language": "deutsch",
+      "page": "27-41",
+      "publisher-place": "Kassel",
+      "source": "D-DTms",
+      "title": "'Editionstechniker'? - Von den Herausforderungen an künftige Editionen und Editoren",
+      "author": [
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2014
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/VVGFN4YG",
+      "type": "article-journal",
+      "citation-key": "kepperWasIstDigitale2017",
+      "collection-title": "Musiktheorie. Zeitschrift für Musikwissenschaft",
+      "issue": "4",
+      "language": "deutsch",
+      "page": "347–363",
+      "title": "Was ist eine Digitale Edition? Versuch einer Positionsbestimmung zum Stand der Musikphilologie im Jahr 2017",
+      "volume": "32",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Pugin",
+          "given": "Laurent"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2017
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/BRNSHKP6",
+      "type": "article-journal",
+      "citation-key": "appelMusicComposedText2015",
+      "collection-title": "Genèses musicales",
+      "language": "englisch",
+      "page": "35–44",
+      "title": "Music as Composed Text. Reflections on the Content and Method of the “Critique Génétique” of Musical Works",
+      "author": [
+        {
+          "family": "Appel",
+          "given": "Bernhard R."
+        }
+      ],
+      "editor": [
+        {
+          "family": "Donin",
+          "given": "Nicolas"
+        },
+        {
+          "family": "Grésillon",
+          "given": "Almuth"
+        },
+        {
+          "family": "Lebrave",
+          "given": "Jean-Louis"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2015
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/U9MSD68S",
+      "type": "article-journal",
+      "citation-key": "rovelliAutographeSpurBeethovens2016",
+      "collection-title": "Bonner Beethoven Studien",
+      "language": "deutsch",
+      "page": "103–106",
+      "title": "Eine autographe Spur zu Beethovens 1. Symphonie op. 21",
+      "volume": "12",
+      "author": [
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/TV4WWR74",
+      "type": "article-journal",
+      "citation-key": "rovelliProgettiAbbandonatiEsercizi2018",
+      "collection-title": "Cara scientia mia, musica. Studi per Maria Caraci Vela",
+      "language": "italienisch",
+      "page": "447–460",
+      "title": "Progetti abbandonati, esercizi e letture beethoveniane tra il 1815 e il 1816",
+      "author": [
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Romagnoli",
+          "given": "Angela"
+        },
+        {
+          "family": "Sabaino",
+          "given": "Daniele"
+        },
+        {
+          "family": "Tibaldi",
+          "given": "Rodobaldo"
+        },
+        {
+          "family": "Zappalà",
+          "given": "Pietro"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2018
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/WSRMH9H3",
+      "type": "article-journal",
+      "citation-key": "rovelliRevisionsprozessBeethovensNiederschriften2017",
+      "collection-title": "Editio",
+      "DOI": "https://doi.org/10.1515/editio-2017-0007",
+      "ISSN": "0931-3079",
+      "issue": "1",
+      "language": "deutsch",
+      "page": "90–116",
+      "title": "Revisionsprozess in Beethovens Niederschriften der achten Symphonie op. 93",
+      "volume": "31",
+      "author": [
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2017
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/6JCQ2VKG",
+      "type": "article-journal",
+      "citation-key": "rovelliLaboratoriumArtificiosumRegard2016",
+      "collection-title": "Revue internationale de critique génétique",
+      "language": "französisch",
+      "page": "169–181",
+      "title": "“Laboratorium artificiosum”. Un regard dans l’atelier de Beethoven",
+      "URL": "http://www.academia.edu/30067144/_Laboratorium_artificiosum_._Un_regard_dans_l_atelier_de_Beethoven",
+      "volume": "42",
+      "author": [
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      }
+    }
+  ]
+}

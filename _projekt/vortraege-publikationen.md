@@ -368,69 +368,30 @@ parent_url: /projekt
 }
 
 .publikation-item {
-  padding: 1.1rem 0;
+  padding: 1rem 0 1.3rem;
   border-bottom: 1px solid #f0f0f0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
+}
+
+.publikation-item.hidden {
+  display: none;
 }
 
 .publikation-item:last-child {
   border-bottom: none;
 }
 
-.publikation-header {
+.pub-header {
   display: flex;
-  align-items: baseline;
-  gap: 0.75rem;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
 }
 
-.publikation-titel {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #333;
-  flex: 1;
-  min-width: 0;
-}
-
-.publikation-titel a {
-  color: #c93b22;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s ease;
-}
-
-.publikation-titel a:hover {
-  border-bottom-color: #c93b22;
-}
-
-.publikation-datum {
-  font-size: 0.9rem;
-  color: #666;
-  font-weight: 500;
-  flex-shrink: 0;
-}
-
-.publikation-autoren {
-  font-size: 0.92rem;
-  color: #555;
-}
-
-.publikation-meta-row {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  flex-wrap: wrap;
-  font-size: 0.9rem;
-  color: #666;
-}
-
-.pub-genre {
+.pub-type-badge {
   display: inline-block;
   background: #f0f0f0;
   color: #555;
-  padding: 0.2rem 0.55rem;
+  padding: 0.25rem 0.6rem;
   border-radius: 3px;
   font-size: 0.8rem;
   font-weight: 500;
@@ -438,41 +399,146 @@ parent_url: /projekt
   white-space: nowrap;
 }
 
-.pub-container {
+.pub-titel {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  color: #333;
+  line-height: 1.4;
+  flex: 1;
+  padding-right: 1rem;
+}
+
+.pub-titel a {
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px dotted #aaa;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.pub-titel a:hover {
+  color: #c93b22;
+  border-bottom-color: #c93b22;
+}
+
+.pub-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.pub-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 1rem;
+  align-items: baseline;
+}
+
+.pub-autoren {
   font-style: italic;
+  color: #333;
+  font-weight: 500;
+}
+
+.pub-citation-line {
+  display: block;
+  color: #555;
+  line-height: 1.55;
+}
+
+.pub-citation-line em {
+  font-style: italic;
+}
+
+.pub-doi-line {
+  font-size: 0.85rem;
   color: #666;
 }
 
-.pub-container::before {
-  content: "In: ";
-  font-style: normal;
+.pub-doi-line a {
+  color: #555;
+  text-decoration: none;
+  border-bottom: 1px solid #ddd;
+  transition: color 0.2s, border-color 0.2s;
 }
 
-.pub-ort {
-  color: #666;
+.pub-doi-line a:hover {
+  color: #c93b22;
+  border-bottom-color: #c93b22;
 }
 
-.pub-ort::before {
-  content: "· ";
-  color: #999;
+@media (min-width: 1200px) {
+  #publikationen-filters {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* Toggle Switch */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.toggle-slider {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: #ddd;
+  border-radius: 24px;
+  border: 1px solid #ccc;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.toggle-switch input:checked + .toggle-slider {
+  background: #c93b22;
+  border-color: #c93b22;
+}
+
+.toggle-slider::before {
+  content: '';
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  left: 2px;
+  bottom: 2px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.toggle-switch input:checked + .toggle-slider::before {
+  transform: translateX(20px);
+}
+
+.pub-website-badge {
+  color: #c93b22;
+  text-decoration: none;
+  font-size: 0.85rem;
+  border-bottom: 1px solid #f0c9c2;
+  transition: border-color 0.2s, color 0.2s;
+}
+.pub-website-badge:hover {
+  color: #a12e1a;
+  border-bottom-color: #c93b22;
 }
 
 .publikationen-count {
   margin: 1rem 0 0.5rem;
   font-size: 0.9rem;
   color: #666;
-}
-
-.pub-website-badge {
-  display: inline-block;
-  background: #f0f7f0;
-  color: #2e7d32;
-  padding: 0.15rem 0.5rem;
-  border-radius: 3px;
-  font-size: 0.75rem;
-  font-weight: 600;
-  border: 1px solid #c8e6c9;
-  flex-shrink: 0;
 }
 
 @media (max-width: 768px) {
@@ -769,8 +835,8 @@ parent_url: /projekt
     </div>
 
     <div class="filter-group">
-      <label for="pub-filter-genre">Typ:</label>
-      <select id="pub-filter-genre" onchange="filterPublikationen()">
+      <label for="pub-filter-type">Typ:</label>
+      <select id="pub-filter-type" onchange="filterPublikationen()">
         <option value="">Alle Typen</option>
       </select>
     </div>
@@ -789,10 +855,18 @@ parent_url: /projekt
       </select>
     </div>
 
+    <div class="filter-group">
+      <label>Auf dieser Website:</label>
+      <label class="toggle-switch" title="Nur Publikationen anzeigen, die auf dieser Website lesbar sind">
+        <input type="checkbox" id="pub-website-checkbox" onchange="toggleWebsiteFilter()">
+        <span class="toggle-slider"></span>
+      </label>
+    </div>
+
     <div class="filter-group search-group">
       <label for="search-publikationen">Suche:</label>
       <div class="search-container">
-        <input type="text" id="search-publikationen" placeholder="Titel oder Verlag durchsuchen..." oninput="filterPublikationen()">
+        <input type="text" id="search-publikationen" placeholder="Titel oder Zeitschrift/Band durchsuchen..." oninput="filterPublikationen()">
         <button type="button" class="search-clear" id="pub-search-clear" title="Suche löschen" onclick="clearPubSearch()">&times;</button>
       </div>
     </div>
@@ -802,67 +876,84 @@ parent_url: /projekt
 
   <!-- Publikationen Liste -->
   <div class="publikationen-liste">
-    {% if site.data.publikationen.publikationen.items %}
-      {% assign pub_items = site.data.publikationen.publikationen.items | sort: "issued.date-parts" | reverse %}
-      {% for pub in pub_items %}
+    {% if site.data.publikationen.items %}
+      {% for pub in site.data.publikationen.items %}
         {% assign pub_jahr = pub.issued.date-parts[0][0] %}
-        {% assign pub_monat = pub.issued.date-parts[0][1] | default: 1 %}
-        {% assign pub_tag = pub.issued.date-parts[0][2] | default: 1 %}
-        {% assign pub_sortkey = pub_jahr | times: 10000 | plus: pub_monat | times: 100 | plus: pub_tag %}
 
+        {% comment %}Type label{% endcomment %}
+        {% assign pub_type_label = "" %}
+        {% if pub.type == "article-journal" %}{% assign pub_type_label = "Zeitschriftenartikel" %}
+        {% elsif pub.type == "chapter" %}{% assign pub_type_label = "Buchbeitrag" %}
+        {% elsif pub.type == "book" %}{% assign pub_type_label = "Monografie" %}
+        {% elsif pub.type == "paper-conference" %}{% assign pub_type_label = "Konferenzbeitrag" %}
+        {% endif %}
+
+        {% comment %}DOI URL normalization{% endcomment %}
+        {% assign doi_url = "" %}
+        {% if pub.DOI %}
+          {% if pub.DOI contains "http" %}{% assign doi_url = pub.DOI %}
+          {% elsif pub.DOI contains "DOI: " %}{% assign doi_url = "https://doi.org/" | append: pub.DOI | remove: "DOI: " %}
+          {% else %}{% assign doi_url = "https://doi.org/" | append: pub.DOI %}
+          {% endif %}
+        {% endif %}
+
+        {% comment %}Website URL detection (starts with /){% endcomment %}
+        {% assign is_website = false %}
+        {% if pub.URL %}{% unless pub.URL contains "http" %}{% assign is_website = true %}{% endunless %}{% endif %}
+
+        {% comment %}Build autoren list for filter (nachname, vorname format; exclude "und weitere"){% endcomment %}
         {% assign pub_autoren_liste = "" %}
         {% for author in pub.author %}
-          {% assign pub_autoren_liste = pub_autoren_liste | append: author.family | append: ", " | append: author.given | append: "; " %}
+          {% unless author.family == "und weitere" %}
+            {% if author.given %}{% assign a_entry = author.family | append: ", " | append: author.given %}{% else %}{% assign a_entry = author.family %}{% endif %}
+            {% if pub_autoren_liste != "" %}{% assign pub_autoren_liste = pub_autoren_liste | append: "; " %}{% endif %}
+            {% assign pub_autoren_liste = pub_autoren_liste | append: a_entry %}
+          {% endunless %}
         {% endfor %}
 
         <div class="publikation-item"
              data-jahr="{{ pub_jahr }}"
-             data-genre="{{ pub.genre | escape }}"
+             data-type="{{ pub.type | escape }}"
              data-sprache="{{ pub.language | escape }}"
              data-autoren="{{ pub_autoren_liste | downcase | escape }}"
              data-titel="{{ pub.title | downcase | escape }}"
-             data-container="{{ pub.container-title | downcase | escape }}"
-             data-sortkey="{{ pub_sortkey }}">
+             data-container="{{ pub["container-title"] | downcase | escape }}"
+             data-website="{% if is_website %}true{% else %}false{% endif %}"
+             data-doi="{% if doi_url != "" %}true{% else %}false{% endif %}"
+             data-sortkey="{{ pub_jahr }}">
 
-          <div class="publikation-header">
-            <span class="publikation-titel">
-              {% if pub.URL %}
-                {% if pub.URL contains 'http' %}
-                  <a href="{{ pub.URL }}" target="_blank" rel="noopener noreferrer">{{ pub.title }}</a>
-                {% else %}
-                  <a href="{{ pub.URL }}">{{ pub.title }}</a>
-                {% endif %}
-                {% unless pub.URL contains 'http' %}
-                  <span class="pub-website-badge">auf dieser Website</span>
-                {% endunless %}
-              {% else %}
-                {{ pub.title }}
-              {% endif %}
-            </span>
-            <span class="publikation-datum">{% if pub_tag != 1 %}{{ pub_tag }}.{% endif %}{% if pub_monat != 1 %}{{ pub_monat }}.{% endif %}{{ pub_jahr }}</span>
+          <div class="pub-header">
+            <h3 class="pub-titel">{%- if pub.URL and pub.URL contains "http" and doi_url == "" %}<a href="{{ pub.URL }}" target="_blank" rel="noopener noreferrer">{{ pub.title }}</a>{%- elsif is_website %}<a href="{{ pub.URL }}">{{ pub.title }}</a>{%- else %}{{ pub.title }}{%- endif %}</h3>
+            {% if pub_type_label != "" %}<span class="pub-type-badge">{{ pub_type_label }}</span>{% endif %}
           </div>
 
-          <div class="publikation-autoren">
-            {% for author in pub.author %}
-              {% if author.given %}{{ author.given }} {{ author.family }}{% else %}{{ author.family }}{% endif %}{% unless forloop.last %}; {% endunless %}
-            {% endfor %}
-          </div>
+          <div class="pub-meta">
+            <div class="pub-meta-row">
+              <span class="pub-autoren">
+                {% for author in pub.author %}
+                  {% if author.family == "und weitere" %}
+                    u.a.
+                  {% else %}
+                    {% unless forloop.first %}, {% endunless %}{% if author.given %}{{ author.given }} {{ author.family }}{% else %}{{ author.family }}{% endif %}
+                  {% endif %}
+                {% endfor %}
+                {% unless pub.author.size > 0 %}{% for ed in pub.editor limit: 3 %}{% unless forloop.first %}, {% endunless %}{% if ed.given %}{{ ed.given }} {{ ed.family }}{% else %}{{ ed.family }}{% endif %}{% endfor %}{% if pub.editor.size > 0 %} (Hg.){% endif %}{% endunless %}
+              </span>
+            </div>
 
-          <div class="publikation-meta-row">
-            {% if pub.genre %}
-              <span class="pub-genre">{{ pub.genre }}</span>
+            <div class="pub-meta-row pub-citation-line">{%- if pub.type == "article-journal" -%}In: {%- if pub["container-title"] %} <em>{{ pub["container-title"] }}</em>{%- elsif pub["collection-title"] %} <em>{{ pub["collection-title"] }}</em>{%- endif %}{%- if pub.volume %}, Jg.&nbsp;{{ pub.volume }}{%- endif %}{%- if pub.issue %}, H.&nbsp;{{ pub.issue }}{%- endif %}{%- if pub.page %}, S.&nbsp;{{ pub.page }}{%- endif %} ({{ pub_jahr }}){%- elsif pub.type == "chapter" -%}In: {%- for ed in pub.editor limit: 3 %}{%- unless forloop.first %}, {%- endunless %}{%- if ed.given %} {{ ed.given }} {{ ed.family }}{%- else %} {{ ed.family }}{%- endif %}{%- endfor %}{%- if pub.editor.size > 3 %} u.a.{%- endif %}{%- if pub.editor.size > 0 %} (Hg.):{%- endif %}{%- if pub["container-title"] %} <em>{{ pub["container-title"] }}</em>{%- elsif pub["collection-title"] %} <em>{{ pub["collection-title"] }}</em>{%- endif %}{%- if pub["publisher-place"] %}. {{ pub["publisher-place"] }}{%- endif %}{%- if pub.page %}, S.&nbsp;{{ pub.page }}{%- endif %} ({{ pub_jahr }}){%- elsif pub.type == "book" -%}{%- if pub["publisher-place"] and pub.publisher %}{{ pub["publisher-place"] }}: {{ pub.publisher }}{%- elsif pub["publisher-place"] %}{{ pub["publisher-place"] }}{%- elsif pub.publisher %}{{ pub.publisher }}{%- endif %} ({{ pub_jahr }}){%- elsif pub.type == "paper-conference" -%}In: {%- if pub["container-title"] %} <em>{{ pub["container-title"] }}</em>{%- elsif pub["event-title"] %} <em>{{ pub["event-title"] }}</em>{%- endif %}{%- if pub["publisher-place"] %}. {{ pub["publisher-place"] }}{%- endif %}{%- if pub.page %}, S.&nbsp;{{ pub.page }}{%- endif %} ({{ pub_jahr }}){%- endif %}</div>
+
+            {% if is_website %}
+              <div class="pub-meta-row"><a href="{{ pub.URL }}" class="pub-website-badge">Auf dieser Website lesen &#8599;</a></div>
             {% endif %}
-            {% if pub.container-title %}
-              <span class="pub-container">{{ pub.container-title }}</span>
-            {% endif %}
-            {% if pub.publisher-place %}
-              <span class="pub-ort">{{ pub.publisher-place }}</span>
+            {% if doi_url != "" %}
+              <div class="pub-doi-line">DOI: <a href="{{ doi_url }}" target="_blank" rel="noopener noreferrer">{{ doi_url }}</a></div>
             {% endif %}
           </div>
         </div>
       {% endfor %}
     {% else %}
-      <p class="publikationen-placeholder">Publikationsdaten werden geladen, sobald <code>_data/publikationen/publikationen.json</code> verfügbar ist.</p>
+      <p>Publikationsdaten werden geladen, sobald <code>_data/publikationen.json</code> verfügbar ist.</p>
     {% endif %}
   </div>
 </div>
@@ -1019,6 +1110,20 @@ parent_url: /projekt
 </div>
 
 <script>
+// Gemeinsam genutzte Konstanten
+const teamMitglieder = new Set([
+  'appel', 'cox', 'greshake', 'herold', 'kepper', 'münzmay', 'rosendahl',
+  'sänger', 'seipelt', 'stremel', 'veit', 'voigt',
+  'saccomano', 'novara', 'mo', 'pauls', 'obert', 'markert', 'rovelli',
+  'hartwig', 'schlicht', 'zhang', 'scheffler'
+]);
+
+function capitalizeWords(str) {
+  return str.split(' ').map(w =>
+    w.split('-').map(p => p.charAt(0).toUpperCase() + p.slice(1)).join('-')
+  ).join(' ');
+}
+
 function switchToTab(tabName) {
   // Remove active class from all tabs
   document.querySelectorAll('.module-tab').forEach(tab => {
@@ -1118,15 +1223,6 @@ function populateFilterOptions() {
   const sprachen = new Set();
   const personen = new Set();
   
-  // Team-Mitglieder (aktuelle und ehemalige) - Nachnamen in Kleinbuchstaben für Matching
-  const teamMitglieder = new Set([
-    'appel', 'cox', 'greshake', 'herold', 'kepper', 'münzmay', 'rosendahl', 
-    'sänger', 'seipelt', 'stremel', 'veit', 'voigt',
-    // Ehemalige
-    'saccomano', 'novara', 'mo', 'pauls', 'obert', 'markert', 'rovelli', 
-    'hartwig', 'schlicht', 'zhang', 'scheffler'
-  ]);
-  
   vortraege.forEach(vortrag => {
     jahre.add(vortrag.dataset.jahr);
     if (vortrag.dataset.genre) genres.add(vortrag.dataset.genre);
@@ -1147,15 +1243,6 @@ function populateFilterOptions() {
       });
     }
   });
-  
-  // Hilfsfunktion: Ersten Buchstaben jedes Wortes großschreiben (auch bei Bindestrichen)
-  function capitalizeWords(str) {
-    return str.split(' ').map(word => 
-      word.split('-').map(part => 
-        part.charAt(0).toUpperCase() + part.slice(1)
-      ).join('-')
-    ).join(' ');
-  }
   
   // Populate Jahr filter (descending)
   const jahrSelect = document.getElementById('filter-jahr');
@@ -1183,7 +1270,7 @@ function populateFilterOptions() {
   Array.from(sprachen).sort().forEach(sprache => {
     const option = document.createElement('option');
     option.value = sprache;
-    option.textContent = capitalizeWords(sprache);
+    option.textContent = sprache;
     spracheSelect.appendChild(option);
   });
   
@@ -1215,22 +1302,6 @@ function updateFilterOptions() {
   const currentGenre = document.getElementById('filter-genre').value;
   const currentSprache = document.getElementById('filter-sprache').value;
   const currentPerson = document.getElementById('filter-person').value;
-  
-  // Team-Mitglieder (aktuelle und ehemalige)
-  const teamMitglieder = new Set([
-    'appel', 'cox', 'greshake', 'herold', 'kepper', 'münzmay', 'rosendahl', 
-    'sänger', 'seipelt', 'stremel', 'veit', 'voigt',
-    'saccomano', 'novara', 'mo', 'pauls', 'obert', 'markert', 'rovelli', 
-    'hartwig', 'schlicht', 'zhang', 'scheffler'
-  ]);
-  
-  function capitalizeWords(str) {
-    return str.split(' ').map(word => 
-      word.split('-').map(part => 
-        part.charAt(0).toUpperCase() + part.slice(1)
-      ).join('-')
-    ).join(' ');
-  }
   
   // Hilfsfunktion: Sammle Optionen für einen Filter, ignoriere dabei diesen Filter selbst
   function getOptionsForFilter(filterToUpdate) {
@@ -1304,7 +1375,7 @@ function updateFilterOptions() {
   spracheWerte.forEach(sprache => {
     const option = document.createElement('option');
     option.value = sprache;
-    option.textContent = capitalizeWords(sprache);
+    option.textContent = sprache;
     if (sprache === currentSprache) option.selected = true;
     spracheSelect.appendChild(option);
   });
@@ -1340,33 +1411,53 @@ function toggleVortraegeFilters() {
   }
 }
 
+// Publikationen Filter Toggle
+let pubFiltersVisible = true;
+
+function togglePublikationenFilters() {
+  const filters = document.getElementById('publikationen-filters');
+  const toggleBtn = document.getElementById('publikationen-filter-toggle');
+  if (filters && toggleBtn) {
+    pubFiltersVisible = !pubFiltersVisible;
+    filters.classList.toggle('collapsed', !pubFiltersVisible);
+    toggleBtn.classList.toggle('collapsed', !pubFiltersVisible);
+  }
+}
+
 // Handle page load with hash
 // Publikationen Filter Funktionalität
+let pubWebsiteFilterActive = false;
+
+function toggleWebsiteFilter() {
+  const cb = document.getElementById('pub-website-checkbox');
+  pubWebsiteFilterActive = cb ? cb.checked : false;
+  filterPublikationen();
+}
+
 function filterPublikationen() {
   const jahrFilter = document.getElementById('pub-filter-jahr').value;
-  const genreFilter = document.getElementById('pub-filter-genre').value;
+  const typeFilter = document.getElementById('pub-filter-type').value;
   const spracheFilter = document.getElementById('pub-filter-sprache').value;
   const personFilter = document.getElementById('pub-filter-person').value.toLowerCase();
   const searchTerm = document.getElementById('search-publikationen').value.toLowerCase();
 
   const clearBtn = document.getElementById('pub-search-clear');
-  if (clearBtn) {
-    clearBtn.classList.toggle('visible', !!searchTerm);
-  }
+  if (clearBtn) clearBtn.classList.toggle('visible', !!searchTerm);
 
   const items = document.querySelectorAll('.publikation-item');
   let visibleCount = 0;
 
   items.forEach(item => {
     const jahrMatch = !jahrFilter || item.dataset.jahr === jahrFilter;
-    const genreMatch = !genreFilter || item.dataset.genre === genreFilter;
+    const typeMatch = !typeFilter || item.dataset.type === typeFilter;
     const spracheMatch = !spracheFilter || item.dataset.sprache === spracheFilter;
     const personMatch = !personFilter || (item.dataset.autoren || '').includes(personFilter);
+    const zugangMatch = !pubWebsiteFilterActive || item.dataset.website === 'true';
     const searchMatch = !searchTerm ||
       (item.dataset.titel || '').includes(searchTerm) ||
       (item.dataset.container || '').includes(searchTerm);
 
-    const visible = jahrMatch && genreMatch && spracheMatch && personMatch && searchMatch;
+    const visible = jahrMatch && typeMatch && spracheMatch && personMatch && zugangMatch && searchMatch;
     item.classList.toggle('hidden', !visible);
     if (visible) visibleCount++;
   });
@@ -1392,16 +1483,30 @@ function sortPublikationen() {
 
 function populatePubFilterOptions() {
   const items = Array.from(document.querySelectorAll('.publikation-item'));
-  const jahre = [...new Set(items.map(i => i.dataset.jahr).filter(Boolean))].sort().reverse();
-  const genres = [...new Set(items.map(i => i.dataset.genre).filter(Boolean))].sort();
-  const sprachen = [...new Set(items.map(i => i.dataset.sprache).filter(Boolean))].sort();
-  const autorenSet = new Set();
-  items.forEach(item => {
-    (item.dataset.autoren || '').split('; ').forEach(a => { if (a.trim()) autorenSet.add(a.trim()); });
-  });
-  const personen = [...autorenSet].sort();
 
-  function fillSelect(id, options) {
+  const typeLabels = {
+    'article-journal': 'Zeitschriftenartikel',
+    'book': 'Monografie',
+    'chapter': 'Buchbeitrag',
+    'paper-conference': 'Konferenzbeitrag'
+  };
+
+  const jahre = [...new Set(items.map(i => i.dataset.jahr).filter(Boolean))].sort().reverse();
+  const typeKeys = [...new Set(items.map(i => i.dataset.type).filter(Boolean))].sort();
+  const sprachen = [...new Set(items.map(i => i.dataset.sprache).filter(Boolean))].sort();
+
+  const personenSet = new Set();
+  items.forEach(item => {
+    (item.dataset.autoren || '').split(';').forEach(a => {
+      const entry = a.trim();
+      if (!entry) return;
+      const nachname = entry.split(',')[0].trim().toLowerCase();
+      if (teamMitglieder.has(nachname)) personenSet.add(entry);
+    });
+  });
+  const personen = [...personenSet].sort();
+
+  function fillSelect(id, options, labelFn) {
     const sel = document.getElementById(id);
     if (!sel) return;
     const first = sel.options[0];
@@ -1409,15 +1514,19 @@ function populatePubFilterOptions() {
     sel.appendChild(first);
     options.forEach(val => {
       const opt = document.createElement('option');
-      opt.value = val;
-      opt.textContent = val;
+      opt.value = String(val);
+      opt.textContent = labelFn ? labelFn(String(val)) : String(val);
       sel.appendChild(opt);
     });
   }
+
   fillSelect('pub-filter-jahr', jahre);
-  fillSelect('pub-filter-genre', genres);
+  fillSelect('pub-filter-type', typeKeys, k => typeLabels[k] || k);
   fillSelect('pub-filter-sprache', sprachen);
-  fillSelect('pub-filter-person', personen);
+  fillSelect('pub-filter-person', personen, val => {
+    const parts = val.split(', ');
+    return `${capitalizeWords(parts[1] || '')} ${capitalizeWords(parts[0] || '')}`.trim();
+  });
 }
 
 function updatePubFilterOptions() {
@@ -1490,22 +1599,6 @@ function sortLehre() {
 function populateLehreFilterOptions() {
   const items = Array.from(document.querySelectorAll('.lehre-item'));
 
-  // Aktuelle und ehemalige Projektmitglieder (Nachnamen lowercase)
-  const teamMitglieder = new Set([
-    'appel', 'cox', 'greshake', 'herold', 'kepper', 'münzmay', 'rosendahl',
-    'sänger', 'seipelt', 'stremel', 'veit', 'voigt',
-    'saccomano', 'novara', 'mo', 'pauls', 'obert', 'markert', 'rovelli',
-    'hartwig', 'schlicht', 'zhang', 'scheffler'
-  ]);
-
-  // Hilfsfunktion: Ersten Buchstaben jedes Wortes großschreiben (auch Bindestriche)
-  function capitalizeWords(str) {
-    return str.split(' ').map(word =>
-      word.split('-').map(part => part.charAt(0).toUpperCase() + part.slice(1)).join('-')
-    ).join(' ');
-  }
-
-  // Collect all years within date ranges
   const jahreSet = new Set();
   items.forEach(item => {
     const start = parseInt(item.dataset.startjahr) || 0;
@@ -1594,13 +1687,7 @@ window.addEventListener('DOMContentLoaded', function() {
   // Setup filter toggle button — Publikationen
   const pubToggleBtn = document.getElementById('publikationen-filter-toggle');
   if (pubToggleBtn) {
-    pubToggleBtn.addEventListener('click', function() {
-      const filtersEl = document.getElementById('publikationen-filters');
-      if (!filtersEl) return;
-      const isHidden = filtersEl.style.display === 'none' || filtersEl.classList.contains('hidden');
-      filtersEl.style.display = isHidden ? '' : 'none';
-      pubToggleBtn.classList.toggle('active', isHidden);
-    });
+    pubToggleBtn.addEventListener('click', togglePublikationenFilters);
   }
 
   // Populate filter dropdowns and sort — Lehre
