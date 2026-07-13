@@ -16,6 +16,21 @@
       }
     },
     {
+      "id": "local/expertenkolloquium",
+      "type": "book",
+      "language": "deutsch",
+      "title": "Expertenkolloquium",
+      "URL": "/expertenkolloquium/",
+      "author": [],
+      "issued": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      }
+    },
+    {
       "id": "4185477/VE9IX9DF",
       "type": "book",
       "call-number": "BW0005 / MA 20 (3)",

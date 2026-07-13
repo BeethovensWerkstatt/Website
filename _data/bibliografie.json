@@ -1,0 +1,2870 @@
+{
+  "items": [
+    {
+      "id": "4185477/DNAYPHEY",
+      "type": "book",
+      "citation-key": "stingelinMirEkeltVor2004",
+      "collection-title": "Zur Genealogie des Schreibens",
+      "ISBN": "3-7705-3889-7",
+      "ISSN": "2366-6692",
+      "language": "deutsch",
+      "publisher": "Fink",
+      "publisher-place": "München",
+      "title": "\"Mir ekelt vor diesem tintenklecksenden Säkulum\". Schreibszenen im Zeitalter der Manuskripte",
+      "URL": "https://mdz-nbn-resolving.de/details:bsb00043029",
+      "volume": "1",
+      "editor": [
+        {
+          "family": "Stingelin",
+          "given": "Martin"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2004
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/XPNE42LH",
+      "type": "chapter",
+      "citation-key": "mauriacdyerEntziffernTranskribierenKartographieren2008",
+      "container-title": "Die Herkulesarbeiten der Philologie",
+      "language": "deutsch",
+      "page": "165-190",
+      "publisher": "Weidler",
+      "publisher-place": "Berlin",
+      "title": "Entziffern, transkribieren, kartographieren, verbinden. Proust oder das gezähmte Manuskript",
+      "author": [
+        {
+          "family": "Mauriac Dyer",
+          "given": "Nathalie"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2008
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/S8C5WIE2",
+      "type": "book",
+      "call-number": "Ml 1 / 2009 Kind",
+      "citation-key": "jonesGeneticCriticismCreative2009",
+      "ISBN": "1-58046-317-7",
+      "language": "englisch",
+      "number-of-pages": "235",
+      "publisher-place": "Rochester",
+      "source": "D-BNba",
+      "title": "Genetic Criticism and the Creative Process: Essays from Music, Literature, and Theater",
+      "editor": [
+        {
+          "family": "Jones",
+          "given": "Joseph E."
+        },
+        {
+          "family": "Kinderman",
+          "given": "William"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2009
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/QGGXWN8G",
+      "type": "chapter",
+      "citation-key": "holtmeierEmanuelAloysFoerster2011",
+      "container-title": "Im Schatten des Kunstwerks. Komponisten als Theoretiker in Wien vom 17. Jahrhundert bis Anfang des 19. Jahrhunderts",
+      "language": "deutsch",
+      "publisher": "Praesens Verlag",
+      "title": "Emanuel Aloys Förster und das Wiener Partimento. Zum Prinzip der besten Lage",
+      "author": [
+        {
+          "family": "Holtmeier",
+          "given": "Ludwig"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Torkewitz",
+          "given": "Dieter"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2011
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/ADMAGPIK",
+      "type": "book",
+      "call-number": "BJY1196",
+      "citation-key": "gisiSchreibenUndStreichen2011",
+      "ISBN": "978-3-8353-0850-3",
+      "language": "deutsch",
+      "number-of-pages": "360",
+      "publisher": "Wallstein",
+      "publisher-place": "Göttingen",
+      "source": "Universitätsbibliothek Paderborn DE-466",
+      "title": "Schreiben und Streichen. Zu einem Moment produktiver Negativität",
+      "editor": [
+        {
+          "family": "Gisi",
+          "given": "Lucas Marco"
+        },
+        {
+          "family": "Thüring",
+          "given": "Hubert"
+        },
+        {
+          "family": "Wirtz",
+          "given": "Irmgard M."
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2011,
+            11,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/4DUWUDWU",
+      "type": "chapter",
+      "citation-key": "henzelZurPraxisHandschriftenbeschreibung2015",
+      "container-title": "Zur Praxis der Handschriftenbeschreibung: Am Beispiel des Modells der historisch-kritischen Edition von Goethes Faust",
+      "DOI": "10.1515/9783110418255-008",
+      "ISBN": "978-3-11-041825-5",
+      "language": "deutsch",
+      "page": "75-96",
+      "publisher": "De Gruyter",
+      "shortTitle": "Zur Praxis der Handschriftenbeschreibung",
+      "source": "www.degruyter.com",
+      "title": "Zur Praxis der Handschriftenbeschreibung: Am Beispiel des Modells der historisch-kritischen Edition von Goethes Faust",
+      "title-short": "Zur Praxis der Handschriftenbeschreibung",
+      "URL": "https://www.degruyter.com/document/doi/10.1515/9783110418255-008/html",
+      "author": [
+        {
+          "family": "Henzel",
+          "given": "Katrin"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2022,
+            2,
+            23
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            10,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/ISEI2VWF",
+      "type": "chapter",
+      "citation-key": "rovelliCueStaffAnnotationsBeethovens2020",
+      "container-title": "The New Beethoven. Evolution, Analysis, Interpretation",
+      "language": "englisch",
+      "page": "448-465",
+      "publisher-place": "Rochester",
+      "title": "Cue-Staff Annotations in Beethoven’s Piano Works: Reflections and Examples from the Autograph of the Piano Sonata, Opus 101",
+      "author": [
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/ZMBH25MA",
+      "type": "book",
+      "citation-key": "durrJohannSebastianBach1997",
+      "language": "deutsch",
+      "title": "Johann Sebastian Bach. Seine Handschrift–Abbild seines Schaffens",
+      "author": [
+        {
+          "family": "Dürr",
+          "given": "Alfred"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1997
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/MW2QT4XM",
+      "type": "paper-conference",
+      "citation-key": "hankinsonMusicEncodingInitiative2011",
+      "event-title": "12th International Society for Music Information Retrieval Conference",
+      "language": "englisch",
+      "page": "293–298",
+      "publisher-place": "Miami",
+      "title": "The Music Encoding Initiative as a Document-Encoding Framework",
+      "URL": "https://archives.ismir.net/ismir2011/paper/000011.pdf",
+      "author": [
+        {
+          "family": "Hankinson",
+          "given": "Andrew"
+        },
+        {
+          "family": "Roland",
+          "given": "Perry"
+        },
+        {
+          "family": "Fujinaga",
+          "given": "Ichiro"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2011
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/9GZEBHH4",
+      "type": "chapter",
+      "citation-key": "winterSketchesOdeJoy1980",
+      "container-title": "Beethoven, performers, and critics: the International Beethoven Congress, Detroit, 1977",
+      "language": "englisch",
+      "page": "176-214",
+      "publisher": "Winter, Robert; Carr, Bruce",
+      "publisher-place": "Detroit",
+      "title": "The sketches for the \"Ode to Joy\"",
+      "author": [
+        {
+          "family": "Winter",
+          "given": "Robert"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1980
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/UN6J946Q",
+      "type": "article-journal",
+      "citation-key": "s.BeethovenHisCopyists1915",
+      "language": "englisch",
+      "page": "220-221",
+      "title": "Beethoven and his copyists",
+      "volume": "45",
+      "author": [
+        {
+          "family": "S.",
+          "given": "J. J."
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1915
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/M59N7TCG",
+      "type": "article-journal",
+      "citation-key": "kesslerRezensionChopinsKlavierkonzert1834",
+      "issue": "23",
+      "language": "deutsch",
+      "page": "89-91",
+      "title": "[Rezension von F. Chopins Klavierkonzert op.11, Préludes op. 31 und Bagatellen op. 30",
+      "volume": "5",
+      "author": [
+        {
+          "family": "Kessler",
+          "given": "J. C."
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1834,
+            6,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/KAKQQ7I3",
+      "type": "broadcast",
+      "citation-key": "morbachWieKomponiertenHaydn2006",
+      "language": "deutsch",
+      "publisher": "Kulturradio rbb",
+      "publisher-place": "Berlin",
+      "title": "Wie komponierten Haydn und Mozart? Der Weg zu einem neuen Verständnis der Wiener Klassik. Heinrich Christoph Koch „Versuch einer Anleitung zur Composition“. Ein Beitrag zum Mozart-Jahr 2006",
+      "author": [
+        {
+          "family": "Morbach",
+          "given": "Bernhard"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2006
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/9ISV7ACC",
+      "type": "book",
+      "citation-key": "rosaResonanzSoziologieWeltbeziehung2016",
+      "language": "deutsch",
+      "publisher-place": "Berlin",
+      "title": "Resonanz. Eine Soziologie der Weltbeziehung",
+      "author": [
+        {
+          "family": "Rosa",
+          "given": "Hartmut"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/3P4GBD3U",
+      "type": "book",
+      "citation-key": "menkeKraftKunst2013",
+      "language": "deutsch",
+      "publisher-place": "Berlin",
+      "title": "Die Kraft der Kunst",
+      "author": [
+        {
+          "family": "Menke",
+          "given": "Christoph"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2013
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/UV45N6GV",
+      "type": "broadcast",
+      "citation-key": "hoerischWertKunstOder2018",
+      "language": "deutsch",
+      "publisher": "SWR2",
+      "title": "Der Wert der Kunst oder Was leistet Kunst?",
+      "author": [
+        {
+          "family": "Hörisch",
+          "given": "Jochen"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            4,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/77BBWZV2",
+      "type": "book",
+      "citation-key": "hoerischKunstKapitalsUnd2011",
+      "language": "deutsch",
+      "publisher-place": "München",
+      "title": "Die Kunst des Kapitals und das Kapital der Kunst. Strukturen einer Affaire",
+      "author": [
+        {
+          "family": "Hörisch",
+          "given": "Jochen"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2011
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/JBDHU9GH",
+      "type": "book",
+      "citation-key": "heckerUntersuchungenSkizzenStreichquartett1956",
+      "language": "deutsch",
+      "publisher-place": "Freiburg im Breisgau",
+      "title": "Untersuchungen an den Skizzen zum Streichquartett cis-moll op. 131 von Beethoven",
+      "author": [
+        {
+          "family": "Hecker",
+          "given": "Joachim von"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1956
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/GJQ2PSWP",
+      "type": "book",
+      "citation-key": "gumbrechtMachtPhilologieUeber2003",
+      "language": "deutsch",
+      "publisher-place": "Frankfurt am Main",
+      "title": "Die Macht der Philologie. Über einen verborgenen Impuls im wissenschaftlichen Umgang mit Texten",
+      "author": [
+        {
+          "family": "Gumbrecht",
+          "given": "Hans Ulrich"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2003
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/PXN2BRUH",
+      "type": "chapter",
+      "citation-key": "brandenburgBeethovensErsteEntwuerfe1971a",
+      "container-title": "Bericht über den Internationalen Musikwissenschaftlichen Kongress Bonn 1970",
+      "language": "deutsch",
+      "publisher": "Dahlhaus, Carl; Marx, H. J.; Marx-Weber, M.; Massenkeil Günther",
+      "publisher-place": "Kassel u.a.",
+      "title": "Beethovens „Erste Entwürfe“ zu Variationenzyklen",
+      "author": [
+        {
+          "family": "Brandenburg",
+          "given": "Sieghard"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1971
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/DVYP7HFT",
+      "type": "chapter",
+      "citation-key": "roloffZurRelevanzVarianten1992",
+      "collection-title": "Beihefte zu Edition",
+      "container-title": "Probleme der Edition von Texten der frühen Neuzeit. Beiträge zur Arbeitstagung der Kommission für die Edition von Texten der frühen Neuzeit",
+      "DOI": "10.1515/9783110946932.2",
+      "ISBN": "978-3-11-094693-2",
+      "language": "deutsch",
+      "page": "2-14",
+      "publisher": "Max Niemeyer Verlag",
+      "publisher-place": "Tübingen",
+      "title": "Zur Relevanz von Varianten und Lesarten",
+      "URL": "https://www.degruyter.com/document/doi/10.1515/9783110946932.2/html",
+      "volume": "3",
+      "author": [
+        {
+          "family": "Roloff",
+          "given": "Hans-Gert"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2022,
+            3,
+            1
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            1992
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/R28NVUQF",
+      "type": "book",
+      "call-number": "BW0006",
+      "citation-key": "owensComposersWorkCraft1997",
+      "ISBN": "978-0-19-512904-5",
+      "language": "englisch",
+      "number-of-pages": "368",
+      "publisher": "Oxford University Press",
+      "publisher-place": "Oxford",
+      "source": "D-BNba",
+      "title": "Composers at Work. The Craft of Musical Composition, 1450-1600",
+      "author": [
+        {
+          "family": "Owens",
+          "given": "Jessie Ann"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1997
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/Z9A5H5YN",
+      "type": "article-journal",
+      "abstract": "Article Entstehung und Emendation von Textfehlern was published on December 31, 1991 in the journal editio (volume 5, issue 1991).",
+      "citation-key": "woeslerEntstehungUndEmendation1991",
+      "container-title": "Editio",
+      "DOI": "10.1515/9783110241969.55",
+      "ISSN": "1865-9446",
+      "issue": "1991",
+      "language": "englisch",
+      "page": "55-75",
+      "publisher": "De Gruyter",
+      "section": "editio",
+      "title": "Entstehung und Emendation von Textfehlern",
+      "URL": "https://www.degruyter.com/document/doi/10.1515/9783110241969.55/html",
+      "volume": "5",
+      "author": [
+        {
+          "family": "Woesler",
+          "given": "Winfried"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2022,
+            3,
+            3
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            1991
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/KJPWZWKY",
+      "type": "book",
+      "call-number": "Nl 1 / 1838 Wege 2012",
+      "citation-key": "wegelerBiographischeNotizenUeber2012",
+      "ISBN": "978-3-00-039547-5",
+      "language": "deutsch",
+      "publisher": "FRG",
+      "publisher-place": "Bonn",
+      "source": "D-BNba",
+      "title": "Biographische Notizen über Ludwig van Beethoven",
+      "author": [
+        {
+          "family": "Wegeler",
+          "given": "Franz Gerhard"
+        },
+        {
+          "family": "Ries",
+          "given": "Ferdinand"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Ferdinand Ries Gesellschaft Bonn",
+          "given": ""
+        },
+        {
+          "family": "Julius Wegeler Familienstiftung",
+          "given": ""
+        },
+        {
+          "family": "Landschaftsverband Rheinland",
+          "given": ""
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2012
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/5IQWH5HJ",
+      "type": "book",
+      "call-number": "KGP 114",
+      "citation-key": "veitDigitaleEditionZwischen2009",
+      "collection-number": "31",
+      "collection-title": "Beihefte zu editio",
+      "ISBN": "978-3-11-023113-7",
+      "language": "deutsch",
+      "number-of-pages": "322",
+      "publisher": "Niemeyer",
+      "publisher-place": "Tübingen",
+      "source": "D-DT",
+      "title": "Digitale Edition zwischen Experiment und Standardisierung. Musik - Text - Codierung. Beiträge der Internationalen Tagung im Heinz Nixdorf Museumsforum Paderborn, 6.-8. Dezember 2007",
+      "editor": [
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        },
+        {
+          "family": "Stadler",
+          "given": "Peter"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2009
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/MYKV7M47",
+      "type": "chapter",
+      "citation-key": "vanderlindeBeethovenAlsKorrekturleser2004",
+      "container-title": "Beethovens Werke für Klavier und Violoncello. Bericht über die Internationale Fachkonferenz Bonn, 18.–20. Juni 1998",
+      "language": "deutsch",
+      "publisher": "Verlag Beethoven-Haus",
+      "publisher-place": "Bonn",
+      "title": "Beethoven als Korrekturleser. Die Plattenkorrekturen in den Erstausgaben der Sonaten op. 5 und anderer Cellowerke",
+      "author": [
+        {
+          "family": "van der Linde",
+          "given": "Bernard"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2004
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/LXDMV2L9",
+      "type": "book",
+      "call-number": "HCB Nm 11 / 1926 Unge Nm 11 / 1926 Unge No 27 / 4 Sammlung H. C. Bodmer",
+      "citation-key": "ungerBeethovensHandschrift1926",
+      "language": "deutsch",
+      "number-of-pages": "32",
+      "publisher": "Verlag des Beethovenhauses",
+      "publisher-place": "Bonn",
+      "source": "D-BNba",
+      "title": "Beethovens Handschrift",
+      "author": [
+        {
+          "family": "Unger",
+          "given": "Max"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1926
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/59569VDI",
+      "type": "book",
+      "call-number": "Nc 2 / 1973 Tyso",
+      "citation-key": "tysonBeethovenStudies1973",
+      "language": "englisch",
+      "number-of-volumes": "4",
+      "publisher": "W. W. Norton, Cambridge University Press",
+      "publisher-place": "New York, Cambridge (Bd. 4)",
+      "source": "D-BNba",
+      "title": "Beethoven studies",
+      "editor": [
+        {
+          "family": "Tyson",
+          "given": "Alan"
+        },
+        {
+          "family": "Chapin",
+          "given": "Keith"
+        },
+        {
+          "family": "Jones",
+          "given": "David Wyn"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            "1973"
+          ]
+        ],
+        "season": "2020"
+      }
+    },
+    {
+      "id": "4185477/7KBMKBNF",
+      "type": "article-journal",
+      "citation-key": "tysonBeethovenSteinersShop1962",
+      "container-title": "The Music Review",
+      "issue": "2",
+      "language": "englisch",
+      "page": "119-127",
+      "title": "Beethoven in Steiner's Shop",
+      "volume": "23",
+      "author": [
+        {
+          "family": "Tyson",
+          "given": "Alan"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            "1962"
+          ]
+        ],
+        "season": "Mai"
+      }
+    },
+    {
+      "id": "4185477/IGICZ48J",
+      "type": "chapter",
+      "citation-key": "riesDigitaleDossierGenetique2016",
+      "collection-title": "Beihefte zu Editio",
+      "container-title": "Textgenese und digitales Edieren. Wolfgang Koeppens „Jugend“ im Kontext der Editionsphilologie",
+      "DOI": "10.1515/9783110470307-005",
+      "ISBN": "978-3-11-047030-7",
+      "language": "deutsch",
+      "page": "57-84",
+      "publisher": "De Gruyter",
+      "publisher-place": "Berlin",
+      "title": "Das digitale \"dossier génétique\". Überlegungen zu Rekonstruktion und Edition digitaler Schreibprozesse anhand von Beispielen aus dem Thomas Kling Archiv",
+      "URL": "https://www.degruyter.com/document/doi/10.1515/9783110470307-005/html",
+      "volume": "40",
+      "author": [
+        {
+          "family": "Ries",
+          "given": "Thorsten"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2022,
+            3,
+            1
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/CXPYYJZB",
+      "type": "book",
+      "citation-key": "plachtaHerkulesarbeitenPhilologie2008",
+      "ISBN": "3-89693-509-7",
+      "language": "deutsch",
+      "publisher": "Weidler",
+      "publisher-place": "Berlin",
+      "title": "Die Herkulesarbeiten der Philologie",
+      "author": [
+        {
+          "family": "Plachta",
+          "given": "Bodo"
+        },
+        {
+          "family": "Bertho",
+          "given": "Sophie"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2008
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/EMLZM865",
+      "type": "book",
+      "call-number": "2020/1133",
+      "citation-key": "plachtaEditionswissenschaftHandbuchGeschichte2020",
+      "ISBN": "978-3-7772-2008-6",
+      "language": "deutsch",
+      "publisher": "Anton Hiersemann, Firma",
+      "source": "D-BNu",
+      "title": "Editionswissenschaft. Handbuch zu Geschichte, Methode und Praxis der neugermanistischen Edition.",
+      "author": [
+        {
+          "family": "Plachta",
+          "given": "Bodo"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/BBKBPGY4",
+      "type": "chapter",
+      "citation-key": "nutt-kofothVarianteLesartKorrektur2002",
+      "container-title": "Perspectives of Scolarly Editing. Perspektiven der Textedition",
+      "language": "deutsch",
+      "page": "29-45",
+      "publisher": "Weidler",
+      "publisher-place": "Berlin",
+      "title": "Variante, Lesart, Korrektur oder Änderung? Zur Terminologie und Editionspraxis in der Neugermanistik",
+      "author": [
+        {
+          "family": "Nutt-Kofoth",
+          "given": "Rüdiger"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2002
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/S49SHWV8",
+      "type": "article-journal",
+      "citation-key": "nutt-kofothTextgeneseUeberlegungenFunktion2005",
+      "container-title": "Jahrbuch für internationale Germanistik",
+      "ISSN": "0449-5233",
+      "issue": "1",
+      "language": "deutsch",
+      "page": "97-122",
+      "shortTitle": "Textgenese",
+      "title": "Textgenese. Überlegungen zu Funktion und Perspektive eines editorischen Aufgabengebiets",
+      "title-short": "Textgenese",
+      "volume": "37",
+      "author": [
+        {
+          "family": "Nutt-Kofoth",
+          "given": "Rüdiger"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2005
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/PFI7KDT9",
+      "type": "chapter",
+      "citation-key": "nutt-kofothSchreibenUndLesen2000",
+      "container-title": "Text und Edition: Positionen und Perspektiven",
+      "language": "deutsch",
+      "page": "165-202",
+      "publisher": "Schmidt",
+      "shortTitle": "Schreiben und Lesen",
+      "title": "Schreiben und Lesen: Für eine produktions- und rezeptionsorientierte Präsentation des Werktextes in der Edition",
+      "title-short": "Schreiben und Lesen",
+      "author": [
+        {
+          "family": "Nutt-Kofoth",
+          "given": "Rüdiger"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2000,
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/G9ZMFIXQ",
+      "type": "chapter",
+      "call-number": "2010/5137",
+      "citation-key": "nutt-kofothTextgeneseUndTextkritik2010",
+      "container-title": "Konjektur und Krux. Zur Methodenpolitik der Philologie",
+      "language": "deutsch",
+      "page": "207–220",
+      "publisher": "Wallstein",
+      "publisher-place": "Göttingen",
+      "source": "D-BNu",
+      "title": "Textgenese und Textkritik. Zur Relevanz konjekturaler Verfahren bei der Repräsentation von Textentwicklung und Schreibprozess – mit einer terminologischen Perspektive",
+      "author": [
+        {
+          "family": "Nutt-Kofoth",
+          "given": "Rüdiger"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2010
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/XLU3F3JA",
+      "type": "book",
+      "call-number": "No 284 / 2 Nm 12 / 1957 Mies Grundmann Nm 12 / 1957 Mies Sammlung Herbert Grundmann",
+      "citation-key": "miesTextkritischeUntersuchungenBei1957",
+      "language": "deutsch",
+      "number-of-pages": "204",
+      "publisher": "G. Henle Verlag",
+      "publisher-place": "Duisburg",
+      "source": "D-BNba",
+      "title": "Textkritische Untersuchungen bei Beethoven",
+      "author": [
+        {
+          "family": "Mies",
+          "given": "Paul"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1957
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/4D9SMXAY",
+      "type": "chapter",
+      "abstract": "Genetische Textkritik und Edition in Frankreich was published in Philologie und Philosophie on page 113.",
+      "citation-key": "lebraveGenetischeTextkritikUnd2012",
+      "container-title": "Genetische Textkritik und Edition in Frankreich",
+      "DOI": "10.1515/9783110939989.113",
+      "ISBN": "978-3-11-093998-9",
+      "language": "deutsch",
+      "page": "113-121",
+      "publisher": "Max Niemeyer Verlag",
+      "source": "www.degruyter.com",
+      "title": "Genetische Textkritik und Edition in Frankreich",
+      "URL": "https://www.degruyter.com/document/doi/10.1515/9783110939989.113/html",
+      "author": [
+        {
+          "family": "Lebrave",
+          "given": "Jean-Louis"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2022,
+            2,
+            24
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2012,
+            1,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/BXLGW2HA",
+      "type": "article-journal",
+      "call-number": "2005/973",
+      "citation-key": "hayTexteNexistePas1985",
+      "container-title": "Poétique",
+      "issue": "62",
+      "language": "französisch",
+      "page": "147-158",
+      "source": "D-BNu",
+      "title": "\"Le texte n'existe pas\". Réflexions sur la critique génétique",
+      "volume": "16",
+      "author": [
+        {
+          "family": "Hay",
+          "given": "Louis"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1985
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/DZR7QQ5S",
+      "type": "book",
+      "abstract": "Für die Ausstellung im Schiller-Nationalmuseum zwischen September und Dezember 1994. - Mit einem Essay von Peter Härtling über Dichter und ihre Schreibgeräte: Federleicht und doch etwas schwerer",
+      "call-number": "R2020 8 4322",
+      "citation-key": "fischerVomSchreiben21994",
+      "ISBN": "978-3-929146-21-9",
+      "language": "deutsch",
+      "number-of-pages": "88",
+      "publisher": "Deutsche Schillergesellschaft",
+      "publisher-place": "Marbach am Neckar",
+      "shortTitle": "Vom Schreiben 2 Der Gänsekiel oder Womit schreiben?",
+      "source": "D-Dl",
+      "title": "Vom Schreiben 2. Der Gänsekiel oder Womit schreiben?",
+      "title-short": "Vom Schreiben 2 Der Gänsekiel oder Womit schreiben?",
+      "author": [
+        {
+          "family": "Fischer",
+          "given": "Sabine"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Härtling",
+          "given": "Peter"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1994
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/T68C5QF6",
+      "type": "book",
+      "call-number": "Nb 2 / 1955 Kins 2014",
+      "citation-key": "dorfmuellerLudwigVanBeethoven2014",
+      "ISBN": "978-3-87328-153-0",
+      "language": "deutsch",
+      "publisher": "G. Henle Verlag",
+      "publisher-place": "München",
+      "source": "D-BNba",
+      "title": "Ludwig van Beethoven, thematisch-bibliographisches Werkverzeichnis",
+      "author": [
+        {
+          "family": "Dorfmüller",
+          "given": "Kurt"
+        },
+        {
+          "family": "Gertsch",
+          "given": "Norbert"
+        },
+        {
+          "family": "Ronge",
+          "given": "Julia"
+        }
+      ],
+      "contributor": [
+        {
+          "family": "Haberkamp",
+          "given": "Gertraut"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2014
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/97MER7C7",
+      "type": "chapter",
+      "call-number": "Ahp 11",
+      "citation-key": "campeSchreibszeneSchreiben1991",
+      "container-title": "Paradoxien, Dissonanzen, Zusammenbrüche. Situationen offener Epistemologie",
+      "language": "deutsch",
+      "page": "722-759",
+      "publisher": "Suhrkamp",
+      "publisher-place": "Frankfurt am Main",
+      "source": "D-BNu",
+      "title": "Die Schreibszene, Schreiben",
+      "author": [
+        {
+          "family": "Campe",
+          "given": "Rüdiger"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1991
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/B4SA7JUM",
+      "type": "book",
+      "abstract": "To represent the genesis of literary texts, and thus their third, temporal dimension, strains the limits of the two-dimensional book. Thanks to digitalization, hyperlink structures, and new image and text processes, it is now possible to visually and experientially reveal the temporal dimension of texts, and thereby design them to be significantly more user-friendly. These are the challenges of digital and hybrid publishing.",
+      "call-number": "Ag 1715 (B,45)",
+      "citation-key": "bosseTextgeneseDigitalenEdition2019",
+      "DOI": "10.1515/9783110575996",
+      "ISBN": "978-3-11-057599-6",
+      "language": "deutsch",
+      "publisher": "De Gruyter",
+      "source": "D-BNu",
+      "title": "Textgenese in der digitalen Edition",
+      "URL": "https://www.degruyter.com/document/doi/10.1515/9783110575996/html",
+      "editor": [
+        {
+          "family": "Bosse",
+          "given": "Anke"
+        },
+        {
+          "family": "Fanta",
+          "given": "Walter"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2022,
+            2,
+            11
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/KFU2T8KL",
+      "type": "book",
+      "call-number": "Nd 11 / 1996 Bran",
+      "citation-key": "beethovenBriefwechselGesamtausgabe1996",
+      "language": "englisch",
+      "number-of-volumes": "7",
+      "publisher": "G. Henle Verlag",
+      "publisher-place": "München",
+      "source": "D-BNba",
+      "title": "Briefwechsel : Gesamtausgabe",
+      "author": [
+        {
+          "family": "Beethoven",
+          "given": "Ludwig van"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            "1996"
+          ]
+        ],
+        "season": "1998"
+      }
+    },
+    {
+      "id": "4185477/79Y52ZZS",
+      "type": "book",
+      "call-number": "Nd 21 / 1968 Staa",
+      "citation-key": "beethovenLudwigVanBeethovens1972",
+      "language": "deutsch",
+      "number-of-volumes": "Bd. 1-11",
+      "publisher": "Deutscher Verlag für Musik",
+      "publisher-place": "Leipzig",
+      "source": "D-BNba",
+      "title": "Ludwig van Beethovens Konversationshefte",
+      "author": [
+        {
+          "family": "Beethoven",
+          "given": "Ludwig van"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            "1972"
+          ]
+        ],
+        "season": "2001"
+      }
+    },
+    {
+      "id": "4185477/FG8EF34F",
+      "type": "book",
+      "call-number": "BBe 296",
+      "citation-key": "johnsonBeethovenSketchbooksHistoryReconstruction1985",
+      "ISBN": "0-19-315313-0",
+      "language": "englisch",
+      "number-of-pages": "611",
+      "publisher-place": "Oxford",
+      "source": "D-DTms",
+      "title": "The Beethoven-Sketchbooks. History – Reconstruction – Inventory",
+      "editor": [
+        {
+          "family": "Johnson",
+          "given": "Douglas"
+        },
+        {
+          "family": "Tyson",
+          "given": "Alan"
+        },
+        {
+          "family": "Winter",
+          "given": "Robert"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1985
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/58IICLXS",
+      "type": "book",
+      "citation-key": "thayerLudwigVanBeethovens1910",
+      "language": "deutsch",
+      "publisher": "Breitkopf & Härtel",
+      "publisher-place": "Leipzig",
+      "title": "Ludwig van Beethovens Leben",
+      "volume": "2",
+      "author": [
+        {
+          "family": "Thayer",
+          "given": "Alexander Wheelock"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1910
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/WS54BSCE",
+      "type": "book",
+      "citation-key": "nottebohmBeethovenianaAufsaetzeUnd1872",
+      "language": "deutsch",
+      "publisher": "J. Rieter-Biedermann",
+      "publisher-place": "Leipzig und Winterthur",
+      "title": "Beethoveniana - Aufsätze und Mitteilungen",
+      "author": [
+        {
+          "family": "Nottebohm",
+          "given": "Gustav"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1872
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/PSUL69NS",
+      "type": "book",
+      "call-number": "Nm 1 / 1872 Nott 1970",
+      "citation-key": "nottebohmBeethoveniana1970",
+      "language": "deutsch",
+      "publisher-place": "London",
+      "source": "D-BNba",
+      "title": "Beethoveniana.",
+      "author": [
+        {
+          "family": "Nottebohm",
+          "given": "Gustav"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1970
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/RVJVF6QL",
+      "type": "book",
+      "citation-key": "nottebohmZweiteBeethovenianaNachgelassene1887",
+      "language": "deutsch",
+      "publisher": "J. Rieter-Biedermann",
+      "publisher-place": "Leipzig",
+      "title": "Zweite Beethoveniana. Nachgelassene Aufsätze von Gustav Nottebohm",
+      "author": [
+        {
+          "family": "Nottebohm",
+          "given": "Gustav"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1887
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/KFTXP57M",
+      "type": "chapter",
+      "abstract": "This paper describes the limitations of critical editions of music in book format, and presents an abstract, generic model for digital critical editions to overcome these limitations. Such an edition can be imagined as a collection of digitised and enriched source materials, modelled in a multidimensional space. At the user's request, two-dimensional slices through this space are generated that may correspond to certain stages in the work's transmission history or to an editor's interpretation of the work, or they may visualise the transmission process itself. Four case studies illustrate this model and indicate how it may help solve problems encountered in traditional scholarly editions. Unlike in literary studies, the implications of ICT developments for critical editions have hardly been debated in musicology. This paper is also meant to serve as a starting-point for such a debate.",
+      "citation-key": "wieringDigitalCriticalEditions2012",
+      "container-title": "Modern Methods for Musicology: Prospects, Proposals, and Realities",
+      "language": "englisch",
+      "page": "23-46",
+      "publisher-place": "Franham",
+      "title": "Digital Critical Editions of Music: A Multidimensional Model",
+      "URL": "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.504.7740&rep=rep1&type=pdf",
+      "author": [
+        {
+          "family": "Wiering",
+          "given": "Frans"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Crawford",
+          "given": "Tim"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2012
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/X48M6ATV",
+      "type": "book",
+      "call-number": "N 519 a",
+      "citation-key": "selfridge-fieldMidiHandbookMusical1997",
+      "ISBN": "978-0-262-19394-8",
+      "language": "englisch",
+      "number-of-pages": "630",
+      "publisher": "The MIT Press",
+      "publisher-place": "Cambridge, Mass.",
+      "source": "D-DTms",
+      "title": "Beyond Midi. The handbook of musical codes",
+      "author": [
+        {
+          "family": "Selfridge-Field",
+          "given": "Eleanor"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1997
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/FUJ96S3K",
+      "type": "book",
+      "call-number": "N 536 (1) - (3)",
+      "citation-key": "sahleDigitaleEditionsformenUmgang2013",
+      "collection-number": "7–9",
+      "collection-title": "Schriften des Instituts für Dokumentologie und Editorik",
+      "language": "deutsch",
+      "publisher-place": "Norderstedt",
+      "source": "D-DTms",
+      "title": "Digitale Editionsformen. Zum Umgang mit der Überlieferung unter den Bedingungen des Medienwandels",
+      "volume": "1-3",
+      "author": [
+        {
+          "family": "Sahle",
+          "given": "Patrick"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2013
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/CKZR6BI4",
+      "type": "book",
+      "call-number": "N 12",
+      "citation-key": "readMusicNotationManual1979",
+      "ISBN": "978-0-8008-5453-9",
+      "language": "englisch",
+      "number-of-pages": "368",
+      "publisher-place": "New York",
+      "source": "D-DTms",
+      "title": "Music Notation: A Manual of Modern Practice",
+      "author": [
+        {
+          "family": "Read",
+          "given": "Gardner"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1979
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/DS8GSSQI",
+      "type": "book",
+      "abstract": "Die Keimzelle der Musikwissenschaft als geisteswissenschaftlicher Disziplin liegt in den Bemühungen des 19. Jahrhunderts, die Werke herausragender Komponisten zu konservieren und einer breiteren Öffentlichkeit zu erschließen. In diesem Umfeld erschien im Jahr 1851 der erste Band der Bach-Gesamtausgabe, herausgegeben von der Leipziger Bachgesellschaft. Alle nachfolgenden Musiker-Ausgaben entwickelten sich auf dieser Basis und reizten die Möglichkeiten des Buchmediums in zunehmenden Maße aus. Seit etwa zehn Jahren wird versucht, das Potential digitaler Medien für die Musikphilologie zu erschließen. Ausgehend von der Geschichte musikwissenschaftlicher Ausgaben und einer kritischen Reflektion des bisher Geleisteten, weist dieser Band mögliche neue Perspektiven für zukünftige, dem neuen Medium angemessene Editionsformen auf.",
+      "call-number": "KGP 115",
+      "citation-key": "kepperMusikeditionImZeichen2011",
+      "ISBN": "978-3-8448-0076-0",
+      "language": "deutsch",
+      "number-of-pages": "416",
+      "publisher-place": "Norderstedt",
+      "source": "D-DT",
+      "title": "Musikedition im Zeichen neuer Medien – Historische Entwicklung und gegenwärtige Perspektiven musikalischer Gesamtausgaben",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2011
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/JUUBJDM7",
+      "type": "document",
+      "citation-key": "DigitalHumanities20202014",
+      "language": "deutsch",
+      "title": "Digital Humanities 2020, Thesen, vorgelegt vom Verband DHd zur 1. Jahrestagung der DHd 2014 in Passau",
+      "URL": "http://dig-hum.de/thesen-digital-humanities-2020",
+      "issued": {
+        "date-parts": [
+          [
+            2014
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/U924KK33",
+      "type": "article-journal",
+      "citation-key": "hayUeberEntstehungTexten1987",
+      "collection-title": "Zeitschrift für Literaturwissenschaft und Linguistik",
+      "issue": "17",
+      "language": "deutsch",
+      "page": "9–20",
+      "title": "Über die Entstehung von Texten und Theorien",
+      "volume": "68",
+      "author": [
+        {
+          "family": "Hay",
+          "given": "Louis"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1987
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/CT7VHHHC",
+      "type": "chapter",
+      "citation-key": "gresillonErfahrungenMitTextgenese2014",
+      "collection-title": "Beihefte zu editio",
+      "container-title": "Text - Material - Medium. Zur Relevanz editorischer Dokumentationen für die literaturwissenschaftliche Interpretation",
+      "ISBN": "978-3-11-036440-8",
+      "language": "deutsch",
+      "page": "67–79",
+      "publisher-place": "Berlin",
+      "title": "Erfahrungen mit Textgenese, ‘critique génétique’ und Interpretation",
+      "volume": "37",
+      "author": [
+        {
+          "family": "Grésillon",
+          "given": "Almuth"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Lukas",
+          "given": "Wolfgang"
+        },
+        {
+          "family": "Nutt-Kofoth",
+          "given": "Rüdiger"
+        },
+        {
+          "family": "Podewski",
+          "given": "Madleen"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2014
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/AABNAFKX",
+      "type": "article-journal",
+      "citation-key": "zwerschinaEditorischeEinheitTextstufe1998",
+      "collection-title": "Textgenetische Edition",
+      "language": "deutsch",
+      "page": "177–193",
+      "title": "Die editorische Einheit \"Textstufe“",
+      "volume": "10",
+      "editor": [
+        {
+          "family": "Zeller",
+          "given": "Hans"
+        },
+        {
+          "family": "Martens",
+          "given": "Gunter"
+        }
+      ],
+      "author": [
+        {
+          "family": "Zwerschina",
+          "given": "Hermann"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1998
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/LTDPKBEN",
+      "type": "book",
+      "call-number": "ES 680 Z28",
+      "citation-key": "zanettiSchreibenAlsKulturtechnik2012",
+      "ISBN": "978-3-518-29637-0",
+      "language": "deutsch",
+      "publisher": "Suhrkamp",
+      "publisher-place": "Frankfurt am Main",
+      "source": "D-BNu",
+      "title": "Schreiben als Kulturtechnik. Grundlagentexte",
+      "editor": [
+        {
+          "family": "Zanetti",
+          "given": "Sandro"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2012
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/8PRVC2WU",
+      "type": "book",
+      "citation-key": "wrobelSchreibenAlsHandlung1995",
+      "collection-title": "Reihe Germanistische Linguistik",
+      "language": "deutsch",
+      "number-of-pages": "220",
+      "publisher": "Max Niemeyer Verlag",
+      "publisher-place": "Tübingen",
+      "title": "Schreiben als Handlung. Überlegungen und Untersuchungen zur Theorie der Textproduktion",
+      "volume": "158",
+      "author": [
+        {
+          "family": "Wrobel",
+          "given": "Arne"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            3
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            1995
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/3KXE9XMZ",
+      "type": "chapter",
+      "abstract": "Der vorliegende Band versammelt Beiträge einer Ringvorlesung, die im Wintersemester 2011/12 an der Freien Universität Berlin durchgeführt wurde.\nDer Sammelband bietet einen instruktiven Querschnitt der aktuellen editionswissenschaftlichen und -praktischen Auseinandersetzungen. Es werden unterschiedliche Projekte vorgestellt, die von großen historisch-kritischen Ausgaben (Karl Marx, Friedrich Schleiermacher, Carl Maria von Weber) über Filmeditionen bis zu kleineren, speziellen Editionen (Der Schmetterlingskoffer von Arnold Schultze; Signe von Scanzoni) reichen. Es werden außerdem Fragen der Medialität (Schrift, Bild, Ton) beleuchtet. Abgerundet wird der Band durch die Vorstellung eines exemplarischen Editorinnenlebens (Inge Jens) sowie durch Beiträge eines Verlegers (Thedel von Wallmoden für Wallstein) und eines Literaturarchivars (Roland S. Kamzelak für das Deutsche Literaturarchiv Marbach).\nVorgelegt wird damit sowohl eine Einführung in die Editionswissenschaft, die die Interdisziplinarität des Fachs spiegelt, als auch eine exemplarische Vertiefung aktueller Fragen und Vorhaben",
+      "call-number": "BJS 104",
+      "citation-key": "veitDigitaleEditionUnd2013",
+      "collection-title": "Berliner Beiträge zur Editionswissenschaft",
+      "container-title": "Im Dickicht der Texte. Editionswissenschaft als interdisziplinäre Grundlagenforschung",
+      "ISBN": "978-3-89693-593-9",
+      "language": "deutsch",
+      "page": "233-266",
+      "publisher": "Weidler",
+      "publisher-place": "Berlin",
+      "source": "D-DT",
+      "title": "Digitale Edition und Noten-Text: Vermittlungs- oder Erkenntnisfortschritt?",
+      "volume": "12",
+      "author": [
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Dane",
+          "given": "Gesa"
+        },
+        {
+          "family": "Jungmayr",
+          "given": "Jörg"
+        },
+        {
+          "family": "Schotte",
+          "given": "Marcus"
+        }
+      ],
+      "collection-editor": [
+        {
+          "family": "Roloff",
+          "given": "Hans-Gert"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2013
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/P3Z7GT4Q",
+      "type": "chapter",
+      "citation-key": "veitEsBleibtNichts2010",
+      "container-title": "Editio. Internationales Jahrbuch für Editionswissenschaft",
+      "language": "deutsch",
+      "page": "37-52",
+      "title": "Es bleibt nichts, wie es war - Wechselwirkungen zwischen digitalen und 'analogen' Editionen",
+      "volume": "24",
+      "author": [
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Nutt-Kofoth",
+          "given": "Rüdiger"
+        },
+        {
+          "family": "Plachta",
+          "given": "Bodo"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2010
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/JTFVD295",
+      "type": "article-journal",
+      "citation-key": "tisseronAllWritingDrawing1994",
+      "collection-title": "Yale French Studies Boundaries: Writing and Drawing",
+      "language": "englisch",
+      "page": "29–42",
+      "title": "All writing is drawing. The spatial development of the manuscript",
+      "URL": "https://www.jstor.org/stable/2930178",
+      "volume": "84",
+      "author": [
+        {
+          "family": "Tisseron",
+          "given": "Serge"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1994
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/RPFIJGJN",
+      "type": "book",
+      "call-number": "LR 55620 S168",
+      "citation-key": "sallisMusicSketchesCambridge2015",
+      "ISBN": "978-0-521-86648-4",
+      "language": "englisch",
+      "number-of-pages": "290",
+      "publisher": "Cambridge University Press",
+      "publisher-place": "Cambridge",
+      "source": "D-BNu",
+      "title": "Music Sketches (Cambridge Introduction to Music)",
+      "URL": "https://doi.org/10.1017/CBO9780511843068",
+      "author": [
+        {
+          "family": "Sallis",
+          "given": "Friedemann"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2015
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/RETM4956",
+      "type": "chapter",
+      "citation-key": "nutt-kofothVarianteLesartKorrektur2013",
+      "container-title": "Editorische Begrifflichkeit. Überlegungen und Materialien zu einem „Wörterbuch der Editionsphilologie“",
+      "language": "deutsch",
+      "page": "113–124",
+      "publisher-place": "Berlin",
+      "title": "Variante, Lesart, Korrektur oder Änderung? Zum Problem der Synonyme in der neugermanistischen Editionsphilologie",
+      "author": [
+        {
+          "family": "Nutt-Kofoth",
+          "given": "Rüdiger"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Martens",
+          "given": "Gunter"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2013
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/INQVVTTS",
+      "type": "book",
+      "abstract": "Among Beethoven's many surviving sketchbooks, one of the most famous is the \"Eroica\" Sketchbook, containing all the known sketches for the \"Eroica\" Symphony, the \"Waldstein\" Sonata, and other works of 1803–04. These include his first sketches for the opera Leonore (later entitled Fidelio), as well as the unfinished opera Vestas Feuer, the oratorio Christus am Oelberge, the Triple Concerto, songs, keyboard compositions, and early sketches that later bore fruit in the Fourth Piano Concerto and the Fifth and Sixth Symphonies. It also contains ideas for works that were never completed. This edition makes available both a complete facsimile and transcription of the sketchbook for the first time, along with a detailed commentary on the origins, contents, and significance of this vitally important source.",
+      "call-number": "NY 41 BeetL 3-1, 3-2",
+      "citation-key": "lockwoodBeethovensEroicaSketchbook2013",
+      "ISBN": "978-0-252-03743-6",
+      "language": "englisch",
+      "number-of-pages": "528",
+      "publisher": "University of Illinois Press",
+      "publisher-place": "Urbana",
+      "source": "D-DTms",
+      "title": "Beethoven’s „Eroica“ Sketchbook. A Critical Edition",
+      "author": [
+        {
+          "family": "Lockwood",
+          "given": "Lewis"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Gosman",
+          "given": "Alan"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2013
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/VMDBUD8I",
+      "type": "article-journal",
+      "citation-key": "oppermannSchreibraumUndDenkraum2003",
+      "collection-title": "Die Musikforschung",
+      "issue": "4",
+      "language": "deutsch",
+      "page": "375–381",
+      "title": "Schreibraum und Denkraum – Joseph Haydns Skizzen zur „Schöpfung“",
+      "volume": "56",
+      "author": [
+        {
+          "family": "Oppermann",
+          "given": "Annette"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2003
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/DNZ4N3PT",
+      "type": "book",
+      "abstract": "Die Uneinheitlichkeit und Ungenauigkeit der editorischen Terminologie ist eine oft beklagte Erschwernis jeder Herausgebertätigkeit. Nicht nur die Verständigung der Editoren untereinander, sondern vor allem auch die Begründung und Präsentation der Ergebnisse editorischer Arbeit werden durch diesen Missstand erheblich beeinträchtigt. Vor diesem Hintergrund entschloss sich der Herausgeber in der Mitte der neunziger Jahre, in Zusammenarbeit mit der Arbeitsgemeinschaft für germanistische Edition das Projekt eines Wörterbuchs der Editionsphilologie zu initiieren. Der Band fasst aus den vergangenen 18 Jahren grundlegende Beiträge und Arbeitsergebnisse zu diesem Vorhaben zusammen, bietet Probeartikel und eine ausführliche Liste editorischer Begriffe. Ziel der Veröffentlichung ist nicht nur eine künftige Realisierung des Projektes, sondern eine allgemeine Sensibilisierung für die Problematik editorischer Begrifflichkeit.",
+      "citation-key": "martensEditorischeBegrifflichkeitUeberlegungen2013",
+      "collection-title": "Beihefte zu editio",
+      "ISBN": "978-3-11-033773-0",
+      "language": "deutsch",
+      "number-of-pages": "258",
+      "publisher-place": "Berlin",
+      "title": "Editorische Begrifflichkeit. Überlegungen und Materialien zu einem “Wörterbuch der Editionsphilologie”",
+      "volume": "36",
+      "editor": [
+        {
+          "family": "Martens",
+          "given": "Gunter"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2013
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/V4VIAM7W",
+      "type": "book",
+      "call-number": "J 1/12",
+      "citation-key": "martensTexteUndVarianten1971",
+      "ISBN": "978-3-406-03170-0",
+      "language": "deutsch",
+      "number-of-pages": "441",
+      "publisher": "Beck C. H.",
+      "source": "D-BNu",
+      "title": "Texte und Varianten. Probleme ihrer Edition und Interpretation",
+      "author": [
+        {
+          "family": "Martens",
+          "given": "Gunter"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Zeller",
+          "given": "Hans"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1971
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/VFZ6SJF2",
+      "type": "article-journal",
+      "citation-key": "lockwoodBeethovensUnfinishedPiano1970",
+      "collection-title": "The Musical Quarterly",
+      "issue": "4",
+      "language": "englisch",
+      "page": "624–646",
+      "title": "Beethoven’s unfinished Piano Concerto of 1815: Sources and Problems",
+      "URL": "https://www.jstor.org/stable/740930",
+      "volume": "56",
+      "author": [
+        {
+          "family": "Lockwood",
+          "given": "Lewis"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1970
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/PD3MU87P",
+      "type": "book",
+      "call-number": "BBe 366",
+      "citation-key": "lockwoodBeethovenStudiesCreative1992",
+      "language": "englisch",
+      "number-of-pages": "283",
+      "publisher": "Harvard University Press",
+      "publisher-place": "London",
+      "source": "D-DTms",
+      "title": "Beethoven. Studies in the Creative Process",
+      "author": [
+        {
+          "family": "Lockwood",
+          "given": "Lewis"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1992
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/TZ2FF9FK",
+      "type": "article-journal",
+      "call-number": "Z 11248",
+      "citation-key": "appelSechsThesenZur2005",
+      "collection-title": "Musiktheorie",
+      "issue": "2",
+      "language": "deutsch",
+      "page": "112–122",
+      "source": "D-BNba",
+      "title": "Sechs Thesen zur genetischen Kritik kompositorischer Prozesse",
+      "volume": "20",
+      "author": [
+        {
+          "family": "Appel",
+          "given": "Bernhard R."
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2005
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/PJMCXZFP",
+      "type": "article-journal",
+      "citation-key": "lebraveCritiqueGenetiqueDiscipline1992",
+      "collection-title": "Genesis",
+      "DOI": "https://doi.org/10.3406/item.1992.870",
+      "language": "französisch",
+      "page": "33–72",
+      "title": "La critique génétique : une discipline nouvelle ou un avatar moderne de la philologie?",
+      "URL": "www.persee.fr/doc/item_1167-5101_1992_num_1_1_870",
+      "volume": "1",
+      "author": [
+        {
+          "family": "Lebrave",
+          "given": "Jean-Louis"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1992
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/XDZGNI93",
+      "type": "article-journal",
+      "citation-key": "kindermanTextGeneticCriticism2009",
+      "container-title": "Acta musicologica",
+      "issue": "1",
+      "language": "englisch",
+      "page": "99–122",
+      "title": "Beyond the Text: Genetic Criticism and Beethoven’s Creative Process",
+      "volume": "81",
+      "author": [
+        {
+          "family": "Kinderman",
+          "given": "William"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2009
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/NG448QF9",
+      "type": "article-journal",
+      "citation-key": "kindermanBeethovensUnfinishedPiano2006",
+      "container-title": "Journal of musicological research",
+      "issue": "1",
+      "language": "englisch",
+      "page": "1–42",
+      "title": "Beethoven’s unfinished piano trio in F minor from 1816: a study of its genesis and significance",
+      "volume": "25",
+      "author": [
+        {
+          "family": "Kinderman",
+          "given": "William"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2006
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/PWZ4BN5K",
+      "type": "article-journal",
+      "citation-key": "johnsonBeethovenScholarsBeethovens1978",
+      "collection-title": "Nineteenth-Century Music",
+      "language": "englisch",
+      "page": "3–17",
+      "title": "Beethoven Scholars and Beethoven’s Sketches",
+      "volume": "2",
+      "author": [
+        {
+          "family": "Johnson",
+          "given": "Douglas P."
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1978
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/R3PMGQGX",
+      "type": "entry-dictionary",
+      "citation-key": "holtmeierPartimento2008",
+      "container-title": "Musik in Geschichte und Gegenwart",
+      "edition": "2",
+      "language": "deutsch",
+      "page": "653–659",
+      "publisher": "Bärenreiter",
+      "publisher-place": "Kassel",
+      "title": "Partimento",
+      "URL": "https://www.mgg-online.com/mgg/stable/18318",
+      "author": [
+        {
+          "family": "Holtmeier",
+          "given": "Ludwig"
+        },
+        {
+          "family": "Diergarten",
+          "given": "Felix"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2008
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/CIZ3HXSA",
+      "type": "book",
+      "call-number": "LR 55627 H174",
+      "citation-key": "hallHandbookTwentiethCenturyMusical2011",
+      "language": "englisch",
+      "number-of-pages": "254",
+      "publisher-place": "Cambridge",
+      "source": "D-BNu",
+      "title": "A Handbook to Twentieth-Century Musical Sketches",
+      "editor": [
+        {
+          "family": "Hall",
+          "given": "Patricia"
+        },
+        {
+          "family": "Sallis",
+          "given": "Friedemann"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2011
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/IQ8IXECU",
+      "type": "article-journal",
+      "citation-key": "hayTextOderGenese2005",
+      "collection-title": "Beihefte zu editio",
+      "language": "deutsch",
+      "page": "67–76",
+      "title": "Text oder Genese: der Streit an der Grenze",
+      "volume": "19",
+      "author": [
+        {
+          "family": "Hay",
+          "given": "Louis"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2005
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/PZTTGEEG",
+      "type": "article-journal",
+      "citation-key": "hayMaterialitaetUndImmaterialitaet2008",
+      "collection-title": "Editio",
+      "DOI": "https://doi.org/10.1515/9783484605046.0.1",
+      "ISSN": "0931-3079",
+      "language": "deutsch",
+      "page": "1–21",
+      "title": "Materialität und Immaterialität der Handschrift",
+      "volume": "22",
+      "author": [
+        {
+          "family": "Hay",
+          "given": "Louis"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2008
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/9Q8W697N",
+      "type": "article-journal",
+      "citation-key": "hayDreiRandglossenZur1998",
+      "collection-title": "Textgenetische Edition",
+      "container-title": "Max Niemeyer Verlag",
+      "language": "deutsch",
+      "page": "65–79",
+      "title": "Drei Randglossen zur Problematik textgenetischer Editionen. Wünsche des Lesers",
+      "author": [
+        {
+          "family": "Hay",
+          "given": "Louis"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Zeller",
+          "given": "Hans"
+        },
+        {
+          "family": "Martens",
+          "given": "Günter"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1998
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/HJ8DSWA9",
+      "type": "article-journal",
+      "citation-key": "hayDritteDimensionLiteratur1984",
+      "collection-title": "Poetica. Zeitschrift für Sprach- und Literturwissenschaft",
+      "language": "deutsch",
+      "page": "307–323",
+      "title": "Die Dritte Dimension der Literatur. Notizen zu einer „critique génétique“",
+      "volume": "16",
+      "author": [
+        {
+          "family": "Hay",
+          "given": "Louis"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Zanetti",
+          "given": "Sandro"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1984
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/6ZT6T5X4",
+      "type": "chapter",
+      "call-number": "2012/8173",
+      "citation-key": "gresillonUeberAllmaehlicheVerfertigung2012",
+      "container-title": "Schreiben als Kulturtechnik. Grundlagentexte",
+      "ISBN": "978-3-518-29637-0",
+      "language": "deutsch",
+      "page": "152–186",
+      "publisher": "Suhrkamp",
+      "publisher-place": "Frankfurt/Main",
+      "source": "D-BNu",
+      "title": "Über die allmähliche Verfertigung von Texten beim Schreiben (1995)",
+      "author": [
+        {
+          "family": "Grésillon",
+          "given": "Almuth"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Zanetti",
+          "given": "Sandro"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2012
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/ZLFWCCKE",
+      "type": "chapter",
+      "call-number": "2012/8173",
+      "citation-key": "gresillonWasIstTextgenetik1995",
+      "container-title": "Schreiben. Prozesse, Prozeduren und Produkte",
+      "ISBN": "978-3-531-12627-2",
+      "language": "deutsch",
+      "page": "288-319",
+      "publisher-place": "Opladen",
+      "title": "Was ist Textgenetik?",
+      "author": [
+        {
+          "family": "Grésillon",
+          "given": "Almuth"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Baurmann",
+          "given": "Jürgen"
+        },
+        {
+          "family": "Weingarten",
+          "given": "Rüdiger"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1995
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/NMYX3QZ3",
+      "type": "book",
+      "call-number": "BW0001",
+      "citation-key": "gresillonMiseOeuvreItineraires2008",
+      "ISBN": "978-2-271-06668-8",
+      "language": "französisch",
+      "number-of-pages": "304",
+      "publisher-place": "Paris",
+      "source": "D-BNba",
+      "title": "La mise en oeuvre. Itinéraires génétiques",
+      "author": [
+        {
+          "family": "Grésillon",
+          "given": "Almuth"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2008
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/EDKGVQF5",
+      "type": "chapter",
+      "call-number": "BJY 102",
+      "citation-key": "gresillonCritiqueGenetiqueHandschriften2007",
+      "collection-title": "Beihefte zu editio",
+      "container-title": "Ästhetische Erfahrung und Edition",
+      "ISBN": "978-3-11-093884-5",
+      "language": "deutsch",
+      "page": "73-86",
+      "publisher-place": "Tübingen",
+      "source": "D-DT",
+      "title": "\"Critique génétique\". Handschriften als Zeichen ästhetischer Prozesse",
+      "volume": "27",
+      "author": [
+        {
+          "family": "Grésillon",
+          "given": "Almuth"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Falk",
+          "given": "Rainer"
+        },
+        {
+          "family": "Mattenklott",
+          "given": "Gert"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2007
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/2HPX5ZZG",
+      "type": "book",
+      "call-number": "99/3423",
+      "citation-key": "gresillonLiterarischeHandschriftenEinfuehrung1999",
+      "collection-number": "4",
+      "collection-title": "Arbeiten zur Editionswissenschaft",
+      "language": "deutsch",
+      "publisher": "Lang",
+      "publisher-place": "Frankfurt/Main, Bern",
+      "source": "D-BNu",
+      "title": "Literarische Handschriften. Einführung in die „critique génétique“",
+      "author": [
+        {
+          "family": "Grésillon",
+          "given": "Almuth"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1999
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/W2VN8EXD",
+      "type": "book",
+      "call-number": "EC 1200 G318",
+      "citation-key": "gellhausGeneseLiterarischerTexte1994",
+      "collection-title": "Arbitrium",
+      "language": "deutsch",
+      "publisher-place": "Würzburg",
+      "source": "D-BNu",
+      "title": "Die Genese literarischer Texte. Modelle und Analysen",
+      "URL": "https://doi.org/10.1515/arbi.1998.16.1.4.",
+      "volume": "16",
+      "editor": [
+        {
+          "family": "Gellhaus",
+          "given": "Axel"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1994
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/Q84MZQH4",
+      "type": "article-journal",
+      "call-number": "Z 4' 69/67 (1999)",
+      "citation-key": "appelTextstatusKompositionsSkizzenUnd1999",
+      "collection-title": "Jahrbuch des Staatlichen Instituts für Musikforschung Preußischer Kulturbesitz",
+      "language": "deutsch",
+      "page": "177–210",
+      "source": "D-BNu",
+      "title": "Zum Textstatus von Kompositions-Skizzen und -Entwürfen",
+      "author": [
+        {
+          "family": "Appel",
+          "given": "Bernhard R."
+        }
+      ],
+      "editor": [
+        {
+          "family": "Wagner",
+          "given": "Günther"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1999
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/TXTCVABC",
+      "type": "article-journal",
+      "call-number": "Zs 2235",
+      "citation-key": "appelSkizzierungsprozesseImSchaffen2015",
+      "collection-title": "Die Tonkunst",
+      "issue": "2",
+      "language": "deutsch",
+      "page": "122–130",
+      "source": "D-DTbhm",
+      "title": "Skizzierungsprozesse im Schaffen Beethovens: Probleme der Erschließung und der Digitalen Edition",
+      "volume": "9",
+      "author": [
+        {
+          "family": "Appel",
+          "given": "Bernhard R."
+        },
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2015
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/N9F2B66Q",
+      "type": "book",
+      "call-number": "MK 0 4 Crit. Dep.1",
+      "citation-key": "deppmanGeneticCriticismTextes2004",
+      "ISBN": "0-8122-3777-3",
+      "language": "englisch",
+      "publisher-place": "Philadelphia",
+      "source": "D-Hs",
+      "title": "Genetic Criticism: Textes and Avant-textes",
+      "editor": [
+        {
+          "family": "Deppman",
+          "given": "Jed"
+        },
+        {
+          "family": "Ferrer",
+          "given": "Daniel"
+        },
+        {
+          "family": "Gordon",
+          "given": "Michael"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2004
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/AZK6VXCM",
+      "type": "chapter",
+      "call-number": "BBe 445",
+      "citation-key": "cooperCompositionalActSketches2000",
+      "collection-title": "Cambridge companions to music",
+      "container-title": "The Cambridge companion to Beethoven",
+      "language": "englisch",
+      "page": "32-42",
+      "publisher-place": "Cambridge",
+      "source": "D-DTms",
+      "title": "The compositional act: sketches and autographs",
+      "author": [
+        {
+          "family": "Cooper",
+          "given": "Barry"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Glenn",
+          "given": "Stanley"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2000
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/U6RS4F8D",
+      "type": "book",
+      "call-number": "BBe 345",
+      "citation-key": "cooperBeethovenCreativeProcess1990",
+      "language": "englisch",
+      "publisher-place": "Oxford",
+      "source": "D-DTms",
+      "title": "Beethoven and the creative process",
+      "author": [
+        {
+          "family": "Cooper",
+          "given": "Barry"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1990
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/IX9BF43M",
+      "type": "article-journal",
+      "citation-key": "brandenburgBeethovensSkizzenProbleme1991",
+      "collection-title": "Die Musikforschung",
+      "issue": "4",
+      "language": "deutsch",
+      "page": "346–355",
+      "title": "Beethovens Skizzen: Probleme der Edition",
+      "volume": "44",
+      "author": [
+        {
+          "family": "Brandenburg",
+          "given": "Sieghard"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1991
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/DBJQBC6C",
+      "type": "chapter",
+      "call-number": "BBe 228",
+      "citation-key": "brandenburgUeberBedeutungSkizzen1978",
+      "container-title": "Bericht über den Internationalen Beethoven-Kongreß 20. bis 23. März 1977 in Berlin",
+      "language": "deutsch",
+      "page": "39–51",
+      "publisher": "Deutscher Verlag für Musik",
+      "publisher-place": "Leipzig",
+      "source": "D-DTms",
+      "title": "Über die Bedeutung der Skizzen Beethovens",
+      "author": [
+        {
+          "family": "Brandenburg",
+          "given": "Sieghard"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1978
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/54MU8VEG",
+      "type": "chapter",
+      "citation-key": "bohnenkampAutorVarianten2003",
+      "container-title": "Editio. Internationales Jahrbuch für Editionswissenschaft",
+      "ISBN": "3-484-60454-9",
+      "language": "deutsch",
+      "page": "16-30",
+      "publisher": "De Gruyter",
+      "publisher-place": "Berlin",
+      "title": "Autor-Varianten",
+      "volume": "17",
+      "author": [
+        {
+          "family": "Bohnenkamp",
+          "given": "Anna"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Nutt-Kofoth",
+          "given": "Rüdiger"
+        },
+        {
+          "family": "Plachta",
+          "given": "Bodo"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2003
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/8JRUMMRF",
+      "type": "chapter",
+      "call-number": "FS Veit 1",
+      "citation-key": "appelTextkategorienKompositorischenWerkstattdokumenten2016",
+      "container-title": "„Ei, dem alten Herrn zoll’ ich Achtung gern’“. Festschrift für Joachim Veit zum 60. Geburtstag",
+      "ISBN": "978-3-86906-842-8",
+      "language": "deutsch",
+      "page": "49–57",
+      "publisher": "Allitera",
+      "publisher-place": "München",
+      "source": "D-DTms",
+      "title": "Textkategorien in kompositorischen Werkstattdokumenten",
+      "author": [
+        {
+          "family": "Appel",
+          "given": "Bernhard R."
+        }
+      ],
+      "editor": [
+        {
+          "family": "Richts",
+          "given": "Kristina"
+        },
+        {
+          "family": "Stadler",
+          "given": "Peter"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/NK8PVE2P",
+      "type": "book",
+      "call-number": "KJNS 236 / BSchu 965 (13)",
+      "citation-key": "appelVomEinfallWerk2010",
+      "collection-title": "Schumann Forschungen",
+      "ISBN": "978-3-7957-0683-8",
+      "language": "deutsch",
+      "number-of-pages": "352",
+      "publisher": "Schott",
+      "publisher-place": "Mainz",
+      "source": "D-DTms",
+      "title": "Vom Einfall zum Werk. Robert Schumanns Schaffensweise",
+      "volume": "13",
+      "author": [
+        {
+          "family": "Appel",
+          "given": "Bernhard R."
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2010
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/RP3XSQM4",
+      "type": "article-journal",
+      "citation-key": "appelUeberAllmaehlicheVerfertigung2003",
+      "collection-title": "Die Musikforschung",
+      "container-title": "2003",
+      "issue": "4",
+      "language": "deutsch",
+      "page": "347–365",
+      "title": "Über die allmähliche Verfertigung musikalischer Gedanken beim Schreiben",
+      "volume": "56",
+      "author": [
+        {
+          "family": "Appel",
+          "given": "Bernhard R."
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2003
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/A79U2ZBV",
+      "type": "webpage",
+      "citation-key": "KompendiumEditionswissenschaft",
+      "language": "deutsch",
+      "title": "Kompendium der Editionswissenschaft",
+      "URL": "www.edkomp.uni-muenchen.de",
+      "contributor": [
+        {
+          "family": "Bohnenkamp-Renken",
+          "given": "Anne"
+        },
+        {
+          "family": "Gabler",
+          "given": "Hans Walter"
+        },
+        {
+          "family": "Lüdeke",
+          "given": "Roger"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2003
+          ]
+        ]
+      }
+    },
+    {
+      "id": "4185477/P3D5TEEA",
+      "type": "webpage",
+      "citation-key": "sahleCatalogDigitalScholarly",
+      "language": "englisch",
+      "title": "A Catalog of Digital Scholarly Editions",
+      "URL": "http://www.digitale-edition.de/",
+      "author": [
+        {
+          "family": "Sahle",
+          "given": "Patrick"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      }
+    }
+  ]
+}
