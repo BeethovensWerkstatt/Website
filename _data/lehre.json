@@ -1,0 +1,1476 @@
+{
+  "items": [
+    {
+      "id": "4185477/PAR5H89Z",
+      "type": "speech",
+      "citation-key": "novaraTraSketchStudies2023",
+      "genre": "Seminar",
+      "language": "italienisch",
+      "note": "2023-09-28",
+      "title": "Tra 'Sketch Studies' e critica genetica: nuove tendenze della filologia beethoveniana",
+      "URL": "https://phd.uniroma1.it/web/tra-sketch-studies-e-critica-genetica-nuove-tendenze-della-filologia-beethoveniana_nS5383IT.aspx",
+      "author": [
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        }
+      ],
+      "place": "Universität Sapienza in Rom"
+    },
+    {
+      "id": "4185477/6BG8WUPT",
+      "type": "speech",
+      "citation-key": "sangerrichardWorkflowsConceptsPossibilities2026",
+      "genre": "Seminareinheit",
+      "language": "englisch",
+      "note": "2026-01-20",
+      "title": "About workflows, concepts and possibilities of digital editions",
+      "author": [
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "place": "Universität Cremona"
+    },
+    {
+      "id": "4185477/CEGAHSQU",
+      "type": "speech",
+      "citation-key": "kepperBeethovensWerkstattDigital2025",
+      "genre": "Workshop",
+      "language": "englisch",
+      "note": "2025-06-23",
+      "title": "Beethovens Werkstatt – A Digital Edition of Notirungsbuch K.",
+      "URL": "https://zti.hu/en/119-zti-esemenyek/2025/1336-digital-critical-editions-in-music-3-online-workshop-2",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "event": "Digital Critical Editions in Music",
+      "place": "Hungarian Department for Music History (HUN-REN RCH), Budapest"
+    },
+    {
+      "id": "4185477/H4URFWNP",
+      "type": "speech",
+      "citation-key": "saengerMEIFuerEinsteigerinnen2024",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2024-09-23/2024-09-24",
+      "title": "MEI für Einsteiger*innen",
+      "URL": "https://ess.uni-paderborn.de/2024/programm.html",
+      "author": [
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        },
+        {
+          "family": "Seipelt",
+          "given": "Agnes"
+        }
+      ],
+      "event": "Edirom Summer School",
+      "place": "Paderborn"
+    },
+    {
+      "id": "4185477/V7W8H595",
+      "type": "speech",
+      "citation-key": "kepperDigitaleEdition2024",
+      "genre": "Workshop",
+      "language": "deutsch, englisch",
+      "note": "2024-09-23/2024-09-27",
+      "title": "Digitale Edition",
+      "URL": "https://ess.uni-paderborn.de/2024/programm.html",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "event": "Edirom Summer School",
+      "place": "Paderborn"
+    },
+    {
+      "id": "4185477/DR5728GN",
+      "type": "speech",
+      "citation-key": "sangerProgettoBeethovensWerkstatt2024",
+      "genre": "Seminareinheit",
+      "language": "englisch",
+      "note": "2024-06-24",
+      "title": "Il progetto „Beethovens Werkstatt“. Critica genetica ed edizioni digitali",
+      "author": [
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "event": "Kurs: \"Metodologia delle edizioni musicali digitali\"",
+      "place": "Universität Cremona"
+    },
+    {
+      "id": "4185477/GUKKFQ77",
+      "type": "speech",
+      "citation-key": "kepperSkizzeWerkMusikcodierung2024",
+      "genre": "Seminar",
+      "language": "deutsch",
+      "note": "2024-04-01/2024-09-30",
+      "title": "Von der Skizze zum Werk: Musikcodierung (SoSe 2024)",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Seipelt",
+          "given": "Agnes"
+        }
+      ],
+      "place": "Universität Paderborn"
+    },
+    {
+      "id": "4185477/PDTP7XE7",
+      "type": "speech",
+      "citation-key": "novaraLinguaggiMusicali2024",
+      "genre": "Seminar",
+      "language": "italienisch",
+      "note": "2024-04-01/2024-09-30",
+      "title": "Linguaggi Musicali (SoSe 2024)",
+      "author": [
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        }
+      ],
+      "place": "Universität Cagliari, Italien"
+    },
+    {
+      "id": "4185477/ERVPICVU",
+      "type": "speech",
+      "citation-key": "heroldIntegratingTEIMEI2023",
+      "genre": "Workshop",
+      "language": "englisch",
+      "note": "2023-09-04",
+      "title": "Integrating TEI and MEI",
+      "URL": "https://teimec2023.uni-paderborn.de/contributions/200.html",
+      "author": [
+        {
+          "family": "Herold",
+          "given": "Kristin"
+        },
+        {
+          "family": "Mo",
+          "given": "Ran"
+        },
+        {
+          "family": "Seipelt",
+          "given": "Agnes"
+        },
+        {
+          "family": "Friedl",
+          "given": "Dennis"
+        }
+      ],
+      "event": "Joint MEC and TEI Conference",
+      "place": "Paderborn"
+    },
+    {
+      "id": "4185477/WR2NTIXA",
+      "type": "speech",
+      "citation-key": "heroldTEIFuerEinsteigerinnen2023",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2023-06-01",
+      "title": "TEI für Einsteiger*innen",
+      "URL": "https://ess.uni-paderborn.de/2023/programm.html",
+      "author": [
+        {
+          "family": "Herold",
+          "given": "Kristin"
+        },
+        {
+          "family": "Obert",
+          "given": "Salome"
+        }
+      ],
+      "place": "Paderborn"
+    },
+    {
+      "id": "4185477/3RDTW5TH",
+      "type": "speech",
+      "citation-key": "moMEIFuerEinsteigerinnen2023",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2023-05-31",
+      "title": "MEI für Einsteiger*innen",
+      "URL": "https://ess.uni-paderborn.de/2023/programm.html",
+      "author": [
+        {
+          "family": "Mo",
+          "given": "Ran"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        },
+        {
+          "family": "Seipelt",
+          "given": "Agnes"
+        }
+      ],
+      "event": "Edirom Summer School",
+      "place": "Paderborn"
+    },
+    {
+      "id": "4185477/5TPNBR56",
+      "type": "speech",
+      "citation-key": "muenzmayMusikAlsWerkText2023",
+      "genre": "Seminar",
+      "language": "deutsch",
+      "note": "2023-04-01/2023-09-30",
+      "title": "Musik als (Werk-)Text, vom 19. Jahrhundert bis heute (Notation und Edition neuerer Musik) (SoSe 2023)",
+      "author": [
+        {
+          "family": "Münzmay",
+          "given": "Andreas"
+        }
+      ],
+      "place": "Musikwissenschaftliches Seminar Detmold/Paderborn"
+    },
+    {
+      "id": "4185477/FJPST87T",
+      "type": "speech",
+      "citation-key": "heroldSchuelerinnenWorkshopUndPosterpraesentation2022",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2022-10-06",
+      "title": "Schüler*innen-Workshop und Posterpräsentation",
+      "URL": "https://www.akademienunion.de/akademientag/akademientag/2022-musik-gesellschaft",
+      "author": [
+        {
+          "family": "Herold",
+          "given": "Kristin"
+        },
+        {
+          "family": "Mo",
+          "given": "Ran"
+        }
+      ],
+      "event": "Akademientag 2022 \"Musik und Gesellschaft\"",
+      "place": "Leipzig, Museum für Druckkunst"
+    },
+    {
+      "id": "4185477/8ZFRJBQE",
+      "type": "speech",
+      "citation-key": "kepperProjektpraesentationBeethovenHouse2022",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2022-09-24",
+      "title": "Projektpräsentation Beethoven in the House",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "event": "Studienkolleg",
+      "place": "Beethoven-Haus Bonn"
+    },
+    {
+      "id": "4185477/TE24HRK2",
+      "type": "speech",
+      "citation-key": "heroldTEIFuerEinsteigerInnen2022",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2022-09-05/2022-09-06",
+      "title": "TEI für Einsteiger*innen",
+      "author": [
+        {
+          "family": "Herold",
+          "given": "Kristin"
+        },
+        {
+          "family": "Münzmay",
+          "given": "Andreas"
+        },
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        }
+      ],
+      "event": "Edirom Summer School",
+      "place": "Paderborn"
+    },
+    {
+      "id": "4185477/BJDRGH92",
+      "type": "speech",
+      "citation-key": "moMEIFuerEinsteigerinnen2022",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2022-09-05/2022-09-06",
+      "title": "MEI für Einsteiger*innen",
+      "URL": "https://ess.uni-paderborn.de/2022/programm.html",
+      "author": [
+        {
+          "family": "Mo",
+          "given": "Ran"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "event": "Edirom Summer School",
+      "place": "Paderborn"
+    },
+    {
+      "id": "4185477/6DP8Z5HJ",
+      "type": "speech",
+      "citation-key": "kepperDigitaleEdition2022",
+      "genre": "Workshop",
+      "language": "deutsch, englisch",
+      "note": "2022-09-05/2022-09-09",
+      "title": "Digitale Edition",
+      "URL": "https://ess.uni-paderborn.de/2022/programm.html",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "event": "Edirom Summer School",
+      "place": "Paderborn"
+    },
+    {
+      "id": "4185477/6VI7MTDF",
+      "type": "speech",
+      "citation-key": "moEinfuehrungskursMEI2022",
+      "genre": "Seminareinheit",
+      "language": "deutsch",
+      "note": "2022-06-08",
+      "title": "Einführungskurs MEI",
+      "author": [
+        {
+          "family": "Mo",
+          "given": "Ran"
+        }
+      ],
+      "event": "Digitale Präsentation",
+      "place": "Musikwissenschaftliches Seminar Detmold/Paderborn"
+    },
+    {
+      "id": "4185477/N2T64HZF",
+      "type": "speech",
+      "citation-key": "moEinfuehrungskursTEI2022",
+      "genre": "Seminareinheit",
+      "language": "deutsch",
+      "note": "2022-06-01",
+      "title": "Einführungskurs TEI",
+      "author": [
+        {
+          "family": "Mo",
+          "given": "Ran"
+        }
+      ],
+      "event": "Digitale Präsentation",
+      "place": "Musikwissenschaftliches Seminar Detmold/Paderborn"
+    },
+    {
+      "id": "4185477/378UWF8W",
+      "type": "speech",
+      "citation-key": "munzmayAnnotationsDigitalMusic2022",
+      "genre": "Seminareinheit",
+      "language": "englisch",
+      "note": "2022-05-02",
+      "title": "Annotations and Digital Music Edition",
+      "author": [
+        {
+          "family": "Münzmay",
+          "given": "Andreas"
+        }
+      ],
+      "event": "Possibilities and Limitations of Digital Annotation Tools for Audio-Visual Material with a Focus on Sound and Music",
+      "place": "Mainz"
+    },
+    {
+      "id": "4185477/CUETX7Z4",
+      "type": "speech",
+      "citation-key": "muenzmayTheorieDigitalenEdition2022",
+      "genre": "Seminar",
+      "language": "deutsch",
+      "note": "2022-10-01/2023-03-30",
+      "title": "Theorie der (digitalen) Edition: Geschichte, Methodik und Tendenzen (WS 2022/23)",
+      "author": [
+        {
+          "family": "Münzmay",
+          "given": "Andreas"
+        },
+        {
+          "family": "Ried",
+          "given": "Dennis"
+        }
+      ],
+      "place": "Musikwissenschaftliches Seminar Detmold/Paderborn"
+    },
+    {
+      "id": "4185477/ZVZSIXZU",
+      "type": "speech",
+      "citation-key": "kepperMEITutorial2022",
+      "genre": "Workshop",
+      "language": "englisch",
+      "note": "2022-05-19",
+      "title": "MEI Tutorial",
+      "URL": "https://music-encoding.org/conference/2022/program/#may19",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Roland",
+          "given": "Perry"
+        }
+      ],
+      "event": "Music Encoding Conference 2022",
+      "place": "Halifax/online"
+    },
+    {
+      "id": "4185477/KR5XRV3Z",
+      "type": "speech",
+      "citation-key": "muenzmayMusikAlsWerkText2022",
+      "genre": "Seminar",
+      "language": "deutsch",
+      "note": "2022-04-01/2022-09-30",
+      "title": "Musik als (Werk-)Text, vom 19. Jahrhundert bis heute (Notation und Edition neuerer Musik) (SoSe 2022)",
+      "author": [
+        {
+          "family": "Münzmay",
+          "given": "Andreas"
+        }
+      ],
+      "place": "Musikwissenschaftliches Seminar Detmold/Paderborn"
+    },
+    {
+      "id": "4185477/FD6WEAD6",
+      "type": "speech",
+      "citation-key": "dubowyStateoftheArtModernDigital2021",
+      "genre": "Seminareinheit",
+      "language": "englisch",
+      "note": "2021-09-23",
+      "title": "State-of-the-Art Modern Digital Editions",
+      "author": [
+        {
+          "family": "Dubowy",
+          "given": "Norbert"
+        },
+        {
+          "family": "Münzmay",
+          "given": "Andreas"
+        }
+      ],
+      "event": "Digital Humanities in Early Music Research workshop series, organized by the Bohuslav Martinů Institute together with the Old Myths, New Facts project",
+      "place": "Prag/online"
+    },
+    {
+      "id": "4185477/WAZIDVGF",
+      "type": "speech",
+      "citation-key": "heroldTEIFuerEinsteigerinnen2021",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2021-09-13/2021-09-14",
+      "title": "TEI für Einsteiger*innen",
+      "URL": "https://ess.uni-paderborn.de/2021/programm.html",
+      "author": [
+        {
+          "family": "Herold",
+          "given": "Kristin"
+        },
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        }
+      ],
+      "event": "Edirom Summer School",
+      "place": "online"
+    },
+    {
+      "id": "4185477/2E72JP89",
+      "type": "speech",
+      "citation-key": "coxMEIFuerExpertinnen2021",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2021-09-13/2021-09-14",
+      "title": "MEI für Expert*innen",
+      "URL": "https://ess.uni-paderborn.de/2021/programm.html",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        },
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        }
+      ],
+      "event": "Edirom Summer School",
+      "place": "online"
+    },
+    {
+      "id": "4185477/M7V5KRJP",
+      "type": "speech",
+      "citation-key": "moMEIFuerEinsteigerinnen2021",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2021-09-13/2021-09-14",
+      "title": "MEI für Einsteiger*innen",
+      "URL": "https://ess.uni-paderborn.de/2021/programm.html",
+      "author": [
+        {
+          "family": "Mo",
+          "given": "Ran"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        },
+        {
+          "family": "Saccomano",
+          "given": "Mark"
+        }
+      ],
+      "event": "Edirom Summer School",
+      "place": "online"
+    },
+    {
+      "id": "4185477/CJ78W9A9",
+      "type": "speech",
+      "citation-key": "moDigitaleMethodenFuer2021",
+      "genre": "Seminareinheit",
+      "language": "deutsch",
+      "note": "2021-02-04",
+      "title": "Digitale Methoden für die philologische Arbeit",
+      "author": [
+        {
+          "family": "Mo",
+          "given": "Ran"
+        }
+      ],
+      "event": "Einführung in die Skizzenforschung. Beethovens Kompositions-prozesse unter die Lupe genommen",
+      "place": "Universität Bonn"
+    },
+    {
+      "id": "4185477/T2FUXEEV",
+      "type": "speech",
+      "citation-key": "heroldDigitaleMusikedition2021",
+      "genre": "Seminareinheit",
+      "language": "deutsch",
+      "note": "2021-01-28",
+      "title": "Digitale Musikedition",
+      "author": [
+        {
+          "family": "Herold",
+          "given": "Kristin"
+        },
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "event": "Einführung in die Skizzenforschung. Beethovens Kompositionsprozesse unter die Lupe genommen",
+      "place": "Universität Bonn"
+    },
+    {
+      "id": "4185477/6G3RPX2W",
+      "type": "speech",
+      "citation-key": "kepperNotationUndEdition2021",
+      "genre": "Seminar",
+      "language": "deutsch",
+      "note": "2020-04-01/2020-09-30",
+      "title": "Notation und Edition neuerer Musik (SoSe 2021)",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "place": "Musikwissenschaftliches Seminar Detmold/Paderborn"
+    },
+    {
+      "id": "4185477/7G3EVGUC",
+      "type": "speech",
+      "citation-key": "kepperNotationUndEdition2021",
+      "genre": "Seminar",
+      "language": "deutsch",
+      "note": "2020-10-01/2021-03-30",
+      "title": "Notation und Edition neuerer Musik (WS 2020/21)",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "place": "Musikwissenschaftliches Seminar Detmold/Paderborn"
+    },
+    {
+      "id": "4185477/WHAK9FDP",
+      "type": "speech",
+      "citation-key": "coxFrueheUndSpaete2020",
+      "genre": "Seminareinheit",
+      "language": "deutsch",
+      "note": "2020-12-03",
+      "title": "Frühe und späte Skizzen Beethovens im Vergleich",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "event": "Einführung in die Skizzenforschung. Beethovens Kompositionsprozesse unter die Lupe genommen",
+      "place": "Universität Bonn"
+    },
+    {
+      "id": "4185477/9FF9Z4VR",
+      "type": "speech",
+      "citation-key": "seipeltSchreibprozesseErkennenUnd2020",
+      "genre": "Seminareinheit",
+      "language": "deutsch",
+      "note": "2020-12-17",
+      "title": "Schreibprozesse erkennen und beschreiben am Beispiel der Bagatellen op. 126/6",
+      "author": [
+        {
+          "family": "Seipelt",
+          "given": "Agnes"
+        }
+      ],
+      "event": "Einführung in die Skizzenforschung: Beethovens Kompositionsprozesse unter die Lupe genommen",
+      "place": "Universität Bonn"
+    },
+    {
+      "id": "4185477/AQD3IDAK",
+      "type": "speech",
+      "citation-key": "novaraEditionspraxisBeethovenUnd2019",
+      "genre": "Seminareinheit",
+      "language": "italienisch",
+      "note": "2019-04-15/2019-04-16",
+      "title": "Editionspraxis: Beethoven und Schumann zwischen Philologie und Editionstechnik",
+      "URL": "https://beethovens-werkstatt.de/2019-05-14-seminarbeitraege-an-der-universitaet-sapienza-in-rom/",
+      "author": [
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        }
+      ],
+      "event": "Filologia Musicale",
+      "place": "Universität „Sapienza“, Rom"
+    },
+    {
+      "id": "4185477/9MEVJGSD",
+      "type": "speech",
+      "citation-key": "novaraGenetischeTextkritikUnd2018",
+      "genre": "Seminareinheit",
+      "language": "deutsch",
+      "note": "2018-12-07",
+      "title": "Genetische Textkritik und Digitale Musikedition",
+      "author": [
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "event": "Einführung in die Musikwissenschaft/Sound Studies",
+      "place": "Universität Bonn"
+    },
+    {
+      "id": "4185477/ANMQJG4B",
+      "type": "speech",
+      "citation-key": "rovelliProcessoCompositivoDi2018",
+      "genre": "Seminareinheit",
+      "language": "italienisch",
+      "note": "2018-03-21",
+      "title": "Il processo compositivo di Beethoven. Storia, orientamenti, stato della ricerca",
+      "author": [
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "place": "Cremona (Dipartimento di Musicologia e beni Culturali, Università degli Studi di Pavia)"
+    },
+    {
+      "id": "4185477/HN66JKFI",
+      "type": "speech",
+      "citation-key": "coxProjektvorstellung2017",
+      "genre": "Seminareinheit",
+      "language": "deutsch",
+      "note": "2017-06-20",
+      "title": "Projektvorstellung",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        },
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        },
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "event": "Digital Humanities in der Musikwissenschaft",
+      "place": "Universität zu Köln"
+    },
+    {
+      "id": "4185477/K7VY44W5",
+      "type": "speech",
+      "citation-key": "rovelliBeethovenSkizzentypenUndScheideSkizzenbuch2016",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2016-09-21",
+      "title": "Beethoven-Skizzentypen und Scheide-Skizzenbuch",
+      "author": [
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "event": "Beethoven-Studienkolleg: „Beethoven und Haydn: Schaffensprozesse und Überlieferung“",
+      "place": "Beethoven-Haus Bonn"
+    },
+    {
+      "id": "4185477/AJKDMGWM",
+      "type": "speech",
+      "citation-key": "novaraEinfuhrungGenetischeTextkritik2016",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2016-09-21",
+      "title": "Einführung in die Genetische Textkritik",
+      "author": [
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "event": "Beethoven-Studienkolleg: „Beethoven und Haydn: Schaffensprozesse und Überlieferung“",
+      "place": "Beethoven-Haus Bonn"
+    },
+    {
+      "id": "4185477/X8XBUKY9",
+      "type": "speech",
+      "citation-key": "coxEditionsubungVolksliedbearbeitungenHaydn2016",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2016-09-20",
+      "title": "Editionsübung: Volksliedbearbeitungen von Haydn und Beethoven",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        }
+      ],
+      "event": "Beethoven-Studienkolleg: „Beethoven und Haydn: Schaffensprozesse und Überlieferung“",
+      "place": "Joseph Haydn-Institut Köln"
+    },
+    {
+      "id": "4185477/63DMS5RM",
+      "type": "speech",
+      "citation-key": "coxGenetischeTextkritikUnd2020",
+      "genre": "Seminareinheit",
+      "language": "deutsch",
+      "note": "2020-01-20",
+      "title": "Genetische Textkritik und Digitale Musikedition",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        },
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "event": "Einführung in die Musikwissenschaft/Sound Studies",
+      "place": "Universität Bonn"
+    },
+    {
+      "id": "4185477/T89AIK9R",
+      "type": "speech",
+      "citation-key": "heroldEinfuehrungTEI2020",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2020-08-31/2020-09-01",
+      "title": "Einführung in TEI",
+      "URL": "https://ess.uni-paderborn.de/2020/programm.html",
+      "author": [
+        {
+          "family": "Herold",
+          "given": "Kristin"
+        },
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        },
+        {
+          "family": "Mo",
+          "given": "Ran"
+        }
+      ],
+      "event": "Edirom Summer School",
+      "place": "online"
+    },
+    {
+      "id": "4185477/I5G9KND3",
+      "type": "speech",
+      "citation-key": "seipeltMEIEinsteiger2020",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2020-08-31/2020-09-01",
+      "title": "MEI Einsteiger",
+      "author": [
+        {
+          "family": "Seipelt",
+          "given": "Agnes"
+        }
+      ],
+      "event": "Edirom Summer School",
+      "place": "online"
+    },
+    {
+      "id": "4185477/ETAWHIA2",
+      "type": "speech",
+      "citation-key": "kepperAdvancedMEI2020",
+      "genre": "Workshop",
+      "language": "englisch",
+      "note": "2020-09-02/2020-09-04",
+      "title": "Advanced MEI",
+      "URL": "https://ess.uni-paderborn.de/2020/programm.html",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "event": "Edirom Summer School",
+      "place": "online"
+    },
+    {
+      "id": "4185477/7XEWAUQG",
+      "type": "speech",
+      "citation-key": "muenzmayLektuereseminarBeethovenRaeume2020",
+      "genre": "Seminar",
+      "language": "deutsch",
+      "note": "2020-04-01/2020-09-30",
+      "title": "Lektüreseminar: Beethoven | Räume. Kulturwissenschaftliche Perspektiven, kulturelle Resonanzen (SoSe 2020)",
+      "author": [
+        {
+          "family": "Münzmay",
+          "given": "Andreas"
+        }
+      ],
+      "place": "Universität Paderborn/HfM Detmold"
+    },
+    {
+      "id": "4185477/KZ73778A",
+      "type": "speech",
+      "citation-key": "muenzmayPhilologischeMethodenDigitalen2020",
+      "genre": "Seminar",
+      "language": "deutsch",
+      "note": "2020-10-01/2021-03-31",
+      "title": "Philologische Methoden in der (digitalen) Musikwissenschaft: historischer und aktueller Überblick (Theorie der Edition) (WS 2020/2021)",
+      "author": [
+        {
+          "family": "Münzmay",
+          "given": "Andreas"
+        },
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        }
+      ],
+      "place": "Musikwissenschaftliches Seminar Detmold/Paderborn"
+    },
+    {
+      "id": "4185477/CIMFQMHM",
+      "type": "speech",
+      "citation-key": "kepperMusikcodierungUndDigitale2020",
+      "genre": "Seminar",
+      "language": "deutsch",
+      "note": "2020",
+      "title": "Musikcodierung und Digitale Musikedition (Blockseminar)",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "place": "Wilhelms-Universität Münster"
+    },
+    {
+      "id": "4185477/XW5RU2NR",
+      "type": "speech",
+      "citation-key": "novaraEinfuehrungSkizzenforschungBeethovens2020",
+      "genre": "Seminar",
+      "language": "deutsch",
+      "note": "2020-10-01/2021-03-31",
+      "title": "Einführung in die Skizzenforschung: Beethovens Kompositionsprozesse unter die Lupe genommen (WS 2020/21)",
+      "author": [
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        }
+      ],
+      "place": "Universität Bonn"
+    },
+    {
+      "id": "4185477/5KTMZAXU",
+      "type": "speech",
+      "citation-key": "coxBeethovenAlsBearbeiter2019",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2019-09-18",
+      "title": "Beethoven als Bearbeiter versus Beethoven-Bearbeitungen",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        },
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "event": "Studienkolleg",
+      "place": "Beethoven-Haus, Bonn"
+    },
+    {
+      "id": "4185477/KW47RWRI",
+      "type": "speech",
+      "citation-key": "kepperMiningMusicData2019",
+      "genre": "Workshop",
+      "language": "deutsch, englisch",
+      "note": "2019-09-05/2019-09-06",
+      "title": "Mining Music Data – Arbeiten mit RISM-Daten",
+      "URL": "https://ess.uni-paderborn.de/2019/programm.html",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Ngonga",
+          "given": "Axel"
+        },
+        {
+          "family": "Pugin",
+          "given": "Laurent"
+        }
+      ],
+      "event": "Edirom Summer School",
+      "place": "Paderborn"
+    },
+    {
+      "id": "4185477/AZU5PE6F",
+      "type": "speech",
+      "citation-key": "heroldEinfuehrungTEI2019",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2019-09-02/2019-09-03",
+      "title": "Einführung in TEI",
+      "URL": "https://ess.uni-paderborn.de/2019/programm.html",
+      "author": [
+        {
+          "family": "Herold",
+          "given": "Kristin"
+        },
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        }
+      ],
+      "event": "Edirom Summer School",
+      "place": "Paderborn"
+    },
+    {
+      "id": "4185477/B4GR3UEU",
+      "type": "speech",
+      "citation-key": "kepperAnwendungsorientiertesMEI2019",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2019-09-02/2019-04-04",
+      "title": "Anwendungsorientiertes MEI",
+      "URL": "https://ess.uni-paderborn.de/2019/programm.html",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Seipelt",
+          "given": "Agnes"
+        }
+      ],
+      "event": "Edirom Summer School",
+      "place": "Paderborn"
+    },
+    {
+      "id": "4185477/22ERWJ44",
+      "type": "speech",
+      "citation-key": "heroldTEIFuerEinsteiger2018",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2018-09-17/2018-09-18",
+      "title": "TEI für Einsteiger",
+      "URL": "https://ess.uni-paderborn.de/2018/programm.html",
+      "author": [
+        {
+          "family": "Herold",
+          "given": "Kristin"
+        },
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        }
+      ],
+      "event": "Edirom Summer School",
+      "place": "Paderborn"
+    },
+    {
+      "id": "4185477/33ZHADEZ",
+      "type": "speech",
+      "citation-key": "seipeltMEIFuerFortgeschrittene2018",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2018-09-20/2018-09/21",
+      "title": "MEI für Fortgeschrittene",
+      "URL": "https://ess.uni-paderborn.de/2018/programm.html",
+      "author": [
+        {
+          "family": "Seipelt",
+          "given": "Agnes"
+        }
+      ],
+      "event": "Edirom Summer School",
+      "place": "Paderborn"
+    },
+    {
+      "id": "4185477/VR2QQNP7",
+      "type": "speech",
+      "citation-key": "kepperDigitaleEditionenAnreichern2018",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2018-09-18/2018-09-21",
+      "title": "Digitale Editionen anreichern",
+      "URL": "https://ess.uni-paderborn.de/2018/programm.html",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "event": "Edirom Summer School",
+      "place": "Paderborn"
+    },
+    {
+      "id": "4185477/Q28DPIVP",
+      "type": "speech",
+      "citation-key": "coxProjektvorstellung2018",
+      "genre": "Vortrag",
+      "language": "deutsch",
+      "note": "2018-06-20",
+      "title": "Projektvorstellung",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        },
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "event": "Projektvorstellung für Studierende des Instituts für Musikforschung der Universität Würzburg",
+      "place": "Beethoven-Haus Bonn"
+    },
+    {
+      "id": "4185477/Q6ANPNVY",
+      "type": "speech",
+      "citation-key": "kepperXSLTIntensiv2018",
+      "genre": "Seminar",
+      "language": "deutsch",
+      "note": "2018-04-01/2018-09-30",
+      "title": "XSLT Intensiv (SoSe 2018)",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "place": "Musikwissenschaftliches Seminar Detmold / Paderborn"
+    },
+    {
+      "id": "4185477/RANB9UD9",
+      "type": "speech",
+      "citation-key": "rovelliGenetischeTextkritikUnd2018",
+      "genre": "Seminar",
+      "language": "deutsch",
+      "note": "2018-04-01/2018-09-30",
+      "title": "Genetische Textkritik und digitale Musik-Editionen am Beispiel von Beethovens Schaffensweise (SoSe 2018)",
+      "author": [
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "event": "Masterstudiengang „Digitale Methoden in den Geisteswissenschaften“",
+      "place": "Johannes Gutenberg-Universität, Mainz"
+    },
+    {
+      "id": "4185477/XHP3UTU7",
+      "type": "speech",
+      "citation-key": "hartwigMEIFuerFortgeschrittene2017",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2017-09-21/2017-09-22",
+      "title": "MEI für Fortgeschrittene",
+      "URL": "https://ess.uni-paderborn.de/2017/programm.html",
+      "author": [
+        {
+          "family": "Hartwig",
+          "given": "Maja"
+        },
+        {
+          "family": "Herold",
+          "given": "Kristin"
+        }
+      ],
+      "event": "Edirom Summer School",
+      "place": "Paderborn"
+    },
+    {
+      "id": "4185477/DCCRIQ2E",
+      "type": "speech",
+      "citation-key": "coxWorkshopLiedNeue2017",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2017-09-05",
+      "title": "Workshop: Das Lied \"Neue Liebe, neues Leben\" op. 75/2 textgenetisch und digital",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        },
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        },
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        },
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Hartwig",
+          "given": "Maja"
+        }
+      ],
+      "event": "Beethoven-Studienkolleg: „Philologisches Arbeiten von der Textgenese zur Rezeption“",
+      "place": "Beethoven-Haus Bonn"
+    },
+    {
+      "id": "4185477/RMM2AB2T",
+      "type": "speech",
+      "citation-key": "seipeltMEIFuerEinsteiger2017",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2017-09-18/2017-09-19",
+      "title": "MEI für Einsteiger",
+      "URL": "https://ess.uni-paderborn.de/2017/programm.html",
+      "author": [
+        {
+          "family": "Seipelt",
+          "given": "Agnes"
+        }
+      ],
+      "event": "Edirom Summer School",
+      "place": "Paderborn"
+    },
+    {
+      "id": "4185477/5GL6UH3T",
+      "type": "speech",
+      "citation-key": "rovelliBeethovensSchaffensweiseHistorische2017",
+      "genre": "Seminar",
+      "language": "deutsch",
+      "note": "2017-10-01/2018-03-31",
+      "title": "Beethovens Schaffensweise: Historische Bedeutung und Grundlagen der Forschung (Blockseminar WS 2017/28)",
+      "author": [
+        {
+          "family": "Rovelli",
+          "given": "Federica"
+        }
+      ],
+      "place": "Universität Paderborn (Musikwissenschaftliches Seminar, Detmold / Paderborn)"
+    },
+    {
+      "id": "4185477/FAU4P8Z3",
+      "type": "speech",
+      "citation-key": "kepperVertiefteAnwendungCodierungsformats2016",
+      "genre": "Workshop",
+      "language": "englisch",
+      "note": "2016-09-26/2026-09-27",
+      "title": "Vertiefte Anwendung des Codierungsformats der Music Encoding Initiative (MEI)",
+      "URL": "https://ess.uni-paderborn.de/2016/programm.html",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "event": "Edirom Summer School",
+      "place": "Paderborn"
+    },
+    {
+      "id": "4185477/5H5MJNJQ",
+      "type": "speech",
+      "citation-key": "hartwigEinfuehrungCodierungsformatMusic2016",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2016-09-27/2016-09-28",
+      "title": "Einführung in das Codierungsformat der Music Encoding Initiative (MEI)",
+      "URL": "https://ess.uni-paderborn.de/2016/programm.html",
+      "author": [
+        {
+          "family": "Hartwig",
+          "given": "Maja"
+        }
+      ],
+      "event": "Edirom Summer School",
+      "place": "Paderborn"
+    },
+    {
+      "id": "4185477/K4PK3J9H",
+      "type": "speech",
+      "citation-key": "veitEinfuehrungMusikphilologischeArbeit2016",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2016-09-26",
+      "title": "Einführung in die musikphilologische Arbeit",
+      "URL": "https://ess.uni-paderborn.de/2016/programm.html",
+      "author": [
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        }
+      ],
+      "event": "Edirom Summer School",
+      "place": "Paderborn"
+    },
+    {
+      "id": "4185477/V8GJ6ZXH",
+      "type": "speech",
+      "citation-key": "kepperDigitalEditionsPraxis2016",
+      "genre": "Workshop",
+      "language": "englisch",
+      "note": "2016-09-30",
+      "title": "Digital Editions in Praxis",
+      "URL": "https://ess.uni-paderborn.de/2016/programm.html",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "event": "Edirom Summer School",
+      "place": "Paderborn"
+    },
+    {
+      "id": "4185477/PJSDV45K",
+      "type": "speech",
+      "citation-key": "kepperGentleIntroductionMEI2016",
+      "genre": "Workshop",
+      "language": "englisch",
+      "note": "2016-09-27/2016-09-28",
+      "title": "A Gentle Introduction to MEI",
+      "URL": "https://ess.uni-paderborn.de/2016/programm.html",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "event": "Edirom Summer School",
+      "place": "Paderborn"
+    },
+    {
+      "id": "4185477/WQNT5WJE",
+      "type": "speech",
+      "citation-key": "kepperMEIToolDevelopment2015",
+      "genre": "Workshop",
+      "language": "englisch",
+      "note": "2015-09-07",
+      "title": "MEI Tool Development",
+      "URL": "https://ess.uni-paderborn.de/2015/programm.html",
+      "author": [
+        {
+          "family": "Hankinson",
+          "given": "Andrew"
+        },
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Pugin",
+          "given": "Laurent"
+        }
+      ],
+      "event": "Edirom Summer School",
+      "place": "Paderborn"
+    },
+    {
+      "id": "4185477/3GZPQV25",
+      "type": "speech",
+      "citation-key": "hartwigEinfuehrungCodierungsformatMusic2015",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2015-09-07/2015-09-08",
+      "title": "Einführung in das Codierungsformat der Music Encoding Initiative (MEI)",
+      "URL": "https://ess.uni-paderborn.de/2015/programm.html",
+      "author": [
+        {
+          "family": "Hartwig",
+          "given": "Maja"
+        },
+        {
+          "family": "Richts",
+          "given": "Kristina"
+        }
+      ],
+      "event": "Edirom Summer School",
+      "place": "Paderborn"
+    },
+    {
+      "id": "4185477/JUFT55AH",
+      "type": "speech",
+      "citation-key": "hartwigEinfuehrungCodierungsformatMEI2014",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2014-09-08/2014-09-09",
+      "title": "Einführung in das Codierungsformat der MEI",
+      "URL": "https://ess.uni-paderborn.de/2014/programm.html",
+      "author": [
+        {
+          "family": "Hartwig",
+          "given": "Maja"
+        },
+        {
+          "family": "Richts",
+          "given": "Kristina"
+        }
+      ],
+      "event": "Edirom Summer School",
+      "place": "Paderborn"
+    },
+    {
+      "id": "4185477/EPXE44ZS",
+      "type": "speech",
+      "citation-key": "kepperIntroductionMusicEncoding2014",
+      "genre": "Workshop",
+      "language": "englisch",
+      "note": "2014-09-08/2014-09-09",
+      "title": "Introduction to the Music Encoding Initiative",
+      "URL": "https://ess.uni-paderborn.de/2014/programm.html",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "event": "Edirom Summer School",
+      "place": "Paderborn"
+    },
+    {
+      "id": "4185477/IW7X7EJQ",
+      "type": "speech",
+      "citation-key": "kepperKonzeptionDigitalerMusikausgaben2014",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2014-09-08",
+      "title": "Konzeption Digitaler Musikausgaben",
+      "URL": "https://ess.uni-paderborn.de/2014/programm.html",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "event": "Edirom Summer School",
+      "place": "Paderborn"
+    },
+    {
+      "id": "4185477/N9H9DRFD",
+      "type": "speech",
+      "citation-key": "kepperEncodingRenderingWorkflows2014",
+      "genre": "Workshop",
+      "language": "englisch",
+      "note": "2014-09-10",
+      "title": "From Encoding to Rendering – Workflows for MEI based Digital Music Editions",
+      "URL": "https://ess.uni-paderborn.de/2014/programm.html",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Pugin",
+          "given": "Laurent"
+        }
+      ],
+      "event": "Edirom Summer School",
+      "place": "Paderborn"
+    }
+  ]
+}

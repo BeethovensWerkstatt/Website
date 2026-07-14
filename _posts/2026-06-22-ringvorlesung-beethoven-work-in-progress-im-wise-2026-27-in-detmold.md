@@ -6,7 +6,7 @@ categories: news
 authors:
 - Beethovens Werkstatt
 version: 1.0.0
-topic: Aktivitaeten
+topic: Aktivitäten
 ---
 Das Projekt *Beethovens Werkstatt* gestaltet im Wintersemester 2026/27 die Ringvorlesung des Musikwissenschaftlichen Seminars Detmold/Paderborn. Die Vorträge widmen sich nicht nur dem in Beethovens Manuskripten sichtbar werdenden kompositorischen Denken des Komponisten, sondern beziehen die Voraussetzungen für die spätere Auseinandersetzung mit seinem Schaffen mit ein: Einblicke in die Geschichte der Beethoven-Sammlungen und der Erforschung von Skizzen geben einen Eindruck davon, mit welchen Quellen und unter welchen Voraussetzungen die Erforschung von Beethovens Schaffensprozess geschieht. Den Abschluss bildet eine Vorstellung der ersten digitalen Edition eines Skizzenbuchs, die im Rahmen des Projekts erarbeitet wurde.
 
