@@ -17,10 +17,13 @@ COPY --chown=jekyll:jekyll Gemfile* ./
 RUN bundle install --jobs 4 --retry 3
 COPY --chown=jekyll:jekyll . .
 # Build facsimile component from submodule
-RUN cd vide-component-facsimile \
-    && npm install \
-    && npm run build
-RUN ./dev.sh build
+WORKDIR /srv/jekyll/vide-component-facsimile
+RUN npm install && npm run build
+# WORKDIR /srv/jekyll/vide-component-transcription
+# RUN npm install && npm run build
+WORKDIR /srv/jekyll
+RUN bundle exec jekyll build
+
 
 # serve site with nginx
 FROM nginx AS static
