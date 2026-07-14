@@ -1,13 +1,13 @@
 services:
-  website:
+  api:
     build:
       context: ../api
       dockerfile: ../api/Dockerfile
     ports:
-      - "4000:4000"
-  api:
+      - "8080:8080"
+  website:
     build:
       context: .
       dockerfile: Dockerfile.static-nginx
     ports:
-      - "8080:8080"
+      - "80:80"
