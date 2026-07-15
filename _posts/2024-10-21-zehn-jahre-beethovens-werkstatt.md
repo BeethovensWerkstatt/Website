@@ -6,7 +6,7 @@ categories: news
 authors:
 - Beethovens Werkstatt
 version: 1.0.0
-topic: Projekt
+topic: Vortrag
 ---
 _Beethovens Werkstatt_ feiert im Jahr 2024 zehn Jahre Projektarbeit. Aus diesem Anlass wird vom 18.–19. November 2024 in der Akademie der Wissenschaften und der Literatur in Mainz ein Expert*innenworkshop mit Festakt stattfinden, an den sich eine projektinterne Klausurtagung anschließt.
 Der wissenschaftliche Teil – der Workshop – ist dem Thema des <a href="/modul-4/">aktuellen Projektmoduls</a> gewidmet – der Rekonstruktion und digitalen Darstellung von Beethovens Skizzenbuch <a href="/zum-notirungsbuch-k/">„Notirungsbuch K"</a>. Im Gespräch mit den eingeladenen Forscherinnen und Forschern sollen Probleme, Chancen und Herausforderungen einer digitalen Skizzenbuch-Edition erörtert werden.

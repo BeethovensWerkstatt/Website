@@ -6,7 +6,7 @@ categories: news
 authors:
 - Beethovens Werkstatt
 version: 1.0.0
-topic: Projekt
+topic: Vortrag
 ---
 Vom 10. bis 14. Februar 2020 findet im Beethoven-Haus Bonn der internationale wissenschaftliche Kongress „[Beethoven-Perspektiven]“ statt. Beethovens Werkstatt gestaltet im Rahmen dieser Tagung einen Roundtable zum Thema „Skizzen als Werkstattdokumente: Schaffensprozesse im Vergleich“, der am Nachmittag des 11. Februars von 14 bis 17:30 Uhr stattfinden wird.
 Im ersten Teil des Roundtables werden Fallbeispiele zu vier Komponisten (J. Haydn, W. A. Mozart, L. v. Beethoven, R. Schumann) vorgestellt, in denen die jeweilige Beziehung zwischen einer „Skizze“ und dem ihr zugehörigen Werktext dargestellt werden soll. Die spezifische kompositorische Funktion und arbeitstechnische Rolle des gewählten Skizzenbeispiels innerhalb des Schaffensprozesses sollen im Mittelpunkt der Kurzreferate stehen. Es geht dabei nicht um eine generalisierende Definition von „Skizze“, sondern um deren individuelle Rollen-, Funktions- und textuelle Eigenschaftsbeschreibung. In einem sich anschließenden Podiumsgespräch sollen Gemeinsamkeiten und Unterschiede der Fallbeispiele herausgearbeitet werden.

@@ -6,7 +6,7 @@ categories: news
 authors:
 - Beethovens Werkstatt
 version: 1.0.0
-topic: Aktivitäten
+topic: Arbeitstreffen
 ---
 Die Mitarbeiter des Projekts Beethovens Werkstatt trafen sich vom 06.–09.03.2017 zu einem Arbeitstreffen in Kaub. Auf der Agenda standen neben den Abschlussarbeiten des ersten Moduls die Vorbereitungen und Planungen zum zweiten Modul.
 Zunächst wurden die Arbeitsüberhänge aus dem ersten Modul thematisiert, die mit einer Umstrukturierung der VideApp-Software eng verbundenen sind und eine gewisse Vorbereitung erfordern. Eine detaillierte Erläuterung zu den notwendigen Umbaumaßnahmen an der Software ist [hier] nachzulesen.

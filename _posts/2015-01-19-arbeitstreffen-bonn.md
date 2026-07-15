@@ -6,7 +6,7 @@ categories: news
 authors:
 - Beethovens Werkstatt
 version: 1.0.0
-topic: Aktivitäten
+topic: Arbeitstreffen
 ---
 Das Jahr 2015 begann mit einem erneuten Projekttreffen in Bonn. Das dritte Arbeitstreffen fand vom 19. bis 22. Januar 2015 in der Villa Wasmuth in Rolandswerth/Bonn statt. Im Mittelpunkt standen die Diskussion terminologischer Aspekte, die Ausarbeitung handschriftlicher Transkriptionen sowie die Weiterentwicklung und Verbesserung des Prototypen. Zudem wurden die nächsten Arbeitsschritte geplant.
 Die intensiven Gespräche zur terminologischen Problematik brachten einen Fortschritt im Umgang mit projektspezifischen Begrifflichkeiten mit sich, welche sodann im Glossar des Projekts definiert werden. Zudem half die Diskussion dabei, sich genauer über interne Methoden und Arbeitsweisen auszutauschen und Richtlinien festzulegen, die ein effektives Fortschreiten der Arbeit gewährleisten.
