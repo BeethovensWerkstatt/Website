@@ -35,3 +35,6 @@ vide-component-facsimile/dist/
 *.tmp
 *.swp
 *~
+
+# Runtime config generated on container startup
+runtime-config.js

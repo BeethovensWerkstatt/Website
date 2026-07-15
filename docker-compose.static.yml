@@ -9,5 +9,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.static-nginx
+    environment:
+      - VIDE_API_BASE=${VIDE_API_BASE:-}
+      - VIDE_DOCUMENTS=${VIDE_DOCUMENTS:-}
     ports:
       - "80:80"

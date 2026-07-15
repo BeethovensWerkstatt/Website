@@ -1,7 +1,7 @@
 
 FROM ruby:3.1
 # Install system dependencies
-RUN apt-get update && apt-get install -y build-essential git nodejs npm tzdata && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y build-essential git nodejs npm tzdata gettext-base && rm -rf /var/lib/apt/lists/*
 # Create jekyll user and group
 RUN groupadd -g 1000 jekyll && useradd -u 1000 -g jekyll -s /bin/bash -m jekyll
 # Set up directories with proper permissions

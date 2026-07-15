@@ -12,7 +12,9 @@ services:
     environment:
       - JEKYLL_ENV=development
       - BUNDLE_PATH=/usr/local/bundle
-    command: bundle exec jekyll serve --host 0.0.0.0 --livereload --force_polling
+      - VIDE_API_BASE=${VIDE_API_BASE:-}
+      - VIDE_DOCUMENTS=${VIDE_DOCUMENTS:-}
+    command: sh -c "sh /srv/jekyll/scripts/generate-runtime-config.sh /srv/jekyll/scripts/runtime-config.template.js /srv/jekyll/runtime-config.js && bundle exec jekyll serve --host 0.0.0.0 --livereload --force_polling"
     stdin_open: true
     tty: true
 
@@ -25,7 +27,9 @@ services:
     environment:
       - JEKYLL_ENV=production
       - BUNDLE_PATH=/usr/local/bundle
-    command: bundle exec jekyll build
+      - VIDE_API_BASE=${VIDE_API_BASE:-}
+      - VIDE_DOCUMENTS=${VIDE_DOCUMENTS:-}
+    command: sh -c "sh /srv/jekyll/scripts/generate-runtime-config.sh /srv/jekyll/scripts/runtime-config.template.js /srv/jekyll/runtime-config.js && bundle exec jekyll build"
     profiles:
       - build
 

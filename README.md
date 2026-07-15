@@ -48,6 +48,42 @@ docker-compose down
 docker-compose logs -f jekyll
 ```
 
+## Runtime Configuration For Facsimile And Transcriptions
+
+The pages `/facs/` and `/transcription/` read runtime settings from environment variables at container startup. This allows changing API/document endpoints without rebuilding component code.
+
+Supported variables:
+- `VIDE_API_BASE`: Base API URL
+- `VIDE_DOCUMENTS`: JSON object string with document mappings (for example `{"NK":"/overview.json"}`)
+
+Example with `./dev.sh`:
+
+```bash
+export VIDE_API_BASE="https://api.example.org/exist/apps/api/document"
+export VIDE_DOCUMENTS='{"NK":"/overview.json"}'
+./dev.sh start
+```
+
+Example with Docker Compose:
+
+```bash
+VIDE_API_BASE="https://api.example.org/exist/apps/api/document" \
+VIDE_DOCUMENTS='{"NK":"/overview.json"}' \
+docker compose up --build jekyll
+```
+
+For static nginx deployment:
+
+```bash
+VIDE_API_BASE="https://api.example.org/exist/apps/api/document" \
+VIDE_DOCUMENTS='{"NK":"/overview.json"}' \
+docker compose -f docker-compose.static.yml up --build
+```
+
+Notes:
+- If `VIDE_DOCUMENTS` is not set, an empty mapping is used.
+- `VIDE_DOCUMENTS` must be valid JSON.
+
 ## What Docker Solves
 
 - Consistent Ruby/Jekyll runtime for all contributors
