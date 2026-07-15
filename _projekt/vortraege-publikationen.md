@@ -710,9 +710,9 @@ parent_url: /projekt
     </div>
     
     <div class="filter-group">
-      <label for="filter-genre">Genre:</label>
+      <label for="filter-genre">Typ:</label>
       <select id="filter-genre" onchange="filterVortraege()">
-        <option value="">Alle Genres</option>
+        <option value="">Alle Typen</option>
       </select>
     </div>
     
@@ -987,9 +987,9 @@ parent_url: /projekt
     </div>
 
     <div class="filter-group">
-      <label for="lehre-filter-genre">Format:</label>
+      <label for="lehre-filter-genre">Typ:</label>
       <select id="lehre-filter-genre" onchange="filterLehre()">
-        <option value="">Alle Formate</option>
+        <option value="">Alle Typen</option>
       </select>
     </div>
 
@@ -1358,7 +1358,7 @@ function updateFilterOptions() {
   const genreOptions = getOptionsForFilter('genre');
   const genreSelect = document.getElementById('filter-genre');
   const genreWerte = Array.from(genreOptions.genres).sort();
-  genreSelect.innerHTML = '<option value="">Alle Genres</option>';
+  genreSelect.innerHTML = '<option value="">Alle Typen</option>';
   genreWerte.forEach(genre => {
     const option = document.createElement('option');
     option.value = genre;
@@ -1485,6 +1485,7 @@ function populatePubFilterOptions() {
   const items = Array.from(document.querySelectorAll('.publikation-item'));
 
   const typeLabels = {
+    'article': 'Artikel',
     'article-journal': 'Zeitschriftenartikel',
     'book': 'Monografie',
     'chapter': 'Buchbeitrag',
