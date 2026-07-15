@@ -6,7 +6,7 @@ categories: news
 authors:
 - Beethovens Werkstatt
 version: 1.0.0
-topic: Projekt
+topic: Vortrag
 ---
 # Ludwig van Beethoven – Einblicke in die Komponisten-Werkstatt
 

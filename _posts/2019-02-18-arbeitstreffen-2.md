@@ -6,7 +6,7 @@ categories: news
 authors:
 - Beethovens Werkstatt
 version: 1.0.0
-topic: Aktivitäten
+topic: Arbeitstreffen
 ---
 Vom 25.–28. Februar 2019 fand das erste Projekt-Arbeitstreffen des Jahres in der Landesmusikakademie Rheinland-Pfalz in Engers statt. Im Zentrum stand die Arbeit an der im zweiten Modul („Beethoven als Bearbeiter eigener Werke“) entwickelten digitalen Anwendung zum Vergleich zweier Fassungen eines Werks. In diesem prototypischen Werkzeug können die Originalfassung und Beethovens Bearbeitung mithilfe verschiedener Darstellungsmodi aus unterschiedlichen Perspektiven betrachtet und verglichen werden. Beim Arbeitstreffen wurde über die Nutzeroberfläche des Prototyps diskutiert sowie über Begriffe und methodische Konzepte, die mit Fassungsvergleichen verbunden sind. Daneben wurden erste Überlegungen zu einer Suchfunktion angestellt, die noch Teil des Werkzeugs werden soll.
 Des Weiteren wurde das Konzept des Roundtables zum Thema „Skizzen als Werkstattdokumente: Schaffensprozesse im Vergleich“ ausgearbeitet: Beethovens Werkstatt gestaltet diesen Roundtable im Rahmen des Kongresses „Beethoven-Perspektiven“, der vom Beethoven-Archiv anlässlich des Beethoven-Jubiläums 2020 abgehalten wird.

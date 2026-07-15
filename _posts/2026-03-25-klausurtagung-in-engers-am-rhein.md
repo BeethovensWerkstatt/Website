@@ -6,7 +6,7 @@ categories: news
 authors:
 - Beethovens Werkstatt
 version: 1.0.0
-topic: Veranstaltung
+topic: Arbeitstreffen
 ---
 Vom 16. bis 19. März 2026 traf sich das Team von *Beethovens Werkstatt* zur Klausurtagung in der Landesmusikakademie Rheinland-Pfalz in Engers am Rhein. Unterstützt wurden die Teammitglieder wieder von Dr. Jens Dufner vom Beethoven-Haus Bonn, der mit seinem Expertenwissen die intensiven Diskussionen begleitete.
 

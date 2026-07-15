@@ -6,7 +6,7 @@ categories: news
 authors:
 - Beethovens Werkstatt
 version: 1.0.0
-topic: Aktivitäten
+topic: Arbeitstreffen
 ---
 Das diesjährige erste Arbeitstreffen des Projekts Beethovens Werkstatt fand vom 16. bis 19. März 2020 online statt: Alle Mitarbeiter*innen konnten sich über die online-Plattform „Zoom“ in einem virtuellen Konferenzraum treffen und so wurde das für das 3. Modul des Projekts wichtige Treffen auch in Zeiten der Pandemie durchgeführt.
 Zunächst wurden Abschlussarbeiten zum 2. Modul („Beethoven als Bearbeiter eigener Werke“) besprochen: Dabei konnten die Vereinheitlichung der Texte zur Einführung in die Beispiele op. 14/1, 121b, 122, 20/38 und 133/134 sowie die Revision einiger Glossar-Begriffe und die Richtlinien zur Codierung ausführlich diskutiert werden.
