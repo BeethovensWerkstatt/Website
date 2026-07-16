@@ -29,27 +29,9 @@ layout: default
 
   <header class="publication-header">
     <h1 class="publication-title">{{ page.title | escape }}</h1>
-    {% if page.author or page.date or page.type %}
+    {% if page.author %}
       <p class="publication-meta">
-        {% if page.author %}von {{ page.author }}{% endif %}
-        {% if page.author and page.date %} | {% endif %}
-        {% if page.date %}{{ page.date | date: "%d.%m.%Y" }}{% endif %}
-        {% if page.type %}
-          {% assign type_label = "" %}
-          {% if page.type == "conference_paper" %}{% assign type_label = "Tagungsbeitrag" %}
-          {% elsif page.type == "conference_report" %}{% assign type_label = "Tagungsprotokoll" %}
-          {% elsif page.type == "article" %}{% assign type_label = "Aufsatz" %}
-          {% elsif page.type == "edition" %}{% assign type_label = "Edition" %}
-          {% endif %}
-          {% if type_label != "" %}<span class="type-badge">{{ type_label }}</span>{% endif %}
-        {% endif %}
-        {% if page.categories and page.categories.size > 0 %}
-          <span class="publication-categories">
-            {% for category in page.categories %}
-              <span class="category-tag">{{ category }}</span>
-            {% endfor %}
-          </span>
-        {% endif %}
+        von {{ page.author }}{% if page.version %} | Version {{ page.version }}{% endif %}{% if page.date %} | {{ page.date | date: "%d.%m.%Y" }}{% endif %}
       </p>
     {% endif %}
   </header>
@@ -58,7 +40,7 @@ layout: default
     {{ content }}
   </div>
 
-  {% if page.doi_version or page.doi_overview %}
+  {% if page.author %}
     <div class="citation-box">
       <h3>Zitierhinweis</h3>
       <div class="citation-content">
@@ -89,7 +71,7 @@ layout: default
 
 .publication-header {
   margin-bottom: 3rem;
-  border-bottom: 2px solid #e8e8e8;
+  border-bottom: 2px solid #c93b22;
   padding-bottom: 1.5rem;
 }
 
@@ -97,7 +79,7 @@ layout: default
   font-size: 2.5rem;
   line-height: 1.2;
   margin-bottom: 1rem;
-  color: #333;
+  color: #c93b22;
   font-weight: 400;
   font-family: "Open Sans", "Calibri", "Trebuchet MS", sans-serif;
 }
@@ -128,6 +110,7 @@ layout: default
   font-size: 1.05rem;
   line-height: 1.7;
   color: #333;
+  counter-reset: figure-counter;
 }
 
 .publication-content h2 {
@@ -170,14 +153,13 @@ layout: default
   overflow: hidden;
   border-radius: 8px;
 }
-c93b22 0%, #a12e1a 100%);
-  color: white;
+
+.publication-content table thead {
+  /* inherits global table thead style from _base.scss */
 }
 
 .publication-content table thead th {
   padding: 1rem;
-  text-align: left;
-  font-weight: 4
   text-align: left;
   font-weight: 600;
   border-bottom: none;
@@ -261,14 +243,24 @@ c93b22 0%, #a12e1a 100%);
   margin-bottom: 1rem;
 }
 
+/* Image captions: styled like glossary with auto-incrementing Abb. number */
+.publication-content {
+  counter-reset: figure-counter;
+}
+
+.publication-content p > img + em,
+.publication-content p:has(img) + p > em:only-child,
 .publication-content figcaption,
-.publication-content figure em {
+.publication-content figure em,
+.publication-content em.caption {
+  counter-increment: figure-counter;
   display: block;
   font-style: normal;
-  color: #666;
-  font-size: 0.9rem;
-  text-align: center;
-  margin-top: 0.5rem;
+  color: #495057;
+  font-size: 0.85rem;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
   padding: 0.75rem 1rem;
   background-color: #f8f9fa;
   border-left: 3px solid #c93b22;
@@ -276,6 +268,16 @@ c93b22 0%, #a12e1a 100%);
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.publication-content p > img + em::before,
+.publication-content p:has(img) + p > em:only-child::before,
+.publication-content figcaption::before,
+.publication-content figure em::before {
+  content: "Abb. " counter(figure-counter) ": ";
+  font-weight: 600;
+  color: #c93b22;
 }
 
 /* Code blocks */
@@ -305,21 +307,25 @@ c93b22 0%, #a12e1a 100%);
 
 /* Text Highlights & Special Formatting */
 .publication-content strong {
-  font-wei333;
+  font-weight: 700;
 }
 
 .publication-content em {
   font-style: italic;
-  color: #333 italic;
   color: #555;
 }
 
 /* Footnotes / References */
 .publication-content .footnotes {
-  margin-top: 3rem;
-  padding-top: 2rem;8e8e8;
+  margin-top: 0.5rem;
+  padding-top: 0;
+  border-top: none;
   font-size: 0.9rem;
   color: #666;
+}
+
+.publication-content .footnotes hr {
+  display: none;
 }
 
 .publication-content sup a {
@@ -338,7 +344,7 @@ c93b22 0%, #a12e1a 100%);
 
 .publication-content a:hover {
   text-decoration: underline;
-  color: #a12e1a
+  color: #a12e1a;
   border-bottom-color: #c93b22;
 }
 
