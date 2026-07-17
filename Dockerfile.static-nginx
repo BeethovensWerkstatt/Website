@@ -19,8 +19,8 @@ COPY --chown=jekyll:jekyll . .
 # Build facsimile component from submodule
 WORKDIR /srv/jekyll/vide-component-facsimile
 RUN npm install && npm run build
-# WORKDIR /srv/jekyll/vide-component-transcription
-# RUN npm install && npm run build
+WORKDIR /srv/jekyll/vide-component-transcriptions
+RUN npm install && npm run build
 WORKDIR /srv/jekyll
 RUN bundle exec jekyll build
 
