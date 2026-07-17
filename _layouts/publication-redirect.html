@@ -1,0 +1,23 @@
+---
+---
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Weiterleitung zu {{ page.article_title | escape }}</title>
+  <link rel="canonical" href="{{ page.latest_url }}">
+  <meta http-equiv="refresh" content="0; url={{ page.latest_url }}">
+  <meta name="robots" content="noindex">
+  <style>
+    body { font-family: "Open Sans", Arial, sans-serif; text-align: center; padding: 50px; background: #f9f2f1; color: #333; }
+    h1 { color: #c93b22; }
+    a { color: #c93b22; text-decoration: none; font-weight: bold; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h1>Weiterleitung …</h1>
+  <p>Sie werden weitergeleitet zu <a href="{{ page.latest_url }}">{{ page.article_title | escape }}</a>.</p>
+  <script>window.location.replace("{{ page.latest_url | escape }}");</script>
+</body>
+</html>
