@@ -10,7 +10,7 @@ permalink: /transcription/
 
 <!-- Web Component SPA Island -->
 <vide-transcr
-  api-base=""
+  api-base="https://dev-api2.beethovens-werkstatt.de"
   documents=""
 ></vide-transcr>
 
