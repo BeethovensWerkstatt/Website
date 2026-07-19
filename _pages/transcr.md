@@ -11,7 +11,7 @@ permalink: /transcription/
 <!-- Web Component SPA Island -->
 <vide-transcr
   api-base="https://dev-api2.beethovens-werkstatt.de"
-  documents=""
+  documents='{"NK":"/document/m57bab171-9222-451d-8f7d-7fe7db6064bb/overview.json"}'
 ></vide-transcr>
 
 <script>
