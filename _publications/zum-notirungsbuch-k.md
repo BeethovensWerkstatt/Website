@@ -6,7 +6,7 @@ version: 1.0.0
 date: 2022-12-14
 categories: [Modul 4]
 changes: Erstveröffentlichung
-permalink: /publications/zum-notirungsbuch-k/
+permalink: /publications/zum-notirungsbuch-k/1.0.0/
 doi_version:
 doi_overview:
 ---

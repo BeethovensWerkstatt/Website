@@ -221,9 +221,9 @@ parent_url: /projekt
 }
 
 .vortraege-count {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   color: #666;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
 }
 
 /* Vorträge Liste */
@@ -231,13 +231,15 @@ parent_url: /projekt
   display: flex;
   flex-direction: column;
   gap: 0;
+  margin-top: 0.5rem;
 }
 
 .vortrag-item {
-  padding: 1.5rem 0;
-  border-bottom: 1px solid #e8e8e8;
-  border-left: 3px solid transparent;
-  padding-left: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
 }
 
 .vortrag-item:last-child {
@@ -252,21 +254,26 @@ parent_url: /projekt
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 0.75rem;
+  gap: 0.5rem;
 }
 
 .vortrag-titel {
-  font-size: 1.1rem;
+  font-size: 0.93rem;
   font-weight: 600;
   margin: 0;
   color: #333;
   line-height: 1.4;
   flex: 1;
-  padding-right: 1rem;
-  display: flex;
-  align-items: baseline;
-  gap: 1rem;
-  flex-wrap: wrap;
+}
+
+.vortrag-titel a {
+  color: #333;
+  text-decoration: none;
+}
+
+.vortrag-titel a:hover {
+  color: #c93b22;
+  text-decoration: underline;
 }
 
 .titel-text {
@@ -276,23 +283,22 @@ parent_url: /projekt
 .vortrag-meta {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
-  font-size: 0.9rem;
+  gap: 0.1rem;
+  font-size: 0.81rem;
   color: #666;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 .vortrag-meta-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem 1rem;
+  gap: 0.3rem 0.8rem;
   align-items: baseline;
 }
 
 .vortrag-autoren {
   font-style: italic;
-  color: #333;
-  font-weight: 500;
+  color: #555;
 }
 
 .vortrag-event {
@@ -302,11 +308,11 @@ parent_url: /projekt
 .vortrag-event a {
   color: #c93b22;
   text-decoration: none;
-  transition: color 0.2s ease;
 }
 
 .vortrag-event a:hover {
-  color: #9d1d20;
+  color: #c93b22;
+  text-decoration: underline;
 }
 
 .vortrag-ort {
@@ -320,21 +326,75 @@ parent_url: /projekt
 }
 
 .vortrag-datum {
-  font-size: 0.9rem;
-  color: #666;
-  font-weight: 500;
+  font-size: 0.81rem;
+  color: #777;
+  font-weight: 400;
 }
 
 .vortrag-genre {
   display: inline-block;
   background: #f0f0f0;
-  color: #555;
-  padding: 0.25rem 0.6rem;
+  color: #777;
+  padding: 0.1rem 0.4rem;
   border-radius: 3px;
-  font-size: 0.8rem;
+  font-size: 0.72rem;
   font-weight: 500;
-  flex-shrink: 0;
-  white-space: nowrap;
+  vertical-align: middle;
+  margin-left: 0.3rem;
+}
+
+/* Event-Gruppierung */
+.event-header-standalone {
+  font-size: 0.95rem;
+  color: #333;
+  font-weight: 600;
+  margin-top: 0.25rem;
+  margin-bottom: 0.2rem;
+  padding: 0.4rem 0.5rem 0.35rem 0.5rem;
+  border-bottom: 1px solid #ddd;
+  background-color: #fafafa;
+}
+
+.event-header-standalone .event-title {
+  color: #333;
+}
+
+.event-header-standalone .news-link {
+  color: #c93b22;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+}
+
+.event-header-standalone .news-link:hover {
+  border-bottom-color: #c93b22;
+}
+
+.event-vortrag {
+  margin-left: 0.8rem;
+  padding-left: 0.8rem;
+  border-left: 2px solid #e8e8e8;
+}
+
+  border-left: 2px solid #e8e8e8;
+}
+
+/* Einzelner Vortrag mit News-Link */
+.vortrag-news-link {
+  font-size: 0.81rem;
+  margin-top: 0.15rem;
+  padding-left: 0.3rem;
+}
+
+.vortrag-news-link a {
+  color: #c93b22;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+}
+
+.vortrag-news-link a:hover {
+  border-bottom-color: #c93b22;
 }
 
 /* Zotero Hinweis */
@@ -364,11 +424,11 @@ parent_url: /projekt
 
 /* Publikationen Liste */
 .publikationen-liste {
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
 }
 
 .publikation-item {
-  padding: 1rem 0 1.3rem;
+  padding: 0.65rem 0;
   border-bottom: 1px solid #f0f0f0;
 }
 
@@ -384,69 +444,72 @@ parent_url: /projekt
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 0.5rem;
+  gap: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 
 .pub-type-badge {
   display: inline-block;
   background: #f0f0f0;
-  color: #555;
-  padding: 0.25rem 0.6rem;
+  color: #777;
+  padding: 0.1rem 0.4rem;
   border-radius: 3px;
-  font-size: 0.8rem;
+  font-size: 0.72rem;
   font-weight: 500;
-  flex-shrink: 0;
-  white-space: nowrap;
+  vertical-align: middle;
+  margin-left: 0.3rem;
 }
 
 .pub-titel {
-  font-size: 1.1rem;
+  font-size: 0.93rem;
   font-weight: 600;
   margin: 0;
   color: #333;
   line-height: 1.4;
   flex: 1;
-  padding-right: 1rem;
 }
 
 .pub-titel a {
   color: #333;
   text-decoration: none;
-  border-bottom: 1px dotted #aaa;
-  transition: border-color 0.2s, color 0.2s;
 }
 
 .pub-titel a:hover {
   color: #c93b22;
-  border-bottom-color: #c93b22;
+  text-decoration: underline;
 }
 
 .pub-meta {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
-  font-size: 0.9rem;
+  gap: 0.1rem;
+  font-size: 0.81rem;
   color: #666;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 .pub-meta-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.3rem 1rem;
+  gap: 0.2rem 0.6rem;
   align-items: baseline;
 }
 
 .pub-autoren {
   font-style: italic;
-  color: #333;
-  font-weight: 500;
+  color: #555;
+}
+
+.pub-datum {
+  font-size: 0.81rem;
+  color: #777;
+  font-weight: 400;
 }
 
 .pub-citation-line {
   display: block;
-  color: #555;
-  line-height: 1.55;
+  color: #666;
+  line-height: 1.4;
 }
 
 .pub-citation-line em {
@@ -454,7 +517,7 @@ parent_url: /projekt
 }
 
 .pub-doi-line {
-  font-size: 0.85rem;
+  font-size: 0.81rem;
   color: #666;
 }
 
@@ -462,7 +525,6 @@ parent_url: /projekt
   color: #555;
   text-decoration: none;
   border-bottom: 1px solid #ddd;
-  transition: color 0.2s, border-color 0.2s;
 }
 
 .pub-doi-line a:hover {
@@ -537,7 +599,7 @@ parent_url: /projekt
 
 .publikationen-count {
   margin: 1rem 0 0.5rem;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #666;
 }
 
@@ -553,8 +615,15 @@ parent_url: /projekt
 }
 
 .lehre-item {
-  padding: 1.1rem 0;
-  border-bottom: 1px solid #f0f0f0;
+  padding: 1.10.5rem;
+}
+
+.lehre-item {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
 }
 
 .lehre-item.hidden {
@@ -569,51 +638,53 @@ parent_url: /projekt
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 0.5rem;
+  gap: 0.5rem;
 }
 
 .lehre-titel {
-  font-size: 1.1rem;
+  font-size: 0.93rem;
   font-weight: 600;
   margin: 0;
   color: #333;
   line-height: 1.4;
   flex: 1;
-  padding-right: 1rem;
-  display: flex;
-  align-items: baseline;
-  gap: 1rem;
-  flex-wrap: wrap;
+}
+
+.lehre-titel a {
+  color: #333;
+  text-decoration: none;
+}
+
+.lehre-titel a:hover {
+  color: #c93b22;
+  text-decoration: underline;
 }
 
 .lehre-datum {
-  font-size: 0.9rem;
-  color: #666;
-  font-weight: 500;
-  flex-shrink: 0;
-  white-space: nowrap;
+  font-size: 0.81rem;
+  color: #777;
+  font-weight: 400;
 }
 
 .lehre-meta {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
-  font-size: 0.9rem;
+  gap: 0.1rem;
+  font-size: 0.81rem;
   color: #666;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 .lehre-meta-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem 1rem;
+  gap: 0.3rem 0.8rem;
   align-items: baseline;
 }
 
 .lehre-autoren {
   font-style: italic;
-  color: #333;
-  font-weight: 500;
+  color: #555;
 }
 
 .lehre-event {
@@ -623,11 +694,11 @@ parent_url: /projekt
 .lehre-event a {
   color: #c93b22;
   text-decoration: none;
-  transition: color 0.2s ease;
 }
 
 .lehre-event a:hover {
-  color: #9d1d20;
+  color: #c93b22;
+  text-decoration: underline;
 }
 
 .lehre-ort {
@@ -643,17 +714,13 @@ parent_url: /projekt
 .lehre-genre {
   display: inline-block;
   background: #f0f0f0;
-  color: #555;
-  padding: 0.25rem 0.6rem;
+  color: #777;
+  padding: 0.1rem 0.4rem;
   border-radius: 3px;
-  font-size: 0.8rem;
+  font-size: 0.72rem;
   font-weight: 500;
-  flex-shrink: 0;
-  white-space: nowrap;
-}
-
-.lehre-count {
-  margin: 1rem 0 0.5rem;
+  vertical-align: middle;
+  margin-left: 0.3remem;
   font-size: 0.9rem;
   color: #666;
 }
@@ -743,65 +810,232 @@ parent_url: /projekt
   
   <!-- Vorträge Liste -->
   <div class="vortraege-liste">
+    {% comment %}Sammle alle Vorträge mit sortkey und event-info{% endcomment %}
+    {% assign all_vortraege = "" | split: "" %}
     {% for vortrag in site.data.vortraege.items %}
-      {% assign jahr = vortrag.issued.date-parts[0][0] %}
+      {% assign jahr = vortrag.issued.date-parts[0][0] | plus: 0 %}
       {% assign monat = vortrag.issued.date-parts[0][1] | default: 1 %}
       {% assign tag = vortrag.issued.date-parts[0][2] | default: 1 %}
       {% assign sortkey = jahr | times: 10000 | plus: monat | times: 100 | plus: tag %}
+      {% assign vortrag_key = vortrag.id | split: "/" | last %}
       
-      {% assign autoren_liste = "" %}
-      {% for author in vortrag.author %}
-        {% assign autoren_liste = autoren_liste | append: author.family | append: ", " | append: author.given | append: "; " %}
+      {% comment %}Finde zugehöriges Event{% endcomment %}
+      {% assign vortrag_event_id = "" %}
+      {% for event in site.data.events %}
+        {% if event.vortraege contains vortrag_key %}
+          {% assign vortrag_event_id = event.id %}
+          {% break %}
+        {% endif %}
       {% endfor %}
       
-      <div class="vortrag-item" 
-           data-jahr="{{ jahr }}" 
-           data-genre="{{ vortrag.genre | escape }}" 
-           data-sprache="{{ vortrag.language | escape }}"
-           data-autoren="{{ autoren_liste | downcase | escape }}"
-           data-titel="{{ vortrag.title | downcase | escape }}"
-           data-event="{{ vortrag.event | downcase | escape }}"
-         data-ort="{{ vortrag.place | downcase | escape }}"
-           data-sortkey="{{ sortkey }}">
-        
-        <div class="vortrag-header">
-          <h3 class="vortrag-titel">
-            <span class="titel-text">{{ vortrag.title }}</span>
-            <span class="vortrag-datum">{{ tag }}.{{ monat }}.{{ jahr }}</span>
-          </h3>
-          {% if vortrag.genre %}
-            <span class="vortrag-genre">{{ vortrag.genre }}</span>
-          {% endif %}
-        </div>
-        
-        <div class="vortrag-meta">
-          <div class="vortrag-meta-row">
-            <span class="vortrag-autoren">
-              {% for author in vortrag.author %}
-                {% if author.given %}{{ author.given }} {{ author.family }}{% else %}{{ author.family }}{% endif %}{% unless forloop.last %}; {% endunless %}
-              {% endfor %}
-            </span>
-          </div>
+      {% assign vortrag_data = sortkey | append: "|" | append: vortrag.id | append: "|" | append: vortrag_event_id %}
+      {% assign all_vortraege = all_vortraege | push: vortrag_data %}
+    {% endfor %}
+    
+    {% comment %}Sortiere nach sortkey (reverse){% endcomment %}
+    {% assign sorted_vortraege = all_vortraege | sort | reverse %}
+    
+    {% comment %}Sammle Event-Info: ID|Count|Title|Post{% endcomment %}
+    {% assign event_info_map = "" | split: "" %}
+    {% for event in site.data.events %}
+      {% assign ev_count = 0 %}
+      {% for vdata in sorted_vortraege %}
+        {% assign vparts = vdata | split: "|" %}
+        {% if vparts[2] == event.id %}
+          {% assign ev_count = ev_count | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+      {% assign ev_post = "" %}
+      {% if event.posts and event.posts.size > 0 %}
+        {% assign ev_post = event.posts[0] %}
+      {% endif %}
+      {% assign ev_info = event.id | append: "|" | append: ev_count | append: "|" | append: event.title | append: "|" | append: ev_post %}
+      {% assign event_info_map = event_info_map | push: ev_info %}
+    {% endfor %}
+    
+    {% comment %}Zeige Vorträge mit Event-Gruppierung{% endcomment %}
+    {% assign shown_events = "" | split: "" %}
+    
+    {% for vortrag_data in sorted_vortraege %}
+      {% assign data_parts = vortrag_data | split: "|" %}
+      {% assign sortkey = data_parts[0] %}
+      {% assign vortrag_id = data_parts[1] %}
+      {% assign event_id = data_parts[2] %}
+      
+      {% for vortrag in site.data.vortraege.items %}
+        {% if vortrag.id == vortrag_id %}
+          {% assign jahr = vortrag.issued.date-parts[0][0] | plus: 0 %}
+          {% assign monat = vortrag.issued.date-parts[0][1] | default: 1 %}
+          {% assign tag = vortrag.issued.date-parts[0][2] | default: 1 %}
+          {% assign autoren_liste = "" %}
+          {% for author in vortrag.author %}
+            {% assign autoren_liste = autoren_liste | append: author.family | append: ", " | append: author.given | append: "; " %}
+          {% endfor %}
           
-          <div class="vortrag-meta-row">
-            {% assign has_event = false %}
-            {% if vortrag.event %}
-              {% assign has_event = true %}
-              <span class="vortrag-event">
-                {% if vortrag.URL %}
-                  <a href="{{ vortrag.URL }}" target="_blank" rel="noopener noreferrer">{{ vortrag.event }}</a>
-                {% else %}
-                  {{ vortrag.event }}
-                {% endif %}
-              </span>
-            {% endif %}
+          {% if event_id != "" %}
+            {% comment %}Hole Event-Info{% endcomment %}
+            {% assign ev_count = 0 %}
+            {% assign ev_title = "" %}
+            {% assign ev_post = "" %}
+            {% for ev_info in event_info_map %}
+              {% assign ev_parts = ev_info | split: "|" %}
+              {% if ev_parts[0] == event_id %}
+                {% assign ev_count = ev_parts[1] | plus: 0 %}
+                {% assign ev_title = ev_parts[2] %}
+                {% assign ev_post = ev_parts[3] %}
+                {% break %}
+              {% endif %}
+            {% endfor %}
             
-            {% if vortrag.place %}
-              <span class="vortrag-ort{% if has_event %} with-event{% endif %}">{{ vortrag.place }}</span>
+            {% if ev_count > 1 %}
+              {% comment %}Multi-Event: Zeige Header beim ersten Vortrag (als Geschwister, kein Wrapper){% endcomment %}
+              {% unless shown_events contains event_id %}
+                <div class="event-header-standalone">
+                  <span class="event-title">{{ ev_title }}</span>
+                  {% if ev_post != "" %}
+                     · <a href="/{{ ev_post }}/" class="news-link">→ Newsbeitrag</a>
+                  {% endif %}
+                </div>
+                {% assign shown_events = shown_events | push: event_id %}
+              {% endunless %}
+              
+              {% comment %}Zeige Vortrag mit Einrückung (Geschwister des Headers){% endcomment %}
+              <div class="vortrag-item event-vortrag" 
+                   data-jahr="{{ jahr }}" 
+                   data-genre="{{ vortrag.genre | escape }}" 
+                   data-sprache="{{ vortrag.language | escape }}"
+                   data-autoren="{{ autoren_liste | downcase | escape }}"
+                   data-titel="{{ vortrag.title | downcase | escape }}"
+                   data-event="{{ vortrag.event | downcase | escape }}"
+                   data-ort="{{ vortrag.place | downcase | escape }}"
+                   data-sortkey="{{ sortkey }}"
+                   data-event-id="{{ event_id }}">
+                
+                <div class="vortrag-header">
+                  <h3 class="vortrag-titel">
+                    <span class="titel-text">{{ vortrag.title }}</span>
+                  </h3>
+                  {% if vortrag.genre %}
+                    <span class="vortrag-genre">{{ vortrag.genre }}</span>
+                  {% endif %}
+                </div>
+                
+                <div class="vortrag-meta">
+                  <div class="vortrag-meta-row">
+                    <span class="vortrag-autoren">
+                      {% for author in vortrag.author %}
+                        {% if author.given %}{{ author.given }} {{ author.family }}{% else %}{{ author.family }}{% endif %}{% unless forloop.last %}; {% endunless %}
+                      {% endfor %}
+                    </span>
+                    {% if vortrag.place %}
+                      <span class="vortrag-ort">{{ vortrag.place }}</span>
+                    {% endif %}
+                    <span class="vortrag-datum">{{ tag }}.{{ monat }}.{{ jahr }}</span>
+                  </div>
+                </div>
+              </div>
+            {% else %}
+              {% comment %}Single-Event Vortrag mit Inline News-Link{% endcomment %}
+              <div class="vortrag-item" 
+                   data-jahr="{{ jahr }}" 
+                   data-genre="{{ vortrag.genre | escape }}" 
+                   data-sprache="{{ vortrag.language | escape }}"
+                   data-autoren="{{ autoren_liste | downcase | escape }}"
+                   data-titel="{{ vortrag.title | downcase | escape }}"
+                   data-event="{{ vortrag.event | downcase | escape }}"
+                   data-ort="{{ vortrag.place | downcase | escape }}"
+                   data-sortkey="{{ sortkey }}">
+                
+                <div class="vortrag-header">
+                  <h3 class="vortrag-titel">
+                    <span class="titel-text">{{ vortrag.title }}</span>
+                  </h3>
+                  {% if vortrag.genre %}
+                    <span class="vortrag-genre">{{ vortrag.genre }}</span>
+                  {% endif %}
+                </div>
+                
+                <div class="vortrag-meta">
+                  <div class="vortrag-meta-row">
+                    <span class="vortrag-autoren">
+                      {% for author in vortrag.author %}
+                        {% if author.given %}{{ author.given }} {{ author.family }}{% else %}{{ author.family }}{% endif %}{% unless forloop.last %}; {% endunless %}
+                      {% endfor %}
+                    </span>
+                    {% assign has_event = false %}
+                    {% if vortrag.event %}
+                      {% assign has_event = true %}
+                      <span class="vortrag-event">
+                        {% if vortrag.URL %}
+                          <a href="{{ vortrag.URL }}" target="_blank" rel="noopener noreferrer">{{ vortrag.event }}</a>
+                        {% else %}
+                          {{ vortrag.event }}
+                        {% endif %}
+                      </span>
+                    {% endif %}
+                    {% if vortrag.place %}
+                      <span class="vortrag-ort{% if has_event %} with-event{% endif %}">{{ vortrag.place }}</span>
+                    {% endif %}
+                    <span class="vortrag-datum">{{ tag }}.{{ monat }}.{{ jahr }}</span>
+                  </div>
+                  {% if ev_post != "" %}
+                    <div class="vortrag-news-link">
+                      <a href="/{{ ev_post }}/">→ Newsbeitrag</a>
+                    </div>
+                  {% endif %}
+                </div>
+              </div>
             {% endif %}
-          </div>
-        </div>
-      </div>
+          {% else %}
+            {% comment %}Vortrag ohne Event{% endcomment %}
+            <div class="vortrag-item" 
+                 data-jahr="{{ jahr }}" 
+                 data-genre="{{ vortrag.genre | escape }}" 
+                 data-sprache="{{ vortrag.language | escape }}"
+                 data-autoren="{{ autoren_liste | downcase | escape }}"
+                 data-titel="{{ vortrag.title | downcase | escape }}"
+                 data-event="{{ vortrag.event | downcase | escape }}"
+                 data-ort="{{ vortrag.place | downcase | escape }}"
+                 data-sortkey="{{ sortkey }}">
+              
+              <div class="vortrag-header">
+                <h3 class="vortrag-titel">
+                  <span class="titel-text">{{ vortrag.title }}</span>
+                </h3>
+                {% if vortrag.genre %}
+                  <span class="vortrag-genre">{{ vortrag.genre }}</span>
+                {% endif %}
+              </div>
+              
+              <div class="vortrag-meta">
+                <div class="vortrag-meta-row">
+                  <span class="vortrag-autoren">
+                    {% for author in vortrag.author %}
+                      {% if author.given %}{{ author.given }} {{ author.family }}{% else %}{{ author.family }}{% endif %}{% unless forloop.last %}; {% endunless %}
+                    {% endfor %}
+                  </span>
+                  {% assign has_event = false %}
+                  {% if vortrag.event %}
+                    {% assign has_event = true %}
+                    <span class="vortrag-event">
+                      {% if vortrag.URL %}
+                        <a href="{{ vortrag.URL }}" target="_blank" rel="noopener noreferrer">{{ vortrag.event }}</a>
+                      {% else %}
+                        {{ vortrag.event }}
+                      {% endif %}
+                    </span>
+                  {% endif %}
+                  {% if vortrag.place %}
+                    <span class="vortrag-ort{% if has_event %} with-event{% endif %}">{{ vortrag.place }}</span>
+                  {% endif %}
+                  <span class="vortrag-datum">{{ tag }}.{{ monat }}.{{ jahr }}</span>
+                </div>
+              </div>
+            </div>
+          {% endif %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
     {% endfor %}
   </div>
 </div>
@@ -877,8 +1111,19 @@ parent_url: /projekt
   <!-- Publikationen Liste -->
   <div class="publikationen-liste">
     {% if site.data.publikationen.items %}
-      {% for pub in site.data.publikationen.items %}
-        {% assign pub_jahr = pub.issued.date-parts[0][0] %}
+      {% comment %}Sammle alle Jahre für Sortierung{% endcomment %}
+      {% assign pub_alle_jahre = "" | split: "" %}
+      {% for p in site.data.publikationen.items %}
+        {% assign p_jahr = p.issued.date-parts[0][0] | plus: 0 %}
+        {% unless pub_alle_jahre contains p_jahr %}{% assign pub_alle_jahre = pub_alle_jahre | push: p_jahr %}{% endunless %}
+      {% endfor %}
+      {% assign pub_sorted_jahre = pub_alle_jahre | sort | reverse %}
+      
+      {% comment %}Iteriere nach Jahr sortiert (neueste zuerst){% endcomment %}
+      {% for jahr_sort in pub_sorted_jahre %}
+        {% for pub in site.data.publikationen.items %}
+          {% assign pub_jahr = pub.issued.date-parts[0][0] | plus: 0 %}
+          {% if pub_jahr == jahr_sort %}
 
         {% comment %}Type label{% endcomment %}
         {% assign pub_type_label = "" %}
@@ -941,7 +1186,7 @@ parent_url: /projekt
               </span>
             </div>
 
-            <div class="pub-meta-row pub-citation-line">{%- if pub.type == "article-journal" -%}In: {%- if pub["container-title"] %} <em>{{ pub["container-title"] }}</em>{%- elsif pub["collection-title"] %} <em>{{ pub["collection-title"] }}</em>{%- endif %}{%- if pub.volume %}, Jg.&nbsp;{{ pub.volume }}{%- endif %}{%- if pub.issue %}, H.&nbsp;{{ pub.issue }}{%- endif %}{%- if pub.page %}, S.&nbsp;{{ pub.page }}{%- endif %} ({{ pub_jahr }}){%- elsif pub.type == "chapter" -%}In: {%- for ed in pub.editor limit: 3 %}{%- unless forloop.first %}, {%- endunless %}{%- if ed.given %} {{ ed.given }} {{ ed.family }}{%- else %} {{ ed.family }}{%- endif %}{%- endfor %}{%- if pub.editor.size > 3 %} u.a.{%- endif %}{%- if pub.editor.size > 0 %} (Hg.):{%- endif %}{%- if pub["container-title"] %} <em>{{ pub["container-title"] }}</em>{%- elsif pub["collection-title"] %} <em>{{ pub["collection-title"] }}</em>{%- endif %}{%- if pub["publisher-place"] %}. {{ pub["publisher-place"] }}{%- endif %}{%- if pub.page %}, S.&nbsp;{{ pub.page }}{%- endif %} ({{ pub_jahr }}){%- elsif pub.type == "book" -%}{%- if pub["publisher-place"] and pub.publisher %}{{ pub["publisher-place"] }}: {{ pub.publisher }}{%- elsif pub["publisher-place"] %}{{ pub["publisher-place"] }}{%- elsif pub.publisher %}{{ pub.publisher }}{%- endif %} ({{ pub_jahr }}){%- elsif pub.type == "paper-conference" -%}In: {%- if pub["container-title"] %} <em>{{ pub["container-title"] }}</em>{%- elsif pub["event-title"] %} <em>{{ pub["event-title"] }}</em>{%- endif %}{%- if pub["publisher-place"] %}. {{ pub["publisher-place"] }}{%- endif %}{%- if pub.page %}, S.&nbsp;{{ pub.page }}{%- endif %} ({{ pub_jahr }}){%- endif %}</div>
+            <div class="pub-meta-row pub-citation-line">{%- if pub.type == "article-journal" -%}In: {%- if pub["container-title"] %} <em>{{ pub["container-title"] }}</em>{%- elsif pub["collection-title"] %} <em>{{ pub["collection-title"] }}</em>{%- endif %}{%- if pub.volume %}, Jg.&nbsp;{{ pub.volume }}{%- endif %}{%- if pub.issue %}, H.&nbsp;{{ pub.issue }}{%- endif %}{%- if pub.page %}, S.&nbsp;{{ pub.page }}{%- endif %}{%- elsif pub.type == "chapter" -%}In: {%- for ed in pub.editor limit: 3 %}{%- unless forloop.first %}, {%- endunless %}{%- if ed.given %} {{ ed.given }} {{ ed.family }}{%- else %} {{ ed.family }}{%- endif %}{%- endfor %}{%- if pub.editor.size > 3 %} u.a.{%- endif %}{%- if pub.editor.size > 0 %} (Hg.):{%- endif %}{%- if pub["container-title"] %} <em>{{ pub["container-title"] }}</em>{%- elsif pub["collection-title"] %} <em>{{ pub["collection-title"] }}</em>{%- endif %}{%- if pub["publisher-place"] %}. {{ pub["publisher-place"] }}{%- endif %}{%- if pub.page %}, S.&nbsp;{{ pub.page }}{%- endif %}{%- elsif pub.type == "book" -%}{%- if pub["publisher-place"] and pub.publisher %}{{ pub["publisher-place"] }}: {{ pub.publisher }}{%- elsif pub["publisher-place"] %}{{ pub["publisher-place"] }}{%- elsif pub.publisher %}{{ pub.publisher }}{%- endif %}{%- elsif pub.type == "paper-conference" -%}In: {%- if pub["container-title"] %} <em>{{ pub["container-title"] }}</em>{%- elsif pub["event-title"] %} <em>{{ pub["event-title"] }}</em>{%- endif %}{%- if pub["publisher-place"] %}. {{ pub["publisher-place"] }}{%- endif %}{%- if pub.page %}, S.&nbsp;{{ pub.page }}{%- endif %}{%- endif %} <span class="pub-datum">({{ pub_jahr }})</span></div>
 
             {% if is_website %}
               <div class="pub-meta-row"><a href="{{ pub.URL }}" class="pub-website-badge">Auf dieser Website lesen &#8599;</a></div>
@@ -951,6 +1196,8 @@ parent_url: /projekt
             {% endif %}
           </div>
         </div>
+        {% endif %}
+        {% endfor %}
       {% endfor %}
     {% else %}
       <p>Publikationsdaten werden geladen, sobald <code>_data/publikationen.json</code> verfügbar ist.</p>
@@ -1020,14 +1267,26 @@ parent_url: /projekt
 
   <!-- Lehre Liste -->
   <div class="lehre-liste">
-    {% for item in site.data.lehre.items %}
-      {% comment %}Parse note field for date (single: YYYY-MM-DD or range: YYYY-MM-DD/YYYY-MM-DD){% endcomment %}
-      {% assign note_parts = item.note | split: "/" %}
-      {% assign note_start = note_parts[0] %}
-      {% assign note_start_p = note_start | split: "-" %}
-      {% assign note_start_y = note_start_p[0] %}
-      {% assign note_start_m = note_start_p[1] %}
-      {% assign note_start_d = note_start_p[2] %}
+    {% comment %}Sammle alle Startjahre für Sortierung{% endcomment %}
+    {% assign lehre_alle_jahre = "" | split: "" %}
+    {% for l in site.data.lehre.items %}
+      {% assign l_parts = l.note | split: "/" | first | split: "-" %}
+      {% assign l_jahr = l_parts[0] | plus: 0 %}
+      {% unless lehre_alle_jahre contains l_jahr %}{% assign lehre_alle_jahre = lehre_alle_jahre | push: l_jahr %}{% endunless %}
+    {% endfor %}
+    {% assign lehre_sorted_jahre = lehre_alle_jahre | sort | reverse %}
+    
+    {% comment %}Iteriere nach Jahr sortiert (neueste zuerst){% endcomment %}
+    {% for jahr_sort in lehre_sorted_jahre %}
+      {% for item in site.data.lehre.items %}
+        {% comment %}Parse note field for date (single: YYYY-MM-DD or range: YYYY-MM-DD/YYYY-MM-DD){% endcomment %}
+        {% assign note_parts = item.note | split: "/" %}
+        {% assign note_start = note_parts[0] %}
+        {% assign note_start_p = note_start | split: "-" %}
+        {% assign note_start_y = note_start_p[0] | plus: 0 %}
+        {% if note_start_y == jahr_sort %}
+        {% assign note_start_m = note_start_p[1] %}
+        {% assign note_start_d = note_start_p[2] %}
       {% if note_parts.size > 1 %}
         {% assign note_end = note_parts[1] %}
         {% assign note_end_p = note_end | split: "-" %}
@@ -1068,10 +1327,6 @@ parent_url: /projekt
         <div class="lehre-header">
           <h3 class="lehre-titel">
             <span class="titel-text">{{ item.title }}</span>
-            <span class="lehre-datum">
-              {% if note_start_d %}{{ note_start_d }}.{{ note_start_m }}.{{ note_start_y }}{% elsif note_start_m %}{{ note_start_m }}/{{ note_start_y }}{% else %}{{ note_start_y }}{% endif %}
-              {% if note_parts.size > 1 %} &ndash; {% if note_end_d %}{{ note_end_d }}.{{ note_end_m }}.{{ note_end_y }}{% elsif note_end_m %}{{ note_end_m }}/{{ note_end_y }}{% else %}{{ note_end_y }}{% endif %}{% endif %}
-            </span>
           </h3>
           {% if item.genre %}
             <span class="lehre-genre">{{ item.genre }}</span>
@@ -1085,9 +1340,6 @@ parent_url: /projekt
                 {% if author.given and author.given != "" %}{{ author.given }} {{ author.family }}{% else %}{{ author.family }}{% endif %}{% unless forloop.last %}; {% endunless %}
               {% endfor %}
             </span>
-          </div>
-
-          <div class="lehre-meta-row">
             {% if item.event %}
               <span class="lehre-event">
                 {% if item.URL %}
@@ -1100,9 +1352,15 @@ parent_url: /projekt
             {% if item.place %}
               <span class="lehre-ort{% if has_event_title %} with-event{% endif %}">{{ item.place }}</span>
             {% endif %}
+            <span class="lehre-datum">
+              {% if note_start_d %}{{ note_start_d }}.{{ note_start_m }}.{{ note_start_y }}{% elsif note_start_m %}{{ note_start_m }}/{{ note_start_y }}{% else %}{{ note_start_y }}{% endif %}
+              {% if note_parts.size > 1 %} &ndash; {% if note_end_d %}{{ note_end_d }}.{{ note_end_m }}.{{ note_end_y }}{% elsif note_end_m %}{{ note_end_m }}/{{ note_end_y }}{% else %}{{ note_end_y }}{% endif %}{% endif %}
+            </span>
           </div>
         </div>
       </div>
+      {% endif %}
+      {% endfor %}
     {% endfor %}
   </div>
 </div>
@@ -1203,17 +1461,52 @@ function clearSearch() {
 
 function sortVortraege() {
   const container = document.querySelector('.vortraege-liste');
-  const vortraege = Array.from(document.querySelectorAll('.vortrag-item'));
+  const children = Array.from(container.children);
   
-  // Sort by sortkey (descending - newest first)
-  vortraege.sort((a, b) => {
-    const keyA = parseInt(a.dataset.sortkey);
-    const keyB = parseInt(b.dataset.sortkey);
-    return keyB - keyA;
+  // Build groups: pair each event-header-standalone with its event-vortrag items
+  const groups = [];
+  let pendingHeader = null;
+  
+  children.forEach(child => {
+    if (child.classList.contains('event-header-standalone')) {
+      pendingHeader = child;
+    } else if (child.classList.contains('vortrag-item')) {
+      const eventId = child.dataset.eventId;
+      const sortkey = parseInt(child.dataset.sortkey) || 0;
+      
+      if (eventId) {
+        // event-vortrag: check if group for this eventId already started
+        const existing = groups.find(g => g.eventId === eventId);
+        if (existing) {
+          existing.items.push(child);
+        } else {
+          // First item of this event group
+          groups.push({ header: pendingHeader, items: [child], sortkey, eventId });
+          pendingHeader = null;
+        }
+      } else {
+        // Regular vortrag without event group
+        if (pendingHeader) {
+          // Orphaned header - push it alone first
+          groups.push({ header: pendingHeader, items: [], sortkey: 0, eventId: null });
+          pendingHeader = null;
+        }
+        groups.push({ header: null, items: [child], sortkey, eventId: null });
+      }
+    }
   });
+  if (pendingHeader) {
+    groups.push({ header: pendingHeader, items: [], sortkey: 0, eventId: null });
+  }
+  
+  // Sort groups by sortkey (descending - newest first)
+  groups.sort((a, b) => b.sortkey - a.sortkey);
   
   // Re-append in sorted order
-  vortraege.forEach(vortrag => container.appendChild(vortrag));
+  groups.forEach(group => {
+    if (group.header) container.appendChild(group.header);
+    group.items.forEach(item => container.appendChild(item));
+  });
 }
 
 function populateFilterOptions() {
