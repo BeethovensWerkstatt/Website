@@ -693,7 +693,7 @@
           ]
         ]
       },
-      "place": "\"New Center for Beethoven Research\", Boston"
+      "place": "New Center for Beethoven Research, Boston University"
     },
     {
       "id": "4185477/W8ZR5PB3",
@@ -1103,6 +1103,168 @@
       "place": "New York"
     },
     {
+            "id": "4185477/XD6VRWAG",
+            "type": "speech",
+            "citation-key": "appelTextkategorien2015",
+            "event-title": "Expertengespräch zur genetischen Textkritik im Bereich Musik",
+            "genre": "Vortrag",
+            "language": "deutsch",
+            "publisher-place": "Akademie der Wissenschaften und der Literatur, Mainz",
+            "title": "Textkategorien in kompositorischen Werkstattdokumenten",
+            "author": [
+                {
+                    "family": "Appel",
+                    "given": "Bernhard R."
+                }
+            ],
+            "issued": {
+                "date-parts": [
+                    [
+                        2015,
+                        11,
+                        26
+                    ]
+                ]
+            }
+        },
+        {
+            "id": "4185477/8WB8NZEB",
+            "type": "speech",
+            "citation-key": "hartwigkepperDasDatenmodellVonBeethovensWerkstatt2015",
+            "event-title": "Expertengespräch zur genetischen Textkritik im Bereich Musik",
+            "genre": "Vortrag",
+            "language": "deutsch",
+            "publisher-place": "Akademie der Wissenschaften und der Literatur, Mainz",
+            "title": "Das Datenmodell von Beethovens Werkstatt",
+            "author": [
+                {
+                    "family": "Hartwig",
+                    "given": "Maja"
+                },
+                {
+                    "family": "Kepper",
+                    "given": "Johannes"
+                }
+            ],
+            "issued": {
+                "date-parts": [
+                    [
+                        2015,
+                        11,
+                        27
+                    ]
+                ]
+            }
+        },
+        {
+            "id": "4185477/C3BVFRDR",
+            "type": "speech",
+            "citation-key": "appelZumSelbstverstaendnisDerGenetischenTextkritik2015",
+            "event-title": "Expertengespräch zur genetischen Textkritik im Bereich Musik",
+            "genre": "Vortrag",
+            "language": "deutsch",
+            "publisher-place": "Akademie der Wissenschaften und der Literatur, Mainz",
+            "title": "Zum Selbstverständnis der genetischen Textkritik bzw. textgenetischer Projekte aus der Sicht von Beethovens Werkstatt",
+            "author": [
+                {
+                    "family": "Appel",
+                    "given": "Bernhard R."
+                }
+            ],
+            "issued": {
+                "date-parts": [
+                    [
+                        2015,
+                        11,
+                        27
+                    ]
+                ]
+            }
+        },
+        {
+            "id": "4185477/ZJQMDKQT",
+            "type": "speech",
+            "citation-key": "veitDigitaleMusikeditionZwischenWerkstattdokumentUndText2015",
+            "event-title": "Expertengespräch zur genetischen Textkritik im Bereich Musik",
+            "genre": "Vortrag",
+            "language": "deutsch",
+            "publisher-place": "Akademie der Wissenschaften und der Literatur, Mainz",
+            "title": "Digitale Musikedition zwischen Werkstattdokument und Text",
+            "author": [
+                {
+                    "family": "Veit",
+                    "given": "Joachim"
+                }
+            ],
+            "issued": {
+                "date-parts": [
+                    [
+                        2015,
+                        11,
+                        26
+                    ]
+                ]
+            }
+        },
+        {
+            "id": "4185477/H5FUZ973",
+            "type": "speech",
+            "citation-key": "novarasaengerTextwachstum2015",
+            "event-title": "Expertengespräch zur genetischen Textkritik im Bereich Musik",
+            "genre": "Vortrag",
+            "language": "deutsch",
+            "publisher-place": "Akademie der Wissenschaften und der Literatur, Mainz",
+            "title": "Textwachstum und Variantenbildung",
+            "author": [
+                {
+                    "family": "Novara",
+                    "given": "Elisa"
+                },
+                {
+                    "family": "Sänger",
+                    "given": "Richard"
+                }
+            ],
+            "issued": {
+                "date-parts": [
+                    [
+                        2015,
+                        11,
+                        26
+                    ]
+                ]
+            }
+        },
+        {
+            "id": "4185477/H2Z9AITV",
+            "type": "speech",
+            "citation-key": "coxrovelliInvarianz2015",
+            "event-title": "Expertengespräch zur genetischen Textkritik im Bereich Musik",
+            "genre": "Vortrag",
+            "language": "deutsch",
+            "publisher-place": "Akademie der Wissenschaften und der Literatur, Mainz",
+            "title": "Invarianz – ein Begriff zur genetischen Textkritik",
+            "author": [
+                {
+                    "family": "Cox",
+                    "given": "Susanne"
+                },
+                {
+                    "family": "Rovelli",
+                    "given": "Federica"
+                }
+            ],
+            "issued": {
+                "date-parts": [
+                    [
+                        2015,
+                        11,
+                        26
+                    ]
+                ]
+            }
+        },
+    {
       "id": "4185477/D8FPZGJM",
       "type": "speech",
       "title": "Revisionsprozesse in Beethovens Niederschriften der achten Symphonie op. 93",
@@ -1131,7 +1293,7 @@
       "type": "speech",
       "title": "Writing Strategies and Mental Approaches in Beethoven's Compositional Practice: One Case from the Genesis of the Piano Sonata, op. 101",
       "genre": "Vortrag",
-      "event": "IRCAM 2015",
+      "event": "TCPM 2015",
       "language": "englisch",
       "author": [
         {
@@ -1148,6 +1310,7 @@
           ]
         ]
       },
+      "URL": "https://tcpm2015.ircam.fr/",
       "place": "Paris"
     },
     {
@@ -2525,7 +2688,7 @@
       "type": "speech",
       "title": "Beyond the Standard Model",
       "genre": "Vortrag",
-      "event": "Music Encoding Conference",
+      "event": "Music Encoding Conference 2024",
       "URL": "https://music-encoding.org/conference/2024/",
       "language": "englisch",
       "author": [
@@ -2551,7 +2714,7 @@
           ]
         ]
       },
-      "place": "Texas"
+      "place": "Texas, USA"
     },
     {
       "id": "4185477/WPWH7UQK",
@@ -4002,6 +4165,66 @@
       "place": "Beethoven-Haus, Bonn"
     },
     {
+            "id": "4185477/UQM27TQX",
+            "type": "speech",
+            "event-title": "Expertenworkshop: Rekonstruktion und digitale Darstellung von Beethovens Skizzenbuch Notirungsbuch K",
+            "genre": "Vortrag",
+            "language": "deutsch",
+            "note": "2024-11-18/2024-11-19",
+            "publisher-place": "Akademie der Wissenschaften und der Literatur, Mainz",
+            "title": "Expertenworkshop: Rekonstruktion und digitale Darstellung von Beethovens Skizzenbuch Notirungsbuch K",
+            "author": [
+                {
+                    "family": "Appel",
+                    "given": "Bernhard R."
+                },
+                {
+                    "family": "Cox",
+                    "given": "Susanne"
+                },
+                {
+                    "family": "Herold",
+                    "given": "Kristin"
+                },
+                {
+                    "family": "Kepper",
+                    "given": "Johannes"
+                },
+                {
+                    "family": "Münzmay",
+                    "given": "Andreas"
+                },
+                {
+                    "family": "Novara",
+                    "given": "Elisa"
+                },
+                {
+                    "family": "Sänger",
+                    "given": "Richard"
+                },
+                {
+                    "family": "Seipelt",
+                    "given": "Agnes"
+                },
+                {
+                    "family": "Veit",
+                    "given": "Joachim"
+                },
+                {
+                    "family": "Voigt",
+                    "given": "Jan-Peter"
+                }
+            ],
+            "issued": {
+                "date-parts": [
+                    [
+                        2024,
+                        11
+                    ]
+                ]
+            }
+        },
+    {
             "id": "4185477/5GXHVTF5",
             "type": "speech",
             "event": "Music Encoding Conference",
@@ -4070,6 +4293,66 @@
                         2026,
                         5,
                         5
+                    ]
+                ]
+            }
+        },
+        {
+            "id": "4185477/6DVKACII",
+            "type": "speech",
+            "event-title": "Zehn Jahre Beethovens Werkstatt: Kompositionsprozesse im digitalen Fokus",
+            "genre": "Vortrag",
+            "language": "deutsch",
+            "publisher-place": "Akademie der Wissenschaften und der Literatur, Mainz",
+            "title": "Zehn Jahre Beethovens Werkstatt: Kompositionsprozesse im digitalen Fokus",
+            "author": [
+                {
+                    "family": "Appel",
+                    "given": "Bernhard R."
+                },
+                {
+                    "family": "Cox",
+                    "given": "Susanne"
+                },
+                {
+                    "family": "Herold",
+                    "given": "Kristin"
+                },
+                {
+                    "family": "Kepper",
+                    "given": "Johannes"
+                },
+                {
+                    "family": "Münzmay",
+                    "given": "Andreas"
+                },
+                {
+                    "family": "Novara",
+                    "given": "Elisa"
+                },
+                {
+                    "family": "Sänger",
+                    "given": "Richard"
+                },
+                {
+                    "family": "Seipelt",
+                    "given": "Agnes"
+                },
+                {
+                    "family": "Veit",
+                    "given": "Joachim"
+                },
+                {
+                    "family": "Voigt",
+                    "given": "Jan-Peter"
+                }
+            ],
+            "issued": {
+                "date-parts": [
+                    [
+                        2024,
+                        11,
+                        18
                     ]
                 ]
             }

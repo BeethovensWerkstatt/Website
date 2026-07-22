@@ -53,8 +53,7 @@ module Jekyll
       @name = "index.html"
 
       self.process(@name)
-      
-      # Use the layout we created
+
       self.data = {
         'layout'               => 'publication-redirect',
         'title'                => "Weiterleitung zu #{title}",

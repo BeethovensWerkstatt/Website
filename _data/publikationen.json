@@ -6,22 +6,47 @@
       "language": "deutsch",
       "title": "Zum Notirungsbuch K",
       "URL": "/publications/zum-notirungsbuch-k/",
-      "author": [],
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        }
+      ],
       "issued": {
         "date-parts": [
           [
-            2026
+            "2022-12-14"
           ]
         ]
       }
     },
     {
       "id": "local/expertenkolloquium",
-      "type": "book",
+      "type": "article",
       "language": "deutsch",
       "title": "Expertenkolloquium",
-      "URL": "/expertenkolloquium/",
+      "URL": "/publications/expertenkolloquium/",
       "author": [],
+      "issued": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      }
+    },
+    {
+      "id": "local/schreibchronologie",
+      "type": "article",
+      "language": "deutsch",
+      "title": "Schreibchronologie bei Orchestrierungsvarianten: ein Beispiel aus Beethovens Messe C-Dur op. 86",
+      "URL": "/publications/schreibchronologie-bei-orchestrierungsvarianten/",
+      "author": [
+        {
+          "family": "Novara",
+          "given": "Elisa"
+        }
+      ],
       "issued": {
         "date-parts": [
           [
@@ -57,30 +82,6 @@
         "date-parts": [
           [
             2017
-          ]
-        ]
-      }
-    },
-    {
-      "id": "4185477/NPJWHI2P",
-      "type": "chapter",
-      "citation-key": "coxEsquissesBeethovenPour2024a",
-      "collection-number": "24",
-      "container-title": "Beethoven, sa vie, son oeuvre. Revue semestrielle éditée par l'ABF (Association Beethoven France & Francophonie)",
-      "language": "französisch",
-      "page": "69–77",
-      "title": "Les esquisses de Beethoven pour la Neuvième Symphonie dans les carnets de croquis Artaria 201 et Engelmann",
-      "volume": "1er semestre 2024",
-      "author": [
-        {
-          "family": "Cox",
-          "given": "Susanne"
-        }
-      ],
-      "issued": {
-        "date-parts": [
-          [
-            2024
           ]
         ]
       }
@@ -192,7 +193,7 @@
     {
       "id": "4185477/4RG77NV3",
       "type": "chapter",
-      "citation-key": "rovelliEdizioniGeneticheStrategie2019a",
+      "citation-key": "rovelliEdizioniGeneticheStrategie2019",
       "collection-title": "5/1",
       "container-title": "Storie e linguaggi",
       "language": "italienisch",
@@ -252,35 +253,6 @@
       }
     },
     {
-      "id": "4185477/9J39UD98",
-      "type": "chapter",
-      "citation-key": "coxBeethovensEarlySketches2024a",
-      "container-title": "Beethoven 9. Studies and Interpretations",
-      "language": "englisch",
-      "page": "93–107",
-      "publisher-place": "Krakau",
-      "title": "Beethoven's Early Sketches for the Ninth Symphony",
-      "author": [
-        {
-          "family": "Cox",
-          "given": "Susanne"
-        }
-      ],
-      "editor": [
-        {
-          "family": "Chrenkoff",
-          "given": "Magdalena"
-        }
-      ],
-      "issued": {
-        "date-parts": [
-          [
-            2024
-          ]
-        ]
-      }
-    },
-    {
       "id": "4185477/FJEHMCF5",
       "type": "chapter",
       "citation-key": "appelBeethovensWerkstattGenetische2017",
@@ -311,32 +283,6 @@
         "date-parts": [
           [
             2017
-          ]
-        ]
-      }
-    },
-    {
-      "id": "4185477/2NE8XKGS",
-      "type": "book",
-      "citation-key": "veitBeethovenBegehbareEnsemble2019",
-      "language": "deutsch",
-      "note": "mit Beiträgen von Kristin Herold, Richard Sänger, Agnes Seipelt und Joachim Veit",
-      "publisher-place": "Bonn",
-      "title": "Inside Beethoven! Das begehbare Ensemble. Begleitpublikation zur Klanginstallation der Hochschule für Musik Detmold zum Septett op. 20 und Trio op. 38 (mit CD)",
-      "editor": [
-        {
-          "family": "Veit",
-          "given": "Joachim"
-        },
-        {
-          "family": "Berndt",
-          "given": "Axel"
-        }
-      ],
-      "issued": {
-        "date-parts": [
-          [
-            2019
           ]
         ]
       }
@@ -452,72 +398,6 @@
       "DOI": "10.25366/2020.100"
     },
     {
-      "id": "4185477/V62Q3AHU",
-      "type": "chapter",
-      "citation-key": "rovelliProgettiAbbandonatiEsercizi2018a",
-      "container-title": "Cara scientia mia, musica. Studi per Maria Caraci Vela",
-      "language": "italienisch",
-      "page": "447–460",
-      "publisher": "ETS",
-      "publisher-place": "Pisa",
-      "title": "Progetti abbandonati, esercizi e letture beethoveniane tra il 1815 e il 1816",
-      "author": [
-        {
-          "family": "Rovelli",
-          "given": "Federica"
-        }
-      ],
-      "editor": [
-        {
-          "family": "Romagnoli",
-          "given": "Angela"
-        },
-        {
-          "family": "Sabaino",
-          "given": "Daniele"
-        },
-        {
-          "family": "Tibaldi",
-          "given": "Rodobaldo"
-        },
-        {
-          "family": "Zappalà",
-          "given": "Pietro"
-        }
-      ],
-      "issued": {
-        "date-parts": [
-          [
-            2018
-          ]
-        ]
-      }
-    },
-    {
-      "id": "4185477/G9BRFS85",
-      "type": "article-journal",
-      "citation-key": "rovelliEdizioniGeneticheStrategie2019",
-      "collection-title": "Storie e linguaggi",
-      "issue": "1",
-      "language": "italienisch",
-      "page": "199–218",
-      "title": "Edizioni genetiche e strategie di visualizzazione digitale. Un prototipo per il quartetto op. 59, nr. 3 di Beethoven",
-      "volume": "5",
-      "author": [
-        {
-          "family": "Rovelli",
-          "given": "Federica"
-        }
-      ],
-      "issued": {
-        "date-parts": [
-          [
-            2019
-          ]
-        ]
-      }
-    },
-    {
       "id": "4185477/6RFVGQHW",
       "type": "article-journal",
       "citation-key": "rovelliMusicSketchesFriedemann2019",
@@ -578,52 +458,6 @@
       }
     },
     {
-      "id": "4185477/NE86MTQ4",
-      "type": "chapter",
-      "citation-key": "rovelliRevisionsprozesseBeethovensNiederschriften2017",
-      "collection-number": "31",
-      "container-title": "Editio. Internationales Jahrbuch für Editionswissenschaft",
-      "language": "deutsch",
-      "page": "90–116",
-      "title": "Revisionsprozesse in Beethovens Niederschriften der achten Symphonie op. 93",
-      "author": [
-        {
-          "family": "Rovelli",
-          "given": "Federica"
-        }
-      ],
-      "issued": {
-        "date-parts": [
-          [
-            2017
-          ]
-        ]
-      }
-    },
-    {
-      "id": "4185477/6RMH5PPG",
-      "type": "chapter",
-      "citation-key": "rovelliAutographeSpurBeethovens2016a",
-      "collection-number": "12",
-      "container-title": "Bonner Beethoven Studien",
-      "language": "deutsch",
-      "page": "103–106",
-      "title": "Eine autographe Spur zu Beethovens 1. Symphonie op. 21",
-      "author": [
-        {
-          "family": "Rovelli",
-          "given": "Federica"
-        }
-      ],
-      "issued": {
-        "date-parts": [
-          [
-            2016
-          ]
-        ]
-      }
-    },
-    {
       "id": "4185477/96D3TM68",
       "type": "article-journal",
       "citation-key": "rovelliEpistemologiaFenomenologiaEdizioni2015",
@@ -650,29 +484,6 @@
       }
     },
     {
-      "id": "4185477/2RQHNUPB",
-      "type": "article-journal",
-      "citation-key": "rovelliLaboratoriumArtificiosumRegard2016a",
-      "collection-title": "Genesis. Revue internationale de critique génétique",
-      "issue": "42",
-      "language": "italienisch",
-      "page": "169–181",
-      "title": "“Laboratorium artificiosum”. Un regard dans l’atelier de Beethoven",
-      "author": [
-        {
-          "family": "Rovelli",
-          "given": "Federica"
-        }
-      ],
-      "issued": {
-        "date-parts": [
-          [
-            2016
-          ]
-        ]
-      }
-    },
-    {
       "id": "4185477/NQ5HUX28",
       "type": "article-journal",
       "citation-key": "novaraCodificareBeethovenSullutilizzo2021",
@@ -692,37 +503,6 @@
         "date-parts": [
           [
             2021
-          ]
-        ]
-      }
-    },
-    {
-      "id": "4185477/9MNR255T",
-      "type": "chapter",
-      "citation-key": "rovelliSkizzeneditionenBeethovenNutzen2015",
-      "collection-number": "39",
-      "collection-title": "Beihefte zu editio",
-      "container-title": "Vom Nutzen der Editionen. Zur Bedeutung moderner Editorik für die Erforschung von Literatur- und Kulturgeschichte",
-      "language": "deutsch",
-      "page": "297–311",
-      "publisher-place": "Berlin",
-      "title": "Skizzeneditionen zu Beethoven. Nutzen und Aufgaben im wissenschaftsgeschichtlichen Rückblick",
-      "author": [
-        {
-          "family": "Rovelli",
-          "given": "Federica"
-        }
-      ],
-      "editor": [
-        {
-          "family": "Bein",
-          "given": "Thomas"
-        }
-      ],
-      "issued": {
-        "date-parts": [
-          [
-            2015
           ]
         ]
       }
@@ -1346,7 +1126,8 @@
             2016
           ]
         ]
-      }
+      },
+      "DOI": "https://doi.org/10.25366/2018.8"
     },
     {
       "id": "4185477/BN9MAVDS",
@@ -1393,7 +1174,7 @@
       "id": "4185477/4HQCDTFC",
       "type": "chapter",
       "call-number": "BJS 105",
-      "citation-key": "rovelliSkizzeneditionenBeethovenNutzen2015a",
+      "citation-key": "rovelliSkizzeneditionenBeethovenNutzen2015",
       "collection-title": "Beihefte zu editio",
       "container-title": "Vom Nutzen der Editionen. Zur Bedeutung moderner Editorik für die Erforschung von Literatur- und Kulturgeschichte",
       "ISBN": "978-3-11-040067-0",
@@ -1575,6 +1356,8 @@
       "collection-title": "Cara scientia mia, musica. Studi per Maria Caraci Vela",
       "language": "italienisch",
       "page": "447–460",
+      "publisher": "ETS",
+      "publisher-place": "Pisa",
       "title": "Progetti abbandonati, esercizi e letture beethoveniane tra il 1815 e il 1816",
       "author": [
         {
@@ -1657,6 +1440,35 @@
           ]
         ]
       }
-    }
+    },
+    {
+            "id": "4185477/ZRFI3TS4",
+            "type": "webpage",
+            "citation-key": "heroldveitProtokollnotizenExpertenworkshop2024",
+            "genre": "Protocol",
+            "language": "deutsch",
+            "publisher": "Beethovens Werkstatt",
+            "title": "Protokollnotizen zum Expertenworkshop: Rekonstruktion und digitale Darstellung von Beethovens Skizzenbuch „Notirungsbuch K“, 18./19.11.2024, Mainz",
+            "URL": "/publications/expertenworkshop-2024-mainz/",
+            "author": [
+                {
+                    "family": "Herold",
+                    "given": "Kristin"
+                },
+                {
+                    "family": "Veit",
+                    "given": "Joachim"
+                }
+            ],
+            "issued": {
+                "date-parts": [
+                    [
+                        2025,
+                        7,
+                        11
+                    ]
+                ]
+            }
+        }
   ]
 }
