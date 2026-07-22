@@ -1,0 +1,55 @@
+# Kurze Einleitungstexte für die fünf Modul-Tabs auf /module/
+# HTML ist erlaubt; interne Links als /pfad/
+
+modul_1:
+  zeitraum: "2014–2016"
+  beschreibung: >
+    Das zwei Jahre (2014–16) umfassende 1. Modul beschäftigt sich mit <a href="/glossar/variante/">Variantenbildungen</a> in ausgewählten Werken Beethovens. Die gewählten Fallbeispiele stammen aus den Gattungen Symphonie, Kammermusik, Klaviermusik und Lied. Untersucht werden <a href="/glossar/textnarbe/">Textnarben</a> mit Entstehungsvarianten in folgenden Werken: Klaviersonate c-Moll op. 111, Streichquartett C-Dur op. 59/3, Lied Neue Liebe, neues Leben op. 75/2, 8. Symphonie op. 93, Messe C-Dur op. 86, Duett mit zwei obligaten Augengläsern WoO 32. Als Quellen für die textgenetischen Untersuchungen dienen Beethovens Werkniederschriften. Bei einem Großteil der Werke kann auf hochauflösende Digitalisate des Beethoven-Hauses zurückgegriffen werden.<br>
+    Die genetische Analyse konzentriert sich jeweils nur auf einen einzigen, mit mehreren Varianten befrachteten Abschnitt eines Arbeitsmanuskripts. Lediglich die textgenetische Aufarbeitung des Duetts mit zwei obligaten Augengläsern WoO 32 nimmt einen vollständigen Satz in den Blick. Ziel des 1. Moduls ist die Erfassung, Erforschung und Beschreibung sowie die digitale Darstellung von Beethovens Kompositionsstrategien unter verschiedenen Fragestellungen: Wie bzw. inwieweit kann man Schreibprozesse und deren Zeitlichkeit rekonstruieren? Mit welchen Methoden der <a href="/glossar/genetische-textkritik/">genetischen Textkritik</a> lassen sich Variantenbildungen erfassen und darstellen? Lassen sich Variantenbildungen klassifizieren und Arbeitsroutinen erkennen? Gibt es gattungsbedingte Unterschiede bei der Variantenbildung?<br>
+    In der Auseinandersetzung mit den genannten Beispielen wurden unterschiedliche textgenetische Konzepte und damit einhergehend Möglichkeiten der digitalen Umsetzung entwickelt: Sie betreffen u. a. die Variantenabfolge, die zwischen Varianten bestehende <a href="/glossar/invarianz/">Invarianz</a> und die Rekonstruktion des Schreibprozesses.<br>
+    Für die digitale Präsentation war die Erweiterung eines Modells zur Codierung textgenetischer Prozesse in MEI notwendig. Am Ende des 1. Moduls steht die Systematisierung und digitale Darstellung der bearbeiteten Fallstudien in der im Projekt entwickelten Anwendung VideApp-Var. Die terminologische Grundlage für diese Arbeiten wurde durch die Erstellung eines <a href="/glossar/">Glossars</a> gelegt.
+
+modul_2:
+  zeitraum: "2017–2019"
+  beschreibung: >
+    Das drei Jahre (2017–19) umfassende 2. Modul beschäftigt sich mit Beethoven als Bearbeiter eigener Werke. Dabei ist das Ziel, die Originalfassungen und Beethovens Eigenbearbeitungen in synoptischen Editionen so zu verknüpfen, dass Fassungszusammenhänge und -differenzen möglichst unmittelbar sichtbar werden. Der Gegenstand eignet sich besonders durch die begrenzte Varianz und die enge Bezugnahme der Fassungen als Ausgangspunkt für Versuche zur digitalen Darstellung von Bearbeitungsprozessen. Untersucht werden die Klaviersonate E-Dur op. 14/1 und Beethovens Bearbeitung als Streichquartett in F-Dur, das Opferlied op. 121b sowie das Bundeslied op. 122 und Beethovens Klavierauszüge dazu, die vierhändige Klavierbearbeitung der Großen Fuge op. 133/134 und das Septett op. 20 mit der Bearbeitung als Trio op. 38.<br>
+    In der im 2. Modul entwickelten Anwendung VideApp-Arr können die beiden Fassungen eines Werkes mithilfe verschiedener Darstellungsmodi aus unterschiedlichen Perspektiven betrachtet und verglichen werden. Durch die digitale Erschließung der jeweiligen Werktexte und automatisierbare Textvergleiche der genannten Werk-Paare kann gezeigt werden, auf welche Art und Weise Fassungen sowohl durch <a href="/glossar/invarianz/">Invarianz</a> (strukturgleiche Textelemente) als auch durch <a href="/glossar/variante/">Varianz</a> (strukturverwandte Textelemente) und in besonderen Fällen auch durch <a href="/glossar/differenz/">Differenz</a> (Textelemente ohne korrespondierende Parameter) aufeinander bezogen sind.
+
+modul_3:
+  zeitraum: "2020–2021"
+  beschreibung: >
+    Das zwei Jahre (2020–22) umfassende 3. Modul betrachtet das Varianten- und Korrekturphänomen aus der Perspektive einer späten kompositorischen Arbeitsphase: dem Übergang zwischen Handschrift und Druck, sowie nach der Drucklegung. Im Mittelpunkt dieser Arbeitsphase stehen Beethovens Revisionsdokumente, durch die der Komponist seine Änderungswünsche vermittelt bzw. festhält.<br>
+    Solche Revisionsdokumente sind Bestandteil eines komplexen Quellennetzwerks, das aus unterschiedlichen Dokumenten und Texten besteht. Beethoven hat seine Änderungen in Briefen, in eigens angefertigten Revisionsverzeichnissen, in seinen Skizzenbüchern und in Notendrucken (Revisionsexemplaren) selbst festgehalten.<br><br>
+
+    Trotz dieser Quellenvielfalt besitzen Revisionsdokumente eine hohe schematische, stabile Struktur, die die Kommunikation sicherstellen soll. Ziel des 3. Moduls ist es, die strukturellen Merkmale und die Funktionsweise von Revisionsdokumenten zu erforschen und digital zu vermitteln. Es werden sieben Fallbeispiele untersucht, die exemplarisch unterschiedliche Arten von Revisionsprozessen und Revisionsdokumenten aufzeigen: 5. Klavierkonzert Es-Dur op. 73, Streichquintett c-Moll op. 104, Klaviersonate B-Dur op. 106, Klaviersonate E-Dur op. 109, Diabelli-Variationen op. 120, Streichquartett Es-Dur op. 127, Irische Lieder WoO 152.<br> 
+    In der für dieses Modul entwickelten Anwendung (VideApp_rev) kann man die von Beethoven angemahnten, „monierten“ Textstellen vor und nach der Revision nachvollziehen, um Erkenntnisse darüber zu gewinnen, was der Auslöser einer Revision war, wie sie von Beethoven notiert wurde und ob sie tatsächlich in der gewünschten Weise vom Verlag umgesetzt worden ist.<br>
+    Die VideApp_rev enthält alle im 3. Modul untersuchten Fallbeispiele. Dabei wird zwischen dynamisch (Op. 73 und Op. 120) und statisch präsentierten Beispielen (Op. 104, Op. 109, Op. 127, Op. 106 und WoO 152) unterschieden. Genuin digital erarbeitet wurden die beiden dynamischen Beispiele, bei denen alle Perspektiven (Schreibtisch-Ansicht, Komparative Ansicht und Listenansicht) und Darstellungen adhoc aus einer Codierung heraus generiert werden. Bei den statischen Beispielen fällt die Schreibtisch-Ansicht weg und die Komparative Ansicht wird über ein PDF zugänglich gemacht. Die Monita können aus der Listenansicht der VideApp_rev heraus im PDF geöffnet werden. Mit einem Klick auf „Details“ in der Listenansicht wird die entsprechende Seite des PDFs geöffnet.<br><br>
+
+    Während der Arbeit an diesem Modul entstand am Zentrum Musik – Edition – Medien der Universität Paderborn in enger Absprache mit Beethovens Werkstatt das von Anastasia Wawilow entwickelte Werkzeug CollAna zum Druckplattenvergleich, das insbesondere für die Arbeit an Op. 73 eingesetzt werden konnte.
+
+modul_4:
+  zeitraum: "2022–2026"
+  beschreibung: >
+    Im 4. Modul soll exemplarisch ein zentraler Typus von Werkstattdokumenten untersucht und digital erschlossen werden: Beethovens Skizzenbücher. In ihnen lassen sich die Anfänge und vereinzelt auch fortgeschrittene Stadien komplexer kompositorischer Arbeitsschritte erkennen. Diese können in Beziehung zu anderen Schaffensdokumenten und vollendeten Werken gesetzt werden.<br><br>
+    Von den über 70 überlieferten Skizzenbüchern bzw. Skizzenkonvoluten Beethovens dient das sogenannte <a href="/publications/zum-notirungsbuch-k/">Notirungsbuch K</a> als Fallbeispiel für eine erste digitale Skizzenbuch-Edition. Beethoven nutzte das Notirungsbuch K in der Zeit von etwa Ende Januar bis ca. April/Mai 1823, um vor allem am 1. Satz der Neunten Symphonie op. 125 und den Diabelli-Variationen op. 120 zu arbeiten. Das Notirungsbuch K ist in seiner ursprünglichen Form nicht mehr existent, weil es nach Beethovens Tod aufgeteilt wurde. Es ist heute in sieben separat überlieferten Quellen zugänglich; einige Seiten des Notirungsbuchs gelten als verschollen.<br><br>
+    Im 4. Modul soll das Skizzenbuch zunächst rekonstruiert und als digitales Faksimile verfügbar gemacht werden. Daran anknüpfend wird eine dynamisierte Textdarstellung und eine flexible Textaufbereitung angestrebt. Sie soll Beethovens Arbeitsweise in ihren strukturellen bzw. genetischen Verknüpfungen mittels neuer technischer Möglichkeiten erschließen und als einen in der Zeit verlaufenden Prozess transparent machen.
+
+modul_5:
+  zeitraum: "ab 2026"
+  beschreibung: >
+    Im abschließenden Modul soll ein herausragendes Werk Beethovens, die Diabelli-Variationen op. 120, in drei verschiedenen Editionstypen erarbeitet und präsentiert werden:
+    <ol>
+      <li>Werkedition</li>
+      <li>Quellenedition der autographen Partitur</li>
+      <li>Textgenetische Edition</li>
+    </ol>
+
+    Anhand dieser drei Modelleditionen sollen neben der Leistungsfähigkeit verschiedener Editionsansätze folgende Spezifika exemplarisch dargestellt und miteinander vergleichbar gemacht werden:
+    <ul>
+      <li>Editorische Zielrichtung und methodische Konzepte</li>
+      <li>Präsentationen vom „geschlossenen“ bis zum „offenen“ Werktext</li>
+      <li>Nutzen und Erkenntnisperspektiven, die sich aus der jeweiligen Editionsform ergeben</li>
+      <li>Konsequenzen für Wissenschaft und Praxis</li>
+    </ul>
+
+    Die dreifache „Werk“-Edition ermöglicht demnach eine Diskussion unterschiedlicher musikphilologischer Methoden. Während Werk- und Quelleneditionen erprobte Editionsformen sind, betritt die angestrebte textgenetische Edition Neuland. In ihr sollen die bis dahin in den Modulen 1 bis 4 gewonnenen Ansätze zusammengeführt werden.

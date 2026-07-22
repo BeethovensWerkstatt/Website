@@ -1,0 +1,150 @@
+# Digitale Editionen, Software, Berichte und Dokumentation je Modul
+# Wird auf /module/ in der Sektion "Digitale Editionen," ausgegeben.
+#
+# Felder pro Eintrag:
+#   title:          Anzeigename (Pflicht)
+#   url:            Externer oder interner Link (optional, wenn Eintrag nur Unterinstanzen hat)
+#   beschreibung:   Kurze Erläuterung, 1–2 Sätze (optional)
+#   werke:          Optionale Liste enthaltener Werke / direkter Einstiege
+#                   (je Werk: title, optional url)
+#                   Beispiel:
+#                     werke:
+#                       - title: "Lied Neue Liebe, neues Leben, op. 75/2"
+#                       - title: "Duett mit zwei obligaten Augengläsern, WoO 32"
+#                         url: "/works/duett-mit-zwei-obligaten-augen-glaesern/"
+#   screenshot:     Optionaler Teaser-Screenshot zur Anwendung (Pfad unter /assets/...)
+#   screenshot_alt: Optionaler Alternativtext für den Screenshot
+#   dokumentation:  Interner Link zu einer Dokumentationsseite im Projekt (optional)
+
+modul_1:
+  editionen_software:
+    - title: "VideApp-Var"
+      beschreibung: "Webanwendung zur Darstellung genetischer Prozesse."
+      url: "https://videapp.beethovens-werkstatt.de"
+      screenshot: "/assets/images/module/modul-1.jpg"
+      screenshot_alt: "Screenshot der VideApp-Var aus Modul 1"
+      werke:
+        - title: "Lied Neue Liebe, neues Leben, op. 75/2"
+        - title: "Duett mit zwei obligaten Augengläsern, WoO 32"
+        - title: "8. Symphonie in F-Dur, op. 93"
+      dokumentation: "/dokumentation/videapp-var/" # @todo "Tour"-Inhalte in eine .md Datei überführen
+
+    - title: "Prototyp 1"
+      beschreibung: "Fallstudie zu Variantendarstellung für die \"Sonate für Klavier c-Moll, op. 111.\""
+      dokumentation: "/dokumentation/prototyp-1/"
+      url: "https://demo.beethovens-werkstatt.de/index.html"
+
+    - title: "Prototyp 2"
+      beschreibung: "Fallstudie zu Schreibschichten und Invarianz für das Streichquartett C-Dur, op. 59/3."
+      dokumentation: "/dokumentation/prototyp-2/"
+      url: "https://demo2.beethovens-werkstatt.de/index.html"
+
+    - title: "Genetic Sandbox"
+      beschreibung: "Interaktive Sandbox zur Erprobung von Variantenabfolgen und Schreibprozessen."
+      werke:
+        - title: "Sandbox 1: Streichquartett C-Dur, op. 59/3"
+          url: "https://beethovens-werkstatt.de/sandbox/op59.3/index.html"
+        - title: "Sandbox 2: Lied Neue Liebe, neues Leben, op. 75/2"
+          url: "https://beethovens-werkstatt.de/sandbox/op75.2/5r/index.html"
+      dokumentation: "/dokumentation/genetic-sandbox/"
+
+  berichte:
+    - title: "Abschlussbericht Modul 1"
+      url: "/modul-1/abschlussbericht-modul-1/"
+      typ: "Bericht"
+      date: "2017-07-04"
+      author: "Beethovens Werkstatt"
+
+    - title: "Softwareentwicklung Modul 1"
+      url: "/modul-1/softwareentwicklung-2017/"
+      beschreibung: "Dokumentation und Zwischenbilanz (2014–2017): Zu den Herausforderungen der Softwareentwicklung."
+      typ: "Lessons Learned"
+      date: "2017-05-04"
+      author: "Johannes Kepper"
+
+    - title: "Prototypen"
+      url: "/modul-1/prototypen-2016/"
+      beschreibung: "Erprobung neuer Darstellungsformen zur Variantendarstellung."
+      typ: "Lessons Learned"
+      date: "2015-05-05"
+      author: "Richard Sänger"
+
+    - title: "Richtlinien für die Cleartext-Transkription"
+      url: "/modul-1/richtlinien-cleartext-transkription/"
+      typ: "Richtlinien"
+      date: "2022-02-07"
+      author: "Susanne Cox"
+
+modul_2:
+  editionen_software:
+    - title: "VideApp-Arr" # @todo Texte zu den Fassungsvergleichen als eigene Publikationen auf website
+      beschreibung: "Fassungsvergleich der Eigenbearbeitungen von Beethoven."
+      url: "https://videapp-arr.beethovens-werkstatt.de/"
+      screenshot: "/assets/images/module/modul-2.jpeg"
+      screenshot_alt: "Screenshot der VideApp-Arr aus Modul 2"
+      dokumentation: "/dokumentation/videapp-arr/" # @todo die 5 texte in einer doku zusammenfassen, abschnitte als links erhalten (update der links in der software)
+
+    - title: "MusicDiff"
+      beschreibung: "Vergleich von zwei Musikcodierungen."
+      url: "https://music-diff.edirom.de/"
+      dokumentation: "/dokumentation/music-diff/" # @todo kurze einführung als eigene dokumentation anlegen
+
+  berichte:
+    - title: "Abschlussbericht Modul 2"
+      url: "/modul-2/abschlussbericht-modul-2/"
+      typ: "Bericht"
+      date: "2020-04-29"
+      author: "Beethovens Werkstatt"
+
+    - title: "Transkriptions- und Codierungsrichtlinien"
+      url: "/modul-2/codierungsrichtlininen-modul2/"
+      typ: "Richtlinien"
+      date: "2020-06-09"
+      author: "Ran Mo"
+
+    - title: "Fragestellungen in Modul 2: Beethoven als Bearbeiter eigener Werke"
+      url: "/modul-2/inhaltliche-fragestellung-des-zweiten-moduls/"
+      typ: "Overview"
+      date: "2017-07-03"
+      author: "Elisa Novara, Federica Rovelli"  
+
+modul_3:
+  editionen_software:
+    - title: "VideApp-Rev" # @todo die 7 Texte zu den werken als eigene Publikationen auf website
+      url: "https://videapp.beethovens-werkstatt.de/"
+      screenshot: "/assets/images/module/modul-3.jpg"
+      screenshot_alt: "Screenshot der VideApp-Rev aus Modul 3"
+      beschreibung: "Untersuchung von Beethovens Revisionsprozessen."
+      dokumentation: "/dokumentation/videapp-rev/" # @todo die 3 kurzinfo-texte in einer doku zusammenfassen, abschnitte als links erhalten (update der links in der software)
+
+    - title: "Druckplattenvergleich"
+      beschreibung: "Optischer Druckplattenvergleich."
+      url: "/modul-3/druckplattenvergleich/" # @todo übertragen von https://beethovens-werkstatt.de/druckplattenvergleich-op-73/
+      dokumentation: "/dokumentation/music-diff/" # @todo kurze einführung als eigene dokumentation anlegen
+
+  berichte:
+    - title: "Abschlussbericht Modul 3"
+      url: "/modul-3/abschlussbericht-modul-3/"
+      typ: "Bericht"
+
+    - title: "Übersicht über Beethovens Revisionsdokumente"
+      url: "/modul-3/uebersicht-revisionsdokumente/"
+      typ: "Bericht"
+
+modul_4:
+  editionen_software:
+    - title: "VideApp-Sk"
+      url: "https://videapp.beethovens-werkstatt.de/document/m57bab171-9222-451d-8f7d-7fe7db6064bb"
+      screenshot: "/assets/images/module/modul-4.jpg"
+      screenshot_alt: "Screenshot der VideApp-Sk aus Modul 4"
+      beschreibung: "Digitale Rekonstruktion des <a href=\"/publications/zum-notirungsbuch-k/\">Notirungsbuchs K</a>."
+      dokumentation: "/dokumentation/videapp-sk/"
+
+  berichte:
+    - title: "Abschlussbericht Modul 4"
+      url: "/modul-4/abschlussbericht-modul-4/"
+      typ: "Bericht"
+
+modul_5:
+  editionen_software: []
+  berichte: []

@@ -1,0 +1,478 @@
+{% comment %}
+  Wiederverwendbares Template für jeden Modul-Tab.
+  Parameter:
+    include.num      → Modulnummer (Integer, z. B. 4)
+    include.start    → Startjahr (Integer, z. B. 2022)
+    include.end      → Endjahr inkl. (Integer, z. B. 2026)
+    include.modul_key → YAML-Schlüssel (z. B. "modul_4")
+{% endcomment %}
+
+{% assign m_start   = include.start   | plus: 0 %}
+{% assign m_end     = include.end     | plus: 0 %}
+{% assign m_num     = include.num     | append: "" %}
+{% assign m_key     = include.modul_key %}
+{% assign m_desc    = site.data.module_descriptions[m_key] %}
+{% assign m_content = site.data.module_content[m_key] %}
+{% assign modul_label = "Modul " | append: include.num %}
+
+{% comment %}Vortrag-spezifische Jahresgrenzen (mit optionaler Monatsgenauigkeit){% endcomment %}
+{% assign v_end_year   = include.vortrag_end_year   | plus: 0 %}
+{% if v_end_year   == 0 %}{% assign v_end_year   = m_end %}{% endif %}
+{% assign v_end_month  = include.vortrag_end_month  | plus: 0 %}
+{% if v_end_month  == 0 %}{% assign v_end_month  = 12 %}{% endif %}
+{% assign v_start_month = include.vortrag_start_month | plus: 0 %}
+{% if v_start_month == 0 %}{% assign v_start_month = 1 %}{% endif %}
+
+{% comment %}── 1. Einleitung ──────────────────────────────{% endcomment %}
+{% if m_desc.beschreibung %}
+<p class="modul-intro-text">{{ m_desc.beschreibung }}</p>
+{% endif %}
+
+{% comment %}── 2. Editionen / Software (nicht einklappbar) ─{% endcomment %}
+{% if m_content.editionen_software.size > 0 %}
+<h3 class="modul-section-heading">Digitale Editionen, Tools</h3>
+{% for item in m_content.editionen_software %}
+{% assign is_central_videapp = false %}
+{% if item.title contains "VideApp-" %}{% assign is_central_videapp = true %}{% endif %}
+<div class="modul-content-card{% if is_central_videapp %} modul-content-card-primary{% endif %}">
+  <div class="modul-content-card-layout">
+    <div class="modul-content-card-main">
+      <div class="modul-content-card-title modul-content-card-title-row">
+        {% if item.url and item.url.size > 0 %}
+          <a href="{{ item.url }}"{% if item.url contains "http" %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ item.title }}</a>
+        {% else %}
+          <span>{{ item.title }}</span>
+        {% endif %}
+      </div>
+      {% if item.beschreibung %}<div class="modul-content-card-desc">{{ item.beschreibung }}</div>{% endif %}
+      {% if item.werke and item.werke.size > 0 %}
+      <div class="modul-content-card-works">
+        <span class="modul-content-card-works-label">Enthaltene Werke:</span>
+        <ul class="modul-content-card-works-list">
+          {% for werk in item.werke %}
+          <li>
+            {% if werk.url and werk.url.size > 0 %}
+              <a href="{{ werk.url }}"{% if werk.url contains "http" %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ werk.title }}</a>
+            {% else %}
+              {{ werk.title }}
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      {% if item.dokumentation %}<div class="modul-content-card-doc"><a href="{{ item.dokumentation }}">Dokumentation</a></div>{% endif %}
+    </div>
+    {% if item.screenshot and item.screenshot.size > 0 and item.url and item.url.size > 0 %}
+    <a class="modul-content-card-shot" href="{{ item.url }}"{% if item.url contains "http" %} target="_blank" rel="noopener noreferrer"{% endif %}>
+      <img src="{{ item.screenshot }}" alt="{{ item.screenshot_alt | default: item.title }}" loading="lazy" />
+      <span class="modul-content-card-shot-cta">App öffnen →</span>
+    </a>
+    {% endif %}
+  </div>
+</div>
+{% endfor %}
+{% endif %}
+
+{% comment %}── 3. Berichte, Richtlinien, Lessons learned (einklappbar) ─{% endcomment %}
+{% if m_content.berichte.size > 0 %}
+<details class="modul-collapsible">
+  <summary class="modul-section-heading">Berichte, Richtlinien, Lessons Learned <span class="modul-count">({{ m_content.berichte.size }})</span></summary>
+  <ul class="modul-item-list">
+  {% for bericht in m_content.berichte %}
+  <li class="modul-item">
+    <div class="modul-item-header">
+      <span class="modul-item-title">
+        <a href="{{ bericht.url }}"{%if bericht.url contains "http" %} target="_blank" rel="noopener noreferrer"{%endif%}>{{ bericht.title }}</a>
+      </span>
+    </div>
+    {% if bericht.beschreibung %}<span class="modul-item-meta">{{ bericht.beschreibung }}</span>{% endif %}
+  </li>
+  {% endfor %}
+  </ul>
+</details>
+{% endif %}
+
+{% comment %}── 3b. Eigene Veranstaltungen (einklappbar) ─{% endcomment %}
+{% assign ev_veranst_count = 0 %}
+{% for event in site.data.events %}
+  {% if event.type == "Eigene Veranstaltung" and event.module == include.num %}
+    {% assign ev_veranst_count = ev_veranst_count | plus: 1 %}
+  {% endif %}
+{% endfor %}
+{% if ev_veranst_count > 0 %}
+<details class="modul-collapsible">
+  <summary class="modul-section-heading">Eigene Veranstaltungen <span class="modul-count">({{ ev_veranst_count }})</span></summary>
+  <ul class="modul-item-list">
+  {% for event in site.data.events %}
+    {% if event.type == "Eigene Veranstaltung" and event.module == include.num %}
+    {% assign ev_date_parts = event.date | split: "/" %}
+    {% assign ev_start_p = ev_date_parts[0] | split: "-" %}
+    {% capture ev_date_display %}{{ ev_start_p[2] }}.{{ ev_start_p[1] }}.{{ ev_start_p[0] }}{% if ev_date_parts.size > 1 %}{% assign ev_end_p = ev_date_parts[1] | split: "-" %} – {{ ev_end_p[2] }}.{{ ev_end_p[1] }}.{{ ev_end_p[0] }}{% endif %}{% endcapture %}
+    <li class="modul-item">
+      <div class="modul-item-header">
+        <span class="modul-item-title modul-eigene-veranst-title">
+          {% if event.url and event.url.size > 0 %}<a href="{{ event.url }}"{% if event.url contains "http" %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ event.title }}</a>
+          {% else %}{{ event.title }}{% endif %}
+        </span>
+      </div>
+      <span class="modul-item-meta">{{ ev_date_display }}
+        {% if event.posts and event.posts.size > 0 %} · <a href="/{{ event.posts[0] }}/" class="news-link">→ Newsbeitrag</a>{% endif %}
+      </span>
+    </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+</details>
+{% endif %}
+
+{% comment %}── 4. Wissenschaftliche Publikationen (einklappbar) ─{% endcomment %}
+{% comment %}Zähle gefilterte Publikationen{% endcomment %}
+{% assign pub_count = 0 %}
+{% for pub in site.data.publikationen.items %}
+  {% assign py = pub.issued.date-parts[0][0] | plus: 0 %}
+  {% if py >= m_start and py <= m_end %}{% assign pub_count = pub_count | plus: 1 %}{% endif %}
+{% endfor %}
+
+{% if pub_count > 0 %}
+<details class="modul-collapsible">
+  <summary class="modul-section-heading">Wissenschaftliche Publikationen <span class="modul-count">({{ pub_count }})</span></summary>
+  <ul class="modul-item-list modul-pub-list">
+  {% comment %}Sortiere nach Jahr absteigend (neueste zuerst) - Iteration von aktuell zu start{% endcomment %}
+  {% for year in (m_start..m_end) reversed %}
+    {% for pub in site.data.publikationen.items %}
+    {% assign py = pub.issued.date-parts[0][0] | plus: 0 %}
+    {% if py == year %}
+    {% assign pub_is_website = false %}
+    {% if pub.URL %}{% unless pub.URL contains "http" %}{% assign pub_is_website = true %}{% endunless %}{% endif %}
+    {% assign pub_doi_url = "" %}
+    {% if pub.DOI %}
+      {% if pub.DOI contains "http" %}{% assign pub_doi_url = pub.DOI %}
+      {% elsif pub.DOI contains "DOI: " %}{% assign pub_doi_url = "https://doi.org/" | append: pub.DOI | remove: "DOI: " %}
+      {% else %}{% assign pub_doi_url = "https://doi.org/" | append: pub.DOI %}{% endif %}
+    {% endif %}
+    <li class="modul-pub-item">
+      <div class="modul-pub-header">
+        <span class="modul-pub-titel">
+          {% if pub_is_website %}<a href="{{ pub.URL }}">{{ pub.title }}</a>
+          {% elsif pub.URL and pub.URL contains "http" and pub_doi_url == "" %}<a href="{{ pub.URL }}" target="_blank" rel="noopener noreferrer">{{ pub.title }}</a>
+          {% else %}{{ pub.title }}{% endif %}
+        </span>
+        <span class="modul-pub-badges">
+          {% if pub_is_website %}<span class="modul-website-badge">Auf dieser Website</span>{% endif %}
+        {% assign pub_type_label = "" %}
+        {% if pub.type == "article-journal" %}{% assign pub_type_label = "Zeitschriftenartikel" %}
+        {% elsif pub.type == "chapter" %}{% assign pub_type_label = "Buchbeitrag" %}
+        {% elsif pub.type == "book" %}{% assign pub_type_label = "Monografie" %}
+        {% elsif pub.type == "paper-conference" %}{% assign pub_type_label = "Konferenzbeitrag" %}
+        {% endif %}
+        {% if pub_type_label != "" %}<span class="modul-badge">{{ pub_type_label }}</span>{% endif %}
+        </span>
+      </div>
+      <div class="modul-pub-meta">
+        <span class="modul-pub-autoren">
+          {% unless pub.author.size > 0 %}{% for ed in pub.editor limit: 2 %}{% unless forloop.first %}, {% endunless %}{% if ed.given %}{{ ed.given }} {{ ed.family }}{% else %}{{ ed.family }}{% endif %}{% endfor %}{% if pub.editor.size > 0 %} (Hg.){% endif %}
+          {% else %}{% for author in pub.author limit: 2 %}{% unless forloop.first %}, {% endunless %}{% if author.given %}{{ author.given }} {{ author.family }}{% else %}{{ author.family }}{% endif %}{% endfor %}{% if pub.author.size > 2 %} u.a.{% endif %}
+          {% endunless %}
+        </span>
+      </div>
+      <div class="modul-pub-meta">
+        <span class="modul-pub-citation">{%- if pub.type == "article-journal" -%}In: {%- assign bib_ct = pub["container-title"] | default: pub["collection-title"] -%}{%- if bib_ct %} <em>{{ bib_ct }}</em>{%- endif %}{%- if pub.volume %}, Jg.&nbsp;{{ pub.volume }}{%- endif %}{%- if pub.issue %}, H.&nbsp;{{ pub.issue }}{%- endif %}{%- if pub.page %}, S.&nbsp;{{ pub.page }}{%- endif %}{%- elsif pub.type == "chapter" -%}In: {%- for ed in pub.editor limit: 3 %}{%- unless forloop.first %}, {%- endunless %}{%- if ed.given %} {{ ed.given }} {{ ed.family }}{%- else %} {{ ed.family }}{%- endif %}{%- endfor %}{%- if pub.editor.size > 3 %} u.a.{%- endif %}{%- if pub.editor.size > 0 %} (Hg.):{%- endif %}{%- if pub["container-title"] %} <em>{{ pub["container-title"] }}</em>{%- elsif pub["collection-title"] %} <em>{{ pub["collection-title"] }}</em>{%- endif %}{%- if pub["publisher-place"] %}. {{ pub["publisher-place"] }}{%- endif %}{%- if pub.page %}, S.&nbsp;{{ pub.page }}{%- endif %}{%- elsif pub.type == "book" -%}{%- if pub["publisher-place"] and pub.publisher %}{{ pub["publisher-place"] }}: {{ pub.publisher }}{%- elsif pub["publisher-place"] %}{{ pub["publisher-place"] }}{%- elsif pub.publisher %}{{ pub.publisher }}{%- endif %}{% if pub.volume %}, Bd.&nbsp;{{ pub.volume }}{% endif %}{%- elsif pub.type == "paper-conference" -%}In: {%- if pub["container-title"] %} <em>{{ pub["container-title"] }}</em>{%- elsif pub["event-title"] %} <em>{{ pub["event-title"] }}</em>{%- endif %}{%- if pub["publisher-place"] %}. {{ pub["publisher-place"] }}{%- endif %}{%- if pub.page %}, S.&nbsp;{{ pub.page }}{%- endif %}{%- endif %} ({{ py }})</span>
+        {% if pub_doi_url != "" %}<span class="modul-pub-doi">DOI: <a href="{{ pub_doi_url }}" target="_blank" rel="noopener noreferrer">{{ pub_doi_url }}</a></span>{% endif %}
+      </div>
+    </li>
+    {% endif %}
+    {% endfor %}
+  {% endfor %}
+  </ul>
+  <p class="modul-more-link"><a href="/vortraege-publikationen/#publikationen">Alle Publikationen (mit Filteroptionen) →</a></p>
+</details>
+{% endif %}
+{% comment %}── 5. Vorträge und Tagungen (einklappbar, alle flach) ─{% endcomment %}
+{% comment %}Zähle gefilterte Vorträge{% endcomment %}
+{% assign vortrag_count = 0 %}
+{% for v in site.data.vortraege.items %}
+  {% assign vy = v.issued.date-parts[0][0] | plus: 0 %}
+  {% assign vm = v.issued.date-parts[0][1] | default: 1 | plus: 0 %}
+  {% assign v_ok = false %}
+  {% if vy > m_start and vy < v_end_year %}{% assign v_ok = true %}
+  {% elsif vy == m_start %}{% if vm >= v_start_month %}{% assign v_ok = true %}{% endif %}
+  {% elsif vy == v_end_year and vy > m_start %}{% if vm <= v_end_month %}{% assign v_ok = true %}{% endif %}
+  {% endif %}
+  {% if v_ok %}{% assign vortrag_count = vortrag_count | plus: 1 %}{% endif %}
+{% endfor %}
+
+{% if vortrag_count > 0 %}
+<details class="modul-collapsible">
+  <summary class="modul-section-heading">Vorträge und Tagungen <span class="modul-count">({{ vortrag_count }})</span></summary>
+  <ul class="modul-item-list">
+  {% comment %}Sammle alle Vorträge mit sortkey und event-info im Jahr-Filter{% endcomment %}
+  {% assign modul_vortraege = "" | split: "" %}
+  {% for vortrag in site.data.vortraege.items %}
+    {% assign vy = vortrag.issued.date-parts[0][0] | plus: 0 %}
+    {% assign vm = vortrag.issued.date-parts[0][1] | default: 1 | plus: 0 %}
+    {% assign v_ok = false %}
+    {% if vy > m_start and vy < v_end_year %}{% assign v_ok = true %}
+    {% elsif vy == m_start %}{% if vm >= v_start_month %}{% assign v_ok = true %}{% endif %}
+    {% elsif vy == v_end_year and vy > m_start %}{% if vm <= v_end_month %}{% assign v_ok = true %}{% endif %}
+    {% endif %}
+    {% if v_ok %}
+      {% assign vortrag_monat = vm %}
+      {% assign vortrag_tag = vortrag.issued.date-parts[0][2] | default: 1 %}
+      {% assign sortkey = vy | times: 10000 | plus: vortrag_monat | times: 100 | plus: vortrag_tag %}
+      {% assign vortrag_key = vortrag.id | split: "/" | last %}
+      
+      {% assign vortrag_event_id = "" %}
+      {% for event in site.data.events %}
+        {% if event.vortraege contains vortrag_key %}
+          {% assign vortrag_event_id = event.id %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+      
+      {% assign vortrag_data = sortkey | append: "|" | append: vortrag.id | append: "|" | append: vortrag_event_id %}
+      {% assign modul_vortraege = modul_vortraege | push: vortrag_data %}
+    {% endif %}
+  {% endfor %}
+  
+  {% assign sorted_modul_vortraege = modul_vortraege | sort | reverse %}
+  
+  {% comment %}Precompute event_info_map: id|count|title|post{% endcomment %}
+  {% assign modul_event_info_map = "" | split: "" %}
+  {% for event in site.data.events %}
+    {% assign ev_count = 0 %}
+    {% for vdata in sorted_modul_vortraege %}
+      {% assign vparts = vdata | split: "|" %}
+      {% if vparts[2] == event.id %}
+        {% assign ev_count = ev_count | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+    {% assign ev_post = "" %}
+    {% if event.posts and event.posts.size > 0 %}{% assign ev_post = event.posts[0] %}{% endif %}
+    {% assign ev_url = event.url | default: "" %}
+    {% assign ev_info = event.id | append: "|" | append: ev_count | append: "|" | append: event.title | append: "|" | append: ev_post | append: "|" | append: ev_url %}
+    {% assign modul_event_info_map = modul_event_info_map | push: ev_info %}
+  {% endfor %}
+  
+  {% assign shown_events = "" | split: "" %}
+  
+  {% for vortrag_data in sorted_modul_vortraege %}
+    {% assign data_parts = vortrag_data | split: "|" %}
+    {% assign vortrag_id = data_parts[1] %}
+    {% assign event_id = data_parts[2] %}
+    {% assign outer_modul_idx = forloop.index0 %}
+    
+    {% for vortrag in site.data.vortraege.items %}
+      {% if vortrag.id == vortrag_id %}
+        {% assign vy = vortrag.issued.date-parts[0][0] | plus: 0 %}
+        {% assign vortrag_monat = vortrag.issued.date-parts[0][1] | default: 1 %}
+        {% assign vortrag_tag = vortrag.issued.date-parts[0][2] | default: 1 %}
+        
+        {% if event_id != "" %}
+          {% assign ev_count = 0 %}
+          {% assign ev_title = "" %}
+          {% assign ev_post = "" %}
+          {% assign ev_url = "" %}
+          {% for ev_info in modul_event_info_map %}
+            {% assign ev_parts = ev_info | split: "|" %}
+            {% if ev_parts[0] == event_id %}
+              {% assign ev_count = ev_parts[1] | plus: 0 %}
+              {% assign ev_title = ev_parts[2] %}
+              {% assign ev_post = ev_parts[3] %}
+              {% assign ev_url = ev_parts[4] %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+          
+          {% if ev_count > 1 %}
+            {% unless shown_events contains event_id %}{% assign shown_events = shown_events | push: event_id %}{% endunless %}
+            
+            <li class="modul-item modul-event-vortrag">
+              <div class="modul-item-header">
+                <span class="modul-item-title">{{ vortrag.title }}</span>
+                {% if vortrag.genre %}<span class="modul-badge">{{ vortrag.genre }}</span>{% endif %}
+              </div>
+              <span class="modul-item-meta">
+                {% for author in vortrag.author limit: 2 %}{% unless forloop.first %}, {% endunless %}{% if author.given %}{{ author.given }} {{ author.family }}{% else %}{{ author.family }}{% endif %}{% endfor %}{% if vortrag.author.size > 2 %} u.a.{% endif %}
+                {% assign grouped_event_title = vortrag.event | default: ev_title | default: vortrag["event-title"] %}
+                {% assign grouped_event_url = vortrag.URL %}
+                {% unless grouped_event_url and grouped_event_url.size > 0 %}{% assign grouped_event_url = ev_url %}{% endunless %}
+                {% if grouped_event_title and grouped_event_title.size > 0 %} · {% if grouped_event_url and grouped_event_url.size > 0 %}<a href="{{ grouped_event_url }}"{% if grouped_event_url contains "http" %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ grouped_event_title }}</a>{% else %}{{ grouped_event_title }}{% endif %}{% endif %}
+                {% if vortrag.place %} · {{ vortrag.place }}{% endif %}
+                · {{ vortrag_tag }}.{{ vortrag_monat }}.{{ vy }}
+              </span>
+            </li>
+            
+            {% assign modul_next_idx = outer_modul_idx | plus: 1 %}
+            {% assign modul_next_data = sorted_modul_vortraege[modul_next_idx] %}
+            {% assign modul_next_parts = modul_next_data | split: "|" %}
+            {% if modul_next_parts[2] != event_id and ev_post and ev_post.size > 0 %}
+            <li class="modul-event-news"><a href="/{{ ev_post }}/">→ Newsbeitrag</a></li>
+            {% endif %}
+          {% else %}
+            <li class="modul-item">
+              <div class="modul-item-header">
+                <span class="modul-item-title">{{ vortrag.title }}</span>
+                {% if vortrag.genre %}<span class="modul-badge">{{ vortrag.genre }}</span>{% endif %}
+              </div>
+              <span class="modul-item-meta">
+                {% for author in vortrag.author limit: 2 %}{% unless forloop.first %}, {% endunless %}{% if author.given %}{{ author.given }} {{ author.family }}{% else %}{{ author.family }}{% endif %}{% endfor %}{% if vortrag.author.size > 2 %} u.a.{% endif %}
+                {% if vortrag.event %} · {% if vortrag.URL %}<a href="{{ vortrag.URL }}" target="_blank" rel="noopener noreferrer">{{ vortrag.event }}</a>{% else %}{{ vortrag.event }}{% endif %}{% endif %}
+                {% if vortrag.place %} · {{ vortrag.place }}{% endif %}
+                · {{ vortrag_tag }}.{{ vortrag_monat }}.{{ vy }}
+              </span>
+              {% if ev_post and ev_post.size > 0 %}<div class="modul-vortrag-news"><a href="/{{ ev_post }}/">→ Newsbeitrag</a></div>{% endif %}
+            </li>
+          {% endif %}
+        {% else %}
+          <li class="modul-item">
+            <div class="modul-item-header">
+              <span class="modul-item-title">{{ vortrag.title }}</span>
+              {% if vortrag.genre %}<span class="modul-badge">{{ vortrag.genre }}</span>{% endif %}
+            </div>
+            <span class="modul-item-meta">
+              {% for author in vortrag.author limit: 2 %}{% unless forloop.first %}, {% endunless %}{% if author.given %}{{ author.given }} {{ author.family }}{% else %}{{ author.family }}{% endif %}{% endfor %}{% if vortrag.author.size > 2 %} u.a.{% endif %}
+              {% if vortrag.event %} · {% if vortrag.URL %}<a href="{{ vortrag.URL }}" target="_blank" rel="noopener noreferrer">{{ vortrag.event }}</a>{% else %}{{ vortrag.event }}{% endif %}{% endif %}
+              {% if vortrag.place %} · {{ vortrag.place }}{% endif %}
+              · {{ vortrag_tag }}.{{ vortrag_monat }}.{{ vy }}
+            </span>
+          </li>
+        {% endif %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+  </ul>
+  <p class="modul-more-link"><a href="/vortraege-publikationen/#vortraege">Alle Vorträge (mit Filteroptionen) →</a></p>
+</details>
+{% endif %}
+
+{% comment %}── 6. Lehrveranstaltungen (einklappbar) ─────────{% endcomment %}
+{% assign lehre_count = 0 %}
+{% for item in site.data.lehre.items %}
+  {% assign note_start_y = item.note | split: "/" | first | split: "-" | first | plus: 0 %}
+  {% if note_start_y >= m_start and note_start_y <= m_end %}{% assign lehre_count = lehre_count | plus: 1 %}{% endif %}
+{% endfor %}
+
+{% if lehre_count > 0 %}
+<details class="modul-collapsible">
+  <summary class="modul-section-heading">Lehrveranstaltungen <span class="modul-count">({{ lehre_count }})</span></summary>
+  <ul class="modul-item-list">
+  {% comment %}Sammle Lehre-Items mit sortkey und event-id{% endcomment %}
+  {% assign modul_lehre = "" | split: "" %}
+  {% for item in site.data.lehre.items %}
+    {% assign note_start_y = item.note | split: "/" | first | split: "-" | first | plus: 0 %}
+    {% if note_start_y >= m_start and note_start_y <= m_end %}
+      {% assign lnp = item.note | split: "/" | first | split: "-" %}
+      {% assign lm = lnp[1] | default: "01" | plus: 0 %}
+      {% assign ld = lnp[2] | default: "01" | plus: 0 %}
+      {% assign lsortkey = note_start_y | times: 10000 | plus: lm | times: 100 | plus: ld %}
+      {% assign lkey = item.id | split: "/" | last %}
+      {% assign l_evid = "" %}
+      {% for event in site.data.events %}
+        {% if event.lehrveranstaltungen contains lkey %}{% assign l_evid = event.id %}{% break %}{% endif %}
+      {% endfor %}
+      {% assign l_entry = lsortkey | append: "|" | append: item.id | append: "|" | append: l_evid %}
+      {% assign modul_lehre = modul_lehre | push: l_entry %}
+    {% endif %}
+  {% endfor %}
+  {% assign sorted_modul_lehre = modul_lehre | sort | reverse %}
+  
+  {% assign modul_lehre_event_map = "" | split: "" %}
+  {% for event in site.data.events %}
+    {% if event.lehrveranstaltungen %}
+      {% assign mev_count = 0 %}
+      {% for ldata in sorted_modul_lehre %}
+        {% assign lp = ldata | split: "|" %}{% if lp[2] == event.id %}{% assign mev_count = mev_count | plus: 1 %}{% endif %}
+      {% endfor %}
+      {% assign mev_post = "" %}{% if event.posts and event.posts.size > 0 %}{% assign mev_post = event.posts[0] %}{% endif %}
+      {% assign mev_url = event.url | default: "" %}
+      {% assign mev_info = event.id | append: "|" | append: mev_count | append: "|" | append: event.title | append: "|" | append: mev_post | append: "|" | append: mev_url %}
+      {% assign modul_lehre_event_map = modul_lehre_event_map | push: mev_info %}
+    {% endif %}
+  {% endfor %}
+  
+  {% assign shown_modul_lehre_events = "" | split: "" %}
+  {% for l_data in sorted_modul_lehre %}
+    {% assign lp = l_data | split: "|" %}
+    {% assign l_id = lp[1] %}{% assign l_evid = lp[2] %}{% assign l_outer_idx = forloop.index0 %}
+    {% for item in site.data.lehre.items %}
+      {% if item.id == l_id %}
+        {% assign mev_count = 0 %}{% assign mev_title = "" %}{% assign mev_post = "" %}{% assign mev_url = "" %}
+        {% if l_evid != "" %}
+          {% for mev_info in modul_lehre_event_map %}
+            {% assign mep = mev_info | split: "|" %}
+            {% if mep[0] == l_evid %}{% assign mev_count = mep[1] | plus: 0 %}{% assign mev_title = mep[2] %}{% assign mev_post = mep[3] %}{% assign mev_url = mep[4] %}{% break %}{% endif %}
+          {% endfor %}
+        {% endif %}
+        
+        {% if l_evid != "" and mev_count > 1 %}
+          {% unless shown_modul_lehre_events contains l_evid %}{% assign shown_modul_lehre_events = shown_modul_lehre_events | push: l_evid %}{% endunless %}
+          <li class="modul-item modul-event-vortrag">
+            <div class="modul-item-header">
+              <span class="modul-item-title">{{ item.title }}</span>
+              {% if item.genre %}<span class="modul-badge">{{ item.genre }}</span>{% endif %}
+            </div>
+            <span class="modul-item-meta">
+              {% for author in item.author limit: 2 %}{% unless forloop.first %}, {% endunless %}{% if author.given %}{{ author.given }} {{ author.family }}{% else %}{{ author.family }}{% endif %}{% endfor %}{% if item.author.size > 2 %} u.a.{% endif %}
+              {% if item.event %} · {% if item.URL %}<a href="{{ item.URL }}" target="_blank" rel="noopener noreferrer">{{ item.event }}</a>{% else %}{{ item.event }}{% endif %}{% endif %}
+              {% if item.place %} · {{ item.place }}{% endif %}
+              · {{ item.note }}
+            </span>
+          </li>
+          {% assign modul_l_next_idx = l_outer_idx | plus: 1 %}
+          {% assign modul_l_next = sorted_modul_lehre[modul_l_next_idx] %}
+          {% assign modul_l_next_parts = modul_l_next | split: "|" %}
+          {% if modul_l_next_parts[2] != l_evid and mev_post and mev_post.size > 0 %}
+          <li class="modul-event-news"><a href="/{{ mev_post }}/">→ Newsbeitrag</a></li>
+          {% endif %}
+        {% else %}
+          <li class="modul-item">
+            <div class="modul-item-header">
+              <span class="modul-item-title">{{ item.title }}</span>
+              {% if item.genre %}<span class="modul-badge">{{ item.genre }}</span>{% endif %}
+            </div>
+            <span class="modul-item-meta">
+              {% for author in item.author limit: 2 %}{% unless forloop.first %}, {% endunless %}{% if author.given %}{{ author.given }} {{ author.family }}{% else %}{{ author.family }}{% endif %}{% endfor %}{% if item.author.size > 2 %} u.a.{% endif %}
+              {% if item.event %} · {% if item.URL %}<a href="{{ item.URL }}" target="_blank" rel="noopener noreferrer">{{ item.event }}</a>{% else %}{{ item.event }}{% endif %}{% endif %}
+              {% if item.place %} · {{ item.place }}{% endif %}
+              · {{ item.note }}
+            </span>
+            {% if mev_post and mev_post.size > 0 %}<div class="modul-vortrag-news"><a href="/{{ mev_post }}/">→ Newsbeitrag</a></div>{% endif %}
+          </li>
+        {% endif %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+  </ul>
+  <p class="modul-more-link"><a href="/vortraege-publikationen/#lehre">Alle Lehrveranstaltungen (mit Filteroptionen) →</a></p>
+</details>
+{% endif %}
+
+{% comment %}── 7. Glossarartikel (einklappbar, nur Erstveröff. = Hauptdatei) ─{% endcomment %}
+{% assign glossary_count = 0 %}
+{% for entry in site.glossary %}
+  {% unless entry.path contains "versions" %}
+    {% if entry.categories contains modul_label %}{% assign glossary_count = glossary_count | plus: 1 %}{% endif %}
+  {% endunless %}
+{% endfor %}
+
+{% if glossary_count > 0 %}
+<details class="modul-collapsible">
+  <summary class="modul-section-heading">Glossarartikel <span class="modul-count">({{ glossary_count }})</span></summary>
+  <ul class="modul-item-list">
+  {% assign glossary_sorted = site.glossary | sort: "title" %}
+  {% for entry in glossary_sorted %}
+    {% unless entry.path contains "versions" %}
+      {% if entry.categories contains modul_label %}
+      <li class="modul-item">
+        <span class="modul-item-title"><a href="{{ entry.url }}">{{ entry.title }}</a></span>
+      </li>
+      {% endif %}
+    {% endunless %}
+  {% endfor %}
+  </ul>
+  <p class="modul-more-link"><a href="/glossar/">Alle Glossarartikel (mit Filteroptionen) →</a></p>
+</details>
+{% endif %}
