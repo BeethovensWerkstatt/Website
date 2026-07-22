@@ -1,0 +1,255 @@
+# Manuelle Verknüpfung zusammengehörender Einträge aus verschiedenen Quellen
+#
+# Zweck: Verbindet Vorträge, Lehrveranstaltungen und/oder Publikationen aus den
+#         Zotero-JSON-Daten mit zugehörigen News-Posts auf der Website.
+
+#
+# HINWEIS: Einträge werden nach "date" sortiert. Alle Felder außer "id", "title",
+#          "module", "type" und "date" sind optional.
+
+# Modul 4
+
+- id: "mec-2026-tokyo"
+  title: "Music Encoding Conference 2026, Tokyo"
+  module: 4
+  type: "Vortrag"
+  date: "2026-05-26/2026-05-29"
+  vortraege:
+    - 5GXHVTF5     # "Diplomatic rendering with Thulemeier – Digital Facsimiles for MEI"
+  posts:
+    - 2026-06-08-mec-2026-in-tokio
+  note: ""
+
+- id: "bonn-2026-vorstellung-skizzenbuchedition"
+  title: "Beethovens Werkstatt – Digitale Edition des Skizzenbuchs Notirungsbuch K, Bonn"
+  module: 4
+  type: "Eigene Veranstaltung"
+  date: "2026-05-05"
+  vortraege:
+    - BRIUNF6I     # "Beethovens Werkstatt – Digitale Edition des Skizzenbuchs Notirungsbuch K"
+  posts:
+    - 2026-05-12-vorstellung-einer-ersten-digitalen-skizzenbuchedition
+  note: ""
+
+- id: "dhd-2026"
+  title: "Fluide Workflows für musikalische Skizzen – Zum Umgang mit einem komplexen Datenmodell."
+  module: 4
+  type: "Vortrag"
+  date: "2026-02-26"
+  vortraege:
+    - RR4P3GC7     # "Beethovens Werkstatt – Digitale Edition des Skizzenbuchs Notirungsbuch K"
+  posts:
+    - 2026-03-10-dhd2026-posterpraesentation-in-wien
+  note: ""
+
+- id: "ag-digitale-edition-2026-erlangen"
+  title: "21. Plenartagung für Germanistische Edition, Erlangen"
+  url: "https://www.ized.fau.de/beispiel-seite/aktuelles/21-plenartagung-der-ag-fuer-germanistische-edition/"
+  module: 4
+  type: "Tagung"
+  date: "2026-02-11/2026-02-14"
+  vortraege:
+    - VZKRJW6X     # "Beethoven-Skizzen digital edieren: über die Transparenz editorischer Entscheidungen im Digitalen"
+    - QEKSUC4F     # "Dokument und (Noten-)Text"
+  posts:
+    - 2026-03-09-plenartagung-der-ag-fuer-germanistische-edition
+  note: ""
+
+- id: "festvortrag-2024-mainz"
+  title: "Zehn Jahre Beethovens Werkstatt: Kompositionsprozesse im digitalen Fokus, Festvortrag, Mainz"
+  url: "https://www.adwmainz.de/aktivitaeten/veranstaltungen/details/zehn-jahre-beethovens-werkstatt-kompositionsprozesse-im-digitalen-fokus.html"
+  module: 4
+  type: "Eigene Veranstaltung"
+  date: "2024-11-18"
+  vortraege:
+    -  6DVKACII    # "Zehn Jahre Beethovens Werkstatt: Kompositionsprozesse im digitalen Fokus"
+  posts:
+    - 2024-10-21-zehn-jahre-beethovens-werkstatt
+  note: ""
+
+- id: "expertenworkshop-2024-mainz"
+  title: "Expertenworkshop: Rekonstruktion und digitale Darstellung von Beethovens Skizzenbuch Notirungsbuch K, Mainz"
+  url: "/publications/expertenworkshop-2024-mainz/"
+  module: 4
+  type: "Eigene Veranstaltung"
+  date: "2024-11-18/2024-11-19"
+  vortraege:
+    -  6DVKACII    # "Expertenworkshop: Rekonstruktion und digitale Darstellung von Beethovens Skizzenbuch Notirungsbuch K"
+  posts:
+    - 2024-10-21-zehn-jahre-beethovens-werkstatt
+  note: ""
+
+# Modul 3
+
+# Modul 2
+
+- id: "roundtable-2020-bonn"
+  title: "Roundtable, Bonn"
+  url: "https://www.beethoven.de/de/g/Beethoven-Perspektiven"
+  module: 2
+  type: "Eigene Veranstaltung"
+  date: "2020-02-11"
+  vortraege:
+    - 5WP8ICRR     # "Roundtable: Skizzen als Werkstattdokumente: Schaffensprozesse im Vergleich"
+
+  posts:
+    - 2020-01-23-roundtable-skizzen-als-werkstattdokumente-schaffensprozesse-im-vergleich
+  note: ""
+
+# Modul 1
+
+- id: "expertenkolloquium-2015-mainz"
+  title: "Expertenkolloquium, Mainz"
+  url: "/publications/expertenkolloquium/index.html"
+  module: 1
+  type: "Eigene Veranstaltung"
+  date: "2015-11-26/2015-11-27"
+  vortraege:
+    - XD6VRWAG     # "Textkategorien in kompositorischen Werkstattdokumenten"
+    - ZJQMDKQT     # "Digitale Musikedition zwischen Werkstattdokument und Text"
+    - H5FUZ973     # "Textwachstum und Variantenbildung"
+    - H2Z9AITV     # "Invarianz – ein Begriff zur genetischen Textkritik"
+    - C3BVFRDR     # "Zum Selbstverständnis der genetischen Textkritik bzw. textgenetischer Projekte aus der Sicht von Beethovens Werkstatt"
+    - 8WB8NZEB     # "Das Datenmodell von Beethovens Werkstatt"
+  posts:
+    - 2015-09-13-expertenworkshop-in-mainz
+  note: ""
+
+- id: "boston-2015-rovelli"
+  title: "New Center for Beethoven Research, Boston University"
+  module: 1
+  type: "Tagung"
+  date: "2015-11-04"
+  vortraege:
+    - HA4AS9T8     # "Das Scheide-Skizzenbuch von Beethoven"
+    - 3VASZSC5     # "About the Methodological Approach of the Project Beethovens Werkstatt"
+  posts:
+    - 2015-09-13-vortraege-an-der-boston-university
+  note: ""
+
+- id: "tcpm-2015-paris"
+  title: "Tracking the Creative Process in Music, Paris"
+  url: "https://tcpm2015.ircam.fr/"
+  module: 1
+  type: "Vortrag"
+  date: "2015-10-08/2015-10-10"
+  vortraege:
+    - X3LBUJEU     # "Writing Strategies and Mental Approaches in Beethoven's Compositional Practice: One Case from the Genesis of the Piano Sonata, op. 101"
+  posts:
+    - 2015-09-13-tcpm-konferenz-in-paris
+  note: ""
+
+- id: "studienkolleg-2015-bonn"
+  title: "Studienkolleg \"Ludwig van Beethoven als Kirchenmusiker und Kirchenmusikkomponist\", Bonn"
+  module: 1
+  type: "Vortrag"
+  date: "2015-09-25/2015-09-28"
+  vortraege:
+    - YQVUHNBZ     # "Projektvorstellung"
+  posts:
+    - 2015-09-12-beethoven-studienkolleg-fuer-junge-musikwissenschaftler
+  note: ""
+
+- id: "ess-2015-paderborn"
+  title: "Edirom Summer School 2015, Paderborn"
+  module: 1
+  type: "Lehre"
+  date: "2015-09-07/2015-09-11"
+  lehrveranstaltungen:
+    - 3GZPQV25     # "Einführung in das Codierungsformat der Music Encoding Initiative (MEI)"
+    - WQNT5WJE     # "MEI Tool Development"
+  posts:
+    - 2015-09-02-edirom-summer-school-2015
+  note: ""
+
+- id: "seminar-2015-levi"
+  title: "Doktoranden-Seminar in der Fondazione Levi, Venedig"
+  module: 1
+  type: "Vortrag"
+  date: "2015-07-07"
+  vortraege:
+    - USMXEXWP     # "Beethovens Schaffensweise im Blick der Musikphilologie und Einführung in die Genetische Textkritik: Beethovens Werkstatt"
+  posts:
+    - 2015-07-12-doktoranden-seminar-der-fondazione-levi-in-venedig
+  note: ""
+
+- id: "iaml-2015-newyork"
+  title: "IAML 2015"
+  module: 1
+  type: "Vortrag"
+  date: "2015-06-21/2015-06-26"
+  vortraege:
+    - CJYMEBXB     # "Scholarly Editions 2.0 - How Digital Media Promote new Editorial Concepts"
+  posts:
+    - 2015-05-06-iamlims-konferenz-in-new-york
+  note: ""
+
+- id: "mec-2015-florenz"
+  title: "Music Encoding Conference 2015, Florenz"
+  url: "https://music-encoding.org/conference/2015/"
+  module: 1
+  type: "Tagung"
+  date: "2015-05-18/2015-05-21"
+  vortraege:
+    - IABR9E7C     # "A tool for illustrating Genetic Processes"
+    - RTU6DP9C     # "Encoding Genetical Processes. Proposal for a genetic Module in MEI"
+  posts:
+    - 2015-05-06-music-encoding-conference-2015-in-florenz
+  note: ""
+
+- id: "easterfestival-2015-warschau"
+  title: "Symposium des 19. Beethoven Easter Festival 2015, Warschau"
+  module: 1
+  type: "Vortrag"
+  date: "2015-03-23/2015-03-24"
+  vortraege:
+    - KBAL28DR     # "Beethovens Werkstatt"
+  posts:
+    - 2015-04-01-warschau-2015
+  note: ""
+
+- id: "dhd-2015-graz"
+  title: "DHd2015, Graz"
+  module: 1
+  type: "Vortrag"
+  date: "2015-02-25"
+  vortraege:
+    - JGADDSDK     # "Befund und Deutung in Beethovens Schreibprozessen"
+  posts:
+    - 2015-02-23-dhd-tagung-2015
+  note: ""
+
+- id: "festakt-2014-bonn"
+  title: "Festakt und Vorstellung des Projekts, Bonn"
+  module: 1
+  type: "Eigene Veranstaltung"
+  date: "2014-12-01"
+  vortraege:
+    - 88QELH3Z     # "Beethovens Werkstatt - Genetische Textkritik und Digitale Musikedition. Vorstellung des Forschungsprojekts"
+  posts:
+    - 2014-12-01-festakt-zum-projektstart
+  note: ""
+
+- id: "ess-2014-paderborn"
+  title: "Edirom Summer School 2014, Paderborn"
+  module: 1
+  type: "Lehre"
+  date: "2014-09-08/2014-09-12"
+  lehrveranstaltungen:
+    - JUFT55AH     # "Einführung in das Codierungsformat der MEI"
+    - EPXE44ZS     # "Introduction to the Music Encoding Initiative"
+    - IW7X7EJQ     # "Konzeption Digitaler Musikausgaben"
+    - N9H9DRFD     # "From Encoding to Rendering – Workflows for MEI based Digital Music Editions"
+  note: ""
+
+- id: "mec-2014-charlottesville"
+  title: "Music Encoding Conference 2014, Charlottesville"
+  url: "https://music-encoding.org/conference/2014/"
+  module: 1
+  type: "Tagung"
+  date: "2014-05-20/2014-05-23"
+  vortraege:
+    - 7CI29P8V     # "Encoding Genetics with MEI. Beethovens Werkstatt"
+    - ZCIVF7DZ     # "Beethovens Werkstatt. Genetic Textual Criticism and the Digital Edition"
+  note: ""
+
