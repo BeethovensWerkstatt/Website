@@ -171,6 +171,9 @@ permalink: /module/
 .modul-content-card-doc { font-size: 0.83rem; }
 .modul-content-card-doc a { color: #333; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; text-decoration-color: #b0b0b0; }
 .modul-content-card-doc a:hover { color: #c93b22; text-decoration-color: #c93b22; }
+.modul-content-card-news { font-size: 0.77rem; color: #777; margin-top: 0.15rem; }
+.modul-content-card-news a { color: #666; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; text-decoration-color: #bcbcbc; }
+.modul-content-card-news a:hover { color: #c93b22; text-decoration-color: #c93b22; }
 
 .modul-content-card-shot {
   display: block;

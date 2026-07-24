@@ -15,6 +15,7 @@
 #   screenshot:     Optionaler Teaser-Screenshot zur Anwendung (Pfad unter /assets/...)
 #   screenshot_alt: Optionaler Alternativtext für den Screenshot
 #   dokumentation:  Interner Link zu einer Dokumentationsseite im Projekt (optional)
+#   news:           Optionaler Link zum Newsbeitrag (direkte URL oder _posts-Dateipfad)
 
 modul_1:
   editionen_software:
@@ -38,6 +39,7 @@ modul_1:
       beschreibung: "Fallstudie zu Schreibschichten und Invarianz für das Streichquartett C-Dur, op. 59/3."
       dokumentation: "/dokumentation/prototyp-2/"
       url: "https://demo2.beethovens-werkstatt.de/index.html"
+      news: "/_posts/2015-11-13-beispiel-op-593/"
 
     - title: "Genetic Sandbox"
       beschreibung: "Interaktive Sandbox zur Erprobung von Variantenabfolgen und Schreibprozessen."
@@ -115,6 +117,28 @@ modul_3:
       screenshot: "/assets/images/module/modul-3.jpg"
       screenshot_alt: "Screenshot der VideApp-Rev aus Modul 3"
       beschreibung: "Untersuchung von Beethovens Revisionsprozessen."
+      werke:
+        - title: "5. Klavierkonzert Es-Dur op. 73 (dynamische Ansicht in der VideApp-Rev)"
+          url: "https://videapp.beethovens-werkstatt.de/work/xf3f76067-b8a1-48ce-878f-41b9a0ef0c8d"
+          text: "/publications/op73/"
+        - title: "Diabelli-Variationen op. 120 (dynamische Ansicht in der VideApp-Rev)"
+          url: "https://videapp.beethovens-werkstatt.de/work/xfae46dc1-e2dc-412a-a27c-91a31cd18ab8"
+          text: "/publications/op120/"
+        - title: "Streichquintett c-Moll op. 104 (statisch-komparative Ansicht)"
+          url: "/modul-3/op104_revisionsprozess.pdf"
+          text: "/publications/op104/"
+        - title: "Klaviersonate E-Dur op. 109 (statisch-komparative Ansicht)"
+          url: "/modul-3/op109_revisionsprozess.pdf"
+          text: "/publications/op109/"
+        - title: "Streichquartett Es-Dur op. 127 (statisch-komparative Ansicht)"
+          url: "/modul-3/op127_revisionsprozess.pdf"
+          text: "/publications/op127/"
+        - title: "Irische Lieder WoO 152 (statisch-komparative Ansicht)"
+          url: "/modul-3/woo152_revisionsprozess.pdf"
+          text: "/publications/woo152/"
+        - title: "Klaviersonate B-Dur op. 106 (statisch-komparative Ansicht)"
+          url: "/modul-3/op106_revisionsprozess.pdf"
+          text: "/publications/op106/"
       dokumentation: "/dokumentation/videapp-rev/" # @todo die 3 kurzinfo-texte in einer doku zusammenfassen, abschnitte als links erhalten (update der links in der software)
 
     - title: "Druckplattenvergleich"

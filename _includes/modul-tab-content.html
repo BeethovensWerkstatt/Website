@@ -23,55 +23,69 @@
 {% assign v_start_month = include.vortrag_start_month | plus: 0 %}
 {% if v_start_month == 0 %}{% assign v_start_month = 1 %}{% endif %}
 
-{% comment %}── 1. Einleitung ──────────────────────────────{% endcomment %}
-{% if m_desc.beschreibung %}
-<p class="modul-intro-text">{{ m_desc.beschreibung }}</p>
-{% endif %}
-
 {% comment %}── 2. Editionen / Software (nicht einklappbar) ─{% endcomment %}
 {% if m_content.editionen_software.size > 0 %}
-<h3 class="modul-section-heading">Digitale Editionen, Tools</h3>
-{% for item in m_content.editionen_software %}
-{% assign is_central_videapp = false %}
-{% if item.title contains "VideApp-" %}{% assign is_central_videapp = true %}{% endif %}
-<div class="modul-content-card{% if is_central_videapp %} modul-content-card-primary{% endif %}">
-  <div class="modul-content-card-layout">
-    <div class="modul-content-card-main">
-      <div class="modul-content-card-title modul-content-card-title-row">
-        {% if item.url and item.url.size > 0 %}
-          <a href="{{ item.url }}"{% if item.url contains "http" %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ item.title }}</a>
-        {% else %}
-          <span>{{ item.title }}</span>
+<details class="modul-collapsible" open>
+  <summary class="modul-section-heading">Digitale Editionen, Tools <span class="modul-count">({{ m_content.editionen_software.size }})</span></summary>
+  {% for item in m_content.editionen_software %}
+  {% assign is_central_videapp = false %}
+  {% if item.title contains "VideApp-" %}{% assign is_central_videapp = true %}{% endif %}
+  <div class="modul-content-card{% if is_central_videapp %} modul-content-card-primary{% endif %}">
+    <div class="modul-content-card-layout">
+      <div class="modul-content-card-main">
+        <div class="modul-content-card-title modul-content-card-title-row">
+          {% if item.url and item.url.size > 0 %}
+            <a href="{{ item.url }}"{% if item.url contains "http" %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ item.title }}</a>
+          {% else %}
+            <span>{{ item.title }}</span>
+          {% endif %}
+        </div>
+        {% if item.beschreibung %}<div class="modul-content-card-desc">{{ item.beschreibung }}</div>{% endif %}
+        {% if item.werke and item.werke.size > 0 %}
+        <div class="modul-content-card-works">
+          <span class="modul-content-card-works-label">Enthaltene Werke:</span>
+          <ul class="modul-content-card-works-list">
+            {% for werk in item.werke %}
+            <li>
+              {% if werk.url and werk.url.size > 0 %}
+                <a href="{{ werk.url }}"{% if werk.url contains "http" %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ werk.title }}</a>
+              {% else %}
+                {{ werk.title }}
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+        {% if item.dokumentation %}<div class="modul-content-card-doc"><a href="{{ item.dokumentation }}">Dokumentation</a></div>{% endif %}
+        {% if item.news and item.news.size > 0 %}
+        {% assign news_href = item.news %}
+        {% if item.news contains "_posts/" %}
+          {% assign news_file = item.news | split: "/" | last %}
+          {% assign news_stem = news_file | remove: ".md" | remove: ".markdown" %}
+          {% assign news_href = "" %}
+          {% for post in site.posts %}
+            {% assign post_stem = post.path | split: "/" | last | remove: ".md" | remove: ".markdown" %}
+            {% if post_stem == news_stem %}
+              {% assign news_href = post.url %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+          {% if news_href == "" %}{% assign news_href = item.news %}{% endif %}
+        {% endif %}
+        <div class="modul-content-card-news"><a href="{{ news_href }}"{% if news_href contains "http" %} target="_blank" rel="noopener noreferrer"{% endif %}>→ Newsbeitrag</a></div>
         {% endif %}
       </div>
-      {% if item.beschreibung %}<div class="modul-content-card-desc">{{ item.beschreibung }}</div>{% endif %}
-      {% if item.werke and item.werke.size > 0 %}
-      <div class="modul-content-card-works">
-        <span class="modul-content-card-works-label">Enthaltene Werke:</span>
-        <ul class="modul-content-card-works-list">
-          {% for werk in item.werke %}
-          <li>
-            {% if werk.url and werk.url.size > 0 %}
-              <a href="{{ werk.url }}"{% if werk.url contains "http" %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ werk.title }}</a>
-            {% else %}
-              {{ werk.title }}
-            {% endif %}
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
+      {% if item.screenshot and item.screenshot.size > 0 and item.url and item.url.size > 0 %}
+      <a class="modul-content-card-shot" href="{{ item.url }}"{% if item.url contains "http" %} target="_blank" rel="noopener noreferrer"{% endif %}>
+        <img src="{{ item.screenshot }}" alt="{{ item.screenshot_alt | default: item.title }}" loading="lazy" />
+        <span class="modul-content-card-shot-cta">App öffnen →</span>
+      </a>
       {% endif %}
-      {% if item.dokumentation %}<div class="modul-content-card-doc"><a href="{{ item.dokumentation }}">Dokumentation</a></div>{% endif %}
     </div>
-    {% if item.screenshot and item.screenshot.size > 0 and item.url and item.url.size > 0 %}
-    <a class="modul-content-card-shot" href="{{ item.url }}"{% if item.url contains "http" %} target="_blank" rel="noopener noreferrer"{% endif %}>
-      <img src="{{ item.screenshot }}" alt="{{ item.screenshot_alt | default: item.title }}" loading="lazy" />
-      <span class="modul-content-card-shot-cta">App öffnen →</span>
-    </a>
-    {% endif %}
   </div>
-</div>
-{% endfor %}
+  {% endfor %}
+</details>
 {% endif %}
 
 {% comment %}── 3. Berichte, Richtlinien, Lessons learned (einklappbar) ─{% endcomment %}
@@ -475,4 +489,9 @@
   </ul>
   <p class="modul-more-link"><a href="/glossar/">Alle Glossarartikel (mit Filteroptionen) →</a></p>
 </details>
+{% endif %}
+
+{% comment %}── Modulbeschreibung (am Ende) ─────────────────{% endcomment %}
+{% if m_desc.beschreibung %}
+<p class="modul-intro-text">{{ m_desc.beschreibung }}</p>
 {% endif %}
