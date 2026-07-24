@@ -93,10 +93,33 @@
     - 5WP8ICRR     # "Roundtable: Skizzen als Werkstattdokumente: Schaffensprozesse im Vergleich"
 
   posts:
-    - 2020-01-23-roundtable-skizzen-als-werkstattdokumente-schaffensprozesse-im-vergleich
+    - 2016-01-13-seminar-an-der-universitaet-bonn
   note: ""
 
 # Modul 1
+
+- id: "sound-2016-bonn"
+  title: "Einführung in die Musikwissenschaft des Studiengangs Musikwissenschaft/Sound Studies, Universität Bonn"
+  module: 1
+  type: "Vortrag"
+  date: "2016-01-19"
+  vortraege:
+    - 2IBHQWG2     # "Projektvorstellung"
+  posts:
+    - 2016-01-13-seminar-an-der-universitaet-bonn
+  note: ""
+
+- id: "ag-2016-graz"
+  title: "Tagung der Arbeitsgemeinschaft für germanistische Edition, Graz"
+  url: "https://www.ag-edition.org/?page_id=42"
+  module: 1
+  type: "Vortrag"
+  date: "2016-02-17"
+  vortraege:
+    - D8FPZGJM     # "Revisionsprozesse in Beethovens Niederschriften der achten Symphonie op. 93"
+  posts:
+    - 2016-01-13-tagung-der-arbeitsgemeinschaft-fuer-germanistische-edition-graz
+  note: ""
 
 - id: "expertenkolloquium-2015-mainz"
   title: "Expertenkolloquium, Mainz"
