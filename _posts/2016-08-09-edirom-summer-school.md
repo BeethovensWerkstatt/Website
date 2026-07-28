@@ -15,4 +15,4 @@ Zum ersten Mal wird es in diesem Jahr eine Keynote mit einem allgemeinen Blick a
 
 Weitere Informationen sind auf den Seiten der [ESS] zu finden.
 
-[ESS]: https://ess.uni-paderborn.de/
+[ESS]: https://ess.uni-paderborn.de/2016/programm.html

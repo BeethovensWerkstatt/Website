@@ -98,6 +98,156 @@
 
 # Modul 1
 
+- id: "nmhc-2016-Oslo"
+  title: "Norwegian Musical Heritage Conference 2016, Oslo"
+  url: "https://www.musikkarven.no/english/news/musikkarvkonferansen-2016.html"
+  module: 1
+  type: "Vortrag"
+  date: "2016-12-08/2016-12-09"
+  vortraege:
+    - E3CD7SMD     # "From 0 to 1. Why getting digital requires more than one step"
+  posts:
+    - 2016-12-05-norwegian-musical-heritage-conference-2016
+  note: ""
+
+- id: "item-2016-paris"
+  title: "Manuscrits de Beethoven. Critique génétique textuelle d’œuvres musicales (ITEM), Paris"
+  url: "https://www.fabula.org/actualites/76202/manuscrits-de-beethoven-seminaire-general-de-critique-genetique-item-paris.html"
+  module: 1
+  type: "Vortrag"
+  date: "2016-11-15"
+  vortraege:
+    - 6J6U7Q8F     # "Genetische Textkritik von Musikwerken: 1. Textbegriff und methodisches Konzept 2. Variantenbildung in Ludwig van Beethovens Werken: Das Beispiel von Op. 59, Nr. 3"
+  posts:
+    - 2016-11-18-seminaire-general-de-critique-genetique-de-linstitut-des-textes-et-manuscrits-modernes-item
+  note: ""
+
+- id: "university-2016-alabama"
+  title: "University of Alabama (Tuscaloosa), USA"
+  module: 1
+  type: "Vortrag"
+  date: "2016-11-07/2016-11-08"
+  vortraege:
+    - 2WCVXIAT     # "`The Project „Beethovens Werkstatt“: Two Examples from op. 101`and `The Edition of the Scheide Sketchbook`"
+  posts:
+    - 2016-11-09-vortraege-an-der-university-of-alabama
+  note: ""
+
+- id: "ess-2016-paderborn"
+  title: "Edirom Summer School 2016, Paderborn"
+  url: "https://ess.uni-paderborn.de/2016/programm.html"
+  module: 1
+  type: "Lehre"
+  date: "2016-09-26/2016-09-30"
+  lehrveranstaltungen:
+    - 5H5MJNJQ     # "Einführung in das Codierungsformat der Music Encoding Initiative (MEI)"
+    - V8GJ6ZXH     # "Digital Editions in Praxis"
+    - PJSDV45K     # "A Gentle Introduction to MEI"
+    - FAU4P8Z3     # "Vertiefte Anwendung des Codierungsformats der Music Encoding Initiative (MEI)"
+    - K4PK3J9H     # "Einführung in die musikphilologische Arbeit"
+  posts:
+    - 2016-08-09-edirom-summer-school
+  note: ""
+
+- id: "studienkolleg-2016-bonn"
+  title: "Studienkolleg \"Beethoven und Haydn: Schaffensprozesse und Überlieferung\", Köln\\Bonn"
+  module: 1
+  type: "Lehre"
+  date: "2016-09-19/2016-09-22"
+  lehrveranstaltungen:
+    - AJKDMGWM     # "Einführung in die Genetische Textkritik"
+    - K7VY44W5     # "Beethoven-Skizzentypen und Scheide-Skizzenbuch"
+    - X8XBUKY9     # "Editionsübung: Volksliedbearbeitungen von Haydn und Beethoven"
+  posts:
+    - 2016-09-23-beethoven-studienkolleg-2016
+  note: ""
+
+- id: "nbrc-2016-vancouver"
+  title: "Sixth New Beethoven Research Conference, Vancouver"
+  module: 1
+  type: "Vortrag"
+  date: "2016-11-02/2016-11-03"
+  vortraege:
+    - EW2GSW88     # "Beethoven’s Folksong Settings WoO 158: Insights into the Compositional Process"
+    - PZ2VZE39     # "Some Reflections on the Genesis of the Eigth Symphony op. 93"
+  posts:
+    - 2016-09-23-sixth-new-beethoven-research-conference
+  note: ""
+
+- id: "gfm-2016-mainz"
+  title: "GfM 2016, Mainz"
+  url: "https://schott-campus.com/gfm-jahrestagung-2016-mainz/"
+  module: 1
+  type: "Tagung"
+  date: "2016-09-14/2016-09-17"
+  vortraege:
+    - X8MEGTQE     # "Perspektiven der genetischen Textkritik in der Sektion: Zum Werken und Weben Max Regers – Quellen kompositorischen Schaffens im Diskurs"
+    - BM2S7JFZ     # "Vom Werkverzeichnis zur genetischen Edition – Einsatz und Weiterentwicklung von internationalen Datenstandards für die Musikwissenschaft"
+    - IUPSHXG3     # "Virtualitäten in der Opéra comique und der XML-Code als Teleskop"
+    - ZM99TWUC     # "Roundtable: Musikphilologie im Gespräch. Musikeditorische Arbeitswirklichkeiten im Kontext des „digital turn“"
+  posts:
+    - 2016-07-09-internationaler-kongress-der-gesellschaft-fuer-musikforschung-2016
+  note: ""
+
+- id: "iaml-2016-rome"
+  title: "IAML 2016, Rome"
+  url: "https://www.iaml.info/congresses/2016-rome/"
+  module: 1
+  type: "Vortrag"
+  date: "2016-07-03/2016-07-08"
+  vortraege:
+    - SAIJNDQX     # "Expression beyond Scope: How FRBR and MEI fit together"
+  posts:
+    - 2016-05-31-iaml-2016
+  note: ""
+
+- id: "landtag-2016-mainz"
+  title: "Musik im Landtag, Mainz"
+  url: "https://www.adwmainz.de/aktivitaeten/veranstaltungen/details/musik-im-landtag-ludwig-van-beethoven-einblicke-in-die-komponisten-werkstatt.html"
+  module: 1
+  type: "Vortrag"
+  date: "2016-07-05"
+  vortraege:
+    - FUU64RTC     # "Was erzählt Beethovens Handschrift zur Klaviersonate op. 111 über ihren Entstehungsprozess? Fragestellungen der genetischen Textkritik"
+    - NMGV7KM9     # "Beethovens Arbeit an einem wirkungsvollen Abschluss des Liedes „Neue Liebe, neues Leben“, op. 75/2. Warum sich die digitale Musikedition vom bedruckten Papier verabschiedet"
+  posts:
+    - 2016-05-31-musik-im-landtag
+  note: ""
+
+- id: "mec-2016-montreal"
+  title: "Music Encoding Conference 2016, Montreal"
+  url: "https://music-encoding.org/conference/2016/"
+  module: 1
+  type: "Poster"
+  date: "2016-05-17/2016-05-20"
+  vortraege:
+    - AUZ6Q2JA     # "A new module for encoding genetical processes"
+  posts:
+    - 2016-03-30-music-encoding-conference-2016
+  note: ""
+
+- id: "workshop-2016-ulb-bonn"
+  title: "Digitale Geisteswissenschaften, Bonn"
+  module: 1
+  type: "Vortrag"
+  date: "2016-04-29"
+  vortraege:
+    - KHXXIN9D     # "Einblicke in das Projekt Beethovens Werkstatt. Genetische Textkritik und digitale Musikedition"
+  posts:
+    - 2016-03-29-workshop-digitale-geisteswissenschaften-ulb-bonn
+  note: ""
+
+- id: "dhd-2016-leipzig"
+  title: "DHd 2016, Leipzig"
+  module: 1
+  type: "Vortrag"
+  date: "2016-03-09"
+  vortraege:
+    - FHMGMH4Z     # "Die Rolle des Zeigens"
+  posts:
+    - 2016-03-14-dhd-konferenz-in-leipzig
+  note: ""
+
 - id: "sound-2016-bonn"
   title: "Einführung in die Musikwissenschaft des Studiengangs Musikwissenschaft/Sound Studies, Universität Bonn"
   module: 1
@@ -197,7 +347,7 @@
   note: ""
 
 - id: "iaml-2015-newyork"
-  title: "IAML 2015"
+  title: "IAML 2015, New York"
   module: 1
   type: "Vortrag"
   date: "2015-06-21/2015-06-26"

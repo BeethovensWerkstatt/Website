@@ -700,7 +700,7 @@
       "type": "speech",
       "title": "Projektvorstellung",
       "genre": "Vortrag",
-      "event": "4th International Beethoven New Re¬search Conference „Beethoven und der Wiener Kongress“",
+      "event": "4th International Beethoven New Research Conference „Beethoven und der Wiener Kongress“",
       "language": "deutsch",
       "author": [
         {
@@ -1401,7 +1401,8 @@
           ]
         ]
       },
-      "place": "Mainz"
+      "place": "Mainz",
+      "URL": "https://www.adwmainz.de/aktivitaeten/veranstaltungen/details/musik-im-landtag-ludwig-van-beethoven-einblicke-in-die-komponisten-werkstatt.html"
     },
     {
       "id": "4185477/NMGV7KM9",
@@ -1429,7 +1430,8 @@
           ]
         ]
       },
-      "place": "Mainz"
+      "place": "Mainz",
+      "URL": "https://www.adwmainz.de/aktivitaeten/veranstaltungen/details/musik-im-landtag-ludwig-van-beethoven-einblicke-in-die-komponisten-werkstatt.html"
     },
     {
       "id": "4185477/SAIJNDQX",
@@ -1453,7 +1455,8 @@
           ]
         ]
       },
-      "place": "Rom"
+      "place": "Rom",
+      "URL": "https://www.iaml.info/congresses/2016-rome/"
     },
     {
       "id": "4185477/GIIM3DFN",
@@ -1625,7 +1628,8 @@
           ]
         ]
       },
-      "place": "Institut des Textes et Manuscrits Modernes, Paris"
+      "place": "Institut des Textes et Manuscrits Modernes, Paris",
+      "URL": "https://www.fabula.org/actualites/76202/manuscrits-de-beethoven-seminaire-general-de-critique-genetique-item-paris.html"
     },
     {
       "id": "4185477/E3CD7SMD",
@@ -1649,7 +1653,8 @@
           ]
         ]
       },
-      "place": "Oslo"
+      "place": "Oslo",
+      "URL": "https://www.musikkarven.no/english/news/musikkarvkonferansen-2016.html"
     },
     {
       "id": "4185477/379ATZKX",
