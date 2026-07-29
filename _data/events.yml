@@ -91,9 +91,157 @@
   date: "2020-02-11"
   vortraege:
     - 5WP8ICRR     # "Roundtable: Skizzen als Werkstattdokumente: Schaffensprozesse im Vergleich"
-
   posts:
-    - 2016-01-13-seminar-an-der-universitaet-bonn
+    - 2017-10-25-mini-symposium-in-boston
+  note: ""
+
+- id: "dhrv-2017-paderborn"
+  title: "Ringvorlesung Digitale Kultur- und Geisteswissenschaften, Universität Paderborn"
+  module: 2
+  type: "Vortrag"
+  date: "2017-12-05"
+  vortraege:
+    - 7JA2X5PV     # "Musik modellieren – aber was heißt hier “Musik”? Digitale Forschungspraxis zwischen Notentext, Klangdokument und Theorie"
+  posts:
+    - 2017-11-20-ringvorleseung-digitale-kultur-und-geisteswissenschaften
+  note: ""
+
+- id: "symposium-2017-bern"
+  title: "Symposium der Boston University (Center for Beethoven Research) „Latest Research Shines New Light on Beethoven’s Fifth and Eighth Symphonies“, Bonn"
+  module: 2
+  type: "Vortrag"
+  date: "2017-10-18"
+  vortraege:
+    - CQNJMDPZ     # "The Eighth is Singular. Some Hypothesis on the Genesis of Op. 93"
+  posts:
+    - 2017-10-25-mini-symposium-in-boston
+  note: ""
+
+- id: "gfm-2017-kassel"
+  title: "GfM 2017, Kassel"
+  module: 2
+  type: "Tagung"
+  date: "2017-09-27/2017-09-30"
+  vortraege:
+    - F8NRHBHU     # "Beethovens Volksliedbearbeitungen WoO 158 – Einblicke in den Kompositionsprozess"
+    - 4J33XUWU     # "Roundtable: Verlage und EditorInnen im Gespräch. Herausforderungen der Digitalität – Wege des Miteinanders"
+  posts:
+    - 2017-09-25-jahrestagung-der-gfm-2017
+  note: ""
+
+- id: "ess-2017-paderborn"
+  title: "Edirom Summer School 2017, Paderborn"
+  url: "https://ess.uni-paderborn.de/2017/programm.html"
+  module: 2
+  type: "Lehre"
+  date: "2017-09-18/2017-09-22"
+  lehrveranstaltungen:
+    - RMM2AB2T     # "MEI für Einsteiger"
+    - XHP3UTU7     # "MEI für Fortgeschrittene"
+  posts:
+    - 2017-08-03-edirom-summer-school-2017
+  note: ""
+
+- id: "symposium-2017-bern"
+  title: "Symposium: Rund um Beethoven – Interpretationsforschung heute, Hochschule der Künste Bern"
+  module: 2
+  type: "Vortrag"
+  date: "2017-09-16"
+  vortraege:
+    - A9NEXI6E     # "Von „ikonischen Surrogaten“ zu „archäologischen Ausgrabungen“. Skizzenbuch-Ausgaben in der Ideengeschichte"
+  posts:
+    - 2017-08-03-vortrag-in-bern
+  note: ""
+
+- id: "studienkolleg-2017-bonn"
+  title: "Beethoven-Studienkolleg: „Philologisches Arbeiten von der Textgenese zur Rezeption“, Beethoven-Haus Bonn"
+  module: 2
+  type: "Lehre"
+  date: "2017-09-05"
+  lehrveranstaltungen:
+    - DCCRIQ2E     # "Workshop: Das Lied \"Neue Liebe, neues Leben\" op. 75/2 textgenetisch und digital"
+  posts:
+    - 2017-08-03-beethoven-studienkolleg-2017
+  note: ""
+
+- id: "aibm-2017-münster"
+  title: "AIBM 2017, Münster"
+  module: 2
+  type: "Vortrag"
+  date: "2017-09-04/2017-09-08"
+  vortraege:
+    - PMM5UIQC     # "Das Projekt „Beethovens Werkstatt“"
+  posts:
+    - 2017-08-03-vortrag-in-muenster
+  note: ""
+
+- id: "colloquium-2017-wuppertal"
+  title: "Editionswissenschaftliches Kolloquium, Universität Wuppertal"
+  module: 2
+  type: "Vortrag"
+  date: "2017-07-21"
+  vortraege:
+    - PRKBBN5K     # "Textgenese im Kleinen wie im Großen. Variantenarrangements aus Beethovens Werkstatt"
+  posts:
+    - 2017-07-20-vortrag-an-der-uni-wuppertal
+  note: ""
+
+- id: "vortrag-2017-köln"
+  title: "Vortrag, Universität zu Köln"
+  module: 2
+  type: "Vortrag"
+  date: "2017-06-23"
+  vortraege:
+    - WDCWPFM8     # "Einführung in die genetische Textkritik – Revisionsprozesse in Beethovens Niederschriften der achten Symphonie op. 93"
+  posts:
+    - 2017-06-14-vortraege-an-den-universitaeten-zu-kiel-und-koeln
+  note: ""
+
+- id: "dhmuwi-2017-köln"
+  title: "Digital Humanities in der Musikwissenschaft, Universität zu Köln"
+  module: 2
+  type: "Vortrag"
+  date: "2017-06-20"
+  vortraege:
+    - 9DVTQFZS     # "Beethovens Werkstatt – Projektvorstellung"
+  posts:
+    - 2017-06-14-vortraege-an-den-universitaeten-zu-kiel-und-koeln
+  note: ""
+
+- id: "vortrag-2017-kiel"
+  title: "Vortrag, Universität zu Kiel"
+  module: 2
+  type: "Vortrag"
+  date: "2017-06-13"
+  vortraege:
+    - UVVBXG52     # "Einführung in die genetische Textkritik – Revisionsprozesse in Beethovens Niederschriften der achten Symphonie op. 93"
+  posts:
+    - 2017-06-14-vortraege-an-den-universitaeten-zu-kiel-und-koeln
+  note: ""
+
+- id: "mec-2017-tours"
+  title: "Music Encoding Conference 2017, Tours"
+  url: "https://music-encoding.org/conference/2017/"
+  module: 2
+  type: "Tagung"
+  date: "2017-05-16/2017-05-19"
+  vortraege:
+    - 3X6V2C4A     # "Relating Content: How MEI, EMA and FRBR can be used to trace compositional processes across works"
+    - 4HUJS969     # "Encoding musical variants in MEI. A survey of the first module of “Beethovens Werkstatt”"
+    - HU727WDB     # "Music Encoding as Initiative and Inspiration: a vision through the eyes of a traditional editor"
+  posts:
+    - 2017-05-23-mec-2017
+  note: ""
+
+- id: "tde-2017-klagenfurt"
+  title: "Textgenese in der digitalen Edition, Klagenfurt"
+  module: 2
+  type: "Vortrag"
+  date: "2017-04-20/2017-04-22"
+  vortraege:
+    - B75PZXCZ     # "Der Umgang mit digitalen Methoden in der Genese musikalischer Schreibprozesse. Zur Darstellung von Schreiboperationen in Beethovens Handschriften"
+  posts:
+    - 2017-03-20-internationale-und-interdisziplinaere-tagung-textgenese-in-der-digitalen-edition
   note: ""
 
 # Modul 1

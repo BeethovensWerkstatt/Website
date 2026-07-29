@@ -29,6 +29,7 @@ modul_1:
         - title: "Duett mit zwei obligaten Augengläsern, WoO 32"
         - title: "8. Symphonie in F-Dur, op. 93"
       dokumentation: "/dokumentation/videapp-var/" # @todo "Tour"-Inhalte in eine .md Datei überführen
+      news: "/_posts/2017-07-04-veroeffentlichung/" # VideApp online
 
     - title: "Prototyp 1"
       beschreibung: "Fallstudie zu Variantendarstellung für die \"Sonate für Klavier c-Moll, op. 111.\""

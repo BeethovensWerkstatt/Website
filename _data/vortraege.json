@@ -1972,7 +1972,7 @@
       "type": "speech",
       "title": "The Eighth is Singular. Some Hypothesis on the Genesis of Op. 93",
       "genre": "Vortrag",
-      "event": "Syposium der Boston University (Center for Beethoven Research) „Latest Research Shines New Light on Beethoven’s Fifth and Eighth Symphonies“",
+      "event": "Symposium der Boston University (Center for Beethoven Research) „Latest Research Shines New Light on Beethoven’s Fifth and Eighth Symphonies“",
       "language": "englisch",
       "author": [
         {
@@ -4359,6 +4359,35 @@
                         2024,
                         11,
                         18
+                    ]
+                ]
+            }
+        },
+        {
+            "id": "4185477/7JA2X5PV",
+            "type": "speech",
+            "citation-key": "kepper2017musikModellieren",
+            "event-title": "Ringvorlesung Digitale Kultur- und Geisteswissenschaften 2017/2018",
+            "genre": "Vortrag",
+            "language": "deutsch",
+            "publisher-place": "Universität Paderborn",
+            "title": "Musik modellieren – aber was heißt hier “Musik”? Digitale Forschungspraxis zwischen Notentext, Klangdokument und Theorie",
+            "author": [
+                {
+                    "family": "Kepper",
+                    "given": "Johannes"
+                },
+                {
+                    "family": "Münzmay",
+                    "given": "Andreas"
+                }
+            ],
+            "issued": {
+                "date-parts": [
+                    [
+                        2017,
+                        12,
+                        5
                     ]
                 ]
             }

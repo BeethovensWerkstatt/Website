@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Vortrag in Oldenburg
-date: 2017-01-17
+date: 2018-02-08
 categories: news
 authors:
 - Beethovens Werkstatt
