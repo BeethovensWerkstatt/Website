@@ -1,0 +1,89 @@
+---
+layout: default
+---
+
+{% assign module_number = page.module | default: "" %}
+{% assign page_kind = page.kind | default: "Seite" %}
+
+<article class="module-content-page">
+  <header class="module-content-header">
+    <p class="module-content-eyebrow">{{ page_kind }}</p>
+    <h1>{{ page.title }}</h1>
+    {% if page.lead %}
+      <p class="module-content-lead">{{ page.lead }}</p>
+    {% elsif page_kind == "Dokumentation" %}
+      <p class="module-content-lead">Dokumentation und Erläuterungen zur jeweiligen Anwendung.</p>
+    {% elsif page_kind == "Bericht" %}
+      <p class="module-content-lead">Bericht und Einordnung des jeweiligen Arbeitsschritts im Modul.</p>
+    {% endif %}
+  </header>
+
+  <section class="module-content-panel">
+    {{ content }}
+  </section>
+
+
+</article>
+
+<style>
+.module-content-page {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.module-content-header {
+  margin-bottom: 1.4rem;
+}
+
+.module-content-eyebrow {
+  margin: 0 0 0.35rem 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #c93b22;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.module-content-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.module-content-lead {
+  margin: 0.65rem 0 0 0;
+  color: #666;
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
+.module-content-panel {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  padding: 1.3rem 1.4rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.module-content-panel > :first-child {
+  margin-top: 0;
+}
+
+.module-content-panel > :last-child {
+  margin-bottom: 0;
+}
+
+.module-content-panel p {
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .module-content-header h1 {
+    font-size: 1.65rem;
+  }
+
+  .module-content-panel {
+    padding: 1rem 1.1rem;
+  }
+}
+</style>

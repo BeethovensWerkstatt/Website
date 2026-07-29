@@ -46,8 +46,16 @@ Generates breadcrumbs based on page URL and title
           <li class="breadcrumb-item active">News</li>
         {% endif %}
       
+      {% elsif page.layout == 'module-content' %}
+        <li class="breadcrumb-item"><a href="{{ '/module/' | relative_url }}">Module</a></li>
+        {% if page.module and page.module != "" %}
+        <li class="breadcrumb-item"><a href="{{ '/module/' | relative_url }}#modul-{{ page.module }}">Modul {{ page.module }}</a></li>
+        {% endif %}
+        <li class="breadcrumb-item active">{{ page.title }}</li>
+
       {% elsif first_part contains 'modul-' %}
         {% assign module_num = first_part | replace: 'modul-', '' %}
+        <li class="breadcrumb-item"><a href="{{ '/module/' | relative_url }}">Module</a></li>
         <li class="breadcrumb-item active">Modul {{ module_num }}</li>
       
       {% elsif first_part == 'projekt' %}
