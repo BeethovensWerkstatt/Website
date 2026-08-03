@@ -1,0 +1,37 @@
+# Docker ignore patterns
+.git
+.gitignore
+README.md
+docker-compose.yml
+Dockerfile
+.dockerignore
+
+# Jekyll build artifacts
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Development files
+vendor/
+!vide-component-transcriptions/src/vendor/
+!vide-component-transcriptions/src/vendor/**
+.bundle/
+.ruby-version
+Gemfile.lock
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+
+# Node modules (if any)
+node_modules/
+npm-debug.log

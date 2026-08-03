@@ -21,9 +21,6 @@ vide-component-facsimile/node_modules/
 vide-component-facsimile/package-lock.json
 vide-component-facsimile/dist/
 
-# Docker
-.dockerignore
-
 # IDE
 .vscode/
 .idea/
