@@ -281,6 +281,21 @@
         {% assign vy = vortrag.issued.date-parts[0][0] | plus: 0 %}
         {% assign vortrag_monat = vortrag.issued.date-parts[0][1] | default: 1 %}
         {% assign vortrag_tag = vortrag.issued.date-parts[0][2] | default: 1 %}
+        {% assign vortrag_date_display = "" %}
+        {% if vortrag.note and vortrag.note contains "/" %}
+          {% assign vortrag_note_parts = vortrag.note | split: "/" %}
+          {% assign vortrag_note_start = vortrag_note_parts[0] | split: "-" %}
+          {% assign vortrag_note_end = vortrag_note_parts[1] | split: "-" %}
+          {% if vortrag_note_start.size == 3 and vortrag_note_end.size == 3 %}
+            {% capture vortrag_date_display %}{{ vortrag_note_start[2] }}.{{ vortrag_note_start[1] }}.{{ vortrag_note_start[0] }} – {{ vortrag_note_end[2] }}.{{ vortrag_note_end[1] }}.{{ vortrag_note_end[0] }}{% endcapture %}
+          {% endif %}
+        {% endif %}
+        {% if vortrag_date_display == "" %}
+          {% capture vortrag_date_display %}{{ vortrag_tag }}.{{ vortrag_monat }}.{{ vy }}{% endcapture %}
+        {% endif %}
+        {% assign vortrag_place = vortrag.place | default: vortrag["publisher-place"] %}
+        {% assign vortrag_event_title = vortrag["event-title"] %}
+        {% assign vortrag_event_url = vortrag.URL %}
         
         {% if event_id != "" %}
           {% assign ev_count = 0 %}
@@ -297,6 +312,8 @@
               {% break %}
             {% endif %}
           {% endfor %}
+          {% if ev_title and ev_title.size > 0 %}{% assign vortrag_event_title = ev_title %}{% endif %}
+          {% if ev_url and ev_url.size > 0 %}{% assign vortrag_event_url = ev_url %}{% endif %}
           
           {% if ev_count > 1 %}
             {% unless shown_events contains event_id %}{% assign shown_events = shown_events | push: event_id %}{% endunless %}
@@ -308,12 +325,9 @@
               </div>
               <span class="modul-item-meta">
                 {% for author in vortrag.author limit: 2 %}{% unless forloop.first %}, {% endunless %}{% if author.given %}{{ author.given }} {{ author.family }}{% else %}{{ author.family }}{% endif %}{% endfor %}{% if vortrag.author.size > 2 %} u.a.{% endif %}
-                {% assign grouped_event_title = vortrag.event | default: ev_title | default: vortrag["event-title"] %}
-                {% assign grouped_event_url = vortrag.URL %}
-                {% unless grouped_event_url and grouped_event_url.size > 0 %}{% assign grouped_event_url = ev_url %}{% endunless %}
-                {% if grouped_event_title and grouped_event_title.size > 0 %} · {% if grouped_event_url and grouped_event_url.size > 0 %}<a href="{{ grouped_event_url }}"{% if grouped_event_url contains "http" %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ grouped_event_title }}</a>{% else %}{{ grouped_event_title }}{% endif %}{% endif %}
-                {% if vortrag.place %} · {{ vortrag.place }}{% endif %}
-                · {{ vortrag_tag }}.{{ vortrag_monat }}.{{ vy }}
+                {% if vortrag_event_title and vortrag_event_title.size > 0 %} · {% if vortrag_event_url and vortrag_event_url.size > 0 %}<a href="{{ vortrag_event_url }}"{% if vortrag_event_url contains "http" %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ vortrag_event_title }}</a>{% else %}{{ vortrag_event_title }}{% endif %}{% endif %}
+                {% if vortrag_place and vortrag_place.size > 0 %} · {{ vortrag_place }}{% endif %}
+                · {{ vortrag_date_display }}
               </span>
             </li>
             
@@ -331,9 +345,9 @@
               </div>
               <span class="modul-item-meta">
                 {% for author in vortrag.author limit: 2 %}{% unless forloop.first %}, {% endunless %}{% if author.given %}{{ author.given }} {{ author.family }}{% else %}{{ author.family }}{% endif %}{% endfor %}{% if vortrag.author.size > 2 %} u.a.{% endif %}
-                {% if vortrag.event %} · {% if vortrag.URL %}<a href="{{ vortrag.URL }}" target="_blank" rel="noopener noreferrer">{{ vortrag.event }}</a>{% else %}{{ vortrag.event }}{% endif %}{% endif %}
-                {% if vortrag.place %} · {{ vortrag.place }}{% endif %}
-                · {{ vortrag_tag }}.{{ vortrag_monat }}.{{ vy }}
+                {% if vortrag_event_title and vortrag_event_title.size > 0 %} · {% if vortrag_event_url and vortrag_event_url.size > 0 %}<a href="{{ vortrag_event_url }}"{% if vortrag_event_url contains "http" %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ vortrag_event_title }}</a>{% else %}{{ vortrag_event_title }}{% endif %}{% endif %}
+                {% if vortrag_place and vortrag_place.size > 0 %} · {{ vortrag_place }}{% endif %}
+                · {{ vortrag_date_display }}
               </span>
               {% if ev_post and ev_post.size > 0 %}<div class="modul-vortrag-news"><a href="/{{ ev_post }}/">→ Newsbeitrag</a></div>{% endif %}
             </li>
@@ -346,9 +360,9 @@
             </div>
             <span class="modul-item-meta">
               {% for author in vortrag.author limit: 2 %}{% unless forloop.first %}, {% endunless %}{% if author.given %}{{ author.given }} {{ author.family }}{% else %}{{ author.family }}{% endif %}{% endfor %}{% if vortrag.author.size > 2 %} u.a.{% endif %}
-              {% if vortrag.event %} · {% if vortrag.URL %}<a href="{{ vortrag.URL }}" target="_blank" rel="noopener noreferrer">{{ vortrag.event }}</a>{% else %}{{ vortrag.event }}{% endif %}{% endif %}
-              {% if vortrag.place %} · {{ vortrag.place }}{% endif %}
-              · {{ vortrag_tag }}.{{ vortrag_monat }}.{{ vy }}
+              {% if vortrag_event_title and vortrag_event_title.size > 0 %} · {% if vortrag_event_url and vortrag_event_url.size > 0 %}<a href="{{ vortrag_event_url }}"{% if vortrag_event_url contains "http" %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ vortrag_event_title }}</a>{% else %}{{ vortrag_event_title }}{% endif %}{% endif %}
+              {% if vortrag_place and vortrag_place.size > 0 %} · {{ vortrag_place }}{% endif %}
+              · {{ vortrag_date_display }}
             </span>
           </li>
         {% endif %}

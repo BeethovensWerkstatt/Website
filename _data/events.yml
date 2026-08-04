@@ -10,7 +10,7 @@
 # Modul 4
 
 - id: "mec-2026-tokyo"
-  title: "Music Encoding Conference 2026, Tokyo"
+  title: "Music Encoding Conference 2026"
   module: 4
   type: "Vortrag"
   date: "2026-05-26/2026-05-29"
@@ -21,7 +21,7 @@
   note: ""
 
 - id: "bonn-2026-vorstellung-skizzenbuchedition"
-  title: "Beethovens Werkstatt – Digitale Edition des Skizzenbuchs Notirungsbuch K, Bonn"
+  title: "Beethovens Werkstatt – Digitale Edition des Skizzenbuchs Notirungsbuch K"
   module: 4
   type: "Eigene Veranstaltung"
   date: "2026-05-05"
@@ -43,7 +43,7 @@
   note: ""
 
 - id: "ag-digitale-edition-2026-erlangen"
-  title: "21. Plenartagung für Germanistische Edition, Erlangen"
+  title: "21. Plenartagung für Germanistische Edition"
   url: "https://www.ized.fau.de/beispiel-seite/aktuelles/21-plenartagung-der-ag-fuer-germanistische-edition/"
   module: 4
   type: "Tagung"
@@ -56,7 +56,7 @@
   note: ""
 
 - id: "festvortrag-2024-mainz"
-  title: "Zehn Jahre Beethovens Werkstatt: Kompositionsprozesse im digitalen Fokus, Festvortrag, Mainz"
+  title: "Zehn Jahre Beethovens Werkstatt: Kompositionsprozesse im digitalen Fokus, Festvortrag"
   url: "https://www.adwmainz.de/aktivitaeten/veranstaltungen/details/zehn-jahre-beethovens-werkstatt-kompositionsprozesse-im-digitalen-fokus.html"
   module: 4
   type: "Eigene Veranstaltung"
@@ -68,7 +68,7 @@
   note: ""
 
 - id: "expertenworkshop-2024-mainz"
-  title: "Expertenworkshop: Rekonstruktion und digitale Darstellung von Beethovens Skizzenbuch Notirungsbuch K, Mainz"
+  title: "Expertenworkshop: Rekonstruktion und digitale Darstellung von Beethovens Skizzenbuch Notirungsbuch K"
   url: "/publications/expertenworkshop-2024-mainz/"
   module: 4
   type: "Eigene Veranstaltung"
@@ -84,7 +84,7 @@
 # Modul 2
 
 - id: "roundtable-2020-bonn"
-  title: "Roundtable, Bonn"
+  title: "Roundtable"
   url: "https://www.beethoven.de/de/g/Beethoven-Perspektiven"
   module: 2
   type: "Eigene Veranstaltung"
@@ -95,8 +95,161 @@
     - 2017-10-25-mini-symposium-in-boston
   note: ""
 
+- id: "gfm-2018-osnabrück"
+  title: "GfM 2018, Symposium „Born-digital. Digitales Material als Herausforderung für die Musikwissenschaft“"
+  module: 2
+  type: "Vortrag"
+  date: "2017-09-25/2017-09-28"
+  vortraege:
+    - A2KWJEKT     # "Genetische Textkritik in digitalem Gewand – Ein Einblick in Beethovens Werkstatt"
+  posts:
+    - 2018-07-17-jahrestagung-der-gfm-in-osnabrueck
+  note: ""
+
+- id: "ess-2018-paderborn"
+  title: "Edirom Summer School 2018"
+  url: "https://ess.uni-paderborn.de/2018/programm.html"
+  module: 2
+  type: "Lehre"
+  date: "2017-09-17/2017-09-21"
+  lehrveranstaltungen:
+    - 22ERWJ44   # "TEI für Einsteiger"
+    - 33ZHADEZ   # "MEI für Fortgeschrittene"
+    - VR2QQNP7   # "Digitale Editionen anreichern"
+  posts:
+    - 2018-07-16-edirom-summer-school-2
+  note: ""
+
+- id: "tagung-2018-greifswald"
+  title: "Neue Ansätze zur Skizzenforschung für die Musik des langen 19. Jahrhunderts"
+  url: "https://www.uni-greifswald.de/forschung/forschungsveranstaltungen/detail/n/neue-ansaetze-zur-skizzenforschung-fuer-die-musik-des-langen-19-jahrhunderts-26565/"  
+  module: 2
+  type: "Vortrag"
+  date: "2018-09-21"
+  vortraege:
+    - SAURFB2P     # "Die Beethoven-Skizzenforschung zwischen deiktischen Darstellungsstrategien und multiperspektivischen Vermittlungsformen"
+  posts:
+    - 2018-07-16-tagung-in-greifswald
+  note: ""
+
+- id: "audio-2018-wuppertal"
+  title: "Interdisziplinäre Fachtagung “Kritische Audio-Edition”"
+  url: "https://networks.h-net.org/node/79435/discussions/531730/cfp-kritische-audio-edition-interdisziplin%C3%A4re-fachtagung-der"  
+  module: 2
+  type: "Vortrag"
+  date: "2018-07-12/2018-07-14"
+  vortraege:
+    - Z3N6N3HG     # "Wie sieht Audio aus? Modellierung und Visualisierung als grundlegende Herausforderungen einer wissenschaftlichen digitalen Audio-Edition"
+  posts:
+    - 2018-06-21-interdisziplinaere-fachtagung
+  note: ""
+
+- id: "akademientag-2018-berlin"
+  title: "Akademientag 2018"
+  url: "https://www.akademienunion.de/akademientag/akademientag/2018-geisteswissenschaften-30"
+  module: 2
+  type: "Vortrag"
+  date: "2018-06-11"
+  vortraege:
+    - 7BE6H643   # "Die VideApp: Ein Blick in Beethovens Werkstatt"
+    - 72PEIQC8   # "Panel: Geisteswissenschaftliche Arbeitswelten im digitalen Zeitalter. Herausforderungen, Risiken, Potentiale"
+  note: ""
+
+- id: "mec-2018-washington"
+  title: "Music Encoding Conference 2018"
+  url: "https://music-encoding.org/conference/2018/"
+  module: 2
+  type: "Vortrag"
+  date: "2018-05-23/2018-05-25"
+  vortraege:
+    - CHNGNQZC     # "Seeing is believing. The VideApp from Beethovens Werkstatt"
+  posts:
+    - 2018-04-23-music-encoding-conference-2018
+  note: ""
+
+- id: "werkstattgesraeche-2018-mainz"
+  title: "Werkstattgespräche"
+  module: 2
+  type: "Vortrag"
+  date: "2018-05-14"
+  vortraege:
+    - TIPW5TUG     # "Von Beethovens Schreibprozessen und deren digitaler Darstellung. Einblicke in das Forschungsprojekt Beethovens Werkstatt"
+  posts:
+    - 2018-04-21-werkstattgespraeche-mainz
+  note: ""
+
+- id: "tagung-2018-rom"
+  title: "Textual Philology Facing Liquid Modernity: Identifying Objects, Evaluating Methods, Exploiting Media"
+  url: "https://www.paolomonella.it/terzavia2018/locandina.pdf"
+  module: 2
+  type: "Vortrag"
+  date: "2018-04-20"
+  vortraege:
+    - TCIN4KCP     # "Textual Philology Facing Liquid Modernity: Identifying Objects, Evaluating Methods, Exploiting Media"
+  posts:
+    - 2018-03-27-tagung-in-rom
+  note: ""
+
+- id: "vortragsreihe-2018-cremona"
+  title: "Vortragsreihe"
+  url: "https://news.unipv.it/?p=29513"
+  module: 2
+  type: "Vortrag"
+  date: "2018-03-21/2018-03-28"
+  vortraege:
+    - HXRAWIWQ     # "Vortragsreihe: Il Processo compositivo di Beethoven. Storia, orientamenti, stato della ricerca"
+  posts:
+    - 2018-03-06-vortragsreihe-in-cremona
+  note: ""
+
+- id: "dhd-2018-koeln"
+  title: "DHd 2018"
+  module: 2
+  type: "Vortrag"
+  date: "2018-03-01"
+  vortraege:
+    - M3VS42HD     # "Panel-Beitrag: „Storied Collections“? Ein kritischer Blick auf die Arbeit an digitalen (Musik)-Editionen"
+  posts:
+    - 2018-01-30-dhd-2018-kritik-der-digitalen-vernunft
+  note: ""
+
+- id: "ag-2018-frankfurt"
+  title: "Tagung der Arbeitsgemeinschaft für germanistische Edition"
+  url: "https://www.uni-frankfurt.de/69961052/Programm_final_14-01-2018.pdf"
+  module: 2
+  type: "Vortrag"
+  date: "2018-02-14/2018-02-17"
+  vortraege:
+    - 3HDVF5TV     # "Inszenierungsprobleme oder Probleme durch Inszenierung? Musikedition am Scheideweg"
+    - XUB5P2TI     # "Phonographischer Text, Interpretation und Aufführungsmaterial als kritisch edierbarer Sachzusammenhang. Ein Beitrag zur Theorie der Edition von Klangdokumenten"
+  posts:
+    - 2018-01-30-tagung-der-arbeitsgemeinschaft-fuer-germanistische-edition
+  note: ""
+
+- id: "vortrag-2018-oldenburg"
+  title: "Veranstaltungen der Goethe-Gesellschaft im Vortragssaal der Landesbibliothek"
+  module: 2
+  type: "Vortrag"
+  date: "2018-02-06"
+  vortraege:
+    - 27RST3MT     # "„…in unserem laboratorium artificiosum…“ – Beethovens Schreibprozesse im Blick der digitalen Edition"
+  posts:
+    - 2018-02-08-vortrag-in-oldenburg
+  note: ""
+
+- id: "sem-2017-paderborn"
+  title: "Beethovens Schaffensweise: Historische Bedeutung und Grundlagen der Forschung (Blockseminar 2017/18)"
+  module: 2
+  type: "Lehre"
+  date: "2017-10-01/2018-03-31"
+  lehrveranstaltungen:
+    - 5GL6UH3T     # "Beethovens Schaffensweise: Historische Bedeutung und Grundlagen der Forschung, Paderborn"
+  posts:
+    - 2017-11-22-seminar-an-der-universitaet-paderborn
+  note: ""
+
 - id: "dhrv-2017-paderborn"
-  title: "Ringvorlesung Digitale Kultur- und Geisteswissenschaften, Universität Paderborn"
+  title: "Ringvorlesung Digitale Kultur- und Geisteswissenschaften"
   module: 2
   type: "Vortrag"
   date: "2017-12-05"
@@ -106,8 +259,19 @@
     - 2017-11-20-ringvorleseung-digitale-kultur-und-geisteswissenschaften
   note: ""
 
-- id: "symposium-2017-bern"
-  title: "Symposium der Boston University (Center for Beethoven Research) „Latest Research Shines New Light on Beethoven’s Fifth and Eighth Symphonies“, Bonn"
+- id: "sem-2017-heidelberg"
+  title: "Doktoranden-Seminar"
+  module: 2
+  type: "Vortrag"
+  date: "2017-11-14"
+  vortraege:
+    - 3UISFRUK     # "Beethovens Arbeitsweise: Werkstattdokumente im Blick der genetischen Textkritik. Bericht über ein Forschungsprojekt"
+  posts:
+    - 2017-11-20-doktoranden-seminar-an-der-universitaet-heidelberg
+  note: ""
+
+- id: "symposium-2017-boston"
+  title: "Symposium der Boston University (Center for Beethoven Research) „Latest Research Shines New Light on Beethoven’s Fifth and Eighth Symphonies“"
   module: 2
   type: "Vortrag"
   date: "2017-10-18"
@@ -118,7 +282,7 @@
   note: ""
 
 - id: "gfm-2017-kassel"
-  title: "GfM 2017, Kassel"
+  title: "GfM 2017"
   module: 2
   type: "Tagung"
   date: "2017-09-27/2017-09-30"
@@ -130,7 +294,7 @@
   note: ""
 
 - id: "ess-2017-paderborn"
-  title: "Edirom Summer School 2017, Paderborn"
+  title: "Edirom Summer School 2017"
   url: "https://ess.uni-paderborn.de/2017/programm.html"
   module: 2
   type: "Lehre"
@@ -143,7 +307,7 @@
   note: ""
 
 - id: "symposium-2017-bern"
-  title: "Symposium: Rund um Beethoven – Interpretationsforschung heute, Hochschule der Künste Bern"
+  title: "Symposium: Rund um Beethoven – Interpretationsforschung heute"
   module: 2
   type: "Vortrag"
   date: "2017-09-16"
@@ -165,7 +329,7 @@
   note: ""
 
 - id: "aibm-2017-münster"
-  title: "AIBM 2017, Münster"
+  title: "AIBM 2017"
   module: 2
   type: "Vortrag"
   date: "2017-09-04/2017-09-08"
@@ -176,7 +340,7 @@
   note: ""
 
 - id: "colloquium-2017-wuppertal"
-  title: "Editionswissenschaftliches Kolloquium, Universität Wuppertal"
+  title: "Editionswissenschaftliches Kolloquium"
   module: 2
   type: "Vortrag"
   date: "2017-07-21"
@@ -187,7 +351,7 @@
   note: ""
 
 - id: "vortrag-2017-köln"
-  title: "Vortrag, Universität zu Köln"
+  title: "Vortrag"
   module: 2
   type: "Vortrag"
   date: "2017-06-23"
@@ -198,7 +362,7 @@
   note: ""
 
 - id: "dhmuwi-2017-köln"
-  title: "Digital Humanities in der Musikwissenschaft, Universität zu Köln"
+  title: "Digital Humanities in der Musikwissenschaft"
   module: 2
   type: "Vortrag"
   date: "2017-06-20"
@@ -209,7 +373,7 @@
   note: ""
 
 - id: "vortrag-2017-kiel"
-  title: "Vortrag, Universität zu Kiel"
+  title: "Vortrag"
   module: 2
   type: "Vortrag"
   date: "2017-06-13"
@@ -220,7 +384,7 @@
   note: ""
 
 - id: "mec-2017-tours"
-  title: "Music Encoding Conference 2017, Tours"
+  title: "Music Encoding Conference 2017"
   url: "https://music-encoding.org/conference/2017/"
   module: 2
   type: "Tagung"
@@ -234,7 +398,7 @@
   note: ""
 
 - id: "tde-2017-klagenfurt"
-  title: "Textgenese in der digitalen Edition, Klagenfurt"
+  title: "Textgenese in der digitalen Edition"
   module: 2
   type: "Vortrag"
   date: "2017-04-20/2017-04-22"
