@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: Schreibchronologie bei Orchestrierungsvarianten: ein Beispiel aus Beethovens Messe C-Dur op. 86
+title: Schreibchronologie bei Orchestrierungsvarianten - ein Beispiel aus Beethovens Messe C-Dur op. 86
 author: Elisa Novara
 version: 1.0.0
 date: 2017-07-03

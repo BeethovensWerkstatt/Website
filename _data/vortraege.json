@@ -422,7 +422,8 @@
           ]
         ]
       },
-      "place": "Köln"
+      "place": "Köln",
+      "URL": "https://dhd2018.uni-koeln.de/"
     },
     {
       "id": "4185477/4J33XUWU",
@@ -1109,7 +1110,7 @@
             "event-title": "Expertengespräch zur genetischen Textkritik im Bereich Musik",
             "genre": "Vortrag",
             "language": "deutsch",
-            "publisher-place": "Akademie der Wissenschaften und der Literatur, Mainz",
+            "place": "Akademie der Wissenschaften und der Literatur, Mainz",
             "title": "Textkategorien in kompositorischen Werkstattdokumenten",
             "author": [
                 {
@@ -1134,7 +1135,7 @@
             "event-title": "Expertengespräch zur genetischen Textkritik im Bereich Musik",
             "genre": "Vortrag",
             "language": "deutsch",
-            "publisher-place": "Akademie der Wissenschaften und der Literatur, Mainz",
+            "place": "Akademie der Wissenschaften und der Literatur, Mainz",
             "title": "Das Datenmodell von Beethovens Werkstatt",
             "author": [
                 {
@@ -1163,7 +1164,7 @@
             "event-title": "Expertengespräch zur genetischen Textkritik im Bereich Musik",
             "genre": "Vortrag",
             "language": "deutsch",
-            "publisher-place": "Akademie der Wissenschaften und der Literatur, Mainz",
+            "place": "Akademie der Wissenschaften und der Literatur, Mainz",
             "title": "Zum Selbstverständnis der genetischen Textkritik bzw. textgenetischer Projekte aus der Sicht von Beethovens Werkstatt",
             "author": [
                 {
@@ -1188,7 +1189,7 @@
             "event-title": "Expertengespräch zur genetischen Textkritik im Bereich Musik",
             "genre": "Vortrag",
             "language": "deutsch",
-            "publisher-place": "Akademie der Wissenschaften und der Literatur, Mainz",
+            "place": "Akademie der Wissenschaften und der Literatur, Mainz",
             "title": "Digitale Musikedition zwischen Werkstattdokument und Text",
             "author": [
                 {
@@ -1213,7 +1214,7 @@
             "event-title": "Expertengespräch zur genetischen Textkritik im Bereich Musik",
             "genre": "Vortrag",
             "language": "deutsch",
-            "publisher-place": "Akademie der Wissenschaften und der Literatur, Mainz",
+            "place": "Akademie der Wissenschaften und der Literatur, Mainz",
             "title": "Textwachstum und Variantenbildung",
             "author": [
                 {
@@ -1242,7 +1243,7 @@
             "event-title": "Expertengespräch zur genetischen Textkritik im Bereich Musik",
             "genre": "Vortrag",
             "language": "deutsch",
-            "publisher-place": "Akademie der Wissenschaften und der Literatur, Mainz",
+            "place": "Akademie der Wissenschaften und der Literatur, Mainz",
             "title": "Invarianz – ein Begriff zur genetischen Textkritik",
             "author": [
                 {
@@ -2037,7 +2038,8 @@
           ]
         ]
       },
-      "place": "Goethe-Universität, Frankfurt am Main"
+      "place": "Goethe-Universität, Frankfurt am Main",
+      "URL": "https://www.uni-frankfurt.de/69961052/Programm_final_14-01-2018.pdf"
     },
     {
       "id": "4185477/3HDVF5TV",
@@ -2061,7 +2063,8 @@
           ]
         ]
       },
-      "place": "Goethe-Universität, Frankfurt am Main"
+      "place": "Goethe-Universität, Frankfurt am Main",
+      "URL": "https://www.uni-frankfurt.de/69961052/Programm_final_14-01-2018.pdf"
     },
     {
       "id": "4185477/MQDJITFS",
@@ -2161,7 +2164,8 @@
           ]
         ]
       },
-      "place": "Rom"
+      "place": "Rom",
+      "URL": "https://www.paolomonella.it/terzavia2018/locandina.pdf"
     },
     {
       "id": "4185477/TIPW5TUG",
@@ -4177,7 +4181,7 @@
             "genre": "Vortrag",
             "language": "deutsch",
             "note": "2024-11-18/2024-11-19",
-            "publisher-place": "Akademie der Wissenschaften und der Literatur, Mainz",
+            "place": "Akademie der Wissenschaften und der Literatur, Mainz",
             "title": "Expertenworkshop: Rekonstruktion und digitale Darstellung von Beethovens Skizzenbuch Notirungsbuch K",
             "author": [
                 {
@@ -4309,7 +4313,7 @@
             "event-title": "Zehn Jahre Beethovens Werkstatt: Kompositionsprozesse im digitalen Fokus",
             "genre": "Vortrag",
             "language": "deutsch",
-            "publisher-place": "Akademie der Wissenschaften und der Literatur, Mainz",
+            "place": "Akademie der Wissenschaften und der Literatur, Mainz",
             "title": "Zehn Jahre Beethovens Werkstatt: Kompositionsprozesse im digitalen Fokus",
             "author": [
                 {
@@ -4364,13 +4368,38 @@
             }
         },
         {
+            "id": "4185477/HXRAWIWQ",
+            "type": "speech",
+            "event-title": "Vortragsreihe, Cremona",
+            "genre": "Vortrag",
+            "language": "italienisch",
+            "note": "2018-03-21/2018-03-28",
+            "place": "Universität Pavia, Cremona",
+            "title": "Il Processo compositivo di Beethoven. Storia, orientamenti, stato della ricerca (Vortragsreihe)",
+            "URL": "https://news.unipv.it/?p=29513",
+            "author": [
+                {
+                    "family": "Rovelli",
+                    "given": "Federica"
+                }
+            ],
+            "issued": {
+                "date-parts": [
+                    [
+                      2018,
+                      3
+                    ]
+                ]
+            }
+        },
+        {
             "id": "4185477/7JA2X5PV",
             "type": "speech",
             "citation-key": "kepper2017musikModellieren",
             "event-title": "Ringvorlesung Digitale Kultur- und Geisteswissenschaften 2017/2018",
             "genre": "Vortrag",
             "language": "deutsch",
-            "publisher-place": "Universität Paderborn",
+            "place": "Universität Paderborn",
             "title": "Musik modellieren – aber was heißt hier “Musik”? Digitale Forschungspraxis zwischen Notentext, Klangdokument und Theorie",
             "author": [
                 {
