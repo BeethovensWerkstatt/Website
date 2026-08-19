@@ -59,21 +59,79 @@
         {% endif %}
         {% if item.dokumentation %}<div class="modul-content-card-doc"><a href="{{ item.dokumentation }}">Dokumentation</a></div>{% endif %}
         {% if item.news and item.news.size > 0 %}
-        {% assign news_href = item.news %}
-        {% if item.news contains "_posts/" %}
-          {% assign news_file = item.news | split: "/" | last %}
-          {% assign news_stem = news_file | remove: ".md" | remove: ".markdown" %}
-          {% assign news_href = "" %}
-          {% for post in site.posts %}
-            {% assign post_stem = post.path | split: "/" | last | remove: ".md" | remove: ".markdown" %}
-            {% if post_stem == news_stem %}
-              {% assign news_href = post.url %}
-              {% break %}
+        {% assign news_json = item.news | jsonify %}
+        {% assign news_is_array = false %}
+        {% if news_json | slice: 0, 1 == "[" %}{% assign news_is_array = true %}{% endif %}
+        {% assign render_multi_news = false %}
+        {% if news_is_array and item.news.size > 1 %}{% assign render_multi_news = true %}{% endif %}
+        {% if item.news contains "_posts/" or item.news contains "http" %}{% assign render_multi_news = false %}{% endif %}
+
+        {% if render_multi_news %}
+          {% assign news_links = "" %}
+          {% for news_item in item.news %}
+            {% assign news_item_json = news_item | jsonify %}
+            {% assign news_raw = news_item %}
+            {% assign news_label = "" %}
+            {% if news_item_json | slice: 0, 1 == "{" %}
+              {% assign news_raw = news_item.url %}
+              {% assign news_label = news_item.title | default: "" %}
+            {% endif %}
+
+            {% assign news_href = news_raw %}
+            {% if news_raw contains "_posts/" %}
+              {% assign news_stem = news_raw | replace: "/_posts/", "" | replace: "_posts/", "" | replace: ".md", "" | replace: ".markdown", "" | replace: "/", "" %}
+              {% assign news_href = "" %}
+              {% for post in site.posts %}
+                {% assign post_stem = post.path | split: "/" | last | remove: ".md" | remove: ".markdown" %}
+                {% if post_stem == news_stem %}
+                  {% assign news_href = post.url %}
+                  {% if news_label == "" %}{% assign news_label = post.date | date: "%d.%m.%Y" %}{% endif %}
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+              {% if news_label == "" %}
+                {% assign news_date_hint = news_stem | slice: 0, 10 %}
+                {% if news_date_hint contains "-" and news_date_hint.size == 10 %}{% assign news_label = news_date_hint | date: "%d.%m.%Y" %}{% endif %}
+              {% endif %}
+              {% if news_href == "" %}{% assign news_href = news_raw %}{% endif %}
+            {% endif %}
+            {% if news_label == "" %}{% assign news_label = "News" %}{% endif %}
+
+            {% capture news_link %}<a href="{{ news_href }}"{% if news_href contains "http" %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ news_label }}</a>{% endcapture %}
+            {% if news_links == "" %}
+              {% assign news_links = news_link %}
+            {% else %}
+              {% assign news_links = news_links | append: ", " | append: news_link %}
             {% endif %}
           {% endfor %}
-          {% if news_href == "" %}{% assign news_href = item.news %}{% endif %}
+          <div class="modul-content-card-news">Newsbeiträge: {{ news_links }}</div>
+        {% else %}
+          {% assign news_raw = item.news %}
+          {% if item.news.url %}
+            {% assign news_raw = item.news.url %}
+          {% elsif news_is_array and item.news[0] %}
+            {% if item.news[0].url %}
+              {% assign news_raw = item.news[0].url %}
+            {% else %}
+              {% assign news_raw = item.news[0] %}
+            {% endif %}
+          {% endif %}
+
+          {% assign news_href = news_raw %}
+          {% if news_raw contains "_posts/" %}
+            {% assign news_stem = news_raw | replace: "/_posts/", "" | replace: "_posts/", "" | replace: ".md", "" | replace: ".markdown", "" | replace: "/", "" %}
+            {% assign news_href = "" %}
+            {% for post in site.posts %}
+              {% assign post_stem = post.path | split: "/" | last | remove: ".md" | remove: ".markdown" %}
+              {% if post_stem == news_stem %}
+                {% assign news_href = post.url %}
+                {% break %}
+              {% endif %}
+            {% endfor %}
+            {% if news_href == "" %}{% assign news_href = news_raw %}{% endif %}
+          {% endif %}
+          <div class="modul-content-card-news"><a href="{{ news_href }}"{% if news_href contains "http" %} target="_blank" rel="noopener noreferrer"{% endif %}>→ Newsbeitrag</a></div>
         {% endif %}
-        <div class="modul-content-card-news"><a href="{{ news_href }}"{% if news_href contains "http" %} target="_blank" rel="noopener noreferrer"{% endif %}>→ Newsbeitrag</a></div>
         {% endif %}
       </div>
       {% if item.screenshot and item.screenshot.size > 0 and item.url and item.url.size > 0 %}
