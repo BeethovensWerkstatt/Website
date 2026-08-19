@@ -28,8 +28,13 @@ modul_1:
         - title: "Lied Neue Liebe, neues Leben, op. 75/2"
         - title: "Duett mit zwei obligaten Augengläsern, WoO 32"
         - title: "8. Symphonie in F-Dur, op. 93"
-      dokumentation: "/dokumentation/videapp-var/" # @todo "Tour"-Inhalte in eine .md Datei überführen
-      news: "/_posts/2017-07-04-veroeffentlichung/" # VideApp online
+      # dokumentation: "/dokumentation/videapp-var/" # @todo "Tour"-Inhalte in eine .md Datei überführen
+      news: 
+        - title: "Veröffentlichung"
+          url: "/_posts/2017-07-04-veroeffentlichung/" # VideApp online
+        - title: "Erforschung op. 93"
+          url: "/_posts/2018-10-11-die-erforschung-des-beispiels-zu-op-93-geht-weiter"
+
 
     - title: "Prototyp 1"
       beschreibung: "Fallstudie zu Variantendarstellung für die \"Sonate für Klavier c-Moll, op. 111.\""
@@ -49,7 +54,7 @@ modul_1:
           url: "https://beethovens-werkstatt.de/sandbox/op59.3/index.html"
         - title: "Sandbox 2: Lied Neue Liebe, neues Leben, op. 75/2"
           url: "https://beethovens-werkstatt.de/sandbox/op75.2/5r/index.html"
-      dokumentation: "/dokumentation/genetic-sandbox/"
+      # dokumentation: "/dokumentation/genetic-sandbox/"
 
   berichte:
     - title: "Abschlussbericht Modul 1"
@@ -86,11 +91,13 @@ modul_2:
       screenshot: "/assets/images/module/modul-2.jpeg"
       screenshot_alt: "Screenshot der VideApp-Arr aus Modul 2"
       dokumentation: "/dokumentation/videapp-arr/" # @todo die 5 texte in einer doku zusammenfassen, abschnitte als links erhalten (update der links in der software)
+      news: "/_posts/2018-09-03-das-zweite-modul-in-beethovens-werkstatt-erste-schritte/" # VideApp online
+
 
     - title: "MusicDiff"
       beschreibung: "Vergleich von zwei Musikcodierungen."
       url: "https://music-diff.edirom.de/"
-      dokumentation: "/dokumentation/music-diff/" # @todo kurze einführung als eigene dokumentation anlegen
+      # dokumentation: "/dokumentation/music-diff/" 
 
   berichte:
     - title: "Abschlussbericht Modul 2"
@@ -145,7 +152,6 @@ modul_3:
     - title: "Druckplattenvergleich"
       beschreibung: "Optischer Druckplattenvergleich."
       url: "/modul-3/druckplattenvergleich/" # @todo übertragen von https://beethovens-werkstatt.de/druckplattenvergleich-op-73/
-      dokumentation: "/dokumentation/music-diff/" # @todo kurze einführung als eigene dokumentation anlegen
 
   berichte:
     - title: "Abschlussbericht Modul 3"
@@ -163,12 +169,12 @@ modul_4:
       screenshot: "/assets/images/module/modul-4.jpg"
       screenshot_alt: "Screenshot der VideApp-Sk aus Modul 4"
       beschreibung: "Digitale Rekonstruktion des <a href=\"/publications/zum-notirungsbuch-k/\">Notirungsbuchs K</a>."
-      dokumentation: "/dokumentation/videapp-sk/"
+      # dokumentation: "/dokumentation/videapp-sk/"
 
   berichte:
     - title: "Abschlussbericht Modul 4"
       url: "/modul-4/abschlussbericht-modul-4/"
-      typ: "Bericht"
+      # typ: "Bericht"
 
 modul_5:
   editionen_software: []
