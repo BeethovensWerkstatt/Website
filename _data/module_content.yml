@@ -35,7 +35,6 @@ modul_1:
         - title: "Erforschung op. 93"
           url: "/_posts/2018-10-11-die-erforschung-des-beispiels-zu-op-93-geht-weiter"
 
-
     - title: "Prototyp 1"
       beschreibung: "Fallstudie zu Variantendarstellung für die \"Sonate für Klavier c-Moll, op. 111.\""
       dokumentation: "/dokumentation/prototyp-1/"
@@ -46,6 +45,16 @@ modul_1:
       dokumentation: "/dokumentation/prototyp-2/"
       url: "https://demo2.beethovens-werkstatt.de/index.html"
       news: "/_posts/2015-11-13-beispiel-op-593/"
+
+    - title: "reViz"
+      beschreibung: "Visualisierungstool für Rekonstruktionen am Beispiel \"Neue Liebe, neues Leben, op. 75/2.\" (proof of concept)"
+      # dokumentation: "/dokumentation/reviz/"
+      url: "https://reviz.beethovens-werkstatt.de/"
+
+    - title: "inViz"
+      beschreibung: "Visualisierungstool für Invarianzen am Beispiel \"Neue Liebe, neues Leben, op. 75/2.\" (proof of concept)"
+      # dokumentation: "/dokumentation/inviz/"
+      url: "https://inviz.beethovens-werkstatt.de/"
 
     - title: "Genetic Sandbox"
       beschreibung: "Interaktive Sandbox zur Erprobung von Variantenabfolgen und Schreibprozessen."
