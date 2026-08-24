@@ -246,7 +246,7 @@
     {
       "id": "4185477/ZV4XK49S",
       "type": "speech",
-      "title": "Projektvorstellung Beethovens Werkstatt",
+      "title": "Von Beethovens Schreibprozessen und deren digitaler Darstellung",
       "genre": "Tool-/Projektvorstellung",
       "event": "Seminar der Studierenden des Musikjournalismus an der Hochschule für Musik Karlsruhe unter der Leitung von Prof. Dr. Peter Overbeck",
       "language": "deutsch",
@@ -293,7 +293,8 @@
           ]
         ]
       },
-      "place": "Akademie der Wissenschaften und der Literatur | Mainz"
+      "place": "Akademie der Wissenschaften und der Literatur | Mainz",
+      "URL": "https://www.akademienunion.de/akademientag/akademientag/2019-der-klang-europas"
     },
     {
       "id": "4185477/TWKTR763",
@@ -321,7 +322,8 @@
           ]
         ]
       },
-      "place": "Akademie der Wissenschaften und der Literatur | Mainz"
+      "place": "Akademie der Wissenschaften und der Literatur | Mainz",
+      "URL": "https://www.akademienunion.de/akademientag/akademientag/2019-der-klang-europas"
     },
     {
       "id": "4185477/8VVNTHDY",
@@ -599,7 +601,7 @@
       "id": "4185477/PBA54FDP",
       "type": "speech",
       "title": "Cultivating MEI: Recent and Future Development",
-      "genre": "Poster",
+      "genre": "Panel",
       "event": "Music Encoding Conference 2019",
       "URL": "https://music-encoding.org/conference/2019/",
       "language": "englisch",

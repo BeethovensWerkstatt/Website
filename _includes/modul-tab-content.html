@@ -178,9 +178,6 @@
   <ul class="modul-item-list">
   {% for event in site.data.events %}
     {% if event.type == "Eigene Veranstaltung" and event.module == include.num %}
-    {% assign ev_date_parts = event.date | split: "/" %}
-    {% assign ev_start_p = ev_date_parts[0] | split: "-" %}
-    {% capture ev_date_display %}{{ ev_start_p[2] }}.{{ ev_start_p[1] }}.{{ ev_start_p[0] }}{% if ev_date_parts.size > 1 %}{% assign ev_end_p = ev_date_parts[1] | split: "-" %} – {{ ev_end_p[2] }}.{{ ev_end_p[1] }}.{{ ev_end_p[0] }}{% endif %}{% endcapture %}
     <li class="modul-item">
       <div class="modul-item-header">
         <span class="modul-item-title modul-eigene-veranst-title">
@@ -188,9 +185,64 @@
           {% else %}{{ event.title }}{% endif %}
         </span>
       </div>
-      <span class="modul-item-meta">{{ ev_date_display }}
-        {% if event.posts and event.posts.size > 0 %} · <a href="/{{ event.posts[0] }}/" class="news-link">→ Newsbeitrag</a>{% endif %}
-      </span>
+      {% if event.occurrences %}
+        {% for occurrence in event.occurrences %}
+          {% assign occ_date_parts = occurrence.date | split: "/" %}
+          {% assign occ_start_p = occ_date_parts[0] | split: "-" %}
+          {% capture occ_date_display %}{{ occ_start_p[2] }}.{{ occ_start_p[1] }}.{{ occ_start_p[0] }}{% if occ_date_parts.size > 1 %}{% assign occ_end_p = occ_date_parts[1] | split: "-" %} – {{ occ_end_p[2] }}.{{ occ_end_p[1] }}.{{ occ_end_p[0] }}{% endif %}{% endcapture %}
+          <span class="modul-item-meta">
+            {{ occ_date_display }}
+            {% if occurrence.label %} · {{ occurrence.label }}{% endif %}
+            {% if occurrence.place %} · {{ occurrence.place }}{% endif %}
+            {% if occurrence.posts and occurrence.posts.size > 0 %} · <a href="/{{ occurrence.posts[0] }}/" class="news-link">→ Newsbeitrag</a>{% endif %}
+            {% if occurrence.vortraege and occurrence.vortraege.size > 0 %}
+              {% for vortrag_id in occurrence.vortraege %}
+                {% for v in site.data.vortraege.items %}
+                  {% if v.id contains vortrag_id %}
+                    {% assign vortrag_type = v.type %}
+                    {% if vortrag_type == "speech" %}{% assign vortrag_type_de = "Vortrag" %}
+                    {% elsif vortrag_type == "poster" %}{% assign vortrag_type_de = "Poster" %}
+                    {% elsif vortrag_type == "publication" %}{% assign vortrag_type_de = "Publikation" %}
+                    {% else %}{% assign vortrag_type_de = vortrag_type %}{% endif %}
+                    <div style="margin-top: 0.3rem; padding-left: 1.5rem; font-size: 0.85em; color: #666;">
+                      <strong>{{ v.title }}</strong>{% if vortrag_type %} ({{ vortrag_type_de }}){% endif %}
+                      {% if v.author %} · {% for author in v.author %}{{ author.given }} {{ author.family }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}
+                    </div>
+                    {% break %}
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+            {% endif %}
+          </span>
+        {% endfor %}
+      {% else %}
+        {% assign ev_date_parts = event.date | split: "/" %}
+        {% assign ev_start_p = ev_date_parts[0] | split: "-" %}
+        {% capture ev_date_display %}{{ ev_start_p[2] }}.{{ ev_start_p[1] }}.{{ ev_start_p[0] }}{% if ev_date_parts.size > 1 %}{% assign ev_end_p = ev_date_parts[1] | split: "-" %} – {{ ev_end_p[2] }}.{{ ev_end_p[1] }}.{{ ev_end_p[0] }}{% endif %}{% endcapture %}
+        <span class="modul-item-meta">
+          {{ ev_date_display }}
+          {% if event.place %} · {{ event.place }}{% endif %}
+          {% if event.posts and event.posts.size > 0 %} · <a href="/{{ event.posts[0] }}/" class="news-link">→ Newsbeitrag</a>{% endif %}
+          {% if event.vortraege and event.vortraege.size > 0 %}
+            {% for vortrag_id in event.vortraege %}
+              {% for v in site.data.vortraege.items %}
+                {% if v.id contains vortrag_id %}
+                  {% assign vortrag_type = v.type %}
+                  {% if vortrag_type == "speech" %}{% assign vortrag_type_de = "Vortrag" %}
+                  {% elsif vortrag_type == "poster" %}{% assign vortrag_type_de = "Poster" %}
+                  {% elsif vortrag_type == "publication" %}{% assign vortrag_type_de = "Publikation" %}
+                  {% else %}{% assign vortrag_type_de = vortrag_type %}{% endif %}
+                  <div style="margin-top: 0.3rem; padding-left: 1.5rem; font-size: 0.85em; color: #666;">
+                    <strong>{{ v.title }}</strong>{% if vortrag_type %} ({{ vortrag_type_de }}){% endif %}
+                    {% if v.author %} · {% for author in v.author %}{{ author.given }} {{ author.family }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}
+                  </div>
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+          {% endif %}
+        </span>
+      {% endif %}
     </li>
     {% endif %}
   {% endfor %}

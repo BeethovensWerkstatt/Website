@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Akademientag Berlin
-date: 2018-12-03
+date: 2018-05-15
 categories: news
 authors:
 - Beethovens Werkstatt

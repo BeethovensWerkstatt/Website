@@ -100,7 +100,11 @@ modul_2:
       screenshot: "/assets/images/module/modul-2.jpeg"
       screenshot_alt: "Screenshot der VideApp-Arr aus Modul 2"
       dokumentation: "/dokumentation/videapp-arr/" # @todo die 5 texte in einer doku zusammenfassen, abschnitte als links erhalten (update der links in der software)
-      news: "/_posts/2018-09-03-das-zweite-modul-in-beethovens-werkstatt-erste-schritte/" # VideApp online
+      news: 
+      - title: "Erste Schritte"
+        url: "/_posts/2018-09-03-das-zweite-modul-in-beethovens-werkstatt-erste-schritte/" # VideApp online
+      - title: "Vergleich von Fassungen"
+        url: "/_posts/2018-10-22-neue-wege-zum-vergleich-von-fassungen/"
 
 
     - title: "MusicDiff"

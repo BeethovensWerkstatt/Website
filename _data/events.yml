@@ -81,6 +81,8 @@
 
 # Modul 3
 
+
+
 # Modul 2
 
 - id: "roundtable-2020-bonn"
@@ -89,17 +91,208 @@
   module: 2
   type: "Eigene Veranstaltung"
   date: "2020-02-11"
+  place: "Beethoven-Haus, Bonn"
   vortraege:
     - 5WP8ICRR     # "Roundtable: Skizzen als Werkstattdokumente: Schaffensprozesse im Vergleich"
   posts:
-    - 2017-10-25-mini-symposium-in-boston
+    - 2020-01-23-roundtable-skizzen-als-werkstattdokumente-schaffensprozesse-im-vergleich
+  note: ""
+
+- id: "insidebeethoven"
+  title: "Klanginstallation: Inside Beethoven"
+  url: "_publications/inside-beethoven.md"
+  module: 2
+  type: "Eigene Veranstaltung"
+  occurrences:
+    - date: "2019-12-13"
+      place: "Lippisches Landesmuseum, Detmold"
+      label: "Ausstellungseröffnung"
+      posts:
+        - 2019-12-13-ausstellungseroeffnung-inside-beethoven
+    - date: "2021-10-15"
+      place: "Beethoven-Haus Bonn"
+      label: "Ausstellungseröffnung"
+      vortraege:
+        - AW76GJ72     # "Beethovens Op. 20 und Op. 38: Eine Frage der Perspektive"
+  note: ""
+
+- id: "research-2019-boston"
+  title: "Eighth International New Beethoven Research Conference"
+  module: 2
+  type: "Vortrag"
+  date: "2019-10-30"
+  vortraege:
+    - JIV4Z3UC     # "Freylich war der Effect ganz derselbe, aber nicht für das Auge: Beethoven‘s own arrangement of the Great Fugue op. 133/134"
+  posts:
+    - 2019-10-01-new-beethoven-research-conference
+  note: ""
+
+- id: "vorhaben-2019-mainz"
+  title: "Musikwissenschaftliche Vorhaben im 21. Jahrhundert – Chancen und Perspektiven"
+  module: 2
+  type: "Vortrag"
+  date: "2019-10-10/2019-10-11"
+  vortraege:
+    - 758F7GNH     # "Entwicklung musikwissenschaftlicher Vorhaben im kommenden Jahrzehnt"
+    - ZXH6UJ4A     # "Zur Rolle von Standardisierungsinitiativen im Bereich Text- und Musikedition"
+  posts:
+    - 2019-09-30-musikwissenschaftliche-themenkonferenz
+  note: ""
+
+- id: "gfm-2019-paderborn"
+  title: "GfM 2019"
+  module: 2
+  type: "Vortrag"
+  date: "2019-09-23"
+  vortraege:
+    - JK82WJ6E     # "Symposium: Brückenschläge – Informatik und Musikwissenschaft im Dialog"
+    - GNW7ZPB5     # "Zur Übertragbarkeit der Methoden des Projektes Beethovens Werkstatt auf andere Komponisten: Robert Schumanns Schreibstrategien" 
+    - JKV8PKEX     # "Digitale Fassungsvergleiche am Beispiel von Beethovens Eigenbearbeitungen"
+  posts:
+    - 2019-09-12-jahrestagung-der-gesellschaft-fuer-musikforschung
+  note: ""
+
+- id: "studienkolleg-2019-bonn"
+  title: "Studienkolleg"
+  module: 2
+  type: "Lehre"
+  date: "2019-09-18"
+  lehrveranstaltungen:
+    - 5KTMZAXU   # "Beethoven als Bearbeiter versus Beethoven-Bearbeitungen"
+  posts:
+    - 2019-08-27-beethoven-studienkolleg
+  note: ""
+
+- id: "ess-2019-paderborn"
+  title: "Edirom Summer School 2019"
+  url: "https://ess.uni-paderborn.de/2019/programm.html"
+  module: 2
+  type: "Lehre"
+  date: "2019-09-02/2019-09-06"
+  lehrveranstaltungen:
+    - KW47RWRI   # "Mining Music Data – Arbeiten mit RISM-Daten"
+    - B4GR3UEU   # "Anwendungsorientiertes MEI"
+    - AZU5PE6F   # "Einführung in TEI"
+  posts:
+    - 2019-08-13-edirom-summer-school-2019
+  note: ""
+
+- id: "studierende-2019-bonn"
+  title: "Besuch von Studierenden des Musikjournalismus der Hochschule für Musik Karlsruhe"
+  module: 2
+  type: "Vortrag"
+  date: "2019-06-18"
+  vortraege:
+    - ZV4XK49S     # "Von Beethovens Schreibprozessen und deren digitaler Darstellung"
+  posts:
+    - 2019-07-20-besuch-von-studierenden-der-hochschule-karlsruhe
+  note: ""
+
+- id: "akademientag-2019-mainz"
+  title: "Akademientag 2019"
+  module: 2
+  type: "Vortrag"
+  date: "2019-06-17"
+  vortraege:
+    - TWKTR763   # "Projektpräsentation als Teil der Projektstraße"
+    - D8B4AHNM   # Projektvorstellung im Rahmen eines Workshops
+  posts:
+    - 2019-07-16-akademientag-2019
+  note: ""
+
+- id: "mec-2019-wien"
+  title: "Music Encoding Conference 2019"
+  url: "https://music-encoding.org/conference/2019/"
+  module: 2
+  type: "Vortrag"
+  date: "2019-05-29/2019-06-01"
+  vortraege:
+    - JJCFTXUH     # "MEI Based Tools for Score Comparison and Analysis"
+    - PBA54FDP     # "Cultivating MEI: Recent and Future Development"
+  posts:
+    - 2019-05-14-music-encoding-conference-2019
+  note: ""
+
+- id: "seminar-2019-rom"
+  title: "Filologia Musicale"
+  module: 2
+  type: "Lehre"
+  date: "2018-04-15/2019-04-16"
+  lehrveranstaltungen:
+    - AQD3IDAK   # "Editionspraxis: Beethoven und Schumann zwischen Philologie und Editionstechnik"
+  posts:
+    - 2019-05-14-seminarbeitraege-an-der-universitaet-sapienza-in-rom
+  note: ""
+
+- id: "rv-2019-paderborn"
+  title: "DH-Ringvorlesung „Wissensmodellierung durch Markup“"
+  module: 2
+  type: "Vortrag"
+  date: "2019-05-07"
+  vortraege:
+    - MQDJITFS    # "Markup ohne Basistext. Musik modellieren"
+  posts:
+    - 2019-05-14-vortrag-an-der-uni-paderborn
+  note: ""
+
+- id: "werke-2019-mainz"
+  title: "Werke, Werktitel, Werknorm – Perspektiven der Einführung einer Werkebene bei RISM"
+  module: 2
+  type: "Vortrag"
+  date: "2019-05-10"
+  vortraege:
+    - CJB28QEH    # "MEI Metadata und RISM"
+  posts:
+    - 2019-05-14-vortrag-in-mainz
+  note: ""
+
+- id: "vortrag-2019-kiel"
+  module: 2
+  type: "Vortrag"
+  date: "2019-01-22"
+  vortraege:
+    - 5HGSX2EP    # "Das Engelmann-Skizzenbuch – Ein Blick auf Beethovens Schreibtisch"
+  posts:
+    - 2019-01-07-vortrag-an-der-uni-kiel
+  note: ""
+
+- id: "vortrag-2018-koblenz"
+  title: "Kulturwissenschaftliches Nachwuchskolloquium “(Un-)Ordnungen”"
+  module: 2
+  type: "Vortrag"
+  date: "2018-12-12"
+  vortraege:
+    - KJ3WS9ZF    # "Beethovens Skizzen: Völlige Unordnung oder geordnetes Chaos?"
+  posts:
+    - 2018-12-03-vortrag-an-der-universitaet-koblenz
+  note: ""
+
+- id: "soundstudies2-2018-bonn"
+  title: "Einführung in die Musikwissenschaft/Sound Studies"
+  module: 2
+  type: "Lehre"
+  date: "2018-12-07"
+  lehrveranstaltungen:
+    - 9MEVJGSD   # "Genetische Textkritik und Digitale Musikedition"
+  posts:
+    - 2018-11-21-seminar-an-der-universitaet-bonn-2
+  note: ""
+
+- id: "vortrag-2018-würzburg"
+  module: 2
+  type: "Vortrag"
+  date: "2018-11-13"
+  vortraege:
+    - 5QGWVI5W     # "Digitale Musikedition als ‚Moving Target‘. Einige Thesen zu den Herausforderungen einer zeitgemäßen Musikphilologie"
+  posts:
+    - 2018-10-16-vortrag-an-der-uni-wuerzburg
   note: ""
 
 - id: "gfm-2018-osnabrück"
   title: "GfM 2018, Symposium „Born-digital. Digitales Material als Herausforderung für die Musikwissenschaft“"
   module: 2
   type: "Vortrag"
-  date: "2017-09-25/2017-09-28"
+  date: "2018-09-25/2018-09-28"
   vortraege:
     - A2KWJEKT     # "Genetische Textkritik in digitalem Gewand – Ein Einblick in Beethovens Werkstatt"
   posts:
@@ -111,7 +304,7 @@
   url: "https://ess.uni-paderborn.de/2018/programm.html"
   module: 2
   type: "Lehre"
-  date: "2017-09-17/2017-09-21"
+  date: "2018-09-17/2018-09-21"
   lehrveranstaltungen:
     - 22ERWJ44   # "TEI für Einsteiger"
     - 33ZHADEZ   # "MEI für Fortgeschrittene"
@@ -153,6 +346,8 @@
   vortraege:
     - 7BE6H643   # "Die VideApp: Ein Blick in Beethovens Werkstatt"
     - 72PEIQC8   # "Panel: Geisteswissenschaftliche Arbeitswelten im digitalen Zeitalter. Herausforderungen, Risiken, Potentiale"
+  posts:
+    - 2018-05-15-akademientag-berlin
   note: ""
 
 - id: "mec-2018-washington"
