@@ -81,7 +81,54 @@
 
 # Modul 3
 
+- id: "musiccodierung-2020-münster"
+  title: "Blockseminar"
+  module: 3
+  type: "Lehre"
+  date: "2020-04-01/2020-09-30"
+  lehrveranstaltungen:
+    - CIMFQMHM     # ""
+  posts:
+    - 2020-06-10-lehrtaetigkeit-im-sommersemester-2020
+  note: ""
 
+- id: "philologie-2020-detmold"
+  title: "Blockseminar"
+  module: 3
+  type: "Lehre"
+  date: "2020-04-01/2020-09-30"
+  lehrveranstaltungen:
+    - N2GUTZEM     # "Philologie und Editionspraxis am Beispiel von Schumann und Beethoven"
+  posts:
+    - 2020-06-10-lehrtaetigkeit-im-sommersemester-2020
+  note: ""
+
+- id: "mec-2020-boston"
+  title: "Music Encoding Conference 2020"
+  url: "https://music-encoding.org/conference/2020/"
+  module: 3
+  type: "Tagung"
+  date: "2020-05-26/2020-05-29"
+  vortraege:
+    - IE2ZGXW3     # "Integrating Score Rendition into the MEIGarage"
+    - FSGSWWGZ     # "MusicDiff: A Diff Tool for MEI"
+  lehrveranstaltungen:
+    - WPGMWWX5     # "Working with MEI Metadata"
+  posts:
+    - 2020-06-10-mec-2020
+  note: ""
+
+- id: "dhd-2020-paderborn"
+  title: "DHd 2020"
+  module: 3
+  type: "Vortrag"
+  date: "2020-03-03"
+  vortraege:
+    - F7ISESN2     # "Würgegriff oder Rettungsanker? – Interpretationsspielräume handschriftlicher (Musik-)Quellen im digitalen Kontext"
+    - JKN8ZT9H     # "Zu den Anforderungen einer musikalischen Stilometrie"
+  posts:
+    - 2020-03-26-beteiligung-an-der-dhd2020-in-paderborn
+  note: ""
 
 # Modul 2
 
@@ -105,10 +152,15 @@
   type: "Eigene Veranstaltung"
   occurrences:
     - date: "2019-12-13"
-      place: "Lippisches Landesmuseum, Detmold"
+      place: "Lippisches Landesmuseum Detmold"
       label: "Ausstellungseröffnung"
       posts:
         - 2019-12-13-ausstellungseroeffnung-inside-beethoven
+    - date: "2020-03-02"
+      place: "Heinz Nixdorf MuseumsForum Paderborn"
+      label: "Ausstellungseröffnung"
+      posts:
+        - 2020-03-26-beteiligung-an-der-dhd2020-in-paderborn
     - date: "2021-10-15"
       place: "Beethoven-Haus Bonn"
       label: "Ausstellungseröffnung"

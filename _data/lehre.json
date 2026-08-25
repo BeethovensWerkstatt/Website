@@ -594,7 +594,7 @@
       "genre": "Seminar",
       "language": "deutsch",
       "note": "2020-04-01/2020-09-30",
-      "title": "Notation und Edition neuerer Musik (SoSe 2021)",
+      "title": "Notation und Edition neuerer Musik (SoSe 2020)",
       "author": [
         {
           "family": "Kepper",
@@ -924,8 +924,8 @@
       "citation-key": "kepperMusikcodierungUndDigitale2020",
       "genre": "Seminar",
       "language": "deutsch",
-      "note": "2020",
-      "title": "Musikcodierung und Digitale Musikedition (Blockseminar)",
+      "note": "2020-04-01/2020-09-30",
+      "title": "Musikcodierung und Digitale Musikedition (SoSe 2020)",
       "author": [
         {
           "family": "Kepper",
@@ -1450,6 +1450,47 @@
       "event": "Edirom Summer School 2014",
       "place": "Paderborn"
     },
+    {
+            "id": "4185477/WPGMWWX5",
+            "type": "speech",
+            "event": "Music Encoding Conference 2020",
+            "genre": "Workshop",
+            "language": "englisch",
+            "note": "2020-05-26",
+            "place": "Boston (virtual)",
+            "title": "Working with MEI Metadata",
+            "URL": "https://music-encoding.org/conference/2020/",
+            "author": [
+                {
+                    "family": "Herold",
+                    "given": "Kristin"
+                },
+                {
+                    "family": "Richts",
+                    "given": "Kristina"
+                },
+                {
+                    "family": "Støkken Bue",
+                    "given": "Margrethe"
+                }
+            ]
+        },
+        {
+            "id": "4185477/N2GUTZEM",
+            "type": "speech",
+            "citation-key": "novaraPhilologieUndEditionspraxis",
+            "genre": "Seminar",
+            "language": "deutsch",
+            "note": "2020-04-01/2020-09-30",
+            "place": "Musikwissenschaftliches Seminar Detmold/Paderborn (online)",
+            "title": "Philologie und Editionspraxis am Beispiel von Schumann und Beethoven (SoSe 2020)",
+            "author": [
+                {
+                    "family": "Novara",
+                    "given": "Elisa"
+                }
+            ]
+        },
     {
       "id": "4185477/N9H9DRFD",
       "type": "speech",

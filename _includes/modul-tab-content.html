@@ -107,11 +107,14 @@
           <div class="modul-content-card-news">Newsbeiträge: {{ news_links }}</div>
         {% else %}
           {% assign news_raw = item.news %}
+          {% assign news_label = "" %}
           {% if item.news.url %}
             {% assign news_raw = item.news.url %}
+            {% assign news_label = item.news.title | default: "" %}
           {% elsif news_is_array and item.news[0] %}
             {% if item.news[0].url %}
               {% assign news_raw = item.news[0].url %}
+              {% assign news_label = item.news[0].title | default: "" %}
             {% else %}
               {% assign news_raw = item.news[0] %}
             {% endif %}
@@ -125,12 +128,19 @@
               {% assign post_stem = post.path | split: "/" | last | remove: ".md" | remove: ".markdown" %}
               {% if post_stem == news_stem %}
                 {% assign news_href = post.url %}
+                {% if news_label == "" %}{% assign news_label = post.date | date: "%d.%m.%Y" %}{% endif %}
                 {% break %}
               {% endif %}
             {% endfor %}
+            {% if news_label == "" %}
+              {% assign news_date_hint = news_stem | slice: 0, 10 %}
+              {% if news_date_hint contains "-" and news_date_hint.size == 10 %}{% assign news_label = news_date_hint | date: "%d.%m.%Y" %}{% endif %}
+            {% endif %}
             {% if news_href == "" %}{% assign news_href = news_raw %}{% endif %}
           {% endif %}
-          <div class="modul-content-card-news"><a href="{{ news_href }}"{% if news_href contains "http" %} target="_blank" rel="noopener noreferrer"{% endif %}>→ Newsbeitrag</a></div>
+          {% if news_label == "" %}{% assign news_label = "News" %}{% endif %}
+
+          <div class="modul-content-card-news">Newsbeitrag: <a href="{{ news_href }}"{% if news_href contains "http" %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ news_label }}</a></div>
         {% endif %}
         {% endif %}
       </div>

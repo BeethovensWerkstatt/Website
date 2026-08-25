@@ -111,6 +111,9 @@ modul_2:
       beschreibung: "Vergleich von zwei Musikcodierungen."
       url: "https://music-diff.edirom.de/"
       # dokumentation: "/dokumentation/music-diff/" 
+      news: 
+      - title: "Paper bei der MEC"
+        url: "/_posts/2020-06-10-mec-2020/"
 
   berichte:
     - title: "Abschlussbericht Modul 2"
@@ -161,6 +164,9 @@ modul_3:
           url: "/modul-3/op106_revisionsprozess.pdf"
           text: "/publications/op106/"
       dokumentation: "/dokumentation/videapp-rev/" # @todo die 3 kurzinfo-texte in einer doku zusammenfassen, abschnitte als links erhalten (update der links in der software)
+      news: 
+      - title: "Korrekturlisten"
+        url: "/_posts/2020-01-21-besprechung-zum-thema-beethovens-korrekturlisten/" 
 
     - title: "Druckplattenvergleich"
       beschreibung: "Optischer Druckplattenvergleich."
