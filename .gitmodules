@@ -4,3 +4,6 @@
 [submodule "vide-component-transcriptions"]
 	path = vide-component-transcriptions
 	url = https://github.com/BeethovensWerkstatt/vide-component-transcriptions.git
+[submodule "vide-component-works"]
+	path = vide-component-works
+	url = https://github.com/BeethovensWerkstatt/vide-component-works.git

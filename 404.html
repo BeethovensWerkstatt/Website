@@ -29,6 +29,13 @@ permalink: /404.html
       return;
     }
 
+    // Handle /works/* paths - redirect to Works SPA
+    if (path.startsWith('/works/') && path !== '/works/') {
+      const subPath = path.slice('/works'.length);
+      window.location.replace('/works/?_path=' + encodeURIComponent(subPath));
+      return;
+    }
+
     // Add more SPA islands here as needed:
     // if (path.startsWith('/test2/') && path !== '/test2/') {
     //   const subPath = path.slice('/test2'.length);

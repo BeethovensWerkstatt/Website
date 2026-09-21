@@ -17,6 +17,15 @@ build_transcriptions_component() {
     fi
 }
 
+# Build works component
+build_works_component() {
+    print_status "Building works component..."
+    if [ -d "vide-component-works" ]; then
+        (cd vide-component-works && npm install --silent 2>/dev/null || true)
+        (cd vide-component-works && npm run build 2>/dev/null || true)
+    fi
+}
+
 # Watch facsimile component for changes
 watch_facsimile_component() {
     print_status "Watching facsimile component for changes..."
@@ -37,17 +46,30 @@ watch_transcriptions_component() {
     find vide-component-transcriptions/src -type f 2>/dev/null | entr -r sh -c 'cd vide-component-transcriptions && npm run build'
 }
 
+# Watch works component for changes
+watch_works_component() {
+    print_status "Watching works component for changes..."
+    if ! command -v entr > /dev/null 2>&1; then
+        print_error "entr is not installed. Please install it (e.g., 'apk add entr' in Alpine, 'brew install entr' on macOS)."
+        return
+    fi
+    find vide-component-works/src -type f 2>/dev/null | entr -r sh -c 'cd vide-component-works && npm run build'
+}
+
 # Watch both SPA components and run Jekyll
 watch_dev() {
     print_status "Building components before watch..."
     build_facsimile_component
     build_transcriptions_component
+    build_works_component
     print_status "Starting component watchers in background..."
     watch_facsimile_component &
     WATCH_FACSIMILE_PID=$!
     watch_transcriptions_component &
     WATCH_TRANSCRIPTIONS_PID=$!
-    trap 'kill $WATCH_FACSIMILE_PID $WATCH_TRANSCRIPTIONS_PID 2>/dev/null; exit' INT TERM EXIT
+    watch_works_component &
+    WATCH_WORKS_PID=$!
+    trap 'kill $WATCH_FACSIMILE_PID $WATCH_TRANSCRIPTIONS_PID $WATCH_WORKS_PID 2>/dev/null; exit' INT TERM EXIT
     print_status "Ensuring Ruby gems are installed..."
     check_docker
     $DC_CMD run --rm jekyll bundle install
@@ -132,6 +154,7 @@ start_dev() {
     build_component_styles
     build_facsimile_component
     build_transcriptions_component
+    build_works_component
     print_status "Ensuring Ruby gems are installed..."
     check_docker
     $DC_CMD run --rm jekyll bundle install
@@ -162,6 +185,7 @@ build_site() {
     build_component_styles
     build_facsimile_component
     build_transcriptions_component
+    build_works_component
     
     print_status "Building Jekyll site for production..."
     check_docker
