@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: vide-app
 title: "Digital Facsimile"
 permalink: /facs/
 ---
