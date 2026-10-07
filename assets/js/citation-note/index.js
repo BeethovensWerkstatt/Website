@@ -113,16 +113,8 @@ class CitationNote extends HTMLElement {
 </style>
 
 <div class="citation-box">
-  <h3>Zitierhinweis neu</h3>
+  <h3>Zitierhinweis</h3>
   <div class="citation-content">
-  <div>Version DOI: ${ this.doiVersion || 'nicht verfügbar' }</div>
-  <div>Übersicht DOI: ${ this.doiOverview || 'nicht verfügbar' }</div>
-  <div>Artikel DOI: ${ this.doiArticle || 'nicht verfügbar' }</div>
-  <div>Title: ${ this.titleText }</div>
-  <div>Version: ${ this.version }</div>
-  <div>Datum: ${ this.date ? new Date(this.date).toLocaleDateString('de-DE') : '' }</div>
-  <div>Author: ${ this.authorText }</div>
-  <div>Bereich: ${ this.category || 'nicht verfügbar' }</div>
   <p>
     <strong>${this.escapeHtml(this.authorText || "Beethovens Werkstatt")}:</strong>
     „${this.escapeHtml(this.titleText)}“
