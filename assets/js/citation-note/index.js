@@ -1,7 +1,7 @@
 
 
 class CitationNote extends HTMLElement {
-  static observedAttributes = ["doi-version", "doi-overview", "title", "author", "date", "href"];
+  static observedAttributes = ["doi-version", "doi-overview", "titleText", "author", "version", "date", "href", "category"];
 
   constructor() {
     super();
@@ -26,11 +26,15 @@ class CitationNote extends HTMLElement {
   }
 
   get titleText() {
-    return this.getAttribute("title") ?? "";
+    return this.getAttribute("titleText") ?? "";
   }
 
   get authorText() {
     return this.getAttribute("author") ?? "";
+  }
+
+  get version() {
+    return this.getAttribute("version") ?? "";
   }
 
   get date() {
@@ -39,6 +43,10 @@ class CitationNote extends HTMLElement {
 
   get href() {
     return this.getAttribute("href") ?? "";
+  }
+
+  get category() {
+    return this.getAttribute("category") ?? "";
   }
 
   doiUrl(doi) {
@@ -105,18 +113,28 @@ class CitationNote extends HTMLElement {
 </style>
 
 <div class="citation-box">
-  <h3>Zitierhinweis</h3>
+  <h3>Zitierhinweis neu</h3>
   <div class="citation-content">
-  ${this.doiVersion
-    ? `<p><strong>${this.escapeHtml(this.authorText || "Beethovens Werkstatt")}:</strong> „${this.escapeHtml(this.titleText)}“ <a href="${this.doiUrl(this.doiVersion)}" target="_blank">${this.escapeHtml(this.doiVersion)}</a></p>`
-    : `<p><strong>${this.escapeHtml(this.authorText || "Beethovens Werkstatt")}:</strong> „${this.escapeHtml(this.titleText)}“${this.date ? ` (${this.date})` : ''}</p>
-      <p class="doi-pending"><em>DOI für diese Version wird noch vergeben</em></p>`}
-    
-    ${this.doiOverview
-      ? `<div class="doi-links">
-          <p>DOI aller Versionen: <a href="${this.doiUrl(this.doiOverview)}" target="_blank">${this.escapeHtml(this.doiOverview)}</a></p>
-        </div>`
-      : ""}
+  <div>Version DOI: ${ this.doiVersion || 'nicht verfügbar' }</div>
+  <div>Übersicht DOI: ${ this.doiOverview || 'nicht verfügbar' }</div>
+  <div>Artikel DOI: ${ this.doiArticle || 'nicht verfügbar' }</div>
+  <div>Title: ${ this.titleText }</div>
+  <div>Version: ${ this.version }</div>
+  <div>Datum: ${ this.date ? new Date(this.date).toLocaleDateString('de-DE') : '' }</div>
+  <div>Author: ${ this.authorText }</div>
+  <div>Bereich: ${ this.category || 'nicht verfügbar' }</div>
+  <p>
+    <strong>${this.escapeHtml(this.authorText || "Beethovens Werkstatt")}:</strong>
+    „${this.escapeHtml(this.titleText)}“
+    ${this.version ? ` Version ${this.escapeHtml(this.version)}${this.date ? ` (${new Date(this.date).toLocaleDateString('de-DE')})` : ''}` : ''}
+    in: Beethovens Werkstatt${this.category ? ` - ${this.escapeHtml(this.category)}` : ''}${this.doiVersion ? `, DOI: <a href="${this.doiUrl(this.doiVersion)}" target="_blank">${this.escapeHtml(this.doiVersion)}</a>` : ''}
+  </p>
+  ${!this.doiVersion && !this.doiArticle ? `<div class="doi-pending"><em>DOI für diese Version wird noch vergeben</em></div>` : ''}
+  ${this.doiOverview
+    ? `<div class="doi-links">
+        <p>DOI aller Versionen: <a href="${this.doiUrl(this.doiOverview)}" target="_blank">${this.escapeHtml(this.doiOverview)}</a></p>
+      </div>`
+    : ""}
   </div>
 </div>
 `;

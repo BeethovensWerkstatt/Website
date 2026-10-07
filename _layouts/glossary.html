@@ -333,6 +333,17 @@ article.glossary-term .glossary-content p em a {
       </div>
     {% endif %}
     {% if page.doi_article or page.doi_version or page.doi_overview %}
+      <citation-note
+        {% if page.doi_version %}doi-version="{{ page.doi_version }}"{% endif %}
+        {% if page.doi_article %}doi-article="{{ page.doi_article }}"{% endif %}
+        {% if page.doi_overview %}doi-overview="{{ page.doi_overview }}"{% endif %}
+        titleText="{{ page.title }}"
+        author="{{ page.author }}"
+        {% if page.version %}version="{{ page.version }}"{% endif %}
+        {% if page.date %}date="{{ page.date }}"{% endif %}
+        href="{{ window.location.href }}"
+        category="Glossar" />
+        <!--
       <div class="citation-box">
         <h3>Zitierhinweis</h3>
         <div class="citation-content">
@@ -349,7 +360,7 @@ article.glossary-term .glossary-content p em a {
             </div>
           {% endif %}
         </div>
-      </div>
+      </div> -->
     {% endif %}
 
     {% comment %}Show disclaimer for current versions after citation{% endcomment %}
