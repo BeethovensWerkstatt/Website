@@ -2,6 +2,26 @@
 layout: vide-app
 title: "Digital Facsimile"
 permalink: /facs/
+extra_head: |
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const videAppCitation = document.getElementById('videapp-citation');
+    console.log(8945, 'videAppCitation:', videAppCitation);
+    fetch('http://localhost:8080/exist/apps/api/data-versions.json').then(r => r.json()).then(j => {
+      const repos = j.repositories.repo
+      console.log(8945, repos)
+      for (repo of repos) {
+        console.log(8945, repo)
+        if (repo['@name'] === 'data') {
+          videAppCitation.setAttribute('titleText', repo['@name'])
+          videAppCitation.setAttribute('version', repo.commit)
+          videAppCitation.setAttribute('date', repo.date)
+        }
+      }
+    })
+  });
+  </script>
+author: "Beethovens Werkstatt"
 ---
 
 <link rel="stylesheet" href="{{ '/vide-component-facsimile/dist/vide-facs.css' | relative_url }}">
