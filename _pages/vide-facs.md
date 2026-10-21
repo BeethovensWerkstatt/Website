@@ -18,7 +18,7 @@ extra_head: |
           videAppCitation.setAttribute('date', repo.date)
         }
       }
-    })
+    }).catch(e => { console.error(8945, e) })
   });
   </script>
 author: "Beethovens Werkstatt"
