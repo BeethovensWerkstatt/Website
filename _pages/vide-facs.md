@@ -20,7 +20,10 @@ author: "Beethovens Werkstatt"
     const videAppCitation = document.getElementById('videapp-citation');
     const data_versions_URL = `${apiBase}/data-versions.json`
     console.log(8945, 'videAppCitation:', videAppCitation, data_versions_URL);
-    fetch(data_versions_URL).then(r => r.json()).then(j => {
+    fetch(data_versions_URL).then(r => {
+      console.log(8945, 'data-versions:', r)
+      return r.json()
+    }).then(j => {
       const repos = j.repositories.repo
       console.log(8945, repos)
       for (repo of repos) {
