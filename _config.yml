@@ -45,8 +45,6 @@ navigation:
     url: "/module/"
   - title: "VIDEAPP"
     url: "/facs/"
-  - title: "WERKE"
-    url: "/werke/"
   - title: "GLOSSAR"
     url: "/glossar/"
   - title: "NEWS"
