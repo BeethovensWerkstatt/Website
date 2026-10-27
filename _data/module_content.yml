@@ -16,12 +16,17 @@
 #   screenshot_alt: Optionaler Alternativtext für den Screenshot
 #   dokumentation:  Interner Link zu einer Dokumentationsseite im Projekt (optional)
 #   news:           Optionaler Link zum Newsbeitrag (direkte URL oder _posts-Dateipfad)
+#   hinweis:        Optionaler, farblich abgesetzter Hinweis, z. B. wenn eine Anwendung
+#                   nicht verfügbar ist. Ohne url wird der Screenshot ohne Link angezeigt.
+#   hinweis_news:   Optionaler Newsbeitrag zum Hinweis (direkte URL oder _posts-Dateipfad)
 
 modul_1:
   editionen_software:
     - title: "VideApp-Var"
       beschreibung: "Webanwendung zur Darstellung genetischer Prozesse."
-      url: "https://videapp.beethovens-werkstatt.de"
+      # url entfernt, solange die Anwendung nicht online verfügbar ist (vorher: https://videapp-var.beethovens-werkstatt.de)
+      hinweis: "Die VideApp-Var ist derzeit nicht online verfügbar. Die 2016–2017 entwickelte Anwendung benötigt eine technische Infrastruktur, die sich aus Sicherheitsgründen nicht dauerhaft weiter betreiben lässt."
+      hinweis_news: "/_posts/2023-05-24-die-videapp_var-des-1-moduls-ist-derzeit-nicht-erreichbar"
       screenshot: "/assets/images/module/modul-1.jpg"
       screenshot_alt: "Screenshot der VideApp-Var aus Modul 1"
       werke:
