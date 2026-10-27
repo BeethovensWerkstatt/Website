@@ -137,4 +137,20 @@
       }
     }
   }
+
+  .footer-legal {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 24px;
+    font-size: 0.85em;
+
+    a {
+      color: #aaaaaa;
+
+      &:hover {
+        color: $brand-color;
+      }
+    }
+  }
 }

@@ -81,6 +81,65 @@
 
 # Modul 3
 
+
+
+- id: "brueckenschlaege-2020"
+  title: "Brückenschläge zwischen Musikwissenschaft und Informatik. Theoretische und praktische Aspekte der Kooperation"
+  module: 3
+  type: "Publikation"
+  date: "2020-11-16"
+  publikationen:
+    - N9RAUD6J     # "Brückenschläge zwischen Musikwissenschaft und Informatik – Vorbemerkung"
+    - E6S87RRM     # "Digitale Fassungsvergleiche am Beispiel von Beethovens Eigenbearbeitungen"
+    - 677KV9P2     # "Digitale Edition und Harmonische Analyse mit MEI von Anton Bruckners Studienbuch"
+  posts:
+    - 2020-11-16-neuerscheinung-brueckenschlaege-zwischen-musikwissenschaft-und-informatik
+  note: ""
+
+- id: "conference-2020-lugano"
+  title: "Beethoven and the Piano: Philology, Context and Performance Practice"
+  module: 3
+  type: "Vortrag"
+  date: "2020-11-04/2020-11-07"
+  vortraege:
+    - 2CP6V45F     # "Beethoven’s “Concept” – Working Manuscripts Between Sketch and Fair Copy"
+  posts:
+    - 2020-11-04-konferenz-beethoven-and-the-piano
+  note: ""
+
+- id: "sidm-2020-siena"
+  title: "XXVII. Tagung der Società Italiana di Musicologia"
+  module: 3
+  type: "Vortrag"
+  date: "2020-10-16/2020-10-18"
+  vortraege:
+    - GFW2WT46     # "Sheet 154 of the Kafka Sketchbook. A Continuity Draft Written by the Young Beethoven"
+    - ZV9RAZT2     # "Il principio compositivo della voce-guida fra schizzi e autografi: un esempio dal Kyrie della Messa in Do Maggiore op. 86"
+  posts:
+    - 2020-10-28-panel-session-bei-der-sidm-tagung
+  note: ""
+
+- id: "concepts-2020-siena"
+  title: "Beethoven's ‚Concept‘: Working Manuscripts between Sketch and Fair Copy"
+  module: 3
+  type: "Vortrag"
+  date: "2020-09-16"
+  vortraege:
+    -  MVS5QXMH    # "Skizzenblatt 154 des Kafka-Konvolutes – Ein Kompositionsentwurf des jungen Beethoven"
+    -  4WKHR8RD    # "Il principio compositivo della voce-guida fra schizzi e autografi: un esempio dal Kyrie della Messa in Do Maggiore op. 86"
+  note: ""
+
+- id: "rv-2020-detmold"
+  title: "Digitale Ringvorlesung"
+  module: 3
+  type: "Vortrag"
+  date: "2020-06-25"
+  vortraege:
+    - U4BAF6WR     # "Beethovens Engelmann-Skizzenbuch – Völlige Unordnung oder geordnetes Chaos?"
+  posts:
+    - 2020-06-10-lehrtaetigkeit-im-sommersemester-2020
+  note: ""
+
 - id: "musiccodierung-2020-münster"
   title: "Blockseminar"
   module: 3
@@ -161,6 +220,11 @@
       label: "Ausstellungseröffnung"
       posts:
         - 2020-03-26-beteiligung-an-der-dhd2020-in-paderborn
+    - date: "2020-08-27"
+      place: "Deutsche Nationalbibliothek Leipzig"
+      label: "Ausstellungseröffnung"
+      posts:
+        - 2020-10-14-inside-beethoven-in-leipzig-in-der-deutschen-nationalbibliothek-27-august-bis-3-november
     - date: "2021-10-15"
       place: "Beethoven-Haus Bonn"
       label: "Ausstellungseröffnung"
