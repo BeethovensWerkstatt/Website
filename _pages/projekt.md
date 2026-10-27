@@ -8,7 +8,7 @@ permalink: /projekt/
 
 <h1>{{ page.title }}</h1>
 
-<p>Das Projekt „Beethovens Werkstatt" kombiniert Genetische Textkritik<!-- TODO: add link to glossary-->  und <a href="/glossar/digitale-musikedition/">Digitale Musikedition</a>, um kompositorische Prozesse im Œuvre Beethovens zu untersuchen. Die folgenden Bereiche geben einen Überblick über administrative und wissenschaftliche Aspekte des Projekts.</p>
+<p>Das Projekt <i>Beethovens Werkstatt</i> kombiniert Genetische Textkritik<!-- TODO: add link to glossary-->  und <a href="/glossar/digitale-musikedition/">Digitale Musikedition</a>, um kompositorische Prozesse im Œuvre Beethovens zu untersuchen. Die folgenden Bereiche geben einen Überblick über administrative und wissenschaftliche Aspekte des Projekts.</p>
 
 <div class="project-sections">
 
