@@ -44,7 +44,7 @@ navigation:
   - title: "MODULE"
     url: "/module/"
   - title: "VIDEAPP"
-    url: "/facs/"
+    url: "/videapp/"
   - title: "GLOSSAR"
     url: "/glossar/"
   - title: "NEWS"
