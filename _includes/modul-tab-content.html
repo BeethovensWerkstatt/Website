@@ -272,11 +272,52 @@
 <details class="modul-collapsible">
   <summary class="modul-section-heading">Wissenschaftliche Publikationen <span class="modul-count">({{ pub_count }})</span></summary>
   <ul class="modul-item-list modul-pub-list">
-  {% comment %}Sortiere nach Jahr absteigend (neueste zuerst) - Iteration von aktuell zu start{% endcomment %}
-  {% for year in (m_start..m_end) reversed %}
-    {% for pub in site.data.publikationen.items %}
+  {% comment %}Sammle alle Publikationen mit sortkey und event-info{% endcomment %}
+  {% assign modul_publikationen = "" | split: "" %}
+  {% for pub in site.data.publikationen.items %}
     {% assign py = pub.issued.date-parts[0][0] | plus: 0 %}
-    {% if py == year %}
+    {% if py >= m_start and py <= m_end %}
+      {% assign pub_key = pub.id | split: "/" | last %}
+      {% assign pub_event_id = "" %}
+      {% for event in site.data.events %}
+        {% if event.publikationen contains pub_key %}
+          {% assign pub_event_id = event.id %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+      {% assign pub_data = py | append: "|" | append: pub.id | append: "|" | append: pub_event_id %}
+      {% assign modul_publikationen = modul_publikationen | push: pub_data %}
+    {% endif %}
+  {% endfor %}
+  {% assign sorted_modul_publikationen = modul_publikationen | sort | reverse %}
+
+  {% comment %}Precompute event_info_map: id|count|post{% endcomment %}
+  {% assign modul_pub_event_info_map = "" | split: "" %}
+  {% for event in site.data.events %}
+    {% assign pev_count = 0 %}
+    {% for pdata in sorted_modul_publikationen %}
+      {% assign pparts = pdata | split: "|" %}
+      {% if pparts[2] == event.id %}
+        {% assign pev_count = pev_count | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+    {% assign pev_post = "" %}
+    {% if event.posts and event.posts.size > 0 %}{% assign pev_post = event.posts[0] %}{% endif %}
+    {% assign pev_info = event.id | append: "|" | append: pev_count | append: "|" | append: pev_post %}
+    {% assign modul_pub_event_info_map = modul_pub_event_info_map | push: pev_info %}
+  {% endfor %}
+
+  {% assign shown_pub_events = "" | split: "" %}
+
+  {% for pub_data in sorted_modul_publikationen %}
+    {% assign pub_data_parts = pub_data | split: "|" %}
+    {% assign pub_id = pub_data_parts[1] %}
+    {% assign pub_event_id = pub_data_parts[2] %}
+    {% assign outer_pub_idx = forloop.index0 %}
+
+    {% for pub in site.data.publikationen.items %}
+    {% if pub.id == pub_id %}
+    {% assign py = pub.issued.date-parts[0][0] | plus: 0 %}
     {% assign pub_is_website = false %}
     {% if pub.URL %}{% unless pub.URL contains "http" %}{% assign pub_is_website = true %}{% endunless %}{% endif %}
     {% assign pub_doi_url = "" %}
@@ -285,7 +326,21 @@
       {% elsif pub.DOI contains "DOI: " %}{% assign pub_doi_url = "https://doi.org/" | append: pub.DOI | remove: "DOI: " %}
       {% else %}{% assign pub_doi_url = "https://doi.org/" | append: pub.DOI %}{% endif %}
     {% endif %}
-    <li class="modul-pub-item">
+
+    {% assign pub_ev_count = 0 %}
+    {% assign pub_ev_post = "" %}
+    {% if pub_event_id != "" %}
+      {% for pev_info in modul_pub_event_info_map %}
+        {% assign pev_parts = pev_info | split: "|" %}
+        {% if pev_parts[0] == pub_event_id %}
+          {% assign pub_ev_count = pev_parts[1] | plus: 0 %}
+          {% assign pub_ev_post = pev_parts[2] %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
+    <li class="modul-pub-item{% if pub_ev_count > 1 %} modul-event-vortrag{% endif %}">
       <div class="modul-pub-header">
         <span class="modul-pub-titel">
           {% if pub_is_website %}<a href="{{ pub.URL }}">{{ pub.title }}</a>
@@ -314,7 +369,22 @@
         <span class="modul-pub-citation">{%- if pub.type == "article-journal" -%}In: {%- assign bib_ct = pub["container-title"] | default: pub["collection-title"] -%}{%- if bib_ct %} <em>{{ bib_ct }}</em>{%- endif %}{%- if pub.volume %}, Jg.&nbsp;{{ pub.volume }}{%- endif %}{%- if pub.issue %}, H.&nbsp;{{ pub.issue }}{%- endif %}{%- if pub.page %}, S.&nbsp;{{ pub.page }}{%- endif %}{%- elsif pub.type == "chapter" -%}In: {%- for ed in pub.editor limit: 3 %}{%- unless forloop.first %}, {%- endunless %}{%- if ed.given %} {{ ed.given }} {{ ed.family }}{%- else %} {{ ed.family }}{%- endif %}{%- endfor %}{%- if pub.editor.size > 3 %} u.a.{%- endif %}{%- if pub.editor.size > 0 %} (Hg.):{%- endif %}{%- if pub["container-title"] %} <em>{{ pub["container-title"] }}</em>{%- elsif pub["collection-title"] %} <em>{{ pub["collection-title"] }}</em>{%- endif %}{%- if pub["publisher-place"] %}. {{ pub["publisher-place"] }}{%- endif %}{%- if pub.page %}, S.&nbsp;{{ pub.page }}{%- endif %}{%- elsif pub.type == "book" -%}{%- if pub["publisher-place"] and pub.publisher %}{{ pub["publisher-place"] }}: {{ pub.publisher }}{%- elsif pub["publisher-place"] %}{{ pub["publisher-place"] }}{%- elsif pub.publisher %}{{ pub.publisher }}{%- endif %}{% if pub.volume %}, Bd.&nbsp;{{ pub.volume }}{% endif %}{%- elsif pub.type == "paper-conference" -%}In: {%- if pub["container-title"] %} <em>{{ pub["container-title"] }}</em>{%- elsif pub["event-title"] %} <em>{{ pub["event-title"] }}</em>{%- endif %}{%- if pub["publisher-place"] %}. {{ pub["publisher-place"] }}{%- endif %}{%- if pub.page %}, S.&nbsp;{{ pub.page }}{%- endif %}{%- endif %} ({{ py }})</span>
         {% if pub_doi_url != "" %}<span class="modul-pub-doi">DOI: <a href="{{ pub_doi_url }}" target="_blank" rel="noopener noreferrer">{{ pub_doi_url }}</a></span>{% endif %}
       </div>
+      {% if pub_ev_count == 1 and pub_ev_post and pub_ev_post.size > 0 %}<div class="modul-vortrag-news"><a href="/{{ pub_ev_post }}/">→ Newsbeitrag</a></div>{% endif %}
     </li>
+    {% if pub_ev_count > 1 %}
+      {% unless shown_pub_events contains pub_event_id %}{% assign shown_pub_events = shown_pub_events | push: pub_event_id %}{% endunless %}
+      {% assign next_pub_idx = outer_pub_idx | plus: 1 %}
+      {% assign next_pub_data = sorted_modul_publikationen[next_pub_idx] %}
+      {% assign next_pub_event_id = "" %}
+      {% if next_pub_data %}
+        {% assign next_pub_parts = next_pub_data | split: "|" %}
+        {% assign next_pub_event_id = next_pub_parts[2] %}
+      {% endif %}
+      {% if next_pub_event_id != pub_event_id and pub_ev_post and pub_ev_post.size > 0 %}
+      <li class="modul-event-news"><a href="/{{ pub_ev_post }}/">→ Newsbeitrag</a></li>
+      {% endif %}
+    {% endif %}
+    {% break %}
     {% endif %}
     {% endfor %}
   {% endfor %}
