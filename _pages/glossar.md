@@ -6,7 +6,7 @@ permalink: /glossar/
 
 # {{ page.title }}
 
-Die hier vorgestellten philologischen Begriffe geben den aktuellen Stand der projektspezifischen Terminologie von Beethovens Werkstatt wieder. 
+Die hier vorgestellten philologischen Begriffe geben den aktuellen Stand der projektspezifischen Terminologie von <i>Beethovens Werkstatt</i> wieder. 
 
 <!-- Filter Toggle Button -->
 <div class="filter-toggle-header">
