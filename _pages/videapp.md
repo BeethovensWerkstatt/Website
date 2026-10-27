@@ -10,7 +10,7 @@ permalink: /videapp/
   <strong>Hinweis:</strong> Die Anwendungen auf dieser Seite befinden sich noch in Entwicklung. Da einige Darstellungen aus abweichenden Datenstrukturen automatisch generiert werden, betrifft dies auch die angebotenen Transkriptionen. Das Projekt arbeitet aktiv an der Überprüfung dieser Inhalte. Funktionsumfang, Darstellung und Daten können sich daher jederzeit ändern, und einzelne Funktionen sind möglicherweise noch unvollständig oder fehlerhaft. Über Hinweise per <a href="mailto:info@beethovens-werkstatt.de">Email</a> freuen wir uns dennoch.
 </div>
 
-<p>Die VideApp macht Beethovens Schreibprozesse in den Quellen nachvollziehbar. Die neue Version besteht aus mehreren Werkzeugen, die auf denselben Daten aufbauen. Gegenstand ist immer das im <a href="{{ '/module/#modul-4' | relative_url }}">vierten Projektmodul</a> bearbeitete <strong>Notirungsbuch K</strong>. Dabei handelt es sich um ein im Frühjahr 1823 genutzten Skizzenbuch Beethovens, in dem hauptsächlich Skizzen zu den Diabelli-Variationen op.120 sowie der 9. Sinfonie op.125 enthalten sind.</p>
+<p>Die VideApp macht Beethovens Schreibprozesse in den Quellen nachvollziehbar. Die neue Version besteht aus mehreren Werkzeugen, die auf denselben Daten aufbauen. Gegenstand ist immer das im <a href="{{ '/module/#modul-4' | relative_url }}">vierten Projektmodul</a> bearbeitete <strong>Notirungsbuch K</strong>. Dabei handelt es sich um ein im Frühjahr 1823 genutzten Skizzenbuch Beethovens, in dem hauptsächlich Skizzen zu den Diabelli-Variationen op.120 sowie der 9. Sinfonie op.125 enthalten sind.</p>
 
 <div class="videapp-entry">
   <div class="videapp-entry-item">
