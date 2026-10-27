@@ -14,4 +14,4 @@ Eingeladen waren ausgewiesene Fachleute aus den Bereichen Skizzenforschung, Edit
 
 Die ausführlichen [Protokollnotizen] des Workshops sind ab sofort online verfügbar.
 
-[Protokollnotizen]: https://beethovens-werkstatt.de/expertenkolloquium-november-2024-mainz/
+[Protokollnotizen]: /publications/expertenworkshop-2024-mainz/
