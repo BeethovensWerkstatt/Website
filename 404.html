@@ -1,6 +1,8 @@
 ---
 layout: default
+title: Seite nicht gefunden
 permalink: /404.html
+sitemap: false
 ---
 
 <script>
@@ -38,8 +40,28 @@ permalink: /404.html
   })();
 </script>
 
-<div style="text-align: center; padding: 4rem 2rem;">
-  <h1>404 - Page Not Found</h1>
-  <p>The page you're looking for doesn't exist.</p>
-  <p><a href="/">Return to homepage</a></p>
+<div class="not-found">
+  <h1>Seite nicht gefunden</h1>
+  <p>Die aufgerufene Seite gibt es nicht (mehr). Die Website von <em>Beethovens Werkstatt</em> wurde im November 2026 neu aufgebaut, dabei haben sich viele Adressen geändert.</p>
+  <p>Vielleicht finden Sie das Gesuchte hier:</p>
+  <ul>
+    <li><a href="{{ '/module/' | relative_url }}">Module</a> – die fünf Projektmodule mit Anwendungen, Berichten und Publikationen</li>
+    <li><a href="{{ '/glossar/' | relative_url }}">Glossar</a> – Begriffe der genetischen Textkritik</li>
+    <li><a href="{{ '/news/' | relative_url }}">News</a> – alle Beiträge seit 2014</li>
+    <li><a href="{{ '/projekt/' | relative_url }}">Projekt</a> – Projektübersicht, Team, Vorträge und Publikationen</li>
+  </ul>
+  <p><a href="{{ '/' | relative_url }}">Zur Startseite</a> · Kontakt: <a href="mailto:info@beethovens-werkstatt.de">info@beethovens-werkstatt.de</a></p>
+
+  <div class="not-found-en" lang="en">
+    <h2>Page not found</h2>
+    <p>The page you requested does not exist (anymore). The website of <em>Beethovens Werkstatt</em> was relaunched in November 2026, and many addresses have changed. Please use the menu above or go to the <a href="{{ '/' | relative_url }}">homepage</a>. Contact: <a href="mailto:info@beethovens-werkstatt.de">info@beethovens-werkstatt.de</a></p>
+  </div>
 </div>
+
+<style>
+.not-found { max-width: 46rem; margin: 3rem auto 4rem; padding: 0 1.5rem; }
+.not-found ul { margin: 0.5rem 0 1.5rem 1.25rem; }
+.not-found li { margin-bottom: 0.4rem; }
+.not-found-en { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid #e5e5e5; color: #555; }
+.not-found-en h2 { font-size: 1.3rem; }
+</style>
