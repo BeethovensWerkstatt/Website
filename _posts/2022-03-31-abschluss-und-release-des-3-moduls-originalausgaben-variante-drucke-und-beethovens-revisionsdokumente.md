@@ -13,5 +13,5 @@ In den vergangenen zwei Jahren untersuchte Beethovens Werkstatt das Varianten- u
 Alle Inhalte sind über [Modul 3] erreichbar. Weitere untersuchte Fallbeispiele folgen in den nächsten Wochen.
 
 [VideApp_rev]: https://videapp.beethovens-werkstatt.de/
-[Revisionsprozesse]: https://beethovens-werkstatt.de/glossary/revisionsprozess/
-[Modul 3]: https://beethovens-werkstatt.de/modul-3/
+[Revisionsprozesse]: /glossar/revisionsprozess/
+[Modul 3]: /module/#modul-3

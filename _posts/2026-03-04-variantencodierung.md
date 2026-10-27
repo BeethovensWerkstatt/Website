@@ -12,7 +12,7 @@ Im Frühjahr 2026 widmeten sich die Mitarbeiter*innen von Beethovens Werkstatt e
 
 Durch die Variantencodierung lassen sich verschiedene [Textzustände] erfassen und vergleichend darstellen, wodurch der Schreibprozess Beethovens nachvollziehbar wird. Die Arbeiten an den Varianten können somit in der neuen Version der *VideApp* als zentrale Inhalte sichtbar gemacht werden.
 
-[4. Moduls]: https://beethovens-werkstatt.de/modul-4/
-[„Notirungsbuchs K"]: https://beethovens-werkstatt.de/zum-notirungsbuch-k/
-[1. Moduls]: https://beethovens-werkstatt.de/modul-1/
+[4. Moduls]: /module/#modul-4
+[„Notirungsbuchs K"]: /publications/zum-notirungsbuch-k/
+[1. Moduls]: /module/#modul-1
 [Textzustände]: /glossar/textzustand/

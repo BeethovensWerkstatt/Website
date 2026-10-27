@@ -18,4 +18,6 @@ In dem zweitägigen Kurs „Introduction to Edirom-Online“ gab Kristin Herold 
 
 Maximilian Greshake und Richard Sänger stellten mit ihrem Workshop „How to SVG: Zeigen statt Beschreiben“ in einem kurzen 90-minütigen Format das im Projekt Beethovens Werkstatt entwickelte Konzept der Darstellung und Vermittlung mittels SVGs vor und reflektierten über Schwierigkeiten und Erkenntnisgrenzen. In einer anschließenden anregenden Diskussion wurde mit den Teilnehmer*innen über Möglichkeiten der Anwendbarkeit in anderen Projektkontexten gesprochen.
 
-Weitere Informationen zur jährlich stattfindenden Summer School finden Sie auf der offiziellen [Website zur ESS](https://ess.uni-paderborn.de/2026/programm.html).
+Weitere Informationen zur jährlich stattfindenden Summer School finden Sie auf der offiziellen [Website zur ESS].
+
+[Website zur ESS]: https://ess.uni-paderborn.de/2026/programm.html

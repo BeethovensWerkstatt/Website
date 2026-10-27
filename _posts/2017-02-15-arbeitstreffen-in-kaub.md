@@ -14,7 +14,7 @@ Im JAMS erschien Ende 2016 eine Besprechung des Projekts Beethovens Werkstatt (K
 Der Großteil des Treffens diente der weiteren Arbeit am zweiten Modul, das sich mit Beethoven als Bearbeiter eigener Werke beschäftigt. Bernhard R. Appel führte mit Überlegungen auf Basis des Beispiels von op. 14/1 in das Thema ein. Dann wurden weitere Beispiele (op. 121b, op. 122, op. 134, op. 61) durch die Bonner Mitarbeiter vorgestellt. Eine ausführliche [Beschreibung der entwickelten Überlegungen] bzw. inhaltlichen Fragestellungen dieses Moduls wurde erstellt.
 Die digitale Umsetzung der neuen Beispiele innerhalb des zweiten Moduls wird neue Herausforderungen mit sich bringen, da die Codierung es ermöglichen soll, Beziehungen zwischen verschiedenen Quellen präzise zu erfassen und zu visualisieren. In diesem Zusammenhang sollen außerdem Werkzeuge zur musikalischen Analyse und Suchfunktionen entwickelt und als Erweiterung in die VideApp integriert werden. Audio-Versionen der Fassungen sollen die Bearbeitungsprozesse auch hörbar machen.
 
-[hier]: https://beethovens-werkstatt.de/softwareentwicklung-2017/
-[Expertenkolloquium 2015]: https://beethovens-werkstatt.de/prototyp/expertenkolloquium/
-[Beschreibung der entwickelten Überlegungen]: https://beethovens-werkstatt.de/inhaltliche-fragestellung-des-zweiten-moduls/
+[hier]: /modul-1/softwareentwicklung-2017/
+[Expertenkolloquium 2015]: /publications/expertenkolloqium/
+[Beschreibung der entwickelten Überlegungen]: /modul-2/inhaltliche-fragestellung-des-zweiten-moduls/
 
