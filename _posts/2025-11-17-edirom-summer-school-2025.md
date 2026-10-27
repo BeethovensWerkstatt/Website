@@ -14,8 +14,11 @@ Lisa Rosendahl und Richard Sänger unterrichteten den zweitägigen Kurs „MEI f
 
 Johannes Kepper leitete über die gesamte Woche einen Kurs zum Thema „Diplomatic Transcriptions in Detail", in dem das im Projekt Beethovens Werkstatt entwickelte Modell zur diplomatischen Transkription vorgestellt und weiterentwickelt wurde. Das Konzept erlaubt eine besonders präzise digitale Wiedergabe von Quellen und wurde anhand des im Projekt entwickelten Facsimile Explorers praktisch erprobt.
 
-Kristin Herold gab gemeinsam mit dem Team von „Edirom Online Reloaded" eine praxisnahe Einführung in die kürzlich veröffentlichte Version 1.0.0 der Software [Edirom Online](https://edirom-online.edirom.de/) und der Erzeugung von Editionsdaten. 
+Kristin Herold gab gemeinsam mit dem Team von „Edirom Online Reloaded" eine praxisnahe Einführung in die kürzlich veröffentlichte Version 1.0.0 der Software [Edirom Online] und der Erzeugung von Editionsdaten.
 
 In einem eintägigen Workshop führte Andreas Münzmay gemeinsam mit den Kolleg:innen der Nationalen Forschungsdateninfrastruktur (NFDI) am Beispiel des OPEN Edirom-Projekts in das Forschungsdatenmanagement ein.
 
-Weitere Informationen zur jährlich stattfindenden Summer School finden Sie auf der offiziellen [Website zur ESS](https://ess.uni-paderborn.de).
+Weitere Informationen zur jährlich stattfindenden Summer School finden Sie auf der offiziellen [Website zur ESS].
+
+[Edirom Online]: https://edirom-online.edirom.de/
+[Website zur ESS]: https://ess.uni-paderborn.de

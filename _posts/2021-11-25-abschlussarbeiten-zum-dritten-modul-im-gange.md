@@ -28,5 +28,5 @@ Bei einem Treffen am 22./23. November 2021 in Bonn konnte ein wichtiger Zwischen
 
 [VideApp]: https://videapp.beethovens-werkstatt.de/
 [Zwischenversion]: https://videapp.beethovens-werkstatt.de/work/xf3f76067-b8a1-48ce-878f-41b9a0ef0c8d
-[Modul]: https://beethovens-werkstatt.de/modul-3/
+[Modul]: /module/#modul-3
 [Email]: info@beethovens-werkstatt.de

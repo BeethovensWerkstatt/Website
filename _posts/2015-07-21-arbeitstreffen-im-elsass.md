@@ -12,4 +12,4 @@ Vom 27. bis 30. Juli 2015 haben sich die Mitarbeiter sowie die Leiter des Projek
 Weitere Themen des Treffens waren die Website des Projekts und speziell der Workflow bei der weiteren Erarbeitung des Glossars philologischer und technischer Begriffe, dessen Definitionen noch auf die Website zu überführen sind. Außerdem ging es neben einer inhaltlichen Debatte über weitere Begriffe (darunter Textstufe, Textstadium, Um-Schreibung, Überschreibung) bei dem Treffen auch um Unterschiede editionsphilologischer Konzepte, um ein Schema für eine vereinfachte Darstellung von Varianten und wiederum um etliche, mit der Codierung komplexer Phänomene zusammenhängende Fragen.
 Die Tagungsstätte Liebfrauenberg erwies sich als ein idealer Ort für eine intensive und nicht durch äußere Zwänge behinderte Kommunikation. Die angrenzenden Wälder waren für abendliche Wanderungen gut geeignet und sorgten zusammen mit der üppigen Verpflegung für eine Arbeitsatmosphäre, von der das Projekt erheblich profitiert haben dürfte.
 
-[Expertenworkshops]: https://beethovens-werkstatt.de/expertenworkshop-in-mainz/
+[Expertenworkshops]: /2015-09-13-expertenworkshop-in-mainz/
