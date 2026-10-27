@@ -205,6 +205,19 @@ permalink: /module/
   text-decoration-color: #c93b22;
 }
 
+.modul-content-card-shot-inactive img { opacity: 0.55; filter: grayscale(100%); }
+
+.modul-content-card-hinweis {
+  border-left: 4px solid #c93b22;
+  background: #f7f3ec;
+  padding: 0.45rem 0.7rem;
+  margin: 0.35rem 0 0.45rem 0;
+  font-size: 0.83rem;
+  color: #444;
+  line-height: 1.45;
+}
+.modul-content-card-hinweis a { color: #c93b22; white-space: nowrap; }
+
 .modul-content-card-primary {
   border-color: #d8d8d8;
   background: #f7f7f7;

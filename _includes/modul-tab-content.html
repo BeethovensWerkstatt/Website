@@ -41,6 +41,20 @@
           {% endif %}
         </div>
         {% if item.beschreibung %}<div class="modul-content-card-desc">{{ item.beschreibung }}</div>{% endif %}
+        {% if item.hinweis %}
+          {% assign hinweis_href = item.hinweis_news %}
+          {% if hinweis_href contains "_posts/" %}
+            {% assign hinweis_stem = hinweis_href | replace: "/_posts/", "" | replace: "_posts/", "" | replace: ".md", "" | replace: "/", "" %}
+            {% for post in site.posts %}
+              {% assign post_stem = post.path | split: "/" | last | remove: ".md" | remove: ".markdown" %}
+              {% if post_stem == hinweis_stem %}{% assign hinweis_href = post.url %}{% break %}{% endif %}
+            {% endfor %}
+          {% endif %}
+        <div class="modul-content-card-hinweis" role="note">
+          <strong>Hinweis:</strong> {{ item.hinweis }}
+          {% if hinweis_href and hinweis_href.size > 0 %}<a href="{{ hinweis_href }}">Mehr dazu im Newsbeitrag</a>{% endif %}
+        </div>
+        {% endif %}
         {% if item.werke and item.werke.size > 0 %}
         <div class="modul-content-card-works">
           <span class="modul-content-card-works-label">Enthaltene Werke:</span>
@@ -149,6 +163,10 @@
         <img src="{{ item.screenshot }}" alt="{{ item.screenshot_alt | default: item.title }}" loading="lazy" />
         <span class="modul-content-card-shot-cta">App öffnen →</span>
       </a>
+      {% elsif item.screenshot and item.screenshot.size > 0 %}
+      <div class="modul-content-card-shot modul-content-card-shot-inactive">
+        <img src="{{ item.screenshot }}" alt="{{ item.screenshot_alt | default: item.title }}" loading="lazy" />
+      </div>
       {% endif %}
     </div>
   </div>

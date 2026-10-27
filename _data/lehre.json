@@ -1,6 +1,80 @@
 {
   "items": [
     {
+      "id": "4185477/QAN6ZJ4E",
+      "type": "speech",
+      "citation-key": "greshakeHowSVGZeigen2026",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2026-09-17",
+      "title": "How to SVG: Zeigen statt Beschreiben",
+      "URL": "https://ess.uni-paderborn.de/2026/programm.html",
+      "author": [
+        {
+          "family": "Greshake",
+          "given": "Maximilian"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "event": "Edirom Summer School 2026",
+      "place": "Paderborn"
+    },
+    {
+      "id": "4185477/N3BKS25U",
+      "type": "speech",
+      "citation-key": "rosendahlMEIFuerEinsteigerinnen2026",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2026-09-14/2026-09-16",
+      "title": "MEI für Einsteiger*innen",
+      "URL": "https://ess.uni-paderborn.de/2026/programm.html",
+      "author": [
+        {
+          "family": "Rosendahl",
+          "given": "Lisa"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "event": "Edirom Summer School 2026",
+      "place": "Paderborn"
+    },
+    {
+      "id": "4185477/8UMY4XNJ",
+      "type": "speech",
+      "citation-key": "heroldIntroductionEdiromOnline2026",
+      "genre": "Workshop",
+      "language": "englisch",
+      "note": "2026-09-14/2026-09-15",
+      "title": "Introduction to Edirom-Online",
+      "URL": "https://ess.uni-paderborn.de/2026/programm.html",
+      "author": [
+        {
+          "family": "Herold",
+          "given": "Kristin"
+        },
+        {
+          "family": "Alemayehu",
+          "given": "Hizkiel Mitiku"
+        },
+        {
+          "family": "Jettka",
+          "given": "Daniel"
+        },
+        {
+          "family": "Maccarini",
+          "given": "Francesco"
+        }
+      ],
+      "event": "Edirom Summer School 2026",
+      "place": "Paderborn"
+    },
+    {
       "id": "4185477/PAR5H89Z",
       "type": "speech",
       "citation-key": "novaraTraSketchStudies2023",
@@ -197,6 +271,7 @@
           "given": "Salome"
         }
       ],
+      "event": "Edirom Summer School 2023",
       "place": "Paderborn"
     },
     {
@@ -1260,7 +1335,7 @@
       "citation-key": "kepperVertiefteAnwendungCodierungsformats2016",
       "genre": "Workshop",
       "language": "englisch",
-      "note": "2016-09-26/2026-09-27",
+      "note": "2016-09-26/2016-09-27",
       "title": "Vertiefte Anwendung des Codierungsformats der Music Encoding Initiative (MEI)",
       "URL": "https://ess.uni-paderborn.de/2016/programm.html",
       "author": [
