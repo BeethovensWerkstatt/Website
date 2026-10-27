@@ -22,7 +22,10 @@ RUN rm -rf node_modules && npm install && npm run build
 WORKDIR /srv/jekyll/vide-component-transcriptions
 RUN rm -rf node_modules && npm install && npm run build
 WORKDIR /srv/jekyll
-RUN bundle exec jekyll build
+ARG META_VERSION_COMMIT_HASH
+ARG META_VERSION_BRANCH
+RUN bundle exec jekyll build \
+    && sh /srv/jekyll/scripts/generate-meta-version.sh /srv/jekyll/_site/meta-version.json
 
 
 # serve site with nginx
@@ -32,4 +35,3 @@ COPY --from=build /srv/jekyll/_site /usr/share/nginx/html
 COPY --from=build /srv/jekyll/scripts/runtime-config.template.js /opt/runtime-config.template.js
 COPY --from=build /srv/jekyll/scripts/generate-runtime-config.sh /docker-entrypoint.d/40-generate-runtime-config.sh
 RUN chmod +x /docker-entrypoint.d/40-generate-runtime-config.sh
-

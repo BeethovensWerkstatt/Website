@@ -11,6 +11,8 @@ url: "https://beethovens-werkstatt.de" # the base hostname & protocol for your s
 markdown: kramdown
 highlighter: rouge
 show_excerpts: true
+keep_files:
+  - meta-version.json
 
 # Language and locale settings
 lang: de

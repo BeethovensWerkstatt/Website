@@ -36,6 +36,16 @@ Use the helper script for all common operations:
 ./dev.sh help      # List all commands
 ```
 
+Production builds generate `_site/meta-version.json` with the UTC build date,
+the full Git commit hash, and the repository branch. For static Docker builds,
+provide the Git metadata as build arguments when building outside CI:
+
+```bash
+META_VERSION_COMMIT_HASH="$(git rev-parse HEAD)" \
+META_VERSION_BRANCH="$(git branch --show-current)" \
+docker compose -f docker-compose.static.yml up --build
+```
+
 ## Direct Compose Commands
 
 If you prefer Docker Compose directly:

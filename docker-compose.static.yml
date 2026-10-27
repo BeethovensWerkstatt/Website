@@ -9,6 +9,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.static-nginx
+      args:
+        META_VERSION_COMMIT_HASH: ${META_VERSION_COMMIT_HASH:-}
+        META_VERSION_BRANCH: ${META_VERSION_BRANCH:-}
     environment:
       - VIDE_API_BASE=${VIDE_API_BASE:-}
       - VIDE_DOCUMENTS=${VIDE_DOCUMENTS:-}

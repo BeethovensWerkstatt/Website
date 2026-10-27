@@ -14,7 +14,7 @@ services:
       - BUNDLE_PATH=/usr/local/bundle
       - VIDE_API_BASE=${VIDE_API_BASE:-}
       - VIDE_DOCUMENTS=${VIDE_DOCUMENTS:-}
-    command: sh -c "sh /srv/jekyll/scripts/generate-runtime-config.sh /srv/jekyll/scripts/runtime-config.template.js /srv/jekyll/runtime-config.js && bundle exec jekyll serve --host 0.0.0.0 --livereload --force_polling"
+    command: sh -c "sh /srv/jekyll/scripts/generate-runtime-config.sh /srv/jekyll/scripts/runtime-config.template.js /srv/jekyll/runtime-config.js && sh /srv/jekyll/scripts/generate-meta-version.sh /srv/jekyll/_site/meta-version.json && bundle exec jekyll serve --host 0.0.0.0 --livereload --force_polling"
     stdin_open: true
     tty: true
 
@@ -29,7 +29,7 @@ services:
       - BUNDLE_PATH=/usr/local/bundle
       - VIDE_API_BASE=${VIDE_API_BASE:-}
       - VIDE_DOCUMENTS=${VIDE_DOCUMENTS:-}
-    command: sh -c "sh /srv/jekyll/scripts/generate-runtime-config.sh /srv/jekyll/scripts/runtime-config.template.js /srv/jekyll/runtime-config.js && bundle exec jekyll build"
+    command: sh -c "sh /srv/jekyll/scripts/generate-runtime-config.sh /srv/jekyll/scripts/runtime-config.template.js /srv/jekyll/runtime-config.js && bundle exec jekyll build && sh /srv/jekyll/scripts/generate-meta-version.sh /srv/jekyll/_site/meta-version.json"
     profiles:
       - build
 

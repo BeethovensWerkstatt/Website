@@ -155,6 +155,8 @@ start_dev() {
     build_facsimile_component
     build_transcriptions_component
     build_works_component
+    print_status "Generating repository version metadata..."
+    sh scripts/generate-meta-version.sh _site/meta-version.json
     print_status "Ensuring Ruby gems are installed..."
     check_docker
     $DC_CMD run --rm jekyll bundle install
