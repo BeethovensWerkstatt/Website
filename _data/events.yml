@@ -7,6 +7,22 @@
 # HINWEIS: Einträge werden nach "date" sortiert. Alle Felder außer "id", "title",
 #          "module", "type" und "date" sind optional.
 
+# Modul 5
+
+- id: "ess-2026-paderborn"
+  title: "Edirom Summer School 2026"
+  url: "https://ess.uni-paderborn.de/2026/programm.html"
+  module: 5
+  type: "Lehre"
+  date: "2026-09-14/2026-09-18"
+  lehrveranstaltungen:
+    - N3BKS25U   # "MEI für Einsteiger*innen"
+    - 8UMY4XNJ   # "Introduction to Edirom-Online"
+    - QAN6ZJ4E   # "How to SVG: Zeigen statt Beschreiben"
+  posts:
+    - 2026-10-25-edirom-summer-school-2026
+  note: ""
+
 # Modul 4
 
 - id: "mec-2026-tokyo"
