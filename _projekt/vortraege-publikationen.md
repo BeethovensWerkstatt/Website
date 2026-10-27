@@ -401,6 +401,28 @@ parent_url: /projekt
   border-bottom-color: #c93b22;
 }
 
+.publikation-item.event-pub {
+  margin-left: 0;
+  padding-left: 0.55rem;
+  border-left: 2px solid #e8e8e8;
+}
+
+.pub-news-link {
+  font-size: 0.81rem;
+  margin-top: 0.15rem;
+}
+
+.pub-news-link a {
+  color: #c93b22;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+}
+
+.pub-news-link a:hover {
+  border-bottom-color: #c93b22;
+}
+
 /* Zotero Hinweis */
 .zotero-hinweis {
   margin: 1rem 0 1.5rem 0;
@@ -1143,7 +1165,52 @@ parent_url: /projekt
         {% unless pub_alle_jahre contains p_jahr %}{% assign pub_alle_jahre = pub_alle_jahre | push: p_jahr %}{% endunless %}
       {% endfor %}
       {% assign pub_sorted_jahre = pub_alle_jahre | sort | reverse %}
-      
+
+      {% comment %}Renderreihenfolge + zugehörige Events vorab ermitteln (für Gruppierung){% endcomment %}
+      {% assign pub_render_ids = "" | split: "" %}
+      {% assign pub_render_events = "" | split: "" %}
+      {% for jahr_sort_pre in pub_sorted_jahre %}
+        {% for pub_pre in site.data.publikationen.items %}
+          {% assign p_jahr_pre = pub_pre.issued.date-parts[0][0] | plus: 0 %}
+          {% if p_jahr_pre == jahr_sort_pre %}
+            {% assign pub_key_pre = pub_pre.id | split: "/" | last %}
+            {% assign pub_ev_id_pre = "" %}
+            {% for event in site.data.events %}
+              {% if event.publikationen contains pub_key_pre %}
+                {% assign pub_ev_id_pre = event.id %}
+                {% break %}
+              {% endif %}
+            {% endfor %}
+            {% assign pub_render_ids = pub_render_ids | push: pub_pre.id %}
+            {% assign pub_render_events = pub_render_events | push: pub_ev_id_pre %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+
+      {% comment %}Event-Info Map für Publikationen (id|count|post){% endcomment %}
+      {% assign pub_event_info_map = "" | split: "" %}
+      {% assign pub_seen_events = "" | split: "" %}
+      {% for eid in pub_render_events %}
+        {% if eid != "" %}
+          {% unless pub_seen_events contains eid %}
+            {% assign pub_seen_events = pub_seen_events | push: eid %}
+            {% assign ev_pcount = 0 %}
+            {% for e2 in pub_render_events %}{% if e2 == eid %}{% assign ev_pcount = ev_pcount | plus: 1 %}{% endif %}{% endfor %}
+            {% assign ev_ppost = "" %}
+            {% for event in site.data.events %}
+              {% if event.id == eid %}
+                {% if event.posts and event.posts.size > 0 %}{% assign ev_ppost = event.posts[0] %}{% endif %}
+                {% break %}
+              {% endif %}
+            {% endfor %}
+            {% assign pinfo = eid | append: "|" | append: ev_pcount | append: "|" | append: ev_ppost %}
+            {% assign pub_event_info_map = pub_event_info_map | push: pinfo %}
+          {% endunless %}
+        {% endif %}
+      {% endfor %}
+
+      {% assign pub_render_idx = 0 %}
+
       {% comment %}Iteriere nach Jahr sortiert (neueste zuerst){% endcomment %}
       {% for jahr_sort in pub_sorted_jahre %}
         {% for pub in site.data.publikationen.items %}
@@ -1181,7 +1248,24 @@ parent_url: /projekt
           {% endunless %}
         {% endfor %}
 
-        <div class="publikation-item"
+        {% comment %}Zugehöriges Event/Newsbeitrag über die vorab ermittelte Renderreihenfolge holen{% endcomment %}
+        {% assign cur_pub_event_id = pub_render_events[pub_render_idx] %}
+        {% assign cur_ev_count = 0 %}
+        {% assign pub_ev_post = "" %}
+        {% if cur_pub_event_id != "" %}
+          {% for pinfo in pub_event_info_map %}
+            {% assign pparts = pinfo | split: "|" %}
+            {% if pparts[0] == cur_pub_event_id %}
+              {% assign cur_ev_count = pparts[1] | plus: 0 %}
+              {% assign pub_ev_post = pparts[2] %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+        {% assign next_pub_idx = pub_render_idx | plus: 1 %}
+        {% assign next_pub_event_id = pub_render_events[next_pub_idx] %}
+
+        <div class="publikation-item{% if cur_ev_count > 1 %} event-pub{% endif %}"
              data-jahr="{{ pub_jahr }}"
              data-type="{{ pub.type | escape }}"
              data-sprache="{{ pub.language | escape }}"
@@ -1219,8 +1303,17 @@ parent_url: /projekt
             {% if doi_url != "" %}
               <div class="pub-doi-line">DOI: <a href="{{ doi_url }}" target="_blank" rel="noopener noreferrer">{{ doi_url }}</a></div>
             {% endif %}
+            {% if cur_ev_count == 1 and pub_ev_post and pub_ev_post.size > 0 %}
+              <div class="pub-news-link"><a href="/{{ pub_ev_post }}/">→ Newsbeitrag</a></div>
+            {% endif %}
           </div>
         </div>
+        {% if cur_ev_count > 1 and next_pub_event_id != cur_pub_event_id and pub_ev_post and pub_ev_post.size > 0 %}
+          <div class="event-group-link">
+            <a href="/{{ pub_ev_post }}/">→ Newsbeitrag</a>
+          </div>
+        {% endif %}
+        {% assign pub_render_idx = pub_render_idx | plus: 1 %}
         {% endif %}
         {% endfor %}
       {% endfor %}
@@ -1812,8 +1905,12 @@ function clearPubSearch() {
 function sortPublikationen() {
   const container = document.querySelector('.publikationen-liste');
   if (!container) return;
-  const items = Array.from(container.querySelectorAll('.publikation-item'));
-  items.sort((a, b) => parseInt(b.dataset.sortkey) - parseInt(a.dataset.sortkey));
+  const items = Array.from(container.querySelectorAll('.publikation-item, .event-group-link'));
+  items.sort((a, b) => {
+    const keyA = parseInt(a.previousElementSibling?.dataset?.sortkey ?? a.dataset.sortkey ?? 0);
+    const keyB = parseInt(b.previousElementSibling?.dataset?.sortkey ?? b.dataset.sortkey ?? 0);
+    return keyB - keyA;
+  });
   items.forEach(item => container.appendChild(item));
 }
 
