@@ -11,8 +11,6 @@ layout: default
     <h1>{{ page.title }}</h1>
     {% if page.lead %}
       <p class="module-content-lead">{{ page.lead }}</p>
-    {% elsif page_kind == "Dokumentation" %}
-      <p class="module-content-lead">Dokumentation und Erläuterungen zur jeweiligen Anwendung.</p>
     {% elsif page_kind == "Bericht" %}
       <p class="module-content-lead">Bericht und Einordnung des jeweiligen Arbeitsschritts im Modul.</p>
     {% endif %}
@@ -75,6 +73,23 @@ layout: default
 
 .module-content-panel p {
   line-height: 1.7;
+}
+
+.module-content-panel img {
+  max-width: 100%;
+  height: auto;
+}
+
+.module-content-panel table {
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.module-content-panel th,
+.module-content-panel td {
+  border: 1px solid #e5e5e5;
+  padding: 0.3rem 0.7rem;
+  text-align: left;
 }
 
 @media (max-width: 768px) {
