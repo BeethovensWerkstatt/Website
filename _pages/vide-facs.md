@@ -16,27 +16,6 @@ author: "Beethovens Werkstatt"
 ></vide-facs>
 
 <script>
-  const get_citation = (apiBase) => {
-    const videAppCitation = document.getElementById('videapp-citation');
-    const data_versions_URL = `${apiBase}/data-versions.json`
-    console.log(8945, 'videAppCitation:', videAppCitation, data_versions_URL);
-    fetch(data_versions_URL).then(r => {
-      console.log(8945, 'data-versions:', r)
-      return r.json()
-    }).then(j => {
-      const repos = j.repositories.repo
-      console.log(8945, repos)
-      for (repo of repos) {
-        console.log(8945, repo)
-        if (repo['@name'] === 'data') {
-          videAppCitation.setAttribute('titleText', repo['@name'])
-          videAppCitation.setAttribute('version', repo.commit)
-          videAppCitation.setAttribute('date', repo.date)
-        }
-      }
-    }).catch(e => { console.error(8945, e, `'${data_versions_URL}'`) })
-  }
-
   (function () {
     const el = document.querySelector('vide-facs')
     if (!el) return
@@ -44,10 +23,6 @@ author: "Beethovens Werkstatt"
     const runtimeConfig = window.__VIDE_RUNTIME_CONFIG__ || {}
     const apiBase = runtimeConfig.apiBase || ''
     const documents = runtimeConfig.documents || ''
-
-    document.addEventListener('DOMContentLoaded', function() {
-      get_citation(apiBase || 'http://localhost:8080/exist/apps/api')
-    })
 
     if (apiBase) {
       el.setAttribute('api-base', apiBase)
