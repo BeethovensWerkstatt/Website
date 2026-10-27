@@ -93,6 +93,36 @@ exclude:
   - vide-component-transcriptions/README.md
   - vide-component-transcriptions/dist/styles.scss
   - vide-component-transcriptions/dist/styles.css
+  - vide-component-facsimile/AGENTS.md
+  - vide-component-facsimile/REFACTORING.md
+  - vide-component-facsimile/tests
+  - vide-component-facsimile/vitest.config.mjs
+  - vide-component-transcriptions/AGENTS.md
+  - vide-component-transcriptions/sampleData
+  - vide-component-transcriptions/tests
+  - vide-component-transcriptions/vitest.config.mjs
+  - vide-component-works/AGENTS.md
+  - vide-component-works/vitest.config.mjs
+  - vide-component-works/.git
+  - vide-component-works/node_modules
+  - vide-component-works/package.json
+  - vide-component-works/package-lock.json
+  - vide-component-works/.gitignore
+  - vide-component-works/LICENSE
+  - vide-component-works/src
+  - vide-component-works/tests
+  - vide-component-works/README.md
+  # Interne Projektdateien, nicht öffentlich ausliefern
+  - AGENTS.md
+  - ARCHITECTURE.md
+  - dev.sh
+  - nginx.conf
+  - Dockerfile.static-nginx
+  - docker-compose.static.yml
+  - docs/
+  - scripts/
+  - output/
+  - temp/
 
 # Default layout for different content types
 defaults:
