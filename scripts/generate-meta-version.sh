@@ -2,7 +2,7 @@
 
 set -eu
 
-OUTPUT_PATH="${1:-_site/meta-version.json}"
+OUTPUT_PATH="${1:-_data/version.json}"
 
 metadata_from_git() {
   git "$@" 2>/dev/null || true

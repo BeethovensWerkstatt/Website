@@ -1,18 +1,5 @@
-<div class="version-info">
-  <script>
-    fetch("{{ '/meta-version.json' | relative_url }}")
-      .then(response => response.json())
-      .then(data => {
-        const versionInfo = document.querySelector('.version-info');
-        versionInfo.setAttribute('title', `Version: ${new Date(data.date).toLocaleString('de-DE')} - ${data.commit.substring(0, 7)} (Branch: ${data.branch})`);
-        versionInfo.innerHTML = `&copy; Beethovens-Werkstatt ${new Date(data.date).toLocaleDateString('de-DE')}`;
-      })
-      .catch(error => {
-        console.error('Error fetching version information:', error);
-        const versionInfo = document.querySelector('.version-info');
-        versionInfo.textContent = 'Error fetching version information.';
-      });
-  </script>
+<div class="version-info" title="{{ site.data.version.date | date: '%d.%m.%Y %H:%M:%S' }} {{ site.data.version.branch }} {{ site.data.version.commit }}">
+  &copy; Beethovens-Werkstatt {{ site.data.version.date | date: '%Y' }}
 </div>
 <style>
   .version-info {
