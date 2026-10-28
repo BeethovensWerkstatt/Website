@@ -349,6 +349,10 @@ parent_url: /projekt
   border-left: 2px solid #e8e8e8;
 }
 
+.event-group-link.hidden {
+  display: none;
+}
+
 .event-group-link {
   margin-left: 0;
   margin-top: -0.1rem;
@@ -1579,6 +1583,25 @@ function switchToTab(tabName) {
 }
 
 // Vorträge Filter Funktionalität
+/**
+ * Blendet die "→ Newsbeitrag"-Zeile unter einer Veranstaltungsgruppe aus,
+ * wenn nach dem Filtern kein Eintrag dieser Gruppe mehr sichtbar ist.
+ * Die Gruppeneinträge stehen direkt vor der Zeile (groupSelector).
+ */
+function updateEventGroupLinks(groupSelector) {
+  document.querySelectorAll('.event-group-link').forEach(link => {
+    let sibling = link.previousElementSibling;
+    let anyVisible = false;
+    while (sibling && sibling.matches(groupSelector)) {
+      if (!sibling.classList.contains('hidden')) anyVisible = true;
+      sibling = sibling.previousElementSibling;
+    }
+    if (link.previousElementSibling && link.previousElementSibling.matches(groupSelector)) {
+      link.classList.toggle('hidden', !anyVisible);
+    }
+  });
+}
+
 function filterVortraege() {
   const jahrFilter = document.getElementById('filter-jahr').value;
   const genreFilter = document.getElementById('filter-genre').value;
@@ -1620,6 +1643,8 @@ function filterVortraege() {
     }
   });
   
+  updateEventGroupLinks('.event-vortrag');
+
   // Update count
   const totalCount = vortraege.length;
   const countEl = document.getElementById('vortraege-count');
@@ -1634,15 +1659,30 @@ function clearSearch() {
   filterVortraege();
 }
 
-function sortVortraege() {
-  const container = document.querySelector('.vortraege-liste');
-  const vortraege = Array.from(document.querySelectorAll('.vortrag-item, .event-group-link'));
-  vortraege.sort((a, b) => {
-    const keyA = parseInt(a.previousElementSibling?.dataset?.sortkey || a.dataset.sortkey || 0);
-    const keyB = parseInt(b.previousElementSibling?.dataset?.sortkey || b.dataset.sortkey || 0);
-    return keyB - keyA;
+/**
+ * Sortiert die Einträge einer Liste absteigend nach data-sortkey.
+ * Eine "→ Newsbeitrag"-Zeile (.event-group-link) übernimmt den Schlüssel
+ * des Eintrags direkt davor und bleibt so hinter ihrer Gruppe.
+ */
+function sortListDescending(container, itemSelector, compare) {
+  if (!container) return;
+  const elements = Array.from(container.querySelectorAll(':scope > ' + itemSelector + ', :scope > .event-group-link'));
+  const keys = new Map();
+  let lastKey = '';
+  elements.forEach(el => {
+    if (!el.classList.contains('event-group-link')) lastKey = el.dataset.sortkey || '';
+    keys.set(el, lastKey);
   });
-  vortraege.forEach(vortrag => container.appendChild(vortrag));
+  // Array.prototype.sort ist stabil: Gruppen und ihre Newsbeitrag-Zeile bleiben zusammen
+  elements.sort((a, b) => compare(keys.get(b), keys.get(a)));
+  elements.forEach(el => container.appendChild(el));
+}
+
+const compareNumeric = (a, b) => (parseInt(a) || 0) - (parseInt(b) || 0);
+const compareText = (a, b) => a.localeCompare(b);
+
+function sortVortraege() {
+  sortListDescending(document.querySelector('.vortraege-liste'), '.vortrag-item', compareNumeric);
 }
 
 function populateFilterOptions() {
@@ -1891,6 +1931,8 @@ function filterPublikationen() {
     if (visible) visibleCount++;
   });
 
+  updateEventGroupLinks('.event-pub');
+
   const countEl = document.getElementById('publikationen-count');
   if (countEl) countEl.textContent = `${visibleCount} von ${items.length} Publikationen`;
 
@@ -1903,15 +1945,7 @@ function clearPubSearch() {
 }
 
 function sortPublikationen() {
-  const container = document.querySelector('.publikationen-liste');
-  if (!container) return;
-  const items = Array.from(container.querySelectorAll('.publikation-item, .event-group-link'));
-  items.sort((a, b) => {
-    const keyA = parseInt(a.previousElementSibling?.dataset?.sortkey ?? a.dataset.sortkey ?? 0);
-    const keyB = parseInt(b.previousElementSibling?.dataset?.sortkey ?? b.dataset.sortkey ?? 0);
-    return keyB - keyA;
-  });
-  items.forEach(item => container.appendChild(item));
+  sortListDescending(document.querySelector('.publikationen-liste'), '.publikation-item', compareNumeric);
 }
 
 function populatePubFilterOptions() {
@@ -2012,6 +2046,8 @@ function filterLehre() {
     if (visible) visibleCount++;
   });
 
+  updateEventGroupLinks('.event-lehre');
+
   const countEl = document.getElementById('lehre-count');
   if (countEl) countEl.textContent = `${visibleCount} von ${items.length} Lehrveranstaltungen`;
 }
@@ -2022,15 +2058,7 @@ function clearLehreSearch() {
 }
 
 function sortLehre() {
-  const container = document.querySelector('.lehre-liste');
-  if (!container) return;
-  const items = Array.from(container.querySelectorAll('.lehre-item, .event-group-link'));
-  items.sort((a, b) => {
-    const keyA = a.previousElementSibling?.dataset?.sortkey || a.dataset.sortkey || '';
-    const keyB = b.previousElementSibling?.dataset?.sortkey || b.dataset.sortkey || '';
-    return keyB.localeCompare(keyA);
-  });
-  items.forEach(item => container.appendChild(item));
+  sortListDescending(document.querySelector('.lehre-liste'), '.lehre-item', compareText);
 }
 
 function populateLehreFilterOptions() {
