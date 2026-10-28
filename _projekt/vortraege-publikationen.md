@@ -899,6 +899,26 @@ parent_url: /projekt
           {% assign jahr = vortrag.issued.date-parts[0][0] | plus: 0 %}
           {% assign monat = vortrag.issued.date-parts[0][1] | default: 1 %}
           {% assign tag = vortrag.issued.date-parts[0][2] | default: 1 %}
+          {% comment %}Veranstaltung steht in Zotero-Exporten entweder in "event" oder in "event-title"{% endcomment %}
+          {% assign vortrag_event = vortrag.event | default: vortrag["event-title"] %}
+          {% comment %}Datum; ein Zeitraum im Feld "note" (JJJJ-MM-TT/JJJJ-MM-TT) wird als 18.–19.11.2024 angezeigt{% endcomment %}
+          {% assign vortrag_datum = tag | append: "." | append: monat | append: "." | append: jahr %}
+          {% if vortrag.note and vortrag.note contains "/" %}
+            {% assign note_range = vortrag.note | split: "/" %}
+            {% assign range_start = note_range[0] | split: "-" %}
+            {% assign range_end = note_range[1] | split: "-" %}
+            {% if range_start.size == 3 and range_end.size == 3 %}
+              {% assign s_tag = range_start[2] | plus: 0 %}{% assign s_monat = range_start[1] | plus: 0 %}{% assign s_jahr = range_start[0] | plus: 0 %}
+              {% assign e_tag = range_end[2] | plus: 0 %}{% assign e_monat = range_end[1] | plus: 0 %}{% assign e_jahr = range_end[0] | plus: 0 %}
+              {% if s_jahr == e_jahr and s_monat == e_monat %}
+                {% assign vortrag_datum = s_tag | append: ".–" | append: e_tag | append: "." | append: e_monat | append: "." | append: e_jahr %}
+              {% elsif s_jahr == e_jahr %}
+                {% assign vortrag_datum = s_tag | append: "." | append: s_monat | append: ".–" | append: e_tag | append: "." | append: e_monat | append: "." | append: e_jahr %}
+              {% else %}
+                {% assign vortrag_datum = s_tag | append: "." | append: s_monat | append: "." | append: s_jahr | append: "–" | append: e_tag | append: "." | append: e_monat | append: "." | append: e_jahr %}
+              {% endif %}
+            {% endif %}
+          {% endif %}
           {% assign autoren_liste = "" %}
           {% for author in vortrag.author %}
             {% assign autoren_liste = autoren_liste | append: author.family | append: ", " | append: author.given | append: "; " %}
@@ -929,7 +949,7 @@ parent_url: /projekt
                    data-sprache="{{ vortrag.language | escape }}"
                    data-autoren="{{ autoren_liste | downcase | escape }}"
                    data-titel="{{ vortrag.title | downcase | escape }}"
-                   data-event="{{ vortrag.event | downcase | escape }}"
+                   data-event="{{ vortrag_event | downcase | escape }}"
                    data-ort="{{ vortrag.place | downcase | escape }}"
                    data-sortkey="{{ sortkey }}"
                    data-event-id="{{ event_id }}">
@@ -950,7 +970,7 @@ parent_url: /projekt
                         {% if author.given %}{{ author.given }} {{ author.family }}{% else %}{{ author.family }}{% endif %}{% unless forloop.last %}; {% endunless %}
                       {% endfor %}
                     </span>
-                    {% assign grouped_event_title = vortrag.event | default: ev_title | default: vortrag["event-title"] %}
+                    {% assign grouped_event_title = vortrag_event | default: ev_title %}
                     {% assign grouped_event_url = vortrag.URL %}
                     {% unless grouped_event_url and grouped_event_url.size > 0 %}{% assign grouped_event_url = ev_url %}{% endunless %}
                     {% assign has_event = false %}
@@ -967,7 +987,7 @@ parent_url: /projekt
                     {% if vortrag.place %}
                       <span class="vortrag-ort{% if has_event %} with-event{% endif %}">{{ vortrag.place }}</span>
                     {% endif %}
-                    <span class="vortrag-datum">{{ tag }}.{{ monat }}.{{ jahr }}</span>
+                    <span class="vortrag-datum">{{ vortrag_datum }}</span>
                   </div>
                 </div>
               </div>
@@ -991,7 +1011,7 @@ parent_url: /projekt
                    data-sprache="{{ vortrag.language | escape }}"
                    data-autoren="{{ autoren_liste | downcase | escape }}"
                    data-titel="{{ vortrag.title | downcase | escape }}"
-                   data-event="{{ vortrag.event | downcase | escape }}"
+                   data-event="{{ vortrag_event | downcase | escape }}"
                    data-ort="{{ vortrag.place | downcase | escape }}"
                    data-sortkey="{{ sortkey }}">
                 
@@ -1012,22 +1032,22 @@ parent_url: /projekt
                       {% endfor %}
                     </span>
                     {% assign has_event = false %}
-                    {% if vortrag.event %}
+                    {% if vortrag_event %}
                       {% assign has_event = true %}
                       {% assign ev_link_url = vortrag.URL %}
                       {% unless ev_link_url and ev_link_url.size > 0 %}{% assign ev_link_url = ev_url %}{% endunless %}
                       <span class="vortrag-event">
                         {% if ev_link_url and ev_link_url.size > 0 %}
-                          <a href="{{ ev_link_url }}"{% if ev_link_url contains "http" %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ vortrag.event }}</a>
+                          <a href="{{ ev_link_url }}"{% if ev_link_url contains "http" %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ vortrag_event }}</a>
                         {% else %}
-                          {{ vortrag.event }}
+                          {{ vortrag_event }}
                         {% endif %}
                       </span>
                     {% endif %}
                     {% if vortrag.place %}
                       <span class="vortrag-ort{% if has_event %} with-event{% endif %}">{{ vortrag.place }}</span>
                     {% endif %}
-                    <span class="vortrag-datum">{{ tag }}.{{ monat }}.{{ jahr }}</span>
+                    <span class="vortrag-datum">{{ vortrag_datum }}</span>
                   </div>
                   {% if ev_post and ev_post.size > 0 %}
                     <div class="vortrag-news-link">
@@ -1045,7 +1065,7 @@ parent_url: /projekt
                  data-sprache="{{ vortrag.language | escape }}"
                  data-autoren="{{ autoren_liste | downcase | escape }}"
                  data-titel="{{ vortrag.title | downcase | escape }}"
-                 data-event="{{ vortrag.event | downcase | escape }}"
+                 data-event="{{ vortrag_event | downcase | escape }}"
                  data-ort="{{ vortrag.place | downcase | escape }}"
                  data-sortkey="{{ sortkey }}">
               
@@ -1066,20 +1086,20 @@ parent_url: /projekt
                     {% endfor %}
                   </span>
                   {% assign has_event = false %}
-                  {% if vortrag.event %}
+                  {% if vortrag_event %}
                     {% assign has_event = true %}
                     <span class="vortrag-event">
                       {% if vortrag.URL %}
-                        <a href="{{ vortrag.URL }}" target="_blank" rel="noopener noreferrer">{{ vortrag.event }}</a>
+                        <a href="{{ vortrag.URL }}" target="_blank" rel="noopener noreferrer">{{ vortrag_event }}</a>
                       {% else %}
-                        {{ vortrag.event }}
+                        {{ vortrag_event }}
                       {% endif %}
                     </span>
                   {% endif %}
                   {% if vortrag.place %}
                     <span class="vortrag-ort{% if has_event %} with-event{% endif %}">{{ vortrag.place }}</span>
                   {% endif %}
-                  <span class="vortrag-datum">{{ tag }}.{{ monat }}.{{ jahr }}</span>
+                  <span class="vortrag-datum">{{ vortrag_datum }}</span>
                 </div>
               </div>
             </div>
