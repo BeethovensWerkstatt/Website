@@ -25,7 +25,7 @@ WORKDIR /srv/jekyll
 ARG META_VERSION_COMMIT_HASH
 ARG META_VERSION_BRANCH
 RUN bundle exec jekyll build \
-    && sh /srv/jekyll/scripts/generate-meta-version.sh /srv/jekyll/_site/meta-version.json
+    && sh /srv/jekyll/scripts/generate-meta-version.sh /srv/jekyll/_data/version.json
 
 
 # serve site with nginx
