@@ -22,10 +22,12 @@ RUN rm -rf node_modules && npm install && npm run build
 WORKDIR /srv/jekyll/vide-component-transcriptions
 RUN rm -rf node_modules && npm install && npm run build
 WORKDIR /srv/jekyll
+ARG META_VERSION_DATE
 ARG META_VERSION_COMMIT_HASH
 ARG META_VERSION_BRANCH
 RUN sh /srv/jekyll/scripts/generate-meta-version.sh /srv/jekyll/_data/version.json
-RUN bundle exec jekyll build
+RUN bundle exec jekyll build \
+    && cp /srv/jekyll/_data/version.json /srv/jekyll/_site/version.json
 
 
 # serve site with nginx

@@ -10,6 +10,7 @@ services:
       context: .
       dockerfile: Dockerfile.static-nginx
       args:
+        META_VERSION_DATE: ${META_VERSION_DATE:-}
         META_VERSION_COMMIT_HASH: ${META_VERSION_COMMIT_HASH:-}
         META_VERSION_BRANCH: ${META_VERSION_BRANCH:-}
     environment:

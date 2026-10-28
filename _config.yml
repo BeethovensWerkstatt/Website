@@ -12,7 +12,7 @@ markdown: kramdown
 highlighter: rouge
 show_excerpts: true
 keep_files:
-  - meta-version.json
+  - version.json
 
 # Language and locale settings
 lang: de

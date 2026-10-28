@@ -8,9 +8,14 @@ metadata_from_git() {
   git "$@" 2>/dev/null || true
 }
 
-DATE="${META_VERSION_DATE:-$(date -u '+%Y-%m-%dT%H:%M:%SZ')}"
+DATE="${META_VERSION_DATE:-$(metadata_from_git show -s --format='%cI' HEAD)}"
 COMMIT_HASH="${META_VERSION_COMMIT_HASH:-${GITHUB_SHA:-$(metadata_from_git rev-parse --verify HEAD)}}"
 BRANCH="${META_VERSION_BRANCH:-${GITHUB_HEAD_REF:-${GITHUB_REF_NAME:-$(metadata_from_git branch --show-current)}}}"
+
+if [ -z "$DATE" ]; then
+  echo "Unable to determine the repository commit date." >&2
+  exit 1
+fi
 
 if [ -z "$COMMIT_HASH" ]; then
   echo "Unable to determine the repository commit hash." >&2
