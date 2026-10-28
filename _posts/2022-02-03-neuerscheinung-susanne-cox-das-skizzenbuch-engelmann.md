@@ -13,4 +13,4 @@ Von großer musikhistorischer Bedeutung ist auch der Weg, den das Skizzenbuch na
 [Susanne Cox, Das Skizzenbuch „Engelmann“. Untersuchungen zu Skizzen Beethovens aus dem Frühjahr 1823], Paderborn: Brill, 2021 (= Studien zur Musik Bd. 21) mit [Online-Anhang].
 
 [Susanne Cox, Das Skizzenbuch „Engelmann“. Untersuchungen zu Skizzen Beethovens aus dem Frühjahr 1823]: https://brill.com/display/title/58467?rskey=WnBcvv&result=1
-[Online-Anhang]: https://www.fink.de/fileasset/downloads_products/SFm/9783846765937_Cox_Appendix_ONLINE.pdf
+[Online-Anhang]: https://www.fink.de/fileasset/downloads_products/SFm/9783846765937_Cox_Appendix_ONLINE.pdf](https://brill.com/fileasset/downloads_products/SFm/9783846765937_Cox_Appendix_ONLINE.pdf
