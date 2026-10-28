@@ -1,0 +1,9 @@
+---
+layout: null
+permalink: /robots.txt
+---
+User-agent: *
+Disallow: /test1/
+Disallow: /fluidDemo/
+
+Sitemap: {{ "/sitemap.xml" | absolute_url }}

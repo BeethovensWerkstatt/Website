@@ -1,0 +1,28 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
+{%- comment -%}
+  Sitemap ohne Plugin. Enthält alle Dokumente aus Collections mit Ausgabe
+  (Seiten, News, Glossar, Publikationen, Projekt). Weiterleitungsseiten und die
+  404-Seite liegen nicht in Collections und erscheinen daher nicht.
+  Einzelne Seiten lassen sich mit "sitemap: false" im Front Matter ausschließen.
+{%- endcomment -%}
+{%- assign excluded_urls = "/test1/" | split: "," -%}
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for collection in site.collections -%}
+  {%- unless collection.output -%}{%- continue -%}{%- endunless -%}
+  {%- for doc in collection.docs -%}
+    {%- if doc.sitemap == false or excluded_urls contains doc.url -%}{%- continue -%}{%- endif %}
+  <url>
+    <loc>{{ doc.url | absolute_url | xml_escape }}</loc>
+    {%- if doc.last_modified_at %}
+    <lastmod>{{ doc.last_modified_at | date_to_xmlschema }}</lastmod>
+    {%- elsif doc.date %}
+    <lastmod>{{ doc.date | date_to_xmlschema }}</lastmod>
+    {%- endif %}
+  </url>
+  {%- endfor -%}
+{%- endfor %}
+</urlset>
