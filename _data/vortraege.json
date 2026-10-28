@@ -4234,7 +4234,8 @@
                 "date-parts": [
                     [
                         2024,
-                        11
+                        11,
+                        18
                     ]
                 ]
             }
@@ -4320,6 +4321,7 @@
             "language": "deutsch",
             "place": "Akademie der Wissenschaften und der Literatur, Mainz",
             "title": "Zehn Jahre Beethovens Werkstatt: Kompositionsprozesse im digitalen Fokus",
+            "URL": "https://www.adwmainz.de/aktivitaeten/veranstaltungen/details/zehn-jahre-beethovens-werkstatt-kompositionsprozesse-im-digitalen-fokus.html",
             "author": [
                 {
                     "family": "Appel",
