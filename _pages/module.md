@@ -167,6 +167,9 @@ permalink: /module/
 .modul-content-card-works-list { margin: 0.1rem 0 0 0; padding-left: 1rem; }
 .modul-content-card-works-list li { margin: 0.1rem 0; font-size: 0.82rem; color: #555; }
 .modul-content-card-works-list a { color: #333; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; text-decoration-color: #8a8a8a; }
+.modul-content-card-works-list li.modul-werk { margin: 0.25rem 0; }
+.modul-werk-title { display: block; font-weight: 600; color: #333; }
+.modul-werk-links { display: block; }
 .modul-content-card-works-list a:hover { color: #c93b22; text-decoration-color: #c93b22; }
 .modul-content-card-doc { font-size: 0.83rem; }
 .modul-content-card-doc a { color: #333; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; text-decoration-color: #b0b0b0; }
@@ -265,7 +268,7 @@ permalink: /module/
 .modul-pub-autoren { font-style: italic; color: #555; }
 .modul-pub-citation em { font-style: italic; }
 .modul-pub-doi a { color: #555; text-decoration: none; border-bottom: 1px solid #ddd; }
-.modul-pub-doi a:hover { color: #c93b22; border-bottom-color: #c93b22; }
+.modul-pub-doi a:hover { color: #c93b22; text-decoration: none; border-bottom-color: #c93b22; }
 
 .modul-website-badge {
   font-size: 0.72rem; color: #c93b22; border: 1px solid #f0c9c2;
