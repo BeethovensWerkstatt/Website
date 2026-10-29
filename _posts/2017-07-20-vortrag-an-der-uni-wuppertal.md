@@ -8,4 +8,6 @@ authors:
 version: 1.0.0
 topic: Lehre
 ---
-Am 21.07.2017 wird Johannes Kepper an der Bergischen Universität Wuppertal einen Vortrag zu „Textgenese im Kleinen wie im Großen: Varianten und Arrangements aus Beethovens Werkstatt“ halten. Die Veranstaltung findet im Rahmen des Programms des Editionswissenschaftlichen Kolloquiums statt, die Themen am Freitag stehen unter dem Titel “Digitale Variantendarstellung“.
+Am 21.07.2017 wird Johannes Kepper an der Bergischen Universität Wuppertal einen Vortrag zu „Textgenese im Kleinen wie im Großen: Varianten und Arrangements aus Beethovens Werkstatt“ halten. Die Veranstaltung findet im Rahmen des Programms des Editionswissenschaftlichen Kolloquiums statt, die Themen am Freitag stehen unter dem Titel “Digitale Variantendarstellung“. Das vollständige Programm finden Sie [hier].
+
+[hier]: https://www.editionen.uni-wuppertal.de/veranstaltungen/workshops.html
