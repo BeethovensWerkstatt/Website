@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Projekttreffen in Detmold
-date: 2015-09-22
+date: 2014-09-22
 categories: news
 authors:
 - Beethovens Werkstatt
