@@ -57,8 +57,9 @@ class CitationNote extends HTMLElement {
   }
 
   render() {
-    const doiUrl = this.doiUrl(this.doi);
-    this.shadowRoot.innerHTML = `
+    this.shadowRoot.innerHTML = ''
+    // will bew added later: this.shadowRoot.innerHTML = innerHTML;
+    const innerHTML =`
 <style>
   .citation-box {
     background: #f9f2f1;
