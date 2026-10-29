@@ -222,7 +222,7 @@
 
 - id: "insidebeethoven"
   title: "Klanginstallation: Inside Beethoven"
-  url: "_publications/inside-beethoven.md"
+  url: "/publications/inside-beethoven/"
   module: 2
   type: "Eigene Veranstaltung"
   occurrences:

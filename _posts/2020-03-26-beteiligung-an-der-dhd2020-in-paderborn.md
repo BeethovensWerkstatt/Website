@@ -13,4 +13,4 @@ Vom 2. bis 6. März 2020 fand in Paderborn die 7. Jahrestagung des Verbands Digi
 Die Veranstalter hatten das Thema der Tagung wörtlich genommen und sich auch um unterschiedliche „Spielräume“ (bis hin zum Conference-Dinner in der VIP-Lounge der Benteler Arena) bemüht. So fand auch die offizielle Eröffnung nicht an der Universität, sondern im weltgrößten Computermuseum, dem Heinz Nixdorf MuseumsForum statt. Dort war zu dieser Zeit auch die Installation „[Inside Beethoven]!“ zu erleben, die dann allerdings wegen der Corona-Krise wenige Tage später für das Publikum geschlossen werden musste.
 
 [Zenodo]: https://zenodo.org/records/3666690
-[Inside Beethoven]: https://beethovens-werkstatt.de/inside-beethoven/
+[Inside Beethoven]: /publications/inside-beethoven/
