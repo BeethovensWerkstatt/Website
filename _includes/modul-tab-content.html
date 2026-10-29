@@ -57,7 +57,7 @@
         {% endif %}
         {% if item.werke and item.werke.size > 0 %}
         <div class="modul-content-card-works">
-          <span class="modul-content-card-works-label">Enthaltene Werke:</span>
+          <span class="modul-content-card-works-label">{{ item.werke_label | default: "Enthaltene Werke" }}:</span>
           <ul class="modul-content-card-works-list">
             {% for werk in item.werke %}
             {% if werk.ansicht or werk.text %}
@@ -67,7 +67,7 @@
             <li class="modul-werk">
               <span class="modul-werk-title">{{ werk.title }}</span>
               <span class="modul-werk-links">
-                {% if werk_text_doc %}<a href="{{ werk.text }}">Text zum Werk</a>{% if werk.url or werk.ansicht %} · {% endif %}{% endif %}
+                {% if werk_text_doc %}<a href="{{ werk.text }}">{{ item.text_label | default: "Text zum Werk" }}</a>{% if werk.url or werk.ansicht %} · {% endif %}{% endif %}
                 {% if werk.ansicht == "dynamisch" %}
                   <a href="{{ werk.url }}" target="_blank" rel="noopener noreferrer">Dynamische Ansicht (VideApp-Rev)</a>
                 {% elsif werk.ansicht == "statisch" %}
@@ -206,11 +206,12 @@
     {% assign pub_href = doc.url %}
     {% if doc.version %}{% assign version_segment = doc.version | append: "/" %}{% assign pub_href = doc.url | remove: version_segment %}{% endif %}
     {% assign ist_werktext = false %}
-    {% for item in m_content.editionen_software %}{% for werk in item.werke %}{% if werk.text == pub_href %}{% assign ist_werktext = true %}{% endif %}{% endfor %}{% endfor %}
+    {% assign werktext_label = "Text zum Werk" %}
+    {% for item in m_content.editionen_software %}{% for werk in item.werke %}{% if werk.text == pub_href %}{% assign ist_werktext = true %}{% assign werktext_label = item.text_label | default: "Text zum Werk" %}{% endif %}{% endfor %}{% endfor %}
     <li class="modul-pub-item">
       <div class="modul-pub-header">
         <span class="modul-pub-titel"><a href="{{ pub_href }}">{{ doc.title }}</a></span>
-        {% if ist_werktext %}<span class="modul-pub-badges"><span class="modul-badge">Text zum Werk</span></span>{% endif %}
+        {% if ist_werktext %}<span class="modul-pub-badges"><span class="modul-badge">{{ werktext_label }}</span></span>{% endif %}
       </div>
       <div class="modul-pub-meta">
         <span class="modul-pub-autoren">{% if doc.author %}{{ doc.author }} · {% endif %}{{ doc.date | date: "%Y" }}</span>

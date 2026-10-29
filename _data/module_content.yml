@@ -104,6 +104,22 @@ modul_2:
       url: "https://videapp-arr.beethovens-werkstatt.de/"
       screenshot: "/assets/images/module/modul-2.jpeg"
       screenshot_alt: "Screenshot der VideApp-Arr aus Modul 2"
+      # Texte zu den Fassungsvergleichen (wie auf der alten Modul-2-Seite); verlinkt, sobald die Publikation existiert
+      werke_label: "Fassungsvergleiche"
+      text_label: "Text zum Fassungsvergleich"
+      werke:
+        - title: "Klaviersonate E-Dur op. 14/1 und Bearbeitung als Streichquartett"
+          text: "/publications/vergleich-14/"
+        - title: "Septett op. 20 und Bearbeitung als Trio op. 38"
+          text: "/publications/vergleich-20-38/"
+        - title: "Septett op. 20 und Fremdbearbeitung als Streichquintett (F. A. Hoffmeister)"
+          text: "/publications/vergleich-20-quintett/"
+        - title: "Opferlied op. 121b und Bearbeitung als Klavierauszug"
+          text: "/publications/vergleich-121b/"
+        - title: "Bundeslied op. 122 und Bearbeitung als Klavierauszug"
+          text: "/publications/vergleich-122/"
+        - title: "Große Fuge op. 133 und Bearbeitung für Klavier à 4 op. 134"
+          text: "/publications/vergleich-133-134/"
       dokumentation: "/dokumentation/videapp-arr/" # @todo die 5 texte in einer doku zusammenfassen, abschnitte als links erhalten (update der links in der software)
       news: 
       - title: "Erste Schritte"
