@@ -193,13 +193,13 @@
 </details>
 {% endif %}
 
-{% comment %}── 2b. Publikationen auf dieser Website (offen) ─
+{% comment %}── 2b. Publikationen auf dieser Website (einklappbar) ─
   Quelle sind die Publikationsdateien selbst (_publications, Modulangabe in "categories"),
   so erscheint jede übertragene Publikation automatisch. Texte zu Werken (werke.text) werden markiert.
 {% endcomment %}
 {% assign site_pubs = site.publications | where_exp: "doc", "doc.categories contains modul_label" | sort: "date" | reverse %}
 {% if site_pubs.size > 0 %}
-<details class="modul-collapsible" open>
+<details class="modul-collapsible">
   <summary class="modul-section-heading">Publikationen auf dieser Website <span class="modul-count">({{ site_pubs.size }})</span></summary>
   <ul class="modul-item-list modul-pub-list">
   {% for doc in site_pubs %}
