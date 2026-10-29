@@ -15,7 +15,7 @@ topic: Vortrag
     <figcaption>Photo: Ernst-Dieter Hehl</figcaption>
 </figure>
 
-Am 5. Juli 2016 um 20:00 Uhr lädt das Projekt Beethovens Werkstatt zu einem Konzertabend im Mainzer Landtag ein. Dabei werden Grundkonzepte und Arbeitsweisen des Forschungsvorhabens vorgestellt:
+Am 5. Juli 2016 um 20:00 Uhr lädt das Projekt *Beethovens Werkstatt* zu einem Konzertabend im Mainzer Landtag ein. Dabei werden Grundkonzepte und Arbeitsweisen des Forschungsvorhabens vorgestellt:
 
 Bernhard R. Appel und Maja Hartwig:
 <em>Was erzählt Beethovens Handschrift zur Klaviersonate op. 111 über ihren Entstehungsprozess?</em>
