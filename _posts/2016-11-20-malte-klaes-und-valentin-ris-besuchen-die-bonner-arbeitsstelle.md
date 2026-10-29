@@ -8,4 +8,4 @@ authors:
 version: 1.0.0
 topic: Projekt
 ---
-Im Oktober und November besuchten zwei Praktikanten der Universitäten Koblenz bzw. Bonn die Bonner Arbeitsstelle des Projekts Beethovens Werkstatt. Beide Praktikanten verbrachten jeweils eine Woche auf den Spuren von Beethovens Schaffensweise und arbeiteten mit den von den Mitarbeiter:innen vorbereiteten Beispielen aus Op. 59/3 und WoO 32. Sie fingen mit Entzifferungsproblemen an und setzten sich dann mit Darstellungs- und Visualisierungsfragen des digitalen Mediums auseinander.
+Im Oktober und November besuchten zwei Praktikanten der Universitäten Koblenz bzw. Bonn die Bonner Arbeitsstelle des Projekts Beethovens Werkstatt. Beide Praktikanten verbrachten jeweils eine Woche auf den Spuren von Beethovens Schaffensweise und arbeiteten mit den von den Mitarbeiter&#42;innen vorbereiteten Beispielen aus Op. 59/3 und WoO 32. Sie fingen mit Entzifferungsproblemen an und setzten sich dann mit Darstellungs- und Visualisierungsfragen des digitalen Mediums auseinander.
