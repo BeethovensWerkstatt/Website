@@ -2865,6 +2865,299 @@
           ]
         ]
       }
+    },
+    {
+      "type": "article-journal",
+      "title": "Faksimile-Verfahren in den Gesamtausgaben des 19. Jahrhunderts",
+      "container-title": "Forum Musikbibliothek",
+      "volume": "30",
+      "issue": "1",
+      "page": "19-32",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2009
+          ]
+        ]
+      },
+      "id": "nachtrag/01"
+    },
+    {
+      "type": "book",
+      "title": "Artaria 195. Beethoven’s Sketchbook for the Missa solemnis and the Piano Sonata in E Major, Opus 109, Transcribed, Edited, and with a Commentary by William Kinderman",
+      "note": "Bd. I: Commentary, Bd. II: Facsimile, Bd. III: Transcription",
+      "publisher-place": "Urbana, Chicago",
+      "language": "englisch",
+      "editor": [
+        {
+          "family": "Kinderman",
+          "given": "William"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2003
+          ]
+        ]
+      },
+      "id": "nachtrag/02"
+    },
+    {
+      "type": "book",
+      "title": "Komponist und Kopist. Notenschreiber im Dienste Robert Schumanns",
+      "publisher-place": "Hildesheim",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Müller",
+          "given": "Anette"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2010
+          ]
+        ]
+      },
+      "id": "nachtrag/03"
+    },
+    {
+      "type": "chapter",
+      "title": "Faksimiles als Fehlerquellen",
+      "container-title": "Obiter Scripta. Essays, Lectures, Articles, Interviews and Reviews on Music, and Other Subjects",
+      "publisher-place": "Lanham, Maryland USA",
+      "page": "292-298",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Rosenthal",
+          "given": "Albi"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2000
+          ]
+        ]
+      },
+      "id": "nachtrag/04"
+    },
+    {
+      "type": "chapter",
+      "title": "A Peculiar Hybrid: The Structure and Chronology of the „Eroica“ Sketchbook (Landsberg 6)",
+      "container-title": "Bonner Beethoven-Studien 5",
+      "publisher-place": "Bonn",
+      "page": "159-181",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Syer",
+          "given": "Katherine R."
+        }
+      ],
+      "editor": [
+        {
+          "family": "Herttrich",
+          "given": "Ernst"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2006
+          ]
+        ]
+      },
+      "id": "nachtrag/05"
+    },
+    {
+      "type": "article-journal",
+      "title": "Review. Ludwig van Beethoven: Ein Skizzenbuch zu den Diabelli-Variationen und zur Missa Solemnis, SV 154. Edited by Joseph Schmidt-Görg. Vol. I: Faksimile. Vol. II: Übertragung. Bonn: Verlag des Beethovenhauses, 1968–72",
+      "container-title": "Journal of the American Musicological Society",
+      "volume": "28",
+      "issue": "1",
+      "page": "135-138",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Winter",
+          "given": "Robert"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1975
+          ]
+        ]
+      },
+      "id": "nachtrag/06"
+    },
+    {
+      "type": "article-journal",
+      "title": "Digital Facsimiles and the Modern Viewer: Medieval Manuscripts and Archival Practice in the Age of New Media",
+      "container-title": "Art Documentation: Journal of the Art Libraries Society of North America",
+      "volume": "33",
+      "issue": "2",
+      "page": "148-167",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Burns",
+          "given": "Jasmine Elizabeth"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2014
+          ]
+        ]
+      },
+      "id": "nachtrag/07"
+    },
+    {
+      "type": "article-journal",
+      "title": "Humanities Approaches to Graphical Display",
+      "container-title": "Digital Humanities Quarterly",
+      "volume": "5",
+      "issue": "1",
+      "URL": "http://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Drucker",
+          "given": "Johanna"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2011
+          ]
+        ]
+      },
+      "id": "nachtrag/08"
+    },
+    {
+      "type": "webpage",
+      "title": "Was ist ein Digitalisat",
+      "container-title": "Hypotheses",
+      "URL": "https://biblio.hypotheses.org/3599",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Knoche",
+          "given": "Michael"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            6,
+            13
+          ]
+        ]
+      },
+      "id": "nachtrag/09"
+    },
+    {
+      "type": "article-journal",
+      "title": "Why Digital Humanists Should Emphasize Situated Data over Capta",
+      "container-title": "Digital Humanities Quarterly",
+      "volume": "15",
+      "issue": "2",
+      "URL": "http://www.digitalhumanities.org/dhq/vol/15/2/000556/000556.html",
+      "language": "englisch",
+      "author": [
+        {
+          "family": "Lavin",
+          "given": "Matthew"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "id": "nachtrag/10"
+    },
+    {
+      "type": "chapter",
+      "title": "Digitalisierung",
+      "container-title": "Digital Humanities. Eine Einführung",
+      "publisher-place": "Stuttgart",
+      "page": "179-198",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Rehbein",
+          "given": "Malte"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Jannidis",
+          "given": "Fotis"
+        },
+        {
+          "family": "Kohle",
+          "given": "Hubertus"
+        },
+        {
+          "family": "Rehbein",
+          "given": "Malte"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2017
+          ]
+        ]
+      },
+      "id": "nachtrag/11"
+    },
+    {
+      "type": "chapter",
+      "title": "Wozu braucht man das Vergangene? Ideen zur Rolle und Aufgabe von Landesbibliotheken bei der Digitalisierung des schriftkulturellen Erbes",
+      "container-title": "Historisches Erbe und zeitgemäße Informationsinfrastrukturen: Bibliotheken am Anfang des 21. Jahrhunderts. Festschrift für Axel Halle",
+      "publisher-place": "Kassel",
+      "page": "41-54",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Stäcker",
+          "given": "Thomas"
+        }
+      ],
+      "editor": [
+        {
+          "family": "Schule",
+          "given": "Matthias"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      },
+      "id": "nachtrag/12"
     }
   ]
 }
