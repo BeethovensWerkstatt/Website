@@ -175,7 +175,9 @@ Im einstimmigen wie auch im vielstimmig verlaufenden Notensatz bedeutet jedes ei
 
 Im Forschungsprojekt *Beethovens Werkstatt* (2. Modul: Beethoven als Bearbeiter eigener Werke) wird die Ereignisdichte als eigenständige Strukturperspektive durch eine rhythmisch gegliederte Abfolge von vertikalen Strichlein dargestellt.
 
-<!-- TODO: Abbildung fehlt, im Webarchiv nicht vorhanden: Ereignisdichte_Beispiel-op.-14-3.-Satz-1024x519.jpg (aus wp-content/uploads ergänzen). Bildunterschrift: Beispiel zur Darstellung der Ereignisdichte, Op. 14/1, 3. Satz, T. 1–4. -->
+![Abb. 5](/assets/images/dokumentation/videapp-arr/Ereignisdichte_Beispiel-op.-14-3.-Satz.jpg)
+
+*Abb. 5: Beispiel zur Darstellung der Ereignisdichte, Op. 14/1, 3. Satz, T. 1–4*
 
 Die so erfasste Ereignisdichte dient als analytisches Hilfsmittel, das beispielsweise im Kontext von Fassungsvergleichen auf sehr direkte Art erkennbar werden lässt, an welchen Stellen die rhythmisch-motorische Grundstruktur eines Abschnittes verändert wird oder unverändert beibehalten wird. Sie kann beispielsweise eine strukturelle Verdichtung auf der rhythmischen Ebene anzeigen, wie sie etwa in Durchführungen, formalen Übergängen oder Schlussgruppen anzutreffen ist. Als bloßer, allerdings objektiver Messwert trifft die angezeigte Ereignisdichte keine qualitativen Urteile über musikalische Strukturen. So erscheint etwa ein Begleitungsmodus in Form schematisch wiederholter Spielfiguren zwar als ereignisdichter Verlauf, der aber unter strukturanalytischer Sicht als trivial bewertet werden mag. Bei einem Fassungsvergleich kann die Ereignisdichte kongruent oder partiell voneinander abweichend sein.
 
