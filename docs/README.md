@@ -19,6 +19,7 @@ This folder contains all technical documentation for the Beethovens Werkstatt Je
 - **[SPA_ISLANDS.md](./SPA_ISLANDS.md)** - SPA islands implementation and usage guide
 
 ### 📄 **Content Management**
+- **[REDAKTION.md](./REDAKTION.md)** - Redaktionsleitfaden: Formatierung, Links, veraltete Angaben, Belege, Abbildungen, News, Glossarversionen
 - **[PDF_GENERATION.md](./PDF_GENERATION.md)** - PDF export system for glossary articles (Zenodo archiving)
 
 ## 🚀 Quick Start
