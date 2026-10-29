@@ -119,6 +119,7 @@ exclude:
   - ARCHITECTURE.md
   - dev.sh
   - nginx.conf
+  - nginx-redirects.conf
   - Dockerfile.static-nginx
   - docker-compose.static.yml
   - docs/
