@@ -12,7 +12,7 @@ Vom 20.–23.08.2018 haben sich die Projekt-Mitarbeiter:innen zum zweiten jährl
 
 <figure>
     <img src="/assets/images/posts/2018/2018-07-14-arbeitstreffen.jpg" alt="Arbeitstreffen" />
-    <figcaption>Arbeitstreffen in Engers</figcaption>
+    <figcaption>Arbeitstreffen im Elsass</figcaption>
 </figure>
 
 [Digitale Musikanalyse mit den XML-Techniken der Music Encoding Initiative (MEI)]: https://www.oeaw.ac.at/de/acdh/forschung/musikwissenschaft/forschung/projektarchiv/digitale-musikanalyse-mit-mei
