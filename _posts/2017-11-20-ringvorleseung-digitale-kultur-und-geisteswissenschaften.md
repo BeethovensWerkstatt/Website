@@ -8,4 +8,4 @@ authors:
 version: 1.0.0
 topic: Vortrag
 ---
-Am 05.12.2017 werden Andreas Münzmay und Johannes Kepper im Rahmen der Paderborner Ringvorlesung einen Vortrag mit dem Thema „Musik modellieren – aber was heißt hier "Musik"? Digitale Forschungspraxis zwischen Notentext, Klangdokument und Theorie“ halten. Weitere Informationen zu der Vorlesung an der Universität Paderborn sind hier zu finden.
+Am 05.12.2017 werden Andreas Münzmay und Johannes Kepper im Rahmen der Paderborner Ringvorlesung einen Vortrag mit dem Thema „Musik modellieren – aber was heißt hier "Musik"? Digitale Forschungspraxis zwischen Notentext, Klangdokument und Theorie“ halten.
