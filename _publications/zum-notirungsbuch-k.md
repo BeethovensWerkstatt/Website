@@ -107,7 +107,6 @@ Der dritte, ursprünglich zum Notirungsbuch K gehörende Teil besteht aus 4 Blä
 - JTW: Johnson, Douglas, Alan Tyson, Robert Winter: The Beethoven Sketchbooks. History, Reconstruction, Inventory, hg. von Douglas Johnson, Oxford 1985.
 - Winter, Robert: The Sketches for the „Ode to Joy“, in: Beethoven, Performers, and Critics: The International Beethoven Congress Detroit, 1977, hg. von Robert Winter, Bruce Carr, Detroit 1980, S. 176–214.
 
----
 ### Anmerkungen
 
 [^1]: Vgl. JTW, S. 20.

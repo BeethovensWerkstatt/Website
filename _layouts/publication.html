@@ -127,10 +127,24 @@ layout: default
   font-size: 1.8rem;
   margin-top: 2.5rem;
   margin-bottom: 1rem;
-  color: #c93b22;
+  color: #333;
   font-weight: 400;
-  border-bottom: 2px solid #c93b22;
+  border-bottom: 1px solid #ddd;
   padding-bottom: 0.5rem;
+}
+
+/* Links in Überschriften wie auf der alten Website unauffällig, erst beim Überfahren rot */
+.publication-content h2 a,
+.publication-content h3 a,
+.publication-content h4 a {
+  color: inherit;
+  border-bottom: none;
+}
+
+.publication-content h2 a:hover,
+.publication-content h3 a:hover,
+.publication-content h4 a:hover {
+  color: #c93b22;
 }
 
 .publication-content h3 {

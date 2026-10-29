@@ -250,7 +250,7 @@ Im 3. Modul befasst sich das Forschungsprojekt *Beethovens Werkstatt* mit den [R
       <td><strong>Brief (BGA 739, 15. September 1814, GB-Lbl, Add.Ms. 35264 fol. 161r–v) von unbekannter Hand, Unterschrift von Beethoven</strong></td>
       <td><strong>unbekannt, Beethoven</strong></td>
       <td><strong>George Thomson, Edinburgh</strong></td>
-      <td><a href="/module/#modul-3">Modul 3</a></td>
+      <td><a href="/publications/woo152/">Text zum Werk</a></td>
     </tr>
     <tr class="hervorgehoben">
       <td><strong>26</strong></td>
@@ -259,7 +259,7 @@ Im 3. Modul befasst sich das Forschungsprojekt *Beethovens Werkstatt* mit den [R
       <td><strong>Revisionsliste eines Kopisten (<a href="https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1024704726&amp;PHYSID=PHYS_0351&amp;DMDID=DMDLOG_0001">D-B, Mus. ms. autogr. Beethoven, L. v. 29 V, fol. 173r–175v</a>), dem Brief BGA 739 beiliegend</strong></td>
       <td><strong>Kopist (Wenzel Schlemmer?)</strong></td>
       <td><strong>George Thomson, Edinburgh</strong></td>
-      <td><a href="/module/#modul-3">Modul 3</a></td>
+      <td><a href="/publications/woo152/">Text zum Werk</a></td>
     </tr>
     <tr>
       <td>27</td>
@@ -367,7 +367,7 @@ Im 3. Modul befasst sich das Forschungsprojekt *Beethovens Werkstatt* mit den [R
       <td><strong>Revisionsliste als Teil eines Briefs (BGA 1295, 19. März 1819, D-TRs; <a href="https://www.beethoven.de/de/media/view/6587375312437248/scan/0">D-BNba, Slg. H. C. Bodmer, HCB Br 198</a>; GB-Cfm, Mu. Ms. 1014)</strong></td>
       <td><strong>Beethoven</strong></td>
       <td><strong>F. Ries, London</strong></td>
-      <td><a href="/module/#modul-3">Modul 3</a></td>
+      <td><a href="/publications/op106/">Text zum Werk</a></td>
     </tr>
     <tr class="hervorgehoben">
       <td><strong>39</strong></td>
@@ -376,7 +376,7 @@ Im 3. Modul befasst sich das Forschungsprojekt *Beethovens Werkstatt* mit den [R
       <td><strong>Brief (BGA 1309, 16. Juni 1819, US-AUS) mit 2 Änderungswünschen</strong></td>
       <td><strong>Beethoven</strong></td>
       <td><strong>F. Ries, London</strong></td>
-      <td><a href="/module/#modul-3">Modul 3</a></td>
+      <td><a href="/publications/op106/">Text zum Werk</a></td>
     </tr>
     <tr class="hervorgehoben">
       <td><strong>40</strong></td>
@@ -385,7 +385,7 @@ Im 3. Modul befasst sich das Forschungsprojekt *Beethovens Werkstatt* mit den [R
       <td><strong>Änderung zum Beginn des 3. Satzes (GB-Cfm, Mu. Ms. 288)</strong></td>
       <td><strong>Beethoven</strong></td>
       <td><strong>?</strong></td>
-      <td><a href="/module/#modul-3">Modul 3</a></td>
+      <td><a href="/publications/op106/">Text zum Werk</a></td>
     </tr>
     <tr>
       <td>41</td>
@@ -403,7 +403,7 @@ Im 3. Modul befasst sich das Forschungsprojekt *Beethovens Werkstatt* mit den [R
       <td><strong>Fehlerverzeichnis erwähnt in Brief (BGA 1434, 6. Juli 1821, <a href="https://www.beethoven.de/de/media/view/5484882004279296/scan/0">D-BNba, Slg. H. C. Bodmer, HCB Br 211</a>), verschollen</strong></td>
       <td><strong>Beethoven</strong></td>
       <td><strong>Schlesinger, Berlin</strong></td>
-      <td><a href="/module/#modul-3">Modul 3</a></td>
+      <td><a href="/publications/op109/">Text zum Werk</a></td>
     </tr>
     <tr class="hervorgehoben">
       <td><strong>43</strong></td>
@@ -412,7 +412,7 @@ Im 3. Modul befasst sich das Forschungsprojekt *Beethovens Werkstatt* mit den [R
       <td><strong>Korrekturfahnen erwähnt in Brief (BGA 1434, 6. Juli 1821, <a href="https://www.beethoven.de/de/media/view/5484882004279296/scan/0">D-BNba, Slg. H. C. Bodmer, HCB Br 211</a>), verschollen</strong></td>
       <td><strong>Beethoven</strong></td>
       <td><strong>Schlesinger, Berlin</strong></td>
-      <td><a href="/module/#modul-3">Modul 3</a></td>
+      <td><a href="/publications/op109/">Text zum Werk</a></td>
     </tr>
     <tr class="hervorgehoben">
       <td><strong>44</strong></td>
@@ -421,7 +421,7 @@ Im 3. Modul befasst sich das Forschungsprojekt *Beethovens Werkstatt* mit den [R
       <td><strong>Überprüfte Abschrift erwähnt in Brief (BGA 1434, 6. Juli 1821, <a href="https://www.beethoven.de/de/media/view/5484882004279296/scan/0">D-BNba, Slg. H. C. Bodmer, HCB Br 211</a>), verschollen</strong></td>
       <td><strong>Beethoven</strong></td>
       <td><strong>Schlesinger, Berlin</strong></td>
-      <td><a href="/module/#modul-3">Modul 3</a></td>
+      <td><a href="/publications/op109/">Text zum Werk</a></td>
     </tr>
     <tr class="hervorgehoben">
       <td><strong>45</strong></td>
@@ -430,7 +430,7 @@ Im 3. Modul befasst sich das Forschungsprojekt *Beethovens Werkstatt* mit den [R
       <td><strong>Korrekturexemplar (<a href="https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745634745&amp;PHYSID=PHYS_0007&amp;DMDID=DMDLOG_0001&amp;view=overview-toc">D-B, Mus. ms. autogr. Beethoven 39, 1</a>) mit Änderungen Beethovens</strong></td>
       <td><strong>Beethoven</strong></td>
       <td><strong>Wiener Musikalienhändler ?</strong></td>
-      <td><a href="/module/#modul-3">Modul 3</a></td>
+      <td><a href="/publications/op109/">Text zum Werk</a></td>
     </tr>
     <tr class="hervorgehoben">
       <td><strong>46</strong></td>
@@ -439,7 +439,7 @@ Im 3. Modul befasst sich das Forschungsprojekt *Beethovens Werkstatt* mit den [R
       <td><strong>Revisionsliste als Teil eines Briefs (BGA 1446, 13. November 1821, GB-Lbl, Add.ms. 41628 fol. 30r–33v)</strong></td>
       <td><strong>Beethoven</strong></td>
       <td><strong>Schlesinger, Berlin</strong></td>
-      <td><a href="/module/#modul-3">Modul 3</a></td>
+      <td><a href="/publications/op109/">Text zum Werk</a></td>
     </tr>
     <tr class="hervorgehoben">
       <td><strong>47</strong></td>
@@ -448,7 +448,7 @@ Im 3. Modul befasst sich das Forschungsprojekt *Beethovens Werkstatt* mit den [R
       <td><strong>Revisionsliste (BGA 1447, <a href="https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1041207174&amp;PHYSID=PHYS_0002&amp;DMDID=DMDLOG_0001">D-B, Mus. ep. Beethoven 35,77</a>)</strong></td>
       <td><strong>Beethoven</strong></td>
       <td><strong>selbstadressiert?</strong></td>
-      <td><a href="/module/#modul-3">Modul 3</a></td>
+      <td><a href="/publications/op109/">Text zum Werk</a></td>
     </tr>
     <tr>
       <td>48</td>
@@ -619,7 +619,7 @@ Im 3. Modul befasst sich das Forschungsprojekt *Beethovens Werkstatt* mit den [R
       <td><strong>Revisionsliste als Teil eines Briefs (BGA 2253, 27. Januar 1827, <a href="https://www.dilibri.de/dilibri_kalliope/content/pageview/2172996">D-MZs, Hs III 71, Nr. 27</a>) geschrieben von Holz und Schindler, Unterschrift von Beethoven</strong></td>
       <td><strong>K. Holz, A. Schindler, Beethoven</strong></td>
       <td><strong>B. Schott’s Söhne, Mainz</strong></td>
-      <td><a href="/module/#modul-3">Modul 3</a></td>
+      <td><a href="/publications/op127/">Text zum Werk</a></td>
     </tr>
   </tbody>
 </table>
