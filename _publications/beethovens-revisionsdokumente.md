@@ -340,7 +340,7 @@ Im 3. Modul befasst sich das Forschungsprojekt *Beethovens Werkstatt* mit den [R
       <td><strong>Revisionsliste (<a href="https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN102680745X&amp;PHYSID=PHYS_0005">D-B, Mus. ms. autogr. Beethoven, L. v., Grasnick 11</a>, fol. 35v, 36r)</strong></td>
       <td><strong>Beethoven</strong></td>
       <td><strong>selbstadressiert</strong></td>
-      <td><a href="/module/#modul-3">Modul 3</a></td>
+      <td><a href="/module/?dossier=op104#modul-3">Modul 3</a></td>
     </tr>
     <tr class="hervorgehoben">
       <td><strong>36</strong></td>
@@ -349,7 +349,7 @@ Im 3. Modul befasst sich das Forschungsprojekt *Beethovens Werkstatt* mit den [R
       <td><strong>Korrekturexemplar oder Revisionsliste, verschollen</strong></td>
       <td><strong>Beethoven</strong></td>
       <td><strong>Artaria, Wien</strong></td>
-      <td><a href="/module/#modul-3">Modul 3</a></td>
+      <td><a href="/module/?dossier=op104#modul-3">Modul 3</a></td>
     </tr>
     <tr class="hervorgehoben">
       <td><strong>37</strong></td>
@@ -358,7 +358,7 @@ Im 3. Modul befasst sich das Forschungsprojekt *Beethovens Werkstatt* mit den [R
       <td><strong>Revisionsliste als Teil eines Briefs (BGA 1294, 8. März 1819, <a href="https://www.beethoven.de/de/media/view/5510913532624896/scan/0">D-BNba, Sammlung Wegeler, W 13</a>)</strong></td>
       <td><strong>Beethoven</strong></td>
       <td><strong>F. Ries, London</strong></td>
-      <td><a href="/module/#modul-3">Modul 3</a></td>
+      <td><a href="/module/?dossier=op104#modul-3">Modul 3</a></td>
     </tr>
     <tr class="hervorgehoben">
       <td><strong>38</strong></td>
