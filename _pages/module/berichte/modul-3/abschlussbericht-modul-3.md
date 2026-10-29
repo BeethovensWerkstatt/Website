@@ -1,6 +1,6 @@
 ---
 layout: module-content
-title: "Abschlussbericht Modul 3: Auf der Suche nach dem Werktext: Originalausgaben, variante Drucke und Beethovens Revisionsdokumente"
+title: "Abschlussbericht Modul 3: Auf der Suche nach dem Werktext"
 permalink: /modul-3/abschlussbericht-modul-3/
 module: 3
 kind: "Bericht"

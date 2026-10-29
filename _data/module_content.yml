@@ -95,7 +95,7 @@ modul_1:
       url: "/modul-1/richtlinien-cleartext-transkription/"
       typ: "Richtlinien"
       date: "2022-02-07"
-      author: "Susanne Cox"
+      author: "Federica Rovelli"
 
 modul_2:
   editionen_software:
@@ -179,6 +179,19 @@ modul_3:
     - title: "Abschlussbericht Modul 3"
       url: "/modul-3/abschlussbericht-modul-3/"
       typ: "Bericht"
+
+    # Transkriptionsrichtlinien von Modul 3 sind Glossarartikel (gruppiert wie auf der alten Modul-3-Seite)
+    - title: "Transkriptionsrichtlinien"
+      typ: "Richtlinien"
+      links:
+        - title: "Annotierte Transkription"
+          url: "/glossar/annotierte-transkription/"
+          date: "2022-02-03"
+          author: "Bernhard Appel, Susanne Cox"
+        - title: "Cleartext-Transkription"
+          url: "/glossar/cleartext-transkription/"
+          date: "2022-02-02"
+          author: "Bernhard Appel"
 
 modul_4:
   editionen_software:

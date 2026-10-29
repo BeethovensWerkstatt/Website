@@ -247,6 +247,9 @@ permalink: /module/
 .modul-item-title a:hover { color: #c93b22; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; text-decoration-color: #c93b22; }
 .modul-eigene-veranst-title a { font-weight: 600; }
 .modul-item-meta { font-size: 0.81rem; color: #777; line-height: 1.4; }
+.modul-item-sublist { list-style: disc; margin: 0.3rem 0 0 1.2rem; padding: 0; font-size: 0.9rem; line-height: 1.5; }
+.modul-item-sublist a { color: #333; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+.modul-item-sublist a:hover { color: #c93b22; }
 .modul-item-meta a { color: #c93b22; text-decoration: none; }
 .modul-item-meta a:hover { text-decoration: underline; }
 

@@ -183,10 +183,22 @@
   <li class="modul-item">
     <div class="modul-item-header">
       <span class="modul-item-title">
+        {% if bericht.url %}
         <a href="{{ bericht.url }}"{%if bericht.url contains "http" %} target="_blank" rel="noopener noreferrer"{%endif%}>{{ bericht.title }}</a>
+        {% else %}
+        {{ bericht.title }}
+        {% endif %}
       </span>
     </div>
     {% if bericht.beschreibung %}<span class="modul-item-meta">{{ bericht.beschreibung }}</span>{% endif %}
+    {% comment %}Optionale Unterpunkte, z. B. mehrere Richtlinien unter einer Überschrift{% endcomment %}
+    {% if bericht.links and bericht.links.size > 0 %}
+    <ul class="modul-item-sublist">
+      {% for unterpunkt in bericht.links %}
+      <li><a href="{{ unterpunkt.url }}"{%if unterpunkt.url contains "http" %} target="_blank" rel="noopener noreferrer"{%endif%}>{{ unterpunkt.title }}</a></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
   </li>
   {% endfor %}
   </ul>
