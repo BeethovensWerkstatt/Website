@@ -15,6 +15,6 @@ Der Großteil des Treffens diente der weiteren Arbeit am zweiten Modul, das sich
 Die digitale Umsetzung der neuen Beispiele innerhalb des zweiten Moduls wird neue Herausforderungen mit sich bringen, da die Codierung es ermöglichen soll, Beziehungen zwischen verschiedenen Quellen präzise zu erfassen und zu visualisieren. In diesem Zusammenhang sollen außerdem Werkzeuge zur musikalischen Analyse und Suchfunktionen entwickelt und als Erweiterung in die *VideApp* integriert werden. Audio-Versionen der Fassungen sollen die Bearbeitungsprozesse auch hörbar machen.
 
 [hier]: /modul-1/softwareentwicklung-2017/
-[Expertenkolloquium 2015]: /publications/expertenkolloqium/
+[Expertenkolloquium 2015]: /publications/expertenkolloquium/
 [Beschreibung der entwickelten Überlegungen]: /modul-2/inhaltliche-fragestellung-des-zweiten-moduls/
 

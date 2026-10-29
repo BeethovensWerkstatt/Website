@@ -14,5 +14,5 @@ Zum 1. August trat Prof. Dr. Andreas Münzmay am Musikwissenschaftlichen Seminar
 
 Weitere Informationen sind [hier] zu finden.
 
-[Andreas Münzmay]: https://beethovens-werkstatt.de/team/
+[Andreas Münzmay]: /team/
 [hier]: https://www.adwmainz.de/akademie/nachrichten/artikel/prof-dr-andreas-muenzmay-tritt-neue-akademie-professur-in-der-musikwissenschaft-an.html

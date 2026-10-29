@@ -29,7 +29,7 @@ Quellen, die ursprünglich das Skizzenbuch bildeten:
     </tr>
     <tr>
       <td>D-BNba, BSk 21/69</td>
-      <td><a href="D-BNba, Sammlung H. C. Bodmer, HCB BSk 21/69">D-BNba, Sammlung H. C. Bodmer, HCB BSk 21/69</a></td>
+      <td><a href="https://www.beethoven.de/de/media/view/5603937289764864/scan/0">D-BNba, Sammlung H. C. Bodmer, HCB BSk 21/69</a></td>
     </tr>
     <tr>
       <td>D-B, Grasnick 20b</td>

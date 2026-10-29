@@ -128,7 +128,7 @@ modul_2:
       author: "Beethovens Werkstatt"
 
     - title: "Transkriptions- und Codierungsrichtlinien"
-      url: "/modul-2/codierungsrichtlininen-modul2/"
+      url: "/modul-2/codierungsrichtlinien-modul2/"
       typ: "Richtlinien"
       date: "2020-06-09"
       author: "Ran Mo"
@@ -172,7 +172,8 @@ modul_3:
 
     - title: "Druckplattenvergleich"
       beschreibung: "Optischer Druckplattenvergleich."
-      url: "/modul-3/druckplattenvergleich/" # @todo übertragen von https://beethovens-werkstatt.de/druckplattenvergleich-op-73/
+      hinweis: "Der Druckplattenvergleich zu op. 73 wird derzeit übertragen und hier in Kürze verlinkt."
+      # @todo nach Übertragung von https://beethovens-werkstatt.de/druckplattenvergleich-op-73/ url eintragen und hinweis entfernen
 
   berichte:
     - title: "Abschlussbericht Modul 3"

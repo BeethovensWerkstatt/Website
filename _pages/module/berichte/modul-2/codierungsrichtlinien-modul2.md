@@ -1,7 +1,7 @@
 ---
 layout: module-content
 title: "Transkriptions- und Codierungsrichtlinien"
-permalink: /modul-2/codierungsrichtlininen-modul2/
+permalink: /modul-2/codierungsrichtlinien-modul2/
 module: 2
 kind: "Bericht"
 ---
