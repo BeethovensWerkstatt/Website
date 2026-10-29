@@ -9,6 +9,21 @@ layout: default
   <header class="module-content-header">
     <p class="module-content-eyebrow">{{ page_kind }}</p>
     <h1>{{ page.title }}</h1>
+    {% comment %}
+      Autor*innen und Datum; ohne Autor wurde der Text vom Projektteam erstellt.
+      Jekyll setzt bei Seiten ohne Datum die Bauzeit ein; die wird nicht angezeigt.
+    {% endcomment %}
+    {% assign page_date = "" %}
+    {% if page.date %}
+      {% assign page_ts = page.date | date: "%s" %}
+      {% assign build_ts = site.time | date: "%s" %}
+      {% if page_ts != build_ts %}{% assign page_date = page.date | date: "%d.%m.%Y" %}{% endif %}
+    {% endif %}
+    {% if page.author or page.version or page_date != "" %}
+      <p class="module-content-meta">
+        {% if page.author %}von {{ page.author }}{% if page.version or page_date != "" %} | {% endif %}{% endif %}{% if page.version %}Version {{ page.version }}{% if page_date != "" %} | {% endif %}{% endif %}{{ page_date }}
+      </p>
+    {% endif %}
     {% if page.lead %}
       <p class="module-content-lead">{{ page.lead }}</p>
     {% endif %}
@@ -44,6 +59,12 @@ layout: default
   margin: 0;
   font-size: 2rem;
   line-height: 1.2;
+}
+
+.module-content-meta {
+  margin: 0.65rem 0 0 0;
+  color: #666;
+  font-size: 1rem;
 }
 
 .module-content-lead {

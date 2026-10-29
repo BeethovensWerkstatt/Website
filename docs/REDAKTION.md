@@ -105,6 +105,20 @@ topic: Projekt
 
 Mögliche Themen (`topic`): Vortrag, Lehre, Arbeitstreffen, Aktivitäten, Projekt, Release.
 
+## Berichte und Dokumentationen: Autor*innen und Datum
+
+Berichte und Dokumentationsseiten (Ordner `_pages/module/`) zeigen unter dem Titel eine Zeile mit Autor*innen und Datum, wenn sie im Kopf der Datei eingetragen sind:
+
+```yaml
+author: Elisa Novara, Federica Rovelli
+date: 2017-07-03
+```
+
+- Ist kein Autor eingetragen, wird nur das Datum angezeigt; der Text gilt dann als vom ganzen Projektteam erstellt.
+- Kürzel oder Namen am Textende (z. B. „FR“) gehören stattdessen in `author` (ausgeschrieben).
+- Als Datum gilt die Veröffentlichung auf der Website.
+- Optional `version: 1.0.0`, wenn der Text eine Versionsangabe trägt.
+
 ## Glossar: neue Version eines Artikels
 
 Die aktuelle Fassung steht in `_glossary/<name>.md`, ältere Fassungen in `_glossary/versions/<name>/<version>.md`. Für eine neue Version:
