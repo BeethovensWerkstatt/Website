@@ -206,6 +206,13 @@ layout: default
   background-color: #d5d8dc;
 }
 
+/* Beschriftung von Notenbeispielen (wird nicht als Abbildung gezählt) */
+.publication-content p.notenbeispiel {
+  font-size: 0.85rem;
+  color: #495057;
+  margin-top: -0.5rem;
+}
+
 /* Breite Tabellen auf schmalen Bildschirmen seitlich scrollbar */
 .publication-content .table-wrapper {
   overflow-x: auto;
@@ -367,7 +374,8 @@ layout: default
 }
 
 .publication-content a:hover {
-  text-decoration: underline;
+  /* nur die Linie unten, keine zusätzliche Unterstreichung (sonst doppelt) */
+  text-decoration: none;
   color: #a12e1a;
   border-bottom-color: #c93b22;
 }

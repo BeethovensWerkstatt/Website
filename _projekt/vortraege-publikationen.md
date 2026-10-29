@@ -624,6 +624,7 @@ parent_url: /projekt
 }
 .pub-website-badge:hover {
   color: #a12e1a;
+  text-decoration: none;
   border-bottom-color: #c93b22;
 }
 
