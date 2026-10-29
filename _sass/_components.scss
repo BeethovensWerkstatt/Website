@@ -543,6 +543,8 @@
 .breadcrumb-item {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -566,6 +568,12 @@
 .breadcrumb-item.active {
   color: #6c757d;
   font-weight: 500;
+  /* Lange Titel einzeilig mit „…“ kürzen, statt die Links umbrechen zu lassen */
+  display: block;
+  flex-shrink: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media (max-width: 768px) {
