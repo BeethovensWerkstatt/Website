@@ -201,6 +201,20 @@ layout: default
   background-color: #f8f9fa;
 }
 
+/* Hervorgehobene Tabellenzeilen (z. B. in Modul 3 untersuchte Dokumente) */
+.publication-content table tbody tr.hervorgehoben {
+  background-color: #d5d8dc;
+}
+
+/* Breite Tabellen auf schmalen Bildschirmen seitlich scrollbar */
+.publication-content .table-wrapper {
+  overflow-x: auto;
+}
+
+.publication-content .table-wrapper table {
+  min-width: 48rem;
+}
+
 /* Highlighted/Important Content */
 .publication-content .highlight,
 .publication-content mark {

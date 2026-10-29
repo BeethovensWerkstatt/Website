@@ -180,10 +180,6 @@ modul_3:
       url: "/modul-3/abschlussbericht-modul-3/"
       typ: "Bericht"
 
-    - title: "Übersicht über Beethovens Revisionsdokumente"
-      url: "/modul-3/uebersicht-revisionsdokumente/"
-      typ: "Bericht"
-
 modul_4:
   editionen_software:
     - title: "VideApp-Sk"

@@ -1,6 +1,31 @@
 {
   "items": [
     {
+      "id": "local/beethovens-revisionsdokumente",
+      "type": "article",
+      "language": "deutsch",
+      "title": "Beethovens Revisionsdokumente",
+      "URL": "/publications/beethovens-revisionsdokumente/",
+      "module": 3,
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            "2022-03-31"
+          ]
+        ]
+      }
+    },
+    {
       "id": "local/zum-notirungsbuch-k",
       "type": "article",
       "language": "deutsch",

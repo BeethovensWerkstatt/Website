@@ -281,9 +281,13 @@
 {% comment %}── 4. Wissenschaftliche Publikationen (einklappbar) ─{% endcomment %}
 {% comment %}Zähle gefilterte Publikationen{% endcomment %}
 {% assign pub_count = 0 %}
+{% comment %}Zuordnung über das Jahr; Website-Publikationen können mit "module" einem Modul fest zugeordnet werden{% endcomment %}
 {% for pub in site.data.publikationen.items %}
   {% assign py = pub.issued.date-parts[0][0] | plus: 0 %}
-  {% if py >= m_start and py <= m_end %}{% assign pub_count = pub_count | plus: 1 %}{% endif %}
+  {% if pub.module %}
+    {% assign pm = pub.module | append: "" %}
+    {% if pm == m_num %}{% assign pub_count = pub_count | plus: 1 %}{% endif %}
+  {% elsif py >= m_start and py <= m_end %}{% assign pub_count = pub_count | plus: 1 %}{% endif %}
 {% endfor %}
 
 {% if pub_count > 0 %}
@@ -294,7 +298,12 @@
   {% assign modul_publikationen = "" | split: "" %}
   {% for pub in site.data.publikationen.items %}
     {% assign py = pub.issued.date-parts[0][0] | plus: 0 %}
-    {% if py >= m_start and py <= m_end %}
+    {% assign pub_in_modul = false %}
+    {% if pub.module %}
+      {% assign pm = pub.module | append: "" %}
+      {% if pm == m_num %}{% assign pub_in_modul = true %}{% endif %}
+    {% elsif py >= m_start and py <= m_end %}{% assign pub_in_modul = true %}{% endif %}
+    {% if pub_in_modul %}
       {% assign pub_key = pub.id | split: "/" | last %}
       {% assign pub_event_id = "" %}
       {% for event in site.data.events %}
