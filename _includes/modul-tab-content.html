@@ -312,7 +312,13 @@
           {{ ev_date_display }}
           {% if event.place %} · {{ event.place }}{% endif %}
           {% if event.posts and event.posts.size > 0 %} · <a href="/{{ event.posts[0] }}/" class="news-link">→ Newsbeitrag</a>{% endif %}
-          {% if event.vortraege and event.vortraege.size > 0 %}
+          {% comment %}Sind die Beiträge als Ganzes veröffentlicht, wird die Publikation verlinkt statt einzelner Teamvorträge{% endcomment %}
+          {% if event.publikation %}
+            {% assign ev_pub = site.publications | where_exp: "doc", "doc.url contains event.publikation" | first %}
+            <div style="margin-top: 0.3rem; padding-left: 1.5rem; font-size: 0.85em; color: #666;">
+              Beiträge veröffentlicht: <a href="{{ event.publikation }}">→ {% if ev_pub %}{{ ev_pub.title }}{% else %}Publikation{% endif %}</a>
+            </div>
+          {% elsif event.vortraege and event.vortraege.size > 0 %}
             {% for vortrag_id in event.vortraege %}
               {% for v in site.data.vortraege.items %}
                 {% if v.id contains vortrag_id %}

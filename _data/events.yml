@@ -86,6 +86,7 @@
 - id: "expertenworkshop-2024-mainz"
   title: "Expertenworkshop: Rekonstruktion und digitale Darstellung von Beethovens Skizzenbuch Notirungsbuch K"
   url: "/publications/expertenworkshop-2024-mainz/"
+  publikation: "/publications/expertenworkshop-2024-mainz/"
   module: 4
   type: "Eigene Veranstaltung"
   date: "2024-11-18/2024-11-19"
@@ -911,8 +912,10 @@
   note: ""
 
 - id: "expertenkolloquium-2015-mainz"
-  title: "Expertenkolloquium, Mainz"
-  url: "/publications/expertenkolloquium/index.html"
+  title: "Expertengespräch zur genetischen Textkritik im Bereich Musik"
+  place: "Akademie der Wissenschaften und der Literatur, Mainz"
+  url: "/publications/expertenkolloquium/"
+  publikation: "/publications/expertenkolloquium/"
   module: 1
   type: "Eigene Veranstaltung"
   date: "2015-11-26/2015-11-27"
