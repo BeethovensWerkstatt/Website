@@ -278,6 +278,48 @@ layout: default
   margin-top: 1.5rem;
 }
 
+/* Ergebnistabellen des Druckplattenvergleichs op. 73 */
+.publication-content table.dpv-tabelle {
+  border-collapse: collapse;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.publication-content table.dpv-tabelle th,
+.publication-content table.dpv-tabelle td {
+  border: 1px solid #ccc;
+  padding: 4px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.publication-content table.dpv-tabelle th {
+  background-color: #e9ecef;
+  font-weight: 700;
+}
+
+.publication-content table.dpv-tabelle img {
+  max-width: none;
+  margin: 0;
+  box-shadow: none;
+}
+
+.publication-content table.dpv-tabelle img[class^="dpv-sym"] {
+  border: none;
+}
+
+.publication-content table.dpv-tabelle img.dpv-bsp { height: 150px; }
+.publication-content table.dpv-tabelle img.dpv-high { height: 250px; }
+.publication-content table.dpv-tabelle img.dpv-low { height: 100px; }
+.publication-content table.dpv-tabelle img.dpv-sym { height: 16px; display: inline; }
+.publication-content table.dpv-tabelle img.dpv-sym12 { height: 12px; display: inline; }
+.publication-content table.dpv-tabelle img.dpv-sym4 { height: 4px; display: inline; }
+
+.publication-content table.dpv-tabelle .dpv-ja {
+  display: block;
+  text-align: center;
+}
+
 /* Breite Tabellen auf schmalen Bildschirmen seitlich scrollbar */
 .publication-content .table-wrapper {
   overflow-x: auto;
