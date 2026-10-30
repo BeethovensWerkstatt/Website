@@ -33,7 +33,7 @@ modul_1:
         - title: "Lied Neue Liebe, neues Leben, op. 75/2"
         - title: "Duett mit zwei obligaten Augengläsern, WoO 32"
         - title: "8. Symphonie in F-Dur, op. 93"
-      # dokumentation: "/dokumentation/videapp-var/" # @todo "Tour"-Inhalte in eine .md Datei überführen
+      dokumentation: "/dokumentation/videapp-var/" # Erläuterungstext „Die VideApp“ von der alten Website
       news: 
         - title: "Veröffentlichung"
           url: "/_posts/2017-07-04-veroeffentlichung/" # VideApp online
