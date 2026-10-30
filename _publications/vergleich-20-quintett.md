@@ -1,6 +1,7 @@
 ---
 layout: publication
 title: "Fremde Bearbeitung des Septetts Es-Dur op. 20 als Streichquintett (2 Violinen, 2 Violen, Violoncello), vermutlich von Franz Anton Hoffmeister selbst"
+author: Joachim Veit
 version: 1.0.0
 date: 2020-03-16
 categories: [Modul 2]
