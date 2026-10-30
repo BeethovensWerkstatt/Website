@@ -18,6 +18,6 @@
 <body>
   <h1>Weiterleitung …</h1>
   <p>Sie werden weitergeleitet zu <a href="{{ page.latest_url }}">{{ page.article_title | escape }}</a>.</p>
-  <script>window.location.replace("{{ page.latest_url | escape }}");</script>
+  <script>window.location.replace("{{ page.latest_url | escape }}" + window.location.hash);</script>
 </body>
 </html>

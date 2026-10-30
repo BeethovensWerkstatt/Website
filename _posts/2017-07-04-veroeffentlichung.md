@@ -23,7 +23,7 @@ Diese Umstrukturierung unserer Homepage ist dabei als *work in progress* zu vers
 [GitHub-Repository]: https://github.com/BeethovensWerkstatt
 [Modulübersicht]: {% link _pages/module.md  %}
 [Abschlussbericht des ersten Moduls]: {% link _pages/module/berichte/modul-1/abschlussbericht-modul-1.md  %}
-[Expertenkolloquiums 2015]: {% link _publications/expertenkolloquium/index.md %}
+[Expertenkolloquiums 2015]: /publications/expertenkolloquium/
 [Vorüberlegungen zum zweiten Modul]: {% link _pages/module/berichte/modul-2/inhaltliche-fragestellung-des-zweiten-moduls.md  %}
 [Fallstudie zu Op. 86]: {% link _publications/schreibchronologie-bei-orchestrierungsvarianten.md %}
 [Genetic Sandbox]: {% link _pages/module/dokumentation/modul-1/genetic-sandbox.md %}
