@@ -74,8 +74,8 @@ Inwieweit beide Fassungen durch [Invarianz]({% link _glossary/invarianz.md %}) s
 Anders als bei Beethovens Klavierauszügen zum Opfer- und Bundeslied oder auch bei der Großen Fuge – Beispiele mit einer hohen Übereinstimmung zwischen Original und Bearbeitung – bestehen bei Beethovens Klaviersonate op. 14/1 und seiner Bearbeitung als Streichquartett größere Unterschiede zwischen den Fassungen.[^5] Dies liegt darin begründet, dass Beethoven nicht nur die Stimmen des Klaviers auf die vier Streichinstrumente verteilt und die Stimmen an die Bedingungen des Streichersatzes angepasst hat, sondern den ursprünglichen Klaviersatz in einen Streichquartettsatz umwandelte.[^6] Er ging in seiner Bearbeitung auf die idiomatischen Unterschiede ein, die zwischen Klavier und Streichern bestehen. Da die unterschiedlichen Tonarten (E-Dur versus F-Dur) den Fassungsvergleich erschweren, ermöglicht es die *VideApp<sub>Arr</sub>*, die Tonarten der beiden Fassungen wechselseitig anzugleichen.  
 Für den Vergleich der Originalausgaben von Klaviersonate und Streichquartett werden in der *VideApp<sub>Arr</sub>* verschiedene Perspektiven angeboten. Die Einfärbung in der Perspektive **[Einzelnotenvergleich](/dokumentation/videapp-arr/#einzelnotenvergleich)** zeigt, dass der Invarianz-Anteil der beiden Fassungen im I. Satz ab der Durchführung (T. 62ff.) geringer ist als zuvor: In den Takten 65–80 wird nur der Verlauf der Melodielinie unverändert von der Sonate ins Quartett übernommen. Die Takte stehen beispielhaft für Beethovens Umwandlung des Klaviersatzes in einen Streichersatz.
 
-<!-- Abbildung fehlt: wp-content/uploads/…/op.-14_1_T65-1.jpeg; nach Wiederbeschaffung als Bild mit Unterschrift einsetzen -->
-*Abb. 1: I. Satz, T. 65–68, Perspektive: Einzelnotenvergleich* [Anm. 2026: Die Abbildung ist derzeit nicht verfügbar und wird nachgereicht.]
+![I. Satz, T. 65–68, Perspektive: Einzelnotenvergleich](/assets/images/publications/vergleich-14/op14_1Satz_T65.jpeg)
+*I. Satz, T. 65–68, Perspektive: Einzelnotenvergleich*
 
 Die Melodie, die sich in der rechten Hand des Klavierspielers befindet, wird in der Bearbeitung der ersten Violine übertragen, wobei die Oktavverdoppelung wegfällt. Die Begleitung der Melodie besteht in der Klaviersonate aus gebrochenen Akkorden in Sechzehnteln in der linken Hand – eine für Klaviersonaten der Zeit typische Begleitfigur. Diese ersetzte Beethoven im Quartett durch Akkordrepetitionen in den mittleren Streichern, die mit der Akkordbrechung in Achteln des Cellos kombiniert werden.[^7]  
 Obwohl solche Unterschiede zwischen den Fassungen bestehen, stimmt die **[Ereignisdichte](/dokumentation/videapp-arr/#ereignisdichte)** im I. Satz in den beiden Fassungen größtenteils überein (eine Ausnahme z. B. in T. 106). Das bedeutet, dass sich Sonate und Quartett rhythmisch sehr ähnlich sind.
@@ -84,20 +84,20 @@ Betrachtet man den II. Satz unter der Perspektive des Einzelnotenvergleichs, fä
 
 Der III. Satz von op. 14/1 weist die meisten strukturellen Unterschiede zwischen den Fassungen auf. Dies ist schon zu Beginn, in den ersten vier Takten des Themas, erkennbar. Dieses Thema ist in der Sonate durch die Triolenbegleitung in der linken Hand klaviertypisch. Diese ersetzte Beethoven in der Bearbeitung durch Skalen in den mittleren Streichern. Dabei ist die zweite Violine synkopisch verschoben und das Cello pausiert, wodurch ein typischer Streichersatz entsteht. Der stufenweise Abstieg stellt eine Gemeinsamkeit der Fassungen dar: Der jeweils erste Triolenton und die Töne der Viola stimmen abgesehen von der abweichenden Oktavlage überein.
 
-<!-- Abbildung fehlt: wp-content/uploads/…/op14_3Satz_Beginn.jpeg; nach Wiederbeschaffung als Bild mit Unterschrift einsetzen -->
-*Abb. 2: III\. Satz, T. 1–4, Perspektive: Einzelnotenvergleich* [Anm. 2026: Die Abbildung ist derzeit nicht verfügbar und wird nachgereicht.]
+![III. Satz, T. 1–4, Perspektive: Einzelnotenvergleich](/assets/images/publications/vergleich-14/op14_3Satz_Beginn.jpeg)
+*III. Satz, T. 1–4, Perspektive: Einzelnotenvergleich*
 
 In der Klaviersonate wird das Thema ab T. 9 einfach wiederholt. Im Streichquartett dagegen findet bei der Wiederholung ein Stimmtausch statt:
 
-<!-- Abbildung fehlt: wp-content/uploads/…/op14_3Satz_Vgl.jpeg; nach Wiederbeschaffung als Bild mit Unterschrift einsetzen -->
-*Abb. 3: II\. Satz, T. 1–4 und T. 8–11,  Perspektive: Fassungssynopse mit farblicher Hervorhebung des Stimmtauschs im Streichquartett* [Anm. 2026: Die Abbildung ist derzeit nicht verfügbar und wird nachgereicht.]
+![III. Satz, T. 1–4 und T. 8–11, Perspektive: Fassungssynopse mit farblicher Hervorhebung des Stimmtauschs im Streichquartett](/assets/images/publications/vergleich-14/op14_3Satz_Vgl.jpeg)
+*III. Satz, T. 1–4 und T. 8–11, Perspektive: Fassungssynopse mit farblicher Hervorhebung des Stimmtauschs im Streichquartett*
 
 Die Melodie liegt jetzt in den mittleren Streichern und wird damit wie in der Sonate nun auch in Oktaven gespielt. Die absteigende Linie der Viola liegt im Cello und die synkopisch verschobene Stimme der 2. Violine wird nun von der 1. Violine gespielt. In der Klaviersonate wird das wiederkehrende Thema nur wiederholt, im Quartett tritt es jeweils in verschiedenen Stimmenkombinationen und damit leicht verändert auf.
 
 Die größten Unterschiede zwischen den Fassungen befinden sich etwa in der Mitte des III. Satzes (T. 47–79). In diesem Abschnitt verläuft die Melodie in der Sonate in der rechten Hand in Triolen. Diese Takte sind im Streichquartett ganz verschieden:
 
-<!-- Abbildung fehlt: wp-content/uploads/…/op14_3Satz_Mitte.jpeg; nach Wiederbeschaffung als Bild mit Unterschrift einsetzen -->
-*Abb. 4: III\. Satz, T. 47–50,  Perspektive: Einzelnotenvergleich* [Anm. 2026: Die Abbildung ist derzeit nicht verfügbar und wird nachgereicht.]
+![III. Satz, T. 47–50, Perspektive: Einzelnotenvergleich](/assets/images/publications/vergleich-14/op14_3Satz_Mitte.jpeg)
+*III. Satz, T. 47–50, Perspektive: Einzelnotenvergleich*
 
 Der Tonhöhenverlauf der melodietragenden 1. Violine unterscheidet sich völlig von dem des Klaviers. Die einzige Übereinstimmung besteht im Rhythmus, da die Violine auch in Triolen verläuft. Im Streichquartett kommt, zunächst in den mittleren Streichern (T. 48f.) und später (ab T. 59) im Cello, ein neues Motiv hinzu, das in der Klaviersonate in diesen Takten fehlt, aber nicht gänzlich unbekannt ist, da es bereits in T. 5/6 erstmals erklungen ist. Invarianz besteht in diesem Abschnitt einzig in Bezug auf den Bass: Das Cello übernimmt häufig die Töne der linken Hand (in T. 47–58 und 66–72). In Bezug auf diesen Abschnitt ist die Perspektive **[Harmonievergleich](/dokumentation/videapp-arr/#harmonievergleich)** sehr aufschlussreich, denn er verdeutlicht, dass der harmonische Verlauf in den Fassungen übereinstimmt, obwohl sich der Melodieverlauf unterscheidet.
 
