@@ -68,7 +68,7 @@ modul_1:
           url: "https://beethovens-werkstatt.de/sandbox/op59.3/index.html"
         - title: "Sandbox 2: Lied Neue Liebe, neues Leben, op. 75/2"
           url: "https://beethovens-werkstatt.de/sandbox/op75.2/5r/index.html"
-      # dokumentation: "/dokumentation/genetic-sandbox/"
+      dokumentation: "/dokumentation/genetic-sandbox/"
 
   berichte:
     - title: "Abschlussbericht Modul 1"
