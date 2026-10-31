@@ -1494,6 +1494,42 @@
                     ]
                 ]
             }
+        },
+        {
+            "id": "4185477/E5C8TV49",
+            "type": "paper-conference",
+            "DOI": "10.17613/etbf5-chm42",
+            "event-title": "Music Encoding Conference 2020",
+            "language": "englisch",
+            "license": "CC BY NC 4.0",
+            "title": "MusicDiff: A Diff Tool for MEI",
+            "author": [
+                {
+                    "family": "Herold",
+                    "given": "Kristin"
+                },
+                {
+                    "family": "Kepper",
+                    "given": "Johannes"
+                },
+                {
+                    "family": "Mo",
+                    "given": "Ran"
+                },
+                {
+                    "family": "Seipelt",
+                    "given": "Agnes"
+                }
+            ],
+            "issued": {
+                "date-parts": [
+                    [
+                        2020,
+                        7,
+                        22
+                    ]
+                ]
+            }
         }
   ]
 }

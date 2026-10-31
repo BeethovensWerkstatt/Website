@@ -188,6 +188,8 @@
   vortraege:
     - IE2ZGXW3     # "Integrating Score Rendition into the MEIGarage"
     - FSGSWWGZ     # "MusicDiff: A Diff Tool for MEI"
+  publikationen:
+    - E5C8TV49     # "MusicDiff: A Diff Tool for MEI" (Paper)
   lehrveranstaltungen:
     - WPGMWWX5     # "Working with MEI Metadata"
   posts:
