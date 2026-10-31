@@ -41,7 +41,7 @@ Grundsätzlich gilt:
 
 3. immer als editorische Zusätze diakritisch gekennzeichnet, wodurch Befund und Deutung klar voneinander unterschieden werden.
 
-4. Die obligatorische digitale Verknüpfung mit dem faksimilierten Notat (siehe SVG) stellt einerseits einen eindeutigen Bezug zwischen originalem Zeichenbestand und seiner Transkription her und trennt davon andererseits alle editorisch interpolierten Annotationen durch diakritische Kennzeichnungen.
+4. Die obligatorische digitale Verknüpfung mit dem faksimilierten Notat (siehe [SVG]({% link _projekt/digitale-methoden.md %})) stellt einerseits einen eindeutigen Bezug zwischen originalem Zeichenbestand und seiner Transkription her und trennt davon andererseits alle editorisch interpolierten Annotationen durch diakritische Kennzeichnungen.
 
 Annotationen werden hauptsächlich durch folgende drei Fallgruppen ausgelöst.  
 
