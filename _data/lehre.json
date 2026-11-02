@@ -175,7 +175,7 @@
       "citation-key": "sangerProgettoBeethovensWerkstatt2024",
       "genre": "Seminareinheit",
       "language": "englisch",
-      "note": "2024-06-24",
+      "note": "2024-06-04",
       "title": "Il progetto „Beethovens Werkstatt“. Critica genetica ed edizioni digitali",
       "author": [
         {
@@ -1586,6 +1586,123 @@
         }
       ],
       "event": "Edirom Summer School 2014",
+      "place": "Paderborn"
+    },
+    {
+      "id": "nachtrag/ESS25MEI",
+      "type": "speech",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2025-09-08/2025-09-09",
+      "title": "MEI für Einsteiger*innen",
+      "URL": "https://ess.uni-paderborn.de/2025/programm.html",
+      "author": [
+        {
+          "family": "Rosendahl",
+          "given": "Lisa"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "event": "Edirom Summer School 2025",
+      "place": "Paderborn"
+    },
+    {
+      "id": "nachtrag/ESS25DIP",
+      "type": "speech",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2025-09-08/2025-09-12",
+      "title": "Diplomatic Transcriptions in Detail",
+      "URL": "https://ess.uni-paderborn.de/2025/programm.html",
+      "author": [
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Pugin",
+          "given": "Laurent"
+        }
+      ],
+      "event": "Edirom Summer School 2025",
+      "place": "Paderborn"
+    },
+    {
+      "id": "nachtrag/ESS25EDI",
+      "type": "speech",
+      "genre": "Workshop",
+      "language": "englisch",
+      "note": "2025-09-08/2025-09-09",
+      "title": "Introduction to Edirom-Online",
+      "URL": "https://ess.uni-paderborn.de/2025/programm.html",
+      "author": [
+        {
+          "family": "Alemayehu",
+          "given": "Hizkiel Mitiku"
+        },
+        {
+          "family": "Herold",
+          "given": "Kristin"
+        },
+        {
+          "family": "Jettka",
+          "given": "Daniel"
+        }
+      ],
+      "event": "Edirom Summer School 2025",
+      "place": "Paderborn"
+    },
+    {
+      "id": "nachtrag/ESS25FDM",
+      "type": "speech",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2025-09-10",
+      "title": "Forschungsdatenmanagement im Kontext digitaler Musikwissenschaft",
+      "URL": "https://ess.uni-paderborn.de/2025/programm.html",
+      "author": [
+        {
+          "family": "Albrecht-Hohmaier",
+          "given": "Martin"
+        },
+        {
+          "family": "Bergmann",
+          "given": "Katharina"
+        },
+        {
+          "family": "Röwenstrunk",
+          "given": "Daniel"
+        },
+        {
+          "family": "Münzmay",
+          "given": "Andreas"
+        }
+      ],
+      "event": "Edirom Summer School 2025",
+      "place": "Paderborn"
+    },
+    {
+      "id": "nachtrag/ESS24TEI",
+      "type": "speech",
+      "genre": "Workshop",
+      "language": "deutsch",
+      "note": "2024-09-26/2024-09-27",
+      "title": "TEI Special",
+      "URL": "https://ess.uni-paderborn.de/2024/programm.html",
+      "author": [
+        {
+          "family": "Capelle",
+          "given": "Irmlind"
+        },
+        {
+          "family": "Veit",
+          "given": "Joachim"
+        }
+      ],
+      "event": "Edirom Summer School 2024",
       "place": "Paderborn"
     }
   ]

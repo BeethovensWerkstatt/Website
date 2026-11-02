@@ -3047,50 +3047,6 @@
       "place": "Bonn"
     },
     {
-      "id": "4185477/8R79M25Z",
-      "type": "speech",
-      "title": "Beethovens Werkstatt. Genetische Textkritik und Digitale Musikedition",
-      "genre": "Tool-/Projektvorstellung",
-      "event": "17. Internationaler Kongress der Gesellschaft für Musikforschung, Projektpräsentationen IV",
-      "language": "deutsch",
-      "author": [
-        {
-          "family": "Cox",
-          "given": "Susanne"
-        },
-        {
-          "family": "Herold",
-          "given": "Kristin"
-        },
-        {
-          "family": "Kepper",
-          "given": "Johannes"
-        },
-        {
-          "family": "Mo",
-          "given": "Ran"
-        },
-        {
-          "family": "Novara",
-          "given": "Elisa"
-        },
-        {
-          "family": "Sänger",
-          "given": "Richard"
-        }
-      ],
-      "issued": {
-        "date-parts": [
-          [
-            2021,
-            10,
-            1
-          ]
-        ]
-      },
-      "place": "Bonn"
-    },
-    {
       "id": "4185477/366X3ED7",
       "type": "speech",
       "title": "Beethovens Werkstatt – neuartige Zugänge zu den Arbeitsprozessen des Komponisten",
@@ -3453,8 +3409,8 @@
         "date-parts": [
           [
             2021,
-            9,
-            28
+            10,
+            1
           ]
         ]
       },
@@ -3483,34 +3439,6 @@
         ]
       },
       "place": "Mainz"
-    },
-    {
-      "id": "4185477/JK4M7U8N",
-      "type": "speech",
-      "title": "Beethoven's arrangements of own works – the 2nd module of Beethovens Werkstatt",
-      "genre": "Vortrag",
-      "event": "IMS 2022 – Roundtable „Beethoven’s Large Scale Works outside the Concert Hall: Towards a Digital Representation of Domestic Arrangements“",
-      "language": "englisch",
-      "author": [
-        {
-          "family": "Sänger",
-          "given": "Richard"
-        },
-        {
-          "family": "Seipelt",
-          "given": "Agnes"
-        }
-      ],
-      "issued": {
-        "date-parts": [
-          [
-            2022,
-            8,
-            22
-          ]
-        ]
-      },
-      "place": "Athen"
     },
     {
       "id": "4185477/J8GQBMNW",
@@ -4427,6 +4355,121 @@
                     ]
                 ]
             }
+        },
+    {
+      "id": "nachtrag/MEC25PAN",
+      "type": "speech",
+      "genre": "Panel/Diskussion",
+      "event": "Music Encoding Conference 2025",
+      "language": "englisch",
+      "URL": "https://music-encoding.org/conference/2025/program/",
+      "author": [
+        {
+          "family": "Obert",
+          "given": "Salome"
+        },
+        {
+          "family": "Seipelt",
+          "given": "Agnes"
+        },
+        {
+          "family": "Paciotti",
+          "given": "Alessandra"
+        },
+        {
+          "family": "Raunisi",
+          "given": "Cecilia"
+        },
+        {
+          "family": "Rosendahl",
+          "given": "Lisa"
         }
+      ],
+      "title": "Sketching Genetic Editions: Challenges and Opportunities",
+      "issued": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            4
+          ]
+        ]
+      },
+      "place": "London"
+    },
+    {
+      "id": "nachtrag/RV26COX",
+      "type": "speech",
+      "genre": "Vortrag",
+      "event": "Ringvorlesung „Beethoven – work in progress…“",
+      "language": "deutsch",
+      "URL": "https://www.uni-paderborn.de/en/event-item/ringvorlesung-beethoven-work-in-progress-gustav-nottebohm-und-beethoven-skizzenforschung",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        }
+      ],
+      "title": "Gustav Nottebohm: Vordenker und Wegbereiter der Beethoven-Skizzenforschung",
+      "issued": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "place": "Detmold"
+    },
+    {
+      "id": "nachtrag/RV27NKK",
+      "type": "speech",
+      "genre": "Vortrag",
+      "event": "Ringvorlesung „Beethoven – work in progress…“",
+      "language": "deutsch",
+      "URL": "https://www.uni-paderborn.de/en/news-item/160565",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        },
+        {
+          "family": "Greshake",
+          "given": "Maximilian"
+        },
+        {
+          "family": "Herold",
+          "given": "Kristin"
+        },
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        },
+        {
+          "family": "Rosendahl",
+          "given": "Lisa"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        },
+        {
+          "family": "Stremel",
+          "given": "Sophie"
+        }
+      ],
+      "title": "Notirungsbuch K – eine erste digitale Skizzenbuchedition",
+      "issued": {
+        "date-parts": [
+          [
+            2027,
+            1,
+            27
+          ]
+        ]
+      },
+      "place": "Detmold"
+    }
   ]
 }

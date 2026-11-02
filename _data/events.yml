@@ -23,6 +23,32 @@
     - 2026-10-25-edirom-summer-school-2026
   note: ""
 
+- id: "ringvorlesung-ws2026-detmold"
+  title: "Ringvorlesung „Beethoven – work in progress“"
+  module: 5
+  type: "Lehre"
+  date: "2026-10-21/2027-01-27"
+  url: "https://www.muwi-detmold-paderborn.de/en/translate-to-english-seminar/lecture-series"
+  place: "HfM Detmold"
+  vortraege:
+    - RV26COX      # "Gustav Nottebohm: Vordenker und Wegbereiter der Beethoven-Skizzenforschung"
+    - RV27NKK      # "Notirungsbuch K – eine erste digitale Skizzenbuchedition"
+  posts:
+    - 2026-06-22-ringvorlesung-beethoven-work-in-progress-im-wise-2026-27-in-detmold
+  note: ""
+
+- id: "cremona-2026"
+  title: "Kurs „Metodologia delle edizioni musicali digitali“"
+  module: 5
+  type: "Lehre"
+  date: "2026-01-20"
+  place: "Universität Pavia, Cremona"
+  lehrveranstaltungen:
+    - 6BG8WUPT     # "About workflows, concepts and possibilities of digital editions"
+  posts:
+    - 2026-01-27-workshop-in-cremona
+  note: ""
+
 # Modul 4
 
 - id: "mec-2026-tokyo"
@@ -96,7 +122,399 @@
     - 2024-10-21-zehn-jahre-beethovens-werkstatt
   note: ""
 
+- id: "ess-2025-paderborn"
+  title: "Edirom Summer School 2025"
+  url: "https://ess.uni-paderborn.de/2025/programm.html"
+  module: 4
+  type: "Lehre"
+  date: "2025-09-08/2025-09-12"
+  lehrveranstaltungen:
+    - ESS25MEI     # "MEI für Einsteiger*innen"
+    - ESS25DIP     # "Diplomatic Transcriptions in Detail"
+    - ESS25EDI     # "Introduction to Edirom-Online"
+    - ESS25FDM     # "Forschungsdatenmanagement im Kontext digitaler Musikwissenschaft"
+  posts:
+    - 2025-11-17-edirom-summer-school-2025
+  note: ""
+
+- id: "mec-2025-london"
+  title: "Music Encoding Conference 2025"
+  url: "https://music-encoding.org/conference/2025/"
+  module: 4
+  type: "Vortrag"
+  date: "2025-06-03/2025-06-06"
+  place: "London"
+  vortraege:
+    - MEC25PAN     # "Sketching Genetic Editions: Challenges and Opportunities" (Panel)
+    - EAW7M5XB     # "Let’s get visual. Dealing with layout information in MEI"
+  posts:
+    - 2025-06-18-panel-und-vortrag-bei-der-mec-in-london
+  note: ""
+
+- id: "zti-2025-online"
+  title: "Digital Critical Editions in Music (Online-Workshop)"
+  url: "https://zti.hu/en/119-zti-esemenyek/2025/1336-digital-critical-editions-in-music-3-online-workshop-2"
+  module: 4
+  type: "Vortrag"
+  date: "2025-06-23"
+  lehrveranstaltungen:
+    - CEGAHSQU     # "Beethovens Werkstatt – A Digital Edition of Notirungsbuch K."
+  posts:
+    - 2025-06-18-online-projektpraesentation
+  note: ""
+
+- id: "ess-2024-paderborn"
+  title: "Edirom Summer School 2024"
+  url: "https://ess.uni-paderborn.de/2024/programm.html"
+  module: 4
+  type: "Lehre"
+  date: "2024-09-23/2024-09-27"
+  lehrveranstaltungen:
+    - H4URFWNP     # "MEI für Einsteiger*innen"
+    - V7W8H595     # "Digitale Edition"
+    - ESS24TEI     # "TEI Special"
+  posts:
+    - 2024-10-07-edirom-summer-school-2024
+  note: ""
+
+- id: "cremona-2024"
+  title: "Kurs „Metodologia delle edizioni musicali digitali“"
+  module: 4
+  type: "Lehre"
+  date: "2024-06-04"
+  place: "Universität Pavia, Cremona"
+  lehrveranstaltungen:
+    - DR5728GN     # "Il progetto „Beethovens Werkstatt“. Critica genetica ed edizioni digitali"
+  posts:
+    - 2024-06-11-beethovens-werkstatt-zu-besuch-in-der-universitaet-cremona
+  note: ""
+
+- id: "mec-2024-denton"
+  title: "Music Encoding Conference 2024"
+  url: "https://music-encoding.org/conference/2024/"
+  module: 4
+  type: "Vortrag"
+  date: "2024-05-20/2024-05-23"
+  place: "University of North Texas"
+  vortraege:
+    - I7BI4QFT     # "Beyond the Standard Model"
+  posts:
+    - 2024-05-27-vortrag-bei-der-mec-2024
+  note: ""
+
+- id: "villa-vigoni-2024"
+  title: "Kolloquium „Auf dem Weg zu einer vergleichenden Erforschung kompositorischer Schaffensprozesse“"
+  url: "https://www.villavigoni.eu/event/39203/?lang=de"
+  module: 4
+  type: "Vortrag"
+  date: "2024-05-13/2024-05-17"
+  place: "Villa Vigoni"
+  vortraege:
+    - PKQXZP9E     # "Vorstellung zweier Fallbeispiele"
+  posts:
+    - 2024-05-20-kolloquium-in-der-villa-vigoni
+  note: ""
+
+- id: "rism-2023-muenchen"
+  title: "Musikquellen des 19. Jahrhunderts in Deutschland. Herausforderungen und Chancen"
+  module: 4
+  type: "Vortrag"
+  date: "2023-11-21/2023-11-22"
+  place: "Bayerische Staatsbibliothek, München"
+  vortraege:
+    - 4WNK2MHP     # "Beethovens Revisionsprozesse und ihre digitale Darstellung"
+  posts:
+    - 2023-11-23-konferenz-der-rism-arbeitsgruppe-in-muenchen
+  note: ""
+
+- id: "tianjin-2023"
+  title: "Eröffnung der Bibliothek der Tianjin Juilliard School"
+  module: 4
+  type: "Vortrag"
+  date: "2023-10-10"
+  place: "Tianjin, China"
+  vortraege:
+    - 7GIHFNWE     # "’Of course the effect was the same – but not for the eye’" (Keynote)
+  posts:
+    - 2023-10-11-keynote-lecture-bei-der-tianjin-juilliard-china
+  note: ""
+
+- id: "gfm-2023-saarbruecken"
+  title: "Jahrestagung der Gesellschaft für Musikforschung 2023"
+  url: "https://www.uni-saarland.de/fachrichtung/musikwissenschaft/gfm-tagung-2023.html"
+  module: 4
+  type: "Vortrag"
+  date: "2023-10-04/2023-10-07"
+  place: "Universität des Saarlandes"
+  vortraege:
+    - 3R8FEM4H     # "Vorstellung des „Facsimile Explorers“, „CollAna“ und „MusicDiff“" (Marktplatz)
+    - 4XSUKEEE     # "Facsimile Explorer"
+    - HC44BCN7     # "CollAna"
+    - WPWH7UQK     # "MusicDiff"
+    - CS4HU2K5     # "Beethovens erste Niederschriften seiner Werke: Arbeitsmanuskripte zwischen Skizze und Reinschrift"
+  posts:
+    - 2023-10-08-jahrestagung-der-gesellschaft-fuer-musikforschung-saarbruecken
+  note: ""
+
+- id: "sapienza-2023-rom"
+  title: "Doktoranden-Kolloquium der Universität „La Sapienza“"
+  module: 4
+  type: "Lehre"
+  date: "2023-09-28"
+  place: "Rom"
+  lehrveranstaltungen:
+    - PAR5H89Z     # "Tra 'Sketch Studies' e critica genetica"
+  posts:
+    - 2023-09-29-doktoranden-seminar-an-der-universitaet-rom-la-sapienza
+  note: ""
+
+- id: "tei-mec-2023-paderborn"
+  title: "Joint MEC and TEI Conference 2023 „Encoding Cultures“"
+  url: "https://teimec2023.uni-paderborn.de/"
+  module: 4
+  type: "Vortrag"
+  date: "2023-09-04/2023-09-08"
+  place: "Universität Paderborn"
+  vortraege:
+    - F7RJKDK4     # "Exploring the Genesis of Complex Music Manuscripts"
+  lehrveranstaltungen:
+    - ERVPICVU     # "Integrating TEI and MEI" (Workshop)
+  posts:
+    - 2023-09-10-joint-mec-and-tei-conference
+  note: ""
+
+- id: "frankfurt-2023"
+  title: "Vorlesung „Skizze, Fragment, Torso – Das Unvollendete der Musik“"
+  module: 4
+  type: "Vortrag"
+  date: "2023-01-10"
+  place: "Universität Frankfurt"
+  vortraege:
+    - J8GQBMNW     # "Beethovens Skizzen" (Gastvortrag)
+  posts:
+    - 2023-01-11-vortrag-an-der-uni-frankfurt
+  note: ""
+
+- id: "boston-2022"
+  title: "Vortrag an der Boston University"
+  module: 4
+  type: "Vortrag"
+  date: "2022-11-30"
+  place: "Boston University, College of Fine Arts"
+  vortraege:
+    - ITHXXS7S     # "Getting to Beethoven with Digital Tools"
+  posts:
+    - 2022-11-30-vortrag-an-der-boston-university
+  note: ""
+
+- id: "juilliard-2022-new-york"
+  title: "Doktorandenkolloquium an der Juilliard School"
+  module: 4
+  type: "Vortrag"
+  date: "2022-11-14"
+  place: "New York"
+  vortraege:
+    - SU29VHBD     # "Beethoven as an Arranger of his Great Fugue – From Playability to Augenmusik"
+  posts:
+    - 2022-11-14-vortrag-an-der-juilliard-school-of-music-in-new-york
+  note: ""
+
+- id: "nbrc-2022-new-orleans"
+  title: "9th New Beethoven Research Conference"
+  url: "https://www.sjsu.edu/beethoven/docs/pdf/Program%20Book%20for%209th%20New%20Beethoven%20Research%20Conference_NewOct22.pdf"
+  module: 4
+  type: "Vortrag"
+  date: "2022-11-09/2022-11-10"
+  place: "New Orleans"
+  vortraege:
+    - 4FEUZMGF     # "The Reception of Italian Compositional Methods in Beethoven’s Vienna"
+    - QKCJNHV3     # "Beethoven’s Early Sketches for the Ninth Symphony"
+  posts:
+    - 2022-10-20-new-beethoven-research-conference-2
+  note: ""
+
+- id: "akademientag-2022-leipzig"
+  title: "Akademientag 2022 „Musik und Gesellschaft“"
+  url: "https://www.akademienunion.de/presse/pressemitteilung/ein-tag-zur-musik-in-allen-dimensionen-akademientag-2022-am-6-oktober-erstmalig-in-leipzig"
+  module: 4
+  type: "Lehre"
+  date: "2022-10-06"
+  place: "Museum für Druckkunst, Leipzig"
+  lehrveranstaltungen:
+    - FJPST87T     # "Schüler*innen-Workshop und Posterpräsentation"
+  posts:
+    - 2022-10-12-workshop-beim-akademientag-2022-in-leipzig
+  note: ""
+
+- id: "gfm-2022-berlin"
+  title: "Jahrestagung der Gesellschaft für Musikforschung 2022 „Nach der Norm“"
+  module: 4
+  type: "Vortrag"
+  date: "2022-09-28/2022-10-01"
+  place: "Berlin"
+  vortraege:
+    - IFPXMQKV     # "Digitale Heuristik in der Musikwissenschaft"
+    - T9DGH7E9     # "Beethoven liest Korrektur. Zur Revision des 5. Klavierkonzerts op. 73"
+  posts:
+    - 2022-09-22-jahrestagung-der-gfm
+  note: ""
+
+- id: "ag-edition-2022-klagenfurt"
+  title: "19. internationale Tagung der Arbeitsgemeinschaft für germanistische Edition"
+  module: 4
+  type: "Vortrag"
+  date: "2022-09-21/2022-09-24"
+  place: "Alpen-Adria-Universität Klagenfurt"
+  vortraege:
+    - 2P4V6EAE     # "Für Wissenschaft und Praxis gleichermaßen"
+  posts:
+    - 2022-10-12-internationale-tagung-der-ag-germanistische-edition
+  note: ""
+
+- id: "ess-2022-paderborn"
+  title: "Edirom Summer School 2022"
+  url: "https://ess.uni-paderborn.de/2022/programm.html"
+  module: 4
+  type: "Lehre"
+  date: "2022-09-05/2022-09-09"
+  lehrveranstaltungen:
+    - BJDRGH92     # "MEI für Einsteiger*innen"
+    - TE24HRK2     # "TEI für Einsteiger*innen"
+    - 6DP8Z5HJ     # "Digitale Edition"
+  posts:
+    - 2022-09-22-edirom-summer-school-2022
+  note: ""
+
+- id: "ims-2022-athen"
+  title: "Kongress der International Musicological Society 2022"
+  module: 4
+  type: "Vortrag"
+  date: "2022-08-22/2022-08-26"
+  place: "Athen"
+  vortraege:
+    - MWRAT8E3     # Roundtable „Beethoven’s Large Scale Works outside the Concert Hall“
+  posts:
+    - 2022-09-22-ims-2022
+  note: ""
+
+- id: "understanding-beethoven-2022-koblenz"
+  title: "Understanding Beethoven: Musicology and Computer Science in Dialogue"
+  module: 4
+  type: "Vortrag"
+  date: "2022-07-14/2022-07-16"
+  place: "Mutter-Beethoven-Haus, Koblenz"
+  vortraege:
+    - ZQMJXNCP     # "Beethovens Werkstatt. Genetische Textkritik und Digitale Edition"
+  posts:
+    - 2022-09-21-konferenz-understanding-beethoven-musicology-and-computer-science-in-dialogue
+  note: ""
+
+- id: "rheinische-musikerkollegen-2022-bonn"
+  title: "Beethoven und seine rheinischen Musikerkollegen"
+  module: 4
+  type: "Vortrag"
+  date: "2022-06-10/2022-06-12"
+  place: "Beethoven-Haus, Bonn"
+  vortraege:
+    - CQPSPNH5     # "Beethoven, die Familie Ries und Joseph Joachim"
+  posts:
+    - 2022-09-21-konferenz-beethoven-und-seine-rheinischen-musikerkollegen
+  note: ""
+
 # Modul 3
+
+- id: "dhi-2021-rom"
+  title: "Ludwig van Beethoven und Italien. Person und Werk im Zeichen nationaler Erinnerungskultur"
+  url: "http://musica.dhi-roma.it/fileadmin/user_upload/pdf-dateien/Veranstaltungsprogramme/2021/2021118-10_Beethoven_Programm_web_2_DEF.pdf"
+  module: 3
+  type: "Vortrag"
+  date: "2021-11-08/2021-11-10"
+  place: "Deutsches Historisches Institut, Rom"
+  vortraege:
+    - CIRWVSUE     # "Italienische Kompositionsmethoden in Beethovens Wien"
+  posts:
+    - 2021-11-19-tagung-am-dhi-in-rom
+  note: ""
+
+- id: "humboldt-forum-2021-bonn"
+  title: "10. Bonner Humboldt-Preisträger-Forum"
+  module: 3
+  type: "Vortrag"
+  date: "2021-10-21/2021-10-22"
+  place: "Bonn"
+  vortraege:
+    - C4FGRJT2     # "About ‚die Kunst musikalische Gerippe zu erschaffen‘. For a comparative approach to Beethoven’s Composing Strategies"
+    - RMJAZJCJ     # "Johannes Brahms und Beethovens Engelmann-Skizzenbuch"
+  posts:
+    - 2021-11-18-humboldt-preistraeger-forum
+  note: ""
+
+- id: "gfm-2021-bonn"
+  title: "XVII. Internationaler Kongress der Gesellschaft für Musikforschung „Musikwissenschaft nach Beethoven“"
+  module: 3
+  type: "Vortrag"
+  date: "2021-09-28/2021-10-01"
+  place: "Bonn"
+  vortraege:
+    - KA9NXMNS     # "Forschungsperspektiven aus der Sicht von Beethovens Werkstatt"
+    - CW6XUPI7     # "Beethovens Werkstatt: Genetische Textkritik und Digitale Musikedition"
+  posts:
+    - 2021-11-17-xvii-internationaler-kongress-der-gesellschaft-fuer-musikforschung
+  note: ""
+
+- id: "ess-2021-paderborn"
+  title: "Edirom Summer School 2021"
+  url: "https://ess.uni-paderborn.de/2021/programm.html"
+  module: 3
+  type: "Lehre"
+  date: "2021-09-13/2021-09-17"
+  lehrveranstaltungen:
+    - WAZIDVGF     # "TEI für Einsteiger*innen"
+    - M7V5KRJP     # "MEI für Einsteiger*innen"
+    - 2E72JP89     # "MEI für Expert*innen"
+  posts:
+    - 2021-11-17-edirom-summer-school-2021
+  note: ""
+
+- id: "mec-2021-alicante"
+  title: "Music Encoding Conference 2021"
+  url: "https://music-encoding.org/conference/2021/program/"
+  module: 3
+  type: "Vortrag"
+  date: "2021-07-19/2021-07-22"
+  vortraege:
+    - NE7WE4SP     # "Encoding Genetic Processes II"
+  posts:
+    - 2021-08-01-mec-2021
+  note: ""
+
+- id: "skizzenforschung-ws2020-bonn"
+  title: "Einführung in die Skizzenforschung. Beethovens Kompositionsprozesse unter die Lupe genommen"
+  module: 3
+  type: "Lehre"
+  date: "2020-10-01/2021-03-31"
+  place: "Universität Bonn"
+  lehrveranstaltungen:
+    - XW5RU2NR     # Seminar „Einführung in die Skizzenforschung“ (Elisa Novara)
+    - WHAK9FDP     # "Frühe und späte Skizzen Beethovens im Vergleich"
+    - 9FF9Z4VR     # "Schreibprozesse erkennen und beschreiben am Beispiel der Bagatellen op. 126/6"
+    - T2FUXEEV     # "Digitale Musikedition"
+    - CJ78W9A9     # "Digitale Methoden für die philologische Arbeit"
+  posts:
+    - 2020-12-16-lehrtaetigkeit-im-wintersemester-2020-2021
+  note: ""
+
+- id: "notation-ws2020-detmold"
+  title: "Notation und Edition neuerer Musik"
+  module: 3
+  type: "Lehre"
+  date: "2020-10-01/2021-03-30"
+  place: "Musikwissenschaftliches Seminar Detmold/Paderborn"
+  lehrveranstaltungen:
+    - 7G3EVGUC     # "Notation und Edition neuerer Musik (WS 2020/21)"
+  posts:
+    - 2020-12-16-lehrtaetigkeit-im-wintersemester-2020-2021
+  note: ""
 
 
 
@@ -249,6 +667,8 @@
       label: "Ausstellungseröffnung"
       vortraege:
         - AW76GJ72     # "Beethovens Op. 20 und Op. 38: Eine Frage der Perspektive"
+      posts:
+        - 2021-11-17-sonderausstellung-inside-beethoven-im-beethoven-haus
   note: ""
 
 - id: "research-2019-boston"
@@ -691,6 +1111,18 @@
     - 2017-06-14-vortraege-an-den-universitaeten-zu-kiel-und-koeln
   note: ""
 
+- id: "wuerzburg-2018-bonn"
+  title: "Projektvorstellung für Studierende der Universität Würzburg"
+  module: 2
+  type: "Lehre"
+  date: "2018-06-20"
+  place: "Arbeitsstelle Bonn"
+  lehrveranstaltungen:
+    - Q28DPIVP     # "Projektvorstellung"
+  posts:
+    - 2018-06-20-seminar-mit-studierenden-aus-wuerzburg
+  note: ""
+
 - id: "dhmuwi-2017-köln"
   title: "Digital Humanities in der Musikwissenschaft"
   module: 2
@@ -698,8 +1130,11 @@
   date: "2017-06-20"
   vortraege:
     - 9DVTQFZS     # "Beethovens Werkstatt – Projektvorstellung"
+  lehrveranstaltungen:
+    - HN66JKFI     # "Projektvorstellung" (Seminar „Digital Humanities in der Musikwissenschaft“)
   posts:
     - 2017-06-14-vortraege-an-den-universitaeten-zu-kiel-und-koeln
+    - 2017-06-21-projektvorstellung-an-der-universitaet-zu-koeln
   note: ""
 
 - id: "vortrag-2017-kiel"

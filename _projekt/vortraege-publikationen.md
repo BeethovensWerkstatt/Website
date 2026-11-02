@@ -857,6 +857,13 @@ parent_url: /projekt
           {% assign vortrag_event_id = event.id %}
           {% break %}
         {% endif %}
+        {% comment %}Veranstaltungen mit mehreren Terminen (occurrences): Vortrag kann einem einzelnen Termin zugeordnet sein{% endcomment %}
+        {% for occ in event.occurrences %}
+          {% if occ.vortraege contains vortrag_key %}
+            {% assign vortrag_event_id = event.id | append: "@" | append: occ.date %}
+          {% endif %}
+        {% endfor %}
+        {% if vortrag_event_id != "" %}{% break %}{% endif %}
       {% endfor %}
       
       {% assign vortrag_data = sortkey | append: "|" | append: vortrag.id | append: "|" | append: vortrag_event_id %}
@@ -883,6 +890,20 @@ parent_url: /projekt
       {% assign ev_url = event.url | default: "" %}
       {% assign ev_info = event.id | append: "|" | append: ev_count | append: "|" | append: event.title | append: "|" | append: ev_post | append: "|" | append: ev_url %}
       {% assign event_info_map = event_info_map | push: ev_info %}
+      {% for occ in event.occurrences %}
+        {% if occ.vortraege %}
+          {% assign occ_id = event.id | append: "@" | append: occ.date %}
+          {% assign occ_count = 0 %}
+          {% for vdata in sorted_vortraege %}
+            {% assign vparts = vdata | split: "|" %}
+            {% if vparts[2] == occ_id %}{% assign occ_count = occ_count | plus: 1 %}{% endif %}
+          {% endfor %}
+          {% assign occ_post = "" %}
+          {% if occ.posts and occ.posts.size > 0 %}{% assign occ_post = occ.posts[0] %}{% endif %}
+          {% assign occ_info = occ_id | append: "|" | append: occ_count | append: "|" | append: event.title | append: "|" | append: occ_post | append: "|" | append: ev_url %}
+          {% assign event_info_map = event_info_map | push: occ_info %}
+        {% endif %}
+      {% endfor %}
     {% endfor %}
     
     {% comment %}Zeige Vorträge mit Event-Gruppierung{% endcomment %}
