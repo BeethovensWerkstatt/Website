@@ -54,6 +54,8 @@ jobs:
             ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           flavor: |
             latest=${{ github.ref == 'refs/heads/main' }}
+          tags: |
+            type=ref,event=branch
 
       # Build and push Docker image with Buildx (don't push on PR)
       # https://github.com/docker/build-push-action
@@ -75,5 +77,7 @@ jobs:
 
       - name: Notify Keel
         if: github.event_name != 'pull_request'
+        env:
+          IMAGE_TAG: ${{ github.ref == 'refs/heads/main' && 'latest' || github.ref_name }}
         run: |
-          curl -X POST ${{ secrets.KEEL_WEBHOOK_URL }} -H 'Content-Type: application/json' -d '{"name": "ghcr.io/beethovenswerkstatt/website", "tag": "latest"}'
+          curl -X POST ${{ secrets.KEEL_WEBHOOK_URL }} -H 'Content-Type: application/json' -d '{"name": "ghcr.io/beethovenswerkstatt/website", "tag": "'"$IMAGE_TAG"'"}'
