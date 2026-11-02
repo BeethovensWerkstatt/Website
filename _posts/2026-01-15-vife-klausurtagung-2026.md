@@ -13,4 +13,4 @@ Das Projekt *Beethovens Werkstatt* ist Teil des [Virtuellen Forschungsverbunds E
 [Virtuellen Forschungsverbunds Edirom]: https://edirom.de/
 [Edirom Summer School]: https://ess.upb.de/about.html
 [Codierung von Varianten]: /2026-03-04-variantencodierung/
-[Notirungsbuchs K]: /publications/zum-notirungsbuch-k/
+[Notirungsbuch K]: /publications/zum-notirungsbuch-k/
