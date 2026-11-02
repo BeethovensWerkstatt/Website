@@ -114,15 +114,15 @@ Am wenigsten scheint die Bearbeitung die Zwecke einer „idiomatischen“ Übers
 Darüber hinaus stellt die Oktavierung die am meisten benutzte Bearbeitungsmaßnahme der Großen Fuge dar: sowohl im Sinne der eben genannten Klangverstärkung, als auch als spieltechnische Maßnahme, um die Handkreuzung zu vermeiden, als häufigste Maßnahme verschiebt Beethoven die Oktavlage der Stimmen in die höhere oder in die tiefere Oktave. Denn das größte Problem bei der Bearbeitung der Fuge ist spieltechnischer Natur: Für zwei Musiker an einer Klaviatur stellt die Kreuzung der Stimmlage anders als im Streichquartettsatz ein Problem dar. Um das zu vermeiden, muss die Bearbeitung an diesen Stellen zwangsläufig eine andere Stimmaufteilung als die des Streichquartetts vorgeben.  
 Da aber die Stimmführung bei einer Fuge von maßgeblicher Bedeutung ist, erfolgt die Bearbeitung des strengen Fugenabschnittes (T. 26–158) anders: Hier versucht Beethoven die für eine Fugenexposition notwendige Paarung von Dux und Comes und ihre Aufeinanderfolge genauso wie in der originalen Streichquartettfassung beizubehalten – die dadurch entstehenden Handkreuzungen werden je nach Schwierigkeit der Ausführung beibehalten;[^31] dafür werden aber die freien Stimmen selbständiger behandelt, wie beispielsweise in T. 61/63:
 
-<!-- Abbildung fehlt: wp-content/uploads/…/Abb.1.png; nach Wiederbeschaffung als Bild mit Unterschrift einsetzen -->
-*Abb. 1: T. 60/62–63/65, Perspektive: Fassungssynopse* [Anm. 2026: Die Abbildung ist derzeit nicht verfügbar und wird nachgereicht.]
+![T. 60/62–63/65, Perspektive: Fassungssynopse](/assets/images/publications/vergleich-133-134/op133-134_abb1.png)
+*T. 60/62–63/65, Perspektive: Fassungssynopse*
 
 Hier wird das Fugenthema ab T. 62 von der 1. Violine gespielt, das Kontrasubjekt ab T. 61 vom Cello: diese Stimmen bleiben in op. 134 unverändert. Dagegen werden die Triolenpassagen in den inneren Stimmen, die in diesem Fall keine wichtige kontrapunktische Rolle spielen, freier behandelt und in andere, für Pianisten günstigere Lagen, verschoben.
 
 Die weiteren Abschnitte des Werkes werden vorwiegend durch Oktavierung bearbeitet, außer in wenigen Fällen, wie z. B. in T. 365/367–376/378:
 
-<!-- Abbildung fehlt: wp-content/uploads/…/Abb.2.png; nach Wiederbeschaffung als Bild mit Unterschrift einsetzen -->
-*Abb. 2: T. 363/365–368/370, Perspektive: Fassungssynopse* [Anm. 2026: Die Abbildung ist derzeit nicht verfügbar und wird nachgereicht.]
+![T. 363/365–368/370, Perspektive: Fassungssynopse](/assets/images/publications/vergleich-133-134/op133-134_abb2.png)
+*T. 363/365–368/370, Perspektive: Fassungssynopse*
 
 Die springenden Läufe im schnelleren Tempo bei der 2. Violine hätten sich spieltechnisch ungünstig erwiesen. Deswegen wandelt Beethoven sie in eine für Pianisten bequemere Variante um, bei der die großen Sprünge teils durch Oktavierung und teils durch Tilgungen vermieden werden.
 
@@ -137,18 +137,18 @@ Folgende Perspektiven in der *VideApp<sub>Arr</sub>* eignen sich am besten, um o
 
 - **[Einzelnotenvergleich](/dokumentation/videapp-arr/#einzelnotenvergleich)** im Fall von durchgehenden Oktavierungen, die in Orange angezeigt werden (beispielweise T. 149/151–156/158):
 
-<!-- Abbildung fehlt: wp-content/uploads/…/Abb.3.png; nach Wiederbeschaffung als Bild mit Unterschrift einsetzen -->
-*Abb. 3: T. 149/151–152/155, Perspektive: Einzelnotenvergleich* [Anm. 2026: Die Abbildung ist derzeit nicht verfügbar und wird nachgereicht.]
+![T. 149/151–152/155, Perspektive: Einzelnotenvergleich](/assets/images/publications/vergleich-133-134/op133-134_abb3.png)
+*T. 149/151–152/155, Perspektive: Einzelnotenvergleich*
 
 - Die Perspektive **Bearbeitungsmaßnahmen** im Fall von Verdoppelungen und Hinzufügungen, die ansonsten beim Einzelnotenvergleich als einfache Oktavierungen angezeigt würden, wie beispielsweise in T. 258/260, 261/263, 265/267. Hier werden die hinzugefügten Elemente in Grün hervorgehoben und die [Tilgungen]({% link _glossary/tilgung.md %}) in Rot:
 
-<!-- Abbildung fehlt: wp-content/uploads/…/Abb.4def.png; nach Wiederbeschaffung als Bild mit Unterschrift einsetzen -->
-*Abb. 4: T. 257/259–261/263, Perspektive: Bearbeitungsmaßnahmen* [Anm. 2026: Die Abbildung ist derzeit nicht verfügbar und wird nachgereicht.]
+![T. 257/259–261/263, Perspektive: Bearbeitungsmaßnahmen](/assets/images/publications/vergleich-133-134/op133-134_abb4def.png)
+*T. 257/259–261/263, Perspektive: Bearbeitungsmaßnahmen*
 
 - **[Stimmenkontur](/dokumentation/videapp-arr/#stimmenkontur)** für die genannten idiomatischen Varianten, da an diesen Stellen die Melodielinien stark von einander abweichen, vgl. beispielsweise die Eröffnungstakte.[^32]
 
-<!-- Abbildung fehlt: wp-content/uploads/…/Abb.5.png; nach Wiederbeschaffung als Bild mit Unterschrift einsetzen -->
-*Abb. 5: Eröffnungstakte in beide Fassungen (Op. 134: grün; Op. 133: rot), Perspektive: Stimmenkontur* [Anm. 2026: Die Abbildung ist derzeit nicht verfügbar und wird nachgereicht.]
+![Eröffnungstakte in beide Fassungen (Op. 134: grün; Op. 133: rot), Perspektive: Stimmenkontur](/assets/images/publications/vergleich-133-134/op133-134_abb5.png)
+*Eröffnungstakte in beide Fassungen (Op. 134: grün; Op. 133: rot), Perspektive: Stimmenkontur*
 
 ## Hinweise zur Codierung
 
