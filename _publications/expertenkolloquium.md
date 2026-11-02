@@ -121,12 +121,10 @@ Aber beim Übergang von der schriftbildlichen Skriptur des Dokuments bzw. von de
 
 Aber die nach der Chronologie der Schreibprozesse geordneten temporären Notentext-*Produkte*, die wir im rechten Bildbereich unseres Prototypen abbilden, sind trotz ihrer (aufgrund von Rendering-Problemen) gegenwärtig noch unvollkommenen Gestalt wesentlich mehr als bloße „Transkriptionen“ des Prozess*resultats* auf Notenpapier: Sie sind in dem anfangs erwähnten Sinne als *Texte* funktional verbunden mit dem *Dokument* und aus der Codierung des logischen Substrats der dort (mit Hilfe der Metatexte) erschlossenen Textbewegungen *erzeugt*. (Daraus ergeben sich eine ganze Reihe von „Kollateralvorteilen“, die an dieser Stelle nicht erläutert werden können, die aber Thema der folgenden Diskussionen sein sollen.)
 
-<!-- Abbildung fehlt: wp-content/uploads/…/Veit_Abb_01.png -->
+![Prototyp 1 mit Variantendarstellung in der 2015 aktuellen Verovio-Version.](/assets/images/publications/expertenkolloquium/Veit_Abb_01.png)
 
 Abb. 1: Prototyp 1 mit Variantendarstellung in der 2015 aktuellen Verovio-Version.
 {: .bildunterschrift}
-
-[Anm. 2026: Die Abbildung ist derzeit nicht verfügbar und wird nachgereicht.]
 
   
 
@@ -371,48 +369,38 @@ Im Laufe der Arbeit an der *Faust*-Edition (2009ff.) ist das Problem der Variant
 
 Die Faust-Edition strebt danach, sowohl die innerhandschriftlichen Varianten selbst als auch deren skripturale Indikatoren gleichberechtigt festzuhalten. Dies geschieht in zwei separaten XML-Transkripten.<sup id="textwachstum-und-variantenbildung-aus-der-sicht-des-faust-projekts-fnref-3"><a href="#textwachstum-und-variantenbildung-aus-der-sicht-des-faust-projekts-fn-3">3</a></sup>Wesentlicher Anlass und zugleich bleibendes Problem der Trennung beider Ebenen war die Festlegung des von einer Variante betroffenen „Textsegments“. Dessen Umfang lässt sich nicht allein aufgrund skripturaler Indikatoren bestimmen. Schreibökonomisches Verhalten zielt ja gerade darauf ab, diese Indikatoren im Verhältnis zur Variante zu minimieren.<sup id="textwachstum-und-variantenbildung-aus-der-sicht-des-faust-projekts-fnref-4"><a href="#textwachstum-und-variantenbildung-aus-der-sicht-des-faust-projekts-fn-4">4</a></sup>
 
-<!-- Abbildung fehlt: wp-content/uploads/…/Bruening_Abb_02.png -->
+![Um-Schreibung „B“ zu „L“.](/assets/images/publications/expertenkolloquium/Bruening_Abb_02.png){: width="400"}
 
 Abb. 1: Um-Schreibung „B“ zu „L“.
 {: .bildunterschrift}
 
-[Anm. 2026: Die Abbildung ist derzeit nicht verfügbar und wird nachgereicht.]
-
 In Abb. 1 ist zu erkennen, wie der Buchstabe B durch Um-Schreibung unter Nutzung großer Teile des ursprünglichen Buchstaben in ein L umgewandelt wurde.<sup id="textwachstum-und-variantenbildung-aus-der-sicht-des-faust-projekts-fnref-5"><a href="#textwachstum-und-variantenbildung-aus-der-sicht-des-faust-projekts-fn-5">5</a></sup>In der Transkription werden aber nur ganze Buchstaben verzeichnet, der mögliche Umfang von Varianten ist dadurch nach unten von vornherein begrenzt.
 
-<!-- Abbildung fehlt: wp-content/uploads/…/Bruening_Abb_03.png -->
+![Um-Schreibung „B“ zu „L“.](/assets/images/publications/expertenkolloquium/Bruening_Abb_03.png){: width="400"}
 
 Abb. 2: Um-Schreibung „B“ zu „L“.
 {: .bildunterschrift}
 
-[Anm. 2026: Die Abbildung ist derzeit nicht verfügbar und wird nachgereicht.]
-
 Schon im dokumentarischen Transkript (vgl. Abb. 2) wird also vom handschriftlichen Befund insofern abstrahiert, als auf eine abstrakte, immaterielle Einheit bezuggenommen wird. Im textuellen Transkript stellt sich die Frage, welche Variante sich aus der Um-Schreibung des Buchstabens in einen anderen ergibt. Deren Umfang hängt davon ab, welche sprachliche Einheit von einer Variante betroffen ist. In diesem Fall hatte der Schreiber in der Vorlage ein falsches Wort, nämlich „Band“ gelesen, und der Dichter hat das richtige Wort „Land“ in besonders schreibökonomischer Weise wiederhergestellt (vgl. Abb. 3):
 
-<!-- Abbildung fehlt: wp-content/uploads/…/Bruening_Abb_04.png -->
+![Korrektur der Verlesung „Band“ zu „Land“.](/assets/images/publications/expertenkolloquium/Bruening_Abb_04.png){: width="400"}
 
 Abb. 3: Korrektur der Verlesung „Band“ zu „Land“.
 {: .bildunterschrift}
 
-[Anm. 2026: Die Abbildung ist derzeit nicht verfügbar und wird nachgereicht.]
-
 Für die Verzeichnung der Variante wird also ein größeres Textsegment gewählt, als dies vom skripturalen Indikator vorgegeben ist.<sup id="textwachstum-und-variantenbildung-aus-der-sicht-des-faust-projekts-fnref-6"><a href="#textwachstum-und-variantenbildung-aus-der-sicht-des-faust-projekts-fn-6">6</a></sup>
 
-<!-- Abbildung fehlt: wp-content/uploads/…/Bruening_Abb_05.png -->
+![Korrektur von „freut sich“ zu „freuet“.](/assets/images/publications/expertenkolloquium/Bruening_Abb_05.png){: width="600"}
 
 Abb. 4: Korrektur von „freut sich“ zu „freuet“.
 {: .bildunterschrift}
 
-[Anm. 2026: Die Abbildung ist derzeit nicht verfügbar und wird nachgereicht.]
-
 Der in Abb. 4 dargestellte Fall ist ganz ähnlich gelagert. Aus textueller Perspektive ist dem Wort „freut“ nicht etwa nur ein Buchstabe hinzugefügt, vielmehr ist die Silbenstruktur des Worts geändert, eine einsilbige Wortform ist durch eine zweisilbige ersetzt worden. Der skripturale Indikator gibt also auch nicht unmittelbar Aufschluss darüber, ob eine bloße Hinzufügung oder eine Ersetzung vorliegt.
 
-<!-- Abbildung fehlt: wp-content/uploads/…/Bruening_Abb_06.png -->
+![Entstehung einer Textvariante durch Umwidmung.](/assets/images/publications/expertenkolloquium/Bruening_Abb_06.png){: width="600"}
 
 Abb. 5: Entstehung einer Textvariante durch Umwidmung.
 {: .bildunterschrift}
-
-[Anm. 2026: Die Abbildung ist derzeit nicht verfügbar und wird nachgereicht.]
 
 Abb. 5 soll zeigen, wohin die Abstraktion von skripturalen Indikatoren bei der Variantenverzeichnung führen kann.<sup id="textwachstum-und-variantenbildung-aus-der-sicht-des-faust-projekts-fnref-7"><a href="#textwachstum-und-variantenbildung-aus-der-sicht-des-faust-projekts-fn-7">7</a></sup>Eine ganze Reihe separater Indikatoren verschmilzt hier zu einer Textvariante. Bemerkenswert ist hier besonders der rechte Rand der Variante. Vom skripturalen Indikator her gesehen gibt es keinen Anlass, das Wort „könnte“ in die Variante einzubeziehen. Stillschweigend findet hier aber ein Wechsel der grammatischen Person von der ersten in die dritte statt, bei homographer Form. Auch hier werden also Teile der Skriptur wiederverwendet. Der Einbezug auch homographer Formen mag diese Art der Variantenverzeichnung auf den ersten Blick luxurierend erscheinen lassen. Denkt man jedoch einen Schritt weiter und fasst eine linguistische Annotation ins Auge, so werden beide Formen benötigt, um die jeweilige grammatische Person angeben zu können.
 
@@ -422,12 +410,10 @@ Die Entscheidung darüber muss zunächst auf der Ebene der primären Verzeichnun
 
 Eine dritte Perspektive wird in editorischen Projekten oft übersehen: die analytische Auswertung. Die Kodierung der *Faust*-Edition verzeichnet Varianten auf der Ebene von Wörtern, wenn das Wort als sprachliche Einheit von einer Variante betroffen ist. Anders wird bislang im Fall von orthographischen Änderungen verfahren.
 
-<!-- Abbildung fehlt: wp-content/uploads/…/Bruening_Abb_07.png -->
+![Um-Schreibung „B“ zu „L“.](/assets/images/publications/expertenkolloquium/Bruening_Abb_07.png){: width="400"}
 
 Abb. 6: Um-Schreibung „B“ zu „L“.
 {: .bildunterschrift}
-
-[Anm. 2026: Die Abbildung ist derzeit nicht verfügbar und wird nachgereicht.]
 
 In Abb. 6 ist zu erkennen, wie die Schreibung des Worts „sprossen“ mit „ß“ in die reguläre Schreibung mit „ss“ korrigiert worden ist. Die Verzeichnung unterhalb der Ebene des Worts trägt der Tatsache Rechnung, dass die Variante oder Korrektur hier nicht das ganze Wort, sondern nur einen Teil des Worts betrifft. Auf der Benutzeroberfläche wird demzufolge das Wort durch die Variantendarstellung unterbrochen und ist damit als Einheit nicht mehr so leicht wahrzunehmen. Auch für die analytische Auswertung stellt die gewählte Form der Kodierung ein Hindernis dar, denn weder die eine noch die andere Schreibung ist als Wortform direkt festgehalten. Schon zur Erstellung eines Wortformenindex wäre also ein Vorverarbeitungsschritt erforderlich. Dasselbe gilt für die Suche nach Typen von Varianten über den gesamten Datenbestand hinweg. Als durch Korrektur getilgte Schreibung ist „sproßen“ nicht direkt greifbar.<sup id="textwachstum-und-variantenbildung-aus-der-sicht-des-faust-projekts-fnref-8"><a href="#textwachstum-und-variantenbildung-aus-der-sicht-des-faust-projekts-fn-8">8</a></sup>Die Festlegung des Textsegments in der primären Verzeichnung entscheidet also darüber, welche Einheiten später als von Varianten betroffen abfragbar und so einer computergestützten Analyse, wie digitale Editionen sie ermöglichen sollen, zugänglich sind.
 
@@ -692,12 +678,10 @@ Zunächst scheint es mir wichtig festzuhalten, dass der Begriff der „Invarianz
 
 Im Rahmen dieser Tagung geht es natürlich um eine ganz andere Fragestellung. Dabei ist jedoch aus der Perspektive der Schönberg-Ausgabe auch hier die Zwölftonmethode insofern von Bedeutung, als sie den Blick auf Probleme lenkt, die sich aus „invarianten Lesarten“ ergeben können und die in grundlegender Weise den Bereich der musikalischen Analyse betreffen. Es geht um das weite Problemfeld der Fehler, die ja in der Editionsphilologie eine zentrale Rolle spielen: und zwar nicht nur zur Bestimmung von Abhängigkeiten überlieferter Textzeugen untereinander und ihrer Nähe oder Ferne zu einem möglicherweise verschollenen „Urtext“ oder „Archetypen“, sondern auch ganz banal zur Konstituierung der vom Komponisten „intendierten“, d. h. von sämtlichen Fehlern bereinigten Textgestalt – einer Textgestalt, bei der es sich natürlich, wie alle im Bereich der Editionsphilologie Tätigen wissen, um ein Phantom handelt. Zur Feststellung derartiger „Fehler“ im engeren Sinn dient üblicherweise die textkritische Untersuchung, also die Bewertung der abweichenden Lesarten oder auch „Varianten“ innerhalb der Überlieferung. Dies ist im Falle Schönbergs von besonderer Bedeutung, da für ihn die Herstellung eines Particells oder einer Reinschriftpartitur auf Grundlage einer „Ersten Niederschrift“ ein mehr oder weniger mechanischer Kopiervorgang war, bei dem ihm auch die gleichen Fehler wie einem Kopisten unterlaufen konnten. Dies erklärt die große Zahl an typischen „Kopistenfehlern“ in seinen Partituren, worunter etwa falsche Akzidentien, fehlerhafte Transpositionen oder auch jene fast schon notorischen „Terzabweichungen“ zu verstehen sind, die durch irrtümliche Versetzung einer Note um eine Notenlinie oder einen Zwischenraum nach oben oder unten zustande kommen. Derartigen Fehlern lässt sich durch die Kollationierung der Quellen und die analytische Bewertung der Varianten durchaus „auf die Schliche“ kommen, auch wenn natürlich nie ganz auszuschließen ist, dass es sich dabei um eine bewusste nachträgliche Änderung handelt.
 
-<!-- Abbildung fehlt: wp-content/uploads/…/kraemer_schoenberg_01.png -->
+![Arnold Schönberg, Serenade op. 24, Satz I: Marsch, T. 125 von oben nach unten: Erste Niederschrift / Particell / Partitu](/assets/images/publications/expertenkolloquium/kraemer_schoenberg_01.png)
 
 Abb. 1: Arnold Schönberg, Serenade op. 24, Satz I: Marsch, T. 125 von oben nach unten: Erste Niederschrift / Particell / Partiturreinschrift (Negativabzug).
 {: .bildunterschrift}
-
-[Anm. 2026: Die Abbildung ist derzeit nicht verfügbar und wird nachgereicht.]
 
 Ein schlagendes Beispiel für den offensichtlich ungewollten Verlust substanzieller Bestandteile des Tonsatzes qua Überlieferung findet sich etwa im I. Satz aus Schönbergs *Serenade op. 24*, wo die im Verlaufsentwurf in T. 125 (vgl. Abb. 1) notierten Doppelgriffe der Bratsche versehentlich nicht ins Particell übernommen und in der Reinschrift dann durch eine Ganztaktpause ersetzt wurden.
 
@@ -705,39 +689,31 @@ Eine derartige philologisch gestützte Methode der Fehlererkennung auf Grundlage
 
 Ich möchte das hier nur kurz umrissene Problem der „invarianten Fehlerüberlieferung“ etwas genauer anhand zweier Beispiele aus Schönbergs Zwölftonkompositionen verdeutlichen, da mit der Zwölftonmethode ein Regelsystem vorliegt, das dem Editor beim Auffinden nicht-intentionaler Tonhöhenabweichungen gute Dienste leisten kann und daher bei editorischen Entscheidungen nicht außer Acht gelassen werden darf. Selbstverständlich gilt es dabei zu berücksichtigen, dass jeder Komponist – selbst Schönberg – die Freiheit hat, bisweilen ganz bewusst gegen das Regelsystem seines Werks zu verstoßen, dass derartige „Fehler im System“ also gleichsam einkalkuliert sein können.
 
-<!-- Abbildung fehlt: wp-content/uploads/…/kraemer_schoenberg_02.png -->
+![Arnold Schönberg, Suite op. 29 für drei Klarinetten, drei Streicher und Klavier, Satz I: Ouverture, T. 177 von links nac](/assets/images/publications/expertenkolloquium/kraemer_schoenberg_02.png)
 
 Abb. 2: Arnold Schönberg, Suite op. 29 für drei Klarinetten, drei Streicher und Klavier, Satz I: Ouverture, T. 177 von links nach rechts: Partiturreinschrift / Erste Niederschrift / Kopistenabschrift / Erstdruck.
 {: .bildunterschrift}
 
-[Anm. 2026: Die Abbildung ist derzeit nicht verfügbar und wird nachgereicht.]
-
 Bei dem ersten Beispiel (vgl. Abb. 2) handelt es sich um die von der kleinen Klarinette gespielte Hauptstimme aus T. 177 des I. Satzes der 1925/1926 entstandenen Suite für drei Klarinetten, drei Streicher und Klavier. Die letzte Sechzehntelnote müsste gemäß der zugrundeliegenden Reihenform U8 – also der untransponierten Umkehrung der Grundreihe – eigentlich *f* ' lauten. Schönberg notierte jedoch stattdessen *d* ' und wiederholte so den zehnten Reihenton anstelle des fehlenden zwölften. Diese Lesart findet sich nicht nur in der Partiturreinschrift, sondern auch bereits in der Ersten Niederschrift wie dann auch in der Kopistenabschrift der Partitur, die dann als Stichvorlage für den Erstdruck diente. Die Überlieferung ist demnach so eindeutig, dass eine Deklaration als „Fehler“ mit den damit einhergehenden Konsequenzen einer besonderen Begründung bedürfte.
 
-<!-- Abbildung fehlt: wp-content/uploads/…/kraemer_schoenberg_03.png -->
+![Arnold Schönberg, Suite op. 29 für drei Klarinetten, drei Streicher und Klavier, Satz I: Ouverture, Partiturreinschrift,](/assets/images/publications/expertenkolloquium/kraemer_schoenberg_03.png)
 
 Abb. 3: Arnold Schönberg, Suite op. 29 für drei Klarinetten, drei Streicher und Klavier, Satz I: Ouverture, Partiturreinschrift, links T. 177, rechts T. 22.
 {: .bildunterschrift}
 
-[Anm. 2026: Die Abbildung ist derzeit nicht verfügbar und wird nachgereicht.]
-
 Eine solche ließe sich etwa mit Hinweis auf die Parallelstelle T. 22 anführen (vgl. Abb. 3), wo die entsprechende Stimme von der Geige mit dem „korrekten“ 12. Reihenton *f* gespielt wird. Der „invarianten“ Überlieferung der problematischen Lesart steht also eine „Variantenbildung“ innerhalb des Satzverlaufs entgegen, was eine Entscheidung des Herausgebers hinsichtlich der vom Komponisten mutmaßlich „intendierten“ Textgestalt allerdings nur bedingt erleichtert. Festzuhalten bleibt jedenfalls, dass in diesem Fall die Invarianz der Überlieferung grundlegend für die Textkonstitution ist, weshalb ihre angemessene Darstellung im Rahmen einer Edition dringend geboten erscheint.
 
-<!-- Abbildung fehlt: wp-content/uploads/…/kraemer_schoenberg_04.png -->
+![Arnold Schönberg, Begleitungsmusik zu einer Lichtspielscene op. 34, T. 184–186 von links nach rechts: Erstdruck / Partit](/assets/images/publications/expertenkolloquium/kraemer_schoenberg_04.png)
 
 Abb. 4: Arnold Schönberg, Begleitungsmusik zu einer Lichtspielscene op. 34, T. 184–186 von links nach rechts: Erstdruck / Partiturreinschrift (Negativabzug) / Erste Niederschrift.
 {: .bildunterschrift}
 
-[Anm. 2026: Die Abbildung ist derzeit nicht verfügbar und wird nachgereicht.]
-
 Das zweite Beispiel (vgl. Abb. 4) entstammt Schönbergs *Begleitungsmusik zu einer Lichtspielscene op. 34* von 1929/1930. Es zeigt den Anfang des Epilogs, der sich mit einer von den Streichern unisono gespielten Melodie über konduktartig wiederholten Bläserakkorden an den in mehreren Steigerungsbögen erreichten katastrophalen Zusammenbruch Mahler’schen Zuschnitts anschließt. Diese Melodie stellt eine Art Synthese der beiden kontrastierenden Themen des ersten Abschnitts dar, indem sie den Rhythmus des ersten mit dem diastematischen Verlauf des zweiten kombiniert. Ähnlich wie im vorigen Beispiel aus der Suite kommt es in T. 186 zu einer Abweichung im Verlauf der zugrundeliegenden Reihenform U₊₂ – das ist die um eine große Sekunde abwärts transponierte Umkehrung –, deren 6. Reihenton *e* hier (und nur hier) durch eine Wiederholung des 3. Tons *d* ersetzt ist. Da das *e* auch in keinem der aus den Tönen der zweiten Reihenhälfte bestehenden Begleitakkorde vorkommt, scheint ein Versehen Schönbergs nicht ausgeschlossen, zumal eine mögliche Verwechslung von kleiner Septime und kleiner None durchaus als einigermaßen plausible Erklärung dienen könnte. Gegen eine Deklaration als Fehler spricht jedoch die „invariante“ Überlieferung: Der „falsche“ Ton findet sich nicht nur im Erstdruck, sondern auch im Negativ-Photoabzug der verschollenen Partiturreinschrift wie auch in der fragmentarisch überlieferten Ersten Niederschrift. Überdies hat Schönberg die Unisono-Melodie der Streicher in der Partiturreinschrift in jeder einzelnen Stimme ausgeschrieben, d. h. den vermeintlichen „Fehler“ insgesamt viermal in drei verschiedenen Schlüsseln notiert, so dass die Invarianz nicht nur ein zeitliches Merkmal der Überlieferung, sondern auch ein räumliches der Niederschrift selbst ist. Dies ist insofern bemerkenswert, als sich Schönberg zu dieser Zeit bereits intensiv mit den Möglichkeiten einer Partiturform beschäftigte, die die Vorteile von Particell und Partitur verbindet und die dann in den folgenden Orchesterpartituren zur Norm werden sollte.
 
-<!-- Abbildung fehlt: wp-content/uploads/…/kraemer_schoenberg_05.png -->
+![Arnold Schönberg, Begleitungsmusik zu einer Lichtspielscene op. 34, Skizze, T. 178ff.](/assets/images/publications/expertenkolloquium/kraemer_schoenberg_05.png)
 
 Abb. 5: Arnold Schönberg, Begleitungsmusik zu einer Lichtspielscene op. 34, Skizze, T. 178ff.
 {: .bildunterschrift}
-
-[Anm. 2026: Die Abbildung ist derzeit nicht verfügbar und wird nachgereicht.]
 
 Für eine Erörterung der Frage der „intendierten Werkgestalt“ ist übrigens auch ein Entwurf zum Anfang des Epilogs von Interesse (vgl. Abb. 5), in dem der Halbtonschritt zwischen dem 5. und 6. Reihenton nicht als *ab*steigende große Septime, sondern als *auf*steigende kleine None notiert ist. Dieses expressiv aufgeladene Intervall war also offensichtlich bereits Bestandteil der allerersten Konzeption dieser Stelle.
 
@@ -985,21 +961,17 @@ Unsere Codierung von Musik mit den Mitteln der [*Music Encoding Initiative* (MEI
 
 Ein direkter Vergleich der Modelle von TEI und MEI zeigt einen gravierenden Unterschied in der Auszeichnung von Inhalten. Denn durch das Ausblenden des Markups eines codierten Ausschnittes bleibt auf TEI-Seite der tatsächliche Inhalt des Textes stehen, auf MEI-Seite verschwinden jedoch alle inhaltlichen Informationen zur Musik. Bezeichnenderweise bleibt dort allein die Textunterlegung stehen (vgl. Abb.1).
 
-<!-- Abbildung fehlt: wp-content/uploads/…/EG_Hartwig_Kepper_Abb_01.png -->
+![Hier ist oben ein in TEI ausgezeichneter Tagebucheintrag von Carl Maria von Weber zu sehen, darunter eine in MEI ausgeze](/assets/images/publications/expertenkolloquium/EG_Hartwig_Kepper_Abb_01.png)
 
 Abb. 1: Hier ist oben ein in TEI ausgezeichneter Tagebucheintrag von Carl Maria von Weber zu sehen, darunter eine in MEI ausgezeichnete einzelne Note, entnommen einem Beispiel aus Beethovens op. 75,2. In beiden Fällen wurde das Markup weitgehend ausgeblendet.
 {: .bildunterschrift}
 
-[Anm. 2026: Die Abbildung ist derzeit nicht verfügbar und wird nachgereicht.]
-
 Eine Codierung innerhalb der Literaturwissenschaften zielt also auf das Dokument, den Befund ab („documentary transcript“) und erlaubt eine diplomatische Rekonstruktion, während eine zweite Codierung auf den Text abzielt und inhaltlich ausgerichtet ist („textual transcript“) (vgl. Abb. 2).<sup id="das-datenmodell-von-beethovens-werkstatt-fnref-1"><a href="#das-datenmodell-von-beethovens-werkstatt-fn-1">1</a></sup>
 
-<!-- Abbildung fehlt: wp-content/uploads/…/EG_Hartwig_Kepper_Abb_03.png -->
+![Gegenüberstellung von Dokument und Text in der Literaurwissenschaft.](/assets/images/publications/expertenkolloquium/EG_Hartwig_Kepper_Abb_03.png)
 
 Abb. 2: Gegenüberstellung von Dokument und Text in der Literaurwissenschaft.
 {: .bildunterschrift}
-
-[Anm. 2026: Die Abbildung ist derzeit nicht verfügbar und wird nachgereicht.]
 
 Hier werden demnach Buchstaben und Zeichen linguistischen Einheiten gegenübergestellt, welche aber mit demselben Zeichenvorrat erfasst werden und die prozessbeschreibenden Elemente, die darin enthalten sind, nicht in Gänze verdeutlichen können.
 
@@ -1011,12 +983,10 @@ In der Musik gilt es somit, das zentrale Problem der Unvollständigkeit des Befu
 
 Ein skizzenhafter Melodieverlauf, wie in der Abbildung aus Beethovens op. 111, lässt kaum Rückschlüsse auf deren Rhythmik zu: In der Abbildung ist ein Lauf von Noten zu sehen, der skriptural nur aus Notenköpfen (im weitesten Sinne) und Hälsen besteht.
 
-<!-- Abbildung fehlt: wp-content/uploads/…/EG_Hartwig_Kepper_Abb_04.png -->
+![Skizzenhafter Melodieverlauf in Ludwig van Beethovens Sonate op. 111, Autograph, D-BNba, BH 71, S. 17.](/assets/images/publications/expertenkolloquium/EG_Hartwig_Kepper_Abb_04.png){: width="400"}
 
 Abb. 3: Skizzenhafter Melodieverlauf in Ludwig van Beethovens Sonate op. 111, Autograph, D-BNba, BH 71, S. 17.
 {: .bildunterschrift}
-
-[Anm. 2026: Die Abbildung ist derzeit nicht verfügbar und wird nachgereicht.]
 
 Würde an dieser Stelle ausschließlich der Befund betrachtet, müssten die Noten mit den Attributen „Notenhals nach unten“ (@stem.dir=„down“) und „Notenkopf in der Form einer Viertel“ (@head.shape=„quarter“) beschrieben werden.
 
@@ -1024,12 +994,10 @@ An dieser Stelle geht das Codierungsmodell des Projekts in den analogen und digi
 
 Also sehen die beschriebenen Noten im Codierungsmodell völlig anders aus, da sie im Markup direkt als Sechzehntel interpretiert werden (vgl. Abb. 4).
 
-<!-- Abbildung fehlt: wp-content/uploads/…/EG_Hartwig_Kepper_Abb_05.png -->
+![Skizze und Codierung des Melodieverlaufs aus op. 111, D-BNba, BH 71.](/assets/images/publications/expertenkolloquium/EG_Hartwig_Kepper_Abb_05.png)
 
 Abb. 4: Skizze und Codierung des Melodieverlaufs aus op. 111, D-BNba, BH 71.
 {: .bildunterschrift}
-
-[Anm. 2026: Die Abbildung ist derzeit nicht verfügbar und wird nachgereicht.]
 
 Die Frage ist nun aber, wie neben dieser Deutung der Befund der Quelle wiedergegeben werden kann, wenn eine klare Trennung zwischen Dokument und Text angestrebt wird. Während die inhaltliche und interpretatorische Erfassung auf Seiten der MEI-Codierung geschieht, werden alle graphischen Zeichen und Elemente des Faksimiles nachgezeichnet und in SVG-Shapes erfasst.
 
@@ -1037,12 +1005,10 @@ Dies geschieht am besten durch die absolut getreue Wiedergabe jedes einzelnen Ze
 
 Diese manuelle Markierung der einzelnen Schreibspuren dauert etwa 8 bis 12 Stunden pro Seite, wobei sogenannte Pfade entstehen, welche die genaue Form jeder Schreibspur auf Ebene einzelner Striche beschreiben. Diese Vektoren werden als [SVG](https://www.w3.org/Graphics/SVG/)-Datei generiert und gespeichert. SVG steht für [Scalable Vector Graphics](https://www.w3.org/TR/SVG2/) und meint ein weiteres XML-Format, welches für beliebige Grafikdateien genutzt wird. Der wesentliche Vorteil von SVG ist, dass es sich dabei um ein gegenüber den Inhalten agnostisches Grafikformat handelt, welches sich gerade keiner musikalischen Terminologie bedient und damit auch nicht zu einer Interpretation nötigt. Eine SVG-Shape ist lediglich eine inhaltsleere Beschreibung einer aus technischer Sicht beliebigen Form, die erst in der MEI-Codierung durch die Verknüpfung mit einem musikalischen Zeichen als solche erkannt wird.
 
-<!-- Abbildung fehlt: wp-content/uploads/…/EG_Hartwig_Kepper_Abb_06.png -->
+![Beispiel eines SVG-Pfades eines Bogens.](/assets/images/publications/expertenkolloquium/EG_Hartwig_Kepper_Abb_06.png){: width="600"}
 
 Abb. 5: Beispiel eines SVG-Pfades eines Bogens.
 {: .bildunterschrift}
-
-[Anm. 2026: Die Abbildung ist derzeit nicht verfügbar und wird nachgereicht.]
 
 Für unser Datenmodell ergibt sich daraus folgende Dreiteilung:
 
@@ -1050,12 +1016,10 @@ Ausgehend vom Faksimile werden Einzelzeichen als SVG identifiziert und können a
 
 Vergleicht man dieses Modell nun mit dem eingangs erwähnten Ansatz der TEI, so zeigt sich auch hier eine grundsätzliche Zweiteilung der Codierung, welche die Kategorien „Dokument“ und „Text“ separat adressiert. Allerdings werden dabei bewusst zwei unterschiedliche Beschreibungssprachen genutzt: Während die Transkription des Textes als bewusste Deutung eine inhaltliche Codierung mittels MEI nutzt, wird das Dokument als rein graphisches, d. h. inhaltsagnostisches SVG erfasst. Obwohl gerade bei sich überlagernden Zeichen bereits die Festlegung ihrer Konturen eine Interpretation, d. h. Deutung ist, wird durch diesen bewussten Verzicht auf eine inhaltlich-terminologische Festlegung größtmögliche Objektivität in der Erfassung des Befunds erreicht.
 
-<!-- Abbildung fehlt: wp-content/uploads/…/EG_Hartwig_Kepper_Abb_07.png -->
+![Vergleich der Modelle von TEI und MEI.](/assets/images/publications/expertenkolloquium/EG_Hartwig_Kepper_Abb_07.png)
 
 Abb. 6: Vergleich der Modelle von TEI und MEI.
 {: .bildunterschrift}
-
-[Anm. 2026: Die Abbildung ist derzeit nicht verfügbar und wird nachgereicht.]
 
 Die in Abb. 6 erkennbare Aufteilung der Codierung des Textes folgt dabei ebenfalls einer anderen Motivation als im Modell der TEI.
 
@@ -1065,30 +1029,24 @@ In einem ersten Schritt lassen sich die verschiedenen, vom Herausgeber erkannten
 
 Aber auch neuartige Vermittlungsformen, die in besonderer Weise textgenetische Zusammenhänge und Prozesse verdeutlichen können, werden durch das Datenmodell von *Beethovens Werkstatt* ermöglicht. Das bereits im Beitrag von Susanne Cox vorgestellte Konzept der Invarianz etwa basiert technisch auf der Verbindung zwischen den mit [*Verovio*](http://www.verovio.org/) dargestellten Transkriptionen und den zugrundeliegenden MEI-Codierungen. Letztere werden dazu um die spezifischen Informationen zur Abhängigkeit der Noten verschiedener Varianten ergänzt.<sup id="das-datenmodell-von-beethovens-werkstatt-fnref-2"><a href="#das-datenmodell-von-beethovens-werkstatt-fn-2">2</a></sup>Eine weitere, im Rahmen der Arbeiten an Beethovens Lied op. 75,2 konzipierte und erstmals umgesetzte Präsentationsform ist die sogenannte „Rekonstruktionsansicht“. Diese nutzt die nachgezeichneten SVG-Shapes der Noten- und sonstigen Zeichen, die Schreibschicht für Schreibschicht auf ihrer ebenfalls nachgezeichneten leeren Notenseite eingeblendet werden können. Solche Darstellungen früherer Zustände von Manuskripten, also letztlich Zwischenstadien im Beschreibungsprozess, gab es bereits in früheren Publikationen. Allerdings handelt es sich dabei durchgängig um manuell erstellte Bilddateien. Diese erfüllen zunächst durchaus ihren Zweck – sie vermitteln dem Benutzer anschaulich, wie ein Manuskript zu einem bestimmten Zeitpunkt mutmaßlich aussah. Allerdings bleiben sie letztlich wie eine gedruckte Ausgabe statisch und ohne Interaktion. Es ist gerade nicht möglich, einzelne Zeichen gezielt bis in die Codierung zu verfolgen und ihre Deutung kritisch zu hinterfragen. Auch für den Herausgeber, in diesem Fall also den Bildbearbeiter, bleibt es beim alten Paradigma, sich auf eine Deutung festlegen zu müssen.<sup id="das-datenmodell-von-beethovens-werkstatt-fnref-3"><a href="#das-datenmodell-von-beethovens-werkstatt-fn-3">3</a></sup>*Beethovens Werkstatt* versucht demgegenüber, keine Sicherheit vorzuspiegeln, wo der Herausgeber nicht zuverlässig entscheiden kann, in welcher Reihenfolge bestimmte Schreibprozesse erfolgt sind. Ein in den Digital Humanities vielbeachtetes Beispiel, Elena Pierazzos „Proust Prototype“ [Anm. 2026: Der Prototyp ist unter der ursprünglichen Adresse nicht mehr erreichbar; [archivierte Fassung im Internet Archive](https://web.archive.org/web/20200324145318/http://research.cch.kcl.ac.uk/proust_prototype/).], versucht diese Unsicherheit durch eine Einfärbung der jeweils überblendeten Transkription zu verdeutlichen (vgl. Abb. 7). Dabei wird allerdings lediglich die Unsicherheit als solche vermittelt; welche Alternativen zur gewählten Reihenfolge bestehen, ist hingegen nicht ersichtlich.
 
-<!-- Abbildung fehlt: wp-content/uploads/…/EG_Hartwig_Kepper_Abb_10.png -->
+![„Proust Prototype“: Der Benutzer kann in der vermuteten Reihenfolge des Beschreibens der Seite den einzelnen Textbereich](/assets/images/publications/expertenkolloquium/EG_Hartwig_Kepper_Abb_10.png)
 
 Abb. 7: „Proust Prototype“: Der Benutzer kann in der vermuteten Reihenfolge des Beschreibens der Seite den einzelnen Textbereichen Transkriptionen überlagern. Deren Einfärbung zeigt an, wie sicher ihre jeweilige Position in der Reihenfolge ist: Je gelber der Text hinterlegt ist, umso eher könnte er auch zu einem anderen (relativen) Zeitpunkt niedergeschrieben worden sein.
 {: .bildunterschrift}
 
-[Anm. 2026: Die Abbildung ist derzeit nicht verfügbar und wird nachgereicht.]
-
 In der Rekonstruktionsansicht von *Beethovens Werkstatt* hingegen werden bewusst mehrere Möglichkeiten angeboten, wenn aus editorischer Sicht keine hinreichend sichere Aussage zur Reihenfolge getroffen werden kann. Damit kann der Benutzer verschiedene Möglichkeiten rekonstruieren und eigenständig auf ihre Plausibilität hin überprüfen (vgl. Abb. 8).
 
-<!-- Abbildung fehlt: wp-content/uploads/…/EG_Hartwig_Kepper_Abb_11.png -->
+![Rekonstruktionsansicht von Beethovens Werkstatt. Die auf der rechten Seite aufgelisteten Schreibschichten lassen sich ch](/assets/images/publications/expertenkolloquium/EG_Hartwig_Kepper_Abb_11.png)
 
 Abb. 8: Rekonstruktionsansicht von Beethovens Werkstatt. Die auf der rechten Seite aufgelisteten Schreibschichten lassen sich chronologisch von oben (früher) nach unten (später) einblenden. Stehen zwei Schichten nebeneinander, ist ihre Reihenfolge nicht zu entscheiden, der Benutzer kann selbst alle Möglichkeiten ausprobieren und eigene Schlüsse ziehen. Für die rot hinterlegten Streichungen gibt es nur einen frühestmöglichen Zeitpunkt, zu dem sie ausgeführt worden sein können; ihre Relation zu den später hinzugekommenen Schreibschichten lässt sich dagegen nicht bestimmen.
 {: .bildunterschrift}
 
-[Anm. 2026: Die Abbildung ist derzeit nicht verfügbar und wird nachgereicht.]
-
 Auf diese Weise wird also der Erkenntnisstand des Herausgebers sehr viel korrekter wiedergegeben, als dies mit anderen Lösungen möglich wäre: Als Benutzer kann man nicht nur das Beschreiben der Seite Schritt für Schritt „mitverfolgen“, man kann auch sehen, welche Konsequenzen denkbare unterschiedliche Abfolgen haben. In traditionellen Ausgaben ließen sich diese Informationen bzw. Alternativen lediglich verbal vermitteln – und damit i. d. R. deutlich schlechter nachvollziehen.
 
-<!-- Abbildung fehlt: wp-content/uploads/…/EG_hartwig_kepper_Abb_12.png -->
+![Das Datenmodell von Beethovens Werkstatt mit einigen Anwendungsbereichen im Überblick.](/assets/images/publications/expertenkolloquium/EG_hartwig_kepper_Abb_12.png)
 
 Abb. 9: Das Datenmodell von Beethovens Werkstatt mit einigen Anwendungsbereichen im Überblick.
 {: .bildunterschrift}
-
-[Anm. 2026: Die Abbildung ist derzeit nicht verfügbar und wird nachgereicht.]
 
 Auch diese innovative Darstellungsform basiert, ebenso wie das Konzept der Invarianz, auf den bereits erwähnten Komponenten des projekteigenen Datenmodells (vgl. Abb. 9). In diesem nimmt MEI die zentrale Rolle ein – ohne die vielfältigen Verknüpfungs- und Beschreibungsmöglichkeiten dieses Datenformats wären digitale Editionen nicht in vergleichbarer Komplexität bzw. Interaktivität möglich. Gleichzeitig wird deutlich, dass trotz des sehr spezifischen Gebrauchs dieses Formats eine Rückkopplung an allgemeine Werkzeuge aus der MEI-Community, insbesondere [*Verovio*](http://www.verovio.org/), sehr gut möglich ist und sogar wesentlich zum Erfolg des Projekts beiträgt. Damit nimmt das Datenmodell eine sehr zentrale Rolle in *Beethovens Werkstatt* ein: Es erfasst alle editorisch-inhaltlichen Erkenntnisse des Projekts in formalisierter Form, dient als Grundlage sämtlicher Darstellungs- und Publikationsformen, und stellt gleichzeitig die technische Verbindung zu anderen Projekten her.
 
@@ -1236,32 +1194,26 @@ Da es in der Musik um die Kunst des Hörens geht, muss angenommen werden, dass B
 
 Lassen Sie uns die Übertragungen des besagten Quellenbeispiels näher betrachten, wie sie im ersten Prototyp des Projekts vorgelegt werden. Sie sind als Varianten **a** bis **c** bezeichnet (vgl. Abb. 1).
 
-<!-- Abbildung fehlt: wp-content/uploads/…/Kinderman_Abb_BW_01.png -->
+![Beethovens Werkstatt, Prototyp 1 zu op. 111, Satz I, T. 132f. Varianten a bis c in der Anzeige mit Verovio.(https://www.](/assets/images/publications/expertenkolloquium/Kinderman_Abb_BW_01.png){: width="400"}
 
 Abb. 1: Beethovens Werkstatt, Prototyp 1 zu op. 111, Satz I, T. 132f. Varianten **a** bis **c** in der Anzeige mit [Verovio.](https://www.verovio.org/index.xhtml)
 {: .bildunterschrift}
 
-[Anm. 2026: Die Abbildung ist derzeit nicht verfügbar und wird nachgereicht.]
-
 Varianten **a** und **b** sind fast identisch; wie dem Faksimile (vgl. Abb. 2) zu entnehmen ist, besteht der einzige Unterschied bezüglich der letzten Note: Es geht darum, ob sie als *Fis* anstatt als *Es* gelesen wird. Im Manuskript erweckt diese Änderung den Eindruck, dass es sich dabei wahrscheinlich um einen flüchtigen Schreibfehler handelt, den Beethoven sofort von *Fis* in *Es* korrigiert hat. Es fragt sich also, ob wir hier sinnvoll von einer bedeutenden „Variante“ sprechen können.
 
-<!-- Abbildung fehlt: wp-content/uploads/…/Kinderman_Abb_BW_02.png -->
+![Beethovens Werkstatt, Sonate op. 111, Satz I, T. 132f. Faksimile des Autographs mit Hervorhebung von Variante b, Beethov](/assets/images/publications/expertenkolloquium/Kinderman_Abb_BW_02.png)
 
 Abb. 2: Beethovens Werkstatt, Sonate op. 111, Satz I, T. 132f. Faksimile des Autographs mit Hervorhebung von Variante **b**, Beethoven-Haus Bonn, BH 71, S. 14 (Ausschnitt).
 {: .bildunterschrift}
-
-[Anm. 2026: Die Abbildung ist derzeit nicht verfügbar und wird nachgereicht.]
 
 Wichtiger ist die Registerlage zu Beginn dieses Abschnitts. Er entspricht dem Takt 132 der Endfassung des Satzes. Diese Stelle erscheint am Ende einer längeren aufsteigenden Passage. Beethoven notiert „in 8^(va)“ im ersten Takt des Manuskripts BH 71, Seite 14, wodurch deutlich wird, dass die Musik hier das höchstmögliche Klavierregister erreicht. Das Problem der Tonlage betrifft alle drei der sogenannten Varianten, die im Prototyp übertragen worden sind. Ist es plausibel, dass Beethoven hier einen plötzlichen Sprung vom *H* hinab zum *C* beabsichtigte, um dann nach vier Sechzehntelnoten vom *C* wieder bis *Fis* hinaufzuspringen? Man muss also die Notierung „8^(va)“ auch für diese vier Noten weiterhin editorisch gelten lassen. Musikalisch, aber auch unter rein technischen Aspekten des Klaviersatzes hat eine solche abrupte Diskontinuität wenig Sinn. Außerdem gibt es über dem stark revidierten dritten Takt von Seite 14 die Bleistift-Notierung „8^(v\[a\]) - - “, die in der Übertragung fehlt, obwohl es sicherlich zur nächsten kompositorischen Schicht (also zur sogenannten Variante **c** ) gehört. Ebenso fehlt bei der angebotenen Transkription eine schwer lesbare Notierung mit Tinte zu Beginn des zweiten Taktes, bei jener Stelle, wo die Notation „8^(va)“ angeblich fehlt. Dieses Notat könnte wohl als „in –“ oder „in \[8\] –“ gedeutet werden.
 
 Besonders problematisch ist die sogenannte Variante **c**, eine Übertragung der ersten Fassung des dritten notierten Taktes auf Seite 14. Beethoven schreibt hier eine Fassung des Taktes für beide Hände des Pianisten aus. Dieser Takt wurde mit Bleistift und Tinte geschrieben und weiter revidiert. Der Komponist kam jedoch auf dieser Seite des Manuskripts zu keiner befriedigenden Lösung: Deshalb wurde die Passage auf Seite 17 am Schluss des Manuskripts in verbesserter Form noch einmal ausgeschrieben (vgl. Abb. 3).
 
-<!-- Abbildung fehlt: wp-content/uploads/…/Kinderman_Abb_BW_03.png -->
+![Beethovens Werkstatt, Sonate op. 111, Satz I, T. 132f., Faksimile des Autographs mit Hervorhebung von Variante f (oberes](/assets/images/publications/expertenkolloquium/Kinderman_Abb_BW_03.png)
 
 Abb. 3: Beethovens Werkstatt, Sonate op. 111, Satz I, T. 132f., Faksimile des Autographs mit Hervorhebung von Variante **f** (oberes System), Beethoven-Haus Bonn, BH 71, S. 17 (Ausschnitt).
 {: .bildunterschrift}
-
-[Anm. 2026: Die Abbildung ist derzeit nicht verfügbar und wird nachgereicht.]
 
 Wenn es Ziel des Forschungsprojekts sein soll, „Aufschluss über Beethovens kompositorisches Denken“ zu erlangen, muss man sich über diese Transkription der Variante **c** wundern. Sie präsentiert keine musikalisch sinnvolle Fassung der Passage, was angesichts Beethovens Meisterschaft als Komponist befremdlich erscheinen muss: Der Takt enthält überzählige Notenwerte, die beiden Hände sind rhythmisch nicht koordiniert, die Passage ist nicht spielbar und musikalisch unverständlich.
 
