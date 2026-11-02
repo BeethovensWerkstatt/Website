@@ -51,6 +51,18 @@
 
 # Modul 4
 
+- id: "kolloquium-2026-bonn"
+  title: "Musikwissenschaftliches Kolloquium der Universität Bonn"
+  module: 4
+  type: "Vortrag"
+  date: "2026-06-17"
+  place: "Universität Bonn"
+  vortraege:
+    - BONN26KO     # "Die digitale Skizzenbuch-Edition von Beethovens „Notirungsbuch K“"
+  posts:
+    - 2026-06-17-kolloquium-an-der-uni-bonn
+  note: ""
+
 - id: "mec-2026-tokyo"
   title: "Music Encoding Conference 2026"
   module: 4

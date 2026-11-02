@@ -4470,6 +4470,42 @@
         ]
       },
       "place": "Detmold"
+    },
+    {
+      "id": "nachtrag/BONN26KO",
+      "type": "speech",
+      "genre": "Vortrag",
+      "event": "Musikwissenschaftliches Kolloquium der Universität Bonn",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Cox",
+          "given": "Susanne"
+        },
+        {
+          "family": "Greshake",
+          "given": "Maximilian"
+        },
+        {
+          "family": "Rosendahl",
+          "given": "Lisa"
+        },
+        {
+          "family": "Sänger",
+          "given": "Richard"
+        }
+      ],
+      "title": "Die digitale Skizzenbuch-Edition von Beethovens „Notirungsbuch K“",
+      "issued": {
+        "date-parts": [
+          [
+            2026,
+            6,
+            17
+          ]
+        ]
+      },
+      "place": "Bonn"
     }
   ]
 }
