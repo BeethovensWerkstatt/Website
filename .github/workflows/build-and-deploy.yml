@@ -73,3 +73,7 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
+      - name: Notify Keel
+        if: github.event_name != 'pull_request'
+        run: |
+          curl -X POST ${{ secrets.KEEL_WEBHOOK_URL }} -H 'Content-Type: application/json' -d '{"name": "ghcr.io/beethovenswerkstatt/website", "tag": "latest"}'
