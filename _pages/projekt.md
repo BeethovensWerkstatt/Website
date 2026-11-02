@@ -13,19 +13,19 @@ permalink: /projekt/
 <div class="project-sections">
 
 <div class="project-links">
-  <div class="project-link-item" style="background-image: url('/assets/images/projekt/uebersicht.jpg');">
+  <div class="project-link-item" style="--bild: url('/assets/images/projekt/uebersicht.jpg');">
     <div class="project-link-content">
       <h3><a href="/projektuebersicht/">Projektübersicht</a></h3>
     </div>
   </div>
   
-  <div class="project-link-item" style="background-image: url('/assets/images/projekt/team.jpg');">
+  <div class="project-link-item" style="--bild: url('/assets/images/projekt/team.jpg');">
     <div class="project-link-content">
       <h3><a href="/team/">Team</a></h3>
     </div>
   </div>
   
-  <div class="project-link-item" style="background-image: url('/assets/images/projekt/institutionen.jpg');">
+  <div class="project-link-item" style="--bild: url('/assets/images/projekt/institutionen.jpg');">
     <div class="project-link-content">
       <h3><a href="/beteiligte-institutionen/">Beteiligte Institutionen</a></h3>
     </div>
@@ -35,19 +35,19 @@ permalink: /projekt/
 <div class="project-divider"></div>
 
 <div class="project-links">
-  <div class="project-link-item" style="background-image: url('/assets/images/projekt/digitale-methoden.jpg');">
+  <div class="project-link-item" style="--bild: url('/assets/images/projekt/digitale-methoden.jpg');">
     <div class="project-link-content">
       <h3><a href="/digitale-methoden/">Digitale Methoden</a></h3>
     </div>
   </div>
   
-  <div class="project-link-item" style="background-image: url('/assets/images/projekt/vortraege.jpg');">
+  <div class="project-link-item" style="--bild: url('/assets/images/projekt/vortraege.jpg');">
     <div class="project-link-content">
       <h3><a href="/vortraege-publikationen/">Vorträge, Publikationen und Lehre</a></h3>
     </div>
   </div>
   
-  <div class="project-link-item" style="background-image: url('/assets/images/projekt/bibliographie.jpg');">
+  <div class="project-link-item" style="--bild: url('/assets/images/projekt/bibliographie.jpg');">
     <div class="project-link-content">
       <h3><a href="/bibliografie/">Bibliografie</a></h3>
     </div>
@@ -80,6 +80,9 @@ permalink: /projekt/
 .project-link-item {
   position: relative;
   background: white;
+  /* Bild aus --bild (im HTML gesetzt), leicht entsättigt für ein einheitliches Bild aller Kacheln */
+  background-image: linear-gradient(rgba(128, 128, 128, 0.3), rgba(128, 128, 128, 0.3)), var(--bild);
+  background-blend-mode: saturation, normal;
   background-size: cover;
   background-position: center;
   border: 1px solid #e8e8e8;
