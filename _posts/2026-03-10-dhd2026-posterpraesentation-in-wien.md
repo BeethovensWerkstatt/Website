@@ -8,7 +8,7 @@ authors:
 version: 1.0.0
 topic: Vortrag
 ---
-Vom 23. bis 27. Februar 2026 fand in Wien die Jahrestagung <em>Digital Humanities im deutschsprachigen Raum</em> ([DHd2026]) statt. Im Rahmen der Poster Session am Nachmittag des 26. Februar präsentierten Kristin Herold und Johannes Kepper  das Poster „Fluide Workflows für musikalische Skizzen – Zum Umgang mit einem komplexen Datenmodell". Das Poster wurde mit dem dritten Preis beim Poster Award ausgezeichnet.
+Vom 23. bis 27. Februar 2026 fand in Wien die [Jahrestagung Digital Humanities im deutschsprachigen Raum (DHd 2026)](DHd2026) statt. Im Rahmen der Poster Session am Nachmittag des 26. Februar präsentierten Kristin Herold und Johannes Kepper  das Poster „Fluide Workflows für musikalische Skizzen – Zum Umgang mit einem komplexen Datenmodell". Das Poster wurde mit dem dritten Preis beim Poster Award ausgezeichnet.
 
 Der Tagungsort an der Universität Wien bot eine hervorragende Umgebung für spannende Vorträge und Diskussionen, und die Stadt selbst erwies sich als kulturell sehr inspirierend. Mit Susanne Cox, Max Greshake, Kristin Herold, Johannes Kepper, Lisa Rosendahl und Richard Sänger waren insgesamt sechs Teammitglieder von *Beethovens Werkstatt* in Wien, was den fachlichen Austausch und die Vernetzung zusätzlich bereicherte. Die Gelegenheit der Wien-Reise wurde außerdem für Recherche-Arbeiten bei der Gesellschaft der Musikfreunde genutzt.
 
@@ -20,5 +20,6 @@ Poster-Publikation: [10.5281/zenodo.18999793]
     <figcaption>Johannes Kepper im Gespräch während der Poster Session (unten rechts) und weitere Impressionen: Prunksaal der Österreichischen Nationalbibliothek (oben links), Hunderwasserhaus (mitte links), Universität Wien (unten links), Hofburg (oben rechts)</figcaption>
 </figure>
 
+[DHd2026]: https://dhd2026.digitalhumanities.de
 [10.5281/zenodo.18703062]: https://doi.org/10.5281/zenodo.18703063
 [10.5281/zenodo.18999793]: https://doi.org/10.5281/zenodo.18999794
