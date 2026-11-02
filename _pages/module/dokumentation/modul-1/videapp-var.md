@@ -8,14 +8,14 @@ author: Maja Hartwig
 date: 2018-07-11
 ---
 
-(Vgl. zu den folgenden Ausführungen auch das Strukturschema) \[Anm. 2026: Das Strukturschema ist derzeit nicht verfügbar.\]
+(Vgl. zu den folgenden Ausführungen auch das [Strukturschema](/assets/images/dokumentation/videapp-var/Strukturschema-VideApp.jpg))
 
 ## 1. Einleitung
 
 Das von der Akademie der Wissenschaften und der Literatur in Mainz geförderte Forschungsprojekt *Beethovens Werkstatt* möchte unter verschiedenen Perspektiven Einblicke in die Schreibwerkstatt Beethovens gewähren und die hier zu beobachtenden Schreibprozesse auf neue Weise sichtbar machen. Mit den hierfür entwickelten digitalen Methoden und Konzepten werden gewissermaßen Brillen zur Verfügung gestellt, die ein Nutzer aufsetzen kann, um die Genese eines Werkausschnitts aus unterschiedlichen Blickwinkeln betrachten und dadurch besser nachvollziehen zu können. Dabei kann sich das Vorhaben nicht auf eine bereits bewährte Verbindung der Schreibprozesse erforschenden „Genetischen Textkritik“ mit Darstellungsmethoden der „Digitalen Musikedition“ stützen. Vielmehr steht das 2014 begonnene Grundlagenforschungsprojekt vor der Aufgabe, einerseits musikspezifische Verfahren der Genetischen Textkritik zu entwickeln und dies andererseits von Anfang an vor dem Horizont jener Möglichkeiten zu tun, die die Digitale Musikedition bietet bzw. aktiv neue Verknüpfungsmöglichkeiten beider Bereiche zu explorieren.  
 Die Präsentation der Ergebnisse der bisherigen Arbeiten ist nun in einem Werkzeug, der sogenannten *VideApp*, gebündelt worden, nachdem sie zuvor in einzelnen, auf spezifische Forschungsschwerpunkte ausgerichteten Prototypen erarbeitet worden waren (vgl. dazu [Prototyp 1](/dokumentation/prototyp-1/) zum I. Satz der Klaviersonate op. 111 mit dem Schwerpunkt auf der Entstehungsreihenfolge von Varianten sowie [Prototyp 2](/dokumentation/prototyp-2/) zu einer Textnarbe im II. Satz des Streichquartetts op. 59/3 mit der Darstellung von Schreibschichten und Invarianz).  
 Die *VideApp* verdankt ihren Namen einem von Beethoven (und anderen Komponisten) häufig genutzten Verweiszeichen, bei dem die beiden Silben des Wortes "vide" (lat. für siehe) genutzt werden, um räumlich getrennte, aber inhaltlich zusammengehörende Textsegmente zu verbinden und in komplizierten, bei Beethoven oft auch labyrinthischen Handschriften den Textverlauf anzuzeigen.  
-Die folgenden Ausführungen sollen in Verbindung mit dem alle Funktionen in einer Übersicht zusammenfassenden Strukturschema Hinweise zur effektiven Nutzung der *VideApp* geben und zugleich das Verständnis für die zugrundeliegenden Konzepte und Methoden fördern.
+Die folgenden Ausführungen sollen in Verbindung mit dem alle Funktionen in einer Übersicht zusammenfassenden [Strukturschema](/assets/images/dokumentation/videapp-var/Strukturschema-VideApp.jpg) Hinweise zur effektiven Nutzung der *VideApp* geben und zugleich das Verständnis für die zugrundeliegenden Konzepte und Methoden fördern.
 
 ## 2. Technische Grundlagen der VideApp
 
