@@ -219,12 +219,41 @@ modul_3:
 
 modul_4:
   editionen_software:
+    - title: "VideApp"
+      url: "/videapp/"
+      screenshot: "/assets/images/module/modul-4.jpg"
+      screenshot_alt: "Screenshot des Digitalen Faksimiles des Notirungsbuchs K in der VideApp"
+      beschreibung: "Digitale Edition des <a href=\"/publications/zum-notirungsbuch-k/\">Notirungsbuchs K</a>: das Skizzenbuch als Dokument erkunden und einzelne Schreibzonen in miteinander verbundenen Transkriptionen erschließen."
+      werke_label: "Werkzeuge"
+      werke:
+        - title: "Digitales Faksimile"
+          url: "/facs/NK/"
+        - title: "Transkriptionen"
+          url: "/transcription/NK/wz29.5/"
+      # dokumentation: Dokumentation der neuen VideApp folgt
+      news:
+        - title: "Vorstellung einer ersten digitalen Skizzenbuchedition"
+          url: "/_posts/2026-05-12-vorstellung-einer-ersten-digitalen-skizzenbuchedition/"
+
     - title: "VideApp-Sk"
       url: "https://videapp.beethovens-werkstatt.de/document/m57bab171-9222-451d-8f7d-7fe7db6064bb"
-      screenshot: "/assets/images/module/modul-4.jpg"
-      screenshot_alt: "Screenshot der VideApp-Sk aus Modul 4"
+      # Screenshot weggelassen: modul-4.jpg zeigt das Digitale Faksimile der neuen VideApp (Karte oben)
       beschreibung: "Digitale Rekonstruktion des <a href=\"/publications/zum-notirungsbuch-k/\">Notirungsbuchs K</a>."
       # dokumentation: "/dokumentation/videapp-sk/"
+
+    - title: "Facsimile Explorer (FX)"
+      url: "https://github.com/BeethovensWerkstatt/facsimile-explorer"
+      beschreibung: "Im Modul entwickeltes browserbasiertes Arbeitswerkzeug zur Erstellung der Daten: Schreibzonen anlegen, SVG-Shapes zuordnen, Transkriptionen verknüpfen und Korrektur lesen. Aus dem visuellen Verknüpfen entsteht automatisch MEI-Code. Vorgestellt u. a. im <a href=\"/publications/expertenworkshop-2024-mainz/\">Expertenworkshop 2024</a>."
+      hinweis: "Der Facsimile Explorer ist ein internes Werkzeug; die Nutzung erfordert eine Anmeldung mit GitHub. Eine Dokumentation wird derzeit erarbeitet."
+      news:
+        - title: "GfM Saarbrücken 2023"
+          url: "/_posts/2023-10-08-jahrestagung-der-gesellschaft-fuer-musikforschung-saarbruecken/"
+        - title: "Besuch in Detmold 2023"
+          url: "/_posts/2023-10-21-besuch-in-detmold/"
+        - title: "Edirom Summer School 2025"
+          url: "/_posts/2025-11-17-edirom-summer-school-2025/"
+        - title: "Workshop in Cremona 2026"
+          url: "/_posts/2026-01-27-workshop-in-cremona/"
 
   berichte:
     - title: "Abschlussbericht Modul 4"
