@@ -224,11 +224,11 @@ modul_4:
       screenshot: "/assets/images/module/modul-4.jpg"
       screenshot_alt: "Screenshot des Digitalen Faksimiles des Notirungsbuchs K in der VideApp"
       beschreibung: "Digitale Edition des <a href=\"/publications/zum-notirungsbuch-k/\">Notirungsbuchs K</a>: das Skizzenbuch als Dokument erkunden und einzelne Schreibzonen in miteinander verbundenen Transkriptionen erschließen."
-      werke_label: "Werkzeuge"
+      werke_label: ""   # kein Etikett über der Liste
       werke:
-        - title: "Digitales Faksimile"
+        - title: "VideApp Facsimile Component"         # GitHub: vide-component-facsimile
           url: "/facs/NK/"
-        - title: "Transkriptionen"
+        - title: "VideApp Transcriptions Component"    # GitHub: vide-component-transcriptions
           url: "/transcription/NK/wz29.5/"
       # dokumentation: Dokumentation der neuen VideApp folgt
       news:

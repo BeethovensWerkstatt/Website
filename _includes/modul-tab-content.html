@@ -57,7 +57,8 @@
         {% endif %}
         {% if item.werke and item.werke.size > 0 %}
         <div class="modul-content-card-works">
-          <span class="modul-content-card-works-label">{{ item.werke_label | default: "Enthaltene Werke" }}:</span>
+          {% comment %}werke_label: "" blendet das Etikett aus (z. B. wenn die Liste Komponenten statt Werke enthält){% endcomment %}
+          {% unless item.werke_label == "" %}<span class="modul-content-card-works-label">{{ item.werke_label | default: "Enthaltene Werke" }}:</span>{% endunless %}
           <ul class="modul-content-card-works-list">
             {% for werk in item.werke %}
             {% if werk.ansicht or werk.text %}
