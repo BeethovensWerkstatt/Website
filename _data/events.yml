@@ -216,7 +216,7 @@
 
 - id: "villa-vigoni-2024"
   title: "Kolloquium „Auf dem Weg zu einer vergleichenden Erforschung kompositorischer Schaffensprozesse“"
-  url: "https://www.villavigoni.eu/event/39203/?lang=de"
+  url: "https://www.villavigoni.eu/de/event/auf-dem-weg-zu-einer-vergleichenden-erforschung-kompositorischer-schaffensprozesse/"
   module: 4
   type: "Vortrag"
   date: "2024-05-13/2024-05-17"
@@ -1018,7 +1018,7 @@
   vortraege:
     - 7JA2X5PV     # "Musik modellieren – aber was heißt hier “Musik”? Digitale Forschungspraxis zwischen Notentext, Klangdokument und Theorie"
   posts:
-    - 2017-11-20-ringvorleseung-digitale-kultur-und-geisteswissenschaften
+    - 2017-11-20-ringvorlesung-digitale-kultur-und-geisteswissenschaften
   note: ""
 
 - id: "sem-2017-heidelberg"
