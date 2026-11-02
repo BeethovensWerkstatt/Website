@@ -1,0 +1,297 @@
+# Inhalte der Seite „Digitale Methoden“ (/digitale-methoden/)
+#
+# ablauf:    Schritte des Schemas oben auf der Seite; „eintraege“ verweist auf die ids unten
+# eintraege: kurzes Glossar, ein Eintrag pro Standard, Software oder eigenem Werkzeug
+#   id      Sprungmarke (/digitale-methoden/#id)
+#   anker   weitere Sprungmarken, z. B. für alte Glossaradressen (/glossary/mei-module/ -> #mei-module)
+#   gruppe  standard | software | eigen
+#   voll    ausgeschriebener Name (optional)
+#   text    ein bis zwei Sätze: was ist das, wofür nutzt das Projekt es (Markdown)
+#   links   weiterführende Links
+
+
+ablauf:
+  - schritt: Erfassen
+    text: Digitalisate der Quellen, Taktzählung, Vergleich von Druckplatten
+    eintraege: [iiif, edirom-online, collana]
+  - schritt: Codieren
+    text: Notentext, Schreibprozesse und Verknüpfung mit dem Faksimile
+    eintraege: [mei, svg, code-editoren, facsimile-explorer]
+  - schritt: Prüfen
+    text: Korrekturlesen der Codierung
+    eintraege: [meise, mei-friend, facsimile-explorer]
+  - schritt: Transformieren
+    text: Daten für die Darstellung aufbereiten
+    eintraege: [xslt, code-editoren, exist-db]
+  - schritt: Darstellen
+    text: Notentext und Prozesse im Browser zeigen
+    eintraege: [verovio, thulemeier, liquifier, html-css, videapps]
+  - schritt: Veröffentlichen
+    text: Daten, Anwendungen und Ergebnisse nachnutzbar machen
+    eintraege: [github, docker, zenodo]
+
+eintraege:
+
+  # ---------- Standards und Technologien ----------
+
+  - id: xml
+    name: XML
+    voll: Extensible Markup Language
+    gruppe: standard
+    anker: [markup, tag]
+    text: "Auszeichnungssprache für strukturierte Daten. MEI, TEI und SVG sind XML-Formate."
+    links:
+      - label: W3C
+        url: https://www.w3.org/XML/
+
+  - id: mei
+    name: MEI
+    voll: Music Encoding Initiative
+    gruppe: standard
+    anker: [mei-module, metadaten]
+    text: "XML-Format zur Codierung von Musiknotation und zugehörigen Metadaten. Das Projekt codiert darin Notentexte und Schreibprozesse und hat dafür ein Modell zur Codierung textgenetischer Prozesse erweitert."
+    links:
+      - label: Website
+        url: https://music-encoding.org/
+      - label: Guidelines
+        url: https://music-encoding.org/guidelines/v5/content/
+
+  - id: tei
+    name: TEI
+    voll: Text Encoding Initiative
+    gruppe: standard
+    text: "XML-Standard zur Codierung von Texten, nach dessen Vorbild MEI entwickelt wurde."   # TODO Team: Nutzung im Projekt ergänzen oder Eintrag streichen
+    links:
+      - label: Website
+        url: https://tei-c.org/
+
+  - id: svg
+    name: SVG
+    voll: Scalable Vector Graphics
+    gruppe: standard
+    text: "XML-Format für Vektorgrafiken. Das Projekt erfasst damit die einzelnen Zeichen auf den Faksimiles („SVG-Shapes“) und verknüpft sie mit der MEI-Codierung."
+    links:
+      - label: W3C
+        url: https://www.w3.org/Graphics/SVG/
+
+  - id: stand-off-markup
+    name: Stand-off Markup
+    gruppe: standard
+    text: "Auszeichnung, die getrennt vom ausgezeichneten Text gespeichert wird und auf ihn verweist."
+    links:
+      - label: Begriffserklärung
+        url: https://hdl.handle.net/11471/562.50.171
+
+  - id: iiif
+    name: IIIF
+    voll: International Image Interoperability Framework
+    gruppe: standard
+    text: "Standard für die Bereitstellung und den Austausch digitaler Bilder, etwa von Faksimiles."
+    links:
+      - label: Website
+        url: https://iiif.io/
+
+  - id: xslt
+    name: XSLT
+    voll: Extensible Stylesheet Language Transformations
+    gruppe: standard
+    text: "Sprache zur Umwandlung von XML-Daten. Im Projekt werden in allen Phasen XSLT-Skripte geschrieben, um Codierungen aufzubereiten und für die Darstellung umzuwandeln."
+    links:
+      - label: W3C
+        url: https://www.w3.org/TR/xslt-30/
+
+  - id: html-css
+    name: HTML und CSS
+    gruppe: standard
+    anker: [html, css, sass]
+    text: "Grundlagen jeder Website: HTML beschreibt Inhalt und Struktur, CSS die Gestaltung. Auch die Anwendungen des Projekts laufen im Browser."
+    links:
+      - label: HTML (WHATWG)
+        url: https://html.spec.whatwg.org/
+      - label: CSS (W3C)
+        url: https://www.w3.org/Style/CSS/
+
+  # ---------- Eingesetzte Software ----------
+
+  - id: verovio
+    name: Verovio
+    gruppe: software
+    text: "Software, die MEI-Codierungen als Notentext darstellt. Sie erzeugt die Notenansichten in den Prototypen und VideApps."
+    links:
+      - label: Website
+        url: https://www.verovio.org/index.xhtml
+      - label: Verovio Editor
+        url: https://editor.verovio.org/
+      - label: Code
+        url: https://github.com/rism-digital/verovio
+
+  - id: collana
+    name: CollAna
+    gruppe: software
+    text: "Werkzeug zum optischen Vergleich von Faksimiles. Im 3. Modul für den Druckplattenvergleich zu op. 73 eingesetzt."
+    links:
+      - label: Website
+        url: https://collana.edirom.de/overview
+
+  - id: edirom-online
+    name: Edirom Online
+    gruppe: software
+    text: "Software zur Präsentation digitaler Musikeditionen. Das Projekt setzt sie immer wieder für die interne Arbeit ein, um Werke und ihre Quellen inhaltlich zu erschließen, etwa mit einer Taktzählung."
+    links:
+      - label: Website
+        url: https://www.edirom.de/
+      - label: Code
+        url: https://github.com/Edirom/Edirom-Online
+      - label: Daten des Projekts
+        url: https://github.com/BeethovensWerkstatt/edirom-data
+
+  - id: mei-friend
+    name: mei-friend
+    gruppe: software
+    text: "Webbasierter Editor für MEI-Dateien mit gleichzeitiger Notenansicht. Im Projekt zum Korrekturlesen der Codierungen genutzt."
+    links:
+      - label: Anwendung
+        url: https://mei-friend.mdw.ac.at/
+      - label: Code
+        url: https://github.com/mei-friend/mei-friend
+
+  - id: meise
+    name: MEI Score Editor (MEISE)
+    gruppe: software
+    text: "Editor für MEI-Dateien mit Notenansicht, entwickelt im Rahmen von DARIAH-DE und inzwischen veraltet. Zu Beginn des Projekts zum Korrekturlesen genutzt."
+    links:
+      - label: Anwendung
+        url: http://meise.de.dariah.eu/
+      - label: Dokumentation (Archiv)
+        url: https://web.archive.org/web/20260616213916/https://de.dariah.eu/mei-score-editor
+
+  - id: code-editoren
+    name: Code-Editoren
+    gruppe: software
+    anker: [oxygen, vscode]
+    text: "Programme zum Schreiben und Prüfen von Codierungen und Transformationen, im Projekt vor allem der oXygen XML Editor und inzwischen auch Visual Studio Code."
+    links:
+      - label: oXygen XML Editor
+        url: https://www.oxygenxml.com/
+      - label: Visual Studio Code
+        url: https://code.visualstudio.com/
+
+  - id: exist-db
+    name: eXist-db
+    gruppe: software
+    text: "XML-Datenbank. Auf ihr beruht die Schnittstelle (API), über die die VideApps ihre Daten abrufen; die Daten werden dafür aus dem GitHub-Repositorium des Projekts übernommen."
+    links:
+      - label: Website
+        url: https://exist-db.org/
+      - label: Schnittstelle des Projekts
+        url: https://github.com/BeethovensWerkstatt/api
+
+  - id: github
+    name: GitHub
+    gruppe: software
+    text: "Plattform für Quellcode und Daten. Dort liegen die Repositorien des Projekts."
+    links:
+      - label: Beethovens Werkstatt auf GitHub
+        url: https://github.com/BeethovensWerkstatt
+
+  - id: docker
+    name: Docker
+    gruppe: software
+    text: "Software, die Anwendungen samt ihrer Umgebung als Container-Abbilder (Docker-Images) verpackt. Das Projekt stellt seine Anwendungen zunehmend auf diese Weise bereit."
+    links:
+      - label: Website
+        url: https://www.docker.com/
+
+  - id: zenodo
+    name: Zenodo
+    gruppe: software
+    text: "Repositorium zur dauerhaften Archivierung von Daten und Publikationen mit DOI."
+    links:
+      - label: Website
+        url: https://zenodo.org/
+
+  # ---------- Eigene Werkzeuge ----------
+
+  - id: videapps
+    name: VideApps
+    gruppe: eigen
+    text: "Die im Projekt entwickelten Anwendungen zur Darstellung der Ergebnisse, je eine für die Fragestellung eines Moduls."
+    links:
+      - label: VideApp-Var
+        url: /dokumentation/videapp-var/
+      - label: VideApp-Arr
+        url: /dokumentation/videapp-arr/
+      - label: VideApp-Rev
+        url: /dokumentation/videapp-rev/
+      - label: VideApp-Sk
+        url: https://videapp.beethovens-werkstatt.de/document/m57bab171-9222-451d-8f7d-7fe7db6064bb
+      - label: VideApp (Modul 4)
+        url: /videapp/
+
+  - id: facsimile-explorer
+    name: Facsimile Explorer (FX)
+    gruppe: eigen
+    anker: [fx]
+    text: "Im 4. Modul entwickeltes browserbasiertes Arbeitswerkzeug: Schreibzonen anlegen, SVG-Shapes zuordnen, Transkriptionen verknüpfen und Korrektur lesen. Aus dem visuellen Verknüpfen erzeugt es automatisch MEI-Code, der direkt in GitHub gespeichert wird; die Nutzung erfordert eine Anmeldung."
+    links:
+      - label: Anwendung
+        url: https://fx.beethovens-werkstatt.de/
+      - label: Code
+        url: https://github.com/BeethovensWerkstatt/facsimile-explorer
+      - label: Vorstellung im Expertenworkshop 2024
+        url: /publications/expertenworkshop-2024-mainz/
+
+  - id: thulemeier
+    name: Thulemeier
+    gruppe: eigen
+    text: "Im Projekt entwickelte Software, die MEI-Codierungen als diplomatische, also topographisch getreue Transkriptionen darstellt; eine Ergänzung zu Verovio."
+    links:
+      - label: Code
+        url: https://github.com/BeethovensWerkstatt/thulemeier
+
+  - id: liquifier
+    name: Liquifier
+    gruppe: eigen
+    text: "Im Projekt entwickelte Software für „fluide Transkriptionen“: Animationen, die zwischen diplomatischer und annotierter Transkription überblenden."
+    links:
+      - label: Code
+        url: https://github.com/BeethovensWerkstatt/liquifier
+
+  - id: genetic-sandbox
+    name: Genetic Sandbox
+    gruppe: eigen
+    text: "Interaktive Umgebung zum Erproben von Variantenabfolgen und Schreibprozessen."
+    links:
+      - label: Dokumentation
+        url: /dokumentation/genetic-sandbox/
+
+  - id: prototypen
+    name: Prototypen 1 und 2
+    gruppe: eigen
+    text: "Fallstudien des 1. Moduls zu op. 111 und op. 59/3, Vorläufer der VideApp."
+    links:
+      - label: Prototyp 1
+        url: /dokumentation/prototyp-1/
+      - label: Prototyp 2
+        url: /dokumentation/prototyp-2/
+
+  - id: reviz-inviz
+    name: reViz und inViz
+    gruppe: eigen
+    anker: [reviz, inviz]
+    text: "Visualisierungen von Rekonstruktionen bzw. Invarianzen am Beispiel von op. 75/2 (proof of concept)."
+    links:
+      - label: reViz
+        url: https://reviz.beethovens-werkstatt.de/
+      - label: inViz
+        url: https://inviz.beethovens-werkstatt.de/
+
+  - id: music-diff
+    name: MusicDiff
+    gruppe: eigen
+    text: "Werkzeug zum Vergleich von MEI-Dateien, entstanden im Umfeld der VideApp-Arr."
+    links:
+      - label: Anwendung
+        url: https://music-diff.edirom.de/
+      - label: Dokumentation
+        url: /dokumentation/music-diff/
