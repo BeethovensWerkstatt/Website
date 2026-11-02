@@ -9,8 +9,6 @@ changes: Erstveröffentlichung
 permalink: /publications/druckplattenvergleich-op73/1.0.0/
 doi_version:
 doi_overview:
-# Erst veröffentlichen, wenn die Abbildungen aus wp-content/uploads im Ordner liegen
-published: false
 ---
 
 ## Listenansicht der Plattenrevision
@@ -122,7 +120,7 @@ Da viele Revisionen nicht in den vorhandenen [Revisionsdokument]({% link _gloss
 <tr><td>III. 200</td><td>Einfügung</td><td>Korrektur</td><td>Bogen<br>(Stichnoten Vle)</td><td></td><td><img class="dpv-low" src="/assets/images/publications/druckplattenvergleich-op73/str_14.jpg" alt="CollAna-Screenshot str_14" loading="lazy"></td><td><strong>8</strong>(2)</td></tr>
 <tr><td>III. 201</td><td>Einfügung</td><td>Korrektur</td><td>Bogen<br>(Stichnoten V II)</td><td></td><td><img class="dpv-low" src="/assets/images/publications/druckplattenvergleich-op73/str_15.jpg" alt="CollAna-Screenshot str_15" loading="lazy"></td><td><strong>8</strong>(3)</td></tr>
 <tr><td rowspan="2">III. 269</td><td>Einfügung</td><td>Korrektur</td><td>loco<strong><br></strong></td><td></td><td rowspan="2"><img class="dpv-low" src="/assets/images/publications/druckplattenvergleich-op73/str_16.jpg" alt="CollAna-Screenshot str_16" loading="lazy"></td><td rowspan="2"><strong>8(</strong>11)</td></tr>
-<tr><td></td><td>Schriftbildliche Verbesserungen</td><td><img class="dpv-sym12" src="/assets/images/publications/druckplattenvergleich-op73/symbole/tr.png" alt="Triller"><br>„tr“ nach unten verschoben</td><td></td><td></td></tr>
+<tr><td></td><td>Schriftbildliche Verbesserungen</td><td><img class="dpv-sym12" src="/assets/images/publications/druckplattenvergleich-op73/symbole/tr.png" alt="Triller"><br>„tr“ nach unten verschoben</td><td></td></tr>
 <tr><td>III. 352</td><td>Einfügung</td><td>Korrektur</td><td><img class="dpv-sym12" src="/assets/images/publications/druckplattenvergleich-op73/symbole/8th_rest.png" alt="Achtelpause"></td><td></td><td><img class="dpv-low" src="/assets/images/publications/druckplattenvergleich-op73/str_18.jpg" alt="CollAna-Screenshot str_18" loading="lazy"></td><td><strong>9</strong>(6)</td></tr>
 <tr><td>III. 354</td><td>Einfügung</td><td>Schriftbildliche Verbesserungen</td><td>Vno 2.</td><td></td><td><img class="dpv-low" src="/assets/images/publications/druckplattenvergleich-op73/str_19.jpg" alt="CollAna-Screenshot str_19" loading="lazy"></td><td><strong>9</strong>(6)</td></tr>
 <tr><td>III. 355</td><td>Einfügung</td><td>Korrektur</td><td>cres<br>(Stichnoten V II)</td><td></td><td><img class="dpv-low" src="/assets/images/publications/druckplattenvergleich-op73/str_20.jpg" alt="CollAna-Screenshot str_20" loading="lazy"></td><td><strong>9</strong>(6)</td></tr>

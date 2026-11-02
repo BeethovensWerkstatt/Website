@@ -195,9 +195,8 @@ modul_3:
         url: "/_posts/2020-01-21-besprechung-zum-thema-beethovens-korrekturlisten/" 
 
     - title: "Druckplattenvergleich"
-      beschreibung: "Optischer Druckplattenvergleich."
-      hinweis: "Der Druckplattenvergleich zu op. 73 wird derzeit übertragen und hier in Kürze verlinkt."
-      # @todo nach Übertragung von https://beethovens-werkstatt.de/druckplattenvergleich-op-73/ url eintragen und hinweis entfernen
+      url: "/publications/druckplattenvergleich-op73/"
+      beschreibung: "Optischer Druckplattenvergleich zu op. 73."
 
   berichte:
     - title: "Abschlussbericht Modul 3"
