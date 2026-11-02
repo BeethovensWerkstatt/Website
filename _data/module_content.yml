@@ -240,6 +240,9 @@ modul_4:
       # Screenshot weggelassen: modul-4.jpg zeigt das Digitale Faksimile der neuen VideApp (Karte oben)
       beschreibung: "Digitale Rekonstruktion des <a href=\"/publications/zum-notirungsbuch-k/\">Notirungsbuchs K</a>."
       # dokumentation: "/dokumentation/videapp-sk/"
+      news:
+        - title: "Release: Rekonstruktion von „Notirungsbuch K“ als digitales Faksimile"
+          url: "/_posts/2022-12-17-release-rekonstruktion-von-notirungsbuch-k-als-digitales-faksimile/"
 
     - title: "Facsimile Explorer (FX)"
       url: "https://github.com/BeethovensWerkstatt/facsimile-explorer"
