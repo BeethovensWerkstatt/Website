@@ -8,14 +8,14 @@ authors:
 version: 1.0.0
 topic: Vortrag
 ---
-Am 5. Mai 2026 fand im Kammermusiksaal des Beethoven-Hauses in Bonn die Präsentation „*Beethovens Werkstatt* – Digitale Edition des Skizzenbuchs *Notirungsbuch K*“ statt. Zahlreiche Gäste nutzten die Gelegenheit, die erste digitale Edition eines Beethoven-Skizzenbuchs, genauer des „Notirungsbuchs K“, kennenzulernen und mit dem Projektteam über Herausforderungen digitaler Musikedition und genetischer Textkritik ins Gespräch zu kommen.
+Am 5. Mai 2026 fand im Kammermusiksaal des Beethoven-Hauses in Bonn die Präsentation „*Beethovens Werkstatt* – Digitale Edition des Skizzenbuchs: *Notirungsbuch K*“ statt. Zahlreiche Gäste nutzten die Gelegenheit, die erste digitale Edition eines Beethoven-Skizzenbuchs, genauer des „Notirungsbuchs K“, kennenzulernen und mit dem Projektteam über Herausforderungen digitaler Musikedition und genetischer Textkritik ins Gespräch zu kommen.
 
 <figure>
     <img src="/assets/images/posts/2026/2026-05-12-vorstellung-einer-ersten-digitalen-skizzenbuchedition.jpg" alt="Vorstellung Skizzenbuchedition Bonn 2026" />
     <figcaption>Das Team von Beethovens Werkstatt und der Pianist Dmitry Gladkov (r.).</figcaption>
 </figure>
 
-Im Mittelpunkt des Abends stand die erstmals vollständig präsentierte digitale Rekonstruktion und Edition des Notirungsbuchs K, das Ludwig van Beethoven im Frühjahr 1823 unter anderem für Arbeiten an der Neunten Symphonie und den Diabelli-Variationen nutzte. Die digitale Edition dieses Skizzenbuchs ist Ziel des vierten von insgesamt fünf Projektmodulen, das damit seinen Abschluss findet. Besonders großes Interesse galt dabei der im Projekt entwickelten „fluiden Transkription“, die den editorischen Erkenntnisprozess sichtbar macht und neue Zugänge zu Beethovens Arbeitsweise eröffnet.
+Im Mittelpunkt des Abends stand die erstmals vollständig präsentierte digitale Rekonstruktion und Edition des Notirungsbuchs K, das Ludwig van Beethoven im Frühjahr 1823 unter anderem für Arbeiten an der *9. Symphonie* und den *Diabelli-Variationen* nutzte. Die digitale Edition dieses Skizzenbuchs ist Ziel des vierten von insgesamt fünf Projektmodulen, das damit seinen Abschluss findet. Besonders großes Interesse galt dabei der im Projekt entwickelten „fluiden Transkription“, die den editorischen Erkenntnisprozess sichtbar macht und neue Zugänge zu Beethovens Arbeitsweise eröffnet.
 
 <figure>
     <video controls style="max-width: 100%;">
