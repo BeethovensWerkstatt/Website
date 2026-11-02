@@ -247,7 +247,7 @@ modul_4:
     - title: "Facsimile Explorer (FX)"
       url: "https://github.com/BeethovensWerkstatt/facsimile-explorer"
       beschreibung: "Im Modul entwickeltes browserbasiertes Arbeitswerkzeug zur Erstellung der Daten: Schreibzonen anlegen, SVG-Shapes zuordnen, Transkriptionen verknüpfen und Korrektur lesen. Aus dem visuellen Verknüpfen entsteht automatisch MEI-Code. Vorgestellt u. a. im <a href=\"/publications/expertenworkshop-2024-mainz/\">Expertenworkshop 2024</a>."
-      hinweis: "Der Facsimile Explorer ist ein internes Werkzeug; die Nutzung erfordert eine Anmeldung mit GitHub. Eine Dokumentation wird derzeit erarbeitet."
+      hinweis: "Der Facsimile Explorer ist ein internes Arbeitswerkzeug und bislang ausschließlich für das Projektteam nutzbar. Der Quellcode ist auf GitHub frei zugänglich; eine Dokumentation wird derzeit erarbeitet."
       news:
         - title: "GfM Saarbrücken 2023"
           url: "/_posts/2023-10-08-jahrestagung-der-gesellschaft-fuer-musikforschung-saarbruecken/"

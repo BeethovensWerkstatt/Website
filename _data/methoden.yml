@@ -232,10 +232,8 @@ eintraege:
     name: Facsimile Explorer (FX)
     gruppe: eigen
     anker: [fx]
-    text: "Im 4. Modul entwickeltes browserbasiertes Arbeitswerkzeug: Schreibzonen anlegen, SVG-Shapes zuordnen, Transkriptionen verknüpfen und Korrektur lesen. Aus dem visuellen Verknüpfen erzeugt es automatisch MEI-Code, der direkt in GitHub gespeichert wird; die Nutzung erfordert eine Anmeldung."
+    text: "Im 4. Modul entwickeltes browserbasiertes Arbeitswerkzeug: Schreibzonen anlegen, SVG-Shapes zuordnen, Transkriptionen verknüpfen und Korrektur lesen. Aus dem visuellen Verknüpfen erzeugt es automatisch MEI-Code, der direkt in GitHub gespeichert wird. Internes Arbeitswerkzeug, aktuell ausschließlich für das Projektteam nutzbar."
     links:
-      - label: Anwendung
-        url: https://fx.beethovens-werkstatt.de/
       - label: Code
         url: https://github.com/BeethovensWerkstatt/facsimile-explorer
       - label: Vorstellung im Expertenworkshop 2024
