@@ -15,4 +15,4 @@ Eingeladen waren ausgewiesene Fachleute aus den Bereichen Skizzenforschung, Edit
 Die ausführlichen [Protokollnotizen] des Workshops sind ab sofort online verfügbar.
 
 [Protokollnotizen]: /publications/expertenworkshop-2024-mainz/
-[Notirungsbuch K]: /publications/zum-notirungsbuch-k/
+["Notirungsbuch K"]: /publications/zum-notirungsbuch-k/
