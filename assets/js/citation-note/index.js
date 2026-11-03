@@ -57,8 +57,6 @@ class CitationNote extends HTMLElement {
   }
 
   render() {
-    this.shadowRoot.innerHTML = ''
-    // will bew added later: this.shadowRoot.innerHTML = innerHTML;
     const innerHTML =`
 <style>
   .citation-box {
@@ -131,6 +129,7 @@ class CitationNote extends HTMLElement {
   </div>
 </div>
 `;
+    this.shadowRoot.innerHTML = innerHTML;
   }
 
   escapeHtml(value) {
