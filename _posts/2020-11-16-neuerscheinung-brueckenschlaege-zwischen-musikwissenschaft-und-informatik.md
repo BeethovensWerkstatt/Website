@@ -15,7 +15,6 @@ Anfang November 2020 ist unter dem Titel "Brückenschläge zwischen Musikwissens
 <br>
 
 <strong>Aus dem Inhalt:</strong>
-
 Stefanie Acquavella-Rauch, Andreas Münzmay, Joachim Veit: Brückenschläge zwischen Musikwissenschaft und Informatik – Vorbemerkung. DOI: [10.25366/2020.88]
 <br>
 Christine Siegert: Komponisten-Gesamtausgaben im digitalen Zeitalter: Perspektiven und Reflexionen am Beispiel Ludwig van Beethovens. DOI: [10.25366/2020.95]
