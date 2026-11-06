@@ -1,5 +1,21 @@
-class 
-CopyrightBanner extends HTMLElement {
+/**
+ * Custom Element for displaying a copyright banner with optional modal details.
+ *
+ * Attributes:
+ * - owner: The copyright owner (e.g., "Beethovens-Werkstatt").
+ * - year: The copyright year (e.g., "2026").
+ * - license: The license type (e.g., "CC BY-SA 4.0").
+ * - license-url: The URL to the license details.
+ *
+ * Usage:
+ * <copyright-banner owner="Beethovens-Werkstatt" year="2026" license="CC BY-SA 4.0" license-url="https://creativecommons.org/licenses/by-sa/4.0/">
+ *   <p>This is the copyright information.</p>
+ * </copyright-banner>
+ * 
+ * Copyright (c) 2026 Beethovens-Werkstatt
+ */
+
+class CopyrightBanner extends HTMLElement {
   static observedAttributes = ["owner", "year", "license", "license-url"];
   
   constructor() {
@@ -35,20 +51,11 @@ CopyrightBanner extends HTMLElement {
     this.shadowRoot.innerHTML = `
       <style>
         :host {
-          display: block;
-          font: 14px/1.4 system-ui, sans-serif;
-          color: #333;
         }
 
         .banner {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 8px;
-          padding: 12px 16px;
-          background: #f4f4f5;
-          border-top: 1px solid #ddd;
-          user-select: none;
+          display: inline-block;
+          color: #aaaaaa;
         }
 
         dialog {
