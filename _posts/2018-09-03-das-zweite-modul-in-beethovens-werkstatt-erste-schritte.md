@@ -28,6 +28,6 @@ Darüber hinaus ist geplant, dass Nutzer:innen Einfärbungen auch selbstständig
     <img src="/assets/images/posts/2018/2018-09-03-das-zweite-modul-in-beethovens-werkstatt-erste-schritte_einfaerbung.jpg" alt="individuelleEinfaerbung" />
     <figcaption>Vergleich der beiden Fassungen der Großen Fuge mit individuellen Einfärbungen einer Nutzerin</figcaption>
 </figure>
-Die Mitarbeiter&#42;innen von Beethovens Werkstatt haben sich zu Beginn des zweiten Moduls bewusst für eine prototypische Entwicklung des Werkzeugs entschieden, da sich die Arbeiten sowohl technisch als auch inhaltlich noch in der Erprobungsphase befinden. Veränderungen und Verbesserungen können somit einfacher vorgenommen werden.
+Die Mitarbeiter&#42;innen von *Beethovens Werkstatt* haben sich zu Beginn des zweiten Moduls bewusst für eine prototypische Entwicklung des Werkzeugs entschieden, da sich die Arbeiten sowohl technisch als auch inhaltlich noch in der Erprobungsphase befinden. Veränderungen und Verbesserungen können somit einfacher vorgenommen werden.
 
 [Genetic Sandbox]: /dokumentation/genetic-sandbox/
