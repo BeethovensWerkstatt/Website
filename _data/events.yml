@@ -23,18 +23,45 @@
     - 2026-10-25-edirom-summer-school-2026
   note: ""
 
+- id: "gfm-2026-frankfurt"
+  title: "78. Jahrestagung der Gesellschaft für Musikforschung „Gedächtnisinstitutionen und Gedächtnismedien der Musik“"
+  url: "https://www.fb09.uni-frankfurt.de/176658317/GfM_Tagung_2026"
+  module: 5
+  type: "Vortrag"
+  date: "2026-09-29/2026-10-02"
+  place: "Goethe-Universität, Frankfurt am Main"
+  vortraege:
+    - GFM26ROS     # "Textbeziehungen zwischen Skizze und Werktext in analogen und digitalen Editionen" (freies Referat)
+  posts:
+    - 2026-10-05-jahrestagung-der-gesellschaft-fuer-musikforschung-in-frankfurt
+  note: ""
+
 - id: "ringvorlesung-ws2026-detmold"
   title: "Ringvorlesung „Beethoven – work in progress“"
   module: 5
   type: "Lehre"
   date: "2026-10-21/2027-01-27"
-  url: "https://www.muwi-detmold-paderborn.de/en/translate-to-english-seminar/lecture-series"
+  url: "https://www.muwi-detmold-paderborn.de/seminar/ringvorlesung"
   place: "HfM Detmold"
   vortraege:
     - RV26COX      # "Gustav Nottebohm: Vordenker und Wegbereiter der Beethoven-Skizzenforschung"
     - RV27NKK      # "Notirungsbuch K – eine erste digitale Skizzenbuchedition"
   posts:
     - 2026-06-22-ringvorlesung-beethoven-work-in-progress-im-wise-2026-27-in-detmold
+    - 2026-10-22-start-der-ringvorlesung-beethoven-work-in-progress
+  note: ""
+
+- id: "jahresempfang-akademienunion-2026-berlin"
+  title: "Jahresempfang der Akademienunion „Wer hat das Sagen in meinem Gehirn?“"
+  url: "https://www.akademienunion.de/presse/nachricht/jahresempfang-2026"
+  module: 5
+  type: "Vortrag"
+  date: "2026-11-03"
+  place: "Akademiegebäude am Gendarmenmarkt, Berlin"
+  vortraege:
+    - AKU26HEK     # "Experimentierstation: Die Edition des Notirungsbuchs K"
+  posts:
+    - 2026-11-03-jahresempfang-akademienunion
   note: ""
 
 - id: "cremona-2026"

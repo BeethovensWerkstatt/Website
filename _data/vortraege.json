@@ -4403,7 +4403,7 @@
       "genre": "Vortrag",
       "event": "Ringvorlesung „Beethoven – work in progress…“",
       "language": "deutsch",
-      "URL": "https://www.uni-paderborn.de/en/event-item/ringvorlesung-beethoven-work-in-progress-gustav-nottebohm-und-beethoven-skizzenforschung",
+      "URL": "https://www.muwi-detmold-paderborn.de/nachricht/susanne-cox-gustav-nottebohm-vordenker-und-wegbereiter-der-beethoven-skizzenforschung",
       "author": [
         {
           "family": "Cox",
@@ -4428,7 +4428,6 @@
       "genre": "Vortrag",
       "event": "Ringvorlesung „Beethoven – work in progress…“",
       "language": "deutsch",
-      "URL": "https://www.uni-paderborn.de/en/news-item/160565",
       "author": [
         {
           "family": "Cox",
@@ -4506,6 +4505,59 @@
         ]
       },
       "place": "Bonn"
+    },
+    {
+      "id": "nachtrag/GFM26ROS",
+      "type": "speech",
+      "genre": "Vortrag",
+      "event": "78. Jahrestagung der Gesellschaft für Musikforschung",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Rosendahl",
+          "given": "Lisa"
+        }
+      ],
+      "title": "Textbeziehungen zwischen Skizze und Werktext in analogen und digitalen Editionen",
+      "issued": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            29
+          ]
+        ]
+      },
+      "place": "Frankfurt am Main"
+    },
+    {
+      "id": "nachtrag/AKU26HEK",
+      "type": "speech",
+      "genre": "Tool-/Projektvorstellung",
+      "event": "Jahresempfang der Akademienunion „Wer hat das Sagen in meinem Gehirn?“",
+      "URL": "https://www.akademienunion.de/presse/nachricht/jahresempfang-2026",
+      "language": "deutsch",
+      "author": [
+        {
+          "family": "Herold",
+          "given": "Kristin"
+        },
+        {
+          "family": "Kepper",
+          "given": "Johannes"
+        }
+      ],
+      "title": "Experimentierstation: Die Edition des Notirungsbuchs K",
+      "issued": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "place": "Berlin"
     }
   ]
 }
