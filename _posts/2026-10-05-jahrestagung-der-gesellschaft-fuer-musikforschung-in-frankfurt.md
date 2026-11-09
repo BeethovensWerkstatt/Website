@@ -8,7 +8,7 @@ authors:
 version: 1.0.0
 topic: Vortrag
 ---
-Das Team von Beethovens Werkstatt besuchte auch dieses Jahr die [Jahrestagung der Gesellschaft für Musikforschung], die vom 29. September bis 2. Oktober 2026 in Frankfurt a. M. stattfand. Gemeinsam mit der Hochschule für Musik und Darstellende Kunst Frankfurt sowie dem Max-Planck-Institut für empirische Ästhetik hatte die Goethe-Universität zum wissenschaftlichen Austausch unter dem Leitthema „Gedächtnisinstitutionen und Gedächtnismedien der Musik“ eingeladen.
+Das Team von *Beethovens Werkstatt* besuchte auch dieses Jahr die [Jahrestagung der Gesellschaft für Musikforschung], die vom 29. September bis 2. Oktober 2026 in Frankfurt a. M. stattfand. Gemeinsam mit der Hochschule für Musik und Darstellende Kunst Frankfurt sowie dem Max-Planck-Institut für empirische Ästhetik hatte die Goethe-Universität zum wissenschaftlichen Austausch unter dem Leitthema „Gedächtnisinstitutionen und Gedächtnismedien der Musik“ eingeladen.
 
 Für das Projektteam standen vor allem die Beiträge der Fachgruppen „Digitale Musikwissenschaft“ und „Freie Forschungsinstitute“ im Mittelpunkt, in denen Themen rund um Digitale Editionen und Künstliche Intelligenz im Arbeitsalltag diskutiert wurden. Lisa Rosendahl stellte in einem freien Referat Überlegungen zur Darstellung von Textbeziehungen zwischen Skizze und Werktext in analogen wie digitalen Editionen vor und ging auf die Implikationen für die Werkansicht in der VideApp sowie das Datenmodell ein.
 
