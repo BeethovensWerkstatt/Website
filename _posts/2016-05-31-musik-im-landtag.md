@@ -35,7 +35,7 @@ Thomas Wypior, Klavier
 Ludwig van Beethoven
 <em>Neue Liebe, neues Leben</em> op. 75/2, Text von Johann Wolfgang von Goethe
 
-Liederzyklus An die ferne Geliebte op. 98, Texte von Alois Jeitteles
+Liederzyklus *An die ferne Geliebte* op. 98, Texte von Alois Jeitteles
 
 Konstantin Ingenpaß, Bariton
 Thomas Wypior, Klavier
