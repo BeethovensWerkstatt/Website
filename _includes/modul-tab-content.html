@@ -284,7 +284,7 @@
             {{ occ_date_display }}
             {% if occurrence.label %} · {{ occurrence.label }}{% endif %}
             {% if occurrence.place %} · {{ occurrence.place }}{% endif %}
-            {% if occurrence.posts and occurrence.posts.size > 0 %} · <a href="/{{ occurrence.posts[0] }}/" class="news-link">→ Newsbeitrag</a>{% endif %}
+            {% if occurrence.posts and occurrence.posts.size > 0 %} · {% assign occ_posts = occurrence.posts | join: "," %}{% include event-news-links.html posts=occ_posts class="news-link" %}{% endif %}
             {% if occurrence.vortraege and occurrence.vortraege.size > 0 %}
               {% for vortrag_id in occurrence.vortraege %}
                 {% for v in site.data.vortraege.items %}
@@ -312,7 +312,7 @@
         <span class="modul-item-meta">
           {{ ev_date_display }}
           {% if event.place %} · {{ event.place }}{% endif %}
-          {% if event.posts and event.posts.size > 0 %} · <a href="/{{ event.posts[0] }}/" class="news-link">→ Newsbeitrag</a>{% endif %}
+          {% if event.posts and event.posts.size > 0 %} · {% assign ev_posts_all = event.posts | join: "," %}{% include event-news-links.html posts=ev_posts_all class="news-link" %}{% endif %}
           {% comment %}Sind die Beiträge als Ganzes veröffentlicht, wird die Publikation verlinkt statt einzelner Teamvorträge{% endcomment %}
           {% if event.publikation %}
             {% assign ev_pub = site.publications | where_exp: "doc", "doc.url contains event.publikation" | first %}
@@ -401,7 +401,7 @@
       {% endif %}
     {% endfor %}
     {% assign pev_post = "" %}
-    {% if event.posts and event.posts.size > 0 %}{% assign pev_post = event.posts[0] %}{% endif %}
+    {% if event.posts and event.posts.size > 0 %}{% assign pev_post = event.posts | join: "," %}{% endif %}
     {% assign pev_info = event.id | append: "|" | append: pev_count | append: "|" | append: pev_post %}
     {% assign modul_pub_event_info_map = modul_pub_event_info_map | push: pev_info %}
   {% endfor %}
@@ -468,7 +468,7 @@
         <span class="modul-pub-citation">{%- if pub.type == "article-journal" -%}In: {%- assign bib_ct = pub["container-title"] | default: pub["collection-title"] -%}{%- if bib_ct %} <em>{{ bib_ct }}</em>{%- endif %}{%- if pub.volume %}, Jg.&nbsp;{{ pub.volume }}{%- endif %}{%- if pub.issue %}, H.&nbsp;{{ pub.issue }}{%- endif %}{%- if pub.page %}, S.&nbsp;{{ pub.page }}{%- endif %}{%- elsif pub.type == "chapter" -%}In: {%- for ed in pub.editor limit: 3 %}{%- unless forloop.first %}, {%- endunless %}{%- if ed.given %} {{ ed.given }} {{ ed.family }}{%- else %} {{ ed.family }}{%- endif %}{%- endfor %}{%- if pub.editor.size > 3 %} u.a.{%- endif %}{%- if pub.editor.size > 0 %} (Hg.):{%- endif %}{%- if pub["container-title"] %} <em>{{ pub["container-title"] }}</em>{%- elsif pub["collection-title"] %} <em>{{ pub["collection-title"] }}</em>{%- endif %}{%- if pub["publisher-place"] %}. {{ pub["publisher-place"] }}{%- endif %}{%- if pub.page %}, S.&nbsp;{{ pub.page }}{%- endif %}{%- elsif pub.type == "book" -%}{%- if pub["publisher-place"] and pub.publisher %}{{ pub["publisher-place"] }}: {{ pub.publisher }}{%- elsif pub["publisher-place"] %}{{ pub["publisher-place"] }}{%- elsif pub.publisher %}{{ pub.publisher }}{%- endif %}{% if pub.volume %}, Bd.&nbsp;{{ pub.volume }}{% endif %}{%- elsif pub.type == "paper-conference" -%}In: {%- if pub["container-title"] %} <em>{{ pub["container-title"] }}</em>{%- elsif pub["event-title"] %} <em>{{ pub["event-title"] }}</em>{%- endif %}{%- if pub["publisher-place"] %}. {{ pub["publisher-place"] }}{%- endif %}{%- if pub.page %}, S.&nbsp;{{ pub.page }}{%- endif %}{%- endif %} ({{ py }})</span>
         {% if pub_doi_url != "" %}<span class="modul-pub-doi">DOI: <a href="{{ pub_doi_url }}" target="_blank" rel="noopener noreferrer">{{ pub_doi_url }}</a></span>{% endif %}
       </div>
-      {% if pub_ev_count == 1 and pub_ev_post and pub_ev_post.size > 0 %}<div class="modul-vortrag-news"><a href="/{{ pub_ev_post }}/">→ Newsbeitrag</a></div>{% endif %}
+      {% if pub_ev_count == 1 and pub_ev_post and pub_ev_post.size > 0 %}<div class="modul-vortrag-news">{% include event-news-links.html posts=pub_ev_post %}</div>{% endif %}
     </li>
     {% if pub_ev_count > 1 %}
       {% unless shown_pub_events contains pub_event_id %}{% assign shown_pub_events = shown_pub_events | push: pub_event_id %}{% endunless %}
@@ -480,7 +480,7 @@
         {% assign next_pub_event_id = next_pub_parts[2] %}
       {% endif %}
       {% if next_pub_event_id != pub_event_id and pub_ev_post and pub_ev_post.size > 0 %}
-      <li class="modul-event-news"><a href="/{{ pub_ev_post }}/">→ Newsbeitrag</a></li>
+      <li class="modul-event-news">{% include event-news-links.html posts=pub_ev_post %}</li>
       {% endif %}
     {% endif %}
     {% break %}
@@ -551,7 +551,7 @@
       {% endif %}
     {% endfor %}
     {% assign ev_post = "" %}
-    {% if event.posts and event.posts.size > 0 %}{% assign ev_post = event.posts[0] %}{% endif %}
+    {% if event.posts and event.posts.size > 0 %}{% assign ev_post = event.posts | join: "," %}{% endif %}
     {% assign ev_url = event.url | default: "" %}
     {% assign ev_info = event.id | append: "|" | append: ev_count | append: "|" | append: event.title | append: "|" | append: ev_post | append: "|" | append: ev_url %}
     {% assign modul_event_info_map = modul_event_info_map | push: ev_info %}
@@ -609,7 +609,7 @@
             
             <li class="modul-item modul-event-vortrag">
               <div class="modul-item-header">
-                <span class="modul-item-title">{{ vortrag.title }}</span>
+                <span class="modul-item-title">{% if vortrag.URL and vortrag.URL != vortrag_event_url %}<a href="{{ vortrag.URL }}" target="_blank" rel="noopener noreferrer">{{ vortrag.title }}</a>{% else %}{{ vortrag.title }}{% endif %}</span>
                 {% if vortrag.genre %}<span class="modul-badge">{{ vortrag.genre }}</span>{% endif %}
               </div>
               <span class="modul-item-meta">
@@ -624,12 +624,12 @@
             {% assign modul_next_data = sorted_modul_vortraege[modul_next_idx] %}
             {% assign modul_next_parts = modul_next_data | split: "|" %}
             {% if modul_next_parts[2] != event_id and ev_post and ev_post.size > 0 %}
-            <li class="modul-event-news"><a href="/{{ ev_post }}/">→ Newsbeitrag</a></li>
+            <li class="modul-event-news">{% include event-news-links.html posts=ev_post %}</li>
             {% endif %}
           {% else %}
             <li class="modul-item">
               <div class="modul-item-header">
-                <span class="modul-item-title">{{ vortrag.title }}</span>
+                <span class="modul-item-title">{% if vortrag.URL and vortrag.URL != vortrag_event_url %}<a href="{{ vortrag.URL }}" target="_blank" rel="noopener noreferrer">{{ vortrag.title }}</a>{% else %}{{ vortrag.title }}{% endif %}</span>
                 {% if vortrag.genre %}<span class="modul-badge">{{ vortrag.genre }}</span>{% endif %}
               </div>
               <span class="modul-item-meta">
@@ -638,13 +638,13 @@
                 {% if vortrag_place and vortrag_place.size > 0 %} · {{ vortrag_place }}{% endif %}
                 · {{ vortrag_date_display }}
               </span>
-              {% if ev_post and ev_post.size > 0 %}<div class="modul-vortrag-news"><a href="/{{ ev_post }}/">→ Newsbeitrag</a></div>{% endif %}
+              {% if ev_post and ev_post.size > 0 %}<div class="modul-vortrag-news">{% include event-news-links.html posts=ev_post %}</div>{% endif %}
             </li>
           {% endif %}
         {% else %}
           <li class="modul-item">
             <div class="modul-item-header">
-              <span class="modul-item-title">{{ vortrag.title }}</span>
+              <span class="modul-item-title">{% if vortrag.URL and vortrag.URL != vortrag_event_url %}<a href="{{ vortrag.URL }}" target="_blank" rel="noopener noreferrer">{{ vortrag.title }}</a>{% else %}{{ vortrag.title }}{% endif %}</span>
               {% if vortrag.genre %}<span class="modul-badge">{{ vortrag.genre }}</span>{% endif %}
             </div>
             <span class="modul-item-meta">
@@ -702,7 +702,7 @@
       {% for ldata in sorted_modul_lehre %}
         {% assign lp = ldata | split: "|" %}{% if lp[2] == event.id %}{% assign mev_count = mev_count | plus: 1 %}{% endif %}
       {% endfor %}
-      {% assign mev_post = "" %}{% if event.posts and event.posts.size > 0 %}{% assign mev_post = event.posts[0] %}{% endif %}
+      {% assign mev_post = "" %}{% if event.posts and event.posts.size > 0 %}{% assign mev_post = event.posts | join: "," %}{% endif %}
       {% assign mev_url = event.url | default: "" %}
       {% assign mev_info = event.id | append: "|" | append: mev_count | append: "|" | append: event.title | append: "|" | append: mev_post | append: "|" | append: mev_url %}
       {% assign modul_lehre_event_map = modul_lehre_event_map | push: mev_info %}
@@ -741,7 +741,7 @@
           {% assign modul_l_next = sorted_modul_lehre[modul_l_next_idx] %}
           {% assign modul_l_next_parts = modul_l_next | split: "|" %}
           {% if modul_l_next_parts[2] != l_evid and mev_post and mev_post.size > 0 %}
-          <li class="modul-event-news"><a href="/{{ mev_post }}/">→ Newsbeitrag</a></li>
+          <li class="modul-event-news">{% include event-news-links.html posts=mev_post %}</li>
           {% endif %}
         {% else %}
           <li class="modul-item">
@@ -755,7 +755,7 @@
               {% if item.place %} · {{ item.place }}{% endif %}
               · {{ item.note }}
             </span>
-            {% if mev_post and mev_post.size > 0 %}<div class="modul-vortrag-news"><a href="/{{ mev_post }}/">→ Newsbeitrag</a></div>{% endif %}
+            {% if mev_post and mev_post.size > 0 %}<div class="modul-vortrag-news">{% include event-news-links.html posts=mev_post %}</div>{% endif %}
           </li>
         {% endif %}
         {% break %}
