@@ -7,7 +7,7 @@ permalink: /
   <div class="content-wrapper">
     <h2>Beethovens Werkstatt</h2>
     <div class="hero-image">
-      <img src="{{ '/assets/images/hero.jpg' | relative_url }}" alt="Skizzenausschnitt aus Beethovens Werkstatt mit mehrfarbigen Korrekturen und Tilgungen">
+      <img src="{{ '/assets/images/hero.jpg' | relative_url }}" alt="Variantenbildung in einem Arbeitsmanuskript Beethovens mit Einfärbung von Beethovens Werkstatt">
     </div>
 
     <p>Im Grundlagenforschungsprojekt <strong>Beethovens Werkstatt</strong> wird durch die Verknüpfung zweier neuer, wechselseitig aufeinander bezogener Forschungsansätze – der <a href="{% link _glossary/genetische-textkritik.md %}">Genetischen Textkritik</a> und der <a href="{% link _glossary/digitale-musikedition.md %}">Digitalen Edition</a> – die hochkomplexe Dynamik kompositorischer Prozesse im Œuvre Beethovens erforscht, dokumentiert und in exemplarischen digitalen Editionen wiedergegeben.</p>
