@@ -10,7 +10,7 @@ parent_url: /projekt
 
 ### Akademie der Wissenschaften und der Literatur | Mainz
 
-Das Projekt [Beethovens Werkstatt](http://www.adwmainz.de/projekte/beethovens-werkstatt-genetische-textkritik-und-digitale-musikedition/informationen.html) wird im Rahmen des Akademienprogramms durch die [Akademie der Wissenschaften und der Literatur](http://www.adwmainz.de/startseite.html) Mainz gefördert.
+Das Projekt [Beethovens Werkstatt](http://www.adwmainz.de/projekte/beethovens-werkstatt-genetische-textkritik-und-digitale-musikedition/informationen.html) wird im Rahmen des Akademienprogramms durch die [Akademie der Wissenschaften und der Literatur | Mainz](http://www.adwmainz.de/startseite.html) gefördert.
 
 ### Beethoven-Haus Bonn
 
