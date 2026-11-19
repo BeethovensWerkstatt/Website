@@ -302,7 +302,7 @@ parent_url: /projekt
      orcid="0000-0002-4826-4553"
      gnd="1246783738"
      github="LisaRosendahl"
-     bio="Studium der Musikwissenschaft, Geschichte und Digital Humanities an Westfälischer Wilhelms-Universität Münster, Robert Schumann Hochschule und Heinrich-Heine-Universität Düsseldorf. 2021–2023 Tätigkeiten als wissenschaftliche Hilfskraft im Projekt *Beethoven in the House* am Musikwissenschaftlichen Institut Detmold/Paderborn sowie in der Beethoven-Gesamtausgabe am Beethoven-Haus Bonn. 2023–2024 Wissenschaftliche Mitarbeiterin *Beethovens Werkstatt* in Vertretung für Elisa Novara. 2024–2025 Wissenschaftliche Mitarbeiterin im Projekt Tanz/Musik digital an der Akademie der Wissenschaften und der Literatur Mainz. Seit April 2025 Wissenschaftliche Mitarbeiterin *Beethovens Werkstatt*. Stipendiatin der Studienstiftung mit einem Dissertationsprojekt zum Diskurs über den Rang der Musik unter den Künsten im 18. und frühen 19. Jahrhundert."
+     bio="Studium der Musikwissenschaft, Geschichte und Digital Humanities an Westfälischer Wilhelms-Universität Münster, Robert Schumann Hochschule und Heinrich-Heine-Universität Düsseldorf. 2021–2023 Tätigkeiten als wissenschaftliche Hilfskraft im Projekt <em>Beethoven in the House</em> am Musikwissenschaftlichen Institut Detmold/Paderborn sowie in der Beethoven-Gesamtausgabe am Beethoven-Haus Bonn. 2023–2024 Wissenschaftliche Mitarbeiterin <em>Beethovens Werkstatt</em> in Vertretung für Elisa Novara. 2024–2025 Wissenschaftliche Mitarbeiterin im Projekt Tanz/Musik digital an der Akademie der Wissenschaften und der Literatur Mainz. Seit April 2025 Wissenschaftliche Mitarbeiterin <em>Beethovens Werkstatt</em>. Stipendiatin der Studienstiftung mit einem Dissertationsprojekt zum Diskurs über den Rang der Musik unter den Künsten im 18. und frühen 19. Jahrhundert."
   %}
   
   {% include team-card.html 
@@ -313,7 +313,7 @@ parent_url: /projekt
      email="saenger@beethovens-werkstatt.de"
      orcid="0009-0002-8649-543X"
      github="richardsaenger"
-     bio="Studium der Musikwissenschaft, Germanistik und Psychologie an der Universität Koblenz. Magister Artium 2014 in Koblenz mit einer historisch-kritischen Edition der „Biographischen Notizen über Ludwig van Beethoven“ von Franz Gerhard Wegeler und Ferdinand Ries als Magisterarbeit. Von 2012–2014 im Beethoven-Archiv tätig; seit Juli 2014 wissenschaftlicher Mitarbeiter im Projekt *Beethovens Werkstatt. Genetische Textkritik und Digitale Musikedition*. Promoviert aktuell mit einer Arbeit über Beethovens Bonner Skizzen."
+     bio="Studium der Musikwissenschaft, Germanistik und Psychologie an der Universität Koblenz. Magister Artium 2014 in Koblenz mit einer historisch-kritischen Edition der „Biographischen Notizen über Ludwig van Beethoven“ von Franz Gerhard Wegeler und Ferdinand Ries als Magisterarbeit. Von 2012–2014 im Beethoven-Archiv tätig; seit Juli 2014 wissenschaftlicher Mitarbeiter im Projekt <em>Beethovens Werkstatt. Genetische Textkritik und Digitale Musikedition</em>. Promoviert aktuell mit einer Arbeit über Beethovens Bonner Skizzen."
   %}
   
   {% include team-card.html 
@@ -334,7 +334,7 @@ parent_url: /projekt
      location="Paderborn"
      orcid="0009-0007-8264-6882"
      gnd="1386050946"
-     bio="Studium der Musikwissenschaft, Medienwissenschaft und Gender Studies am Musikwissenschaftlichen Seminar Detmold / Paderborn und der Universität Paderborn. 2021–2024 Studentische/Wissenschaftliche Hilfskraft im DFG-Projekt „Henze Digital“. 2024–2025 Wissenschaftliche Hilfskraft im KreativInstitut.OWL. Seit September 2025 Wissenschaftliche Hilfskraft bei *Beethovens Werkstatt*."
+     bio="Studium der Musikwissenschaft, Medienwissenschaft und Gender Studies am Musikwissenschaftlichen Seminar Detmold / Paderborn und der Universität Paderborn. 2021–2024 Studentische/Wissenschaftliche Hilfskraft im DFG-Projekt „Henze Digital“. 2024–2025 Wissenschaftliche Hilfskraft im KreativInstitut.OWL. Seit September 2025 Wissenschaftliche Hilfskraft bei <em>Beethovens Werkstatt</em>."
   %}
   
   {% include team-card.html 
