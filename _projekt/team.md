@@ -334,7 +334,7 @@ parent_url: /projekt
      location="Paderborn"
      orcid="0009-0007-8264-6882"
      gnd="1386050946"
-     bio="Studium der Musikwissenschaft, Medienwissenschaft und Gender Studies am Musikwissenschaftlichen Seminar Detmold / Paderborn und der Universität Paderborn. 2021–2024 Studentische/Wissenschaftliche Hilfskraft im DFG-Projekt „Henze Digital“. 2024–2025 Wissenschaftliche Hilfskraft im KreativInstitut.OWL. Seit September 2025 Wissenschaftliche Hilfskraft bei Beethovens Werkstatt."
+     bio="Studium der Musikwissenschaft, Medienwissenschaft und Gender Studies am Musikwissenschaftlichen Seminar Detmold / Paderborn und der Universität Paderborn. 2021–2024 Studentische/Wissenschaftliche Hilfskraft im DFG-Projekt „Henze Digital“. 2024–2025 Wissenschaftliche Hilfskraft im KreativInstitut.OWL. Seit September 2025 Wissenschaftliche Hilfskraft bei *Beethovens Werkstatt*."
   %}
   
   {% include team-card.html 
