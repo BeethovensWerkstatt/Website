@@ -10,11 +10,11 @@ parent_url: /projekt
 
 ### Akademie der Wissenschaften und der Literatur | Mainz
 
-Das Projekt [Beethovens Werkstatt](http://www.adwmainz.de/projekte/beethovens-werkstatt-genetische-textkritik-und-digitale-musikedition/informationen.html) wird im Rahmen des Akademienprogramms durch die [Akademie der Wissenschaften und der Literatur | Mainz](http://www.adwmainz.de/startseite.html) gefördert.
+Das Projekt *Beethovens Werkstatt* wird im Rahmen des Akademienprogramms durch die [Akademie der Wissenschaften und der Literatur | Mainz](http://www.adwmainz.de/startseite.html) gefördert.
 
 ### Beethoven-Haus Bonn
 
-Seit seiner Gründung im Jahr 1889 sind im [Beethoven-Haus](http://beethoven-haus-bonn.de/) musikhistorischer Gedächtnisort (Beethovens Geburtshaus), Sammlungsstätte, Forschungszentrum und Konzertsaal zu einem einzigartigen Ensemble zusammengewachsen. Die Verknüpfung von Sammeln und Bewahren, Erforschen und Erschließen, Präsentieren, Publizieren, Vermitteln und Interpretieren macht das Beethoven-Haus zu einem modernen Zentrum des Musik- und Kulturlebens.
+Seit seiner Gründung im Jahr 1889 sind im [Beethoven-Haus Bonn](http://beethoven-haus-bonn.de/) musikhistorischer Gedächtnisort (Beethovens Geburtshaus), Sammlungsstätte, Forschungszentrum und Konzertsaal zu einem einzigartigen Ensemble zusammengewachsen. Die Verknüpfung von Sammeln und Bewahren, Erforschen und Erschließen, Präsentieren, Publizieren, Vermitteln und Interpretieren macht das Beethoven-Haus zu einem modernen Zentrum des Musik- und Kulturlebens.
 
 ### Musikwissenschaftliches Seminar Detmold / Paderborn
 
